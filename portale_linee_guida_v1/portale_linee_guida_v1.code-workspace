@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "portale_linee_guida_v1",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
