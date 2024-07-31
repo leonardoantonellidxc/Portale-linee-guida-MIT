@@ -1,0 +1,90 @@
+.sidebar {
+    display: none;
+    width: 100%;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: 100%;
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.navbar-brand {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    font-size: 1rem;
+}
+
+.navbar .navbar-toggler {
+    top: .25rem;
+    left: 1rem;
+}
+
+#sidebarToggle {
+    position: absolute;
+    right: 1rem;
+}
+
+.sidebar.show {
+    display: block;
+}
+
+#main-content {
+    transition: margin 0.3s ease-in-out;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .sidebar.show + #main-content {
+        margin-top: 200px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .sidebar.show + #main-content {
+        margin-top: 180px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .sidebar.show + #main-content {
+        margin-top: 160px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .sidebar {
+        display: block;
+        position: fixed;
+        top: 56px;
+        bottom: 0;
+        left: 0;
+        width: 250px;
+        padding-top: 1rem;
+        overflow-y: auto;
+        border-right: 1px solid #dee2e6;
+        border-bottom: none;
+    }
+
+    #sidebarToggle {
+        display: none;
+    }
+
+    #main-content {
+        margin-left: 250px;
+    }
+}
+
+/* Transition for sidebar slide down */
+.sidebar {
+    transition: all 0.3s ease-in-out;
+}
