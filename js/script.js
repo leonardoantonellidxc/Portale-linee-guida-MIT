@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (viewportWidth < 992) {
             if (sidebar.classList.contains('show')) {
-                mainContent.style.marginTop = sidebar.offsetHeight + 'px';
+                //mainContent.style.marginTop = sidebar.offsetHeight + 'px';
                 mainContent.style.marginLeft = '0';
             } else {
                 mainContent.style.marginTop = '0';
