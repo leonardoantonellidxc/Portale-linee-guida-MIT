@@ -636,7 +636,15 @@ header .lang-wrapper .dropdown-icon {
 }
 
 .header-bottom .nav-menu>.navbar-nav>.nav-item {
-	padding: 12px 0 16px 0;
+	padding: 0 8px;
+	width: 100%;
+}
+
+@media (min-width: 992px) {
+	.header-bottom .nav-menu>.navbar-nav>.nav-item {
+		width: auto;
+		padding: 12px 0 16px 0;
+	}
 }
 
 .header-bottom .nav-menu>.navbar-nav>.nav-item+.nav-item {
@@ -2509,8 +2517,7 @@ a.dropdown-item.active .icon {
 	}
 
 	/* Header */
-	header .header-top,
-	header .header-bottom {
+	header .header-top {
 		display: none;
 	}
 

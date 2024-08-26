@@ -14,15 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
         if (viewportWidth < 992) {
             if (sidebar.classList.contains('show')) {
                 //mainContent.style.marginTop = sidebar.offsetHeight + 'px';
-                mainContent.style.marginLeft = '0';
+                mainContent.style.paddingLeft = '0';
             } else {
                 mainContent.style.marginTop = '0';
-                mainContent.style.marginLeft = '0';
+                mainContent.style.paddingLeft = '0';
             }
         } else {
             sidebar.classList.add('show');
             mainContent.style.marginTop = '0';
-            mainContent.style.marginLeft = '250px';
+            mainContent.style.paddingLeft = '250px';
         }
     }
 
