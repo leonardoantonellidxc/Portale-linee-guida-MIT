@@ -67,3 +67,62 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inizializza il layout
     updateLayout();
 });
+
+
+/// COOKIE ////
+document.addEventListener('DOMContentLoaded', () => {
+    // Seleziona gli elementi "Read more"
+    const readMore = document.querySelectorAll('.cookie-footer .btn-outline-primary:first-of-type, .cookie-body a');
+  
+    // Aggiungi l'evento click ai link "Read more"
+    readMore.forEach(link => {
+      link.addEventListener('click', cookieReadMore);
+    });
+  
+    // Funzione per mostrare la cookie banner estesa
+    function cookieReadMore() {
+      document.querySelector('.cookie-banner').classList.add('cookie-more');
+    }
+  
+    // Aggiungi gli eventi click per chiudere la cookie banner
+    const closeBtns = document.querySelectorAll('.cookie-banner .btn-close, .cookie-banner .btn-primary, .cookie-banner .btn-danger');
+    closeBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelector('.cookie-banner').remove();
+      });
+    });
+  
+    // Gestisci il toggle della modalità scura
+    let darkToggle = document.querySelector('header').classList.contains('navbar-dark');
+    const darkModeBtn = document.querySelector('[demon-header="dark-mode"]');
+    darkModeBtn.addEventListener('click', () => {
+      if (darkToggle) {
+        darkToggle = false;
+        document.querySelector('header').classList.remove('navbar-dark');
+        document.querySelectorAll('header .btn-white').forEach(btn => btn.classList.replace('btn-white', 'btn-primary'));
+        document.querySelectorAll('header .btn-outline-white').forEach(btn => btn.classList.replace('btn-outline-white', 'btn-outline-primary'));
+        document.querySelectorAll('header .mega-menu .btn-bare').forEach(btn => btn.classList.remove('bare-white'));
+      } else {
+        darkToggle = true;
+        document.querySelector('header').classList.add('navbar-dark');
+        document.querySelectorAll('header .btn-primary').forEach(btn => btn.classList.replace('btn-primary', 'btn-white'));
+        document.querySelectorAll('header .btn-outline-primary').forEach(btn => btn.classList.replace('btn-outline-primary', 'btn-outline-white'));
+        document.querySelectorAll('header .mega-menu .btn-bare').forEach(btn => btn.classList.add('bare-white'));
+      }
+    });
+  
+    // Gestisci il toggle della sezione di login
+    let loginToggle = document.querySelector('header .demon-unlogged').classList.contains('demon-hide');
+    const loginBtn = document.querySelector('[demon-header="login"]');
+    loginBtn.addEventListener('click', () => {
+      if (loginToggle) {
+        loginToggle = false;
+        document.querySelector('header .demon-logged').classList.add('demon-hide');
+        document.querySelector('header .demon-unlogged').classList.remove('demon-hide');
+      } else {
+        loginToggle = true;
+        document.querySelector('header .demon-logged').classList.remove('demon-hide');
+        document.querySelector('header .demon-unlogged').classList.add('demon-hide');
+      }
+    });
+  });

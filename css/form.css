@@ -3,7 +3,10 @@
 */
 
 /* Button */
-.btn{			display:inline-flex; flex-wrap:nowrap; flex-direction:row; align-items:center;	justify-content:center; white-space:nowrap;	}
+.btn{			
+			--bs-btn-h:56px;
+			height:var(--bs-btn-h); display:inline-flex; flex-wrap:nowrap; flex-direction:row; align-items:center;	justify-content:center; white-space:nowrap;
+}
 
 .btn > span + .icon,
 .btn > .icon + .avatar,
@@ -15,11 +18,14 @@
 .btn 					   .icon{	--bs-icon-fill:var(--bs-btn-color);		--bs-icon-size:24px;	}
 .btn:not(:disabled):hover  .icon{	--bs-icon-fill:var(--bs-btn-hover-color);	}
 .btn:not(:disabled):active .icon{	--bs-icon-fill:var(--bs-btn-active-color);	}
-
-.btn.btn-sm				   .icon{	--bs-icon-size:20px;	}
-
-
+/* */
 .btn.btn-icon-solo{			padding-left:var(--bs-btn-padding-y);	padding-right:var(--bs-btn-padding-y);	}
+
+
+/* Button - Size */
+.btn.btn-sm{		--bs-btn-h:48px;		}
+.btn.btn-sm	.icon{	--bs-icon-size:20px;	}
+
 
 /* Button */
 .btn.btn-primary{			--bs-btn-color: var(--bs-white);			--bs-btn-bg: var(--bs-primary70);			
@@ -149,10 +155,10 @@
 .btn-floating{		--bs-btn-color: var(--bs-white);			--bs-btn-bg: var(--bs-secondary40);			
 					--bs-btn-hover-color: var(--bs-white);		--bs-btn-hover-bg: var(--bs-secondary70);
 					--bs-btn-active-color: var(--bs-white);		--bs-btn-active-bg: var(--bs-secondary90);
-					--bs-size:32px;			--bs-translate:-32px;
+					--bs-btn-size:32px;		--bs-translate:-32px;		--bs-btn-h:auto;
 											--bs-hover-translate:-36px;
 					border-radius:50%; box-shadow:0px 3px 22px 0px rgba(0, 51, 102, 0.10);	padding:20px; 
-					position:absolute;	 top:var(--bs-size); left:var(--bs-size); transform: translate(var(--bs-translate), var(--bs-translate));
+					position:absolute;	 top:var(--bs-btn-size); left:var(--bs-btn-size); transform: translate(var(--bs-translate), var(--bs-translate));
 					transition:all .3s;
 }
 .btn-floating .icon{		--bs-icon-size:24px;	--bs-hover-icon-size:32px;	}
@@ -205,16 +211,17 @@
 				--bs-field-ps:12px;
 				--bs-field-pe:12px;
 				--bs-field-py:10px;
+				--bs-field-h:48px;
 				--bs-field-bg-icon:none;
 				--bs-border-radius:4px;
 				--bs-focus-bs:0 0 0 .25rem rgba(33,86,171,.25);
 }
 .form-group > label{		font-weight:600; 	padding:6px 8px; 	}
 .form-group .form-control,
-.form-group .form-select{ 	color:var(--bs-field-color); 
-							border-color:var(--bs-field-border); 	
+.form-group .form-select{ 	color:var(--bs-field-color); border-color:var(--bs-field-border); height:var(--bs-field-h); font-weight:600;
 							background-color:var(--bs-field-bg); background-repeat:no-repeat;
-							font-weight:600;
+							
+							
 }
 .form-group .form-control::placeholder {	font-weight:normal;	color:var(--bs-gray-300);	}
 
@@ -235,10 +242,11 @@
 
 
 /* Input Group */
-.input-group{						flex-wrap:nowrap;					}
+.input-group{						height:var(--bs-field-h);		flex-wrap:nowrap;		}
 .input-group .input-group-text{		background-color:var(--bs-field-bg); border-color:var(--bs-field-border);	padding:var(--bs-field-py) 8px;	z-index:1;
-					transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+									transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+.input-group .input-group-text .btn{	--bs-btn-h:var(--bs-field-h);	}
 
 .input-group 					  > .icon,
 .input-group > :not(.dropdown-menu) .icon{	fill:var(--bs-field-icon-fill);		}
@@ -254,7 +262,7 @@
 .input-group .form-select 	   + .input-group-text,
 .input-group .input-group-text + .input-group-text{		border-left:none;	}
 
-.input-group .input-group-text.divider{			padding:8px 12px;	border-right:none;		}
+.input-group .input-group-text.divider{			padding:8px 4px;	border-right:none;		}
 .input-group .input-group-text.divider::after{	content:''; display:block; width:1px; height:100%; background-color:var(--bs-gray-300);		}
 
 
@@ -844,7 +852,11 @@
 
 
 	/* Form Group */
-	.form-group{ 	--bs-field-py:8px;		}
+	.form-group{ 	
+					--bs-field-py:8px;	
+					--bs-field-h:36px;
+	}
+
 
 	/* Form - Ranges */
 	.form-ranges{				--bs-ranges-pin-w:8px;	}
@@ -872,7 +884,7 @@
 		
 	/* Button - Floating */
 	.btn-floating{		
-					--bs-size:30px;		--bs-translate:-30px;
+					--bs-btn-size:30px;	--bs-translate:-30px;
 										--bs-hover-translate:-31px;
 	}
 	.btn-floating .icon{		
@@ -891,11 +903,11 @@
 	.btn.btn-sm,
 	.btn.btn-lg{    padding:.5rem .5rem;	font-size:0.875rem; 	}
 
-	.btn + .btn{    margin-left:0px;		margin-top:16px;  		}
+	.btn-group > .btn + .btn,
+	.btn-toolbar .btn + .btn,
+	.btn-group-wide .btn + .btn,
+	.datepicker .date-footer .btn + .btn{		margin-left:0px; margin-top:16px;  		}
 	
-	
-
-
 }
 
 
