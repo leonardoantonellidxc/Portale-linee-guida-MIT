@@ -69,12 +69,6 @@
 @media (min-width: 992px) {
     .sidebar {
         display: block;
-        position: fixed;
-        top: 193px;
-        bottom: 0;
-        left: 0;
-        width: 250px;
-        padding-top: 1rem;
         overflow-y: auto;
         border-right: 1px solid #dee2e6;
         border-bottom: none;
@@ -84,9 +78,7 @@
     display: none;
   }
 
-  #main-content {
-    padding-left: 250px;
-  }
+ 
 }
 
 /* Transition for sidebar slide down */

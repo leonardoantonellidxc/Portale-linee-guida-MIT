@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             sidebar.classList.add('show');
             mainContent.style.marginTop = '0';
-            mainContent.style.paddingLeft = '250px';
+           ;
         }
     }
 
