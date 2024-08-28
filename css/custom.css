@@ -1,18 +1,17 @@
+/* Colors*/
+.bg-gray {
+  background-color: var(--bs-gray-100);
+}
+.bg-gradients {
+  background: var(--bs-gradient);
+}
+
 .sidebar {
   display: none;
   width: 100%;
   padding: 1rem;
   background-color: #f8f9fa;
   border-bottom: 1px solid #dee2e6;
-}
-
-.sidebar-sticky {
-  position: relative;
-  top: 0;
-  height: 100%;
-  padding-top: 0.5rem;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .navbar-brand {
@@ -35,13 +34,14 @@
 }
 
 .header-middle {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 @media (min-width: 992px) {
-    .header-middle {
-        border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
-    }
+  .header-middle {
+    border-bottom: var(--bs-border-width) var(--bs-border-style)
+      var(--bs-border-color) !important;
+  }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -67,23 +67,26 @@
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-    .sidebar {
-        display: block;
-        overflow-y: auto;
-        border-right: 1px solid #dee2e6;
-        border-bottom: none;
-    }
+  .sidebar {
+    display: block;
+    overflow-y: auto;
+    border-right: 1px solid #dee2e6;
+    border-bottom: none;
+  }
 
   #sidebarToggle {
     display: none;
   }
-
- 
 }
 
 /* Transition for sidebar slide down */
 .sidebar {
   transition: all 0.3s ease-in-out;
+}
+.sidebar-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Assicurati che l'elemento rimanga sopra gli altri contenuti */
 }
 
 .gradient {
@@ -95,7 +98,18 @@
   );
 }
 
-.neutral{
-  background: var(--Neutral-100, #F1F5F9);
-  ;
-  }
+.neutral {
+  background: var(--Neutral-100, #f1f5f9);
+}
+
+.ab {
+  height: 100vh;
+}
+
+.bg-lightblu {
+  background-color: var(--bs-primary10);
+}
+
+.logoimg{
+  height:68.84px;
+}

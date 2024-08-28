@@ -2,6 +2,8 @@
 :root {
 
 	--bs-link-hover-color: var(--bs-primary80);
+	--bs-gradient:linear-gradient(1deg, rgba(59, 188, 172, 0.11) 0.89%, rgba(88, 169, 197, 0.35) 50.74%, rgba(1, 82, 163, 0.3) 99.17%);
+
 }
 
 
@@ -2850,22 +2852,3 @@ a.dropdown-item.active .icon {
 /* XS */
 @media(max-width:359.900px) {}
 
-.sidebar-sticky {
-    position: sticky;
-    top: 0;
-    z-index: 1000; /* Assicurati che l'elemento rimanga sopra gli altri contenuti */
-}
-.ab{
-	height: 100vh;
-}
-.bg-gradients{
-	background: linear-gradient(1deg, rgba(59, 188, 172, 0.11) 0.89%, rgba(88, 169, 197, 0.35) 50.74%, rgba(1, 82, 163, 0.3) 99.17%);
-
-}
-.bg-gray{
-	background: var(--Neutral-100, #F1F5F9);
-
-}
-.bg-lightblu{
-	background-color: var(--bs-primary10);
-}
