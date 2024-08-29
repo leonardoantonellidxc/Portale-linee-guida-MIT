@@ -324,7 +324,7 @@
           <div class="list-table table-responsive table-sm table-even">
             <table>
               <thead>
-                <tr class="bg-primary10 ">
+                <tr class="bg-primary10">
                   <th>
                     <p class="h6">Utente</p>
                   </th>
@@ -371,7 +371,7 @@
                 </tr>
               </tbody>
               <tbody>
-                <tr class="bg-primary10 ">
+                <tr class="bg-gray">
                   <td class="colf-form colf-check" data-label="Selezione">
                     <p class="h6">Utente non vedente</p>
                   </td>
@@ -424,7 +424,7 @@
                 </tr>
               </tbody>
               <tbody>
-                <tr class="bg-primary10 ">
+                <tr class="bg-gray">
                   <td class="colf-form colf-check" data-label="Selezione">
                     <p class="h6">Utente con disabilità fisiche</p>
                   </td>
@@ -479,7 +479,7 @@
                 </tr>
               </tbody>
               <tbody>
-                <tr class="bg-primary10 ">
+                <tr class="bg-gray">
                   <td class="colf-form colf-check" data-label="Selezione">
                     <p class="h6">Utente con ipovisione</p>
                   </td>
@@ -565,7 +565,7 @@
               role="tablist"
               aria-labelledby="tab-1"
             >
-            <!-- 1 tab-->
+              <!-- 1 tab-->
               <h4 class="mb-4">Tipologie di utenti</h4>
               <p>
                 In conformità con le linee guida WCAG definite dal W3C ti
@@ -576,31 +576,417 @@
               <div class="list-table table-responsive table-sm table-even">
                 <table>
                   <thead>
-                    <tr class="bg-primary10 ">
+                    <tr>
                       <th>
                         <p class="h6">Tipologia di elemento</p>
                       </th>
                       <th>
                         <p class="h6">Come sperimentano l’interfaccia</p>
                       </th>
-    
+                    </tr>
                   </thead>
+
                   <tbody>
                     <tr>
                       <td class="colf-form colf-check" data-label="Utente">
-                        <p class="h6 ">Testo standard  (<18px) </p>
+                        <p class="h6 fw-light">
+                          <strong class="h6">Testo standard </strong>
+
+                          `(<18px) `
+                        </p>
                       </td>
                       <td data-label="Come sperimentano l’interfaccia">
-                        <div>
-                          4.5:1 (livello AA - W3C)
-                        </div>
+                        <div>4.5:1 (livello AA - W3C)</div>
                       </td>
-                      
                     </tr>
-                  
+                  </tbody>
+                  <tbody>
+                    <tr class="bg-gray">
+                      <td class="colf-form colf-check" data-label="Utente">
+                        <p class="h6 fw-light">
+                          <strong class="h6">Testo grande Testo grande</strong>
+
+                          (18px in sù)
+                        </p>
+                      </td>
+                      <td data-label="Come sperimentano l’interfaccia">
+                        <div>3:1</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td class="colf-form colf-check" data-label="Utente">
+                        <p class="h6 fw-light">
+                          <strong class="h6"
+                            >Componenti dell’interfaccia utente</strong
+                          >
+
+                          (immagini, componenti, sezioni, ecc)
+                        </p>
+                      </td>
+                      <td data-label="Come sperimentano l’interfaccia">
+                        <div>4.5:1 (livello AA - W3C)</div>
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
+              <p class="my-6">
+                Questi livelli di contrasto non vengono richiesti per:elementi
+                inattivi, testi decorativi, illustrazioni ed immagine decorative
+                e per i logotipi. <strong> </strong> 
+              </p>
+              <p class="fw-bold">
+                Esempio valori di contrasto: icona su sfondo
+              </p>
+
+              <div class="d-flex flex-column flex-wrap flex-md-row row mb-8 gy-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="/imgs/accessibilità_page/do1.svg"
+                        alt=""
+                      />
+
+                      <div class="card-text my-2">
+                        <div class="body-lg">
+                          <strong>Contrasto </strong>: 9.12:1 - Livello AAA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="/imgs/accessibilità_page/do2.svg"
+                        alt=""
+                      />
+
+                      <div class="card-text my-2">
+                        <div class="body-lg">
+                          <strong>Contrasto </strong>: 9.12:1 - Livello AAA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="./imgs/accessibilità_page/dont1.svg"
+                        alt=""
+                      />
+                      <div class="card-text my-2">
+                        <div class="body-lg">
+                          <strong> Contrasto </strong>: 1.77:1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="./imgs/accessibilità_page/dont2.svg"
+                        alt=""
+                      />
+                      <div class="card-text my-2">
+                        <div class="body-lg">
+                          <strong> Contrasto </strong>2.88:1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="fw-bold">
+                Esempio valori di contrasto: testo su sfondo
+              </p>
+
+              <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+                <div class="col-12  col-md-6 col-lg-3">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="/imgs/accessibilità_page/do3.svg"
+                        alt=""
+                      />
+
+                      <div class="card-text my-2">
+                        <div class="body-lg">
+                          <strong>Contrasto </strong>: 9.12:1 - Livello AAA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12  col-md-6 col-lg-3">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="/imgs/accessibilità_page/do4.svg"
+                        alt=""
+                      />
+
+                      <div class="card-text my-2">
+                        <div class="body-lg">
+                          <strong>Contrasto </strong>: 9.12:1 - Livello AAA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12  col-md-6 col-lg-3">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="./imgs/accessibilità_page/dont3.svg"
+                        alt=""
+                      />
+                      <div class="card-text my-2">
+                        <div class="body-lg">
+                          <strong> Contrasto </strong>: 1.77:1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12   col-md-6 col-lg-3">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="./imgs/accessibilità_page/dont4.svg"
+                        alt=""
+                      />
+                      <div class="card-text my-2">
+                        <div class="body-lg">
+                          <strong> Contrasto </strong>2.88:1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div> </div>
+<h6 class="h6 my-4">Uso del colore e daltonismo </h6>
+
+<p> Quando si progetta, è importante non fare affidamento esclusivamente sul colore per trasmettere significato, poiché circa l'8% della popolazione maschile e lo 0,4% della popolazione femminile soffre di disturbi visivi legati alla percezione del colore.
+  Per garantire che i contenuti siano comprensibili a tutti è consigliato utilizzare un simulatore per daltonismo che permetta di verificare la visibilità dei contenuti e assicurarsi così che essi siano chiari anche senza il supporto del colore. </p> <p>
+  
+  Se stai lavorando con Figma, ti consigliamo di utilizzare il plugin Stark.</p>
+</div>
+
+ <!-- -->
+ <div class="bg-gray my-5 p-6 rounded">
+  <h4 class="fw-bold mb-5">Accedi velocemente alle librerie</h4>
+  <div>
+    <div class="row gy-5">
+      <div class="col-12 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">
+              <div class="text-icon h4">
+                <img
+                  class="me-3"
+                  src="./imgs/card/w3c_icon.svg"
+                  alt=""
+                />
+
+                <span> Linee guida WCAG 2.1 - Web Content Accessibility Guidelines </span>
+              </div>
             </div>
+
+            <div class="pt-2 body-lg">
+              Consulta le linee guida per rendere i contenuti Web più accessibili alle persone con disabilità
+            </div>
+            <button type="button" class="btn btn-bare btn-sm">
+              <span>Vai alla risorsa </span>
+              <svg class="icon icon-sm ">
+                <use href="/imgs/icon/sprite.svg#it-external-link"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title">
+              <div class="text-icon h4">
+                <img
+                  class="me-3"
+                  src="./imgs/hero/figma_icon.svg"
+                  alt=""
+                />
+
+                <span>Stark - Contrast & Accessibility Chaecker </span>
+              </div>
+            </div>
+
+            <div class="pt-2 body-lg">
+              Controlla i contrasti e l’accessibilità direttamente su Figma con questo Plug-in
+            </div>
+            <button type="button" class="btn btn-bare btn-sm">
+              <span> Vai alla risorsa</span>
+              <svg class="icon icon-sm ">
+                <use href="/imgs/icon/sprite.svg#it-external-link"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="card-title ">
+              <div class="text-icon h4">
+                <img
+                  class="me-3"
+                  src="./imgs/card/chrome_icon.svg"
+                  alt=""
+                />
+
+                <span> Siteimprove Accessibility Checker V.127 </span>
+              </div>
+            </div>
+
+            <div class="pt-2 body-lg">
+              Controlla l’accessibilità web direttamente in Google Chrome installando questa estensione
+            </div>
+            <button type="button" class="btn btn-bare btn-sm">
+              <span> Vai alla risorsa </span>
+              <svg class="icon icon-sm ">
+                <use href="/imgs/icon/sprite.svg#it-external-link"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+
+            <!-- 2 tab-->
             <div
               class="tab-pane fade"
               id="immagine"
@@ -611,6 +997,7 @@
               wsodjebwfhrwjenfiorehfgoiurehwhuoiwenfiorhfioewjdpiehtopi43enfp4j3tpofjp5jtppr3fwdhiegfkki
               wsodjebwfhrwjenfiorehfgoiurehwhuoiwenfiorhfioewjdpiehtopi43enfp4j3tpofjp5jtppr3f
             </div>
+
             <div
               class="tab-pane fade"
               id="tastiera"
@@ -619,6 +1006,26 @@
             >
               ...
             </div>
+             <!-- paginazione-->
+
+        <div class="d-flex justify-content-between py-3 bg-lightblu">
+          <a type="button" class="btn btn-bare btn-sm">
+            
+            <svg class="icon">
+              <use
+                href="/imgs/icon/sprite.svg#it-chevron-left"
+              ></use>
+            </svg><span>Accessibilità </span>
+          </a>
+          <a type="button" class="btn btn-bare btn-sm">
+            <span>Index </span>
+            <svg class="icon">
+              <use
+                href="/imgs/icon/sprite.svg#it-chevron-right"
+              ></use>
+            </svg>
+          </a>
+        </div>
           </div>
         </div>
       </div>
