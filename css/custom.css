@@ -110,10 +110,20 @@
 .bg-lightblu {
   background-color: var(--bs-primary10);
 }
+.c-neutral-500{
+  color: var(--bs-dark-border-subtle);
+}
+.bg-neutral-500{
+ background-color: var(--bs-light-bg-subtle);
+}
 
 .logoimg{
   height:68.84px;
 }
 .immaginitab{
   width: 238px;
+}
+
+.bg-hero-green{
+ background-color:#DCF1F1 ; 
 }
