@@ -150,8 +150,8 @@
       <div class="row px-lg-9">
         <!-- hero-->
         <div class="my-6 bg-gradients rounded">
-          <div class="d-flex flex-column px-6">
-            <div class="mt-5">
+          <div class="px-7">
+            <div class="mt-7">
               <h1 class="fw-bolder">Accessibilità</h1>
               <h2 class="fw-light mb-7">
                 Ministero delle infrastrutture e dei trasporti
@@ -166,7 +166,7 @@
           </div>
           <img class="w-100" src="./imgs/hero/hero_accesibilità.svg" alt="" />
         </div>
-        <!-- section 1-->
+        <!-- section 1 introduzione -->
         <div>
           <h4 class="mb-4">Introduzione</h4>
           <p>
@@ -182,20 +182,21 @@
             Wide Web Consortium (W3C) per i contenuti accessibili, conosciute
             come “Linee guida per l'accessibilità dei contenuti web” o WCAG.
           </p>
-          <div class="d-flex alert alert-info alert-dismissible fade show">
+          <div class="alert alert-info alert-dismissible fade show">
             <div class="alert-body">
               <div class="alert-heading h5">WCAG Reference</div>
               <div class="alert-text">
                 Clicca sul pulsante per leggere le reference proposta dal WCAG
               </div>
+              <div class="btn-toolbar">
+                <button type="button" class="btn btn-bare btn-sm">
+                  <span>WCAG Quick Reference</span>
+                  <svg class="icon">
+                    <use href="/imgs/icon/sprite.svg#it-external-link"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-
-            <button type="button" class="btn btn-bare btn-sm">
-              <span> Button text </span>
-              <svg class="icon icon-sm">
-                <use href="/imgs/icon/sprite.svg#it-external-link"></use>
-              </svg>
-            </button>
           </div>
           <!-- Chiude la div.alert -->
         </div>
@@ -217,7 +218,7 @@
           </p>
           <div>
             <div class="row gy-5">
-              <div class="col-12 col-lg-3">
+              <div class="col-12 col-md-6 col-lg-3">
                 <div class="card">
                   <div class="card-body">
                     <div class="card-title">
@@ -240,7 +241,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-3">
+              <div class="col-12 col-md-6 col-lg-3">
                 <div class="card">
                   <div class="card-body">
                     <div class="card-title">
@@ -263,7 +264,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-3">
+              <div class="col-12 col-md-6 col-lg-3">
                 <div class="card">
                   <div class="card-body">
                     <div class="card-title">
@@ -285,7 +286,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-3">
+              <div class="col-12 col-md-6 col-lg-3">
                 <div class="card">
                   <div class="card-body">
                     <div class="card-title">
@@ -638,9 +639,7 @@
                 Esempio valori di contrasto: icona su sfondo
               </p>
 
-              <div
-                class="d-flex flex-column flex-wrap flex-md-row row mb-8 gy-4"
-              >
+              <div class="row mb-8 gy-5">
                 <div class="col-12 col-md-6 col-lg-3">
                   <div class="card bg-gray">
                     <div class="card-body">
@@ -765,7 +764,7 @@
                 Esempio valori di contrasto: testo su sfondo
               </p>
 
-              <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+              <div class="row mb-8 gy-5">
                 <div class="col-12 col-md-6 col-lg-3">
                   <div class="card bg-gray">
                     <div class="card-body">
@@ -885,24 +884,40 @@
                   </div>
                 </div>
               </div>
+              <div>
+                <h6 class="h6 my-4">Uso del colore e daltonismo</h6>
 
-              <h6 class="h6 my-4">Uso del colore e daltonismo</h6>
+                <p>
+                  Quando si progetta, è importante non fare affidamento
+                  esclusivamente sul colore per trasmettere significato, poiché
+                  circa l'8% della popolazione maschile e lo 0,4% della
+                  popolazione femminile soffre di disturbi visivi legati alla
+                  percezione del colore. Per garantire che i contenuti siano
+                  comprensibili a tutti è consigliato utilizzare un simulatore
+                  per daltonismo che permetta di verificare la visibilità dei
+                  contenuti e assicurarsi così che essi siano chiari anche senza
+                  il supporto del colore.
+                </p>
+                <p>
+                  Se stai lavorando con Figma, ti consigliamo di utilizzare il
+                  plugin Stark.
+                </p>
+                <div class="d-md-none">
+                  <img
+                    class="w-100"
+                    src="./imgs/accessibilità_page/palettet.svg"
+                    alt=""
+                  />
+                </div>
 
-              <p>
-                Quando si progetta, è importante non fare affidamento
-                esclusivamente sul colore per trasmettere significato, poiché
-                circa l'8% della popolazione maschile e lo 0,4% della
-                popolazione femminile soffre di disturbi visivi legati alla
-                percezione del colore. Per garantire che i contenuti siano
-                comprensibili a tutti è consigliato utilizzare un simulatore per
-                daltonismo che permetta di verificare la visibilità dei
-                contenuti e assicurarsi così che essi siano chiari anche senza
-                il supporto del colore.
-              </p>
-              <p>
-                Se stai lavorando con Figma, ti consigliamo di utilizzare il
-                plugin Stark.
-              </p>
+                <div class="d-none d-lg-block">
+                  <img
+                    class="w-100"
+                    src="./imgs/accessibilità_page/paletted.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
 
             <!-- 2 tab-->
@@ -942,7 +957,7 @@
                   </li>
                 </ul>
 
-                <div class="d-flex">
+                <div class="d-flex w-100">
                   <img
                     class="immaginitab me-4"
                     src="/imgs/accessibilità_page/immagini1.svg"
@@ -1088,8 +1103,9 @@
                     interattivi in una pagina
                   </li>
                   <li>
-                    uso del <strong>  tasto invio o della barra spaziatrice </strong>per attivare
-                    un elemento a fuoco.
+                    uso del
+                    <strong> tasto invio o della barra spaziatrice </strong>per
+                    attivare un elemento a fuoco.
                   </li>
                 </ol>
                 <p>
@@ -1098,17 +1114,18 @@
                 </p>
                 <ul>
                   <li>
-                    tutti gli elementi attivi che possono essere <strong> attivati ​​con
-                    il mouse</strong> devono essere utilizzabili tramite tastiera o avere
-                    un equivalente da tastiera;
-                  </li>
-                  <li>
-                    la pagina deve essere struttura secondo una <strong>gerarchia </strong>  ben
-                    definita;
-                  </li>
-                  <li>
-                    anche i <strong> componenti dinamici</strong>  devono essere attivati ​​dalla
+                    tutti gli elementi attivi che possono essere
+                    <strong> attivati ​​con il mouse</strong> devono essere
+                    utilizzabili tramite tastiera o avere un equivalente da
                     tastiera;
+                  </li>
+                  <li>
+                    la pagina deve essere struttura secondo una
+                    <strong>gerarchia </strong> ben definita;
+                  </li>
+                  <li>
+                    anche i <strong> componenti dinamici</strong> devono essere
+                    attivati ​​dalla tastiera;
                   </li>
                   <li>
                     gli elementi che mostrano il contenuto al passaggio del
@@ -1127,23 +1144,73 @@
                   Il tasto tabulazione consente di navigare tra tutti gli
                   elementi interattivi di una pagina nell'ordine in cui appaiono
                   nel documento HTML. Nel caso del MIT quando un elemento verrà
-                  selezionato si attiverà uno <strong> stroke di 4px di colore Blu/300</strong>
+                  selezionato si attiverà uno
+                  <strong> stroke di 4px di colore Blu/300</strong>
                   attorno allo stesso. Solamente dopo che un elemento è
                   focalizzato potrà poi essere ulteriormente attivato tramite la
                   tastiera.
                 </p>
-                <img class="w-100" src="/imgs/accessibilità_page/tastiera0.svg" alt="" />
+                <div>
+                  <div class="card rounded bg-gray">
+                    <div class="card-body">
+                      <p class="fw-bold my-5">Accordion/Desktop</p>
+                      <h6>Stato default</h6>
+                      <div class="accordion" id="collapseExample">
+                        <div class="accordion-item">
+                          <div class="accordion-header" id="heading1c">
+                            <button
+                              type="button"
+                              class="accordion-button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse1c"
+                              aria-expanded="true"
+                              aria-controls="collapse1c"
+                            >
+                              <div class="text-icon">
+                                <svg class="icon icon-sm">
+                                  <use
+                                    href="/proto/mit/mit-v6.0.0/imgs/icon/sprite_fill.svg#it-example"
+                                  ></use>
+                                </svg>
+                                <span> Elemento Richiudibile #1 </span>
+                              </div>
+                            </button>
+                          </div>
+                          <div
+                            id="collapse1c"
+                            class="accordion-collapse collapse show"
+                            role="region"
+                            aria-labelledby="heading1c"
+                          >
+                            <div class="accordion-body"></div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <h6>Stato di focus</h6>
+
+                      
+                    </div>
+                  </div>
+                </div>
+                <img
+                  class="w-100"
+                  src="/imgs/accessibilità_page/tastiera0.svg"
+                  alt=""
+                />
                 <p class="fw-bold h-5">Ordine di navigazione</p>
 
                 <p>
                   Per garantire la corretta lettura dei contenuti l’ordine in
                   cui gli elementi interattivi ricevono l'attenzione dovrebbe
-                  essere <strong>  logico e prevedibile</strong>. Ti raccomandiamo quindi di:
+                  essere <strong> logico e prevedibile</strong>. Ti
+                  raccomandiamo quindi di:
                 </p>
                 <ul>
                   <li>
-                    creare la <strong>gerarchia </strong>  del flusso di schede utilizzando il
-                    codice sorgente per organizzare la navigazione da tastiera;
+                    creare la <strong>gerarchia </strong> del flusso di schede
+                    utilizzando il codice sorgente per organizzare la
+                    navigazione da tastiera;
                   </li>
                   <li>
                     rafforzare l'HTML semantico per trasmettere intento e
@@ -1181,32 +1248,38 @@
                   HTML5, così che gli utenti di screen reader possano saltare
                   rapidamente in qualsiasi area vogliano.
                 </p>
-                <h6 class="fw-bold h-5">
-                  HTML semantico                </h6>
+                <h6 class="fw-bold h-5">HTML semantico</h6>
 
                 <p>
-                  L’HTML semantico, conosciuto anche con il nome di markup semantico, prevede l'uso di tag HTML che trasmettono il significato del loro stesso contenuto, come titoli, navigazione, sezioni di pagina, elenchi e paragrafi.
+                  L’HTML semantico, conosciuto anche con il nome di markup
+                  semantico, prevede l'uso di tag HTML che trasmettono il
+                  significato del loro stesso contenuto, come titoli,
+                  navigazione, sezioni di pagina, elenchi e paragrafi.
                 </p>
-                <p> 
-                  Per esempio, possiamo trovare i seguenti tag:
+                <p>Per esempio, possiamo trovare i seguenti tag:</p>
+                <div class="d-flex"></div>
+                <p>
+                  Per favorire una corretta interpretazione degli header, è
+                  necessario seguire queste indicazioni sia in fase di design
+                  che di sviluppo:
                 </p>
-                <div class="d-flex"> 
-
-                </div>
-                <p>Per favorire una corretta interpretazione degli header, è necessario seguire queste indicazioni sia in fase di design che di sviluppo:</p>
-                  <ul> 
-                    <li> 
-                      organizzare le intestazioni della pagina in base al loro livello (H1, H2, H3, ecc.);
-                    </li>
-                    <li> 
-                      l'intestazione più importante della pagina è di livello H1;
-                    </li>
-                    <li> 
-                      in una pagina è consentita una sola intestazione di livello H1;
-                    </li>
-                    <li>i titoli devono essere posizionati all'inizio di nuove sezioni di contenuto, non a scopo decorativo.</li>
-                  </ul>
-
+                <ul>
+                  <li>
+                    organizzare le intestazioni della pagina in base al loro
+                    livello (H1, H2, H3, ecc.);
+                  </li>
+                  <li>
+                    l'intestazione più importante della pagina è di livello H1;
+                  </li>
+                  <li>
+                    in una pagina è consentita una sola intestazione di livello
+                    H1;
+                  </li>
+                  <li>
+                    i titoli devono essere posizionati all'inizio di nuove
+                    sezioni di contenuto, non a scopo decorativo.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

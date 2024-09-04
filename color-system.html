@@ -148,6 +148,7 @@
     </header>
 
     <div class="row">
+      <!-- Fonts 
       <aside class="sidebar-menu col-3 ab">
         <div class="sidebar-sticky">
           <div class="d-flex justify-content-end">
@@ -178,8 +179,8 @@
             </div>
           </div>
         </div>
-      </aside>
-      <main class="container-fluid row col-9" id="main-content">
+      </aside>-->
+      <main class="container-fluid col-12 col-lg-9 " id="main-content">
         <!-- hero-->
         <div class="bg-hero-green p-6 rounded my-6">
           <p class="fw-bold c-neutral-500">Design System</p>
@@ -219,7 +220,6 @@
                   <th>
                     <p class="h6">Sotto-categorie</p>
                   </th>
-                
                 </tr>
               </thead>
               <tbody>
@@ -227,15 +227,18 @@
                   <td class="colf-form colf-check" data-label="Utente">
                     <p class="h6">Background</p>
                   </td>
-                  
+
                   <td data-label="Come progettare al meglio">
                     <div>
-                      Fanno riferimento a tutti quei token che identificano i colori che possono essere utilizzati per gestire gli sfondi degli elementi e delle pagine
+                      Fanno riferimento a tutti quei token che identificano i
+                      colori che possono essere utilizzati per gestire gli
+                      sfondi degli elementi e delle pagine
                     </div>
                   </td>
                   <td data-label="Come si applica a tutti">
                     <div>
-                      Neutral, Primary, Secondary, Accent, Disabled, Warning, Danger, Success
+                      Neutral, Primary, Secondary, Accent, Disabled, Warning,
+                      Danger, Success
                     </div>
                   </td>
                 </tr>
@@ -246,33 +249,36 @@
                   </td>
                   <td data-label="Title">
                     <div>
-                      Fanno riferimento a tutti quei token che vengono utilizzati per la realizzazione dei bordi di singoli elementi o sezioni
+                      Fanno riferimento a tutti quei token che vengono
+                      utilizzati per la realizzazione dei bordi di singoli
+                      elementi o sezioni
                     </div>
                   </td>
                   <td data-label="Title">
                     <div>
-                      Neutral, Primary, Secondary, Accent, Disabled, Warning, Danger, Success
+                      Neutral, Primary, Secondary, Accent, Disabled, Warning,
+                      Danger, Success
                     </div>
                   </td>
-                 
                 </tr>
 
                 <tr>
                   <td class="colf-form colf-check" data-label="Selezione">
-                    <p class="h6">Icon </p>
+                    <p class="h6">Icon</p>
                   </td>
                   <td data-label="Title">
                     <div>
-                      Fanno riferimento a tutti quei token che vengono utilizzati conferire alle icone differenti stati 
-(esempio: errore, successo, ...)
+                      Fanno riferimento a tutti quei token che vengono
+                      utilizzati conferire alle icone differenti stati (esempio:
+                      errore, successo, ...)
                     </div>
                   </td>
                   <td data-label="Title">
                     <div>
-                      Neutral, Primary, Secondary, Accent, Disabled, Warning, Danger, Success
+                      Neutral, Primary, Secondary, Accent, Disabled, Warning,
+                      Danger, Success
                     </div>
                   </td>
-                  
                 </tr>
 
                 <tr class="bg-gray">
@@ -281,24 +287,51 @@
                   </td>
                   <td data-label="Title">
                     <div>
-                      Fanno riferimento a tutti quei token che vengono utilizzati conferire al testo differenti stati 
-(esempio: errore, successo,...)
+                      Fanno riferimento a tutti quei token che vengono
+                      utilizzati conferire al testo differenti stati (esempio:
+                      errore, successo,...)
                     </div>
                   </td>
                   <td data-label="Title">
-                    <div>Neutral, Primary, Secondary, Accent, Disabled, Warning, Danger, Success</div>
+                    <div>
+                      Neutral, Primary, Secondary, Accent, Disabled, Warning,
+                      Danger, Success
+                    </div>
                   </td>
-                
                 </tr>
-
               </tbody>
             </table>
           </div>
 
-          <p class="my-5">Di seguito un esempio di come sono stati definiti i token globali utilizzati per la definizione dei background, dei bottoni primary a partire dalla scala colori “Primary color-Blu”:</p>
+          <p class="my-5">
+            Di seguito un esempio di come sono stati definiti i token globali
+            utilizzati per la definizione dei background, dei bottoni primary a
+            partire dalla scala colori “Primary color-Blu”:
+          </p>
+          <div class="d-none d-lg-block">
+            <img
+              class="w-100"
+              src="/imgs/color-system/img-esempio.svg"
+              alt=""
+            />
+          </div>
 
-          <img class="w-100" src="/imgs/color-system/img-esempio.svg" alt="">
- <!-- tab menu-->
+          <div class="d-none d-md-block d-lg-none">
+            <img
+              class="w-100"
+              src="/imgs/color-system/img-esempio-md.svg"
+              alt=""
+            />
+          </div>
+          <div class="d-flex d-md-none">
+            <img
+              class="w-100"
+              src="/imgs/color-system/img-esempio-mobile.svg"
+              alt=""
+            />
+          </div>
+
+          <!-- tab menu-->
           <div class="bg-primary10 py-3 my-8">
             <ul class="nav nav-tabs light px-3" role="tablist">
               <li class="nav-item">
@@ -330,103 +363,3051 @@
                   <span> Colori semantici </span>
                 </button>
               </li>
-              
             </ul>
           </div>
 
-         <!-- tab content-->
-         <div class="tab-content">
-          <!-- 1 tab-->
-          <div
-            class="tab-pane fade show active"
-            id="contrasto"
-            role="tablist"
-            aria-labelledby="tab-1"
-          >
-            
+          <!-- tab content-->
+          <div class="tab-content">
+            <!-- 1 tab-->
+            <div
+              class="tab-pane fade show active"
+              id="contrasto"
+              role="tablist"
+              aria-labelledby="tab-1"
+            >
               <h4 class="mb-4">Colori globali</h4>
-            
+
               <!--card grigia con tabella intenra-->
-           <div class="bg-neutral-500 rounded p-4"> 
-            <h6>Base color</h6>
-            <div class="list-table table-responsive table-sm table-even">
-              <table>
-                <thead>
-                  <tr class="bg-primary10">
-                    <th>
-                      <p class="h6">Name</p>
-                    </th>
-                    <th>
-                      <p class="h6">HEX</p>
-                    </th>
-  
-                    <th>
-                      <p class="h6">RGB</p>
-                    </th>
-                    <th>
-                      <p class="h6">CSS</p>
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="bg-gray">
-                    <td class="colf-form colf-check" data-label="Utente">
-                      <p>50</p>
-                    </td>
-                    <td data-label="Come sperimentano l’interfaccia">
-                      <div>
-                        #FFFFFF
+              <div class="bg-neutral-500 rounded p-4 my-5">
+                <h6 class="my-3">Base color</h6>
+                <div class="list-table table-responsive table-sm table-even">
+                  <table>
+                    <thead>
+                      <tr class="bg-primary10">
+                        <th>
+                          <p class="h6">Name</p>
+                        </th>
+                        <th>
+                          <p class="h6">HEX</p>
+                        </th>
+
+                        <th>
+                          <p class="h6">RGB</p>
+                        </th>
+                        <th>
+                          <p class="h6">CSS</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="bg-gray">
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="4"
+                                fill="white"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">50</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FFFFFF</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(256, 256, 256)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(256, 256, 256,1)</div>
+                        </td>
+                      </tr>
+
+                      <tr class="bg-gray">
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <div class="rounded bg-dark square me-2"></div>
+                            <div class="d-flex align-items-center">100</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#000000</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(0, 0, 0)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(0, 0, 0,1)</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!--card grigia con tabella intenra primary color-->
+              <div class="bg-neutral-500 rounded p-4 my-5">
+                <h6 class="my-3">Primary color</h6>
+                <div class="list-table table-responsive table-sm table-even">
+                  <table>
+                    <thead>
+                      <tr class="bg-primary10">
+                        <th>
+                          <p class="h6">Name</p>
+                        </th>
+                        <th>
+                          <p class="h6">HEX</p>
+                        </th>
+
+                        <th>
+                          <p class="h6">RGB</p>
+                        </th>
+                        <th>
+                          <p class="h6">CSS</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-neutral-500">
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FAFDFF"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">20</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FAFDFF</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(250, 253, 255)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(250, 253, 255, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#F2F7FC"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">50</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#F2F7FC</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(242, 247, 252)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(242, 247, 252, 1)</div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#DCEDFF"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">100</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#DCEDFF</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(220, 237, 255)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(220, 237, 255, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#BFDFFF"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">200</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#BFDFFF</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(191, 223, 255)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(191, 223, 255, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#94C4F5"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">300</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#94C4F5</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(148, 196, 245)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(148, 196, 245, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#6AAAEB"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">400</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#6AAAEB</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(106, 170, 235)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(106, 170, 235, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#4392E0"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">500</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#4392E0</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(67, 146, 224)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(67, 146, 224, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#207AD5"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">600</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#207AD5</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(32, 122, 213)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(32, 122, 213, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#0066CC"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">700</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#0066CC</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(0, 102, 204)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(0, 102, 204, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#004D99"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">800</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#004D99</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(0, 77, 153)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(0, 77, 153, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#004080"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">900</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#004080</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(0, 64, 128)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(0, 64, 128, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#000912"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">950+</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#004080</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(0, 9, 18)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(0, 9, 18, 1)</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!--card grigia con tabella intenra primary color verde-->
+              <div class="bg-neutral-500 rounded p-4 my-5">
+                <h6 class="my-3">Primary color</h6>
+                <div class="list-table table-responsive table-sm table-even">
+                  <table>
+                    <thead>
+                      <tr class="bg-primary10">
+                        <th>
+                          <p class="h6">Name</p>
+                        </th>
+                        <th>
+                          <p class="h6">HEX</p>
+                        </th>
+
+                        <th>
+                          <p class="h6">RGB</p>
+                        </th>
+                        <th>
+                          <p class="h6">CSS</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-neutral-500">
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FAFDFF"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">20</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FAFDFF</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(250, 253, 255)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(250, 253, 255, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#F0FDFA"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">50</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#F0FDFA</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(240, 253, 250)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(240, 253, 250, 1)</div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#CCFBF1"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">100</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#CCFBF1</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(204, 251, 241)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(204, 251, 241, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#99F6E4"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">200</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#99F6E4</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(153, 246, 228)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(153, 246, 228, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#5EEAD4"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">300</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#5EEAD4</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(94, 234, 212)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(94, 234, 212, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#2DD4BF"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">400</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#2DD4BF</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(45, 212, 191, 1)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(45, 212, 191, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#14B8A6"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">500</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#14B8A6</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(20, 184, 166)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(20, 184, 166, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#0D9488"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">600</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#0D9488</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(13, 148, 136)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(13, 148, 136, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#0F766E"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">700</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#0F766E</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(15, 118, 110, 1)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(15, 118, 110, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#115E59"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">800</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#115E59</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(17, 94, 89)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(17, 94, 89, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#134E4A"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">900</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#134E4A</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(0, 64, 128)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(0, 64, 128, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#0B2E2B"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">950+</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#0B2E2B</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(11, 46, 43)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(11, 46, 43, 1)</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!--card grigia con tabella intenra primary color gialla-->
+              <div class="bg-neutral-500 rounded p-4 my-5">
+                <h6 class="my-3">Primary color</h6>
+                <div class="list-table table-responsive table-sm table-even">
+                  <table>
+                    <thead>
+                      <tr class="bg-primary10">
+                        <th>
+                          <p class="h6">Name</p>
+                        </th>
+                        <th>
+                          <p class="h6">HEX</p>
+                        </th>
+
+                        <th>
+                          <p class="h6">RGB</p>
+                        </th>
+                        <th>
+                          <p class="h6">CSS</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-neutral-500">
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FFFDFA"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">20</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FFFDFA</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(255, 253, 250)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(255, 253, 250, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FFF8E6"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">50</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FFF8E6</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(255, 248, 230)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(255, 248, 230, 1)</div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FEF3D2"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">100</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FEF3D2</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(254, 243, 210)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(254, 243, 210, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FDE5A0"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">200</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FDE5A0</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(253, 229, 160)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(253, 229, 160, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FDD973"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">300</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FDD973</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(253, 217, 115,1)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(253, 217, 115)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FCCC45"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">400</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FCCC45</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(252, 204, 69)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(252, 204, 69, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FBBF15"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">500</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FBBF15</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(251, 191, 21)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(251, 191, 21, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#D8A004"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">600</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#D8A004</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(216, 160, 4)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(216, 160, 4, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#A07703"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">700</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#A07703</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(160, 119, 3)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(160, 119, 3, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#694E02"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">800</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#694E02</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(105, 78, 2)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(105, 78, 2, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#372901"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">900</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#372901</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(55, 41, 1)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(55, 41, 1, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#191300"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">950</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#19130</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(25, 19, 0,)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(25, 19, 0, 1)</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!--card grigia con tabella intenra primary color grigia-->
+              <div class="bg-neutral-500 rounded p-4 my-5">
+                <h6 class="my-3">Neutral color</h6>
+                <div class="list-table table-responsive table-sm table-even">
+                  <table>
+                    <thead>
+                      <tr class="bg-primary10">
+                        <th>
+                          <p class="h6">Name</p>
+                        </th>
+                        <th>
+                          <p class="h6">HEX</p>
+                        </th>
+
+                        <th>
+                          <p class="h6">RGB</p>
+                        </th>
+                        <th>
+                          <p class="h6">CSS</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-neutral-500">
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FDFDFE"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">20</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FDFDFE</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(253, 253, 254)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(253, 253, 254, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#F8FAFC"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">50</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#F8FAFC</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(248, 250, 252)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(248, 250, 252, 1)</div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#F1F5F9"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">100</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#F1F5F9</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(241, 245, 249)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(241, 245, 249, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#E2E8F0"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">200</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#E2E8F0</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(226, 232, 240)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(226, 232, 240, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#CBD5E1"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">300</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#CBD5E1</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(203, 213, 225)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(203, 213, 225, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#94A3B8"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">400</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#94A3B8</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(148, 163, 184)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(148, 163, 184, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#64748B"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">500</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#64748B</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(100, 116, 139)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(100, 116, 139, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#475569"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">600</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#475569</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(71, 85, 105)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(71, 85, 105, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#334155"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">700</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#334155</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(51, 65, 85)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(51, 65, 85, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#1E293B"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">800</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#1E293B</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(30, 41, 59)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(30, 41, 59, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#0F172A"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">900</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#0F172A</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(15, 23, 42)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(15, 23, 42, 1)</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!--card grigia con tabella  color verde-->
+              <div class="bg-neutral-500 rounded p-4 my-5">
+                <h6 class="my-3">System color - Green</h6>
+                <div class="list-table table-responsive table-sm table-even">
+                  <table>
+                    <thead>
+                      <tr class="bg-primary10">
+                        <th>
+                          <p class="h6">Name</p>
+                        </th>
+                        <th>
+                          <p class="h6">Token semantic</p>
+                        </th>
+
+                        <th>
+                          <p class="h6">Parent</p>
+                        </th>
+                        <th>
+                          <p class="h6">Global color</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-neutral-500">
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#000912"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">
+                              Page dark
+                            </div>
+                          </div>
+                        </td>
+                        <td data-label="Token semantic">
+                          <div>backgorund.neautral.pagedark</div>
+                        </td>
+                        <td data-label="Parent">
+                          <div>Global.blu.950+</div>
+                        </td>
+                        <td data-label="Global color">
+                          <div>Blu.950+</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              class="me-3"
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#E6F9EF"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">50</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#E6F9EF</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(230, 249, 239)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(230, 249, 239, 1)</div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#CAF2DD"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">100</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#CAF2DD</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(202, 242, 221)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(202, 242, 221, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#98E6BD"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">200</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#98E6BD</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(152, 230, 189)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(152, 230, 189, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#63D99B"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">300</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#63D99B</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(99, 217, 155)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(99, 217, 155, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#30CA79"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">400</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#30CA79</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(48, 202, 121)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(148, 163, 184, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#24965A"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">500</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#24965A</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(36, 150, 90)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(36, 150, 90, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#1D7748"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">600</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#1D7748</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(29, 119, 72)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(29, 119, 72, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#165A36"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">700</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#165A36</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(22, 90, 54)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(22, 90, 54, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#0F3E25"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">800</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#0F3E25</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(15, 62, 37)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(15, 62, 37, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#071D11"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">900</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#071D11</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(7, 29, 17)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(7, 29, 17, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#04100A"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">950</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#04100A</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(4, 16, 10)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(4, 16, 10, 1)</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!--card grigia con tabella color orange-->
+              <div class="bg-neutral-500 rounded p-4 my-5">
+                <h6 class="my-3">System color - Green</h6>
+                <div class="list-table table-responsive table-sm table-even">
+                  <table>
+                    <thead>
+                      <tr class="bg-primary10">
+                        <th>
+                          <p class="h6">Name</p>
+                        </th>
+                        <th>
+                          <p class="h6">HEX</p>
+                        </th>
+
+                        <th>
+                          <p class="h6">RGB</p>
+                        </th>
+                        <th>
+                          <p class="h6">CSS</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-neutral-500">
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FFF9F0"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">20</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FFF9F0</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(255, 249, 240)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(255, 249, 240, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#F6E4C8"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">50</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#F6E4C8</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(246, 228, 200)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(246, 228, 200, 1)</div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#EECD9A"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">100</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#EECD9A</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(238, 205, 154)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(238, 205, 154, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#E7B66E"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">200</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#E7B66E</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(231, 182, 110)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(152, 230, 189, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#E0A243"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">300</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#E0A243</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(224, 162, 67)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(224, 162, 67, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#D48D22"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">400</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#D48D22</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(212, 141, 34)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(212, 141, 34, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#CC7A00"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">500</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#CC7A00</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(204, 122, 0)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(204, 122, 0, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#B36B00"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">600</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#B36B00</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(179, 107, 0)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(179, 107, 0, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#995C00"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">700</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#995C00</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(153, 92, 0)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(153, 92, 0, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#804D00"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">800</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#804D00</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(128, 77, 0)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(128, 77, 0, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#663D00"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">900</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#663D00</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(102, 61, 0)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(102, 61, 0, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#422700"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">950</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#422700</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(66, 39, 0, 1)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(4, 16, 10, 1)</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!--card grigia con tabella color rosso-->
+              <div class="bg-neutral-500 rounded p-4 my-5">
+                <h6 class="my-3">System color - Red</h6>
+                <div class="list-table table-responsive table-sm table-even">
+                  <table>
+                    <thead>
+                      <tr class="bg-primary10">
+                        <th>
+                          <p class="h6">Name</p>
+                        </th>
+                        <th>
+                          <p class="h6">HEX</p>
+                        </th>
+
+                        <th>
+                          <p class="h6">RGB</p>
+                        </th>
+                        <th>
+                          <p class="h6">CSS</p>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-neutral-500">
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FFF9FA"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">20</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FFF9F0</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(255, 249, 250, 1)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(255, 249, 250, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FCE8EB"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">50</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FCE8EB</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(252, 232, 235)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(252, 232, 235, 1)</div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#FAD6DB"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">100</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#FAD6DB</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(250, 214, 219)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(250, 214, 219, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#F4A9B3"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">200</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#F4A9B3</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(244, 169, 179)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(244, 169, 179, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#EE818F"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">300</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#EE818F</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(238, 129, 143)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(238, 129, 143, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#E95467"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">400</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#E95467</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(233, 84, 103)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(233, 84, 103, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#E32941"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">500</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#E32941</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(227, 41, 65, 1)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(227, 41, 65, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#BD192E"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">600</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#BD192E</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(189, 25, 46)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(189, 25, 46, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#901323"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">700</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#901323</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(144, 19, 35)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(144, 19, 35, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#5F0C17"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">800</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#5F0C17</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(95, 12, 23)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(95, 12, 23, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <g opacity="0.9">
+                                <rect
+                                  width="40"
+                                  height="40"
+                                  rx="8"
+                                  fill="#32060C"
+                                />
+                              </g>
+                            </svg>
+
+                            <div class="d-flex align-items-center">900</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#32060C</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(50, 6, 12)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(50, 6, 12, 1)</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Name">
+                          <div class="d-flex flex-row align-content-center">
+                            <svg
+                              width="40"
+                              height="40"
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <rect
+                                width="40"
+                                height="40"
+                                rx="8"
+                                fill="#170305"
+                              />
+                            </svg>
+
+                            <div class="d-flex align-items-center">950</div>
+                          </div>
+                        </td>
+                        <td data-label="HEX">
+                          <div>#170305</div>
+                        </td>
+                        <td data-label="RGB">
+                          <div>(23, 3, 5)</div>
+                        </td>
+                        <td data-label="CSS">
+                          <div>(23, 3, 5, 1)</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- 2 tab-->
+            <div
+              class="tab-pane fade"
+              id="immagine"
+              role="tabpanel"
+              aria-labelledby="tab-2"
+            >
+              <div
+                class="tab-pane fade show active"
+                id="colori semantici"
+                role="tablist"
+                aria-labelledby="tab-1"
+              >
+                <h4 class="mb-4">Colori semantici</h4>
+
+                <!--card grigia con tabella intenra primary color verde-->
+                <div class="bg-neutral-500 rounded p-4 my-5">
+                  <h6 class="my-3">Neutral</h6>
+                  <div class="list-table table-responsive table-sm table-even">
+                    <table>
+                      <thead>
+                        <tr class="bg-primary10">
+                          <th>
+                            <p class="h6">Name</p>
+                          </th>
+                          <th>
+                            <p class="h6">Token semantic</p>
+                          </th>
+
+                          <th>
+                            <p class="h6">Parent</p>
+                          </th>
+                          <th>
+                            <p class="h6">Global color</p>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody class="bg-neutral-500">
+                        <tr>
+                          <td class="colf-form colf-check" data-label="Name">
+                            <div class="d-flex flex-row align-content-center">
+                              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="8" fill="#000912"/>
+                                </svg>
+                                
+
+                              <div class="d-flex align-items-center">Page dark</div>
+                            </div>
+                          </td>
+                          <td data-label="Token semantic">
+                            <div class="text-break">backgorund.neautral.pagedark</div>
+                          </td>
+                          <td data-label="Parent">
+                            <div>Global.blu.950+</div>
+                          </td>
+                          <td data-label="Global color">
+                            <div>Blu.950+</div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="colf-form colf-check" data-label="Name">
+                            <div class="d-flex flex-row align-content-center">
+                              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="39" height="39" rx="7.5" fill="white"/>
+                                <rect x="0.5" y="0.5" width="39" height="39" rx="7.5" stroke="#CBD5E1"/>
+                                </svg>
+                                
+                                
+
+                              <div class="d-flex align-items-center">Page light</div>
+                            </div>
+                          </td>
+                          <td data-label="Token semantic">
+                            <div class="text-break">backgorund.neautral.pagelightdffdffee</div>
+                          </td>
+                          <td data-label="Parent">
+                            <div>Global.white</div>
+                          </td>
+                          <td data-label="Global color">
+                            <div>White</div>
+                          </td>
+                        </tr>
                         
-                      
-                      </div>
-                    </td>
-                    <td data-label="Come progettare al meglio">
-                      <div>
-                        (256, 256, 256)
-                      </div>
-                    </td>
-                    <td data-label="Come si applica a tutti">
-                      <div>
-                        (256, 256, 256,1)
-                      </div>
-                    </td>
-                  </tr>
-  
-                  <tr class="bg-gray">
-                    <td class="colf-form colf-check" data-label="Utente">
-                      <div> </div>
-                      <p>100</p>
-                    </td>
-                    <td data-label="Come sperimentano l’interfaccia">
-                      <div>
-                        #FFFFFF
-                        
-                      
-                      </div>
-                    </td>
-                    <td data-label="Come progettare al meglio">
-                      <div>
-                        (256, 256, 256)
-                      </div>
-                    </td>
-                    <td data-label="Come si applica a tutti">
-                      <div>
-                        (256, 256, 256,1)
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div> 
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- fine tab container-->
           </div>
+
+          <!-- section do dont-->
           <div>
-            <h6> Do and don’t</h6> 
-           <p >
-            Utilizza contrasti elevati che permettano una buona leggibilità di tutti gli elementi.
-            </p> 
+            <h6>Do and don’t</h6>
+            <p>
+              Utilizza contrasti elevati che permettano una buona leggibilità di
+              tutti gli elementi.
+            </p>
 
             <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
-              
+              <div class="col-12 col-md-6">
+                <div class="card bg-gray">
+                  <div class="card-body">
+                    <div class="card-bar">
+                      <div class="bar-group">
+                        <div class="badge badge-sm badge-success">
+                          <span> Do </span>
+                          <svg class="icon icon-sm icon-success ms-2">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column flex-lg-row p-8 row gx-6 gy-6"
+                    >
+                    <div class="badge badge-primary badge-lg">
+                      <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-example"></use>
+                      </svg>
+                      <span>
+                        Lorem ipsum
+                      </span>
+                    </div>
+                      <img
+                        class="w-50"
+                        src="./imgs/color-system/do2.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="col-12 col-md-6">
                 <div class="card bg-gray">
                   <div class="card-body">
@@ -442,63 +3423,29 @@
                         </div>
                       </div>
                     </div>
-<div class="d-flex  flex-row p-8"> 
-    <img
-                      class="w-100"
-                      src="./imgs/color-system/dont1.svg"
-                      alt=""
-                    />
-                    <img
-                      class="w-100"
-                      src="./imgs/color-system/dont2.svg"
-                      alt=""
-                    />
-</div>
-                  
-                    <div class="card-text my-2">
-                      <div class="body-lg">
-                        <strong> Contrasto </strong>: 1.77:1
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="card bg-gray">
-                  <div class="card-body">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-danger">
-                          <span> Don't </span>
-                          <svg class="ms-2 icon icon-sm icon-danger">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-error-circle"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-
-                    <img
-                      class="w-100"
-                      src="./imgs/accessibilità_page/dont4.svg"
-                      alt=""
-                    />
-                    <div class="card-text my-2">
-                      <div class="body-lg">
-                        <strong> Contrasto </strong>2.88:1
-                      </div>
+                    <div class="d-flex flex-row p-8 row gx-6">
+                      <img
+                        class="w-50"
+                        src="./imgs/color-system/dont1.svg"
+                        alt=""
+                      />
+                      <img
+                        class="w-50"
+                        src="./imgs/color-system/dont2.svg"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div> 
-          
-            <div
-              class="d-flex flex-column flex-wrap flex-md-row row mb-8 gy-4"
-            >
-              <div class="col-12 col-md-6 col-lg-3">
+            <p>
+              Non utilizzare colori che veicolano informazioni contrastanti
+              rispetto alle convenzioni. Se hai dei dubbi affidati alla
+              semantica utilizzata per la nomenclatura dei token.
+            </p>
+            <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+              <div class="col-12 col-md-6">
                 <div class="card bg-gray">
                   <div class="card-body">
                     <div class="card-bar">
@@ -513,22 +3460,45 @@
                         </div>
                       </div>
                     </div>
-
-                    <img
-                      class="w-100"
-                      src="/imgs/accessibilità_page/do1.svg"
-                      alt=""
-                    />
-
-                    <div class="card-text my-2">
-                      <div class="body-lg">
-                        <strong>Contrasto </strong>: 9.12:1 - Livello AAA
-                      </div>
+                    <div class="d-flex flex-column flex-lg-row p-8 row gx-6">
+                      <img class="" src="./imgs/color-system/do3.svg" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-3">
+              <div class="col-12 col-md-6">
+                <div class="card bg-gray">
+                  <div class="card-body">
+                    <div class="card-bar">
+                      <div class="bar-group">
+                        <div class="badge badge-sm badge-danger">
+                          <span> Don't </span>
+                          <svg class="ms-2 icon icon-sm icon-danger">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row p-8 row gx-6">
+                      <img
+                        class="w-100"
+                        src="./imgs/color-system/dont3.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p>
+              Quando crei nuovi elementi ricordati di utilizzare per tutti gli
+              atomi gli stessi token semantici.
+            </p>
+            <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+              <div class="col-12 col-md-6">
                 <div class="card bg-gray">
                   <div class="card-body">
                     <div class="card-bar">
@@ -543,22 +3513,13 @@
                         </div>
                       </div>
                     </div>
-
-                    <img
-                      class="w-100"
-                      src="/imgs/accessibilità_page/do2.svg"
-                      alt=""
-                    />
-
-                    <div class="card-text my-2">
-                      <div class="body-lg">
-                        <strong>Contrasto </strong>: 9.12:1 - Livello AAA
-                      </div>
+                    <div class="d-flex flex-column flex-lg-row p-8 row gx-6">
+                      <img class="" src="./imgs/color-system/do4.svg" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-3">
+              <div class="col-12 col-md-6">
                 <div class="card bg-gray">
                   <div class="card-body">
                     <div class="card-bar">
@@ -573,21 +3534,52 @@
                         </div>
                       </div>
                     </div>
-
-                    <img
-                      class="w-100"
-                      src="./imgs/accessibilità_page/dont1.svg"
-                      alt=""
-                    />
-                    <div class="card-text my-2">
-                      <div class="body-lg">
-                        <strong> Contrasto </strong>: 1.77:1
-                      </div>
+                    <div class="d-flex flex-row p-8 row gx-6">
+                      <img
+                        class="w-100"
+                        src="./imgs/color-system/dont4.svg"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-3">
+            </div>
+
+            <p>
+              Non modificare i colori di base definiti per le componenti. Se
+              dovessi avere necessità di varianti differenti ricordati sempre di
+              controllare che venga rispettato il contrasto minimo di 4.5:1 per
+              i testi e gli elementi di medie dimensioni e di 3:1 per i testi e
+              le immagini di grandi dimensioni.
+            </p>
+            <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+              <div class="col-12 col-md-6">
+                <div class="card bg-gray">
+                  <div class="card-body">
+                    <div class="card-bar">
+                      <div class="bar-group">
+                        <div class="badge badge-sm badge-success">
+                          <span> Do </span>
+                          <svg class="icon icon-sm icon-success ms-2">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column flex-lg-row p-8 row gx-6">
+                      <img
+                        class="w-50"
+                        src="./imgs/color-system/do5.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
                 <div class="card bg-gray">
                   <div class="card-body">
                     <div class="card-bar">
@@ -602,214 +3594,157 @@
                         </div>
                       </div>
                     </div>
-
-                    <img
-                      class="w-100"
-                      src="./imgs/accessibilità_page/dont2.svg"
-                      alt=""
-                    />
-                    <div class="card-text my-2">
-                      <div class="body-lg">
-                        <strong> Contrasto </strong>2.88:1
-                      </div>
+                    <div class="d-flex flex-row p-8 row gx-6">
+                      <img
+                        class="w-100"
+                        src="./imgs/color-system/dont5.svg"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            
-
-            
-
-            <h6 class="h6 my-4">Uso del colore e daltonismo</h6>
-
-            <p>
-              Quando si progetta, è importante non fare affidamento
-              esclusivamente sul colore per trasmettere significato, poiché
-              circa l'8% della popolazione maschile e lo 0,4% della
-              popolazione femminile soffre di disturbi visivi legati alla
-              percezione del colore. Per garantire che i contenuti siano
-              comprensibili a tutti è consigliato utilizzare un simulatore per
-              daltonismo che permetta di verificare la visibilità dei
-              contenuti e assicurarsi così che essi siano chiari anche senza
-              il supporto del colore.
-            </p>
-            <p>
-              Se stai lavorando con Figma, ti consigliamo di utilizzare il
-              plugin Stark.
-            </p>
           </div>
 
-          <!-- 2 tab-->
-          <div
-            class="tab-pane fade"
-            id="immagine"
-            role="tabpanel"
-            aria-labelledby="tab-2"
-          >
-            <div class="mb-4">
-              <h4 class="mb-4">Immagini</h4>
-              <p>
-                Esistono due tipologie di immagini che è possibile utilizzare
-                all’interno dei tuoi progetti: informative e decorative.
-              </p>
-            </div>
+          <div class="d-flex flex-column flex-wrap flex-md-row row mb-8 gy-4">
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card bg-gray">
+                <div class="card-body">
+                  <div class="card-bar">
+                    <div class="bar-group">
+                      <div class="badge badge-sm badge-success">
+                        <span> Do </span>
+                        <svg class="icon icon-sm icon-success ms-2">
+                          <use
+                            href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
 
-            <div class="bg-gray p-4 rounded my-4">
-              <p class="fw-bold">Immagini informative</p>
-              <p>
-                Sono tutte le immagini che trasmettono informazioni importanti
-                e comunicano visivamente concetti e informazioni. <br />
-                Pertanto:
-              </p>
-              <ul>
-                <li>
-                  Il testo alternativo deve veicolare le stesse informazioni
-                  contenute nell'immagine;
-                </li>
-                <li>
-                  Assicurati che il testo alternativo sia breve e appropriato
-                  al contesto;
-                </li>
-                <li>
-                  Se le stesse informazioni sono già presenti come testo sullo
-                  schermo, l'immagine può essere considerata decorativa.
-                </li>
-              </ul>
+                  <img
+                    class="w-100"
+                    src="/imgs/accessibilità_page/do1.svg"
+                    alt=""
+                  />
 
-              <div class="d-flex">
-                <img
-                  class="immaginitab me-4"
-                  src="/imgs/accessibilità_page/immagini1.svg"
-                  alt=""
-                />
-                <img
-                  class="immaginitab"
-                  src="/imgs/accessibilità_page/immagini2.svg"
-                  alt=""
-                />
+                  <div class="card-text my-2">
+                    <div class="body-lg">
+                      <strong>Contrasto </strong>: 9.12:1 - Livello AAA
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card bg-gray">
+                <div class="card-body">
+                  <div class="card-bar">
+                    <div class="bar-group">
+                      <div class="badge badge-sm badge-success">
+                        <span> Do </span>
+                        <svg class="icon icon-sm icon-success ms-2">
+                          <use
+                            href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
 
-            <div class="bg-gray p-4 rounded">
-              <p class="fw-bold">Immagini informative</p>
-              <p>
-                Si tratta di immagini che non trasmettono informazioni. Sono
-                ad esempio i bordi, gli stati vuoti, le immagini di ambiente e
-                di sfondo. Queste ultime:
-              </p>
-              <ul>
-                <li>dovrebbero essere ignorate dallo screen reader;</li>
-                <li>
-                  Assicurati che il testo alternativo sia breve e appropriato
-                  al contesto;
-                </li>
-                <li>
-                  possono essere definite come immagine di sfondo nel foglio
-                  di stile;
-                </li>
-              </ul>
+                  <img
+                    class="w-100"
+                    src="/imgs/accessibilità_page/do2.svg"
+                    alt=""
+                  />
 
-              <div class="d-flex">
-                <img
-                  class="immaginitab me-4"
-                  src="/imgs/accessibilità_page/immagini3.svg"
-                  alt=""
-                />
-                <img
-                  class="immaginitab"
-                  src="/imgs/accessibilità_page/immagini4.svg"
-                  alt=""
-                />
+                  <div class="card-text my-2">
+                    <div class="body-lg">
+                      <strong>Contrasto </strong>: 9.12:1 - Livello AAA
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card bg-gray">
+                <div class="card-body">
+                  <div class="card-bar">
+                    <div class="bar-group">
+                      <div class="badge badge-sm badge-danger">
+                        <span> Don't </span>
+                        <svg class="ms-2 icon icon-sm icon-danger">
+                          <use
+                            href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
 
-            <div>
-              <p class="fw-bold h-5">Come rendere accessibile un’immagine</p>
-              <p>
-                La migliore modalità per fornire una descrizione testuale alle
-                immagini è certamente quella di utilizzare l'attributo<code
-                  >&lt;alt&gt;</code
-                >
-                (una stringa testuale che serve a descrivere un’immagine a
-                fonti “alternative” e ad assicurare la massima accessibilità
-                delle risorse) sull'elemento
-                <strong> <code>&lt;img&gt;</code> </strong> (l’immagine). A
-                questo punto, il testo risulterà fruibile tramite le Assistive
-                Technologies (AT): screen readers e voice assistants (come per
-                esempio Siri o Assistente Google). <br />
-              </p>
-              <p>
-                Risulta dunque molto importante conoscere lo scopo ed il senso
-                dell'immagine, per fornire la miglior descrizione testuale
-                possibile
-              </p>
-              <ul>
-                <li>
-                  <strong>Immagini cliccabili. </strong> Se l'immagine risulta
-                  essere un pulsante verso altre pagine, l’alt text dovrebbe
-                  descrivere la destinazione del link piuttosto che l’immagine
-                  stessa.
-                </li>
-                <li>
-                  <strong>Immagini informative. </strong>
-                  Per immagini complesse che contengono molte informazioni,
-                  come le infografiche, può essere utile fornire un’alt text
-                  che riassuma i punti chiave e se possibile fornire un testo
-                  equivalente dettagliato altrove nella pagina o tramite un
-                  link a una descrizione completa. Icone. Per le icone l’alt
-                  text dovrebbe comunicare la funzione dell’icona, non la sua
-                  descrizione visiva. 
-                </li>
-                <li>
-                  <strong>Immagini decorative. </strong> Per immagini che sono
-                  utilizzate per scopo di interazione o design, che producono
-                  atmosfera e mirano a creare una particolare emozione
-                  nell'utente, la descrizione dovrebbe puntare a produrre lo
-                  stesso tipo di emozione, per permettere agli utenti con
-                  disabilità di provare le stesse sensazioni.
-                </li>
-              </ul>
+                  <img
+                    class="w-100"
+                    src="./imgs/accessibilità_page/dont1.svg"
+                    alt=""
+                  />
+                  <div class="card-text my-2">
+                    <div class="body-lg">
+                      <strong> Contrasto </strong>: 1.77:1
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <div class="card bg-gray">
+                <div class="card-body">
+                  <div class="card-bar">
+                    <div class="bar-group">
+                      <div class="badge badge-sm badge-danger">
+                        <span> Don't </span>
+                        <svg class="ms-2 icon icon-sm icon-danger">
+                          <use
+                            href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
 
-            <div>
-              <p class="fw-bold h-5">Scrivere un alt efficace</p>
-              <p></p>
-              <ul>
-                <li>
-                  <strong> Brevità.</strong> Un testo alternativo lungo può
-                  infastidire gli utenti di screen reader, quindi è meglio
-                  usare il minor numero di parole possibile per descrivere
-                  l’immagine. Idealmente, l’alt text dovrebbe essere breve
-                  (circa 125 caratteri) per assicurare che i lettori di
-                  schermo lo leggano per intero senza tagli.
-                </li>
-                <li>
-                  <strong> Precisione.</strong> Il testo deve fornire una
-                  descrizione chiara e concisa di ciò che è raffigurato. Ad
-                  esempio, invece di “pesci”, un alt text ottimizzato potrebbe
-                  essere “pesci rossi che nuotano in un acquario”.
-                </li>
-                <li>
-                  <strong> Chiarezza. </strong> È importante includere parole
-                  chiave pertinenti, inserite in modo naturale e solo se
-                  rilevanti per l’immagine.
-                </li>
-                <li>
-                  <strong> Evitare la ridondanza.</strong> Gli screen reader
-                  comprendono che la risorsa è una immagine: non c’è quindi
-                  bisogno di scrivere “immagine di” o “foto di” nell’alt text.
-                </li>
-              </ul>
+                  <img
+                    class="w-100"
+                    src="./imgs/accessibilità_page/dont2.svg"
+                    alt=""
+                  />
+                  <div class="card-text my-2">
+                    <div class="body-lg">
+                      <strong> Contrasto </strong>2.88:1
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          
-        </div>
 
-          <!-- sezione card-->
-        </div>
+          <h6 class="h6 my-4">Uso del colore e daltonismo</h6>
 
+          <p>
+            Quando si progetta, è importante non fare affidamento esclusivamente
+            sul colore per trasmettere significato, poiché circa l'8% della
+            popolazione maschile e lo 0,4% della popolazione femminile soffre di
+            disturbi visivi legati alla percezione del colore. Per garantire che
+            i contenuti siano comprensibili a tutti è consigliato utilizzare un
+            simulatore per daltonismo che permetta di verificare la visibilità
+            dei contenuti e assicurarsi così che essi siano chiari anche senza
+            il supporto del colore.
+          </p>
+          <p>
+            Se stai lavorando con Figma, ti consigliamo di utilizzare il plugin
+            Stark.
+          </p>
+        </div>
         <!-- section 1-->
         <div class="bg-gray my-5 p-6 rounded">
           <h4 class="fw-bold mb-5">Cosa puoi trovare al suo interno</h4>
@@ -957,6 +3892,7 @@
           </h5>
           <div>
             <div class="d-flex flex-column row gy-5">
+              <div class="col-12"> 
               <div class="card">
                 <div class="card-body">
                   <div class="card-title">
@@ -971,6 +3907,8 @@
                   </div>
                 </div>
               </div>
+            </div>
+            <div class="col-12"> 
               <div class="card">
                 <div class="card-body">
                   <div class="card-title">
@@ -984,7 +3922,8 @@
                     per fornire un'esperienza riconoscibile
                   </div>
                 </div>
-              </div>
+              </div></div>
+              <div class="col-12"> 
               <div class="card">
                 <div class="card-body">
                   <div class="card-title">
@@ -998,7 +3937,8 @@
                     per fornire un'esperienza riconoscibile
                   </div>
                 </div>
-              </div>
+              </div></div>
+              <div class="12"> 
               <div class="card">
                 <div class="card-body">
                   <div class="card-title">
@@ -1014,7 +3954,7 @@
                     utilizzarli in modo efficace
                   </div>
                 </div>
-              </div>
+              </div></div>
             </div>
           </div>
         </div>
