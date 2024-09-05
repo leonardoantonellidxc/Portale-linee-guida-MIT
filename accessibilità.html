@@ -219,7 +219,7 @@
           <div>
             <div class="row gy-5">
               <div class="col-12 col-md-6 col-lg-3">
-                <div class="card">
+                <div class="card h-100">
                   <div class="card-body">
                     <div class="card-title">
                       <div class="text-icon h4">
@@ -242,7 +242,7 @@
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-3">
-                <div class="card">
+                <div class="card h-100">
                   <div class="card-body">
                     <div class="card-title">
                       <div class="text-icon h4">
@@ -265,7 +265,7 @@
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-3">
-                <div class="card">
+                <div class="card h-100">
                   <div class="card-body">
                     <div class="card-title">
                       <div class="text-icon h4">
@@ -287,7 +287,7 @@
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-3">
-                <div class="card">
+                <div class="card h-100">
                   <div class="card-body">
                     <div class="card-title">
                       <div class="text-icon h4">
@@ -619,6 +619,7 @@
                           <strong class="h6"
                             >Componenti dell’interfaccia utente</strong
                           >
+                          <br />
 
                           (immagini, componenti, sezioni, ecc)
                         </p>
@@ -902,7 +903,7 @@
                   Se stai lavorando con Figma, ti consigliamo di utilizzare il
                   plugin Stark.
                 </p>
-                <div class="d-md-none">
+                <div class="d-lg-none">
                   <img
                     class="w-100"
                     src="./imgs/accessibilità_page/palettet.svg"
@@ -957,14 +958,14 @@
                   </li>
                 </ul>
 
-                <div class="d-flex w-100">
+                <div class="row gy-4">
                   <img
-                    class="immaginitab me-4"
+                    class="immaginitab col-auto"
                     src="/imgs/accessibilità_page/immagini1.svg"
                     alt=""
                   />
                   <img
-                    class="immaginitab"
+                    class="immaginitab col-auto"
                     src="/imgs/accessibilità_page/immagini2.svg"
                     alt=""
                   />
@@ -990,14 +991,14 @@
                   </li>
                 </ul>
 
-                <div class="d-flex">
+                <div class="row">
                   <img
-                    class="immaginitab me-4"
+                    class="immaginitab col-auto"
                     src="/imgs/accessibilità_page/immagini3.svg"
                     alt=""
                   />
                   <img
-                    class="immaginitab"
+                    class="immaginitab col-auto gy-4"
                     src="/imgs/accessibilità_page/immagini4.svg"
                     alt=""
                   />
@@ -1153,14 +1154,16 @@
                 <div>
                   <div class="card rounded bg-gray">
                     <div class="card-body">
-                      <p class="fw-bold my-5">Accordion/Desktop</p>
-                      <h6>Stato default</h6>
-                      <div class="accordion" id="collapseExample">
+                      <p class="fw-bold my-5 ">Accordion/Desktop</p>
+                      <h6 class="mb-5">Stato default</h6>
+
+                      <div class="accordion mb-5" id="collapseExample">
                         <div class="accordion-item">
                           <div class="accordion-header" id="heading1c">
                             <button
+                              disabled
                               type="button"
-                              class="accordion-button"
+                              class="accordion-button collapsed"
                               data-bs-toggle="collapse"
                               data-bs-target="#collapse1c"
                               aria-expanded="true"
@@ -1178,7 +1181,7 @@
                           </div>
                           <div
                             id="collapse1c"
-                            class="accordion-collapse collapse show"
+                            class="accordion-collapse collapse"
                             role="region"
                             aria-labelledby="heading1c"
                           >
@@ -1187,17 +1190,43 @@
                         </div>
                       </div>
 
-                      <h6>Stato di focus</h6>
-
-                      
+                      <h6 class="mb-5">Stato di focus</h6>
+                      <div class="accordion force-focus mb-5" id="collapseExample">
+                        <div class="accordion-item">
+                          <div class="accordion-header" id="heading1c">
+                            <button
+                              disabled
+                              type="button"
+                              class="accordion-button collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse1c"
+                              aria-expanded="true"
+                              aria-controls="collapse1c"
+                            >
+                              <div class="text-icon">
+                                <svg class="icon icon-sm">
+                                  <use
+                                    href="/proto/mit/mit-v6.0.0/imgs/icon/sprite_fill.svg#it-example"
+                                  ></use>
+                                </svg>
+                                <span> Elemento Richiudibile #1 </span>
+                              </div>
+                            </button>
+                          </div>
+                          <div
+                            id="collapse1c"
+                            class="accordion-collapse collapse"
+                            role="region"
+                            aria-labelledby="heading1c"
+                          >
+                            <div class="accordion-body"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <img
-                  class="w-100"
-                  src="/imgs/accessibilità_page/tastiera0.svg"
-                  alt=""
-                />
+
                 <p class="fw-bold h-5">Ordine di navigazione</p>
 
                 <p>
@@ -1290,7 +1319,7 @@
             <div>
               <div class="row gy-5">
                 <div class="col-12 col-lg-4">
-                  <div class="card">
+                  <div class="card h-100">
                     <div class="card-body">
                       <div class="card-title">
                         <div class="text-icon h4">
@@ -1323,7 +1352,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                  <div class="card">
+                  <div class="card h-100">
                     <div class="card-body">
                       <div class="card-title">
                         <div class="text-icon h4">
@@ -1355,7 +1384,7 @@
                   </div>
                 </div>
                 <div class="col-12 col-lg-4">
-                  <div class="card">
+                  <div class="card h-100">
                     <div class="card-body">
                       <div class="card-title">
                         <div class="text-icon h4">

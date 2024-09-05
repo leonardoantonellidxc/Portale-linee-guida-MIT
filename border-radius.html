@@ -147,597 +147,535 @@
       </div>
     </header>
 
-    <div class="row">
-      <!-- Fonts 
-      <aside class="sidebar-menu col-3 ab">
-        <div class="sidebar-sticky">
-          <div class="d-flex justify-content-end">
-            <button
-              class="btn btn-outline-secondary d-lg-none"
-              type="button"
-              id="sidebarToggle"
-            >
-              Mostra/Chiudi Sidebar
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="sidebar-menu col-12 col-lg-3">
+          <div class="sidebar-sticky">
+            <div class="d-flex justify-content-end">
+              <button
+                class="btn btn-outline-secondary d-lg-none"
+                type="button"
+                id="sidebarToggle"
+              >
+                Mostra/Chiudi Sidebar
+              </button>
+            </div>
+            <div id="sidebar" class="bg-light sidebar">
+              <div class="">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Dashboard lorem </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ordini</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Prodotti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Clienti</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="col-12 col-lg-9" id="main-content">
+          <!-- hero-->
+          <div class="bg-hero-green p-6 rounded my-6">
+            <p class="fw-bold c-neutral-500">Design System</p>
+            <h1>Border radius</h1>
+          </div>
+          <!-- p-->
+          <p class="my-4">
+            L'utilizzo dei bordi è essenziale per garantire coerenza tra tutti
+            gli elementi delle pagine di design realizzate per il Ministero dei
+            Trasporti e delle Infrastrutture. Inoltre, contribuisce a conferire
+            un aspetto visivo più moderno, accattivante e gradevole, migliorando
+            complessivamente l'estetica dell'interfaccia e la sua usabilità.
+          </p>
+          <!-- section regole g-->
+          <div>
+            <h4 class="mb-4">Regole generali</h4>
+            <p>
+              Ogni elemento all'interno del Design system è dotato di
+              indicazioni specifiche riguardo ai bordi. In generale, sono stati
+              scelti angoli leggermente arrotondati per conferire al design un
+              aspetto sofisticato e autorevole, in contrasto con gli angoli
+              retti che possono apparire più rigidi e meno dinamici.
+            </p>
+
+            <div class="list-table table-responsive table-sm table-even">
+              <table>
+                <thead>
+                  <tr class="bg-primary10">
+                    <th class="col">
+                      <p class="h6">Token</p>
+                    </th>
+                    <th class="col">
+                      <p class="h6">Valore in px</p>
+                    </th class="col">
+
+                    <th class="col">
+                      <p class="h6">Utilizzo</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Radius - 0</p>
+                    </td>
+
+                    <td data-label="Valore in px">
+                      <div>0px</div>
+                    </td>
+                    <td data-label="Utilizzo">
+                      <div>
+                        Viene utilizzato per tutti quegli elementi che devono
+                        consentire l’accostamento con altri elementi. Per
+                        esempio, le celle di una tabella, gli accordion o ancora
+                        i singoli step di uno stepper
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Radius - 1</p>
+                    </td>
+
+                    <td data-label="Valore in px">
+                      <div>4px</div>
+                    </td>
+                    <td data-label="Utilizzo">
+                      <div>
+                        Viene utilizzato per la maggior parte dei componenti.
+                        Per esempio, per badge, bottoni, input field, ricerca,
+                        ecc.
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Radius - 2</p>
+                    </td>
+
+                    <td data-label="Valore in px">
+                      <div>8px</div>
+                    </td>
+                    <td data-label="Utilizzo">
+                      <div>
+                        Viene utilizzato per elementi come tooltip, modali,
+                        uploader, card, ecc...
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Radius - 5</p>
+                    </td>
+
+                    <td data-label="Valore in px">
+                      <div>500px</div>
+                    </td>
+                    <td data-label="Utilizzo">
+                      <div>
+                        Viene utilizzato per differenziare alcuni elementi tra
+                        loro o dallo sfondo. Ad esempio: il floating botton che
+                        possiede un border radius di 500px a differenza dei
+                        bottoni che possiedono un border radius di 4px
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- section Raapresentazione visiva-->
+          <div class="my-5">
+            <h4 class="mb-4">Rappresentazione visiva</h4>
+            <p class="my-5">
+              Di seguito vengono riportati tutte le tipologie di bordi che
+              possono essere utilizzati all’interno del design:
+            </p>
+
+            <div class="row gx-10 mx-0 justify-content-center bg-gray py-8">
+              <div class="col-auto text-center">
+                <p class="fw-bold">Radius - 0</p>
+                <img
+                  class="img-fluid"
+                  src="./imgs/border-page/quadrato1.svg"
+                  alt=""
+                />
+
+                <p>0px</p>
+              </div>
+              <div class="col-auto text-center">
+                <p class="fw-bold">Radius - 0</p>
+                <img
+                  class="img-fluid"
+                  src="./imgs/border-page/quadrato2.svg"
+                  alt=""
+                />
+
+                <p>0px</p>
+              </div>
+              <div class="col-auto text-center">
+                <p class="fw-bold">Radius - 0</p>
+                <img
+                  class="img-fluid"
+                  src="./imgs/border-page/quadrato3.svg"
+                  alt=""
+                />
+
+                <p>0px</p>
+              </div>
+              <div class="col-auto text-center">
+                <p class="fw-bold">Radius - 0</p>
+                <img
+                  class="img-fluid"
+                  src="./imgs/border-page/quadrato4.svg"
+                  alt=""
+                />
+
+                <p>0px</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- section do dont-->
+          <div class="my-5">
+            <h6>Do and don’t</h6>
+            <p>
+              Utilizza i bordi con raggio più piccolo per elementi di controllo,
+              come pulsanti e campi di input e bordi con raggio più ampio per
+              contenitori più grandi, come card o sezioni.
+            </p>
+
+            <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+              <div class="col-12 col-md-6">
+                <div class="card bg-gray">
+                  <div class="card-body">
+                    <div class="card-bar">
+                      <div class="bar-group">
+                        <div class="badge badge-sm badge-success">
+                          <span> Do </span>
+                          <svg class="icon icon-sm icon-success ms-2">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- inpunt-->
+                    <div class="my-5 d-slex justify-content-center">
+                      <div class="form-group has-feedback px-9">
+                        <label id="field1Label"> Title input </label>
+                        <div class="input-group">
+                          <div class="input-group-text">
+                            <svg class="icon icon-sm">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-example"
+                              ></use>
+                            </svg>
+                          </div>
+                          <div class="input-group-text divider"></div>
+                          <input
+                            type="text"
+                            class="form-control"
+                            name="field1"
+                            placeholder="Placeholder field"
+                            value="Lorem ipsum"
+                            aria-labelledby="field1Label"
+                          />
+                          <a class="input-group-text" href="javascript:">
+                            <svg class="icon icon-sm">
+                              <use
+                                href="/proto/mit/mit-v6.0.0/imgs/icon/sprite.svg#it-password-show"
+                              ></use>
+                            </svg>
+                          </a>
+                          <a class="input-group-text" href="javascript:">
+                            <svg class="icon icon-sm">
+                              <use
+                                href="/proto/mit/mit-v6.0.0/imgs/icon/sprite.svg#it-password-hide"
+                              ></use>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card bg-gray">
+                  <div class="card-body">
+                    <div class="card-bar">
+                      <div class="bar-group">
+                        <div class="badge badge-sm badge-danger">
+                          <span> Don't </span>
+                          <svg class="ms-2 icon icon-sm icon-danger">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my-5 d-flex justify-content-center">
+                      <img src="/imgs/border-page/dont1.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p>
+                Applica i bordi in modo coerente all’interno del design. Non
+                modificare i bordi predefiniti degli elementi in base al
+                contesto d’uso.
+              </p>
+              <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+                <div class="col-12 col-md-6">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- badge-->
+                      <div class="d-flex justify-content-center">
+                        <div class="my-5 d-slex justify-content-center">
+                          <div class="badge badge-bg-primary badge-lg">
+                            <svg class="icon">
+                              <use
+                                href="/imgs/icon/sprite.svg#it-example"
+                              ></use>
+                            </svg>
+                            <span> Lorem ipsum </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-5 d-flex justify-content-center">
+                        <img src="/imgs/border-page/dont2.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p>
+                Non usare valori di bordi estremi che non si allineano con il
+                resto del design e che ne possono compromettere la leggibilità o
+                la funzionalità degli elementi.
+              </p>
+              <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+                <div class="col-12 col-md-6">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- badge-->
+
+                      <div class="my-5 d-flex justify-content-center">
+                        <svg
+                          width="364"
+                          height="27"
+                          viewBox="0 0 364 27"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect width="60" height="27" rx="4" fill="#D9D9D9" />
+                          <rect
+                            x="76"
+                            width="60"
+                            height="27"
+                            rx="4"
+                            fill="#D9D9D9"
+                          />
+                          <rect
+                            x="152"
+                            width="60"
+                            height="27"
+                            rx="4"
+                            fill="#D9D9D9"
+                          />
+                          <rect
+                            x="228"
+                            width="60"
+                            height="27"
+                            rx="4"
+                            fill="#D9D9D9"
+                          />
+                          <rect
+                            x="304"
+                            width="60"
+                            height="27"
+                            rx="4"
+                            fill="#D9D9D9"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-5 d-flex justify-content-center">
+                        <svg
+                          width="364"
+                          height="27"
+                          viewBox="0 0 364 27"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect width="60" height="27" rx="4" fill="#D9D9D9" />
+                          <rect
+                            x="76"
+                            width="60"
+                            height="27"
+                            rx="4"
+                            fill="#D9D9D9"
+                          />
+                          <rect
+                            x="152"
+                            width="60"
+                            height="27"
+                            rx="4"
+                            fill="#D9D9D9"
+                          />
+                          <rect
+                            x="228"
+                            width="60"
+                            height="27"
+                            rx="13.5"
+                            fill="#D9D9D9"
+                          />
+                          <rect
+                            x="304"
+                            width="60"
+                            height="27"
+                            rx="4"
+                            fill="#D9D9D9"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- section Esempio di utilizzo -->
+          <div class="my-5">
+            <h4 class="mb-4">Esempio di utilizzo</h4>
+
+            <div class="row border py-8 px-10 gy-4">
+              <div
+                class="col-12 col-md-6 d-flex flex-column align-items-center"
+              >
+                <p class="fw-bold">Badge</p>
+                <div class="badge badge-primary badge-lg my-4">
+                  <svg class="icon">
+                    <use href="/imgs/icon/sprite.svg#it-example"></use>
+                  </svg>
+                  <span> Lorem ipsum </span>
+                </div>
+                <p class="fw-bolder">Border radius</p>
+                <p>4 px</p>
+              </div>
+              <div
+                class="col-12 col-md-6 d-flex flex-column align-items-center"
+              >
+                <p class="fw-bold">Chips</p>
+                <a class="chip chip-lg my-4" data-bs-dismiss="chip">
+                  <svg class="icon">
+                    <use href="/imgs/icon/sprite.svg#it-example"></use>
+                  </svg>
+                  <span> Lorem ipsum </span>
+                </a>
+                <p class="fw-bolder">Border radius</p>
+                <p>4 px</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- paginazione-->
+
+          <div class="d-flex justify-content-between py-3 bg-lightblu">
+            <button type="button" class="btn btn-bare btn-sm">
+              <svg class="icon">
+                <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
+              </svg>
+              <span>Accessibilità </span>
+            </button>
+            <button type="button" class="btn btn-bare btn-sm">
+              <span>Index </span>
+              <svg class="icon">
+                <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+              </svg>
             </button>
           </div>
-          <div id="sidebar" class="bg-light sidebar">
-            <div class="">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Dashboard lorem </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Ordini</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Prodotti</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Clienti</a>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </aside>-->
-      <main class="container-fluid col-12 col-lg-9" id="main-content">
-        <!-- hero-->
-        <div class="bg-hero-green p-6 rounded my-6">
-          <p class="fw-bold c-neutral-500">Design System</p>
-          <h1>Border radius</h1>
-        </div>
-        <!-- p-->
-        <p class="my-4">
-          L'utilizzo dei bordi è essenziale per garantire coerenza tra tutti gli
-          elementi delle pagine di design realizzate per il Ministero dei
-          Trasporti e delle Infrastrutture. Inoltre, contribuisce a conferire un
-          aspetto visivo più moderno, accattivante e gradevole, migliorando
-          complessivamente l'estetica dell'interfaccia e la sua usabilità.
-        </p>
-        <!-- section regole g-->
-        <div>
-          <h4 class="mb-4">Regole generali</h4>
-          <p>
-            Ogni elemento all'interno del Design system è dotato di indicazioni
-            specifiche riguardo ai bordi. In generale, sono stati scelti angoli
-            leggermente arrotondati per conferire al design un aspetto
-            sofisticato e autorevole, in contrasto con gli angoli retti che
-            possono apparire più rigidi e meno dinamici.
-          </p>
-
-          <div class="list-table table-responsive table-sm table-even">
-            <table>
-              <thead>
-                <tr class="bg-primary10">
-                  <th>
-                    <p class="h6">Token</p>
-                  </th>
-                  <th>
-                    <p class="h6">Valore in px</p>
-                  </th>
-
-                  <th>
-                    <p class="h6">Utilizzo</p>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="colf-form colf-check" data-label="Token">
-                    <p class="h6">Radius - 0</p>
-                  </td>
-
-                  <td data-label="Valore in px">
-                    <div>0px</div>
-                  </td>
-                  <td data-label="Utilizzo">
-                    <div>
-                      Viene utilizzato per tutti quegli elementi che devono
-                      consentire l’accostamento con altri elementi. Per esempio,
-                      le celle di una tabella, gli accordion o ancora i singoli
-                      step di uno stepper
-                    </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td class="colf-form colf-check" data-label="Token">
-                    <p class="h6">Radius - 1</p>
-                  </td>
-
-                  <td data-label="Valore in px">
-                    <div>4px</div>
-                  </td>
-                  <td data-label="Utilizzo">
-                    <div>
-                      Viene utilizzato per la maggior parte dei componenti. Per
-                      esempio, per badge, bottoni, input field, ricerca, ecc.
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="colf-form colf-check" data-label="Token">
-                    <p class="h6">Radius - 2</p>
-                  </td>
-
-                  <td data-label="Valore in px">
-                    <div>8px</div>
-                  </td>
-                  <td data-label="Utilizzo">
-                    <div>
-                      Viene utilizzato per elementi come tooltip, modali,
-                      uploader, card, ecc...
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="colf-form colf-check" data-label="Token">
-                    <p class="h6">Radius - 5</p>
-                  </td>
-
-                  <td data-label="Valore in px">
-                    <div>500px</div>
-                  </td>
-                  <td data-label="Utilizzo">
-                    <div>
-                      Viene utilizzato per differenziare alcuni elementi tra
-                      loro o dallo sfondo. Ad esempio: il floating botton che
-                      possiede un border radius di 500px a differenza dei
-                      bottoni che possiedono un border radius di 4px
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- section Raapresentazione visiva-->
-        <div class="my-5">
-          <h4 class="mb-4">Rappresentazione visiva</h4>
-          <p class="my-5">
-            Di seguito vengono riportati tutte le tipologie di bordi che possono
-            essere utilizzati all’interno del design:
-          </p>
-
-          <div class="row bg-gray py-8 px-10">
-            <div
-              class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center"
-            >
-              <p class="fw-bold">Radius - 0</p>
-              <svg
-                width="140"
-                height="140"
-                viewBox="0 0 140 140"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="140" height="140" fill="white" />
-                <mask id="path-1-inside-1_876_39722" fill="white">
-                  <path d="M0 106H40V140H0V106Z" />
-                </mask>
-                <path d="M0 106H40V140H0V106Z" fill="white" />
-                <path
-                  d="M0 140H-2V142H0V140ZM40 138H0V142H40V138ZM2 140V106H-2V140H2Z"
-                  fill="#94C4F5"
-                  mask="url(#path-1-inside-1_876_39722)"
-                />
-              </svg>
-
-              <p>0px</p>
-            </div>
-            <div
-              class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center"
-            >
-              <p class="fw-bold">Radius - 1</p>
-              <svg
-                width="140"
-                height="140"
-                viewBox="0 0 140 140"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="140" height="140" rx="4" fill="white" />
-                <mask id="path-2-inside-1_876_39724" fill="white">
-                  <path d="M0 106H40V140H4C1.79086 140 0 138.209 0 136V106Z" />
-                </mask>
-                <path
-                  d="M0 106H40V140H4C1.79086 140 0 138.209 0 136V106Z"
-                  fill="white"
-                />
-                <path
-                  d="M0 106H40H0ZM40 142H4C0.686292 142 -2 139.314 -2 136H2C2 137.105 2.89543 138 4 138H40V142ZM4 142C0.686292 142 -2 139.314 -2 136V106H2V136C2 137.105 2.89543 138 4 138V142ZM40 106V140V106Z"
-                  fill="#94C4F5"
-                  mask="url(#path-2-inside-1_876_39724)"
-                />
-              </svg>
-
-              <p>4px</p>
-            </div>
-            <div
-              class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center"
-            >
-              <p class="fw-bold">Radius - 2</p>
-              <svg
-                width="140"
-                height="140"
-                viewBox="0 0 140 140"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="140" height="140" rx="8" fill="white" />
-                <mask id="path-2-inside-1_876_39726" fill="white">
-                  <path d="M0 106H40V140H8C3.58172 140 0 136.418 0 132V106Z" />
-                </mask>
-                <path
-                  d="M0 106H40V140H8C3.58172 140 0 136.418 0 132V106Z"
-                  fill="white"
-                />
-                <path
-                  d="M0 106H40H0ZM40 142H8C2.47715 142 -2 137.523 -2 132H2C2 135.314 4.68629 138 8 138H40V142ZM8 142C2.47715 142 -2 137.523 -2 132V106H2V132C2 135.314 4.68629 138 8 138V142ZM40 106V140V106Z"
-                  fill="#94C4F5"
-                  mask="url(#path-2-inside-1_876_39726)"
-                />
-              </svg>
-
-              <p>8px</p>
-            </div>
-            <div
-              class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center"
-            >
-              <p class="fw-bold">Radius - 2</p>
-              <svg
-                width="140"
-                height="140"
-                viewBox="0 0 140 140"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <mask id="path-1-inside-1_876_39729" fill="white">
-                  <path
-                    d="M0 70C0 31.3401 31.3401 0 70 0C108.66 0 140 31.3401 140 70C140 108.66 108.66 140 70 140C31.3401 140 0 108.66 0 70Z"
-                  />
-                </mask>
-                <path
-                  d="M0 70C0 31.3401 31.3401 0 70 0C108.66 0 140 31.3401 140 70C140 108.66 108.66 140 70 140C31.3401 140 0 108.66 0 70Z"
-                  fill="white"
-                />
-                <path
-                  d="M70 138C32.4446 138 2 107.555 2 70H-2C-2 109.765 30.2355 142 70 142V138ZM138 70C138 107.555 107.555 138 70 138V142C109.765 142 142 109.765 142 70H138ZM70 2C107.555 2 138 32.4446 138 70H142C142 30.2355 109.765 -2 70 -2V2ZM70 -2C30.2355 -2 -2 30.2355 -2 70H2C2 32.4446 32.4446 2 70 2V-2Z"
-                  fill="#94C4F5"
-                  mask="url(#path-1-inside-1_876_39729)"
-                />
-              </svg>
-
-              <p>500px</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- section do dont-->
-        <div class="my-5">
-          <h6>Do and don’t</h6>
-          <p>
-            Utilizza i bordi con raggio più piccolo per elementi di controllo,
-            come pulsanti e campi di input e bordi con raggio più ampio per
-            contenitori più grandi, come card o sezioni.
-          </p>
-
-          <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
-            <div class="col-12 col-md-6">
-              <div class="card bg-gray">
-                <div class="card-body">
-                  <div class="card-bar">
-                    <div class="bar-group">
-                      <div class="badge badge-sm badge-success">
-                        <span> Do </span>
-                        <svg class="icon icon-sm icon-success ms-2">
-                          <use
-                            href="/imgs/icon/sprite_fill.svg#it-check-circle"
-                          ></use>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- inpunt-->
-                  <div class="my-5 d-slex justify-content-center">
-                    <div class="form-group has-feedback px-9">
-                      <label id="field1Label"> Title input </label>
-                      <div class="input-group">
-                        <div class="input-group-text">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-example"
-                            ></use>
-                          </svg>
-                        </div>
-                        <div class="input-group-text divider"></div>
-                        <input
-                          type="text"
-                          class="form-control"
-                          name="field1"
-                          placeholder="Placeholder field"
-                          value="Lorem ipsum"
-                          aria-labelledby="field1Label"
-                        />
-                        <a class="input-group-text" href="javascript:">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/proto/mit/mit-v6.0.0/imgs/icon/sprite.svg#it-password-show"
-                            ></use>
-                          </svg>
-                        </a>
-                        <a class="input-group-text" href="javascript:">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/proto/mit/mit-v6.0.0/imgs/icon/sprite.svg#it-password-hide"
-                            ></use>
-                          </svg>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="card bg-gray">
-                <div class="card-body">
-                  <div class="card-bar">
-                    <div class="bar-group">
-                      <div class="badge badge-sm badge-danger">
-                        <span> Don't </span>
-                        <svg class="ms-2 icon icon-sm icon-danger">
-                          <use
-                            href="/imgs/icon/sprite_fill.svg#it-error-circle"
-                          ></use>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="my-5 d-flex justify-content-center">
-                    <img src="/imgs/border-page/dont1.svg" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <p>
-              Applica i bordi in modo coerente all’interno del design. Non
-              modificare i bordi predefiniti degli elementi in base al contesto
-              d’uso.
-            </p>
-            <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
-              <div class="col-12 col-md-6">
-                <div class="card bg-gray">
-                  <div class="card-body">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-success">
-                          <span> Do </span>
-                          <svg class="icon icon-sm icon-success ms-2">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-check-circle"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- badge-->
-                    <div class="d-flex justify-content-center">
-                      <div class="my-5 d-slex justify-content-center">
-                        <div class="badge badge-bg-primary badge-lg">
-                          <svg class="icon">
-                            <use href="/imgs/icon/sprite.svg#it-example"></use>
-                          </svg>
-                          <span> Lorem ipsum </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="card bg-gray">
-                  <div class="card-body">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-danger">
-                          <span> Don't </span>
-                          <svg class="ms-2 icon icon-sm icon-danger">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-error-circle"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="my-5 d-flex justify-content-center">
-                      <img src="/imgs/border-page/dont2.svg" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <p>
-              Non usare valori di bordi estremi che non si allineano con il
-              resto del design e che ne possono compromettere la leggibilità o
-              la funzionalità degli elementi.
-            </p>
-            <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
-              <div class="col-12 col-md-6">
-                <div class="card bg-gray">
-                  <div class="card-body">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-success">
-                          <span> Do </span>
-                          <svg class="icon icon-sm icon-success ms-2">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-check-circle"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- badge-->
-
-                    <div class="my-5 d-flex justify-content-center">
-                      <svg
-                        width="364"
-                        height="27"
-                        viewBox="0 0 364 27"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect width="60" height="27" rx="4" fill="#D9D9D9" />
-                        <rect
-                          x="76"
-                          width="60"
-                          height="27"
-                          rx="4"
-                          fill="#D9D9D9"
-                        />
-                        <rect
-                          x="152"
-                          width="60"
-                          height="27"
-                          rx="4"
-                          fill="#D9D9D9"
-                        />
-                        <rect
-                          x="228"
-                          width="60"
-                          height="27"
-                          rx="4"
-                          fill="#D9D9D9"
-                        />
-                        <rect
-                          x="304"
-                          width="60"
-                          height="27"
-                          rx="4"
-                          fill="#D9D9D9"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="card bg-gray">
-                  <div class="card-body">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-danger">
-                          <span> Don't </span>
-                          <svg class="ms-2 icon icon-sm icon-danger">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-error-circle"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="my-5 d-flex justify-content-center">
-                      <svg
-                        width="364"
-                        height="27"
-                        viewBox="0 0 364 27"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect width="60" height="27" rx="4" fill="#D9D9D9" />
-                        <rect
-                          x="76"
-                          width="60"
-                          height="27"
-                          rx="4"
-                          fill="#D9D9D9"
-                        />
-                        <rect
-                          x="152"
-                          width="60"
-                          height="27"
-                          rx="4"
-                          fill="#D9D9D9"
-                        />
-                        <rect
-                          x="228"
-                          width="60"
-                          height="27"
-                          rx="13.5"
-                          fill="#D9D9D9"
-                        />
-                        <rect
-                          x="304"
-                          width="60"
-                          height="27"
-                          rx="4"
-                          fill="#D9D9D9"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- section Esempio di utilizzo -->
-        <div class="my-5">
-          <h4 class="mb-4">Esempio di utilizzo</h4>
-
-          <div class="row border py-8 px-10 gy-4">
-            <div class="col-12 col-md-6 d-flex flex-column align-items-center">
-              <p class="fw-bold">Badge</p>
-              <div class="badge badge-primary badge-lg my-4">
-                <svg class="icon">
-                  <use href="/imgs/icon/sprite.svg#it-example"></use>
-                </svg>
-                <span> Lorem ipsum </span>
-              </div>
-              <p class="fw-bolder">Border radius</p>
-              <p>4 px</p>
-            </div>
-            <div class="col-12 col-md-6 d-flex flex-column align-items-center">
-              <p class="fw-bold">Chips</p>
-              <a class="chip chip-lg my-4" data-bs-dismiss="chip">
-                <svg class="icon">
-                  <use href="/imgs/icon/sprite.svg#it-example"></use>
-                </svg>
-                <span> Lorem ipsum </span>
-              </a>
-              <p class="fw-bolder">Border radius</p>
-              <p>4 px</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- paginazione-->
-
-        <div class="d-flex justify-content-between py-3 bg-lightblu">
-          <button type="button" class="btn btn-bare btn-sm">
-            <svg class="icon">
-              <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
-            </svg>
-            <span>Accessibilità </span>
-          </button>
-          <button type="button" class="btn btn-bare btn-sm">
-            <span>Index </span>
-            <svg class="icon">
-              <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
-            </svg>
-          </button>
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
     <!-- Cookie Banner 
     <section class="cookie-banner" aria-label="Gestione dei cookies">
         <div class="cookie-content">
