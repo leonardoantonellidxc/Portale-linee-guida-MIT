@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>MIT - Portale delle Linee Guida di UX e UI - Spacing</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- Bootstrap 5.3 -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- G36 Theme CSS -->
+    <link href="css/font.css" type="text/css" rel="stylesheet" />
+    <link href="css/form.css" type="text/css" rel="stylesheet" />
+    <link href="css/table.css" type="text/css" rel="stylesheet" />
+    <link href="css/theme.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom css-->
+    <link href="css/custom.css" type="text/css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link href="css/font.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="header bg-white pt-2 px-4 pt-lg-5 px-lg-9 sticky-top">
+      <div class="header-middle d-flex pb-lg-5">
+        <div class="nav-left">
+          <!-- Brand -->
+          <a class="navbar-brand" title="LOGO" href="#">
+            <span class="brand-logo"
+              ><svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="24" cy="24" r="24" fill="#0066CC" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.5 18.75L24 10L36.5 18.75H11.5ZM12.75 32.5V31.25H35.25V32.5H12.75ZM12.75 33.75V35H35.25V33.75H12.75ZM24 11.5L32.5 17.5H15.5L24 11.5ZM16.5 30V20H15.25V30H16.5ZM21.5 20V30H20.25V20H21.5ZM27.75 30V20H26.5V30H27.75ZM32.75 20V30H31.5V20H32.75Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+
+            <div class="brand-text">
+              MIT - Web <br />
+              Identity Portal
+            </div>
+          </a>
+        </div>
+
+        <div class="nav-right">
+          <!-- Search Wrapper -->
+          <div class="search-wrapper">
+            <!-- Desktop -->
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg class="icon icon-xs">
+                    <use href="/imgs/icon/sprite.svg#it-search"></use>
+                  </svg>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="main-search"
+                  placeholder="Search"
+                  value=""
+                  aria-label="Lorem ipsum dolor sit"
+                />
+              </div>
+            </div>
+
+            <!-- Mobile -->
+            <button type="button" class="btn btn-primary">
+              <svg class="icon icon-xs">
+                <use href="/imgs/icon/sprite.svg#it-search"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="v-line"></div>
+
+          <!-- Login -->
+          <div class="login-wrapper">
+            <button type="button" class="btn btn-sm btn btn-primary">
+              <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/imgs/icon/sprite.svg#it-user"></use>
+              </svg>
+              <span class="mobile-hidden-lg"> Accedi al portale </span>
+            </button>
+          </div>
+
+          <div class="navbar navbar-expand-lg ps-3 ps-lg-0">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="nav-left">
+                <nav class="nav-menu pt-3 pt-lg-0" aria-label="Lorem ipsum">
+                  <ul class="nav navbar-nav">
+                    <!-- Esempio Mega menu Container -->
+
+                    <li class="nav-item active">
+                      <a href="#" class="nav-link active">
+                        <span>Homepage</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <span>Design System</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        <span>Accessibilità</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="sidebar-menu col-12 col-lg-3">
+          <div class="sidebar-sticky">
+            <div class="d-flex justify-content-end">
+              <button
+                class="btn btn-outline-secondary d-lg-none"
+                type="button"
+                id="sidebarToggle"
+              >
+                Mostra/Chiudi Sidebar
+              </button>
+            </div>
+            <div id="sidebar" class="bg-light sidebar">
+              <div class="">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Dashboard lorem </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ordini</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Prodotti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Clienti</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="col-12 col-lg-9" id="main-content">
+          <!-- hero-->
+          <div class="bg-hero-green p-6 rounded my-6">
+            <p class="fw-bold c-neutral-500">Design System</p>
+            <h1>Spacing</h1>
+          </div>
+          <!-- p-->
+          <p class="my-4">
+            L'utilizzo di spaziature equilibrate permette di realizzare layout visivamente armoniosi e ben organizzati. 
+Gli spacing determinano infatti gli intervalli tra gli elementi della pagina, influenzando significativamente la struttura complessiva e migliorando la leggibilità dei contenuti. Un uso attento delle spaziature facilita la navigazione e l'interazione dell'utente, creando un'esperienza più intuitiva e gradevole.
+          </p>
+          <!-- section regole g-->
+          <div>
+            <h4 class="mb-4">Margini tra gli elementi (inset)</h4>
+            <p>
+              Di seguito vengono riportati i margini utilizzati internamente tra due o più elementi:
+            </p>
+
+            <div class="list-table table-responsive table-sm table-even">
+              <table class="tablefixed">
+                <thead>
+                  <tr class="bg-primary10">
+                    <th>
+                      <p class="h6">Token</p>
+                    </th>
+                    <th>
+                      <p class="h6">Name</p>
+                    </th>
+
+                    <th>
+                      <p class="h6">Size</p>
+                    </th>
+                    <th>
+                      <p class="h6">Example</p>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Spacing-inset-3xs</p>
+                    </td>
+
+                    <td data-label="Name">
+                      <div>
+                        3xs
+                      </div>
+                    </td>
+                    <td data-label="Size">
+                      <div>
+                        4px
+                      </div>
+                    </td>
+                    <td data-label="Example">
+                      <div>
+                        <img class="img-fluid" src="./imgs/spacing/example1.svg" alt="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Spacing-inset-2xs</p>
+                    </td>
+
+                    <td data-label="Name">
+                      <div>
+                        2xs
+                      </div>
+                    </td>
+                    <td data-label="Size">
+                      <div>
+                        8px
+                      </div>
+                    </td>
+                    <td data-label="Example">
+                      <div>
+                        <img class="img-fluid" src="./imgs/spacing/example2.svg" alt="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Spacing-inset-xs</p>
+                    </td>
+
+                    <td data-label="Name">
+                      <div>
+                        xs
+                      </div>
+                    </td>
+                    <td data-label="Size">
+                      <div>
+                        12px
+                      </div>
+                    </td>
+                    <td data-label="Example">
+                      <div>
+                        <img class="img-fluid" src="./imgs/spacing/example3.svg" alt="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Spacing-inset-s</p>
+                    </td>
+
+                    <td data-label="Name">
+                      <div>
+                        s
+                      </div>
+                    </td>
+                    <td data-label="Size">
+                      <div>
+                        16px
+                      </div>
+                    </td>
+                    <td data-label="Example">
+                      <div>
+                        <img class="img-fluid" src="./imgs/spacing/example4.svg" alt="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Spacing-inset-m</p>
+                    </td>
+
+                    <td data-label="Name">
+                      <div>
+                        m
+                      </div>
+                    </td>
+                    <td data-label="Size">
+                      <div>
+                        24px
+                      </div>
+                    </td>
+                    <td data-label="Example">
+                      <div>
+                        <img class="img-fluid" src="./imgs/spacing/example5.svg" alt="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Spacing-inset-l</p>
+                    </td>
+
+                    <td data-label="Name">
+                      <div>
+                        l
+                      </div>
+                    </td>
+                    <td data-label="Size">
+                      <div>
+                        32px
+                      </div>
+                    </td>
+                    <td data-label="Example">
+                      <div>
+                        <img class="img-fluid" src="./imgs/spacing/example6.svg" alt="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Spacing-inset-xl</p>
+                    </td>
+
+                    <td data-label="Name">
+                      <div>
+                        xl
+                      </div>
+                    </td>
+                    <td data-label="Size">
+                      <div>
+                        40px
+                      </div>
+                    </td>
+                    <td data-label="Example">
+                      <div>
+                        <img class="img-fluid" src="./imgs/spacing/example7.svg" alt="">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Spacing-inset-xxl</p>
+                    </td>
+
+                    <td data-label="Name">
+                      <div>
+                        2xl
+                      </div>
+                    </td>
+                    <td data-label="Size">
+                      <div>
+                        48px
+                      </div>
+                    </td>
+                    <td data-label="Example">
+                      <div>
+                        <img class="img-fluid" src="./imgs/spacing/example8.svg" alt="">
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+           <!-- section vertical spacing
+            -->
+            <div>
+              <h4 class="mb-4">Vertical spacing</h4>
+              <p>
+                Di seguito vengono riportati gli spacing verticali utilizzati tra due o più elementi:
+              </p>
+  
+              <div class="list-table table-responsive table-sm table-even">
+                <table class="tablefixed">
+                  <thead>
+                    <tr class="bg-primary10">
+                      <th>
+                        <p class="h6">Token</p>
+                      </th>
+                      <th>
+                        <p class="h6">Name</p>
+                      </th>
+  
+                      <th>
+                        <p class="h6">Size</p>
+                      </th>
+                      <th>
+                        <p class="h6">Example</p>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="colf-form colf-check" data-label="Token">
+                        <p class="h6">Spacing-stack-3xs</p>
+                      </td>
+  
+                      <td data-label="Name">
+                        <div>
+                          3xs
+                        </div>
+                      </td>
+                      <td data-label="Size">
+                        <div>
+                          4px
+                        </div>
+                      </td>
+                      <td data-label="Example">
+                        <div>
+                          <img class="img-fluid" src="./imgs/spacing/example1a.svg" alt="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="colf-form colf-check" data-label="Token">
+                        <p class="h6">Spacing-stack-2xs</p>
+                      </td>
+  
+                      <td data-label="Name">
+                        <div>
+                          2xs
+                        </div>
+                      </td>
+                      <td data-label="Size">
+                        <div>
+                          8px
+                        </div>
+                      </td>
+                      <td data-label="Example">
+                        <div>
+                          <img class="img-fluid" src="./imgs/spacing/example2a.svg" alt="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="colf-form colf-check" data-label="Token">
+                        <p class="h6">Spacing-stack-xs</p>
+                      </td>
+  
+                      <td data-label="Name">
+                        <div>
+                          xs
+                        </div>
+                      </td>
+                      <td data-label="Size">
+                        <div>
+                          12px
+                        </div>
+                      </td>
+                      <td data-label="Example">
+                        <div>
+                          <img class="img-fluid" src="./imgs/spacing/example3a.svg" alt="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="colf-form colf-check" data-label="Token">
+                        <p class="h6">Spacing-stack-s</p>
+                      </td>
+  
+                      <td data-label="Name">
+                        <div>
+                          s
+                        </div>
+                      </td>
+                      <td data-label="Size">
+                        <div>
+                          16px
+                        </div>
+                      </td>
+                      <td data-label="Example">
+                        <div>
+                          <img class="img-fluid" src="./imgs/spacing/example4a.svg" alt="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="colf-form colf-check" data-label="Token">
+                        <p class="h6">Spacing-stack-m</p>
+                      </td>
+  
+                      <td data-label="Name">
+                        <div>
+                          m
+                        </div>
+                      </td>
+                      <td data-label="Size">
+                        <div>
+                          24px
+                        </div>
+                      </td>
+                      <td data-label="Example">
+                        <div>
+                          <img class="img-fluid" src="./imgs/spacing/example5a.svg" alt="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="colf-form colf-check" data-label="Token">
+                        <p class="h6">Spacing-stack-l</p>
+                      </td>
+  
+                      <td data-label="Name">
+                        <div>
+                          l
+                        </div>
+                      </td>
+                      <td data-label="Size">
+                        <div>
+                          32px
+                        </div>
+                      </td>
+                      <td data-label="Example">
+                        <div>
+                          <img class="img-fluid" src="./imgs/spacing/example6a.svg" alt="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="colf-form colf-check" data-label="Token">
+                        <p class="h6">Spacing-stack-xl</p>
+                      </td>
+  
+                      <td data-label="Name">
+                        <div>
+                          xl
+                        </div>
+                      </td>
+                      <td data-label="Size">
+                        <div>
+                          40px
+                        </div>
+                      </td>
+                      <td data-label="Example">
+                        <div>
+                          <img class="img-fluid" src="./imgs/spacing/example7a.svg" alt="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="colf-form colf-check" data-label="Token">
+                        <p class="h6">Spacing-stack-2xl</p>
+                      </td>
+  
+                      <td data-label="Name">
+                        <div>
+                          2xl
+                        </div>
+                      </td>
+                      <td data-label="Size">
+                        <div>
+                          48px
+                        </div>
+                      </td>
+                      <td data-label="Example">
+                        <div>
+                          <img class="img-fluid" src="./imgs/spacing/example8a.svg" alt="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="colf-form colf-check" data-label="Token">
+                        <p class="h6">Spacing-stack-3xl</p>
+                      </td>
+  
+                      <td data-label="Name">
+                        <div>
+                          3xl
+                        </div>
+                      </td>
+                      <td data-label="Size">
+                        <div>
+                          56px
+                        </div>
+                      </td>
+                      <td data-label="Example">
+                        <div>
+                          <img class="img-fluid" src="./imgs/spacing/example9a.svg" alt="">
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="colf-form colf-check" data-label="Token">
+                        <p class="h6">Spacing-stack-4xl</p>
+                      </td>
+  
+                      <td data-label="Name">
+                        <div>
+                          4xl
+                        </div>
+                      </td>
+                      <td data-label="Size">
+                        <div>
+                          80px
+                        </div>
+                      </td>
+                      <td data-label="Example">
+                        <div>
+                          <img class="img-fluid" src="./imgs/spacing/example10a.svg" alt="">
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          <!-- section Raapresentazione visiva-->
+          <div class="my-5">
+            
+            <p class="my-5">
+              Di seguito vengono riportati tutte le tipologie di ombre che possono essere utilizzate:
+            </p>
+
+            <div class="row gx-10 mx-0 justify-content-center bg-gray py-8">
+              <div class="col-auto text-center">
+                <p class="fw-bold">X - Small</p>
+                <img
+                  class="img-fluid"
+                  src="./imgs/shadows/s-small.svg"
+                  alt=""
+                />
+
+               
+              </div>
+              <div class="col-auto text-center">
+                <p class="fw-bold">Small</p>
+                <img
+                  class="img-fluid"
+                  src="./imgs/shadows/small.svg"
+                  alt=""
+                />
+
+                
+              </div>
+              <div class="col-auto text-center">
+                <p class="fw-bold">Medium</p>
+                <img
+                  class="img-fluid"
+                  src="./imgs/shadows/medium.svg"
+                  alt=""
+                />
+
+               
+              </div>
+              <div class="col-auto text-center">
+                <p class="fw-bold">Large</p>
+                <img
+                  class="img-fluid"
+                  src="./imgs/shadows/large.svg"
+                  alt=""
+                />
+
+              
+              </div>
+              
+            </div>
+          </div>
+
+          <!-- section do dont-->
+          <div class="my-5">
+            <h6>Do and don’t</h6>
+            <p>
+              Non esagerare con l’intensità delle ombre e non utilizzare ombre troppo leggere che possono risultare impercettibili.
+            </p>
+
+            <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+              <div class="col-12 col-md-6">
+                <div class="card bg-gray">
+                  <div class="card-body">
+                    <div class="card-bar">
+                      <div class="bar-group">
+                        <div class="badge badge-sm badge-success">
+                          <span> Do </span>
+                          <svg class="icon icon-sm icon-success ms-2">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <!--content-->
+                    <div class="my-5 d-flex justify-content-center">
+                     <img src="./imgs/shadows/do.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card bg-gray">
+                  <div class="card-body">
+                    <div class="card-bar">
+                      <div class="bar-group">
+                        <div class="badge badge-sm badge-danger">
+                          <span> Don't </span>
+                          <svg class="ms-2 icon icon-sm icon-danger">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="my-5 d-flex justify-content-center">
+                      <img src="./imgs/shadows/dont1.svg" alt="" />
+                      <img src="./imgs/shadows/dont2.svg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p>
+                Evita di utilizzare le ombre per troppi elementi in quanto queste possono creare confusione visiva.
+Piuttosto utilizzale per sottolineare l'importanza di alcuni elementi all’interno del layout.
+              </p>
+              <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+                <div class="col-12 col-md-6">
+                  <div class="card h-100 bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="my-5 d-flex justify-content-center ">
+                        <div> 
+                        <h6 class="fw-bolder visually-hidden mb-2">Home page</h6>
+                        <img class="w-100" src="imgs/shadows/headerdo.svg" alt="" /></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-5 d-flex justify-content-center">
+                        <div> 
+                        <h6 class="fw-bolder visually-hidden mb-2">Home page</h6>
+                        <img class="w-100" src="imgs/shadows/headerdont.svg" alt="" /></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p>
+                Applica le ombre in modo coerente all'interno del design. 
+                Mantieni l'intensità delle ombre uniforme per elementi simili, indipendentemente dal contesto in cui vengono utilizzati.
+              </p>
+              <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+                <div class="col-12 col-md-6">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                     
+                      <div class="d-flex justify-content-center my-5"> 
+                      <div >
+                        <h6 class="fw-bolder mb-2">Home page</h6>
+                       <img class="w-100" src="imgs/shadows/headerdo.svg" alt="">
+                      </div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center my-5"> 
+                      <div>
+                        <h6 class="fw-bolder mb-2">Internal page</h6>
+                       <img class="w-100" src="imgs/shadows/headerdo.svg" alt="">
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- section Esempio di utilizzo -->
+          <div class="my-5">
+            <h4 class="mb-3">Esempio di utilizzo</h4>
+
+            <img class="w-100" src="imgs/shadows/esempioutilizzo.svg" alt="">
+            
+          </div>
+
+          <!-- paginazione-->
+
+          <div class="d-flex justify-content-between py-3 bg-lightblu">
+            <button type="button" class="btn btn-bare btn-sm">
+              <svg class="icon">
+                <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
+              </svg>
+              <span>Accessibilità </span>
+            </button>
+            <button type="button" class="btn btn-bare btn-sm">
+              <span>Index </span>
+              <svg class="icon">
+                <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Cookie Banner 
+    <section class="cookie-banner" aria-label="Gestione dei cookies">
+        <div class="cookie-content">
+            <div class="cookie-header">
+                <div class="text-icon align-items-start">
+                    <svg class="icon icon-md">
+                        <use href="/imgs/icon/sprite_fill.svg#cookie"></use>
+                    </svg>
+                    <span>
+                        <h4 class="h4">
+                            Cookie
+                        </h4>
+                        <div class="more">
+                            We use cookies to ensure the basic functionalities.
+                        </div>
+                    </span>
+                </div>
+                <button type="button" class="btn-close" aria-label="Chiudi">
+                    <svg class="icon icon-md icon-primary95">
+                        <use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="cookie-body">
+                <div class="condense">
+                    We use cookies to ensure the basic functionalities of the website and to enhance your online
+                    experience.
+                    You can choose for each category to opt-in/out whenever you want.
+                    <a href="javascript:cookieReadMore();" class="text-u text-w6">Read more</a>.
+                </div>
+
+                <div class="more">
+                    <div>
+                        I use cookies to ensure the basic functionalities of the website and to enhance your online
+                        experience.
+                        You can choose for each category to opt-in/out whenever you want. For more details about cookies
+                        and how I use them, read the full <a href="#" class="text-u text-w6">cookie policy</a>.
+                    </div>
+
+                    <div class="group-inline pt-4">
+                        <div class="form-group field-wide">
+                            <div class="form-toggle right">
+                                <div class="toggle w-100 bg-primary05 rounded p-2">
+                                    <input type="checkbox" role="switch" id="toggle-1">
+                                    <label for="toggle-1">
+                                        <span>Strictly necessary cookies</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-inline">
+                        <div class="form-group field-wide">
+                            <div class="form-toggle right">
+                                <div class="toggle w-100 bg-primary05 rounded p-2">
+                                    <input type="checkbox" role="switch" id="toggle-1">
+                                    <label for="toggle-1">
+                                        <span>Strictly analytics cookies</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-inline">
+                        <div class="form-group field-wide">
+                            <div class="form-toggle right">
+                                <div class="toggle w-100 bg-primary05 rounded p-2">
+                                    <input type="checkbox" role="switch" id="toggle-1">
+                                    <label for="toggle-1">
+                                        <span>Marketing cookies</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="cookie-footer">
+                <div class="btn-group-left">
+                    <button type="button" class="btn btn-lg btn-outline-primary condense">
+                        Mostra dettagli
+                    </button>
+                    <button type="button" class="btn btn-lg btn-outline-primary more">
+                        Accetta tutti
+                    </button>
+                </div>
+                <div class="btn-group-right">
+                    <button type="button" class="btn btn-lg btn-danger">
+                        Rifiuta
+                    </button>
+                    <button type="button" class="btn btn-lg btn-primary condense">
+                        Accetta tutti
+                    </button>
+                    <button type="button" class="btn btn-lg btn-primary more">
+                        Accetta selezionati
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Bootstrap 5.3 -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
