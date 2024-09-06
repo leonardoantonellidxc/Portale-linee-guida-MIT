@@ -2,7 +2,7 @@
 <html lang="it">
   <head>
     <meta charset="utf-8" />
-    <title>MIT - Portale delle Linee Guida di UX e UI - Border Radius</title>
+    <title>MIT - Portale delle Linee Guida di UX e UI - Shadows</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -184,39 +184,38 @@
           <!-- hero-->
           <div class="bg-hero-green p-6 rounded my-6">
             <p class="fw-bold c-neutral-500">Design System</p>
-            <h1>Border radius</h1>
+            <h1>Shadows</h1>
           </div>
           <!-- p-->
           <p class="my-4">
-            L'utilizzo dei bordi è essenziale per garantire coerenza tra tutti
-            gli elementi delle pagine di design realizzate per il Ministero dei
-            Trasporti e delle Infrastrutture. Inoltre, contribuisce a conferire
-            un aspetto visivo più moderno, accattivante e gradevole, migliorando
-            complessivamente l'estetica dell'interfaccia e la sua usabilità.
+            L'utilizzo corretto delle ombre trasmette all’utente una percezione
+            di profondità, che aiuta a differenziare i vari livelli di contenuto
+            e a creare un gerarchia visiva chiara. Questo contrasto naturale
+            guida l'occhio dell'utente, permettendogli di focalizzarsi sugli
+            elementi più importanti e migliorando significativamente l'usabilità
+            complessiva. Inoltre, le ombre contribuiscono all'estetica
+            dell'interfaccia, rendendo il design più attraente e professionale.
           </p>
           <!-- section regole g-->
           <div>
             <h4 class="mb-4">Regole generali</h4>
             <p>
-              Ogni elemento all'interno del Design system è dotato di
-              indicazioni specifiche riguardo ai bordi. In generale, sono stati
-              scelti angoli leggermente arrotondati per conferire al design un
-              aspetto sofisticato e autorevole, in contrasto con gli angoli
-              retti che possono apparire più rigidi e meno dinamici.
+              All’interno del Design system sono state progettate quattro
+              differenti tipologie di ombre.
             </p>
 
             <div class="list-table table-responsive table-sm table-even">
-              <table>
+              <table class="tablefixed">
                 <thead>
                   <tr class="bg-primary10">
-                    <th class="col">
+                    <th>
                       <p class="h6">Token</p>
                     </th>
-                    <th class="col">
-                      <p class="h6">Valore in px</p>
-                    </th class="col">
+                    <th>
+                      <p class="h6">Valori e specifiche</p>
+                    </th>
 
-                    <th class="col">
+                    <th>
                       <p class="h6">Utilizzo</p>
                     </th>
                   </tr>
@@ -224,67 +223,90 @@
                 <tbody>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Radius - 0</p>
+                      <p class="h6">X - Small</p>
                     </td>
 
-                    <td data-label="Valore in px">
-                      <div>0px</div>
-                    </td>
-                    <td data-label="Utilizzo">
+                    <td data-label="Valori e specifiche">
                       <div>
-                        Viene utilizzato per tutti quegli elementi che devono
-                        consentire l’accostamento con altri elementi. Per
-                        esempio, le celle di una tabella, gli accordion o ancora
-                        i singoli step di uno stepper
+                        X: 0 <br />
+                        Y: 2<br />
+                        Blur: 10 <br />
+                        Color: #Blu950<br />
+                        Opacity: 4%
                       </div>
                     </td>
-                  </tr>
-
-                  <tr>
-                    <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Radius - 1</p>
-                    </td>
-
-                    <td data-label="Valore in px">
-                      <div>4px</div>
-                    </td>
                     <td data-label="Utilizzo">
                       <div>
-                        Viene utilizzato per la maggior parte dei componenti.
-                        Per esempio, per badge, bottoni, input field, ricerca,
-                        ecc.
+                        Aggiunge un leggero effetto di sollevamento o profondità
+                        ad elementi di poco rilievo o ripetuti più volte
+                        all’interno della pagina
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Radius - 2</p>
+                      <p class="h6">Small</p>
                     </td>
 
-                    <td data-label="Valore in px">
-                      <div>8px</div>
+                    <td data-label="Valori e specifiche">
+                      <div>
+                        X: 0 <br />
+                        Y: 2<br />
+                        Blur: 10 <br />
+                        Color: #Blu950<br />
+                        Opacity: 10%
+                      </div>
                     </td>
                     <td data-label="Utilizzo">
                       <div>
-                        Viene utilizzato per elementi come tooltip, modali,
-                        uploader, card, ecc...
+                        Conferisce un effetto di sollevamento o profondità
+                        delicato a elementi dalle dimensioni normali
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Radius - 5</p>
+                      <p class="h6">Medium</p>
                     </td>
 
-                    <td data-label="Valore in px">
-                      <div>500px</div>
+                    <td data-label="Valori e specifiche">
+                      <div>
+                        X: 0 <br />
+                        Y: 2 <br />
+                        Blur: 15 <br />
+                        Color: #Blu950 <br />
+                        Opacity: 10%
+                      </div>
                     </td>
                     <td data-label="Utilizzo">
                       <div>
-                        Viene utilizzato per differenziare alcuni elementi tra
-                        loro o dallo sfondo. Ad esempio: il floating botton che
-                        possiede un border radius di 500px a differenza dei
-                        bottoni che possiedono un border radius di 4px
+                        Aggiunge un effetto di profondità più evidente per
+                        elementi di dimensioni medie che devono attirare
+                        maggiormente l'attenzione senza essere eccessivamente
+                        marcati
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="colf-form colf-check" data-label="Token">
+                      <p class="h6">Large</p>
+                    </td>
+
+                    <td data-label="Valori e specifiche">
+                      <div>
+                        X: 0 <br />
+                        Y: 2<br />
+                        Blur: 30<br />
+                        Color: #Blu950<br />
+                        Opacity: 10%
+                      </div>
+                    </td>
+                    <td data-label="Utilizzo">
+                      <div>
+                        Dona agli elementi un effetto di profondità marcato per
+                        elementi di grande dimensione o per quelli che devono
+                        essere messi in risalto in modo significativo rispetto
+                        allo sfondo o ad altri elementi
                       </div>
                     </td>
                   </tr>
@@ -295,53 +317,53 @@
 
           <!-- section Raapresentazione visiva-->
           <div class="my-5">
-            <h4 class="mb-4">Rappresentazione visiva</h4>
+            
             <p class="my-5">
-              Di seguito vengono riportati tutte le tipologie di bordi che
-              possono essere utilizzati all’interno del design:
+              Di seguito vengono riportati tutte le tipologie di ombre che possono essere utilizzate:
             </p>
 
             <div class="row gx-10 mx-0 justify-content-center bg-gray py-8">
               <div class="col-auto text-center">
-                <p class="fw-bold">Radius - 0</p>
+                <p class="fw-bold">X - Small</p>
                 <img
                   class="img-fluid"
-                  src="./imgs/border-page/quadrato1.svg"
+                  src="./imgs/shadows/s-small.svg"
                   alt=""
                 />
 
-                <p>0px</p>
+               
               </div>
               <div class="col-auto text-center">
-                <p class="fw-bold">Radius - 0</p>
+                <p class="fw-bold">Small</p>
                 <img
                   class="img-fluid"
-                  src="./imgs/border-page/quadrato2.svg"
+                  src="./imgs/shadows/small.svg"
                   alt=""
                 />
 
-                <p>0px</p>
+                
               </div>
               <div class="col-auto text-center">
-                <p class="fw-bold">Radius - 0</p>
+                <p class="fw-bold">Medium</p>
                 <img
                   class="img-fluid"
-                  src="./imgs/border-page/quadrato3.svg"
+                  src="./imgs/shadows/medium.svg"
                   alt=""
                 />
 
-                <p>0px</p>
+               
               </div>
               <div class="col-auto text-center">
-                <p class="fw-bold">Radius - 0</p>
+                <p class="fw-bold">Large</p>
                 <img
                   class="img-fluid"
-                  src="./imgs/border-page/quadrato4.svg"
+                  src="./imgs/shadows/large.svg"
                   alt=""
                 />
 
-                <p>0px</p>
+              
               </div>
+              
             </div>
           </div>
 
@@ -349,9 +371,7 @@
           <div class="my-5">
             <h6>Do and don’t</h6>
             <p>
-              Utilizza i bordi con raggio più piccolo per elementi di controllo,
-              come pulsanti e campi di input e bordi con raggio più ampio per
-              contenitori più grandi, come card o sezioni.
+              Non esagerare con l’intensità delle ombre e non utilizzare ombre troppo leggere che possono risultare impercettibili.
             </p>
 
             <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
@@ -370,43 +390,9 @@
                         </div>
                       </div>
                     </div>
-                    <!-- inpunt-->
-                    <div class="my-5 d-slex justify-content-center">
-                      <div class="form-group has-feedback px-9">
-                        <label id="field1Label"> Title input </label>
-                        <div class="input-group">
-                          <div class="input-group-text">
-                            <svg class="icon icon-sm">
-                              <use
-                                href="/imgs/icon/sprite_fill.svg#it-example"
-                              ></use>
-                            </svg>
-                          </div>
-                          <div class="input-group-text divider"></div>
-                          <input
-                            type="text"
-                            class="form-control"
-                            name="field1"
-                            placeholder="Placeholder field"
-                            value="Lorem ipsum"
-                            aria-labelledby="field1Label"
-                          />
-                          <a class="input-group-text" href="javascript:">
-                            <svg class="icon icon-sm">
-                              <use
-                                href="/proto/mit/mit-v6.0.0/imgs/icon/sprite.svg#it-password-show"
-                              ></use>
-                            </svg>
-                          </a>
-                          <a class="input-group-text" href="javascript:">
-                            <svg class="icon icon-sm">
-                              <use
-                                href="/proto/mit/mit-v6.0.0/imgs/icon/sprite.svg#it-password-hide"
-                              ></use>
-                            </svg>
-                          </a>
-                        </div>
-                      </div>
+                    <!--content-->
+                    <div class="my-5 d-flex justify-content-center">
+                     <img src="./imgs/shadows/do.svg" alt="">
                     </div>
                   </div>
                 </div>
@@ -427,7 +413,8 @@
                       </div>
                     </div>
                     <div class="my-5 d-flex justify-content-center">
-                      <img src="/imgs/border-page/dont1.svg" alt="" />
+                      <img src="./imgs/shadows/dont1.svg" alt="" />
+                      <img src="./imgs/shadows/dont2.svg" alt="" />
                     </div>
                   </div>
                 </div>
@@ -436,13 +423,12 @@
 
             <div>
               <p>
-                Applica i bordi in modo coerente all’interno del design. Non
-                modificare i bordi predefiniti degli elementi in base al
-                contesto d’uso.
+                Evita di utilizzare le ombre per troppi elementi in quanto queste possono creare confusione visiva.
+Piuttosto utilizzale per sottolineare l'importanza di alcuni elementi all’interno del layout.
               </p>
               <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
                 <div class="col-12 col-md-6">
-                  <div class="card bg-gray">
+                  <div class="card h-100 bg-gray">
                     <div class="card-body">
                       <div class="card-bar">
                         <div class="bar-group">
@@ -456,18 +442,11 @@
                           </div>
                         </div>
                       </div>
-                      <!-- badge-->
-                      <div class="d-flex justify-content-center">
-                        <div class="my-5 d-slex justify-content-center">
-                          <div class="badge badge-bg-primary badge-lg">
-                            <svg class="icon">
-                              <use
-                                href="/imgs/icon/sprite.svg#it-example"
-                              ></use>
-                            </svg>
-                            <span> Lorem ipsum </span>
-                          </div>
-                        </div>
+                      
+                      <div class="my-5 d-flex justify-content-center ">
+                        <div> 
+                        <h6 class="fw-bolder visually-hidden mb-2">Home page</h6>
+                        <img class="w-100" src="imgs/shadows/headerdo.svg" alt="" /></div>
                       </div>
                     </div>
                   </div>
@@ -488,7 +467,9 @@
                         </div>
                       </div>
                       <div class="my-5 d-flex justify-content-center">
-                        <img src="/imgs/border-page/dont2.svg" alt="" />
+                        <div> 
+                        <h6 class="fw-bolder visually-hidden mb-2">Home page</h6>
+                        <img class="w-100" src="imgs/shadows/headerdont.svg" alt="" /></div>
                       </div>
                     </div>
                   </div>
@@ -498,9 +479,8 @@
 
             <div>
               <p>
-                Non usare valori di bordi estremi che non si allineano con il
-                resto del design e che ne possono compromettere la leggibilità o
-                la funzionalità degli elementi.
+                Applica le ombre in modo coerente all'interno del design. 
+                Mantieni l'intensità delle ombre uniforme per elementi simili, indipendentemente dal contesto in cui vengono utilizzati.
               </p>
               <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
                 <div class="col-12 col-md-6">
@@ -518,47 +498,12 @@
                           </div>
                         </div>
                       </div>
-                      <!-- badge-->
-
-                      <div class="my-5 d-flex justify-content-center">
-                        <svg
-                          width="364"
-                          height="27"
-                          viewBox="0 0 364 27"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <rect width="60" height="27" rx="4" fill="#D9D9D9" />
-                          <rect
-                            x="76"
-                            width="60"
-                            height="27"
-                            rx="4"
-                            fill="#D9D9D9"
-                          />
-                          <rect
-                            x="152"
-                            width="60"
-                            height="27"
-                            rx="4"
-                            fill="#D9D9D9"
-                          />
-                          <rect
-                            x="228"
-                            width="60"
-                            height="27"
-                            rx="4"
-                            fill="#D9D9D9"
-                          />
-                          <rect
-                            x="304"
-                            width="60"
-                            height="27"
-                            rx="4"
-                            fill="#D9D9D9"
-                          />
-                        </svg>
-                      </div>
+                     
+                      <div class="d-flex justify-content-center my-5"> 
+                      <div >
+                        <h6 class="fw-bolder mb-2">Home page</h6>
+                       <img class="w-100" src="imgs/shadows/headerdo.svg" alt="">
+                      </div></div>
                     </div>
                   </div>
                 </div>
@@ -577,45 +522,12 @@
                           </div>
                         </div>
                       </div>
-                      <div class="my-5 d-flex justify-content-center">
-                        <svg
-                          width="364"
-                          height="27"
-                          viewBox="0 0 364 27"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <rect width="60" height="27" rx="4" fill="#D9D9D9" />
-                          <rect
-                            x="76"
-                            width="60"
-                            height="27"
-                            rx="4"
-                            fill="#D9D9D9"
-                          />
-                          <rect
-                            x="152"
-                            width="60"
-                            height="27"
-                            rx="4"
-                            fill="#D9D9D9"
-                          />
-                          <rect
-                            x="228"
-                            width="60"
-                            height="27"
-                            rx="13.5"
-                            fill="#D9D9D9"
-                          />
-                          <rect
-                            x="304"
-                            width="60"
-                            height="27"
-                            rx="4"
-                            fill="#D9D9D9"
-                          />
-                        </svg>
+                      <div class="d-flex justify-content-center my-5"> 
+                      <div>
+                        <h6 class="fw-bolder mb-2">Internal page</h6>
+                       <img class="w-100" src="imgs/shadows/headerdo.svg" alt="">
                       </div>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -625,36 +537,10 @@
 
           <!-- section Esempio di utilizzo -->
           <div class="my-5">
-            <h4 class="mb-4">Esempio di utilizzo</h4>
+            <h4 class="mb-3">Esempio di utilizzo</h4>
 
-            <div class="row border py-8 px-10 gy-4">
-              <div
-                class="col-12 col-md-6 d-flex flex-column align-items-center"
-              >
-                <p class="fw-bold">Badge</p>
-                <div class="badge badge-primary badge-lg my-4">
-                  <svg class="icon">
-                    <use href="/imgs/icon/sprite.svg#it-example"></use>
-                  </svg>
-                  <span> Lorem ipsum </span>
-                </div>
-                <p class="fw-bolder">Border radius</p>
-                <p>4 px</p>
-              </div>
-              <div
-                class="col-12 col-md-6 d-flex flex-column align-items-center"
-              >
-                <p class="fw-bold">Chips</p>
-                <a class="chip chip-lg my-4" data-bs-dismiss="chip">
-                  <svg class="icon">
-                    <use href="/imgs/icon/sprite.svg#it-example"></use>
-                  </svg>
-                  <span> Lorem ipsum </span>
-                </a>
-                <p class="fw-bolder">Border radius</p>
-                <p>4 px</p>
-              </div>
-            </div>
+            <img class="w-100" src="imgs/shadows/esempioutilizzo.svg" alt="">
+            
           </div>
 
           <!-- paginazione-->

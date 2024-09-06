@@ -146,3 +146,10 @@ table > tbody > tr > td:first-child {
     box-shadow: inset 0 0 0 2px var(--bs-orange) !important;
     outline: 4px solid var(--bs-primary30) !important;
 }
+
+.colordont{
+  color: #94C4F5;
+}
+.colordont2{
+  color: var(  --bs-primary95)
+}
