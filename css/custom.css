@@ -1,3 +1,13 @@
+/* Fonts */
+body {
+  line-height: 22px;
+  }
+
+/* 14px  */
+.body-sm {
+	line-height: 20px;
+}
+
 /* Colors*/
 .bg-gray {
   background-color: var(--bs-gray-100);
@@ -5,7 +15,6 @@
 .bg-gradients {
   background: var(--bs-gradient);
 }
-
 
 .sidebar {
   display: none;
@@ -152,4 +161,12 @@ table > tbody > tr > td:first-child {
 }
 .colordont2{
   color: var(  --bs-primary95)
+}
+
+
+#table-roboto tbody tr td:last-child {
+  font-family: 'Roboto Mono';
+}
+.interlinea{
+  line-height: 90%;
 }
