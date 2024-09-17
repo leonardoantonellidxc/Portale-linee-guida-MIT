@@ -170,3 +170,6 @@ table > tbody > tr > td:first-child {
 .interlinea{
   line-height: 90%;
 }
+.letterspacing{
+  letter-spacing: 0.3em;
+}
