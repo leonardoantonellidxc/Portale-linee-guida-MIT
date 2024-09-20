@@ -124,17 +124,17 @@
                     <!-- Esempio Mega menu Container -->
 
                     <li class="nav-item active">
-                      <a href="#" class="nav-link active">
+                      <a href="homepage.html" class="nav-link active">
                         <span>Homepage</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">
+                      <a href="design-system.html" class="nav-link">
                         <span>Design System</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">
+                      <a href="accessibilità.html" class="nav-link">
                         <span>Accessibilità</span>
                       </a>
                     </li>
@@ -150,30 +150,147 @@
     <main class="container-fluid">
       <div class="row">
         <aside class="sidebar-menu col-12 col-lg-3">
-          <div class="sidebar-sticky">
-            <div class="d-flex justify-content-end">
-              <button
-                class="btn btn-outline-secondary d-lg-none"
-                type="button"
-                id="sidebarToggle"
-              >
-                Mostra/Chiudi Sidebar
-              </button>
-            </div>
-            <div id="sidebar" class="bg-light sidebar">
-              <div class="">
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Dashboard lorem </a>
+          <div class="sidebar-wrapper my-6">
+            <div class="card sidebar bg-white">
+              <div class="card-header">
+                <div class="h6">Design system</div>
+              </div>
+              <!-- 
+              <a class="card-header-mobile" href="javascript:">
+               <span>
+                 Title
+               </span>
+                <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
+                  <use xlink:href="/proto/mit/mit-v6.0.0/imgs/icon/sprite.svg#it-arrow-up"></use>
+                </svg>
+              </a>
+              -->
+              <div class="sidebar-scroll">
+                <ul class="sidebar-list">
+                  <li>
+                    <a class="list-link" href="design-system.html">
+                      <div class="list-item">
+                        <span> Welcome </span>
+                      </div>
+                    </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Ordini</a>
+                  <li>
+                    <a class="list-link" href="javascript:">
+                      <div class="list-item">
+                        <span> Index </span>
+                      </div>
+                    </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Prodotti</a>
+                  <li class="list-dropdown">
+                    <a
+                      class="list-link collapsed"
+                      href="#collapse1"
+                      role="button"
+                      data-bs-toggle="collapse"
+                      aria-expanded="false"
+                      aria-controls="collapse1"
+                    >
+                      <div class="list-item">
+                        <span> Foundation </span>
+                        <svg
+                          class="icon icon-sm dropdown-icon"
+                          aria-hidden="true"
+                        >
+                          <use
+                            xlink:href="/imgs/icon/sprite.svg#it-expand"
+                          ></use>
+                        </svg>
+                      </div>
+                    </a>
+                    <ul class="sidebar-list collapse" id="collapse1">
+                      <li>
+                        <a class="list-link" href="border-radius.html">
+                          <div class="list-item">
+                            <span> Border radius </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="color-system.html">
+                          <div class="list-item">
+                            <span> Color system </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link active" href="javascript:">
+                          <div class="list-item">
+                            <span> Grid </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="javascript:">
+                          <div class="list-item">
+                            <span> Icons </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="typography.html">
+                          <div class="list-item">
+                            <span> Typography </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="shadows.html">
+                          <div class="list-item">
+                            <span> Shadows </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="spacing.html">
+                          <div class="list-item">
+                            <span> Spacing </span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Clienti</a>
+                  <li class="list-dropdown">
+                    <a
+                      class="list-link collapsed"
+                      href="#collapse1"
+                      role="button"
+                      data-bs-toggle="collapse"
+                      aria-expanded="false"
+                      aria-controls="collapse1"
+                    >
+                      <div class="list-item">
+                        <span> Components </span>
+                        <svg
+                          class="icon icon-sm dropdown-icon"
+                          aria-hidden="true"
+                        >
+                          <use
+                            xlink:href="/imgs/icon/sprite.svg#it-expand"
+                          ></use>
+                        </svg>
+                      </div>
+                    </a>
+                    <ul class="sidebar-list collapse" id="collapse1">
+                      <li>
+                        <a class="list-link" href="javascript:">
+                          <div class="list-item">
+                            <span> Accordion </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="javascript:">
+                          <div class="list-item">
+                            <span> Avatar </span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -208,17 +325,17 @@
                 <thead>
                   <tr class="bg-primary10">
                     <th>
-                      <p class="h6">Famiglia tipografica</p>
+                      <div class="fw-bold">Famiglia tipografica</div>
                     </th>
                     <th>
-                      <p class="h6">Utilizzo</p>
+                      <div class="fw-bold">Utilizzo</div>
                     </th>
 
                     <th>
-                      <p class="h6">Peso</p>
+                      <div class="fw-bold">Peso</div>
                     </th>
                     <th>
-                      <p class="h6">Esempio</p>
+                      <div class="fw-bold">Esempio</div>
                     </th>
                   </tr>
                 </thead>
@@ -228,7 +345,7 @@
                       class="colf-form colf-check"
                       data-label="Famiglia tipografica"
                     >
-                      <p class="h6">Titillium Web</p>
+                      <div class="fw-bold">Titillium Web</div>
                     </td>
 
                     <td data-label="Utilizzo">
@@ -294,24 +411,24 @@
                   <thead>
                     <tr class="bg-primary10">
                       <th>
-                        <p class="h6">Categoria</p>
+                        <div class="fw-bold">Categoria</div>
                       </th>
                       <th>
-                        <p class="h6">Sotto-voci</p>
+                        <div class="fw-bold">Sotto-voci</div>
                       </th>
 
                       <th>
-                        <p class="h6">Stili</p>
+                        <div class="fw-bold">Stili</div>
                       </th>
                       <th>
-                        <p class="h6">Utilizzo</p>
+                        <div class="fw-bold">Utilizzo</div>
                       </th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td class="colf-form colf-check" data-label="Categoria">
-                        <p class="h6">Display</p>
+                        <div class="fw-bold">Display</div>
                       </td>
 
                       <td data-label="Sotto-voci">
@@ -337,7 +454,7 @@
                     </tr>
                     <tr>
                       <td class="colf-form colf-check" data-label="Categoria">
-                        <p class="h6">Heading</p>
+                        <div class="fw-bold">Heading</div>
                       </td>
 
                       <td data-label="Sotto-voci">
@@ -378,7 +495,7 @@
                     </tr>
                     <tr>
                       <td class="colf-form colf-check" data-label="Categoria">
-                        <p class="h6">Body</p>
+                        <div class="fw-bold">Body</div>
                       </td>
 
                       <td data-label="Sotto-voci">
@@ -405,7 +522,7 @@
                     </tr>
                     <tr>
                       <td class="colf-form colf-check" data-label="Categoria">
-                        <p class="h6">Label</p>
+                        <div class="fw-bold">Label</div>
                       </td>
 
                       <td data-label="Sotto-voci">
@@ -435,7 +552,7 @@
                     </tr>
                     <tr>
                       <td class="colf-form colf-check" data-label="Categoria">
-                        <p class="h6">Link</p>
+                        <div class="fw-bold">Link</div>
                       </td>
 
                       <td data-label="Sotto-voci">
@@ -468,7 +585,7 @@
                     </tr>
                     <tr>
                       <td class="colf-form colf-check" data-label="Categoria">
-                        <p class="h6">Caption</p>
+                        <div class="fw-bold">Caption</div>
                       </td>
 
                       <td data-label="Sotto-voci">
@@ -1099,7 +1216,7 @@
             </div>
           </div>
           <!-- section scarica -->
-          <div class="bg-gray my-5 p-6 rounded">
+          <div class="bg-gray my-6 p-6 rounded">
             <h4 class="fw-bold mb-5">Accedi velocemente alle librerie</h4>
             <div>
               <div class="row gy-5">
@@ -1113,20 +1230,24 @@
                             src="./imgs/hero/figma_icon.svg"
                             alt=""
                           />
-  
+
                           <span> Figma </span>
                         </div>
                       </div>
-  
+
                       <div class="pt-2 body-lg">
                         Accedi alla libreria e tocca con mano tutti i suoi
                         componenti per scoprirli nel dettaglio
                       </div>
                       <button type="button" class="btn btn-bare btn-sm">
                         <span aria-hidden="true">Vai alla risorsa </span>
-                        <span class="visually-hidden">Vai alla risorsa - Apertura nuova finestra </span>
-                        <svg class="icon icon-sm ">
-                          <use href="/imgs/icon/sprite.svg#it-external-link"></use>
+                        <span class="visually-hidden"
+                          >Vai alla risorsa - Apertura nuova finestra
+                        </span>
+                        <svg class="icon icon-sm">
+                          <use
+                            href="/imgs/icon/sprite.svg#it-external-link"
+                          ></use>
                         </svg>
                       </button>
                     </div>
@@ -1142,20 +1263,26 @@
                             src="./imgs/hero/reac_icon.svg"
                             alt=""
                           />
-  
-                          <span aria-label="Apertura nuova finestra"> React </span>
+
+                          <span aria-label="Apertura nuova finestra">
+                            React
+                          </span>
                         </div>
                       </div>
-  
+
                       <div class="pt-2 body-lg">
                         Scopri ed istalla la libreria React per poter sviluppare
                         con facilità e rapidità
                       </div>
                       <button type="button" class="btn btn-bare btn-sm">
                         <span aria-hidden="true">Vai alla risorsa </span>
-                        <span class="visually-hidden">Vai alla risorsa - Apertura nuova finestra </span>
-                        <svg class="icon icon-sm ">
-                          <use href="/imgs/icon/sprite.svg#it-external-link"></use>
+                        <span class="visually-hidden"
+                          >Vai alla risorsa - Apertura nuova finestra
+                        </span>
+                        <svg class="icon icon-sm">
+                          <use
+                            href="/imgs/icon/sprite.svg#it-external-link"
+                          ></use>
                         </svg>
                       </button>
                     </div>
@@ -1171,20 +1298,26 @@
                             src="./imgs/hero/angular_icon.svg"
                             alt=""
                           />
-  
-                          <span aria-label="Apertura nuova finestra"> Angular </span>
+
+                          <span aria-label="Apertura nuova finestra">
+                            Angular
+                          </span>
                         </div>
                       </div>
-  
+
                       <div class="pt-2 body-lg">
-                        Scopri ed istalla la libreria Angular per poter sviluppare
-                        con facilità e rapidità
+                        Scopri ed istalla la libreria Angular per poter
+                        sviluppare con facilità e rapidità
                       </div>
                       <button type="button" class="btn btn-bare btn-sm">
                         <span aria-hidden="true">Vai alla risorsa </span>
-                        <span class="visually-hidden">Vai alla risorsa - Apertura nuova finestra </span>
-                        <svg class="icon icon-sm ">
-                          <use href="/imgs/icon/sprite.svg#it-external-link"></use>
+                        <span class="visually-hidden"
+                          >Vai alla risorsa - Apertura nuova finestra
+                        </span>
+                        <svg class="icon icon-sm">
+                          <use
+                            href="/imgs/icon/sprite.svg#it-external-link"
+                          ></use>
                         </svg>
                       </button>
                     </div>
@@ -1196,7 +1329,7 @@
           <!-- secttion tab -->
 
           <!-- tab menu-->
-          <div class="bg-primary10 py-3 my-8">
+          <div class="bg-primary10 py-3 mb-8">
             <ul class="nav nav-tabs light px-3" role="tablist">
               <li class="nav-item">
                 <button
@@ -1250,14 +1383,14 @@
                   <thead>
                     <tr>
                       <th>
-                        <p class="h6">Token</p>
+                        <div class="fw-bold">Token</div>
                       </th>
                       <th>
-                        <p class="h6">Specifiche</p>
+                        <div class="fw-bold">Specifiche</div>
                       </th>
 
                       <th>
-                        <p class="h6">Esempio</p>
+                        <div class="fw-bold">Esempio</div>
                       </th>
                     </tr>
                   </thead>
@@ -1311,14 +1444,14 @@
                   <thead>
                     <tr>
                       <th>
-                        <p class="h6">Token</p>
+                        <div class="fw-bold">Token</div>
                       </th>
                       <th>
-                        <p class="h6">Specifiche</p>
+                        <div class="fw-bold">Specifiche</div>
                       </th>
 
                       <th>
-                        <p class="h6">Esempio</p>
+                        <div class="fw-bold">Esempio</div>
                       </th>
                     </tr>
                   </thead>
@@ -1543,14 +1676,14 @@
                   <thead>
                     <tr>
                       <th>
-                        <p class="h6">Token</p>
+                        <div>Token</div>
                       </th>
                       <th>
-                        <p class="h6">Specifiche</p>
+                        <div class="fw-bold">Specifiche</div>
                       </th>
 
                       <th>
-                        <p class="h6">Esempio</p>
+                        <div class="fw-bold">Esempio</div>
                       </th>
                     </tr>
                   </thead>
@@ -1619,14 +1752,14 @@
                   <thead>
                     <tr>
                       <th>
-                        <p class="h6">Token</p>
+                        <div class="fw-bold">Token</div>
                       </th>
                       <th>
-                        <p class="h6">Specifiche</p>
+                        <div class="fw-bold">Specifiche</div>
                       </th>
 
                       <th>
-                        <p class="h6">Esempio</p>
+                        <div class="fw-bold">Esempio</div>
                       </th>
                     </tr>
                   </thead>
@@ -1776,14 +1909,14 @@
                   <thead>
                     <tr>
                       <th>
-                        <p class="h6">Token</p>
+                        <div class="fw-bold">Token</div>
                       </th>
                       <th>
-                        <p class="h6">Specifiche</p>
+                        <div class="fw-bold">Specifiche</div>
                       </th>
 
                       <th>
-                        <p class="h6">Esempio</p>
+                        <div class="fw-bold">Esempio</div>
                       </th>
                     </tr>
                   </thead>
@@ -1841,9 +1974,7 @@
                         Font size: 16px <br />Line height: 20 px
                       </td>
                       <td data-label="Esempio">
-                        <div>
-                          The quick brown fox jumps over the lazy dog
-                        </div>
+                        <div>The quick brown fox jumps over the lazy dog</div>
                       </td>
                     </tr>
                     <tr>
@@ -1865,7 +1996,7 @@
                         </div>
                       </td>
                     </tr>
-                    
+
                     <tr>
                       <td class="colf-form colf-check" data-label="Token">
                         <div class="d-flex flex-row align-content-center">
@@ -1917,14 +2048,14 @@
                   <thead>
                     <tr>
                       <th>
-                        <p class="h6">Token</p>
+                        <div class="fw-bold">Token</div>
                       </th>
                       <th>
-                        <p class="h6">Specifiche</p>
+                        <div class="fw-bold">Specifiche</div>
                       </th>
 
                       <th>
-                        <p class="h6">Esempio</p>
+                        <div class="fw-bold">Esempio</div>
                       </th>
                     </tr>
                   </thead>
@@ -1988,19 +2119,21 @@
                 <div class="badge badge-primary badge-lg">
                   <span> Label </span>
                 </div>
-                <div class="list-table table-responsive table-sm table-even my-6">
+                <div
+                  class="list-table table-responsive table-sm table-even my-6"
+                >
                   <table id="table-roboto">
                     <thead>
                       <tr>
                         <th>
-                          <p class="h6">Token</p>
+                          <div class="fw-bold">Token</div>
                         </th>
                         <th>
-                          <p class="h6">Specifiche</p>
+                          <div class="fw-bold">Specifiche</div>
                         </th>
 
                         <th>
-                          <p class="h6">Esempio</p>
+                          <div class="fw-bold">Esempio</div>
                         </th>
                       </tr>
                     </thead>
@@ -2053,7 +2186,7 @@
                           Line height: 22 px
                         </td>
                         <td data-label="Esempio">
-                          <div >1234567890</div>
+                          <div>1234567890</div>
                         </td>
                       </tr>
                       <tr>
@@ -2116,12 +2249,12 @@
             <!-- fine tab container-->
           </div>
 
-
-           <!-- section do dont-->
-           <div class="my-5">
+          <!-- section do dont-->
+          <div class="my-5">
             <h6 class="mb-4 fw-bold">Do and don’t</h6>
             <p class="my-3">
-              Al fine di migliorare la leggibilità mantieni la lunghezza dei paragrafi entro i 75 caratteri per riga.
+              Al fine di migliorare la leggibilità mantieni la lunghezza dei
+              paragrafi entro i 75 caratteri per riga.
             </p>
 
             <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
@@ -2141,9 +2274,16 @@
                       </div>
                     </div>
                     <!-- -->
-                   <div class="bg-white p-4 rounded-top"> 
-                    <p> <strong> Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Maiores, dicta! Quam veritatis totam dolore, <strong>quisquam </strong> eum praesentium enim dolores veniam animi velit id unde expedita, nihil repellendus <strong>laborum </strong>. Labore, cum.</p>
-                   </div>
+                    <div class="bg-white p-4 rounded-top">
+                      <p>
+                        <strong> Lorem ipsum dolor</strong> sit amet,
+                        consectetur adipisicing elit. Maiores, dicta! Quam
+                        veritatis totam dolore, <strong>quisquam </strong> eum
+                        praesentium enim dolores veniam animi velit id unde
+                        expedita, nihil repellendus <strong>laborum </strong>.
+                        Labore, cum.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2162,9 +2302,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="bg-white p-4 rounded-top"> 
-                      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, dicta! Quam veritatis totam dolore, quisquam eum praesentium enim dolores veniam animi velit id unde expedita, nihil repellendus laborum. Labore, cum.</p>
-                     </div>
+                    <div class="bg-white p-4 rounded-top">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Maiores, dicta! Quam veritatis totam dolore,
+                        quisquam eum praesentium enim dolores veniam animi velit
+                        id unde expedita, nihil repellendus laborum. Labore,
+                        cum.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -2172,12 +2318,14 @@
 
             <div>
               <p>
-                Utilizza diversi pesi di testo e diverse grandezze per creare gerarchia visiva e ritmo sia nella scansione visiva della pagina sia nell’atto di lettura.
+                Utilizza diversi pesi di testo e diverse grandezze per creare
+                gerarchia visiva e ritmo sia nella scansione visiva della pagina
+                sia nell’atto di lettura.
               </p>
               <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
                 <div class="col-12 col-md-6">
                   <div class="card shadow-none h-100 bg-gray">
-                    <div class="card-body ">
+                    <div class="card-body">
                       <div class="card-bar">
                         <div class="bar-group">
                           <div class="badge badge-sm badge-success">
@@ -2191,10 +2339,17 @@
                         </div>
                       </div>
                       <!-- -->
-                     <div class="bg-white p-4 rounded-top h-100"> 
-                      <h6 class="fw-bold"> Title </h6>
-                      <p> <strong> Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Maiores, dicta! Quam veritatis totam dolore, <strong>quisquam </strong> eum praesentium enim dolores veniam animi velit id unde expedita, nihil repellendus <strong>laborum </strong>. Labore, cum.</p>
-                     </div>
+                      <div class="bg-white p-4 rounded-top h-100">
+                        <h6 class="fw-bold">Title</h6>
+                        <p>
+                          <strong> Lorem ipsum dolor</strong> sit amet,
+                          consectetur adipisicing elit. Maiores, dicta! Quam
+                          veritatis totam dolore, <strong>quisquam </strong> eum
+                          praesentium enim dolores veniam animi velit id unde
+                          expedita, nihil repellendus <strong>laborum </strong>.
+                          Labore, cum.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -2213,10 +2368,16 @@
                           </div>
                         </div>
                       </div>
-                      <div class="bg-white p-4 rounded-top"> 
-                       <p> Title</p>
-                        <p class="roboto"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, dicta! Quam veritatis totam dolore, quisquam eum praesentium enim dolores veniam animi velit id unde expedita, nihil repellendus laborum. Labore, cum.</p>
-                       </div>
+                      <div class="bg-white p-4 rounded-top">
+                        <p>Title</p>
+                        <p class="roboto">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Maiores, dicta! Quam veritatis totam dolore,
+                          quisquam eum praesentium enim dolores veniam animi
+                          velit id unde expedita, nihil repellendus laborum.
+                          Labore, cum.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -2225,7 +2386,8 @@
 
             <div>
               <p>
-                Non utilizzare la famiglia tipografica Roboto Mono per elementi differenti dai numeri.
+                Non utilizzare la famiglia tipografica Roboto Mono per elementi
+                differenti dai numeri.
               </p>
               <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
                 <div class="col-12 col-md-6">
@@ -2244,10 +2406,17 @@
                         </div>
                       </div>
                       <!-- -->
-                     <div class="bg-white p-4 rounded h-100"> 
-                      <h6 class="fw-bold"> Title</h6>
-                      <p> <strong> Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Maiores, dicta! Quam veritatis totam dolore, <strong>quisquam </strong> eum praesentium enim dolores veniam animi velit id unde expedita, nihil repellendus <strong>laborum </strong>. Labore, cum.</p>
-                     </div>
+                      <div class="bg-white p-4 rounded h-100">
+                        <h6 class="fw-bold">Title</h6>
+                        <p>
+                          <strong> Lorem ipsum dolor</strong> sit amet,
+                          consectetur adipisicing elit. Maiores, dicta! Quam
+                          veritatis totam dolore, <strong>quisquam </strong> eum
+                          praesentium enim dolores veniam animi velit id unde
+                          expedita, nihil repellendus <strong>laborum </strong>.
+                          Labore, cum.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -2266,10 +2435,16 @@
                           </div>
                         </div>
                       </div>
-                      <div class="bg-white p-4 rounded"> 
-                        <p id="#roboto" > Title </p>
-                        <p id="#roboto"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, dicta! Quam veritatis totam dolore, quisquam eum praesentium enim dolores veniam animi velit id unde expedita, nihil repellendus laborum. Labore, cum.</p>
-                       </div>
+                      <div class="bg-white p-4 rounded">
+                        <p class="roboto">Title</p>
+                        <p class="roboto">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Maiores, dicta! Quam veritatis totam dolore,
+                          quisquam eum praesentium enim dolores veniam animi
+                          velit id unde expedita, nihil repellendus laborum.
+                          Labore, cum.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -2277,7 +2452,8 @@
             </div>
             <div>
               <p>
-                Mantieni l’interlinea tra il 120% e il 160% del corpo del carattere.
+                Mantieni l’interlinea tra il 120% e il 160% del corpo del
+                carattere.
               </p>
               <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
                 <div class="col-12 col-md-6">
@@ -2295,98 +2471,122 @@
                           </div>
                         </div>
                       </div>
-                      
-                     <div class="bg-white p-4 rounded-top h-100"> 
-                      <h6 class="fw-bold"> Title</h6>
-                      <p> <strong> Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Maiores, dicta! Quam veritatis totam dolore, <strong>quisquam </strong> eum praesentium enim dolores veniam animi velit id unde expedita, nihil repellendus <strong>laborum </strong>. Labore, cum.</p>
-                     </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="card h-100 bg-gray shadow-none">
-                    <div class="card-body pb-0">
-                      <div class="card-bar">
-                        <div class="bar-group">
-                          <div class="badge badge-sm badge-danger">
-                            <span> Don't </span>
-                            <svg class="ms-2 icon icon-sm icon-danger">
-                              <use
-                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
-                              ></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="bg-white p-4 rounded-top h-100"> 
-                        
-                        <p class="interlinea"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, dicta! Quam veritatis totam dolore, quisquam eum praesentium enim dolores veniam animi velit id unde expedita, nihil repellendus laborum. Labore, cum.</p>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <p>
-                Non modificare la letter spacing.
-              </p>
-              <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
-                <div class="col-12 col-md-6">
-                  <div class="card h-100 bg-gray shadow-none">
-                    <div class="card-body pb-0">
-                      <div class="card-bar">
-                        <div class="bar-group">
-                          <div class="badge badge-sm badge-success">
-                            <span> Do </span>
-                            <svg class="icon icon-sm icon-success ms-2">
-                              <use
-                                href="/imgs/icon/sprite_fill.svg#it-check-circle"
-                              ></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      
-                     <div class="bg-white p-4 rounded-top h-100"> 
-                      <h6 class="fw-bold"> Title</h6>
-                      <p> <strong> Lorem ipsum dolor</strong> sit amet, consectetur adipisicing elit. Maiores, dicta! Quam veritatis totam dolore, <strong>quisquam </strong> eum praesentium enim dolores veniam animi velit id unde expedita, nihil repellendus <strong>laborum </strong>. Labore, cum.</p>
-                     </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="card h-100 bg-gray shadow-none">
-                    <div class="card-body pb-0">
-                      <div class="card-bar">
-                        <div class="bar-group">
-                          <div class="badge badge-sm badge-danger">
-                            <span> Don't </span>
-                            <svg class="ms-2 icon icon-sm icon-danger">
-                              <use
-                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
-                              ></use>
-                            </svg>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="bg-white p-4 rounded-top h-100"> 
-                        
-                        <p class="letterspacing"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, dicta! Quam veritatis totam dolore, quisquam eum praesentium enim dolores veniam animi velit id unde expedita.</p>
-                       </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
+                      <div class="bg-white p-4 rounded-top h-100">
+                        <h6 class="fw-bold">Title</h6>
+                        <p>
+                          <strong> Lorem ipsum dolor</strong> sit amet,
+                          consectetur adipisicing elit. Maiores, dicta! Quam
+                          veritatis totam dolore, <strong>quisquam </strong> eum
+                          praesentium enim dolores veniam animi velit id unde
+                          expedita, nihil repellendus <strong>laborum </strong>.
+                          Labore, cum.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card h-100 bg-gray shadow-none">
+                    <div class="card-body pb-0">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-white p-4 rounded-top h-100">
+                        <p class="interlinea">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Maiores, dicta! Quam veritatis totam dolore,
+                          quisquam eum praesentium enim dolores veniam animi
+                          velit id unde expedita, nihil repellendus laborum.
+                          Labore, cum.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p>Non modificare la letter spacing.</p>
+              <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+                <div class="col-12 col-md-6">
+                  <div class="card h-100 bg-gray shadow-none">
+                    <div class="card-body pb-0">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="bg-white p-4 rounded-top h-100">
+                        <h6 class="fw-bold">Title</h6>
+                        <p>
+                          <strong> Lorem ipsum dolor</strong> sit amet,
+                          consectetur adipisicing elit. Maiores, dicta! Quam
+                          veritatis totam dolore, <strong>quisquam </strong> eum
+                          praesentium enim dolores veniam animi velit id unde
+                          expedita, nihil repellendus <strong>laborum </strong>.
+                          Labore, cum.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card h-100 bg-gray shadow-none">
+                    <div class="card-body pb-0">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bg-white p-4 rounded-top h-100">
+                        <p class="letterspacing">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit. Maiores, dicta! Quam veritatis totam dolore,
+                          quisquam eum praesentium enim dolores veniam animi
+                          velit id unde expedita.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- esempio utilizzo--> 
+          <!-- esempio utilizzo-->
           <div class="my-5">
             <h4 class="mb-3">Esempio di utilizzo</h4>
 
-            <img class="w-100" src="imgs/typografy-page/esempioutilizzo.svg" alt="" />
+            <img
+              class="w-100"
+              src="imgs/typografy-page/esempioutilizzo.svg"
+              alt=""
+            />
           </div>
 
           <!-- paginazione-->

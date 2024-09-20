@@ -124,17 +124,17 @@
                     <!-- Esempio Mega menu Container -->
 
                     <li class="nav-item active">
-                      <a href="#" class="nav-link active">
+                      <a href="homepage.html" class="nav-link active">
                         <span>Homepage</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">
+                      <a href="design-system.html" class="nav-link">
                         <span>Design System</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="#" class="nav-link">
+                      <a href="accessibilità.html" class="nav-link">
                         <span>Accessibilità</span>
                       </a>
                     </li>
@@ -150,30 +150,147 @@
     <main class="container-fluid">
       <div class="row">
         <aside class="sidebar-menu col-12 col-lg-3">
-          <div class="sidebar-sticky">
-            <div class="d-flex justify-content-end">
-              <button
-                class="btn btn-outline-secondary d-lg-none"
-                type="button"
-                id="sidebarToggle"
-              >
-                Mostra/Chiudi Sidebar
-              </button>
-            </div>
-            <div id="sidebar" class="bg-light sidebar">
-              <div class="">
-                <ul class="nav flex-column">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Dashboard lorem </a>
+          <div class="sidebar-wrapper my-6">
+            <div class="card sidebar bg-white">
+              <div class="card-header">
+                <div class="h6">Design system</div>
+              </div>
+              <!-- 
+              <a class="card-header-mobile" href="javascript:">
+               <span>
+                 Title
+               </span>
+                <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
+                  <use xlink:href="/proto/mit/mit-v6.0.0/imgs/icon/sprite.svg#it-arrow-up"></use>
+                </svg>
+              </a>
+              -->
+              <div class="sidebar-scroll">
+                <ul class="sidebar-list">
+                  <li>
+                    <a class="list-link" href="design-system.html">
+                      <div class="list-item">
+                        <span> Welcome </span>
+                      </div>
+                    </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Ordini</a>
+                  <li>
+                    <a class="list-link" href="javascript:">
+                      <div class="list-item">
+                        <span> Index </span>
+                      </div>
+                    </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Prodotti</a>
+                  <li class="list-dropdown">
+                    <a
+                      class="list-link collapsed"
+                      href="#collapse1"
+                      role="button"
+                      data-bs-toggle="collapse"
+                      aria-expanded="false"
+                      aria-controls="collapse1"
+                    >
+                      <div class="list-item">
+                        <span> Foundation </span>
+                        <svg
+                          class="icon icon-sm dropdown-icon"
+                          aria-hidden="true"
+                        >
+                          <use
+                            xlink:href="/imgs/icon/sprite.svg#it-expand"
+                          ></use>
+                        </svg>
+                      </div>
+                    </a>
+                    <ul class="sidebar-list collapse" id="collapse1">
+                      <li>
+                        <a class="list-link" href="border-radius.html">
+                          <div class="list-item">
+                            <span> Border radius </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="color-system.html">
+                          <div class="list-item">
+                            <span> Color system </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link active" href="javascript:">
+                          <div class="list-item">
+                            <span> Grid </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="javascript:">
+                          <div class="list-item">
+                            <span> Icons </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="typography.html">
+                          <div class="list-item">
+                            <span> Typography </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="shadows.html">
+                          <div class="list-item">
+                            <span> Shadows </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="spacing.html">
+                          <div class="list-item">
+                            <span> Spacing </span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Clienti</a>
+                  <li class="list-dropdown">
+                    <a
+                      class="list-link collapsed"
+                      href="#collapse1"
+                      role="button"
+                      data-bs-toggle="collapse"
+                      aria-expanded="false"
+                      aria-controls="collapse1"
+                    >
+                      <div class="list-item">
+                        <span> Components </span>
+                        <svg
+                          class="icon icon-sm dropdown-icon"
+                          aria-hidden="true"
+                        >
+                          <use
+                            xlink:href="/imgs/icon/sprite.svg#it-expand"
+                          ></use>
+                        </svg>
+                      </div>
+                    </a>
+                    <ul class="sidebar-list collapse" id="collapse1">
+                      <li>
+                        <a class="list-link" href="javascript:">
+                          <div class="list-item">
+                            <span> Accordion </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="javascript:">
+                          <div class="list-item">
+                            <span> Avatar </span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -209,24 +326,24 @@
                 <thead>
                   <tr class="bg-primary10">
                     <th>
-                      <p class="h6">Token</p>
+                      <div class="fw-bold">Token</div>
                     </th>
                     <th>
-                      <p class="h6">Name</p>
+                      <div class="fw-bold">Name</div>
                     </th>
 
                     <th>
-                      <p class="h6">Size</p>
+                      <div class="fw-bold">Size</div>
                     </th>
                     <th>
-                      <p class="h6">Example</p>
+                      <div class="fw-bold">Example</div>
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inset-3xs</p>
+                      <div class="fw-bold">Spacing-inset-3xs</div>
                     </td>
 
                     <td data-label="Name">
@@ -247,7 +364,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inset-2xs</p>
+                      <div class="fw-bold">Spacing-inset-2xs</div>
                     </td>
 
                     <td data-label="Name">
@@ -268,7 +385,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inset-xs</p>
+                      <div class="fw-bold">Spacing-inset-xs</div>
                     </td>
 
                     <td data-label="Name">
@@ -289,7 +406,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inset-s</p>
+                      <div class="fw-bold">Spacing-inset-s</div>
                     </td>
 
                     <td data-label="Name">
@@ -310,7 +427,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inset-m</p>
+                      <div class="fw-bold">Spacing-inset-m</div>
                     </td>
 
                     <td data-label="Name">
@@ -331,7 +448,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inset-l</p>
+                      <div class="fw-bold">Spacing-inset-l</div>
                     </td>
 
                     <td data-label="Name">
@@ -352,7 +469,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inset-xl</p>
+                      <div class="fw-bold">Spacing-inset-xl</div>
                     </td>
 
                     <td data-label="Name">
@@ -373,7 +490,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inset-xxl</p>
+                      <div class="fw-bold">Spacing-inset-xxl</div>
                     </td>
 
                     <td data-label="Name">
@@ -410,24 +527,24 @@
                 <thead>
                   <tr class="bg-primary10">
                     <th>
-                      <p class="h6">Token</p>
+                      <div class="fw-bold">Token</div>
                     </th>
                     <th>
-                      <p class="h6">Name</p>
+                      <div class="fw-bold">Name</div>
                     </th>
 
                     <th>
-                      <p class="h6">Size</p>
+                      <div class="fw-bold">Size</div>
                     </th>
                     <th>
-                      <p class="h6">Example</p>
+                      <div class="fw-bold">Example</div>
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-3xs</p>
+                      <div class="fw-bold">Spacing-stack-3xs</div>
                     </td>
 
                     <td data-label="Name">
@@ -448,7 +565,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-2xs</p>
+                      <div class="fw-bold">Spacing-stack-2xs</div>
                     </td>
 
                     <td data-label="Name">
@@ -469,7 +586,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-xs</p>
+                      <div class="fw-bold">Spacing-stack-xs</div>
                     </td>
 
                     <td data-label="Name">
@@ -490,7 +607,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-s</p>
+                      <div class="fw-bold">Spacing-stack-s</div>
                     </td>
 
                     <td data-label="Name">
@@ -511,7 +628,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-m</p>
+                      <div class="fw-bold">Spacing-stack-m</div>
                     </td>
 
                     <td data-label="Name">
@@ -532,7 +649,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-l</p>
+                      <div class="fw-bold">Spacing-stack-l</div>
                     </td>
 
                     <td data-label="Name">
@@ -553,7 +670,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-xl</p>
+                      <div class="fw-bold">Spacing-stack-xl</div>
                     </td>
 
                     <td data-label="Name">
@@ -574,7 +691,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-2xl</p>
+                      <div class="fw-bold">Spacing-stack-2xl</div>
                     </td>
 
                     <td data-label="Name">
@@ -595,7 +712,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-3xl</p>
+                      <div class="fw-bold">Spacing-stack-3xl</div>
                     </td>
 
                     <td data-label="Name">
@@ -616,7 +733,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-4xl</p>
+                      <div class="fw-bold">Spacing-stack-4xl</div>
                     </td>
 
                     <td data-label="Name">
@@ -653,24 +770,24 @@
                 <thead>
                   <tr class="bg-primary10">
                     <th>
-                      <p class="h6">Token</p>
+                      <div class="fw-bold">Token</div>
                     </th>
                     <th>
-                      <p class="h6">Name</p>
+                      <div class="fw-bold">Name</div>
                     </th>
 
                     <th>
-                      <p class="h6">Size</p>
+                      <div class="fw-bold">Size</div>
                     </th>
                     <th>
-                      <p class="h6">Example</p>
+                      <div class="fw-bold">Example</div>
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inline-3xs</p>
+                      <div class="fw-bold">Spacing-inline-3xs</div>
                     </td>
 
                     <td data-label="Name">
@@ -691,7 +808,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inline-2xs</p>
+                      <div class="fw-bold">Spacing-inline-2xs</div>
                     </td>
 
                     <td data-label="Name">
@@ -712,7 +829,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inline-xs</p>
+                      <div class="fw-bold">Spacing-inline-xs</div>
                     </td>
 
                     <td data-label="Name">
@@ -733,7 +850,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inline-s</p>
+                      <div class="fw-bold">Spacing-inline-s</div>
                     </td>
 
                     <td data-label="Name">
@@ -754,7 +871,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inline-m</p>
+                      <div class="fw-bold">Spacing-inline-m</div>
                     </td>
 
                     <td data-label="Name">
@@ -775,7 +892,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-inline-l</p>
+                      <div class="fw-bold">Spacing-inline-l</div>
                     </td>
 
                     <td data-label="Name">
@@ -796,7 +913,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-xl</p>
+                      <div class="fw-bold">Spacing-stack-xl</div>
                     </td>
 
                     <td data-label="Name">
@@ -817,7 +934,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-2xl</p>
+                      <div class="fw-bold">Spacing-stack-2xl</div>
                     </td>
 
                     <td data-label="Name">
@@ -838,7 +955,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-3xl</p>
+                      <div class="fw-bold">Spacing-stack-3xl</div>
                     </td>
 
                     <td data-label="Name">
@@ -859,7 +976,7 @@
                   </tr>
                   <tr>
                     <td class="colf-form colf-check" data-label="Token">
-                      <p class="h6">Spacing-stack-4xl</p>
+                      <div class="fw-bold">Spacing-stack-4xl</div>
                     </td>
 
                     <td data-label="Name">
@@ -885,7 +1002,6 @@
 
           <!-- section do dont-->
 
-          
           <div class="my-5">
             <h4 class="fw-bold mb-4">Do and don’t</h4>
             <p>
@@ -1380,7 +1496,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 h-100 ">
+              <div class="col-12 col-md-6 h-100">
                 <div class="card bg-gray">
                   <div class="card-body">
                     <div class="card-bar">
