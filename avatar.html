@@ -161,7 +161,7 @@
                  Title
                </span>
                 <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
-                  <use xlink:href="/proto/mit/mit-v6.0.0/imgs/icon/sprite.svg#it-arrow-up"></use>
+                  <use xlink:href="imgs/icon/sprite.svg#it-arrow-up"></use>
                 </svg>
               </a>
               -->
@@ -341,7 +341,7 @@
                   aria-selected="true"
                   id="tab-1"
                 >
-                  <span>Titilium Web</span>
+                  <span>Componente gruppo 1</span>
                 </button>
               </li>
               <li class="nav-item">
@@ -355,7 +355,7 @@
                   aria-selected="false"
                   id="tab-2"
                 >
-                  <span> Roboto Mono </span>
+                  <span> Componente gruppo 2</span>
                 </button>
               </li>
             </ul>
@@ -371,42 +371,184 @@
               aria-labelledby="tab-1"
             >
               <!-- contenuto primo tab -->
-              <div class="d-flex justify-content-between align-items-center">
-                <h5 class="mb-4">Variante</h5>
-                <div>
-                  <div class="form-group">
-                    <div class="form-switcher">
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="option1"
-                        id="option1-1"
-                        autocomplete="off"
-                        checked
-                      />
-                      <label class="btn btn-bare" for="option1-1">
-                        
-                        <span> Label text </span>
-                      </label>
+              <div class="bg-neutral-500">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="mb-4">Variante</h5>
+                  <div>
+                    <div class="form-group">
+                      <div class="form-switcher">
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="option1"
+                          id="option1-1"
+                          autocomplete="off"
+                          checked
+                        />
+                        <label class="btn btn-bare" for="option1-1">
+                          <span> Desktop </span>
+                        </label>
 
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="option1"
-                        id="option1-2"
-                        autocomplete="off"
-                      />
-                      <label class="btn btn-bare" for="option1-2">
-                        <svg class="icon icon-sm">
-                          <use
-                            href="/proto/mit/mit-v6.0.0/imgs/icon/sprite_fill.svg#it-example"
-                          ></use>
-                        </svg>
-                        <span> Label text </span>
-                      </label>
+                        <input
+                          type="radio"
+                          class="btn-check"
+                          name="option1"
+                          id="option1-2"
+                          autocomplete="off"
+                        />
+                        <label class="btn btn-bare" for="option1-2">
+                          <span> Mobile </span>
+                        </label>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                <div class="row">
+                  <div class="col-auto">
+                    <div class="form-group dropdown has-feedback filled">
+                      <label id="field1Label"> Type - testo prova 1 </label>
+                      <button
+                        class="btn dropdown-toggle input-group"
+                        type="button"
+                        role="combobox"
+                        aria-labelledby="field1Label"
+                        data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        demon-bt="dropdown"
+                      >
+                        <div class="form-select">
+                          <div class="select-value">Type - testo prova 1</div>
+                          <div class="select-placeholder">
+                            Testo placeholder
+                          </div>
+                        </div>
+                      </button>
+                      <div class="dropdown-menu">
+                        <ul class="scrollable">
+                          <li>
+                            <a class="dropdown-item active" href="#">
+                              <div class="text-icon">
+                                <span> Type - testo prova 1 </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="text-icon">
+                                <span> Type - testo prova 1 </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="text-icon">
+                                <span> Lorem ipsum 3 </span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="form-group dropdown has-feedback filled">
+                      <label id="field1Label"> Type - testo prova 1 </label>
+                      <button
+                        class="btn dropdown-toggle input-group"
+                        type="button"
+                        role="combobox"
+                        aria-labelledby="field1Label"
+                        data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside"
+                        aria-expanded="false"
+                        aria-haspopup="listbox"
+                        demon-bt="dropdown"
+                      >
+                        <div class="form-select">
+                          <div class="select-value">Type - testo prova 1</div>
+                          <div class="select-placeholder">
+                            Testo placeholder
+                          </div>
+                        </div>
+                      </button>
+                      <div class="dropdown-menu">
+                        <ul class="scrollable">
+                          <li>
+                            <a class="dropdown-item active" href="#">
+                              <div class="text-icon">
+                                <span> Type - testo prova 1 </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="text-icon">
+                                <span> Type - testo prova 1 </span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="text-icon">
+                                <span> Lorem ipsum 3 </span>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="field-helper">
+                        <div class="helper-text">
+                          <svg class="icon">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-info-circle"
+                            ></use>
+                          </svg>
+                          <span> Testo informativo </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="bg-white d-flex align-content-center justify-content-center py-8"
+                >
+                  <div class="avatar avatar-lg">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/46.jpg"
+                      alt="Mario Rossi"
+                    />
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="mb-4">Codice</h5>
+                  <button type="button" class="btn btn-primary">
+                    <span> Copia codice </span>
+                    <svg class="icon icon-sm">
+                      <use
+                        href="/imgs/icon/sprite_fill.svg#it-copy-success"
+                      ></use>
+                    </svg>
+                  </button>
+                </div>
+                <div></div>
+                <pre class="bgcode text-white rounded p-4">
+            <code>
+&lt;button type="button" class="btn btn-bare my-5"&gt;
+  &lt;svg class="icon icon-sm"&gt;
+    &lt;use href="/imgs/icon/sprite_fill.svg#it-figma"&gt;&lt;/use&gt;
+  &lt;/svg&gt;
+  &lt;span&gt; Vai al componente Figma &lt;/span&gt;
+                &lt;svg class="icon icon-sm"&gt;
+                  &lt;use href="/imgs/icon/sprite.svg#it-chevron-right"&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+              &lt;/button&gt;
+            </code>
+            </pre>
               </div>
             </div>
             <!-- 2 tab-->
@@ -422,133 +564,189 @@
                 role="tablist"
                 aria-labelledby="tab-1"
               >
-                <h6 class="mb-4">Roboto Mono</h6>
-                <div class="badge badge-primary badge-lg">
-                  <span> Label </span>
-                </div>
-                <div
-                  class="list-table table-responsive table-sm table-even my-6"
-                >
-                  <table id="table-roboto">
-                    <thead>
-                      <tr>
-                        <th>
-                          <div class="fw-bold">Token</div>
-                        </th>
-                        <th>
-                          <div class="fw-bold">Specifiche</div>
-                        </th>
+                <!-- contenuto secondo tab-->
+                <div class="bg-neutral-500">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="mb-4">Variante</h5>
+                    <div>
+                      <div class="form-group">
+                        <div class="form-switcher">
+                          <input
+                            type="radio"
+                            class="btn-check"
+                            name="option1"
+                            id="option1-1"
+                            autocomplete="off"
+                            checked
+                          />
+                          <label class="btn btn-bare" for="option1-1">
+                            <span> Desktop </span>
+                          </label>
 
-                        <th>
-                          <div class="fw-bold">Esempio</div>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Name">
-                          <div class="d-flex flex-row align-content-center">
-                            <div class="d-flex align-items-center fw-bold">
-                              Large - Regular
+                          <input
+                            type="radio"
+                            class="btn-check"
+                            name="option1"
+                            id="option1-2"
+                            autocomplete="off"
+                          />
+                          <label class="btn btn-bare" for="option1-2">
+                            <span> Mobile </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-auto">
+                      <div class="form-group dropdown has-feedback filled">
+                        <label id="field1Label"> Type - testo prova 1 </label>
+                        <button
+                          class="btn dropdown-toggle input-group"
+                          type="button"
+                          role="combobox"
+                          aria-labelledby="field1Label"
+                          data-bs-toggle="dropdown"
+                          data-bs-auto-close="outside"
+                          aria-expanded="false"
+                          aria-haspopup="listbox"
+                          demon-bt="dropdown"
+                        >
+                          <div class="form-select">
+                            <div class="select-value">Type - testo prova 1</div>
+                            <div class="select-placeholder">
+                              Testo placeholder
                             </div>
                           </div>
-                        </td>
-                        <td data-label="Specifiche">
-                          Weight: Regular <br />
-                          Font size: 18 px <br />
-                          Line height: 24 px
-                        </td>
-                        <td data-label="Esempio">
-                          <div class="body-lg">1234567890</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Name">
-                          <div class="d-flex flex-row align-content-center">
-                            <div class="d-flex align-items-center fw-bolder">
-                              Large - Medium
+                        </button>
+                        <div class="dropdown-menu">
+                          <ul class="scrollable">
+                            <li>
+                              <a class="dropdown-item active" href="#">
+                                <div class="text-icon">
+                                  <span> Type - testo prova 1 </span>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <div class="text-icon">
+                                  <span> Type - testo prova 1 </span>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <div class="text-icon">
+                                  <span> Lorem ipsum 3 </span>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-auto">
+                      <div class="form-group dropdown has-feedback filled">
+                        <label id="field1Label"> Type - testo prova 1 </label>
+                        <button
+                          class="btn dropdown-toggle input-group"
+                          type="button"
+                          role="combobox"
+                          aria-labelledby="field1Label"
+                          data-bs-toggle="dropdown"
+                          data-bs-auto-close="outside"
+                          aria-expanded="false"
+                          aria-haspopup="listbox"
+                          demon-bt="dropdown"
+                        >
+                          <div class="form-select">
+                            <div class="select-value">Type - testo prova 1</div>
+                            <div class="select-placeholder">
+                              Testo placeholder
                             </div>
                           </div>
-                        </td>
-                        <td data-label="Specifiche">
-                          Weight: Medium <br />
-                          Font size: 18px <br />
-                          Line height: 24 px
-                        </td>
-                        <td data-label="Esempio">
-                          <div class="body-lg fw-semibold">1234567890</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Name">
-                          <div class="d-flex flex-row align-content-center">
-                            <div class="d-flex align-items-center fw-bolder">
-                              Medium - Regular
-                            </div>
+                        </button>
+                        <div class="dropdown-menu">
+                          <ul class="scrollable">
+                            <li>
+                              <a class="dropdown-item active" href="#">
+                                <div class="text-icon">
+                                  <span> Type - testo prova 1 </span>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <div class="text-icon">
+                                  <span> Type - testo prova 1 </span>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <div class="text-icon">
+                                  <span> Lorem ipsum 3 </span>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="field-helper">
+                          <div class="helper-text">
+                            <svg class="icon">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-info-circle"
+                              ></use>
+                            </svg>
+                            <span> Testo informativo </span>
                           </div>
-                        </td>
-                        <td data-label="Specifiche">
-                          Weight: Regular <br />
-                          Font size: 16 px <br />
-                          Line height: 22 px
-                        </td>
-                        <td data-label="Esempio">
-                          <div>1234567890</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Name">
-                          <div class="d-flex flex-row align-content-center">
-                            <div class="d-flex align-items-center fw-bolder">
-                              Medium - Medium
-                            </div>
-                          </div>
-                        </td>
-                        <td data-label="Specifiche">
-                          Weight: Medium <br />
-                          Font size: 16px <br />
-                          Line height: 22 px
-                        </td>
-                        <td data-label="Esempio">
-                          <div class="fw-semibold">1234567890</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Name">
-                          <div class="d-flex flex-row align-content-center">
-                            <div class="d-flex align-items-center fw-bolder">
-                              Small - Regular
-                            </div>
-                          </div>
-                        </td>
-                        <td data-label="Specifiche">
-                          Weight: Regular <br />
-                          Font size: 14 px <br />
-                          Line height: 20 px
-                        </td>
-                        <td data-label="Esempio">
-                          <div class="body-sm">1234567890</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Name">
-                          <div class="d-flex flex-row align-content-center">
-                            <div class="d-flex align-items-center fw-bolder">
-                              Small - Medium
-                            </div>
-                          </div>
-                        </td>
-                        <td data-label="Specifiche">
-                          Weight: Medium <br />
-                          Font size: 14px <br />
-                          Line height: 20 px
-                        </td>
-                        <td data-label="Esempio">
-                          <div class="body-sm fw-semibold">1234567890</div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="bg-white d-flex align-content-center justify-content-center py-8"
+                  >
+                    <div class="avatar avatar-lg">
+                      <img
+                        src="https://randomuser.me/api/portraits/men/46.jpg"
+                        alt="Mario Rossi"
+                      />
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <h5 class="mb-4">Codice</h5>
+                    <button type="button" class="btn btn-primary">
+                      <span> Copia codice </span>
+                      <svg class="icon icon-sm">
+                        <use
+                          href="/imgs/icon/sprite_fill.svg#it-copy-success"
+                        ></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div></div>
+                  <pre class="bgcode text-white rounded p-4">
+                <code>
+    &lt;button type="button" class="btn btn-bare my-5"&gt;
+      &lt;svg class="icon icon-sm"&gt;
+        &lt;use href="/imgs/icon/sprite_fill.svg#it-figma"&gt;&lt;/use&gt;
+      &lt;/svg&gt;
+      &lt;span&gt; Vai al componente Figma &lt;/span&gt;
+                    &lt;svg class="icon icon-sm"&gt;
+                      &lt;use href="/imgs/icon/sprite.svg#it-chevron-right"&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                  &lt;/button&gt;
+                </code>
+                </pre>
                 </div>
               </div>
             </div>

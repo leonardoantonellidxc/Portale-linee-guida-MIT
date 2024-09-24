@@ -1,3 +1,11 @@
+/* REBUILD !!!! */
+:root {
+
+	--bs-gradient:linear-gradient(1deg, rgba(59, 188, 172, 0.11) 0.89%, rgba(88, 169, 197, 0.35) 50.74%, rgba(1, 82, 163, 0.3) 99.17%);
+
+} 
+
+
 /* Fonts */
 body {
   line-height: 22px;
@@ -42,6 +50,10 @@ body {
 #main-content {
   transition: margin 0.3s ease-in-out;
 }
+
+.header-middle .search-wrapper {
+  padding-right: 0px; 
+} 
 
 .header-middle {
   border-bottom: none;
@@ -172,4 +184,30 @@ table > tbody > tr > td:first-child {
 }
 .letterspacing{
   letter-spacing: 0.3em;
+}
+
+/**
+ * Table. 
+*/
+
+.list-table {
+ 
+  --bs-table-head-color: var(--bs-gray-700);
+}
+.list-table thead th {
+	background-color: var(--bs-gray-100);
+ 
+}
+
+.pagination .page-link {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
+}
+
+.header-middle .search-wrapper {
+   padding-right: 0px; 
+}
+
+.bgcode{
+  background-color: #003366;
 }

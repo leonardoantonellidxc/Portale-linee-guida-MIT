@@ -38,6 +38,8 @@ customFeatDatePicker.prototype.__construct = function( v ){
 	this._dom = {
 					'monthDays': $(this.Dom).find('.month-days'),
 					'dropdownToggle': $(this.Dom).find('button.input-group-text.dropdown-toggle'),
+					'dropdownMenu': $(this.Dom).find('.input-group > .dropdown-menu'),
+					'dropdownInner': $(this.Dom).find('.dropdown-menu'),
 	};
 	///////////////////////////////
 	$(this._dom.monthDays).empty();
@@ -93,24 +95,13 @@ customFeatDatePicker.prototype.__construct = function( v ){
 	///////////////////////////////
 	$(this._dom.dropdownToggle).on('click', ( e ) =>  {
 												///////////////////////////////
-												this.evDropdownClose();
+												this.evDropdownOpen( e );
+	});
+	///////////////////////////////
+	$(this._dom.dropdownInner).on('click', ( e ) =>  {
 												///////////////////////////////
 												e.stopPropagation();
-	});
-
-	///////////////////////////////
-	/*
-	let dropdownMenu = $('.datepicker .dropdown-menu');
-	///////////////////////////////
-	$(dropdownMenu).on('click', ( e ) =>  {
-								///////////////////////////////
-
-								//console.error( 'dropdown', e.target )
-
-								e.stopPropagation();
-
-	});
-	*/
+								});
 	///////////////////////////////
 	const days = $('.datepicker .month-days .day:not(.empty)');
 	$(days).on( 'click', ( e ) => {
@@ -123,8 +114,8 @@ customFeatDatePicker.prototype.__construct = function( v ){
 	///////////////////////////////
 	const apply = $('.datepicker .date-footer .btn-primary');
 	$(apply).on( 'click', ( e ) => {
-							///////////////////////////////
-							this.evDropdownClose( true );
+								///////////////////////////////
+								this.evDropdownClose( true );
 
 	});
 	///////////////////////////////
@@ -137,10 +128,30 @@ customFeatDatePicker.prototype.__construct = function( v ){
 	///////////////////////////////
 };
 /////////////////////////////////////////////////////////////////////////////////////////////
-/** 
- * Costruttore della classe.
- * @param {Object} v dom, viewTg, view
-*/
+customFeatDatePicker.prototype.evDropdownOpen = function( e ){
+	///////////////////////////////
+	const off = $(this.Dom).offset();
+	const winSize = $.winSize();
+	const winScroll = $.winScroll();
+	const posY = off.top-winScroll.y;
+	let versoCss = '';
+	if( posY>(winSize.height*0.5) ){
+		versoCss = 'menu-up';
+	}
+	///////////////////////////////
+	this.evDropdownClose();
+	///////////////////////////////
+	$(this._dom.dropdownToggle).addClass('show')
+	$(this._dom.dropdownMenu).addClass('show');
+	///////////////////////////////
+	$(this.Dom).find('.input-group > .dropdown-menu')
+			   .removeClass('menu-up')
+			   .addClass(versoCss)
+	///////////////////////////////
+	e.stopPropagation();
+	///////////////////////////////
+};
+/////////////////////////////////////////////////////////////////////////////////////////////
 customFeatDatePicker.prototype.evDropdownClose = function( apply=false ){
 	///////////////////////////////
 	$(this._dom.dropdownToggle).removeClass('show')
@@ -150,7 +161,10 @@ customFeatDatePicker.prototype.evDropdownClose = function( apply=false ){
 	const days = $('.datepicker .month-days .day:not(.empty)');
 	let day = $(days).filter('.active').text().trim();
 	///////////////////////////////
-	$(e.currentTarget).closest('.form-group').find('.form-control').val(day+'/06/2024');
+	if( apply===true ){
+		///////////////////////////////
+		$(this.Dom).find('.form-control').val(day+'/06/2024');
+	}
 
 	///////////////////////////////
 };
