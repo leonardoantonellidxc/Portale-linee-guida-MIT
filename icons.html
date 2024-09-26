@@ -128,7 +128,7 @@
                         <span>Homepage</span>
                       </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                       <a href="design-system.html" class="nav-link">
                         <span>Design System</span>
                       </a>
@@ -300,10 +300,11 @@
         <div class="col-12 col-lg-9" id="main-content">
           <!-- hero-->
           <div class="bg-hero-green p-6 rounded my-6">
-            <p class="fw-bold c-neutral-500">Design System</p>
-            <h1>Icons</h1>
+            <p class="h6 fw-semibold c-neutral-500">Design System</p>
+            <h2 class="titlepage fw-bold">Icons</h2>
           </div>
           <!-- p-->
+
           <p class="my-8">
             L'utilizzo delle icone, oltre a conferire al progetto coerenza e
             riconoscibilità a tutti i portali del Ministero dei Trasporti e
@@ -312,7 +313,7 @@
             consentono l'interattività e attirano l'attenzione su informazioni
             importanti.
           </p>
-
+          <h5 class="fw-bold mb-4">Dimensioni</h5>
           <div class="row gx-10 mx-0 justify-content-center bg-gray py-8">
             <div class="col-auto text-center">
               <svg
@@ -484,23 +485,11 @@
                 all’interno di Figma
               </div>
             </div>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="alert"
-              aria-label="Chiudi"
-            >
-              <svg class="icon">
-                <use
-                  href="imgs/icon/sprite_fill.svg#it-close-circle"
-                ></use>
-              </svg>
-            </button>
           </div>
 
           <!-- section Raapresentazione visiva-->
           <div class="my-5">
-            <h6>Stile</h6>
+            <h5 class="fw-bold">Stile</h5>
             <p class="my-6">
               All’interno del Design system la maggior parte delle icone
               utilizzate possiede due stili grafici:
@@ -522,7 +511,9 @@
               del progetto.
             </p>
 
-            <div class="row gx-10 mx-0 justify-content-center bg-gray py-8">
+            <div
+              class="row gx-10 mx-0 justify-content-center rounded bg-gray py-8 my-4"
+            >
               <div class="col-auto text-center">
                 <p>Linear</p>
                 <svg
@@ -567,8 +558,8 @@
           </div>
           <!-- section suddivisone generale ed utilizzo-->
           <div>
-            <h4 class="mb-4 fw-bold">Suddivisone generale ed utilizzo</h4>
-            <p>
+            <h5 class="mb-4 fw-bold">Suddivisone generale ed utilizzo</h5>
+            <p class="mb-4">
               Le icone all’interno del Design system sono state suddivise in 6
               macro categorie, ognuna utilizzata per diversi scopi.
             </p>
@@ -745,49 +736,45 @@
           <!-- section stato -->
           <div>
             <h4 class="mb-4">Stato</h4>
-            <div class="row gy-4">
+            <div id="rowstato" class="row gy-4">
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="all" data-bs-dismiss="chip">
                   <span> Tutto </span>
                 </a>
               </div>
+
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
-                  <span> Base </span>
-                </a>
-              </div>
-              <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="primary" data-bs-dismiss="chip">
                   <span> Primary </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="secondary" data-bs-dismiss="chip">
                   <span> Secondary </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="accent" data-bs-dismiss="chip">
                   <span> Accent </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="disabled" data-bs-dismiss="chip">
                   <span> Disabled </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="success" data-bs-dismiss="chip">
                   <span> Success </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="warning" data-bs-dismiss="chip">
                   <span> Warning </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="danger" data-bs-dismiss="chip">
                   <span> Danger </span>
                 </a>
               </div>
@@ -797,9 +784,9 @@
               i seguenti stati e colori:
             </p>
             <div class="shadow p-6">
-              <div id="base">
+              <div id="neutral">
                 <div class="mb-4 fw-semibold">Neutral</div>
-                <div class="row gy-4">
+                <div class="row gy-4 my-3">
                   <div class="col-auto">
                     <div class="d-flex align-items-center">
                       <svg
@@ -1326,7 +1313,7 @@
 
           <!-- section scarica -->
           <div class="bg-gray my-6 p-6 rounded">
-            <h4 class="fw-bold mb-5">Scarica le icone</h4>
+            <h5 class="fw-bold mb-5">Scarica le icone</h5>
             <div>
               <div class="row gy-5">
                 <div class="col-12 col-lg-4">
@@ -1344,19 +1331,13 @@
                         </div>
                       </div>
 
-                      <div class="pt-2 body-lg">
-                        Accedi alla libreria e tocca con mano tutti i suoi
-                        componenti per scoprirli nel dettaglio
-                      </div>
                       <button type="button" class="btn btn-bare btn-sm">
                         <span aria-hidden="true">Scarica</span>
                         <span class="visually-hidden"
                           >Vai alla risorsa - Apertura nuova finestra
                         </span>
                         <svg class="icon icon-sm">
-                          <use
-                            href="/imgs/icon/sprite.svg#it-external-link"
-                          ></use>
+                          <use href="/imgs/icon/sprite.svg#it-download"></use>
                         </svg>
                       </button>
                     </div>
@@ -1379,19 +1360,13 @@
                         </div>
                       </div>
 
-                      <div class="pt-2 body-lg">
-                        Scopri ed istalla la libreria React per poter sviluppare
-                        con facilità e rapidità
-                      </div>
                       <button type="button" class="btn btn-bare btn-sm">
                         <span aria-hidden="true">Scarica </span>
                         <span class="visually-hidden"
                           >Vai alla risorsa - Apertura nuova finestra
                         </span>
                         <svg class="icon icon-sm">
-                          <use
-                            href="/imgs/icon/sprite.svg#it-external-link"
-                          ></use>
+                          <use href="/imgs/icon/sprite.svg#it-download"></use>
                         </svg>
                       </button>
                     </div>
@@ -1414,19 +1389,13 @@
                         </div>
                       </div>
 
-                      <div class="pt-2 body-lg">
-                        Scopri ed istalla la libreria Angular per poter
-                        sviluppare con facilità e rapidità
-                      </div>
                       <button type="button" class="btn btn-bare btn-sm">
                         <span aria-hidden="true">Scarica</span>
                         <span class="visually-hidden"
                           >Vai alla risorsa - Apertura nuova finestra
                         </span>
                         <svg class="icon icon-sm">
-                          <use
-                            href="/imgs/icon/sprite.svg#it-external-link"
-                          ></use>
+                          <use href="/imgs/icon/sprite.svg#it-download"></use>
                         </svg>
                       </button>
                     </div>
@@ -1439,323 +1408,312 @@
           <div>
             <h6>Elenco delle icone</h6>
 
-            <div class="border shadow">
+            <div class="border shadow p-3">
               <div class="d-flex">
-                <div class="form-group dropdown">
-                  <div class="input-group">
-                    <div class="input-group-text">
-                      <svg class="icon icon-xxs">
-                        <use
-                          href="imgs/icon/sprite.svg#it-search"
-                        ></use>
-                      </svg>
+                <div class="w-100 me-4">
+                  <div class="form-group dropdown">
+                    <div class="input-group">
+                      <div class="input-group-text">
+                        <svg class="icon icon-xxs">
+                          <use href="imgs/icon/sprite.svg#it-search"></use>
+                        </svg>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="field1"
+                        placeholder="Cerca"
+                        value=""
+                        aria-label="Lorem ipsum dolor sit"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      />
+                      <div class="input-group-text active-option">
+                        <svg class="icon icon-xxs">
+                          <use href="imgs/icon/sprite.svg#it-streamline"></use>
+                        </svg>
+                      </div>
+                      <div class="input-group-text active-closer"></div>
                     </div>
-                    <input
-                      type="text"
-                      class="form-control"
-                      name="field1"
-                      placeholder="Cerca"
-                      value=""
-                      aria-label="Lorem ipsum dolor sit"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    />
-                    <div class="input-group-text active-option">
-                      <svg class="icon icon-xxs">
-                        <use
-                          href="imgs/icon/sprite.svg#it-streamline"
-                        ></use>
-                      </svg>
-                    </div>
-                    <div class="input-group-text active-closer"></div>
-                  </div>
-                  <div class="dropdown-menu">
-                    <ul class="scrollable">
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <div class="text-icon">
+                    <div class="dropdown-menu">
+                      <ul class="scrollable">
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <div class="text-icon">
+                              <svg class="icon icon-xs">
+                                <use
+                                  href="/imgs/icon/sprite.svg#it-example"
+                                ></use>
+                              </svg>
+                              <span> Label text </span>
+                            </div>
                             <svg class="icon icon-xs">
                               <use
                                 href="/imgs/icon/sprite.svg#it-example"
                               ></use>
                             </svg>
-                            <span> Label text </span>
-                          </div>
-                          <svg class="icon icon-xs">
-                            <use href="/imgs/icon/sprite.svg#it-example"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <div class="text-icon">
-                            <svg class="icon icon-xs">
-                              <use
-                                href="imgs/icon/sprite.svg#it-example"
-                              ></use>
-                            </svg>
-                            <span> Label text </span>
-                          </div>
-                          <svg class="icon icon-xs">
-                            <use href="/imgs/icon/sprite.svg#it-example"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <div class="text-icon">
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <div class="text-icon">
+                              <svg class="icon icon-xs">
+                                <use
+                                  href="imgs/icon/sprite.svg#it-example"
+                                ></use>
+                              </svg>
+                              <span> Label text </span>
+                            </div>
                             <svg class="icon icon-xs">
                               <use
                                 href="/imgs/icon/sprite.svg#it-example"
                               ></use>
                             </svg>
-                            <span> Label text </span>
-                          </div>
-                          <svg class="icon icon-xs">
-                            <use href="/imgs/icon/sprite.svg#it-example"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <div class="h-line"></div>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <div class="text-icon">
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <div class="text-icon">
+                              <svg class="icon icon-xs">
+                                <use
+                                  href="/imgs/icon/sprite.svg#it-example"
+                                ></use>
+                              </svg>
+                              <span> Label text </span>
+                            </div>
                             <svg class="icon icon-xs">
                               <use
-                                href="imgs/icon/sprite.svg#it-example"
+                                href="/imgs/icon/sprite.svg#it-example"
                               ></use>
                             </svg>
-                            <span> Label text </span>
-                          </div>
-                          <svg class="icon icon-xs">
-                            <use href="/imgs/icon/sprite.svg#it-example"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <div class="text-icon">
+                          </a>
+                        </li>
+                        <li>
+                          <div class="h-line"></div>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <div class="text-icon">
+                              <svg class="icon icon-xs">
+                                <use
+                                  href="imgs/icon/sprite.svg#it-example"
+                                ></use>
+                              </svg>
+                              <span> Label text </span>
+                            </div>
                             <svg class="icon icon-xs">
                               <use
-                                href="imgs/icon/sprite.svg#it-example"
+                                href="/imgs/icon/sprite.svg#it-example"
                               ></use>
                             </svg>
-                            <span> Label text </span>
-                          </div>
-                          <svg class="icon icon-xs">
-                            <use
-                              href="imgs/icon/sprite.svg#it-example"
-                            ></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <div class="text-icon">
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <div class="text-icon">
+                              <svg class="icon icon-xs">
+                                <use
+                                  href="imgs/icon/sprite.svg#it-example"
+                                ></use>
+                              </svg>
+                              <span> Label text </span>
+                            </div>
                             <svg class="icon icon-xs">
-                              <use
-                                href="imgs/icon/sprite.svg#it-example"
-                              ></use>
+                              <use href="imgs/icon/sprite.svg#it-example"></use>
                             </svg>
-                            <span> Label text </span>
-                          </div>
-                          <svg class="icon icon-xs">
-                            <use
-                              href="imgs/icon/sprite.svg#it-example"
-                            ></use>
-                          </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <div class="text-icon">
+                              <svg class="icon icon-xs">
+                                <use
+                                  href="imgs/icon/sprite.svg#it-example"
+                                ></use>
+                              </svg>
+                              <span> Label text </span>
+                            </div>
+                            <svg class="icon icon-xs">
+                              <use href="imgs/icon/sprite.svg#it-example"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="dropdown-link link-all">
+                        <a
+                          type="button"
+                          class="btn btn-bare btn-sm"
+                          href="javascript:"
+                        >
+                          Mostra tutti i risultati
                         </a>
-                      </li>
-                    </ul>
-                    <div class="dropdown-link link-all">
-                      <a
-                        type="button"
-                        class="btn btn-bare btn-sm"
-                        href="javascript:"
-                      >
-                        Mostra tutti i risultati
-                      </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <button type="button" class="btn btn-primary btn-sm">
+
+                <button
+                  type="button"
+                  id="searchButton"
+                  class="btn btn-primary btn-sm"
+                >
                   <span> Cerca </span>
                 </button>
               </div>
-<div> 
+              <div>
+                <div
+                  class="list-table table-responsive table-sm table-even my-4"
+                >
+                  <table id="tabellaicone" class="tablefixed">
+                    <thead>
+                      <tr class="bg-primary10">
+                        <th>
+                          <div class="fw-bold">Icona</div>
+                        </th>
+                        <th>
+                          <div class="fw-bold">Nome</div>
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Icona">
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-collapse"
+                            ></use>
+                          </svg>
+                          <svg class="icon icon-sm">
+                            <use href="/imgs/icon/sprite.svg#it-collapse"></use>
+                          </svg>
+                        </td>
 
-  <div class="badge badge-primary badge-lg">
-    
-    <span>
-      Frecce
-    </span>
-  </div>
-  <div class="list-table table-responsive table-sm table-even">
-    <table class="tablefixed">
-      <thead>
-        <tr class="bg-primary10">
-          <th>
-            <div class="fw-bold">Icona</div>
-          </th>
-          <th>
-            <div class="fw-bold">Nome</div>
-          </th>
+                        <td data-label="Nome">
+                          <div>Arrow-up</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Icona">
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-chevron-right"
+                            ></use>
+                          </svg>
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite.svg#it-chevron-right"
+                            ></use>
+                          </svg>
+                        </td>
 
-          
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="colf-form colf-check" data-label="Icona">
-           
-            <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite_fill.svg#it-collapse"></use>
-            </svg>
-            <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite.svg#it-collapse"></use>
-            </svg>
-          </td>
+                        <td data-label="Nome">
+                          <div>Arrow-left</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Icona">
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-chevron-right"
+                            ></use>
+                          </svg>
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite.svg#it-chevron-right"
+                            ></use>
+                          </svg>
+                        </td>
 
-          <td data-label="Nome">
-            <div>
-              Arrow-up
-            </div>
-          </td>
-          
-        </tr>
-        <tr>
-          <td class="colf-form colf-check" data-label="Icona">
-            
-            <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite_fill.svg#it-chevron-right"></use>
-            </svg><svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
-            </svg>
-          </td>
+                        <td data-label="Nome">
+                          <div>Arrow-right</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Icona">
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-expand"
+                            ></use>
+                          </svg>
+                          <svg class="icon icon-sm">
+                            <use href="/imgs/icon/sprite.svg#it-expand"></use>
+                          </svg>
+                        </td>
 
-          <td data-label="Nome">
-            <div>
-              Arrow-left
-            </div>
-          </td>
-          
-        </tr>
-        <tr>
-          <td class="colf-form colf-check" data-label="Icona">
-           
-            <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite_fill.svg#it-chevron-right"></use>
-            </svg>
-            <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
-            </svg>
-          </td>
+                        <td data-label="Nome">
+                          <div>Arrow-down</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Icona">
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-maximize"
+                            ></use>
+                          </svg>
+                          <svg class="icon icon-sm">
+                            <use href="/imgs/icon/sprite.svg#it-maximize"></use>
+                          </svg>
+                        </td>
 
-          <td data-label="Nome">
-            <div>
-              Arrow-right
-            </div>
-          </td>
-          
-        </tr>
-        <tr>
-          <td class="colf-form colf-check" data-label="Icona">
-         <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite_fill.svg#it-expand"></use>
-            </svg>  
-             <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite.svg#it-expand"></use>
-            </svg>
-            
-          </td>
+                        <td data-label="Nome">
+                          <div>Maximize</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Icona">
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-import"
+                            ></use>
+                          </svg>
+                          <svg class="icon icon-sm">
+                            <use href="/imgs/icon/sprite.svg#it-import"></use>
+                          </svg>
+                        </td>
 
-          <td data-label="Nome">
-            <div>
-              Arrow-down
-            </div>
-          </td>
-          
-        </tr>
-        <tr>
-          <td class="colf-form colf-check" data-label="Icona">
-           
-            <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite_fill.svg#it-maximize"></use>
-            </svg>
-            <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite.svg#it-maximize"></use>
-            </svg>
-          </td>
+                        <td data-label="Nome">
+                          <div>Arrow-left</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Icona">
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-chevron-right"
+                            ></use>
+                          </svg>
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite.svg#it-chevron-right"
+                            ></use>
+                          </svg>
+                        </td>
 
-          <td data-label="Nome">
-            <div>
-              Maximize
-            </div>
-          </td>
-          
-        </tr>
-        <tr>
-          <td class="colf-form colf-check" data-label="Icona">
-            
-            <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite_fill.svg#it-import"></use>
-            </svg><svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite.svg#it-import"></use>
-            </svg>
-          </td>
+                        <td data-label="Nome">
+                          <div>Arrow-right</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="colf-form colf-check" data-label="Icona">
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-expand"
+                            ></use>
+                          </svg>
+                          <svg class="icon icon-sm">
+                            <use href="/imgs/icon/sprite.svg#it-expand"></use>
+                          </svg>
+                        </td>
 
-          <td data-label="Nome">
-            <div>
-              Arrow-left
-            </div>
-          </td>
-          
-        </tr>
-        <tr>
-          <td class="colf-form colf-check" data-label="Icona">
-           
-            <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite_fill.svg#it-chevron-right"></use>
-            </svg>
-            <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
-            </svg>
-          </td>
-
-          <td data-label="Nome">
-            <div>
-              Arrow-right
-            </div>
-          </td>
-          
-        </tr>
-        <tr>
-          <td class="colf-form colf-check" data-label="Icona">
-         <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite_fill.svg#it-expand"></use>
-            </svg>  
-             <svg class="icon icon-sm">
-              <use href="/imgs/icon/sprite.svg#it-expand"></use>
-            </svg>
-            
-          </td>
-
-          <td data-label="Nome">
-            <div>
-              Arrow-down
-            </div>
-          </td>
-          
-        </tr>
-       
-      </tbody>
-    </table>
-  </div>
-
-</div>
-
+                        <td data-label="Nome">
+                          <div>Arrow-down</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
           <!-- section do dont-->
@@ -1784,12 +1742,7 @@
                     </div>
                     <!--content-->
                     <div class="my-5 d-flex justify-content-center">
-                      <div class="d-flex align-items-center">
-                        <p>Label text</p>
-                        <svg class="icon icon-sm">
-                          <use href="/imgs/icon/sprite.svg#it-home"></use>
-                        </svg>
-                      </div>
+                     <img src="/imgs/icon/iconpage/do1.svg" alt="">
                     </div>
                   </div>
                 </div>
@@ -1810,8 +1763,7 @@
                       </div>
                     </div>
                     <div class="my-5 d-flex justify-content-center">
-                      <img src="./imgs/shadows/dont1.svg" alt="" />
-                      <img src="./imgs/shadows/dont2.svg" alt="" />
+                      <img src="/imgs/icon/iconpage/dont1.svg" alt="">
                     </div>
                   </div>
                 </div>
@@ -1820,10 +1772,8 @@
 
             <div>
               <p>
-                Evita di utilizzare le ombre per troppi elementi in quanto
-                queste possono creare confusione visiva. Piuttosto utilizzale
-                per sottolineare l'importanza di alcuni elementi all’interno del
-                layout.
+                Utilizza la dimensione corretta delle icone in allineamento con
+                la dimensione del testo.
               </p>
               <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
                 <div class="col-12 col-md-6">
@@ -1843,16 +1793,7 @@
                       </div>
 
                       <div class="my-5 d-flex justify-content-center">
-                        <div>
-                          <h6 class="fw-bolder visually-hidden mb-2">
-                            Home page
-                          </h6>
-                          <img
-                            class="w-100"
-                            src="imgs/shadows/headerdo.svg"
-                            alt=""
-                          />
-                        </div>
+                        <img src="/imgs/icon/iconpage/do2.svg" alt="">
                       </div>
                     </div>
                   </div>
@@ -1873,16 +1814,7 @@
                         </div>
                       </div>
                       <div class="my-5 d-flex justify-content-center">
-                        <div>
-                          <h6 class="fw-bolder visually-hidden mb-2">
-                            Home page
-                          </h6>
-                          <img
-                            class="w-100"
-                            src="imgs/shadows/headerdont.svg"
-                            alt=""
-                          />
-                        </div>
+                        <img src="/imgs/icon/iconpage/dont2.svg" alt="">
                       </div>
                     </div>
                   </div>
@@ -1891,11 +1823,7 @@
             </div>
 
             <div>
-              <p>
-                Applica le ombre in modo coerente all'interno del design.
-                Mantieni l'intensità delle ombre uniforme per elementi simili,
-                indipendentemente dal contesto in cui vengono utilizzati.
-              </p>
+              <p>Allinea al centro le icone quando sono accanto al testo.</p>
               <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
                 <div class="col-12 col-md-6">
                   <div class="card bg-gray">
@@ -1914,14 +1842,7 @@
                       </div>
 
                       <div class="d-flex justify-content-center my-5">
-                        <div>
-                          <h6 class="fw-bolder mb-2">Home page</h6>
-                          <img
-                            class="w-100"
-                            src="imgs/shadows/headerdo.svg"
-                            alt=""
-                          />
-                        </div>
+                        <img src="/imgs/icon/iconpage/do3.svg" alt="">
                       </div>
                     </div>
                   </div>
@@ -1942,14 +1863,59 @@
                         </div>
                       </div>
                       <div class="d-flex justify-content-center my-5">
-                        <div>
-                          <h6 class="fw-bolder mb-2">Internal page</h6>
-                          <img
-                            class="w-100"
-                            src="imgs/shadows/headerdo.svg"
-                            alt=""
-                          />
+                        <img src="/imgs/icon/iconpage/dont3.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p>
+                Sii coerente con l’utilizzo delle icone. <br />
+                Utilizza le stesse icone in tutto il sito o l'applicazione per
+                mantenere consistenza e riconoscibilità.
+              </p>
+              <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+                <div class="col-12 col-md-6">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
                         </div>
+                      </div>
+
+                      <div class="d-flex justify-content-center my-5">
+                        <img src="/imgs/icon/iconpage/do4.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="card bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-center my-5">
+                        <img src="/imgs/icon/iconpage/dont4.svg" alt="">
                       </div>
                     </div>
                   </div>
@@ -1960,9 +1926,9 @@
 
           <!-- section Esempio di utilizzo -->
           <div class="my-5">
-            <h4 class="mb-3">Esempio di utilizzo</h4>
+            <h5 class="mb-3 fw-bold">Esempio di utilizzo</h5>
 
-            <img class="w-100" src="imgs/shadows/esempioutilizzo.svg" alt="" />
+            <img class="w-100" src="/imgs/icon/iconpage/esempioicon.svg" alt="" />
           </div>
 
           <!-- paginazione-->
@@ -2087,7 +2053,27 @@
             </div>
         </div>
     </section>-->
+    <footer>
+      <div class="footer-credits">
+        <div class="container">
+          <div class="navbar-brand pe-4">
+            <svg class="icon icon-lg" aria-hidden="true">
+              <use href="/imgs/icon/ministero.svg#ministero"></use>
+            </svg>
+            <div class="body-lg text-w6 ps-3">
+              www.mit.gov.it - Ministero delle infrastrutture e dei trasporti.
+            </div>
+          </div>
 
+          <div class="text-icon">
+            <svg class="icon icon-xs" aria-hidden="true">
+              <use href="/imgs/icon/sprite.svg#it-copyright"></use>
+            </svg>
+            <span> Tutti i diritti riservati </span>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Bootstrap 5.3 -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>

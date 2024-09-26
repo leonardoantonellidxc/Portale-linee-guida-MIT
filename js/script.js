@@ -126,3 +126,65 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+
+  //custom leo ricerca degli stati 
+
+  document.querySelectorAll('#rowstato .chip').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      var selectedId = this.getAttribute('data-id');
+      
+      // Nasconde tutte le sezioni
+      document.querySelectorAll('#neutral, #base, #primary, #secondary, #accent, #disabled, #success, #warning, #danger').forEach(function(section) {
+        section.style.display = 'none';
+      });
+  
+      // Mostra solo la sezione selezionata
+      if (selectedId === 'all') {
+        // Se 'Tutto' è selezionato, mostra tutte le sezioni
+        document.querySelectorAll('#neutral, #primary, #secondary, #accent, #disabled, #success, #warning, #danger').forEach(function(section) {
+          section.style.display = 'block';
+        });
+      } else {
+        var selectedSection = document.getElementById(selectedId);
+        if (selectedSection) {
+          selectedSection.style.display = 'block';
+        }
+      }
+    });
+  });
+  
+   //custom leo RIcerca delle icone all interno della tabella
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const input = document.querySelector('input[name="field1"]');
+    const button = document.getElementById('searchButton');
+    const tableRows = document.querySelectorAll('#tabellaicone tbody tr');
+
+    // Funzione per cercare nella tabella
+    function searchTable() {
+      const filter = input.value.toLowerCase(); // Testo inserito nell'input
+      tableRows.forEach((row) => {
+        const cell = row.querySelector('td[data-label="Nome"] div'); // Seleziona la cella della colonna "Nome"
+        const text = cell ? cell.textContent.toLowerCase() : '';
+
+        if (text.includes(filter)) {
+          row.style.display = ''; // Mostra la riga se il testo corrisponde
+        } else {
+          row.style.display = 'none'; // Nasconde la riga se non corrisponde
+        }
+      });
+    }
+
+    // Attiva la ricerca quando si clicca sul pulsante
+    
+    button.addEventListener('click', searchTable);
+
+    // Aggiunge la funzionalità di ricerca anche al campo di input (es. pressione del tasto "Invio")
+    input.addEventListener('keyup', function (event) {
+      if (event.key === 'Enter') {
+        searchTable();
+      }
+    });
+  });
+
