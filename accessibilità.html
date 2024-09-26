@@ -149,12 +149,12 @@
     <main class="container-fluid">
       <div class="row px-lg-9">
         <!-- hero-->
-        <div class="my-6 bg-gradients rounded">
+        <div class="my-6 bg-gradients rounded padding-end-0">
           <div class="px-7">
             <div class="mt-7">
-              <h1 class="fw-bolder">Accessibilità</h1>
+              <h2 class="fw-bolder titlepage">Accessibilità</h2>
 
-              <h2 class="fw-light mb-7">
+              <h2 class="fw-light mb-7 titlepage">
                 Ministero delle infrastrutture e dei trasporti
               </h2>
 
@@ -165,12 +165,14 @@
               </p>
             </div>
           </div>
-          <img class="w-100" src="./imgs/hero/hero_accesibilità.svg" alt="" />
+          <div class="ps-7 pe-0">
+            <img class="w-100" src="./imgs/hero/hero_accesibilità.svg" alt="" />
+          </div>
         </div>
         <!-- section 1 introduzione -->
         <div>
-          <h4 class="mb-4">Introduzione</h4>
-          <p>
+          <h5 class="mb-4">Introduzione</h5>
+          <p class="mb-4">
             Un design accessibile non solo agevola gli utenti con disabilità, ma
             migliora l'esperienza utente per tutti. Per questo motivo, il Design
             system sviluppato per il Ministero dei Trasporti e delle
@@ -178,7 +180,7 @@
             pratiche di accessibilità, garantendo a tutti gli utenti
             un'esperienza di alta qualità senza discriminazioni.
           </p>
-          <p>
+          <p class="mb-4">
             L'accessibilità web si basa sulle linee guida pubblicate dal World
             Wide Web Consortium (W3C) per i contenuti accessibili, conosciute
             come “Linee guida per l'accessibilità dei contenuti web” o WCAG.
@@ -199,12 +201,13 @@
               </div>
             </div>
           </div>
+
           <!-- Chiude la div.alert -->
         </div>
 
         <!-- section 2-->
         <div class="bg-gray my-5 p-6 rounded">
-          <h4 class="fw-bold mb-4">Principi che guidano l’accessibilità web</h4>
+          <h5 class="fw-bold mb-4">Principi che guidano l’accessibilità web</h5>
           <p>
             Per garantire l'accessibilità web per tutti, il World Wide Web
             Consortium (W3C) ha stabilito quattro principi fondamentali che
@@ -316,8 +319,8 @@
 
         <!-- section 3-->
         <div>
-          <h4 class="mb-4">Tipologie di utenti</h4>
-          <p>
+          <h5 class="mb-4">Tipologie di utenti</h5>
+          <p class="mb-4">
             Di seguito è riportato un elenco delle diverse tipologie di utenti
             che potrebbero utilizzare la nostra pagina, insieme a consigli su
             come offrire loro la migliore esperienza possibile. Questi
@@ -510,7 +513,7 @@
           </div>
 
           <!-- tab menu-->
-          <div class="bg-primary10 py-3 my-8">
+          <div class="bg-primary10 py-3 my-8 rounded">
             <ul class="nav nav-tabs light px-3" role="tablist">
               <li class="nav-item">
                 <button
@@ -568,7 +571,7 @@
               aria-labelledby="tab-1"
             >
               <div>
-                <h4 class="mb-4">Contrasto colore</h4>
+                <h5 class="mb-4">Contrasto colore</h5>
                 <p>
                   In conformità con le linee guida WCAG definite dal W3C ti
                   consigliamo di garantire i contrasti elencati di seguito al
@@ -622,7 +625,7 @@
 
                     <tr>
                       <td class="colf-form colf-check" data-label="Utente">
-                        <div >
+                        <div>
                           <strong class="h6"
                             >Componenti dell’interfaccia utente</strong
                           >
@@ -639,9 +642,11 @@
                 </table>
               </div>
               <p class="my-6">
-                Questi livelli di contrasto non vengono richiesti per:elementi
-                inattivi, testi decorativi, illustrazioni ed immagine decorative
-                e per i logotipi. <strong> </strong>
+                Questi livelli di contrasto non vengono richiesti per:
+                <strong>
+                  elementi inattivi, testi decorativi, illustrazioni ed immagine
+                  decorative e per i logotipi</strong
+                >.
               </p>
               <p class="fw-bold">
                 Esempio valori di contrasto: icona su sfondo
@@ -893,23 +898,62 @@
                 </div>
               </div>
               <div>
-                <h6 class="h6 my-4">Uso del colore e daltonismo</h6>
+                <h5 class="my-4">Uso del colore e daltonismo</h5>
 
-                <p>
+                <p class="mb-4">
                   Quando si progetta, è importante non fare affidamento
                   esclusivamente sul colore per trasmettere significato, poiché
                   circa l'8% della popolazione maschile e lo 0,4% della
                   popolazione femminile soffre di disturbi visivi legati alla
                   percezione del colore. Per garantire che i contenuti siano
-                  comprensibili a tutti è consigliato utilizzare un simulatore
-                  per daltonismo che permetta di verificare la visibilità dei
-                  contenuti e assicurarsi così che essi siano chiari anche senza
-                  il supporto del colore.
+                  comprensibili a tutti è consigliato utilizzare un
+                  <strong> simulatore per daltonismo </strong>che permetta di
+                  verificare la visibilità dei contenuti e assicurarsi così che
+                  essi siano chiari anche senza il supporto del colore.
                 </p>
-                <p>
+                <p class="mb-4">
                   Se stai lavorando con Figma, ti consigliamo di utilizzare il
-                  plugin Stark.
+                  plugin <a href=" ">Stark</a>.
                 </p>
+                <div
+                  class="row align-content-center justify-content-center bggrigio p-8 gx-9 gy-4"
+                >
+                  <div
+                    class="col-4 col-md-2 col-lg-1 d-flex flex-column ustify-content-center"
+                  >
+                    <img src="./imgs/accessibilità_page/col2.svg" alt="" />
+                    <p class="fw-bold my-4">Visione normale</p>
+                  </div>
+                  <div
+                    class="col-4 col-md-2 col-lg-1 d-flex flex-column ustify-content-center"
+                  >
+                    <img
+                      src="./imgs/accessibilità_page/col3.svg"
+                      class="w-100"
+                      alt=""
+                    />
+                    <p class="fw-bold my-4">Protanopia (Cecità al rosso)</p>
+                  </div>
+                  <div
+                    class="col-4 col-md-2 col-lg-1 d-flex flex-column ustify-content-center"
+                  >
+                    <img src="./imgs/accessibilità_page/col4.svg" alt="" />
+                    <p class="fw-bold my-4">Deuteranopia (Cecità al verde)</p>
+                  </div>
+                  <div
+                    class="col-4 col-md-2 col-lg-1 d-flex flex-column ustify-content-center"
+                  >
+                    <img src="./imgs/accessibilità_page/col5.svg" alt="" />
+                    <p class="fw-bold my-4">Tritanopia (Cecità al giallo)</p>
+                  </div>
+                  <div
+                    class="col-4 col-md-2 col-lg-1 d-flex flex-column ustify-content-center"
+                  >
+                    <img src="./imgs/accessibilità_page/col1.svg" alt="" />
+                    <p class="fw-bold my-4">Monocromia</p>
+                  </div>
+                </div>
+                <!-- v1 
                 <div class="d-lg-none">
                   <img
                     class="w-100"
@@ -924,7 +968,7 @@
                     src="./imgs/accessibilità_page/paletted.svg"
                     alt=""
                   />
-                </div>
+                </div>-->
               </div>
             </div>
 
@@ -936,8 +980,8 @@
               aria-labelledby="tab-2"
             >
               <div class="mb-4">
-                <h4 class="mb-4">Immagini</h4>
-                <p>
+                <h5 class="mb-2">Immagini</h5>
+                <p class="mb-4">
                   Esistono due tipologie di immagini che è possibile utilizzare
                   all’interno dei tuoi progetti: informative e decorative.
                 </p>
@@ -989,12 +1033,12 @@
                 <ul>
                   <li>dovrebbero essere ignorate dallo screen reader;</li>
                   <li>
-                    Assicurati che il testo alternativo sia breve e appropriato
-                    al contesto;
-                  </li>
-                  <li>
                     possono essere definite come immagine di sfondo nel foglio
                     di stile;
+                  </li>
+                  <li>
+                    dovrebbero utilizzare l'attributo
+                    <strong>“Role="presentation" </strong> .
                   </li>
                 </ul>
 
@@ -1013,9 +1057,9 @@
               </div>
 
               <div>
-                <h6 class="fw-bold mt-5">
+                <h5 class="fw-bold mt-5 mb-2">
                   Come rendere accessibile un’immagine
-                </h6>
+                </h5>
                 <p>
                   La migliore modalità per fornire una descrizione testuale alle
                   immagini è certamente quella di utilizzare l'attributo
@@ -1062,8 +1106,8 @@
               </div>
 
               <div>
-                <p class="fw-bold h-5">Scrivere un alt efficace</p>
-                <p></p>
+                <h6 class="fw-bold">Scrivere un alt efficace</h6>
+
                 <ul>
                   <li>
                     <strong> Brevità.</strong> Un testo alternativo lungo può
@@ -1100,7 +1144,7 @@
               aria-labelledby="tab-3"
             >
               <div>
-                <h6 class="fw-bold">Navigazione tramite tastiera</h6>
+                <h5 class="fw-bold mb-2">Navigazione tramite tastiera</h5>
 
                 <p>
                   Le interazioni da tastiera più comuni avvengono nel seguente
@@ -1147,7 +1191,7 @@
                   </li>
                 </ul>
 
-                <p class="fw-bold h-5">Indicatori di messa a fuoco</p>
+                <h5 class="fw-bold">Indicatori di messa a fuoco</h5>
 
                 <p>
                   Il tasto tabulazione consente di navigare tra tutti gli
@@ -1162,8 +1206,8 @@
                 <div>
                   <div class="card rounded bg-gray">
                     <div class="card-body">
-                      <p class="fw-bold my-5">Accordion/Desktop</p>
-                      <h6 class="mb-5">Stato default</h6>
+                      <p class=" my-5 text-grigio fw-semibold">Accordion/Desktop</p>
+                      <h6 class="mb-5 text-grigio">Stato default</h6>
 
                       <div class="accordion mb-5" id="collapseExample">
                         <div class="accordion-item">
@@ -1198,7 +1242,7 @@
                         </div>
                       </div>
 
-                      <h6 class="mb-5">Stato di focus</h6>
+                      <h6 class="mb-5 text-grigio ">Stato di focus</h6>
                       <div
                         class="accordion force-focus mb-5"
                         id="collapseExample"

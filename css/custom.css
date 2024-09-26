@@ -214,3 +214,12 @@ table > tbody > tr > td:first-child {
 .titlepage{
   color:#003366;
 }
+.padding-end-0{
+padding-right: 0px;
+}
+.bggrigio{
+  background-color: #F3F3F3;
+}
+.text-grigio{
+  color: #64748B;
+}
