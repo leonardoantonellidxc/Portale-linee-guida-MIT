@@ -489,7 +489,7 @@
 
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h5 class="">Codice</h5>
-                  <button type="button"  class="btn btn-primary">
+                  <button type="button" id="copyButton1" class="btn btn-primary">
                     <span> Copia codice </span>
                     <svg class="icon icon-sm">
                       <use href="/imgs/icon/sprite_fill.svg#it-copy-success"></use>
@@ -501,144 +501,144 @@
                   <div class="code-container">
                     <pre>
                   <code>
-&lt;div class="pt-3"&gt;
-  &lt;div class="avatar-group"&gt;
-    &lt;a class="avatar" href="#"&gt;
-      &lt;img
-        src="https://randomuser.me/api/portraits/women/12.jpg"
-        alt="Arianna Rossi"
-      /&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-primary" href="#"&gt;
-      &lt;div aria-hidden="true"&gt;A&lt;/div&gt;
-      &lt;span class="visually-hidden"&gt;Andrea Gallo&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar" href="#"&gt;
-      &lt;img
-        src="https://randomuser.me/api/portraits/men/13.jpg"
-        alt="Giulio Neri"
-      /&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-primary" href="#"&gt;
-      &lt;div aria-hidden="true"&gt;S&lt;/div&gt;
-      &lt;span class="visually-hidden"&gt;Sara Ghione&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-primary disabled" href="#"&gt;
-      &lt;div aria-hidden="true"&gt;B&lt;/div&gt;
-      &lt;span class="visually-hidden"&gt;Barbara Tosi&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar" href="#"&gt;
-      &lt;img
-        src="https://randomuser.me/api/portraits/men/11.jpg"
-        alt="Giulio Neri"
-      /&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-primary" href="#"&gt;
-      &lt;div&gt;N+&lt;/div&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="pt-3"&gt;
-  &lt;div class="avatar-group"&gt;
-    &lt;a class="avatar avatar-sm" href="#"&gt;
-      &lt;img
-        src="https://randomuser.me/api/portraits/women/12.jpg"
-        alt="Arianna Rossi"
-      /&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-primary avatar-sm" href="#"&gt;
-      &lt;div aria-hidden="true"&gt;A&lt;/div&gt;
-      &lt;span class="visually-hidden"&gt;Andrea Gallo&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-sm" href="#"&gt;
-      &lt;img
-        src="https://randomuser.me/api/portraits/men/13.jpg"
-        alt="Giulio Neri"
-      /&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-primary avatar-sm" href="#"&gt;
-      &lt;div aria-hidden="true"&gt;S&lt;/div&gt;
-      &lt;span class="visually-hidden"&gt;Sara Ghione&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a
-      class="avatar avatar-primary avatar-sm disabled"
-      href="#"
-    &gt;
-      &lt;div aria-hidden="true"&gt;B&lt;/div&gt;
-      &lt;span class="visually-hidden"&gt;Barbara Tosi&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-sm" href="#"&gt;
-      &lt;img
-        src="https://randomuser.me/api/portraits/men/11.jpg"
-        alt="Giulio Neri"
-      /&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-primary avatar-sm" href="#"&gt;
-      &lt;div&gt;N+&lt;/div&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="pt-3"&gt;
-  &lt;div class="avatar-group"&gt;
-    &lt;a class="avatar avatar-square avatar-sm" href="#"&gt;
-      &lt;img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Arianna Rossi"&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-square avatar-sm avatar-primary" href="#"&gt;
-      &lt;div aria-hidden="true"&gt;A&lt;/div&gt;
-      &lt;span class="visually-hidden"&gt;Andrea Gallo&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-square avatar-sm" href="#"&gt;
-      &lt;img src="https://randomuser.me/api/portraits/men/13.jpg" alt="Giulio Neri"&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-square avatar-sm avatar-primary" href="#"&gt;
-      &lt;div aria-hidden="true"&gt;S&lt;/div&gt;
-      &lt;span class="visually-hidden"&gt;Sara Ghione&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-square avatar-sm avatar-primary disabled" href="#"&gt;
-      &lt;div aria-hidden="true"&gt;B&lt;/div&gt;
-      &lt;span class="visually-hidden"&gt;Barbara Tosi&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-square avatar-sm" href="#"&gt;
-      &lt;img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Giulio Neri"&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-square avatar-sm avatar-primary" href="#"&gt;
-      &lt;div&gt;
-        N+&lt;/div&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class="pt-3"&gt;
-  &lt;div class="avatar-group"&gt;
-    &lt;a class="avatar avatar-square avatar-xs" href="#"&gt;
-      &lt;img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Arianna Rossi"&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-square avatar-primary avatar-xs" href="#"&gt;
-      &lt;div aria-hidden="true"&gt;A&lt;/div&gt;
-      &lt;span class="visually-hidden"&gt;Andrea Gallo&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-square avatar-xs" href="#"&gt;
-      &lt;img src="https://randomuser.me/api/portraits/men/13.jpg" alt="Giulio Neri"&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-square avatar-primary avatar-xs" href="#"&gt;
-      &lt;div aria-hidden="true"&gt;S&lt;/div&gt;
-      &lt;span class="visually-hidden"&gt;Sara Ghione&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-square avatar-primary avatar-xs disabled" href="#"&gt;
-      &lt;div aria-hidden="true"&gt;B&lt;/div&gt;
-      &lt;span class="visually-hidden"&gt;Barbara Tosi&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-square avatar-xs" href="#"&gt;
-      &lt;img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Giulio Neri"&gt;
-    &lt;/a&gt;
-    &lt;a class="avatar avatar-square avatar-primary avatar-xs" href="#"&gt;
-      &lt;div&gt;
-        N+&lt;/div&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+                  &lt;div class="pt-3"&gt;
+                    &lt;div class="avatar-group"&gt;
+                      &lt;a class="avatar" href="#"&gt;
+                        &lt;img
+                          src="https://randomuser.me/api/portraits/women/12.jpg"
+                          alt="Arianna Rossi"
+                        /&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-primary" href="#"&gt;
+                        &lt;div aria-hidden="true"&gt;A&lt;/div&gt;
+                        &lt;span class="visually-hidden"&gt;Andrea Gallo&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar" href="#"&gt;
+                        &lt;img
+                          src="https://randomuser.me/api/portraits/men/13.jpg"
+                          alt="Giulio Neri"
+                        /&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-primary" href="#"&gt;
+                        &lt;div aria-hidden="true"&gt;S&lt;/div&gt;
+                        &lt;span class="visually-hidden"&gt;Sara Ghione&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-primary disabled" href="#"&gt;
+                        &lt;div aria-hidden="true"&gt;B&lt;/div&gt;
+                        &lt;span class="visually-hidden"&gt;Barbara Tosi&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar" href="#"&gt;
+                        &lt;img
+                          src="https://randomuser.me/api/portraits/men/11.jpg"
+                          alt="Giulio Neri"
+                        /&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-primary" href="#"&gt;
+                        &lt;div&gt;N+&lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  
+                  &lt;div class="pt-3"&gt;
+                    &lt;div class="avatar-group"&gt;
+                      &lt;a class="avatar avatar-sm" href="#"&gt;
+                        &lt;img
+                          src="https://randomuser.me/api/portraits/women/12.jpg"
+                          alt="Arianna Rossi"
+                        /&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-primary avatar-sm" href="#"&gt;
+                        &lt;div aria-hidden="true"&gt;A&lt;/div&gt;
+                        &lt;span class="visually-hidden"&gt;Andrea Gallo&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-sm" href="#"&gt;
+                        &lt;img
+                          src="https://randomuser.me/api/portraits/men/13.jpg"
+                          alt="Giulio Neri"
+                        /&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-primary avatar-sm" href="#"&gt;
+                        &lt;div aria-hidden="true"&gt;S&lt;/div&gt;
+                        &lt;span class="visually-hidden"&gt;Sara Ghione&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;a
+                        class="avatar avatar-primary avatar-sm disabled"
+                        href="#"
+                      &gt;
+                        &lt;div aria-hidden="true"&gt;B&lt;/div&gt;
+                        &lt;span class="visually-hidden"&gt;Barbara Tosi&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-sm" href="#"&gt;
+                        &lt;img
+                          src="https://randomuser.me/api/portraits/men/11.jpg"
+                          alt="Giulio Neri"
+                        /&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-primary avatar-sm" href="#"&gt;
+                        &lt;div&gt;N+&lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  
+                  &lt;div class="pt-3"&gt;
+                    &lt;div class="avatar-group"&gt;
+                      &lt;a class="avatar avatar-square avatar-sm" href="#"&gt;
+                        &lt;img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Arianna Rossi"&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-square avatar-sm avatar-primary" href="#"&gt;
+                        &lt;div aria-hidden="true"&gt;A&lt;/div&gt;
+                        &lt;span class="visually-hidden"&gt;Andrea Gallo&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-square avatar-sm" href="#"&gt;
+                        &lt;img src="https://randomuser.me/api/portraits/men/13.jpg" alt="Giulio Neri"&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-square avatar-sm avatar-primary" href="#"&gt;
+                        &lt;div aria-hidden="true"&gt;S&lt;/div&gt;
+                        &lt;span class="visually-hidden"&gt;Sara Ghione&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-square avatar-sm avatar-primary disabled" href="#"&gt;
+                        &lt;div aria-hidden="true"&gt;B&lt;/div&gt;
+                        &lt;span class="visually-hidden"&gt;Barbara Tosi&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-square avatar-sm" href="#"&gt;
+                        &lt;img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Giulio Neri"&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-square avatar-sm avatar-primary" href="#"&gt;
+                        &lt;div&gt;
+                          N+&lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  
+                  &lt;div class="pt-3"&gt;
+                    &lt;div class="avatar-group"&gt;
+                      &lt;a class="avatar avatar-square avatar-xs" href="#"&gt;
+                        &lt;img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Arianna Rossi"&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-square avatar-primary avatar-xs" href="#"&gt;
+                        &lt;div aria-hidden="true"&gt;A&lt;/div&gt;
+                        &lt;span class="visually-hidden"&gt;Andrea Gallo&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-square avatar-xs" href="#"&gt;
+                        &lt;img src="https://randomuser.me/api/portraits/men/13.jpg" alt="Giulio Neri"&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-square avatar-primary avatar-xs" href="#"&gt;
+                        &lt;div aria-hidden="true"&gt;S&lt;/div&gt;
+                        &lt;span class="visually-hidden"&gt;Sara Ghione&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-square avatar-primary avatar-xs disabled" href="#"&gt;
+                        &lt;div aria-hidden="true"&gt;B&lt;/div&gt;
+                        &lt;span class="visually-hidden"&gt;Barbara Tosi&lt;/span&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-square avatar-xs" href="#"&gt;
+                        &lt;img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Giulio Neri"&gt;
+                      &lt;/a&gt;
+                      &lt;a class="avatar avatar-square avatar-primary avatar-xs" href="#"&gt;
+                        &lt;div&gt;
+                          N+&lt;/div&gt;
+                      &lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
                   </code>
                     </pre>
                   </div>
@@ -835,18 +835,25 @@ function updateContent() {
 
     // Mostra il contenuto di Type4 senza fare riferimento alla Size
     const component = components[selectedType]?.["default"];
-    contentDiv.innerHTML = component;
+    if (component) {
+      contentDiv.innerHTML = component;
 
-    // Rimuovi ogni occorrenza di <div class="avatar-container">
-    let containerlessComponent = component.replace(/<div class="avatar-container">/g, '').replace(/<\/div>$/, '').replace(/<\/div>/g, '</div>\n');
+      // Rimuovi ogni occorrenza di <div class="avatar-container">
+      let containerlessComponent = component.replace(/<div class="avatar-container">/g, '').replace(/<\/div>$/, '').replace(/<\/div>/g, '</div>\n');
 
-    // Prettifica e visualizza il codice nel primo div
-    const formattedCode = prettifyHTML(containerlessComponent);
-    codeDiv.innerHTML = `<pre><code>${escapeHTML(formattedCode)}</code></pre>`;
+      // Prettifica e visualizza il codice nel primo div
+      const formattedCode = prettifyHTML(containerlessComponent);
+      codeDiv.innerHTML = `<pre><code>${escapeHTML(formattedCode)}</code></pre>`;
 
-    // Mostra solo il primo pulsante di copia
-    copyButton.style.display = 'inline-block' ;
-    copyButton1.style.display = 'none'; // Nasconde il secondo pulsante di copia se non necessario
+      // Mostra solo il primo pulsante di copia
+      copyButton.style.display = 'inline-block';
+      copyButton1.style.display = 'none'; // Nasconde il secondo pulsante di copia
+    } else {
+      contentDiv.innerHTML = "Componente non trovato per questa combinazione.";
+      codeDiv.innerHTML = "Codice non disponibile per questa combinazione.";
+      copyButton.style.display = 'none';
+      copyButton1.style.display = 'none';
+    }
   } else {
     // Mostra il container Size per altri tipi
     sizeSelectorContainer.style.display = 'block';
@@ -867,6 +874,31 @@ function updateContent() {
         copyButton.classList.add("d-flex"); //leo
         if (copyButton1) {
           copyButton1.style.display = 'inline-block'; // Mostra il secondo pulsante di copia
+        }
+      } else {
+        contentDiv.innerHTML = "Componente non trovato per questa combinazione.";
+        codeDiv.innerHTML = "Codice non disponibile per questa combinazione.";
+        copyButton.style.display = 'none';
+        if (copyButton1) {
+          copyButton1.style.display = 'none';
+        }
+      }
+    } else if (selectedType) {
+      // Se Type è selezionato ma non Size, gestiamo un caso con "default" (senza Size)
+      const component = components[selectedType]?.["default"];
+
+      if (component) {
+        contentDiv.innerHTML = component;
+
+        // Prettifica e visualizza il codice nel primo div
+        let containerlessComponent = component.replace(/<div class="avatar-container">/g, '').replace(/<\/div>$/, '').replace(/<\/div>/g, '</div>\n');
+        const formattedCode = prettifyHTML(containerlessComponent);
+        codeDiv.innerHTML = `<pre><code>${escapeHTML(formattedCode)}</code></pre>`;
+
+        // Mostra solo il primo pulsante di copia
+        copyButton.style.display = 'inline-block';
+        if (copyButton1) {
+          copyButton1.style.display = 'none'; // Nascondi il secondo pulsante
         }
       } else {
         contentDiv.innerHTML = "Componente non trovato per questa combinazione.";
@@ -951,6 +983,7 @@ function prettifyHTML(html) {
 
   return formatted;
 }
+
 
   </script>
 

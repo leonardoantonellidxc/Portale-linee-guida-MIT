@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>MIT - Portale delle Linee Guida di UX e UI - Alert</title>
+  <title>MIT - Portale delle Linee Guida di UX e UI - Accordion</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="shortcut icon" href="./favicon.ico" />
 
@@ -265,7 +265,7 @@
         <!-- hero-->
         <div class="bg-hero-green p-6 rounded my-6 ">
           <p  class=" h6 fw-semibold c-neutral-500">Design System</p>
-          <h2 class="titlepage fw-bold">Alert</h2>
+          <h2 class="titlepage fw-bold">Accordion</h2>
         </div>
 
         <p class="my-4">
@@ -306,10 +306,9 @@
                     <label for="typeSelector" id="field1Label">Type</label>
                     <select id="typeSelector" class="form-select">
                       <option value="">--Seleziona Type--</option>
-                      <option value="Type1">Primary</option>
-                      <option value="Type2">Succcess</option>
-                      <option value="Type3">Warning</option>
-                      <option value="Type4">Danger</option>
+                      <option value="Type1">Con icona</option>
+                      <option value="Type2">Senza icona</option>
+                      
 
 
                     </select>
@@ -448,60 +447,61 @@
           '<div class="row align-content-center justify-content-center">' +
           '<div class="col-auto pt-4">' +
           //leo inizio
-          '<div class="alert alert-info alert-dismissible fade show">' +
-          '<div class="alert-body">' +
-          '<div class="alert-heading h5">' +
-          "Titolo alert info" +
-          '</div>' +
-          '<div class="alert-text">' +
-          "Vel tempus nisl augue accumsan, scelerisque aliquet. " +
-          "Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus." +
-          '</div>' +
-          '<div class="btn-toolbar">' +
-          '<button type="button" class="btn btn-primary">' +
-          "Button text" +
-          '</button>' +
-          '<button type="button" class="btn btn-bare">' +
-          "Button text" +
-          '</button>' +
-          '</div>' +
-          '</div>' +
-          '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
-          '<svg class="icon">' +
-          '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-          '</svg>' +
-          '</button>' +
-          '</div>' +
+         "<div class=\"accordion\" id=\"collapseExample\">" + "<div class=\"accordion-item item-ticon\">" +
+                 "<div class=\"accordion-header\" id=\"heading1c\">" +
+                 "<button type=\"button\" class=\"accordion-button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapse1c\" aria-expanded=\"true\" aria-controls=\"collapse1c\">" +
+                 "<div class=\"text-icon\">" +
+                 "<svg class=\"icon icon-sm\">" +
+                 "<use href=\"imgs/icon/sprite_fill.svg#it-example\"></use>" +
+                 "</svg>" +
+                 "<span> Elemento Richiudibile #1 </span>" +
+                 "</div>" +
+                 "</button>" +
+                 "</div>" +
+                 "<div id=\"collapse1c\" class=\"accordion-collapse collapse show\" role=\"region\" aria-labelledby=\"heading1c\">" +
+                 "<div class=\"accordion-body\">" +
+                 "<div>" +
+                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui off" +
+                 "</div>" +
+                 "</div>" +
+                 "</div>" +
+                 "</div>" +
           //leo fine
           '</div>' +
-          '</div>'
+          '</div>'+'</div>'
       },
       "Type2": {
         "default":
-          '<div class="alert alert-success alert-dismissible fade show">' +
-          '<div class="alert-body">' +
-          '<div class="alert-heading h5">' +
-          'Titolo alert success' +
+        '<div class="row align-content-center justify-content-center">' +
+          '<div class="col-auto pt-4">' +
+          //leo inizio
+         "<div class=\"accordion-item\">" +
+                 "<div class=\"accordion-header\" id=\"heading4c\">" +
+                 "<button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapse4c\" aria-expanded=\"false\" aria-controls=\"collapse4c\">" +
+                 "<div class=\"text-icon\">" +
+                 "<span> Elemento Richiudibile #3 </span>" +
+                 "</div>" +
+                 "</button>" +
+                 "</div>" +
+                 "<div id=\"collapse4c\" class=\"accordion-collapse collapse\" role=\"region\" aria-labelledby=\"heading4c\">" +
+                 "<div class=\"accordion-body\">" +
+                 "<div>" +
+                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor " +
+                 "</div>" +
+                 "<div class=\"btn-toolbar\">" +
+                 "<button type=\"button\" class=\"btn btn-primary\">" +
+                 "Button text" +
+                 "</button>" +
+                 "<button type=\"button\" class=\"btn btn-outline-primary\">" +
+                 "Button text" +
+                 "</button>" +
+                 "</div>" +
+                 "</div>" +
+                 "</div>" +
+                 "</div>" +
+          //leo fine
           '</div>' +
-          '<div class="alert-text">' +
-          'Vel tempus nisl augue accumsan, scelerisque aliquet. ' +
-          'Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus.' +
-          '</div>' +
-          '<div class="btn-toolbar">' +
-          '<button type="button" class="btn btn-success">' +
-          'Button text' +
-          '</button>' +
-          '<button type="button" class="btn btn-bare bare-success">' +
-          'Button text' +
-          '</button>' +
-          '</div>' +
-          '</div>' +
-          '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
-          '<svg class="icon">' +
-          '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-          '</svg>' +
-          '</button>' +
-          '</div>'
+          '</div>'+'</div>'
       },
       "Type3": {
         "default":
