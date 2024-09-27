@@ -535,8 +535,8 @@
     <script src="js/script.js"></script>
     <script>
       const components = {
-        Type1: {
-          default:
+        "Type1": {
+         "default":
             '<div class="row align-content-center justify-content-center">' +
             '<div class="col-auto pt-4">' +
             //leo inizio
@@ -544,131 +544,31 @@
             '<div class="alert-body">' +
             '<div class="alert-heading h5">' +
             "Titolo alert info" +
-            "</div>" +
+            '</div>' +
             '<div class="alert-text">' +
             "Vel tempus nisl augue accumsan, scelerisque aliquet. " +
             "Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus." +
-            "</div>" +
+            '</div>' +
             '<div class="btn-toolbar">' +
             '<button type="button" class="btn btn-primary">' +
             "Button text" +
-            "</button>" +
+            '</button>' +
             '<button type="button" class="btn btn-bare">' +
             "Button text" +
-            "</button>" +
-            "</div>" +
-            "</div>" +
+            '</button>' +
+            '</div>' +
+            '</div>' +
             '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
             '<svg class="icon">' +
             '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-            "</svg>" +
-            "</button>" +
-            "</div>" +
+            '</svg>' +
+            '</button>' +
+            '</div>' +
             //leo fine
-            "</div>" +
-            "</div>",
+            '</div>' +
+            '</div>'
         },
-        Type2: {
-          "default":
-            '<div class="row align-content-center justify-content-center">' +
-            '<div class="col-auto pt-4">' +
-            //leo inizio 
-            '<div class="alert alert-success alert-dismissible fade show">' +
-  '<div class="alert-body">' +
-    '<div class="alert-heading h5">' +
-      'Titolo alert success' +
-    '</div>' +
-    '<div class="alert-text">' +
-      'Vel tempus nisl augue accumsan, scelerisque aliquet. ' +
-      'Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus.' +
-    '</div>' +
-    '<div class="btn-toolbar">' +
-      '<button type="button" class="btn btn-success">' +
-        'Button text' +
-      '</button>' +
-      '<button type="button" class="btn btn-bare bare-success">' +
-        'Button text' +
-      '</button>' +
-    '</div>' +
-  '</div>' +
-  '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
-    '<svg class="icon">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-    '</svg>' +
-  '</button>' +
-'</div>' +
-
-            "</div>" +
-            "</div>",
-        },
-        Type3: {
-          "default":
-            '<div class="row align-content-center justify-content-center">' +
-            '<div class="col-auto pt-4">' +
-           //leo 
-           '<div class="alert alert-warning alert-dismissible fade show">' +
-  '<div class="alert-body">' +
-    '<div class="alert-heading h5">' +
-      'Titolo alert warning' +
-    '</div>' +
-    '<div class="alert-text">' +
-      'Vel tempus nisl augue accumsan, scelerisque aliquet. ' +
-      'Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus.' +
-    '</div>' +
-    '<div class="btn-toolbar">' +
-      '<button type="button" class="btn btn-warning">' +
-        'Button text' +
-      '</button>' +
-      '<button type="button" class="btn btn-bare bare-warning">' +
-        'Button text' +
-      '</button>' +
-    '</div>' +
-  '</div>' +
-  '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
-    '<svg class="icon">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-    '</svg>' +
-  '</button>' +
-'</div>'
-//fine
-               +
-            "</div>" +
-            "</div>",
-        },
-        Type4: {
-          "default":
-            '<div class="row align-content-center justify-content-center">' +
-            '<div class="col-auto pt-4">' +
-            //leo inizio 
-            '<div class="alert alert-danger alert-dismissible fade show">' +
-  '<div class="alert-body">' +
-    '<div class="alert-heading h5">' +
-      'Titolo alert danger' +
-    '</div>' +
-    '<div class="alert-text">' +
-      'Vel tempus nisl augue accumsan, scelerisque aliquet. ' +
-      'Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus.' +
-    '</div>' +
-    '<div class="btn-toolbar">' +
-      '<button type="button" class="btn btn-danger">' +
-        'Button text' +
-      '</button>' +
-      '<button type="button" class="btn btn-bare bare-danger">' +
-        'Button text' +
-      '</button>' +
-    '</div>' +
-  '</div>' +
-  '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
-    '<svg class="icon">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-    '</svg>' +
-  '</button>' +
-'</div>'
-
-              + "</div>" +
-            "</div>",
-        },
-       
+        
       };
 
       const typeSelector = document.getElementById("typeSelector");
