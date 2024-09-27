@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>MIT - Portale delle Linee Guida di UX e UI - Dropdown</title>
+  <title>MIT - Portale delle Linee Guida di UX e UI - Hero banner</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="shortcut icon" href="./favicon.ico" />
 
@@ -265,7 +265,7 @@
         <!-- hero-->
         <div class="bg-hero-green p-6 rounded my-6 ">
           <p  class=" h6 fw-semibold c-neutral-500">Design System</p>
-          <h2 class="titlepage fw-bold">Dropdown</h2>
+          <h2 class="titlepage fw-bold">hero banner</h2>
         </div>
 
         <p class="my-4">
@@ -292,9 +292,9 @@
                     <label for="typeSelector" id="field1Label">Type</label>
                     <select id="typeSelector" class="form-select">
                       <option value="">--Seleziona Type--</option>
-                      <option value="Type1">Type1</option>
-                      <option value="Type2">Type2</option>
-                      <option value="Type3">Type3</option>
+                      <option value="Type1">Level 1</option>
+                      <option value="Type2">Level 2</option>
+                     
                      
 
                     </select>
@@ -433,65 +433,179 @@
           '<div class="row align-content-center justify-content-center">' +
           '<div class="col-auto pt-4">' +
           //leo inizio
-          `<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button   
-
-  </button>
-  <div class="dropdown-menu">   
-
-    <div class="dropdown-title">
-      Title
-    </div>
-    <ul>
-      <li>
-        <a class="dropdown-item active" href="#">
-          <div class="text-icon">
-            <svg class="icon icon-xs">
-              <use href="/imgs/icon/sprite.svg#it-example"></use>
-            </svg>
-            <span>
-              Action
-            </span>
-          </div>
-          <svg class="icon icon-xs">
-            <use href="/imgs/icon/sprite.svg#it-example"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item disabled" href="#">
-          <div class="text-icon">
-            <svg class="icon icon-xs">
-              <use href="/imgs/icon/sprite.svg#it-example"></use>
-            </svg>
-            <span>
-              Another action
-            </span>
-          </div>
-          <svg class="icon icon-xs">
-            <use href="/imgs/icon/sprite.svg#it-example"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item" href="#">
-          <div class="text-icon">
-            <svg class="icon icon-xs">
-              <use href="/imgs/icon/sprite.svg#it-example"></use>
-            </svg>
-            <span>
-              Something else here
-            </span>
-          </div>
-          <svg class="icon icon-xs">
-            <use href="/imgs/icon/sprite.svg#it-example"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>`+
+          '<div class="page-hero hero-l1">' +
+    '<div class="container">' +
+    '<div class="container-hero">' +
+    '<!-- Content -->' +
+    '<div class="hero-content">' +
+    '<h1 class="h1">' +
+    'Titolo' +
+    '</h1>' +
+    '<h2 class="h2 pt-2">' +
+    'Inserisci qui il sottotitolo' +
+    '</h2>' +
+    '<div class="body-lg pt-2 pt-lg-5">' +
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ' +
+    'ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor' +
+    '</div>' +
+    '</div>' +
+    '<!-- Search -->' +
+    '<div class="hero-search">' +
+    '<div class="form-group">' +
+    '<div class="input-group">' +
+    '<div class="input-group-text">' +
+    '<svg class="icon icon-xxs">' +
+    '<use href="/imgs/icon/sprite.svg#it-search"></use>' +
+    '</svg>' +
+    '</div>' +
+    '<input type="text" class="form-control" name="field1" placeholder="Cerca tra tutti i servizi..." value="">' +
+    '<button class="btn btn-lg btn-primary" type="button" id="button-1">' +
+    'Avvia ricerca' +
+    '</button>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '<!-- Chips -->' +
+    '<div class="hero-chip chip-list">' +
+    '<span class="chip chip-lg">' +
+    '<svg class="icon">' +
+    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+    '</svg>' +
+    '<span>' +
+    'Lorem ipsum' +
+    '</span>' +
+    '</span>' +
+    '<span class="chip chip-lg">' +
+    '<svg class="icon">' +
+    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+    '</svg>' +
+    '<span>' +
+    'Lorem ipsum' +
+    '</span>' +
+    '</span>' +
+    '<span class="chip chip-lg">' +
+    '<svg class="icon">' +
+    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+    '</svg>' +
+    '<span>' +
+    'Lorem ipsum' +
+    '</span>' +
+    '</span>' +
+    '</div>' +
+    '<!-- -->' +
+    '<div class="row">' +
+    '<div class="col-lg-4 pt-6">' +
+    '<div class="card">' +
+    '<div class="card-body">' +
+    '<div class="card-title">' +
+    '<div class="text-icon h3">' +
+    '<div class="icon-rounded rounded-lg bg-primary10">' +
+    '<svg class="icon icon-lg icon-dark">' +
+    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+    '</svg>' +
+    '</div>' +
+    '<span>' +
+    'Titolo della card' +
+    '</span>' +
+    '</div>' +
+    '</div>' +
+    '<div class="card-text">' +
+    '<div class="pt-2 body-lg">' +
+    'Lorem ipsum dolor sit amet consectetur. Non sit ut et sit aliquam pretium ' +
+    'porta dolor mauris. Amet ut duis in non.' +
+    '</div>' +
+    '</div>' +
+    '<div class="btn-toolbar">' +
+    '<div class="btn-group-left">' +
+    '<button type="button" class="btn btn-bare btn-sm">' +
+    '<span>' +
+    'Button text' +
+    '</span>' +
+    '<svg class="icon">' +
+    '<use href="/imgs/icon/sprite.svg#it-arrow-right"></use>' +
+    '</svg>' +
+    '</button>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '<div class="col-lg-4 pt-6">' +
+    '<div class="card">' +
+    '<div class="card-body">' +
+    '<div class="card-title">' +
+    '<div class="text-icon h3">' +
+    '<div class="icon-rounded rounded-lg bg-primary10">' +
+    '<svg class="icon icon-lg icon-dark">' +
+    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+    '</svg>' +
+    '</div>' +
+    '<span>' +
+    'Titolo della card' +
+    '</span>' +
+    '</div>' +
+    '</div>' +
+    '<div class="card-text">' +
+    '<div class="pt-2 body-lg">' +
+    'Lorem ipsum dolor sit amet consectetur. Non sit ut et sit aliquam pretium ' +
+    'porta dolor mauris. Amet ut duis in non.' +
+    '</div>' +
+    '</div>' +
+    '<div class="btn-toolbar">' +
+    '<div class="btn-group-left">' +
+    '<button type="button" class="btn btn-bare btn-sm">' +
+    '<span>' +
+    'Button text' +
+    '</span>' +
+    '<svg class="icon">' +
+    '<use href="/imgs/icon/sprite.svg#it-arrow-right"></use>' +
+    '</svg>' +
+    '</button>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '<div class="col-lg-4 pt-6">' +
+    '<div class="card">' +
+    '<div class="card-body">' +
+    '<div class="card-title">' +
+    '<div class="text-icon h3">' +
+    '<div class="icon-rounded rounded-lg bg-primary10">' +
+    '<svg class="icon icon-lg icon-dark">' +
+    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+    '</svg>' +
+    '</div>' +
+    '<span>' +
+    'Titolo della card' +
+    '</span>' +
+    '</div>' +
+    '</div>' +
+    '<div class="card-text">' +
+    '<div class="pt-2 body-lg">' +
+    'Lorem ipsum dolor sit amet consectetur. Non sit ut et sit aliquam pretium ' +
+    'porta dolor mauris. Amet ut duis in non.' +
+    '</div>' +
+    '</div>' +
+    '<div class="btn-toolbar">' +
+    '<div class="btn-group-left">' +
+    '<button type="button" class="btn btn-bare btn-sm">' +
+    '<span>' +
+    'Button text' +
+    '</span>' +
+    '<svg class="icon">' +
+    '<use href="/imgs/icon/sprite.svg#it-arrow-right"></use>' +
+    '</svg>' +
+    '</button>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '</div>' +
+    '</div>'
++
           //leo fine
           '</div>' +
           '</div>'
@@ -499,15 +613,57 @@
       "Type2": {
         "default":
          '<div class="row align-content-center justify-content-center">' +
-          '<div class="col-auto pt-4">' + '<div class="dropdown">' +
-    '<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">' +
-    'Dropdown button' +
-    '</button>' +
-    '<div class="dropdown-menu">' +
-    '<div class="dropdown-title">' +
-    'Title' +
+          '<div class="col-auto pt-4">' +'<div class="page-hero hero-l2">' +
+    '<div class="container">' +
+    '<div class="container-hero">' +
+    '<!-- Breadcrumb -->' +
+    '<nav class="breadcrumb-container" aria-label="Percorso di navigazione">' +
+    '<ol class="breadcrumb">' +
+    '<li class="breadcrumb-item">' +
+    '<a class="link" href="#">' +
+    '<span>' +
+    'Page' +
+    '</span>' +
+    '</a>' +
+    '</li>' +
+    '<li class="breadcrumb-item">' +
+    '<a class="link" href="#">' +
+    '<span>' +
+    'Page' +
+    '</span>' +
+    '</a>' +
+    '</li>' +
+    '<li class="breadcrumb-item">' +
+    '<a class="link" href="#">' +
+    '<span>' +
+    'Page' +
+    '</span>' +
+    '</a>' +
+    '</li>' +
+    '<li class="breadcrumb-item active" aria-current="page">' +
+    '<div class="text-icon">' +
+    '<span>' +
+    'Page' +
+    '</span>' +
     '</div>' +
-    '<div class="search-wrapper">' +
+    '</li>' +
+    '</ol>' +
+    '</nav>' +
+    '<!-- Content -->' +
+    '<div class="hero-content">' +
+    '<h1 class="h1">' +
+    'Titolo' +
+    '</h1>' +
+    '<h2 class="h2 pt-2">' +
+    'Inserisci qui il sottotitolo' +
+    '</h2>' +
+    '<div class="body-lg pt-2 pt-lg-5">' +
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntLorem ' +
+    'ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor' +
+    '</div>' +
+    '</div>' +
+    '<!-- Search -->' +
+    '<div class="hero-search">' +
     '<div class="form-group">' +
     '<div class="input-group">' +
     '<div class="input-group-text">' +
@@ -515,243 +671,49 @@
     '<use href="/imgs/icon/sprite.svg#it-search"></use>' +
     '</svg>' +
     '</div>' +
-    '<input type="text" class="form-control" name="field1" placeholder="Cerca" value="" aria-label="Lorem ipsum dolor sit">' +
+    '<input type="text" class="form-control" name="field1" placeholder="Cerca tra tutti i servizi..." value="">' +
+    '<button class="btn btn-lg btn-primary" type="button" id="button-1">' +
+    'Avvia ricerca' +
+    '</button>' +
     '</div>' +
     '</div>' +
     '</div>' +
-    '<ul class="scrollable">' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
+    '<!-- Chips -->' +
+    '<div class="hero-chip chip-list">' +
+    '<span class="chip chip-lg">' +
+    '<svg class="icon">' +
     '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
     '</svg>' +
     '<span>' +
-    'Action' +
+    'Lorem ipsum' +
     '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
+    '</span>' +
+    '<span class="chip chip-lg">' +
+    '<svg class="icon">' +
     '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
     '</svg>' +
     '<span>' +
-    'Another action' +
+    'Lorem ipsum' +
     '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
+    '</span>' +
+    '<span class="chip chip-lg">' +
+    '<svg class="icon">' +
     '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
     '</svg>' +
     '<span>' +
-    'Something else here' +
+    'Lorem ipsum' +
+    '</span>' +
     '</span>' +
     '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<div class="h-line"></div>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Action' +
-    '</span>' +
     '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Another action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Something else here' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '</ul>' +
-    '<div class="dropdown-link">' +
-    '<a type="button" class="btn btn-bare btn-sm" href="javascript:">' +
-    'Mostra tutti i risultati' +
-    '</a>' +
+    '<div class="container-image">' +
+    '<img class="img-fluid" src="/imgs/TMP/hero_banner/header-01.jpg" alt="Lorem ipsum">' +
     '</div>' +
     '</div>' +
-    '</div>'+ 
+    '</div>'
 
-  '</div>'+
+            +'</div>'+
 '</div>',
-      },
-      "Type3": {
-        "default":
-        '<div class="row align-content-center justify-content-center">' +
-          '<div class="col-auto pt-4">'+
-        '<div class="dropdown">' +
-    '<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">' +
-    'Dropdown button' +
-    '</button>' +
-    '<div class="dropdown-menu">' +
-    '<div class="dropdown-title">' +
-    'Title' +
-    '</div>' +
-    '<div class="search-wrapper">' +
-    '<div class="form-group">' +
-    '<div class="input-group">' +
-    '<div class="input-group-text">' +
-    '<svg class="icon icon-xxs">' +
-    '<use href="/imgs/icon/sprite.svg#it-search"></use>' +
-    '</svg>' +
-    '</div>' +
-    '<input type="text" class="form-control" name="field1" placeholder="Cerca" value="" aria-label="Lorem ipsum dolor sit">' +
-    '</div>' +
-    '</div>' +
-    '</div>' +
-    '<ul class="scrollable">' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Another action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Something else here' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<div class="h-line"></div>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Another action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Something else here' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '</ul>' +
-    '<div class="dropdown-link">' +
-    '<a type="button" class="btn btn-bare btn-sm" href="javascript:">' +
-    'Mostra tutti i risultati' +
-    '</a>' +
-    '</div>' +
-    '</div>' +
-    '</div>',
-
       },
       
     };
