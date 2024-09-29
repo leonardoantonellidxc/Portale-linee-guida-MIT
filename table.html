@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>MIT - Portale delle Linee Guida di UX e UI - Tab</title>
+  <title>MIT - Portale delle Linee Guida di UX e UI - Table</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="shortcut icon" href="./favicon.ico" />
 
@@ -265,11 +265,11 @@
         <!-- hero-->
         <div class="bg-hero-green p-6 rounded my-6 ">
           <p  class=" h6 fw-semibold c-neutral-500">Design System</p>
-          <h2 class="titlepage fw-bold">Tab</h2>
+          <h2 class="titlepage fw-bold">Table</h2>
         </div>
 
         <p class="my-4">
-          Il componente Tab Navigation viene utilizzato per organizzare e navigare tra diverse sezioni o pagine di un'applicazione o di un sito web. Questo componente fornisce un'interfaccia a schede che consente agli utenti di passare facilmente da una sezione all'altra mantenendo una visione d'insieme della struttura dell'applicazione.  <a href=" ">Vai alla pagina d’esempio.</a>
+          Il componente Table viene utilizzato per organizzare e visualizzare dati. Le tabelle forniscono una struttura chiara e organizzata per presentare informazioni tabulari in modo efficace e comprensibile agli utenti.
  </p>
 
 
@@ -296,9 +296,9 @@
                     <label for="typeSelector" id="field1Label">Type</label>
                     <select id="typeSelector" class="form-select">
                       <option value="">--Seleziona Type--</option>
-                      <option value="Type1">Tab </option>
-                      <option value="Type2">Tab light </option>
-                      <option value="Type3">Tab white   </option>
+                      <option value="Type1">Table LG </option>
+                      <option value="Type2">Tab MD </option>
+                      <option value="Type3">Tab SM   </option>
                     </select>
                   </div>
                 </div>
@@ -432,168 +432,404 @@
     const components = {
       "Type1": {
         "default":
-       `<ul class="nav nav-tabs">
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#tab0-1" type="button" role="tab" aria-controls="tab0-1" aria-selected="false">
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-            <span>
-                Label text
-            </span>
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab0-2" type="button" role="tab" aria-controls="tab0-2" aria-selected="false">
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-            <span>
-                Label text
-            </span>
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab0-3" type="button" role="tab" aria-controls="tab0-3" aria-selected="false">
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-            <span>
-                Label text
-            </span>
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link disabled" href="#" data-bs-toggle="tab" data-bs-target="#tab0-4" type="button" role="tab" aria-controls="tab0-4" aria-selected="false">
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-            <span>
-                Label text
-            </span>
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-        </a>
-    </li>
-</ul>`,
+       '<div class="list-table table-responsive table-lg table-even">' +
+        '<table>' +
+            '<thead>' +
+                '<tr>' +
+                    '<th class="colf-form colf-check">' +
+                        '<div class="form-group">' +
+                            '<div class="form-checkbox">' +
+                                '<div class="checkbox">' +
+                                    '<input type="checkbox" name="field-0" id="field-0" value="" aria-label="Lorem ipsum">' +
+                                    '<label for="field-0"></label>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>' +
+                    '</th>' +
+                    '<th>' +
+                        '<a class="sortable" href="javascript:">' +
+                            '<span>Title</span>' +
+                            '<div class="sort-icon">' +
+                                '<svg class="icon icon-sm" aria-hidden="true">' +
+                                    '<use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>' +
+                                '</svg>' +
+                            '</div>' +
+                        '</a>' +
+                    '</th>' +
+                    '<th>' +
+                        '<a class="sortable" href="javascript:">' +
+                            '<span>Title</span>' +
+                            '<div class="sort-icon">' +
+                                '<svg class="icon icon-sm" aria-hidden="true">' +
+                                    '<use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>' +
+                                '</svg>' +
+                            '</div>' +
+                        '</a>' +
+                    '</th>' +
+                    '<th>' +
+                        '<a class="sortable" href="javascript:">' +
+                            '<span>Title</span>' +
+                            '<div class="sort-icon">' +
+                                '<svg class="icon icon-sm" aria-hidden="true">' +
+                                    '<use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>' +
+                                '</svg>' +
+                            '</div>' +
+                        '</a>' +
+                    '</th>' +
+                    '<th>' +
+                        '<a class="sortable" href="javascript:">' +
+                            '<span>Title</span>' +
+                            '<div class="sort-icon">' +
+                                '<svg class="icon icon-sm" aria-hidden="true">' +
+                                    '<use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>' +
+                                '</svg>' +
+                            '</div>' +
+                        '</a>' +
+                    '</th>' +
+                    '<th class="colf-22">' +
+                        '<a class="sortable" href="javascript:">' +
+                            '<span>Title</span>' +
+                            '<div class="sort-icon">' +
+                                '<svg class="icon icon-sm" aria-hidden="true">' +
+                                    '<use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>' +
+                                '</svg>' +
+                            '</div>' +
+                        '</a>' +
+                    '</th>' +
+                    '<th class="colf-cmd colf-4">' +
+                        '<svg class="icon icon-sm icon-white" aria-hidden="true">' +
+                            '<use href="/imgs/icon/sprite.svg#it-more-actions"></use>' +
+                        '</svg>' +
+                    '</th>' +
+                '</tr>' +
+            '</thead>' +
+            '<tbody>' +
+                '<tr class="tr-hover">' +
+                    '<td class="colf-form colf-check" data-label="Selezione">' +
+                        '<div class="form-group">' +
+                            '<div class="form-checkbox">' +
+                                '<div class="checkbox">' +
+                                    '<input type="checkbox" name="field-1" id="field-1" value="" aria-label="Lorem ipsum">' +
+                                    '<label for="field-1"></label>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>' +
+                    '</td>' +
+                    '<td data-label="Title">' +
+                        '<div>Label text</div>' +
+                    '</td>' +
+                    '<td data-label="Title">' +
+                        '<div>Label text</div>' +
+                    '</td>' +
+                    '<td data-label="Title">' +
+                        '<div>' +
+                            '<span>Label text</span>' +
+                            '<div class="badge badge-primary badge-lg">' +
+                                '<span>Badge</span>' +
+                            '</div>' +
+                        '</div>' +
+                    '</td>' +
+                    '<td class="cold-date" data-label="Title">' +
+                        '<div>01/01/2020</div>' +
+                    '</td>' +
+                    '<td class="colf-cmd" data-label="Title">' +
+                        '<div>' +
+                            '<button class="btn btn-primary btn-sm">' +
+                                '<svg class="icon icon-sm">' +
+                                    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+                                '</svg>' +
+                                '<span>Button text</span>' +
+                                '<svg class="icon icon-sm">' +
+                                    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+                                '</svg>' +
+                            '</button>' +
+                        '</div>' +
+                    '</td>' +
+                    '<td class="colf-cmd" data-label="">' +
+                        '<div>' +
+                            '<a class="link text-icon" href="javascript:">' +
+                                '<svg class="icon icon-sm" aria-hidden="true">' +
+                                    '<use href="/imgs/icon/sprite.svg#it-more-actions"></use>' +
+                                '</svg>' +
+                            '</a>' +
+                        '</div>' +
+                    '</td>' +
+                '</tr>' +
+            '</tbody>' +
+        '</table>' +
+    '</div>',
 
       },
       "Type2": {
         "default":
-        `<ul class="nav nav-tabs light" id="myTab1" role="tablist">
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#tab1-1" type="button" role="tab" aria-controls="tab1-2" aria-selected="true">
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-            <span>
-                Label text
-            </span>
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab1-2" type="button" role="tab" aria-controls="tab1-2" aria-selected="false">
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-            <span>
-                Label text
-            </span>
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab1-3" type="button" role="tab" aria-controls="tab1-3" aria-selected="false">
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-            <span>
-                Label text
-            </span>
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-        </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link disabled" href="#" data-bs-toggle="tab" data-bs-target="#tab1-4" type="button" role="tab" aria-controls="tab1-4" aria-selected="false">
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-            <span>
-                Label text
-            </span>
-            <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-            </svg>
-        </a>
-    </li>
-</ul>`,
+        '<div class="list-table table-responsive table-md table-even">' +
+        '<table>' +
+            '<thead>' +
+                '<tr>' +
+                    '<th class="colf-form colf-check">' +
+                        '<div class="form-group">' +
+                            '<div class="form-checkbox">' +
+                                '<div class="checkbox">' +
+                                    '<input type="checkbox" name="field-0" id="field-0" value="" aria-label="Lorem ipsum">' +
+                                    '<label for="field-0"></label>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>' +
+                    '</th>' +
+                    '<th>' +
+                        '<a class="sortable" href="javascript:">' +
+                            '<span>Title</span>' +
+                            '<div class="sort-icon">' +
+                                '<svg class="icon icon-sm" aria-hidden="true">' +
+                                    '<use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>' +
+                                '</svg>' +
+                            '</div>' +
+                        '</a>' +
+                    '</th>' +
+                    '<th>' +
+                        '<a class="sortable" href="javascript:">' +
+                            '<span>Title</span>' +
+                            '<div class="sort-icon">' +
+                                '<svg class="icon icon-sm" aria-hidden="true">' +
+                                    '<use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>' +
+                                '</svg>' +
+                            '</div>' +
+                        '</a>' +
+                    '</th>' +
+                    '<th>' +
+                        '<a class="sortable" href="javascript:">' +
+                            '<span>Title</span>' +
+                            '<div class="sort-icon">' +
+                                '<svg class="icon icon-sm" aria-hidden="true">' +
+                                    '<use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>' +
+                                '</svg>' +
+                            '</div>' +
+                        '</a>' +
+                    '</th>' +
+                    '<th>' +
+                        '<a class="sortable" href="javascript:">' +
+                            '<span>Title</span>' +
+                            '<div class="sort-icon">' +
+                                '<svg class="icon icon-sm" aria-hidden="true">' +
+                                    '<use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>' +
+                                '</svg>' +
+                            '</div>' +
+                        '</a>' +
+                    '</th>' +
+                    '<th class="colf-22">' +
+                        '<a class="sortable" href="javascript:">' +
+                            '<span>Title</span>' +
+                            '<div class="sort-icon">' +
+                                '<svg class="icon icon-sm" aria-hidden="true">' +
+                                    '<use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>' +
+                                '</svg>' +
+                            '</div>' +
+                        '</a>' +
+                    '</th>' +
+                    '<th class="colf-cmd colf-4">' +
+                        '<svg class="icon icon-sm icon-white" aria-hidden="true">' +
+                            '<use href="/imgs/icon/sprite.svg#it-more-actions"></use>' +
+                        '</svg>' +
+                    '</th>' +
+                '</tr>' +
+            '</thead>' +
+            '<tbody>' +
+                '<tr class="tr-hover">' +
+                    '<td class="colf-form colf-check" data-label="Selezione">' +
+                        '<div class="form-group">' +
+                            '<div class="form-checkbox">' +
+                                '<div class="checkbox">' +
+                                    '<input type="checkbox" name="field-1" id="field-1" value="" aria-label="Lorem ipsum">' +
+                                    '<label for="field-1"></label>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>' +
+                    '</td>' +
+                    '<td data-label="Title">' +
+                        '<div>Label text</div>' +
+                    '</td>' +
+                    '<td data-label="Title">' +
+                        '<div>Label text</div>' +
+                    '</td>' +
+                    '<td data-label="Title">' +
+                        '<div>' +
+                            '<span>Label text</span>' +
+                            '<div class="badge badge-primary badge-lg">' +
+                                '<span>Badge</span>' +
+                            '</div>' +
+                            '<div class="badge badge-primary badge-lg">' +
+                                '<span>Badge</span>' +
+                            '</div>' +
+                        '</div>' +
+                    '</td>' +
+                    '<td class="cold-date" data-label="Title">' +
+                        '<div>01/01/2020</div>' +
+                    '</td>' +
+                    '<td class="colf-cmd" data-label="Title">' +
+                        '<div>' +
+                            '<button class="btn btn-primary btn-sm">' +
+                                '<svg class="icon icon-sm">' +
+                                    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+                                '</svg>' +
+                                '<span>Button text</span>' +
+                                '<svg class="icon icon-sm">' +
+                                    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+                                '</svg>' +
+                            '</button>' +
+                        '</div>' +
+                    '</td>' +
+                    '<td class="colf-cmd" data-label="">' +
+                        '<div>' +
+                            '<a class="link text-icon" href="javascript:">' +
+                                '<svg class="icon icon-sm" aria-hidden="true">' +
+                                    '<use href="/imgs/icon/sprite.svg#it-more-actions"></use>' +
+                                '</svg>' +
+                            '</a>' +
+                        '</div>' +
+                    '</td>' +
+                '</tr>' +
+            '</tbody>' +
+        '</table>' +
+    '</div>',
 
       }
       ,"Type3": {
         "default":
-        '<ul class="nav nav-tabs white">' +
-        '<li class="nav-item">' +
-            '<a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#tab2-1" type="button" role="tab" aria-controls="tab2-1" aria-selected="false">' +
-                '<svg class="icon icon-sm" aria-hidden="true">' +
-                    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-                '</svg>' +
-                '<span>Label text</span>' +
-                '<svg class="icon icon-sm" aria-hidden="true">' +
-                    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-                '</svg>' +
-            '</a>' +
-        '</li>' +
-        '<li class="nav-item">' +
-            '<a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab2-2" type="button" role="tab" aria-controls="tab2-2" aria-selected="false">' +
-                '<svg class="icon icon-sm" aria-hidden="true">' +
-                    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-                '</svg>' +
-                '<span>Label text</span>' +
-                '<svg class="icon icon-sm" aria-hidden="true">' +
-                    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-                '</svg>' +
-            '</a>' +
-        '</li>' +
-        '<li class="nav-item">' +
-            '<a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab2-3" type="button" role="tab" aria-controls="tab2-3" aria-selected="false">' +
-                '<svg class="icon icon-sm" aria-hidden="true">' +
-                    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-                '</svg>' +
-                '<span>Label text</span>' +
-                '<svg class="icon icon-sm" aria-hidden="true">' +
-                    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-                '</svg>' +
-            '</a>' +
-        '</li>' +
-        '<li class="nav-item">' +
-            '<a class="nav-link disabled" href="#" data-bs-toggle="tab" data-bs-target="#tab2-4" type="button" role="tab" aria-controls="tab2-4" aria-selected="false">' +
-                '<svg class="icon icon-sm" aria-hidden="true">' +
-                    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-                '</svg>' +
-                '<span>Label text</span>' +
-                '<svg class="icon icon-sm" aria-hidden="true">' +
-                    '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-                '</svg>' +
-            '</a>' +
-        '</li>' +
-    '</ul>',
+        `<div class="list-table table-responsive table-sm table-even">
+  <table>
+    <thead>
+      <tr>
+        <th class="colf-form colf-check">
+          <div class="form-group">
+            <div class="form-checkbox">
+              <div class="checkbox">
+                <input type="checkbox" name="field-0" id="field-0" value="" aria-label="Lorem ipsum">
+                <label for="field-0"></label>
+              </div>
+            </div>
+          </div>
+        </th>
+        <th>
+          <a class="sortable" href="javascript:">
+            <span>Title</span>
+            <div class="sort-icon">
+              <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>
+              </svg>
+            </div>
+          </a>
+        </th>
+        <th>
+          <a class="sortable" href="javascript:">
+            <span>Title</span>
+            <div class="sort-icon">
+              <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>
+              </svg>
+            </div>
+          </a>
+        </th>
+        <th>
+          <a class="sortable" href="javascript:">
+            <span>Title</span>
+            <div class="sort-icon">
+              <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>
+              </svg>
+            </div>
+          </a>
+        </th>
+        <th>
+          <a class="sortable" href="javascript:">
+            <span>Title</span>
+            <div class="sort-icon">
+              <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>
+              </svg>
+            </div>
+          </a>
+        </th>
+        <th class="colf-50">
+          <a class="sortable" href="javascript:">
+            <span>Title</span>
+            <div class="sort-icon">
+              <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use>
+              </svg>
+            </div>
+          </a>
+        </th>
+        <th class="colf-cmd colf-4">
+          <svg class="icon icon-sm icon-white" aria-hidden="true">
+            <use href="/imgs/icon/sprite.svg#it-more-actions"></use>
+          </svg>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="tr-hover">
+        <td class="colf-form colf-check" data-label="Selezione">
+          <div class="form-group">
+            <div class="form-checkbox">
+              <div class="checkbox">
+                <input type="checkbox" name="field-1" id="field-1" value="" aria-label="Lorem ipsum">
+                <label for="field-1"></label>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td data-label="Title">
+          <div>Label text</div>
+        </td>
+        <td data-label="Title">
+          <div>Label text</div>
+        </td>
+        <td data-label="Title">
+          <div>
+            <span>Label text</span>
+            <div class="badge badge-primary badge-lg">
+              <span>Badge</span>
+            </div>
+          </div>
+        </td>
+        <td class="cold-date" data-label="Title">
+          <div>01/01/2020</div>
+        </td>
+        <td class="colf-cmd" data-label="Title">
+          <div>
+            <button class="btn btn-primary btn-sm">
+              <svg class="icon icon-sm">
+                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
+              </svg>
+              <span>Button text</span>
+              <svg class="icon icon-sm">
+                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
+              </svg>
+            </button>
+            <button class="btn btn-primary btn-sm">
+              <svg class="icon icon-sm">
+                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
+              </svg>
+              <span>Button text</span>
+              <svg class="icon icon-sm">
+                <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
+              </svg>
+            </button>
+          </div>
+        </td>
+        <td class="colf-cmd" data-label="">
+          <div>
+            <a class="link text-icon" href="javascript:">
+              <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/imgs/icon/sprite.svg#it-more-actions"></use>
+              </svg>
+            </a>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>`,
       }
      };
 
