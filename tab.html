@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>MIT - Portale delle Linee Guida di UX e UI - Scroll bar</title>
+  <title>MIT - Portale delle Linee Guida di UX e UI - Tab</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="shortcut icon" href="./favicon.ico" />
 
@@ -265,11 +265,11 @@
         <!-- hero-->
         <div class="bg-hero-green p-6 rounded my-6 ">
           <p  class=" h6 fw-semibold c-neutral-500">Design System</p>
-          <h2 class="titlepage fw-bold">Scrollbar</h2>
+          <h2 class="titlepage fw-bold">Tab</h2>
         </div>
 
         <p class="my-4">
-          Un popover è un componente dell'interfaccia utente che consiste in una piccola finestra o casella di dialogo che appare vicino a un elemento attivatore, come un pulsante o un link, quando l'utente ci passa sopra con il mouse o ci fa clic. Questo elemento fornisce informazioni aggiuntive o opzioni contestuali senza richiedere una navigazione lontano dall'area di interesse dell'utente, migliorando così l'esperienza utente complessiva. I popover sono comunemente utilizzati per offrire suggerimenti, fornire dettagli aggiuntivi o consentire all'utente di eseguire azioni aggiuntive in modo rapido e intuitivo. 
+          Il componente Tab Navigation viene utilizzato per organizzare e navigare tra diverse sezioni o pagine di un'applicazione o di un sito web. Questo componente fornisce un'interfaccia a schede che consente agli utenti di passare facilmente da una sezione all'altra mantenendo una visione d'insieme della struttura dell'applicazione.  <a href=" ">Vai alla pagina d’esempio.</a>
  </p>
 
 
@@ -296,9 +296,9 @@
                     <label for="typeSelector" id="field1Label">Type</label>
                     <select id="typeSelector" class="form-select">
                       <option value="">--Seleziona Type--</option>
-                      <option value="Type1">Scrollbar orizzontale </option>
-                      <option value="Type2">Scrollbar verticale  </option>
-                      
+                      <option value="Type1">Tab </option>
+                      <option value="Type2">Tab light </option>
+                      <option value="Type3">Tab white   </option>
                     </select>
                   </div>
                 </div>
@@ -432,189 +432,170 @@
     const components = {
       "Type1": {
         "default":
-       `<div class="row">
-    <div class="col-lg-4 pt-3 pt-lg-5">
-        <div class="scrollbar-wrapper" style="width:300px;">
-            <div class="scrollbar scrollbar-h">
-                <button type="button" class="btn btn-primary" disabled>
-                    <svg class="icon">
-                        <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
-                    </svg>
-                </button>
-                <div class="bar">
-                    <button type="button" class="btn btn-primary" style="width:50px;"></button>
-                </div>
-                <button type="button" class="btn btn-primary">
-                    <svg class="icon">
-                        <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 pt-3 pt-lg-5">
-        <div class="scrollbar-wrapper" style="width:300px;">
-            <div class="scrollbar scrollbar-h">
-                <button type="button" class="btn btn-primary">
-                    <svg class="icon">
-                        <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
-                    </svg>
-                </button>
-                <div class="bar">
-                    <button type="button" class="btn btn-primary" style="width:50px; left:100px;"></button>
-                </div>
-                <button type="button" class="btn btn-primary">
-                    <svg class="icon">
-                        <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 pt-3 pt-lg-5">
-        <div class="scrollbar-wrapper" style="width:300px;">
-            <div class="scrollbar scrollbar-h">
-                <button type="button" class="btn btn-primary">
-                    <svg class="icon">
-                        <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
-                    </svg>
-                </button>
-                <div class="bar">
-                    <button type="button" class="btn btn-primary" style="width:50px; left:202px;"></button>
-                </div>
-                <button type="button" class="btn btn-primary" disabled>
-                    <svg class="icon">
-                        <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-4 pt-3 pt-lg-5">
-        <div class="scrollbar-wrapper" style="width:300px;">
-            <div class="scrollbar scrollbar-h">
-                <div class="bar">
-                    <button type="button" class="btn btn-primary" style="width:50px;"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 pt-3 pt-lg-5">
-        <div class="scrollbar-wrapper" style="width:300px;">
-            <div class="scrollbar scrollbar-h">
-                <div class="bar">
-                    <button type="button" class="btn btn-primary" style="width:50px; left:124px;"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 pt-3 pt-lg-5">
-        <div class="scrollbar-wrapper" style="width:300px;">
-            <div class="scrollbar scrollbar-h">
-                <div class="bar">
-                    <button type="button" class="btn btn-primary" style="width:50px; left:250px;"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>`,
+       `<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#tab0-1" type="button" role="tab" aria-controls="tab0-1" aria-selected="false">
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+            <span>
+                Label text
+            </span>
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab0-2" type="button" role="tab" aria-controls="tab0-2" aria-selected="false">
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+            <span>
+                Label text
+            </span>
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab0-3" type="button" role="tab" aria-controls="tab0-3" aria-selected="false">
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+            <span>
+                Label text
+            </span>
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#" data-bs-toggle="tab" data-bs-target="#tab0-4" type="button" role="tab" aria-controls="tab0-4" aria-selected="false">
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+            <span>
+                Label text
+            </span>
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+        </a>
+    </li>
+</ul>`,
 
       },
       "Type2": {
         "default":
-        `<div class="row">
-    <div class="col-lg-4 pt-3 pt-lg-5">
-        <div class="scrollbar-wrapper" style="height:300px;">
-            <div class="scrollbar scrollbar-v">
-                <button type="button" class="btn btn-primary" disabled>
-                    <svg class="icon">
-                        <use href="/imgs/icon/sprite.svg#it-collapse"></use>
-                    </svg>
-                </button>
-                <div class="bar">
-                    <button type="button" class="btn btn-primary" style="height:50px;"></button>
-                </div>
-                <button type="button" class="btn btn-primary">
-                    <svg class="icon">
-                        <use href="/imgs/icon/sprite.svg#it-expand"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 pt-3 pt-lg-5">
-        <div class="scrollbar-wrapper" style="height:300px;">
-            <div class="scrollbar scrollbar-v">
-                <button type="button" class="btn btn-primary">
-                    <svg class="icon">
-                        <use href="/imgs/icon/sprite.svg#it-collapse"></use>
-                    </svg>
-                </button>
-                <div class="bar">
-                    <button type="button" class="btn btn-primary" style="height:50px; top:100px;"></button>
-                </div>
-                <button type="button" class="btn btn-primary">
-                    <svg class="icon">
-                        <use href="/imgs/icon/sprite.svg#it-expand"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 pt-3 pt-lg-5">
-        <div class="scrollbar-wrapper" style="height:300px;">
-            <div class="scrollbar scrollbar-v">
-                <button type="button" class="btn btn-primary">
-                    <svg class="icon">
-                        <use href="/imgs/icon/sprite.svg#it-collapse"></use>
-                    </svg>
-                </button>
-                <div class="bar">
-                    <button type="button" class="btn btn-primary" style="height:50px; top:202px;"></button>
-                </div>
-                <button type="button" class="btn btn-primary disabled">
-                    <svg class="icon">
-                        <use href="/imgs/icon/sprite.svg#it-expand"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-4 pt-3 pt-lg-5">
-        <div class="scrollbar-wrapper" style="height:300px;">
-            <div class="scrollbar scrollbar-v">
-                <div class="bar">
-                    <button type="button" class="btn btn-primary" style="height:50px;"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 pt-3 pt-lg-5">
-        <div class="scrollbar-wrapper" style="height:300px;">
-            <div class="scrollbar scrollbar-v">
-                <div class="bar">
-                    <button type="button" class="btn btn-primary" style="height:50px; top:124px;"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-4 pt-3 pt-lg-5">
-        <div class="scrollbar-wrapper" style="height:300px;">
-            <div class="scrollbar scrollbar-v">
-                <div class="bar">
-                    <button type="button" class="btn btn-primary" style="height:50px; top:250px;"></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>`,
+        `<ul class="nav nav-tabs light" id="myTab1" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#tab1-1" type="button" role="tab" aria-controls="tab1-2" aria-selected="true">
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+            <span>
+                Label text
+            </span>
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab1-2" type="button" role="tab" aria-controls="tab1-2" aria-selected="false">
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+            <span>
+                Label text
+            </span>
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab1-3" type="button" role="tab" aria-controls="tab1-3" aria-selected="false">
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+            <span>
+                Label text
+            </span>
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#" data-bs-toggle="tab" data-bs-target="#tab1-4" type="button" role="tab" aria-controls="tab1-4" aria-selected="false">
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+            <span>
+                Label text
+            </span>
+            <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+            </svg>
+        </a>
+    </li>
+</ul>`,
 
       }
-    };
+      ,"Type3": {
+        "default":
+        '<ul class="nav nav-tabs white">' +
+        '<li class="nav-item">' +
+            '<a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#tab2-1" type="button" role="tab" aria-controls="tab2-1" aria-selected="false">' +
+                '<svg class="icon icon-sm" aria-hidden="true">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
+                '</svg>' +
+                '<span>Label text</span>' +
+                '<svg class="icon icon-sm" aria-hidden="true">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
+                '</svg>' +
+            '</a>' +
+        '</li>' +
+        '<li class="nav-item">' +
+            '<a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab2-2" type="button" role="tab" aria-controls="tab2-2" aria-selected="false">' +
+                '<svg class="icon icon-sm" aria-hidden="true">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
+                '</svg>' +
+                '<span>Label text</span>' +
+                '<svg class="icon icon-sm" aria-hidden="true">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
+                '</svg>' +
+            '</a>' +
+        '</li>' +
+        '<li class="nav-item">' +
+            '<a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tab2-3" type="button" role="tab" aria-controls="tab2-3" aria-selected="false">' +
+                '<svg class="icon icon-sm" aria-hidden="true">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
+                '</svg>' +
+                '<span>Label text</span>' +
+                '<svg class="icon icon-sm" aria-hidden="true">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
+                '</svg>' +
+            '</a>' +
+        '</li>' +
+        '<li class="nav-item">' +
+            '<a class="nav-link disabled" href="#" data-bs-toggle="tab" data-bs-target="#tab2-4" type="button" role="tab" aria-controls="tab2-4" aria-selected="false">' +
+                '<svg class="icon icon-sm" aria-hidden="true">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
+                '</svg>' +
+                '<span>Label text</span>' +
+                '<svg class="icon icon-sm" aria-hidden="true">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
+                '</svg>' +
+            '</a>' +
+        '</li>' +
+    '</ul>',
+      }
+     };
 
     const typeSelector = document.getElementById('typeSelector');
     const contentDiv = document.getElementById('content');
