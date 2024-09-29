@@ -336,39 +336,7 @@
           <!-- section tab -->
 
           <!-- tab menu-->
-          <div class="bg-primary10 py-3 mb-8">
-            <ul class="nav nav-tabs light px-3" role="tablist">
-              <li class="nav-item">
-                <button
-                  class="nav-link active fw-bold"
-                  aria-current="page"
-                  data-bs-toggle="tab"
-                  data-bs-target="#contrasto"
-                  type="button"
-                  role="tab"
-                  aria-controls="contrasto"
-                  aria-selected="true"
-                  id="tab-1"
-                >
-                  <span>Alert</span>
-                </button>
-              </li>
-              <!--<li class="nav-item">
-                <button
-                  class="nav-link fw-bold"
-                  data-bs-toggle="tab"
-                  data-bs-target="#immagine"
-                  type="button"
-                  role="tab"
-                  aria-controls="immagine"
-                  aria-selected="false"
-                  id="tab-2"
-                >
-                  <span> Componente gruppo 2</span>
-                </button>
-              </li>-->
-            </ul>
-          </div>
+          
 
           <!-- tab content-->
           <div class="tab-content">
@@ -528,856 +496,799 @@
     <script>
       const components = {
         Type1: {
-          default: `<div class="row">
-							<div class="col-auto pt-3 pt-lg-5">
-
-								
-								<div class="form-group dropdown has-feedback filled">
-									<label id="field1Label">
-										Label field
-									</label>
-									<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field1Label"
-											data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">
-										<div class="input-group-text">
-											<svg class="icon icon-sm">
-												<use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-											</svg>
-										</div>
-										<div class="input-group-text divider"></div>
-										<div class="form-select">
-											<div class="select-value">
-												Lorem ipsum 1
-											</div>
-											<div class="select-placeholder">
-												Testo placeholder
-											</div>
-										</div>
-									</button>
-									<div class="dropdown-menu">
-										<ul class="scrollable">
-											<li>
-												<a class="dropdown-item active" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 1
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 2
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 3
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="field-helper">
-										<div class="helper-text">
-											<svg class="icon">
-												<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>
-											</svg>
-											<span>
-												Testo informativo
-											</span>
-										</div>
-									</div>
-								</div>
-
-
-							</div>
-							<div class="col-auto pt-3 pt-lg-5">
-
-								<div class="form-group dropdown has-feedback">
-									<label id="field2Label">
-										Label field
-									</label>
-									<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field2Label"
-											data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">
-										<div class="input-group-text">
-											<svg class="icon icon-sm">
-												<use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-											</svg>
-										</div>
-										<div class="input-group-text divider"></div>
-										<div class="form-select">
-											<div class="select-value"></div>
-											<div class="select-placeholder">
-												Testo placeholder
-											</div>
-										</div>
-									</button>
-									<div class="dropdown-menu">
-										<div class="dropdown-title">
-											Title
-										</div>
-
-										<div class="search-wrapper">
-											<div class="form-group">
-												<div class="input-group">
-													<div class="input-group-text">
-														<svg class="icon icon-xxs">
-															<use href="/imgs/icon/sprite.svg#it-search"></use>
-														</svg>
-													</div>
-													<input type="text" class="form-control" name="field1" placeholder="Cerca" value="" aria-label="Lorem ipsum dolor sit">
-												</div>
-											</div>
-										</div>
-
-										<ul class="scrollable">
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 1
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 2
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 3
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-										</ul>
-										
-										<div class="dropdown-link">
-											<a type="button" class="btn btn-bare btn-sm" href="javascript:">
-												Mostra tutti i risultati
-											</a>
-										</div>
-									</div>
-									<div class="field-helper">
-										<div class="helper-text">
-											<svg class="icon">
-												<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>
-											</svg>
-											<span>
-												Testo informativo
-											</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-							
-							<div class="col-auto pt-3 pt-lg-5">
-
-								<div class="form-group dropdown has-feedback filled">
-									<label id="field3Label">
-										Label field
-									</label>
-									<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field3Label"
-											data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">
-										<div class="form-select multiple">
-											<div class="select-value">
-												<span class="multi-value">Checkbox 1</span>
-												<span class="multi-value">Checkbox 2</span>
-											</div>
-											<div class="select-placeholder">
-												Testo placeholder
-											</div>
-										</div>
-									</button>
-									<div class="dropdown-menu">
-
-										<div class="dropdown-title">
-											Title
-										</div>
-
-										<div class="search-wrapper">
-											<div class="form-group field-sm">
-												<div class="input-group">
-													<div class="input-group-text">
-														<svg class="icon icon-xxs">
-															<use href="/imgs/icon/sprite.svg#it-search"></use>
-														</svg>
-													</div>
-													<input type="text" class="form-control" name="field1" placeholder="Cerca" value="" aria-label="Lorem ipsum dolor sit">
-												</div>
-											</div>
-										</div>
-
-										<ul class="scrollable">
-											<li class="dropdown-control">
-												<div class="form-group">
-													<div class="form-checkbox">
-														<div class="checkbox">
-															<input type="checkbox" name="options" id="option-1" value="" checked>
-															<label for="option-1">
-																<div>
-																	<div class="text-w6">
-																		Checkbox 1
-																	</div>
-																</div>
-															</label>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li class="dropdown-control">
-												<div class="form-group">
-													<div class="form-checkbox">
-														<div class="checkbox">
-															<input type="checkbox" name="options" id="option-2" value="" checked>
-															<label for="option-2">
-																<div>
-																	<div class="text-w6">
-																		Checkbox 2
-																	</div>
-																</div>
-															</label>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li class="dropdown-control">
-												<div class="form-group">
-													<div class="form-checkbox">
-														<div class="checkbox">
-															<input type="checkbox" name="options" id="option-3" value="">
-															<label for="option-3">
-																<div>
-																	<div class="text-w6">
-																		Checkbox 3
-																	</div>
-																</div>
-															</label>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li>
-												<div class="h-line"></div>
-											</li>
-											<li class="dropdown-control">
-												<div class="form-group">
-													<div class="form-checkbox">
-														<div class="checkbox">
-															<input type="checkbox" name="options" id="option-4" value="">
-															<label for="option-4">
-																<div>
-																	<div class="text-w6">
-																		Checkbox 4
-																	</div>
-																</div>
-															</label>
-														</div>
-													</div>
-												</div>
-											</li>
-											<li class="dropdown-control">
-												<div class="form-group">
-													<div class="form-checkbox">
-														<div class="checkbox">
-															<input type="checkbox" name="options" id="option-5" value="">
-															<label for="option-5">
-																<div>
-																	<div class="text-w6">
-																		Checkbox 5
-																	</div>
-																</div>
-															</label>
-														</div>
-													</div>
-												</div>
-											</li>
-										</ul>
-									</div>
-									<div class="field-helper">
-										<div class="helper-text">
-											<svg class="icon">
-												<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>
-											</svg>
-											<span>
-												Testo informativo
-											</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>`,
+          default:'<div class="row">'+ '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group dropdown has-feedback filled">' +
+  '<label id="field1Label">' +
+  'Label field' +
+  '</label>' +
+  '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field1Label" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+  '<div class="input-group-text">' +
+  '<svg class="icon icon-sm">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '<div class="input-group-text divider"></div>' +
+  '<div class="form-select">' +
+  '<div class="select-value">' +
+  'Lorem ipsum 1' +
+  '</div>' +
+  '<div class="select-placeholder">' +
+  'Testo placeholder' +
+  '</div>' +
+  '</div>' +
+  '</button>' +
+  '<div class="dropdown-menu">' +
+  '<ul class="scrollable">' +
+  '<li>' +
+  '<a class="dropdown-item active" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 1' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 2' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 3' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '</ul>' +
+  '</div>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Testo informativo' +
+  '</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+'</div>'+ '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group dropdown has-feedback">' +
+  '<label id="field2Label">' +
+  'Label field' +
+  '</label>' +
+  '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field2Label" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+  '<div class="input-group-text">' +
+  '<svg class="icon icon-sm">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '<div class="input-group-text divider"></div>' +
+  '<div class="form-select">' +
+  '<div class="select-value"></div>' +
+  '<div class="select-placeholder">' +
+  'Testo placeholder' +
+  '</div>' +
+  '</div>' +
+  '</button>' +
+  '<div class="dropdown-menu">' +
+  '<div class="dropdown-title">' +
+  'Title' +
+  '</div>' +
+  '<div class="search-wrapper">' +
+  '<div class="form-group">' +
+  '<div class="input-group">' +
+  '<div class="input-group-text">' +
+  '<svg class="icon icon-xxs">' +
+  '<use href="/imgs/icon/sprite.svg#it-search"></use>' +
+  '</svg>' +
+  '</div>' +
+  '<input type="text" class="form-control" name="field1" placeholder="Cerca" value="" aria-label="Lorem ipsum dolor sit">' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<ul class="scrollable">' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 1' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 2' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 3' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '</ul>' +
+  '<div class="dropdown-link">' +
+  '<a type="button" class="btn btn-bare btn-sm" href="javascript:">' +
+  'Mostra tutti i risultati' +
+  '</a>' +
+  '</div>' +
+  '</div>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Testo informativo' +
+  '</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+'</div>' + '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group dropdown has-feedback filled">' +
+  '<label id="field3Label">' +
+  'Label field' +
+  '</label>' +
+  '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field3Label" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+  '<div class="form-select multiple">' +
+  '<div class="select-value">' +
+  '<span class="multi-value">Checkbox 1</span>' +
+  '<span class="multi-value">Checkbox 2</span>' +
+  '</div>' +
+  '<div class="select-placeholder">' +
+  'Testo placeholder' +
+  '</div>' +
+  '</div>' +
+  '</button>' +
+  '<div class="dropdown-menu">' +
+  '<div class="dropdown-title">' +
+  'Title' +
+  '</div>' +
+  '<div class="search-wrapper">' +
+  '<div class="form-group field-sm">' +
+  '<div class="input-group">' +
+  '<div class="input-group-text">' +
+  '<svg class="icon icon-xxs">' +
+  '<use href="/imgs/icon/sprite.svg#it-search"></use>' +
+  '</svg>' +
+  '</div>' +
+  '<input type="text" class="form-control" name="field1" placeholder="Cerca" value="" aria-label="Lorem ipsum dolor sit">' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<ul class="scrollable">' +
+  '<li class="dropdown-control">' +
+  '<div class="form-group">' +
+  '<div class="form-checkbox">' +
+  '<div class="checkbox">' +
+  '<input type="checkbox" name="options" id="option-1" value="" checked>' +
+  '<label for="option-1">' +
+  '<div>' +
+  '<div class="text-w6">' +
+  'Checkbox 1' +
+  '</div>' +
+  '</div>' +
+  '</label>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</li>' +
+  '<li class="dropdown-control">' +
+  '<div class="form-group">' +
+  '<div class="form-checkbox">' +
+  '<div class="checkbox">' +
+  '<input type="checkbox" name="options" id="option-2" value="" checked>' +
+  '<label for="option-2">' +
+  '<div>' +
+  '<div class="text-w6">' +
+  'Checkbox 2' +
+  '</div>' +
+  '</div>' +
+  '</label>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</li>' +
+  '<li class="dropdown-control">' +
+  '<div class="form-group">' +
+  '<div class="form-checkbox">' +
+  '<div class="checkbox">' +
+  '<input type="checkbox" name="options" id="option-3" value="">' +
+  '<label for="option-3">' +
+  '<div>' +
+  '<div class="text-w6">' +
+  'Checkbox 3' +
+  '</div>' +
+  '</div>' +
+  '</label>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</li>' +
+  '<li>' +
+  '<div class="h-line"></div>' +
+  '</li>' +
+  '<li class="dropdown-control">' +
+  '<div class="form-group">' +
+  '<div class="form-checkbox">' +
+  '<div class="checkbox">' +
+  '<input type="checkbox" name="options" id="option-4" value="">' +
+  '<label for="option-4">' +
+  '<div>' +
+  '<div class="text-w6">' +
+  'Checkbox 4' +
+  '</div>' +
+  '</div>' +
+  '</label>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</li>' +
+  '<li class="dropdown-control">' +
+  '<div class="form-group">' +
+  '<div class="form-checkbox">' +
+  '<div class="checkbox">' +
+  '<input type="checkbox" name="options" id="option-5" value="">' +
+  '<label for="option-5">' +
+  '<div>' +
+  '<div class="text-w6">' +
+  'Checkbox 5' +
+  '</div>' +
+  '</div>' +
+  '</label>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</li>' +
+  '</ul>' +
+  '</div>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Testo informativo' +
+  '</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+'</div>'+'</div>',
         },
         Type2: {
-          default: ` <div class="row">
-							<div class="col-auto pt-3 pt-lg-5">
-
-								<div class="form-group dropdown has-feedback disabled">
-									<label id="field10abel">
-										Label field
-									</label>
-									<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field10Label"
-											data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">
-										<div class="input-group-text">
-											<svg class="icon icon-sm">
-												<use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-											</svg>
-										</div>
-										<div class="input-group-text divider"></div>
-										<div class="form-select">
-											<div class="select-value"></div>
-											<div class="select-placeholder">
-												Testo placeholder
-											</div>
-										</div>
-									</button>
-									<div class="dropdown-menu"></div>
-									<div class="field-helper">
-										<div class="helper-text">
-											<svg class="icon">
-												<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>
-											</svg>
-											<span>
-												Testo informativo
-											</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-auto pt-3 pt-lg-5">
-
-								<div class="form-group dropdown has-feedback disabled">
-									<label id="field11Label">
-										Label field
-									</label>
-									<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field11Label"
-											data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">
-										<div class="form-select">
-											<div class="select-value"></div>
-											<div class="select-placeholder">
-												Testo placeholder
-											</div>
-										</div>
-									</button>
-									<div class="dropdown-menu"></div>
-									<div class="field-helper">
-										<div class="helper-text">
-											<svg class="icon">
-												<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>
-											</svg>
-											<span>
-												Testo informativo
-											</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>`,
-        },
+          default: '<div class="row">' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group dropdown has-feedback disabled">' +
+  '<label id="field10abel">' +
+  'Label field' +
+  '</label>' +
+  '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field10Label" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+  '<div class="input-group-text">' +
+  '<svg class="icon icon-sm">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '<div class="input-group-text divider"></div>' +
+  '<div class="form-select">' +
+  '<div class="select-value"></div>' +
+  '<div class="select-placeholder">' +
+  'Testo placeholder' +
+  '</div>' +
+  '</div>' +
+  '</button>' +
+  '<div class="dropdown-menu"></div>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Testo informativo' +
+  '</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group dropdown has-feedback disabled">' +
+  '<label id="field11Label">' +
+  'Label field' +
+  '</label>' +
+  '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field11Label" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+  '<div class="form-select">' +
+  '<div class="select-value"></div>' +
+  '<div class="select-placeholder">' +
+  'Testo placeholder' +
+  '</div>' +
+  '</div>' +
+  '</button>' +
+  '<div class="dropdown-menu"></div>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Testo informativo' +
+  '</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+'</div>' },
         Type3: {
-          default: `<div class="row">
-							<div class="col-auto pt-3 pt-lg-5">
-
-								<div class="form-group dropdown has-feedback readonly">
-									<label id="field20Label">
-										Label field
-									</label>
-									<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field20Label"
-											data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">
-										<div class="input-group-text">
-											<svg class="icon icon-sm">
-												<use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-											</svg>
-										</div>
-										<div class="input-group-text divider"></div>
-										<div class="form-select">
-											<div class="select-value"></div>
-											<div class="select-placeholder">
-												Testo placeholder
-											</div>
-										</div>
-									</button>
-									<div class="dropdown-menu"></div>
-									<div class="field-helper">
-										<div class="helper-text">
-											<svg class="icon">
-												<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>
-											</svg>
-											<span>
-												Testo informativo
-											</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-auto pt-3 pt-lg-5">
-
-								<div class="form-group dropdown has-feedback readonly">
-									<label id="field21Label">
-										Label field
-									</label>
-									<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field21Label"
-											data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">
-										<div class="form-select">
-											<div class="select-value"></div>
-											<div class="select-placeholder">
-												Testo placeholder
-											</div>
-										</div>
-									</button>
-									<div class="dropdown-menu"></div>
-									<div class="field-helper">
-										<div class="helper-text">
-											<svg class="icon">
-												<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>
-											</svg>
-											<span>
-												Testo informativo
-											</span>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div> `,
-        },
+          default: '<div class="row">' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group dropdown has-feedback readonly">' +
+  '<label id="field20Label">' +
+  'Label field' +
+  '</label>' +
+  '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field20Label" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+  '<div class="input-group-text">' +
+  '<svg class="icon icon-sm">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '<div class="input-group-text divider"></div>' +
+  '<div class="form-select">' +
+  '<div class="select-value"></div>' +
+  '<div class="select-placeholder">' +
+  'Testo placeholder' +
+  '</div>' +
+  '</div>' +
+  '</button>' +
+  '<div class="dropdown-menu"></div>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Testo informativo' +
+  '</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group dropdown has-feedback readonly">' +
+  '<label id="field21Label">' +
+  'Label field' +
+  '</label>' +
+  '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field21Label" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+  '<div class="form-select">' +
+  '<div class="select-value"></div>' +
+  '<div class="select-placeholder">' +
+  'Testo placeholder' +
+  '</div>' +
+  '</div>' +
+  '</button>' +
+  '<div class="dropdown-menu"></div>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Testo informativo' +
+  '</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+'</div>'},
         Type4: {
-          default: `<div class="row">
-							<div class="col-auto pt-3 pt-lg-5">
-
-						
-								<div class="form-group dropdown has-feedback is-invalid">
-									<label id="field30Label">
-										Label field
-									</label>
-									<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field30Label"
-											data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">
-										<div class="input-group-text">
-											<svg class="icon icon-sm">
-												<use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-											</svg>
-										</div>
-										<div class="input-group-text divider"></div>
-										<div class="form-select">
-											<div class="select-value"></div>
-											<div class="select-placeholder">
-												Testo placeholder
-											</div>
-										</div>
-									</button>
-									<div class="dropdown-menu">
-										<ul class="scrollable">
-											<li>
-												<a class="dropdown-item active" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 1
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 2
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 3
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="invalid-feedback">
-										<svg class="icon">
-											<use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>
-										</svg>
-										<span>
-											Message explaining the error
-										</span>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-auto pt-3 pt-lg-5">
-
-								<div class="form-group dropdown has-feedback is-invalid">
-									<label id="field31Label">
-										Label field
-									</label>
-									<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field31Label"
-											data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">
-										<div class="form-select">
-											<div class="select-value"></div>
-											<div class="select-placeholder">
-												Testo placeholder
-											</div>
-										</div>
-									</button>
-									<div class="dropdown-menu">
-										<ul class="scrollable">
-											<li>
-												<a class="dropdown-item active" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 1
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 2
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 3
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="invalid-feedback">
-										<svg class="icon">
-											<use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>
-										</svg>
-										<span>
-											Message explaining the error
-										</span>
-									</div>
-								</div>
-
-							</div>
-						</div>`,
-        },
+          default: '<div class="row">' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group dropdown has-feedback is-invalid">' +
+  '<label id="field30Label">' +
+  'Label field' +
+  '</label>' +
+  '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field30Label" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+  '<div class="input-group-text">' +
+  '<svg class="icon icon-sm">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '<div class="input-group-text divider"></div>' +
+  '<div class="form-select">' +
+  '<div class="select-value"></div>' +
+  '<div class="select-placeholder">' +
+  'Testo placeholder' +
+  '</div>' +
+  '</div>' +
+  '</button>' +
+  '<div class="dropdown-menu">' +
+  '<ul class="scrollable">' +
+  '<li>' +
+  '<a class="dropdown-item active" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 1' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 2' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 3' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '</ul>' +
+  '</div>' +
+  '<div class="invalid-feedback">' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Message explaining the error' +
+  '</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group dropdown has-feedback is-invalid">' +
+  '<label id="field31Label">' +
+  'Label field' +
+  '</label>' +
+  '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field31Label" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+  '<div class="form-select">' +
+  '<div class="select-value"></div>' +
+  '<div class="select-placeholder">' +
+  'Testo placeholder' +
+  '</div>' +
+  '</div>' +
+  '</button>' +
+  '<div class="dropdown-menu">' +
+  '<ul class="scrollable">' +
+  '<li>' +
+  '<a class="dropdown-item active" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 1' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 2' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 3' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '</ul>' +
+  '</div>' +
+  '<div class="invalid-feedback">' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Message explaining the error' +
+  '</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+'</div>'},
         Type5: {
-          default: `	<div class="row">
-							<div class="col-auto pt-3 pt-lg-5">
-
-								<div class="form-group dropdown has-feedback is-valid">
-									<label id="field40Label">
-										Label field
-									</label>
-									<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field40Label"
-											data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">
-										<div class="input-group-text">
-											<svg class="icon icon-sm">
-												<use href="/imgs/icon/sprite_fill.svg#it-example"></use>
-											</svg>
-										</div>
-										<div class="input-group-text divider"></div>
-										<div class="form-select">
-											<div class="select-value"></div>
-											<div class="select-placeholder">
-												Testo placeholder
-											</div>
-										</div>
-									</button>
-									<div class="dropdown-menu">
-										<ul class="scrollable">
-											<li>
-												<a class="dropdown-item active" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 1
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 2
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 3
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="valid-feedback">
-										<svg class="icon">
-											<use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>
-										</svg>
-										<span>
-											Message explaining the success
-										</span>
-										
-									</div>
-								</div>
-
-							</div>
-							<div class="col-auto pt-3 pt-lg-5">
-
-								<div class="form-group dropdown has-feedback is-valid">
-									<label id="field41Label">
-										Label field
-									</label>
-									<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field41Label"
-											data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">
-										<div class="form-select">
-											<div class="select-value"></div>
-											<div class="select-placeholder">
-												Testo placeholder
-											</div>
-										</div>
-									</button>
-									<div class="dropdown-menu">
-										<ul class="scrollable">
-											<li>
-												<a class="dropdown-item active" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 1
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 2
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<div class="text-icon">
-														<svg class="icon icon-xs">
-															<use href="/imgs/icon/sprite.svg#it-example"></use>
-														</svg>
-														<span>
-															Lorem ipsum 3
-														</span>
-													</div>
-													<svg class="icon icon-xs">
-														<use href="/imgs/icon/sprite.svg#it-example"></use>
-													</svg>
-												</a>
-											</li>
-										</ul>
-									</div>
-									<div class="valid-feedback">
-										<svg class="icon">
-											<use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>
-										</svg>
-										<span>
-											Message explaining the success
-										</span>
-										
-									</div>
-								</div>
-
-							</div>
-						</div>`,
-        },
+          default: '<div class="row">' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group dropdown has-feedback is-valid">' +
+  '<label id="field40Label">' +
+  'Label field' +
+  '</label>' +
+  '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field40Label" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+  '<div class="input-group-text">' +
+  '<svg class="icon icon-sm">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '<div class="input-group-text divider"></div>' +
+  '<div class="form-select">' +
+  '<div class="select-value"></div>' +
+  '<div class="select-placeholder">' +
+  'Testo placeholder' +
+  '</div>' +
+  '</div>' +
+  '</button>' +
+  '<div class="dropdown-menu">' +
+  '<ul class="scrollable">' +
+  '<li>' +
+  '<a class="dropdown-item active" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 1' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 2' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 3' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '</ul>' +
+  '</div>' +
+  '<div class="valid-feedback">' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Message explaining the success' +
+  '</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group dropdown has-feedback is-valid">' +
+  '<label id="field41Label">' +
+  'Label field' +
+  '</label>' +
+  '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field41Label" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+  '<div class="form-select">' +
+  '<div class="select-value"></div>' +
+  '<div class="select-placeholder">' +
+  'Testo placeholder' +
+  '</div>' +
+  '</div>' +
+  '</button>' +
+  '<div class="dropdown-menu">' +
+  '<ul class="scrollable">' +
+  '<li>' +
+  '<a class="dropdown-item active" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 1' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 2' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<div class="text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Lorem ipsum 3' +
+  '</span>' +
+  '</div>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</a>' +
+  '</li>' +
+  '</ul>' +
+  '</div>' +
+  '<div class="valid-feedback">' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
+  '</svg>' +
+  '<span>' +
+  'Message explaining the success' +
+  '</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+'</div>'},
         Type6: {
-          default: `<div class="row">
-							<div class="col-sm-4 col-md-2 col-lg-1 pt-3 pt-lg-5">
-
-								<div class="form-group dropdown dropdown-number has-feedback filled">
-									<button class="btn dropdown-toggle input-group" type="button" role="combobox"  aria-label="Lorem ipsum"
-											data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">
-										<div class="form-select">
-											<div class="select-value">
-												1
-											</div>
-											<div class="select-placeholder"></div>
-										</div>
-									</button>
-									<div class="dropdown-menu">
-										<ul class="scrollable">
-											<li>
-												<a class="dropdown-item active" href="#">
-													<span>
-														1
-													</span>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<span>
-														2
-													</span>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<span>
-														3
-													</span>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<span>
-														4
-													</span>
-												</a>
-											</li>
-											<li>
-												<a class="dropdown-item" href="#">
-													<span>
-														5
-													</span>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-
-							</div>
-						</div>`,
-        },
+          default: '<div class="row">' +
+  '<div class="col-sm-4 col-md-2 col-lg-1 pt-3 pt-lg-5">' +
+  '<div class="form-group dropdown dropdown-number has-feedback filled">' +
+  '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-label="Lorem ipsum" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+  '<div class="form-select">' +
+  '<div class="select-value">' +
+  '1' +
+  '</div>' +
+  '<div class="select-placeholder"></div>' +
+  '</div>' +
+  '</button>' +
+  '<div class="dropdown-menu">' +
+  '<ul class="scrollable">' +
+  '<li>' +
+  '<a class="dropdown-item active" href="#">' +
+  '<span>' +
+  '1' +
+  '</span>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<span>' +
+  '2' +
+  '</span>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<span>' +
+  '3' +
+  '</span>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<span>' +
+  '4' +
+  '</span>' +
+  '</a>' +
+  '</li>' +
+  '<li>' +
+  '<a class="dropdown-item" href="#">' +
+  '<span>' +
+  '5' +
+  '</span>' +
+  '</a>' +
+  '</li>' +
+  '</ul>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+'</div>' },
       };
 
       const typeSelector = document.getElementById("typeSelector");
