@@ -684,7 +684,7 @@ function updateContent() {
       codeDiv.innerHTML = `<pre><code>${escapeHTML(formattedCode)}</code></pre>`;
 
       // Mostra solo il primo pulsante di copia
-      copyButton.style.display = 'inline-block';
+      copyButton.style.display = 'flex';
       copyButton1.style.display = 'none'; // Nasconde il secondo pulsante di copia
     } else {
       // Nascondi i pulsanti se il componente non è trovato
@@ -736,7 +736,7 @@ function updateContent() {
         codeDiv.innerHTML = `<pre><code>${escapeHTML(formattedCode)}</code></pre>`;
 
         // Mostra solo il primo pulsante di copia
-        copyButton.style.display = 'inline-block';
+        copyButton.style.display = 'flex';
         if (copyButton1) {
           copyButton1.style.display = 'none'; // Nascondi il secondo pulsante
         }

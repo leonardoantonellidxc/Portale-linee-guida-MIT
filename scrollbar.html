@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>MIT - Portale delle Linee Guida di UX e UI - Loader</title>
+  <title>MIT - Portale delle Linee Guida di UX e UI - Scroll bar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="shortcut icon" href="./favicon.ico" />
 
@@ -265,18 +265,13 @@
         <!-- hero-->
         <div class="bg-hero-green p-6 rounded my-6 ">
           <p  class=" h6 fw-semibold c-neutral-500">Design System</p>
-          <h2 class="titlepage fw-bold">Loader</h2>
+          <h2 class="titlepage fw-bold">Scrollbar</h2>
         </div>
 
         <p class="my-4">
-          Il componente Loader è essenziale per indicare agli utenti che un'operazione è in corso. Nel nostro design system, abbiamo due varianti principali: il Circle Loader e la Progress Bar. Entrambi i loader comunicano visivamente lo stato di caricamento o di elaborazione, migliorando l'esperienza utente durante l'attesa.
+          Un popover è un componente dell'interfaccia utente che consiste in una piccola finestra o casella di dialogo che appare vicino a un elemento attivatore, come un pulsante o un link, quando l'utente ci passa sopra con il mouse o ci fa clic. Questo elemento fornisce informazioni aggiuntive o opzioni contestuali senza richiedere una navigazione lontano dall'area di interesse dell'utente, migliorando così l'esperienza utente complessiva. I popover sono comunemente utilizzati per offrire suggerimenti, fornire dettagli aggiuntivi o consentire all'utente di eseguire azioni aggiuntive in modo rapido e intuitivo. 
  </p>
- <ul> 
-  <li> 
-   <strong> Circle Loader</strong> : È un'animazione circolare che ruota continuamente, suggerendo che l'operazione è in corso e non ha una durata determinata.
-  </li>
-  <li> <strong>Progress Bar </strong>: È una barra orizzontale che si riempie gradualmente, fornendo un'indicazione visiva della percentuale completata dell'operazione, utile quando la durata dell'operazione è prevedibile. </li>
- </ul>
+
 
 
        
@@ -301,13 +296,9 @@
                     <label for="typeSelector" id="field1Label">Type</label>
                     <select id="typeSelector" class="form-select">
                       <option value="">--Seleziona Type--</option>
-                      <option value="Type1">Primary</option>
-                      <option value="Type2">Disabled</option>
-                      <option value="Type3">Success</option>
-                      <option value="Type4">Danger</option>
-                      <option value="Type5">Rounded</option>
-
-
+                      <option value="Type1">Scrollbar orizzontale </option>
+                      <option value="Type2">Scrollbar verticale  </option>
+                      
                     </select>
                   </div>
                 </div>
@@ -441,383 +432,188 @@
     const components = {
       "Type1": {
         "default":
-       
-    '<div class="row">' +
-        '<div class="col-lg-6 pt-3">' +
-            '<div class="progress-wrapper">' +
-                '<div class="progress-label">' +
-                    '<span class="label-title text-icon">' +
-                        '<span>' +
-                            'Starting' +
-                        '</span>' +
-                        '<svg class="icon icon-xxs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                    '<span class="label-percent text-icon">' +
-                        '<span>' +
-                            '0%' +
-                        '</span>' +
-                    '</span>' +
-                '</div>' +
-                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">' +
-                    '<div class="progress-bar"></div>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>' +
-    '<div class="row">' +
-        '<div class="col-lg-6 pt-3">' +
-            '<div class="progress-wrapper">' +
-                '<div class="progress-label">' +
-                    '<span class="label-title text-icon">' +
-                        '<span>' +
-                            'Uploading' +
-                        '</span>' +
-                        '<svg class="icon icon-xxs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                    '<span class="label-percent text-icon">' +
-                        '<span>' +
-                            '50%' +
-                        '</span>' +
-                        '<svg class="icon icon-xs icon-loading">' +
-                            '<use href="/imgs/icon/sprite.svg#it-streamline"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                '</div>' +
-                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">' +
-                    '<div class="progress-bar" style="width:50%;"></div>' +
-                '</div>' +
-                '<div class="progress-label">' +
-                    '<span class="label-text text-icon">' +
-                        '27 MB di 60 MB' +
-                    '</span>' +
-                    '<span class="label-text text-icon">' +
-                        '(9 sec. rimanenti)' +
-                    '</span>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>' +
-    '<div class="row">' +
-        '<div class="col-lg-6 pt-3">' +
-            '<div class="progress-wrapper">' +
-                '<div class="progress-label">' +
-                    '<span class="label-title text-icon">' +
-                        '<span>' +
-                            'Upload complete' +
-                        '</span>' +
-                        '<svg class="icon icon-xxs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                    '<span class="label-percent text-icon">' +
-                        '<span>' +
-                            '100%' +
-                        '</span>' +
-                    '</span>' +
-                '</div>' +
-                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">' +
-                    '<div class="progress-bar" style="width:100%;"></div>' +
-                '</div>' +
-                '<div class="progress-label">' +
-                    '<span class="label-text text-icon">' +
-                        '27 MB di 60 MB' +
-                    '</span>' +
-                    '<span class="label-text text-icon"></span>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>'
+       `<div class="row">
+    <div class="col-lg-4 pt-3 pt-lg-5">
+        <div class="scrollbar-wrapper" style="width:300px;">
+            <div class="scrollbar scrollbar-h">
+                <button type="button" class="btn btn-primary" disabled>
+                    <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
+                    </svg>
+                </button>
+                <div class="bar">
+                    <button type="button" class="btn btn-primary" style="width:50px;"></button>
+                </div>
+                <button type="button" class="btn btn-primary">
+                    <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 pt-3 pt-lg-5">
+        <div class="scrollbar-wrapper" style="width:300px;">
+            <div class="scrollbar scrollbar-h">
+                <button type="button" class="btn btn-primary">
+                    <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
+                    </svg>
+                </button>
+                <div class="bar">
+                    <button type="button" class="btn btn-primary" style="width:50px; left:100px;"></button>
+                </div>
+                <button type="button" class="btn btn-primary">
+                    <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 pt-3 pt-lg-5">
+        <div class="scrollbar-wrapper" style="width:300px;">
+            <div class="scrollbar scrollbar-h">
+                <button type="button" class="btn btn-primary">
+                    <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
+                    </svg>
+                </button>
+                <div class="bar">
+                    <button type="button" class="btn btn-primary" style="width:50px; left:202px;"></button>
+                </div>
+                <button type="button" class="btn btn-primary" disabled>
+                    <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4 pt-3 pt-lg-5">
+        <div class="scrollbar-wrapper" style="width:300px;">
+            <div class="scrollbar scrollbar-h">
+                <div class="bar">
+                    <button type="button" class="btn btn-primary" style="width:50px;"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 pt-3 pt-lg-5">
+        <div class="scrollbar-wrapper" style="width:300px;">
+            <div class="scrollbar scrollbar-h">
+                <div class="bar">
+                    <button type="button" class="btn btn-primary" style="width:50px; left:124px;"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 pt-3 pt-lg-5">
+        <div class="scrollbar-wrapper" style="width:300px;">
+            <div class="scrollbar scrollbar-h">
+                <div class="bar">
+                    <button type="button" class="btn btn-primary" style="width:50px; left:250px;"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`,
 
       },
       "Type2": {
         "default":
-        
-    '<div class="row">' +
-        '<div class="col-lg-6 pt-3">' +
-            '<div class="progress-wrapper disabled">' +
-                '<div class="progress-label">' +
-                    '<span class="label-title text-icon">' +
-                        '<span>' +
-                            'Uploading' +
-                        '</span>' +
-                        '<svg class="icon icon-xxs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                    '<span class="label-percent text-icon">' +
-                        '<span>' +
-                            '0%' +
-                        '</span>' +
-                        '<svg class="icon icon-xs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-minus-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                '</div>' +
-                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">' +
-                    '<div class="progress-bar"></div>' +
-                '</div>' +
-                '<div class="progress-label">' +
-                    '<span class="label-text text-icon">' +
-                        '27 MB di 60 MB' +
-                    '</span>' +
-                    '<span class="label-text text-icon"></span>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>' +
-    '<div class="row">' +
-        '<div class="col-lg-6 pt-3">' +
-            '<div class="progress-wrapper disabled">' +
-                '<div class="progress-label">' +
-                    '<span class="label-title text-icon">' +
-                        '<span>' +
-                            'Uploading' +
-                        '</span>' +
-                        '<svg class="icon icon-xxs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                    '<span class="label-percent text-icon">' +
-                        '<span>' +
-                            '50%' +
-                        '</span>' +
-                        '<svg class="icon icon-xs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-minus-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                '</div>' +
-                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">' +
-                    '<div class="progress-bar" style="width:50%;"></div>' +
-                '</div>' +
-                '<div class="progress-label">' +
-                    '<span class="label-text text-icon">' +
-                        '27 MB di 60 MB' +
-                    '</span>' +
-                    '<span class="label-text text-icon"></span>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>' +
-    '<div class="row">' +
-        '<div class="col-lg-6 pt-3">' +
-            '<div class="progress-wrapper disabled">' +
-                '<div class="progress-label">' +
-                    '<span class="label-title text-icon">' +
-                        '<span>' +
-                            'Uploaded' +
-                        '</span>' +
-                        '<svg class="icon icon-xxs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                    '<span class="label-percent text-icon">' +
-                        '<span>' +
-                            '100%' +
-                        '</span>' +
-                        '<svg class="icon icon-xs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-minus-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                '</div>' +
-                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">' +
-                    '<div class="progress-bar" style="width:100%;"></div>' +
-                '</div>' +
-                '<div class="progress-label">' +
-                    '<span class="label-text text-icon">' +
-                        '27 MB di 60 MB' +
-                    '</span>' +
-                    '<span class="label-text text-icon"></span>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>',
-      },
-      "Type3": {
-        "default":
-        
-    '<div class="row">' +
-        '<div class="col-lg-6 pt-3">' +
-            '<div class="progress-wrapper success">' +
-                '<div class="progress-label">' +
-                    '<span class="label-title text-icon">' +
-                        '<span>' +
-                            'Uploading' +
-                        '</span>' +
-                        '<svg class="icon icon-xxs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                    '<span class="label-percent text-icon">' +
-                        '<span>' +
-                            '50%' +
-                        '</span>' +
-                        '<svg class="icon icon-xs icon-loading">' +
-                            '<use href="/imgs/icon/sprite.svg#it-streamline"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                '</div>' +
-                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">' +
-                    '<div class="progress-bar" style="width:50%;"></div>' +
-                '</div>' +
-                '<div class="progress-label">' +
-                    '<span class="label-text text-icon">' +
-                        '27 MB di 60 MB' +
-                    '</span>' +
-                    '<span class="label-text text-icon"></span>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>' +
-    '<div class="row">' +
-        '<div class="col-lg-6 pt-3">' +
-            '<div class="progress-wrapper success">' +
-                '<div class="progress-label">' +
-                    '<span class="label-title text-icon">' +
-                        '<span>' +
-                            'Success' +
-                        '</span>' +
-                        '<svg class="icon icon-xxs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                    '<span class="label-percent text-icon">' +
-                        '<span>' +
-                            '100%' +
-                        '</span>' +
-                        '<svg class="icon icon-xs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                '</div>' +
-                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">' +
-                    '<div class="progress-bar" style="width:100%;"></div>' +
-                '</div>' +
-                '<div class="progress-label">' +
-                    '<span class="label-text text-icon">' +
-                        '27 MB di 60 MB' +
-                    '</span>' +
-                    '<span class="label-text text-icon"></span>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>',
-
-      },
-      "Type4": {
-        "default":
-       
-    '<div class="row">' +
-        '<div class="col-lg-6 pt-3">' +
-            '<div class="progress-wrapper danger">' +
-                '<div class="progress-label">' +
-                    '<span class="label-title text-icon">' +
-                        '<span>' +
-                            'Uploading' +
-                        '</span>' +
-                        '<svg class="icon icon-xxs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                    '<span class="label-percent text-icon">' +
-                        '<span>' +
-                            '50%' +
-                        '</span>' +
-                        '<svg class="icon icon-xs icon-loading">' +
-                            '<use href="/imgs/icon/sprite.svg#it-streamline"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                '</div>' +
-                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">' +
-                    '<div class="progress-bar" style="width:50%;"></div>' +
-                '</div>' +
-                '<div class="progress-label">' +
-                    '<span class="label-text text-icon">' +
-                        '27 MB di 60 MB' +
-                    '</span>' +
-                    '<span class="label-text text-icon"></span>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>' +
-    '<div class="row">' +
-        '<div class="col-lg-6 pt-3">' +
-            '<div class="progress-wrapper danger">' +
-                '<div class="progress-label">' +
-                    '<span class="label-title text-icon">' +
-                        '<span>' +
-                            'Upload failed' +
-                        '</span>' +
-                        '<svg class="icon icon-xxs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                    '<span class="label-percent text-icon">' +
-                        '<svg class="icon icon-xs">' +
-                            '<use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
-                        '</svg>' +
-                    '</span>' +
-                '</div>' +
-                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">' +
-                    '<div class="progress-bar" style="width:100%;"></div>' +
-                '</div>' +
-                '<div class="progress-label">' +
-                    '<span class="label-text text-icon">' +
-                        'Ops, something went wrong' +
-                    '</span>' +
-                    '<span class="label-text text-icon"></span>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>',
+        `<div class="row">
+    <div class="col-lg-4 pt-3 pt-lg-5">
+        <div class="scrollbar-wrapper" style="height:300px;">
+            <div class="scrollbar scrollbar-v">
+                <button type="button" class="btn btn-primary" disabled>
+                    <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-collapse"></use>
+                    </svg>
+                </button>
+                <div class="bar">
+                    <button type="button" class="btn btn-primary" style="height:50px;"></button>
+                </div>
+                <button type="button" class="btn btn-primary">
+                    <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-expand"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 pt-3 pt-lg-5">
+        <div class="scrollbar-wrapper" style="height:300px;">
+            <div class="scrollbar scrollbar-v">
+                <button type="button" class="btn btn-primary">
+                    <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-collapse"></use>
+                    </svg>
+                </button>
+                <div class="bar">
+                    <button type="button" class="btn btn-primary" style="height:50px; top:100px;"></button>
+                </div>
+                <button type="button" class="btn btn-primary">
+                    <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-expand"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 pt-3 pt-lg-5">
+        <div class="scrollbar-wrapper" style="height:300px;">
+            <div class="scrollbar scrollbar-v">
+                <button type="button" class="btn btn-primary">
+                    <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-collapse"></use>
+                    </svg>
+                </button>
+                <div class="bar">
+                    <button type="button" class="btn btn-primary" style="height:50px; top:202px;"></button>
+                </div>
+                <button type="button" class="btn btn-primary disabled">
+                    <svg class="icon">
+                        <use href="/imgs/icon/sprite.svg#it-expand"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4 pt-3 pt-lg-5">
+        <div class="scrollbar-wrapper" style="height:300px;">
+            <div class="scrollbar scrollbar-v">
+                <div class="bar">
+                    <button type="button" class="btn btn-primary" style="height:50px;"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 pt-3 pt-lg-5">
+        <div class="scrollbar-wrapper" style="height:300px;">
+            <div class="scrollbar scrollbar-v">
+                <div class="bar">
+                    <button type="button" class="btn btn-primary" style="height:50px; top:124px;"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 pt-3 pt-lg-5">
+        <div class="scrollbar-wrapper" style="height:300px;">
+            <div class="scrollbar scrollbar-v">
+                <div class="bar">
+                    <button type="button" class="btn btn-primary" style="height:50px; top:250px;"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`,
 
       }
-,"Type5": {
-        "default":
-       
-      
-    '<div class="row">' +
-        '<div class="col col-lg-4 pt-3 pt-lg-5">' +
-            '<div class="progress-spinner">' +
-                '<svg viewBox="0 0 90 90">' +
-                    '<path class="spinner-bg" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
-                    '<path class="spinner" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
-                '</svg>' +
-                '<div class="spinner-title">' +
-                    '0%' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-        '<div class="col col-lg-4 pt-3 pt-lg-5">' +
-            '<div class="progress-spinner">' +
-                '<svg viewBox="0 0 90 90">' +
-                    '<path class="spinner-bg" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
-                    '<path class="spinner" stroke-dasharray="55, 220" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
-                '</svg>' +
-                '<div class="spinner-title">' +
-                    '25%' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-        '<div class="col col-lg-4 pt-3 pt-lg-5">' +
-            '<div class="progress-spinner">' +
-                '<svg viewBox="0 0 90 90">' +
-                    '<path class="spinner-bg" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
-                    '<path class="spinner" stroke-dasharray="165, 220" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
-                '</svg>' +
-                '<div class="spinner-title">' +
-                    '75%' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>'
-,
-
-      }
-
     };
 
     const typeSelector = document.getElementById('typeSelector');
@@ -844,7 +640,7 @@
           codeDiv.innerHTML = `<pre><code>${escapeHTML(formattedCode)}</code></pre>`;
 
           // Mostra solo il primo pulsante di copia
-          copyButton.style.display = 'flex'; //leo;
+          copyButton.classList.add("d-flex"); //leo;
           if (copyButton1) {
             copyButton1.style.display = 'none'; // Nascondi il secondo pulsante di copia
           }
