@@ -381,7 +381,7 @@
         <div class="my-5">
           <h6 class="mb-4 fw-bold">Do and don’t</h6>
           <p class="my-3">
-            Di seguito un elenco del corretto utilizzo degli avatar
+            Di seguito un elenco del corretto utilizzo del button:
           </p>
 
           <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
@@ -401,7 +401,9 @@
                   <!-- -->
                   <div class="">
                     <ul>
-                      <li> Utilizza etichette brevi ed informative</li>
+                      <li>Usa la maiuscola all’inizio della frase.</li>
+                      <li>Usa verbi attivi o frasi che indicano chiaramente l'azione.</li>
+                      <li>Usa 1 o 2 parole, non più lunghe di 4 parole, con meno di 20 caratteri inclusi gli spazi.</li>
                     </ul>
                   </div>
                 </div>
@@ -422,9 +424,14 @@
                   </div>
                   <div class="">
                     <ul>
-                      <li> Non indicare lo stato dell’accordion con le etichette</li>
-                      <li>
-                        Non eliminare l’icona che indica l’apertura della fisarmonica </li>
+                      
+                      <li>Non utilizzare segni di punteggiatura come punti o punti esclamativi.
+                       </li>
+                        <li>Non utilizzare la captalizzazione dei titoli o tutte le maiuscole. </li>
+<li>Non utilizzare etichette vaghe e generiche.</li>
+<li> Non utilizzare segni di punteggiatura come punti o punti esclamativi.</li>
+
+
                     </ul>
                   </div>
                 </div>
@@ -2264,7 +2271,7 @@ function updateContent() {
       codeDiv.innerHTML = `<pre><code>${escapeHTML(formattedCode)}</code></pre>`;
 
       // Mostra entrambi i pulsanti di copia se necessario
-      copyButton.classList.add("d-flex"); //leo
+      copyButton.style.display = 'flex'; //leo
       if (copyButton1) {
         copyButton1.style.display = 'inline-block'; // Mostra il secondo pulsante di copia
       }

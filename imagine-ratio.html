@@ -306,10 +306,13 @@
                     <label for="typeSelector" id="field1Label">Type</label>
                     <select id="typeSelector" class="form-select">
                       <option value="">--Seleziona Type--</option>
-                      <option value="Type1">Primary</option>
-                      <option value="Type2">Succcess</option>
-                      <option value="Type3">Warning</option>
-                      <option value="Type4">Danger</option>
+                      <option value="Type1">1:1</option>
+                      <option value="Type2">4:3 </option>
+                      <option value="Type3">16:9</option>
+                      <option value="Type4">21:9</option>
+                      <option value="Type5">32:9 </option>
+                      <option value="Type6">Custom </option>
+
 
 
                     </select>
@@ -332,6 +335,7 @@
                   </svg>
                 </button>
               </div>
+             
               <div></div>
               <div id="codeContent" class="bgcode text-white rounded p-4">
                 Seleziona le varianti per visualizzare il codice.
@@ -342,7 +346,7 @@
         <div class="my-5">
           <h6 class="mb-4 fw-bold">Do and don’t</h6>
           <p class="my-3">
-            Di seguito un elenco del corretto utilizzo degli avatar
+            Di seguito un elenco del corretto utilizzo dell’image ratio:
           </p>
 
           <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
@@ -362,7 +366,8 @@
                   <!-- -->
                   <div class="">
                     <ul>
-                      <li>Utilizza etichette brevi ed informative</li>
+                      <li>Considera la responsività assicurandoti che le immagini si adattino correttamente a diverse dimensioni di schermo e dispositivi.</li>
+                      <li>Mantieni proporzioni coerenti assicurandoti che il rapporto di aspetto dell'immagine sia uniforme. </li>
                     </ul>
                   </div>
                 </div>
@@ -384,12 +389,9 @@
                   <div class="">
                     <ul>
                       <li>
-                        Non indicare lo stato dell’accordion con le etichette
+                        Non utilizzare formati inadeguati, non sono adatti per il web.
                       </li>
-                      <li>
-                        Non eliminare l’icona che indica l’apertura della
-                        fisarmonica
-                      </li>
+                    
                     </ul>
                   </div>
                 </div>
@@ -399,7 +401,7 @@
         </div>
 
         <!-- paginazione-->
-
+       
         <div class="d-flex justify-content-between py-3 bg-lightblu rounded my-8 px-6">
           <button type="button" class="btn btn-bare btn-sm">
             <svg class="icon">
@@ -417,6 +419,7 @@
       </div>
     </div>
   </main>
+  
   <footer>
     <div class="footer-credits">
       <div class="container">
@@ -445,63 +448,7 @@
     const components = {
       "Type1": {
         "default":
-          '<div class="row align-content-center justify-content-center">' +
-          '<div class="col-auto pt-4">' +
-          //leo inizio
-          '<div class="alert alert-info alert-dismissible fade show">' +
-          '<div class="alert-body">' +
-          '<div class="alert-heading h5">' +
-          "Titolo alert info" +
-          '</div>' +
-          '<div class="alert-text">' +
-          "Vel tempus nisl augue accumsan, scelerisque aliquet. " +
-          "Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus." +
-          '</div>' +
-          '<div class="btn-toolbar">' +
-          '<button type="button" class="btn btn-primary">' +
-          "Button text" +
-          '</button>' +
-          '<button type="button" class="btn btn-bare">' +
-          "Button text" +
-          '</button>' +
-          '</div>' +
-          '</div>' +
-          '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
-          '<svg class="icon">' +
-          '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-          '</svg>' +
-          '</button>' +
-          '</div>' +
-          //leo fine
-          '</div>' +
-          '</div>'
-      },
-      "Type2": {
-        "default":
-          '<div class="alert alert-success alert-dismissible fade show">' +
-          '<div class="alert-body">' +
-          '<div class="alert-heading h5">' +
-          'Titolo alert success' +
-          '</div>' +
-          '<div class="alert-text">' +
-          'Vel tempus nisl augue accumsan, scelerisque aliquet. ' +
-          'Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus.' +
-          '</div>' +
-          '<div class="btn-toolbar">' +
-          '<button type="button" class="btn btn-success">' +
-          'Button text' +
-          '</button>' +
-          '<button type="button" class="btn btn-bare bare-success">' +
-          'Button text' +
-          '</button>' +
-          '</div>' +
-          '</div>' +
-          '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
-          '<svg class="icon">' +
-          '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-          '</svg>' +
-          '</button>' +
-          '</div>'
+    
       },
       "Type3": {
         "default":

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>MIT - Portale delle Linee Guida di UX e UI - Dropdown</title>
+  <title>MIT - Portale delle Linee Guida di UX e UI - Slider</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="shortcut icon" href="./favicon.ico" />
 
@@ -109,12 +109,12 @@
                 <ul class="nav navbar-nav">
                   <!-- Esempio Mega menu Container -->
 
-                  <li class="nav-item">
+                  <li class="nav-item active">
                     <a href="homepage.html" class="nav-link">
                       <span>Homepage</span>
                     </a>
                   </li>
-                  <li class="nav-item ">
+                  <li class="nav-item">
                     <a href="design-system.html" class="nav-link active">
                       <span>Design System</span>
                     </a>
@@ -263,13 +263,27 @@
       </aside>
       <div class="col-12 col-lg-9" id="main-content">
         <!-- hero-->
-        <div class="bg-hero-green p-6 rounded my-6 ">
-          <p  class=" h6 fw-semibold c-neutral-500">Design System</p>
-          <h2 class="titlepage fw-bold">Dropdown</h2>
+        <div class="bg-hero-green p-6 rounded my-6">
+          <p class="fw-bold c-neutral-500">Design System</p>
+          <h2 class="titlepage fw-bold">Slider</h2>
         </div>
 
         <p class="my-4">
-          Il Dropdown permette la visualizzazione di un elenco di opzioni selezionabili quando viene attivato dall'utente fornendo una navigazione veloce al contenuto desiderato. È utile quindi per creare menu contestuali. Il dropdown può contenere una varietà di elementi, tra cui testo, link e azioni.
+          Il componente "alert" è un elemento di interfaccia progettato per
+          comunicare informazioni importanti o urgenti agli utenti. Questi
+          avvisi sono utilizzati per notificare gli utenti su eventi critici,
+          come errori nell'input dei dati, conferme di azioni importanti,
+          avvisi di sicurezza o aggiornamenti cruciali nel sistema. Tale
+          componente è progettato per essere visivamente distintivo, in modo
+          che catturi immediatamente l'attenzione dell'utente. Spesso viene
+          visualizzato in modo prominente sulla pagina o nell'applicazione,
+          utilizzando colori accattivanti o simboli iconici per evidenziare la
+          sua importanza. Inoltre, gli alert sono progettati per essere
+          facilmente comprensibili, fornendo testo chiaro e conciso che spiega
+          l'informazione essenziale che l'utente deve conoscere. L'obiettivo
+          principale del componente alert è quello di garantire che gli utenti
+          siano informati tempestivamente su eventi critici o azioni
+          necessarie, migliorando così l'usabilità complessiva del sistema.
         </p>
 
         <button type="button" class="btn btn-bare my-5">
@@ -281,8 +295,43 @@
             <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
           </svg>
         </button>
-        
-        <!-- variente codice -->
+        <!-- section 1-->
+
+        <!-- section tab -->
+
+        <!-- tab menu-->
+        <div class="bg-primary10 py-3 mb-8">
+          <ul class="nav nav-tabs light px-3" role="tablist">
+            <li class="nav-item">
+              <button class="nav-link active fw-bold" aria-current="page" data-bs-toggle="tab"
+                data-bs-target="#contrasto" type="button" role="tab" aria-controls="contrasto" aria-selected="true"
+                id="tab-1">
+                <span>Alert</span>
+              </button>
+            </li>
+            <!--<li class="nav-item">
+                <button
+                  class="nav-link fw-bold"
+                  data-bs-toggle="tab"
+                  data-bs-target="#immagine"
+                  type="button"
+                  role="tab"
+                  aria-controls="immagine"
+                  aria-selected="false"
+                  id="tab-2"
+                >
+                  <span> Componente gruppo 2</span>
+                </button>
+              </li>-->
+          </ul>
+        </div>
+
+        <!-- tab content-->
+        <div class="tab-content">
+          <!-- 1 tab-->
+          <div class="tab-pane fade show active bg-light-subtle p-2 rounded-0" id="contrasto" role="tablist"
+            aria-labelledby="tab-1">
+            <!-- contenuto primo tab -->
             <div class="bg-neutral-500 p-3">
               <h5 class="mb-4">Variante</h5>
 
@@ -292,10 +341,11 @@
                     <label for="typeSelector" id="field1Label">Type</label>
                     <select id="typeSelector" class="form-select">
                       <option value="">--Seleziona Type--</option>
-                      <option value="Type1">Type1</option>
-                      <option value="Type2">Type2</option>
-                      <option value="Type3">Type3</option>
-                     
+                      <option value="Type1">Slider</option>
+                      <option value="Type2"> Slider Disabled </option>
+                      <option value="Type3"> Slider invalid  </option>
+                      <option value="Type4"> Slider valid  </option>
+
 
                     </select>
                   </div>
@@ -322,13 +372,16 @@
                 Seleziona le varianti per visualizzare il codice.
               </div>
             </div>
-          
+          </div>
+
+          <!-- fine tab container-->
+        </div>
+
         <!-- section do dont-->
         <div class="my-5">
           <h6 class="mb-4 fw-bold">Do and don’t</h6>
           <p class="my-3">
-            Di seguito un elenco del corretto utilizzo delle dropdown:
-          </p>
+            Di seguito un elenco del corretto utilizzo degli slider:          </p>
 
           <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
             <div class="col-12 col-md-6">
@@ -347,8 +400,8 @@
                   <!-- -->
                   <div class="">
                     <ul>
-                      <li>Se le opzioni sono numerose, considera di aggiungere una funzione di ricerca per facilitare la selezione.</li>
-                      <li>Se ci sono molte voci da selezionare, integra una scrollbar per facilitare la navigazione tra le opzioni.</li>
+                      <li>Implementa lo slider per rappresentare valori che possono essere scelti in modo continuo.</li>
+                      <li>Mostra i valori di minimo e massimo accanto allo slider per chiarire l'intervallo selezionabile agli utenti.</li>
                     </ul>
                   </div>
                 </div>
@@ -370,11 +423,9 @@
                   <div class="">
                     <ul>
                       <li>
-                        Non nascondere le opzioni selezionate, devono essere sempre visibili nella dropdown.
+                        Evita di impostare intervalli troppo piccoli che rendono difficile selezionare il valore desiderato.
                       </li>
-                      <li>
-                        Evita etichette poco chiare o vaghe che non indicano chiaramente cosa si sta selezionando.
-                      </li>
+                     
                     </ul>
                   </div>
                 </div>
@@ -385,7 +436,7 @@
 
         <!-- paginazione-->
 
-        <div class="d-flex justify-content-between py-3 bg-lightblu rounded my-8 px-6">
+        <div class="d-flex justify-content-between py-3 bg-lightblu">
           <button type="button" class="btn btn-bare btn-sm">
             <svg class="icon">
               <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
@@ -402,27 +453,7 @@
       </div>
     </div>
   </main>
-  <footer>
-    <div class="footer-credits">
-      <div class="container">
-        <div class="navbar-brand pe-4">
-          <svg class="icon icon-lg" aria-hidden="true">
-            <use href="/imgs/icon/ministero.svg#ministero"></use>
-          </svg>
-          <div class="body-lg text-w6 ps-3">
-            www.mit.gov.it - Ministero delle infrastrutture e dei trasporti.
-          </div>
-        </div>
 
-        <div class="text-icon">
-          <svg class="icon icon-xs" aria-hidden="true">
-            <use href="/imgs/icon/sprite.svg#it-copyright"></use>
-          </svg>
-          <span> Tutti i diritti riservati </span>
-        </div>
-      </div>
-    </div>
-  </footer>
   <!-- Bootstrap 5.3 -->
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
@@ -430,330 +461,389 @@
     const components = {
       "Type1": {
         "default":
-          '<div class="row align-content-center justify-content-center">' +
-          '<div class="col-auto pt-4">' +
-          //leo inizio
-          `<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button   
-
-  </button>
-  <div class="dropdown-menu">   
-
-    <div class="dropdown-title">
-      Title
-    </div>
-    <ul>
-      <li>
-        <a class="dropdown-item active" href="#">
-          <div class="text-icon">
-            <svg class="icon icon-xs">
-              <use href="/imgs/icon/sprite.svg#it-example"></use>
-            </svg>
-            <span>
-              Action
-            </span>
-          </div>
-          <svg class="icon icon-xs">
-            <use href="/imgs/icon/sprite.svg#it-example"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item disabled" href="#">
-          <div class="text-icon">
-            <svg class="icon icon-xs">
-              <use href="/imgs/icon/sprite.svg#it-example"></use>
-            </svg>
-            <span>
-              Another action
-            </span>
-          </div>
-          <svg class="icon icon-xs">
-            <use href="/imgs/icon/sprite.svg#it-example"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item" href="#">
-          <div class="text-icon">
-            <svg class="icon icon-xs">
-              <use href="/imgs/icon/sprite.svg#it-example"></use>
-            </svg>
-            <span>
-              Something else here
-            </span>
-          </div>
-          <svg class="icon icon-xs">
-            <use href="/imgs/icon/sprite.svg#it-example"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>`+
-          //leo fine
-          '</div>' +
-          '</div>'
+         '<div class="row">' +
+  '<div class="col-auto pt-3 pt-lg-12">' +
+  '<div class="form-group form-ranges from-to has-feedback">' +
+  '<label class="label-info" id="field1Label">' +
+  '<span>Label field</span>' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '</label>' +
+  '<div class="input-range">' +
+  '<div class="range-progress">' +
+  '<div class="range-limit text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>0%</span>' +
+  '</div>' +
+  '<div class="progress-wrapper">' +
+  '<a class="btn-pin from" style="left:20%;">' +
+  '<div class="pin-tooltip">20</div>' +
+  '<div class="pin"></div>' +
+  '</a>' +
+  '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="20" aria-valuemax="100">' +
+  '<div class="progress-bar" style="width:40%; margin-left:20%;"></div>' +
+  '</div>' +
+  '<a class="btn-pin to" style="left:60%;">  <div class="pin-tooltip">60</div><div class="pin"></div></a>' +
+  '</div>' +
+  '<div class="range-limit text-icon">' +
+  '<span>100%</span>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '</div>' +
+  '<div class="range-group">' +
+  '<div class="range-field">' +
+  '<input type="text" class="form-control" name="field1-from" value="20" aria-label="Valore minimo">' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<span>Minimo</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<div class="range-field">' +
+  '<input type="text" class="form-control" name="field1-to" value="60" aria-label="Valore massimo">' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<span>Massimo</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group form-ranges has-feedback">' +
+  '<label class="label-info" id="field2Label">' +
+  '<span>Label field</span>' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '</label>' +
+  '<div class="input-range">' +
+  '<div class="range-progress">' +
+  '<div class="range-limit text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>0%</span>' +
+  '</div>' +
+  '<div class="progress-wrapper">' +
+  '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">' +
+  '<div class="progress-bar" style="width:60%;"></div>' +
+  '</div>'   
+ +
+  '<a class="btn-pin to" style="left:60%;">  <div class="pin-tooltip">60</div><div class="pin"></div></a>' +
+  '</div>' +
+  '<div class="range-limit text-icon">' +
+  '<span>100%</span>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '</div>' +
+  '<div class="range-group">' +
+  '<div class="range-field">' +
+  '<input type="text" class="form-control" name="field2-from" value="60" aria-label="Valore minimo">' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>',
       },
       "Type2": {
         "default":
-         '<div class="row align-content-center justify-content-center">' +
-          '<div class="col-auto pt-4">' + '<div class="dropdown">' +
-    '<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">' +
-    'Dropdown button' +
-    '</button>' +
-    '<div class="dropdown-menu">' +
-    '<div class="dropdown-title">' +
-    'Title' +
-    '</div>' +
-    '<div class="search-wrapper">' +
-    '<div class="form-group">' +
-    '<div class="input-group">' +
-    '<div class="input-group-text">' +
-    '<svg class="icon icon-xxs">' +
-    '<use href="/imgs/icon/sprite.svg#it-search"></use>' +
-    '</svg>' +
-    '</div>' +
-    '<input type="text" class="form-control" name="field1" placeholder="Cerca" value="" aria-label="Lorem ipsum dolor sit">' +
-    '</div>' +
-    '</div>' +
-    '</div>' +
-    '<ul class="scrollable">' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Another action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Something else here' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<div class="h-line"></div>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Another action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Something else here' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '</ul>' +
-    '<div class="dropdown-link">' +
-    '<a type="button" class="btn btn-bare btn-sm" href="javascript:">' +
-    'Mostra tutti i risultati' +
-    '</a>' +
-    '</div>' +
-    '</div>' +
-    '</div>'+ 
-
-  '</div>'+
-'</div>',
+         '<div class="row">' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group form-ranges from-to has-feedback disabled">' +
+  '<label class="label-info" id="field10Label">' +
+  '<span>Label field</span>' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '</label>' +
+  '<div class="input-range">' +
+  '<div class="range-progress">' +
+  '<div class="range-limit text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>0%</span>' +
+  '</div>' +
+  '<div class="progress-wrapper">' +
+  '<a class="btn-pin from" style="left:20%;">' +
+  '<div class="pin-tooltip">20</div>' +
+  '<div class="pin"></div>' +
+  '</a>' +
+  '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="20" aria-valuemax="100">' +
+  '<div class="progress-bar" style="width:40%; margin-left:20%;"></div>' +
+  '</div>' +
+  '<a class="btn-pin to" style="left:60%;">  <div class="pin-tooltip">60</div><div class="pin"></div></a>' +
+  '</div>' +
+  '<div class="range-limit text-icon">' +
+  '<span>100%</span>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '</div>' +
+  '<div class="range-group">' +
+  '<div class="range-field">' +
+  '<input type="text" class="form-control" name="field10-from" value="20" aria-label="Valore minimo" disabled>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<span>Minimo</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<div class="range-field">' +
+  '<input type="text" class="form-control" name="field10-to" value="60" aria-label="Valore massimo" disabled>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<span>Massimo</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group form-ranges has-feedback disabled">' +
+  '<label class="label-info" id="field1Label">' +
+  '<span>Label field</span>' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '</label>' +
+  '<div class="input-range">' +
+  '<div class="range-progress">' +
+  '<div class="range-limit text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>0%</span>' +
+  '</div>' +
+  '<div class="progress-wrapper">' +
+  '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">' +
+  '<div class="progress-bar" style="width:60%;"></div>' +
+  '</div>'   
+ +
+  '<a class="btn-pin to" style="left:60%;">  <div class="pin-tooltip">60</div><div class="pin"></div></a>' +
+  '</div>' +
+  '<div class="range-limit text-icon">' +
+  '<span>100%</span>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '</div>' +
+  '<div class="range-group">' +
+  '<div class="range-field">' +
+  '<input type="text" class="form-control" name="field1-from" value="60" aria-label="Valore minimo" disabled>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>',
       },
       "Type3": {
         "default":
-        '<div class="row align-content-center justify-content-center">' +
-          '<div class="col-auto pt-4">'+
-        '<div class="dropdown">' +
-    '<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">' +
-    'Dropdown button' +
-    '</button>' +
-    '<div class="dropdown-menu">' +
-    '<div class="dropdown-title">' +
-    'Title' +
-    '</div>' +
-    '<div class="search-wrapper">' +
-    '<div class="form-group">' +
-    '<div class="input-group">' +
-    '<div class="input-group-text">' +
-    '<svg class="icon icon-xxs">' +
-    '<use href="/imgs/icon/sprite.svg#it-search"></use>' +
-    '</svg>' +
-    '</div>' +
-    '<input type="text" class="form-control" name="field1" placeholder="Cerca" value="" aria-label="Lorem ipsum dolor sit">' +
-    '</div>' +
-    '</div>' +
-    '</div>' +
-    '<ul class="scrollable">' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Another action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Something else here' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<div class="h-line"></div>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Another action' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '<li>' +
-    '<a class="dropdown-item" href="#">' +
-    '<div class="text-icon">' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>' +
-    'Something else here' +
-    '</span>' +
-    '</div>' +
-    '<svg class="icon icon-xs">' +
-    '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-    '</svg>' +
-    '</a>' +
-    '</li>' +
-    '</ul>' +
-    '<div class="dropdown-link">' +
-    '<a type="button" class="btn btn-bare btn-sm" href="javascript:">' +
-    'Mostra tutti i risultati' +
-    '</a>' +
-    '</div>' +
-    '</div>' +
-    '</div>',
-
+          '<div class="row">' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group form-ranges from-to has-feedback is-invalid">' +
+  '<label class="label-info" id="field20Label">' +
+  '<span>Label field</span>' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '</label>' +
+  '<div class="input-range">' +
+  '<div class="range-progress">' +
+  '<div class="range-limit text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>0%</span>' +
+  '</div>' +
+  '<div class="progress-wrapper">' +
+  '<a class="btn-pin from" style="left:20%;">' +
+  '<div class="pin-tooltip">20</div>' +
+  '<div class="pin"></div>' +
+  '</a>' +
+  '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="20" aria-valuemax="100">' +
+  '<div class="progress-bar" style="width:40%; margin-left:20%;"></div>' +
+  '</div>' +
+  '<a class="btn-pin to" style="left:60%;">  <div class="pin-tooltip">60</div><div class="pin"></div></a>' +
+  '</div>' +
+  '<div class="range-limit text-icon">' +
+  '<span>100%</span>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '</div>' +
+  '<div class="range-group">' +
+  '<div class="range-field">' +
+  '<input type="text" class="form-control" name="field20-from" value="20" aria-label="Valore minimo" disabled>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<span>Minimo</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<div class="range-field">' +
+  '<input type="text" class="form-control" name="field20-to" value="60" aria-label="Valore massimo" disabled>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<span>Massimo</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group form-ranges has-feedback disabled">' +
+  '<label class="label-info" id="field1Label">' +
+  '<span>Label field</span>' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '</label>' +
+  '<div class="input-range">' +
+  '<div class="range-progress">' +
+  '<div class="range-limit text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>0%</span>' +
+  '</div>' +
+  '<div class="progress-wrapper">' +
+  '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">' +
+  '<div class="progress-bar" style="width:60%;"></div>' +
+  '</div>'   
+ +
+  '<a class="btn-pin to" style="left:60%;">  <div class="pin-tooltip">60</div><div class="pin"></div></a>' +
+  '</div>' +
+  '<div class="range-limit text-icon">' +
+  '<span>100%</span>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '</div>' +
+  '<div class="range-group">' +
+  '<div class="range-field">' +
+  '<input type="text" class="form-control" name="field1-from" value="60" aria-label="Valore minimo" disabled>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>',
       },
-      
+      "Type4": {
+        "default":
+         '<div class="row">' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group form-ranges from-to has-feedback is-valid">' +
+  '<label class="label-info" id="field30Label">' +
+  '<span>Label field</span>' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '</label>' +
+  '<div class="input-range">' +
+  '<div class="range-progress">' +
+  '<div class="range-limit text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>0%</span>' +
+  '</div>' +
+  '<div class="progress-wrapper">' +
+  '<a class="btn-pin from" style="left:20%;">' +
+  '<div class="pin-tooltip">20</div>' +
+  '<div class="pin"></div>' +
+  '</a>' +
+  '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="20" aria-valuemax="100">' +
+  '<div class="progress-bar" style="width:40%; margin-left:20%;"></div>' +
+  '</div>' +
+  '<a class="btn-pin to" style="left:60%;">  <div class="pin-tooltip">60</div><div class="pin"></div></a>' +
+  '</div>' +
+  '<div class="range-limit text-icon">' +
+  '<span>100%</span>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '</div>' +
+  '<div class="range-group">' +
+  '<div class="range-field">' +
+  '<input type="text" class="form-control" name="field30-from" value="20" aria-label="Valore minimo" disabled>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<span>Minimo</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<div class="range-field">' +
+  '<input type="text" class="form-control" name="field30-to" value="60" aria-label="Valore massimo" disabled>' +
+  '<div class="field-helper">' +
+  '<div class="helper-text">' +
+  '<span>Massimo</span>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+  '<div class="form-group form-ranges has-feedback disabled">' +
+  '<label class="label-info" id="field1Label">' +
+  '<span>Label field</span>' +
+  '<svg class="icon">' +
+  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+  '</svg>' +
+  '</label>' +
+  '<div class="input-range">' +
+  '<div class="range-progress">' +
+  '<div class="range-limit text-icon">' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '<span>0%</span>' +
+  '</div>' +
+  '<div class="progress-wrapper">' +
+  '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">' +
+  '<div class="progress-bar" style="width:60%;"></div>' +
+  '</div>'   
+ +
+  '<a class="btn-pin to" style="left:60%;">  <div class="pin-tooltip">60</div><div class="pin"></div></a>' +
+  '</div>' +
+  '<div class="range-limit text-icon">' +
+  '<span>100%</span>' +
+  '<svg class="icon icon-xs">' +
+  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+  '</svg>' +
+  '</div>' +
+  '</div>' +
+  '<div class="range-group">' +
+  '<div class="range-field">' +
+  '<input type="text" class="form-control" name="field1-from" value="60" aria-label="Valore minimo" disabled>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>' +
+  '</div>',
+      }
+
     };
 
     const typeSelector = document.getElementById('typeSelector');
@@ -780,7 +870,7 @@
           codeDiv.innerHTML = `<pre><code>${escapeHTML(formattedCode)}</code></pre>`;
 
           // Mostra solo il primo pulsante di copia
-          copyButton.style.display = 'flex'; //leo;
+          copyButton.style.display = 'flex'; 
           if (copyButton1) {
             copyButton1.style.display = 'none'; // Nascondi il secondo pulsante di copia
           }
