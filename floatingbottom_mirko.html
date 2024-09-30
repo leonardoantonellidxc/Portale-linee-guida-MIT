@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8" />
+  <title>MIT - Portale delle Linee Guida di UX e UI - Floating button</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+
+  <!-- Bootstrap 5.3 -->
+  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+
+  <!-- G36 Theme CSS -->
+  <link href="css/font.css" type="text/css" rel="stylesheet" />
+  <link href="css/form.css" type="text/css" rel="stylesheet" />
+  <link href="css/table.css" type="text/css" rel="stylesheet" />
+  <link href="css/theme.css" type="text/css" rel="stylesheet" />
+
+  <!-- Custom css-->
+  <link href="css/custom.css" type="text/css" rel="stylesheet" />
+
+  <!-- Fonts -->
+  <link href="css/font.css" type="text/css" rel="stylesheet" />
+
+  <style>
+    .avatar-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .avatar img {
+      max-width: 100%;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <header class="header bg-white pt-2 px-4 pt-lg-5 px-lg-9 sticky-top">
+    <!-- Header content goes here -->
+  </header>
+
+  <main class="container-fluid">
+    <div class="row">
+      <aside class="sidebar-menu col-12 col-lg-3">
+        <!-- Sidebar content goes here -->
+      </aside>
+      <div class="col-12 col-lg-9" id="main-content">
+        <div class="bg-hero-green p-6 rounded my-6">
+          <p class="fw-bold c-neutral-500">Design System</p>
+          <h2 class="titlepage fw-bold">Floating button</h2>
+        </div>
+
+        <p class="my-4">
+          Gli Avatar sono elementi dell'interfaccia utente progettati per
+          visualizzare le rappresentazioni grafiche degli utenti o dei
+          personaggi in applicazioni, piattaforme web, giochi e altri contesti
+          digitali. Questi componenti consentono agli utenti di identificare
+          visivamente se stessi o altri partecipanti e aggiungono un elemento
+          di personalizzazione e coinvolgimento all'esperienza utente.
+        </p>
+
+        <button type="button" class="btn btn-bare my-5">
+          <svg class="icon icon-sm">
+            <use href="/imgs/icon/sprite_fill.svg#it-figma"></use>
+          </svg>
+          <span> Vai al componente Figma </span>
+          <svg class="icon icon-sm">
+            <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+          </svg>
+        </button>
+
+        <!-- Sezione con bottone flottante e codice -->
+        <div class="bg-neutral-500 p-3">
+          <h5 class="mb-4">Variante</h5>
+          <div class="bg-white d-flex align-content-center justify-content-center py-8 mb-3">
+            <div class="">
+              <div class="row">
+                <div class="col-auto py-6">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-floating">
+                      <svg class="icon">
+                        <use href="/imgs/icon/sprite_fill.svg#it-help-circle"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sezione per visualizzare il codice -->
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="">Codice</h5>
+            <button type="button" id="copyButton1" class="btn btn-primary">
+              <span> Copia codice </span>
+              <svg class="icon icon-sm">
+                <use href="/imgs/icon/sprite_fill.svg#it-copy-success"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div id="codeContent" class="bgcode text-white rounded p-4">
+            <!-- Il codice verrà inserito qui dallo script -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Sezione do and don't -->
+      <div class="my-5">
+        <h6 class="mb-4 fw-bold">Do and don’t</h6>
+        <p class="my-3">
+          Di seguito un elenco del corretto utilizzo degli avatar
+        </p>
+
+        <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+          <div class="col-12 col-md-6">
+            <div class="card shadow-none h-100 bg-gray">
+              <div class="card-body pb-0">
+                <div class="card-bar">
+                  <div class="bar-group">
+                    <div class="badge badge-sm badge-success">
+                      <span> Do </span>
+                      <svg class="icon icon-sm icon-success ms-2">
+                        <use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    Utilizza avatar di dimensioni e stile coerenti quando
+                    realizzi un raggruppamento.
+                  </li>
+                  <li>
+                    Utilizza avatar generici quando l’utente è scollegato
+                    dal sistema o non ha impostato un’immagine di profilo.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="card shadow-none h-100 bg-gray">
+              <div class="card-body pb-0">
+                <div class="card-bar">
+                  <div class="bar-group">
+                    <div class="badge badge-sm badge-danger">
+                      <span> Don't </span>
+                      <svg class="ms-2 icon icon-sm icon-danger">
+                        <use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    Non fare supposizioni di genere e usa avatar
+                    segnaposto unisex.
+                  </li>
+                  <li>
+                    Evita di usare insieme un mix di avatar di diverse
+                    dimensioni e stili che creano uno squilibrio di
+                    design.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-between py-3 bg-lightblu">
+        <button type="button" class="btn btn-bare btn-sm">
+          <svg class="icon">
+            <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
+          </svg>
+          <span>Accessibilità </span>
+        </button>
+        <button type="button" class="btn btn-bare btn-sm">
+          <span>Index </span>
+          <svg class="icon">
+            <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    </div>
+  </main>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const codeContentDiv = document.getElementById("codeContent");
+      const copyButton1 = document.getElementById("copyButton1");
+
+      // Codice da visualizzare
+      const codeHTML = `
+      <div class="row">
+        <div class="col-lg-4 py-6">
+          <div class="btn-group">
+            <button type="button" class="btn btn-floating">
+              <svg class="icon">
+                <use href="/imgs/icon/sprite_fill.svg#it-help-circle"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      `;
+
+      // Funzione per inserire e visualizzare il codice
+      codeContentDiv.innerHTML = `<pre><code>${escapeHTML(codeHTML)}</code></pre>`;
+
+      // Funzione per scappare i caratteri speciali nel codice
+      function escapeHTML(html) {
+        return html
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#039;');
+      }
+
+      // Funzione per copiare il codice negli appunti
+      copyButton1.addEventListener("click", function () {
+        navigator.clipboard.writeText(codeHTML)
+          .then(() => {
+            alert("Codice copiato con successo!");
+          })
+          .catch(err => {
+            console.error("Errore durante la copia del codice:", err);
+          });
+      });
+    });
+  </script>
+</body>
+
+</html>

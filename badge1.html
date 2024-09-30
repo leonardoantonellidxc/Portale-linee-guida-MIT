@@ -2,7 +2,7 @@
 <html lang="it">
   <head>
     <meta charset="utf-8" />
-    <title>MIT - Portale delle Linee Guida di UX e UI - Button group </title>
+    <title>MIT - Portale delle Linee Guida di UX e UI - Badge</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -133,7 +133,7 @@
                   <ul class="nav navbar-nav">
                     <!-- Esempio Mega menu Container -->
 
-                    <li class="nav-item">
+                    <li class="nav-item active">
                       <a href="homepage.html" class="nav-link">
                         <span>Homepage</span>
                       </a>
@@ -311,11 +311,11 @@
           <!-- hero-->
           <div class="bg-hero-green p-6 rounded my-6">
             <p class="fw-bold c-neutral-500">Design System</p>
-            <h2 class="titlepage fw-bold">Button group</h2>
+            <h2 class="titlepage fw-bold">Badge</h2>
           </div>
 
           <p class="my-4">
-            La Bottom Bar è un componente che si posiziona nella parte inferiore di una pagina o interfaccia. Viene utilizzata per fornire un accesso rapido a opzioni o funzioni principali, migliorando la navigazione all'interno di un'applicazione o sito. Solitamente include una serie di pulsanti, icone o collegamenti che permettono all'utente di interagire in modo intuitivo e diretto con le sezioni più importanti dell'interfaccia.
+            Il badge è un elemento grafico utilizzato per comunicare informazioni aggiuntive o indicare uno stato specifico in un'interfaccia utente. Solitamente consiste in un piccolo simbolo o numero sovrapposto a un'icona o a un elemento visivo. Può essere impiegato in diversi contesti, ad esempio per segnalare il numero di notifiche non lette, indicare uno stato breve o visualizzare un'etichetta, oppure per evidenziare qualcosa di nuovo o importante.  Vai alla pagina d’esempio.
           </p>
 
           <button type="button" class="btn btn-bare my-5">
@@ -330,6 +330,7 @@
           <!-- section 1-->
 
           <div class="bg-neutral-500 p-3">
+            <div class="bg-neutral-500 p-3">
             <h5 class="mb-4">Variante</h5>
 
             <div class="row mb-3">
@@ -338,9 +339,12 @@
                   <label for="typeSelector" id="field1Label">Type</label>
                   <select id="typeSelector" class="form-select">
                     <option value="">--Seleziona Type--</option>
-                    <option value="Type1">Md </option>
-                    <option value="Type2">Sm</option>
-                    
+                    <option value="Type1">Primary</option>
+                    <option value="Type2">Secondary</option>
+                    <option value="Type3">Succcess</option>
+                    <option value="Type4">Warning</option>
+                    <option value="Type5">Danger</option>
+                    <option value="Type6">Disabled</option>
                   </select>
                 </div>
               </div>
@@ -380,7 +384,7 @@
           <div class="my-5">
             <h6 class="mb-4 fw-bold">Do and don’t</h6>
             <p class="my-3">
-              Di seguito un elenco del corretto utilizzo del button group:
+              Di seguito un elenco del corretto utilizzo degli alert:
             </p>
 
             <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
@@ -403,10 +407,12 @@
                     <div class="">
                       <ul>
                         <li>
-                          Evidenzia chiaramente quale pulsante è selezionato o attivo, aiutando l'utente a orientarsi.
+                          Utilizza i banner per messaggi di sistema, processi in
+                          background e aggiornamenti generali.
                         </li>
                         <li>
-                          Usa sempre i pulsanti con uno stile coerente: solo icone, solo testo o icona con testo.
+                          Se sono necessarie due azioni, utilizzare due diverse
+                          CTA.
                         </li>
                       </ul>
                     </div>
@@ -430,11 +436,11 @@
                     </div>
                     <div class="">
                       <ul>
-                        <li>Non utilizzare gruppi di bottoni con stili e dimensioni differenti.</li>
+                        <li>Non utilizzare colori non previsti da sistema.</li>
                         <li>
-                          Evita di mescolare copy di diverse lunghezze.
+                          Non includere più di una CTA dello stesso stile e peso
+                          all’interno di un banner di avviso.
                         </li>
-                        <li>Non utilizzare il gruppo di bottoni con l’obiettivo di switchare tra pagine o contenuti di pagina. Utilizza la tab navigation. </li>
                       </ul>
                     </div>
                   </div>
@@ -469,124 +475,488 @@
     <script>
       const components = {
         Type1: {
-          default:'<div class="btn-group">' +
-        '<button type="button" class="btn btn-lg btn-primary">' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-            '<span>Button text</span>' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-        '</button>' +
-        '<button type="button" class="btn btn-lg btn-primary">' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-            '<span>Button text</span>' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-        '</button>' +
-        '<button type="button" class="btn btn-lg btn-primary">' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-            '<span>Button text</span>' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-        '</button>' +
-        '<button type="button" class="btn btn-lg btn-primary">' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-            '<span>Button text</span>' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-        '</button>' +
-        '<button type="button" class="btn btn-lg btn-primary">' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-            '<span>Button text</span>' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-        '</button>' +
-        '<button type="button" class="btn btn-lg btn-primary">' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-            '<span>Button text</span>' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-        '</button>' +
-    '</div>'
-           ,
-        },
-        Type2: {
           default:
-           '<div class="btn-group">' +
-  '<button type="button" class="btn btn-primary">' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+ '<div class="row">' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-primary badge-lg">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-primary">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-primary badge-sm">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+'</div>' +
+'<div class="row">' +
+  
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-bg-primary badge-lg">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-bg-primary">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-bg-primary badge-sm">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+'</div>' +
+'<div class="row">' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-primary bg-white badge-lg">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-primary bg-white">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-primary bg-white badge-sm">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+'</div>',
+        },Type2: {
+          default:'<div class="row">' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-secondary badge-lg">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-secondary">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-secondary badge-sm">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+'</div>' +
+'<div class="row">' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-bg-secondary badge-lg">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-bg-secondary">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-bg-secondary badge-sm">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+'</div>' +
+'<div class="row">' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-secondary bg-white badge-lg">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-secondary bg-white">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-secondary bg-white badge-sm">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+'</div>'
+            ,
+        },
+        Type3: {
+          default:
+         '<div class="row align-content-center justify-content-center">'+ 
+          '<div class="col-auto pt-4">' +
+  '<div class="badge badge-secondary badge-lg">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
     '</svg>' +
-    '<span>Button text</span>' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-secondary">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
     '</svg>' +
-  '</button>' +
-  '<button type="button" class="btn btn-primary">' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-secondary badge-sm">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
     '</svg>' +
-    '<span>Button text</span>' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +'</div>' +
+'<div class="row align-content-center justify-content-center">'+
+  '<div class="col-auto pt-4">' +
+  '<div class="badge badge-bg-success badge-lg">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
     '</svg>' +
-  '</button>' +
-  '<button type="button" class="btn btn-primary">' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-bg-success">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
     '</svg>' +
-    '<span>Button text</span>' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-bg-success badge-sm">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
     '</svg>' +
-  '</button>' +
-  '<button type="button" class="btn btn-primary">' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>'+ '</div>'+
+'<div class="row align-content-center justify-content-center">'+
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-secondary bg-white badge-lg">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
     '</svg>' +
-    '<span>Button text</span>' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-secondary bg-white">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
     '</svg>' +
-  '</button>' +
-  '<button type="button" class="btn btn-primary">' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-secondary bg-white badge-sm">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
     '</svg>' +
-    '<span>Button text</span>' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-  '</button>' +
-  '<button type="button" class="btn btn-primary">' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>Button text</span>' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-  '</button>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
 '</div>',
         },
-     };
+        Type4: {
+          default:
+            '<div class="row align-content-center justify-content-center">'+
+            '<div class="col-auto pt-4">' +
+  '<div class="badge badge-warning badge-lg">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+    '</svg>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-warning">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+    '</svg>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-warning badge-sm">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+    '</svg>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +'</div>' +
+'<div class="row align-content-center justify-content-center">'+
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-bg-warning badge-lg">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+    '</svg>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-bg-warning">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+    '</svg>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-bg-warning badge-sm">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+    '</svg>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>'
++'</div>'+
+'<div class="row align-content-center justify-content-center">'+
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-warning bg-white badge-lg">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+    '</svg>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-warning bg-white">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+    '</svg>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>' +
+'<div class="col-auto pt-4">' +
+  '<div class="badge badge-warning bg-white badge-sm">' +
+    '<svg class="icon">' +
+      '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+    '</svg>' +
+    '<span>Lorem ipsum</span>' +
+  '</div>' +
+'</div>',
+        },
+        Type5: {
+          default:
+            '<div class="row">' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-danger badge-lg">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-danger">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-danger badge-sm">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+'</div>' +
+'<div class="row">' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-bg-danger badge-lg">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-bg-danger">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-bg-danger badge-sm">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+'</div>' +
+'<div class="row">' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-danger bg-white badge-lg">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-danger bg-white">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-danger bg-white badge-sm">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+'</div>',
+        },
+        Type6: {
+          default:
+            '<div class="row">' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-primary disabled badge-lg">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-primary disabled">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-primary disabled badge-sm">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+'</div>' +
+'<div class="row">' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-bg-primary disabled badge-lg">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-bg-primary disabled">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge badge-bg-primary disabled badge-sm">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+'</div>' +
+'<div class="row">' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge disabled bg-white badge-lg">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge disabled bg-white">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-4">' +
+    '<div class="badge disabled bg-white badge-sm">' +
+      '<svg class="icon">' +
+        '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
+      '</svg>' +
+      '<span>Lorem ipsum</span>' +
+    '</div>' +
+  '</div>' +
+'</div>',
+        },
+      };
 
       const typeSelector = document.getElementById("typeSelector");
       const contentDiv = document.getElementById("content");

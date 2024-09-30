@@ -392,7 +392,7 @@
           </div>
 
           <!-- fine tab container-->
-        </div>
+       
 
         <!-- section do dont-->
         <div class="my-5">
@@ -474,6 +474,7 @@
           </button>
         </div>
       </div>
+    </div>
     </main>
 
     <!-- Bootstrap 5.3 -->
@@ -1066,7 +1067,7 @@
             codeDiv.innerHTML = `<pre><code>${escapeHTML(formattedCode)}</code></pre>`;
 
             // Mostra solo il primo pulsante di copia
-            copyButton.style.display = 'inline-block';
+            copyButton.style.display = 'flex';
             copyButton1.style.display = 'none'; // Nasconde il secondo pulsante di copia
           } else {
             // Nascondi i pulsanti se il componente non è trovato
@@ -1092,7 +1093,7 @@
               codeDiv.innerHTML = `<pre><code>${escapeHTML(formattedCode)}</code></pre>`;
 
               // Mostra entrambi i pulsanti di copia se necessario
-              copyButton.classList.add("d-flex"); //leo
+               copyButton.style.display = 'flex'; //leo
               if (copyButton1) {
                 copyButton1.style.display = 'inline-block'; // Mostra il secondo pulsante di copia
               }
