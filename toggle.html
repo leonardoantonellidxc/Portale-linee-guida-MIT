@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>MIT - Portale delle Linee Guida di UX e UI - Toggle </title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- Bootstrap 5.3 -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- G36 Theme CSS -->
+    <link href="css/font.css" type="text/css" rel="stylesheet" />
+    <link href="css/form.css" type="text/css" rel="stylesheet" />
+    <link href="css/table.css" type="text/css" rel="stylesheet" />
+    <link href="css/theme.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom css-->
+    <link href="css/custom.css" type="text/css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link href="css/font.css" type="text/css" rel="stylesheet" />
+    <style>
+      .avatar-container {
+        display: flex;
+        gap: 10px;
+      }
+
+      .avatar img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header bg-white pt-2 px-4 pt-lg-5 px-lg-9 sticky-top">
+      <div class="header-middle d-flex pb-lg-5">
+        <div class="nav-left">
+          <!-- Brand -->
+          <a class="navbar-brand" title="LOGO" href="#">
+            <span class="brand-logo"
+              ><svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="24" cy="24" r="24" fill="#0066CC" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.5 18.75L24 10L36.5 18.75H11.5ZM12.75 32.5V31.25H35.25V32.5H12.75ZM12.75 33.75V35H35.25V33.75H12.75ZM24 11.5L32.5 17.5H15.5L24 11.5ZM16.5 30V20H15.25V30H16.5ZM21.5 20V30H20.25V20H21.5ZM27.75 30V20H26.5V30H27.75ZM32.75 20V30H31.5V20H32.75Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+
+            <div class="brand-text">
+              MIT - Web <br />
+              Identity Portal
+            </div>
+          </a>
+        </div>
+
+        <div class="nav-right">
+          <!-- Search Wrapper -->
+          <div class="search-wrapper">
+            <!-- Desktop -->
+            <div class="form-group">
+              <div class="input-group">
+                <div class="input-group-text">
+                  <svg class="icon icon-xs">
+                    <use href="/imgs/icon/sprite.svg#it-search"></use>
+                  </svg>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="main-search"
+                  placeholder="Search"
+                  value=""
+                  aria-label="Lorem ipsum dolor sit"
+                />
+              </div>
+            </div>
+
+            <!-- Mobile -->
+            <button type="button" class="btn btn-primary">
+              <svg class="icon icon-xs">
+                <use href="/imgs/icon/sprite.svg#it-search"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="v-line"></div>
+
+          <!-- Login -->
+          <div class="login-wrapper">
+            <button type="button" class="btn btn-sm btn btn-primary">
+              <svg class="icon icon-sm" aria-hidden="true">
+                <use href="/imgs/icon/sprite.svg#it-user"></use>
+              </svg>
+              <span class="mobile-hidden-lg"> Accedi al portale </span>
+            </button>
+          </div>
+
+          <div class="navbar navbar-expand-lg ps-3 ps-lg-0">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="nav-left">
+                <nav class="nav-menu pt-3 pt-lg-0" aria-label="Lorem ipsum">
+                  <ul class="nav navbar-nav">
+                    <!-- Esempio Mega menu Container -->
+
+                    <li class="nav-item active">
+                      <a href="homepage.html" class="nav-link">
+                        <span>Homepage</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="design-system.html" class="nav-link active">
+                        <span>Design System</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="accessibilità.html" class="nav-link">
+                        <span>Accessibilità</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="sidebar-menu col-12 col-lg-3">
+          <div class="sidebar-wrapper my-6">
+            <div class="card sidebar bg-white">
+              <div class="card-header">
+                <div class="h6">Design system</div>
+              </div>
+              <!-- 
+              <a class="card-header-mobile" href="javascript:">
+               <span>
+                 Title
+               </span>
+                <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
+                  <use xlink:href="imgs/icon/sprite.svg#it-arrow-up"></use>
+                </svg>
+              </a>
+              -->
+              <div class="sidebar-scroll">
+                <ul class="sidebar-list">
+                  <li>
+                    <a class="list-link" href="design-system.html">
+                      <div class="list-item">
+                        <span> Welcome </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="list-link" href="javascript:">
+                      <div class="list-item">
+                        <span> Index </span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="list-dropdown">
+                    <a
+                      class="list-link collapsed"
+                      href="#collapse1"
+                      role="button"
+                      data-bs-toggle="collapse"
+                      aria-expanded="false"
+                      aria-controls="collapse1"
+                    >
+                      <div class="list-item">
+                        <span> Foundation </span>
+                        <svg
+                          class="icon icon-sm dropdown-icon"
+                          aria-hidden="true"
+                        >
+                          <use
+                            xlink:href="/imgs/icon/sprite.svg#it-expand"
+                          ></use>
+                        </svg>
+                      </div>
+                    </a>
+                    <ul class="sidebar-list collapse" id="collapse1">
+                      <li>
+                        <a class="list-link" href="border-radius.html">
+                          <div class="list-item">
+                            <span> Border radius </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="color-system.html">
+                          <div class="list-item">
+                            <span> Color system </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link active" href="javascript:">
+                          <div class="list-item">
+                            <span> Grid </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="javascript:">
+                          <div class="list-item">
+                            <span> Icons </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="typography.html">
+                          <div class="list-item">
+                            <span> Typography </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="shadows.html">
+                          <div class="list-item">
+                            <span> Shadows </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="spacing.html">
+                          <div class="list-item">
+                            <span> Spacing </span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list-dropdown">
+                    <a
+                      class="list-link collapsed"
+                      href="#collapse1"
+                      role="button"
+                      data-bs-toggle="collapse"
+                      aria-expanded="false"
+                      aria-controls="collapse1"
+                    >
+                      <div class="list-item">
+                        <span> Components </span>
+                        <svg
+                          class="icon icon-sm dropdown-icon"
+                          aria-hidden="true"
+                        >
+                          <use
+                            xlink:href="/imgs/icon/sprite.svg#it-expand"
+                          ></use>
+                        </svg>
+                      </div>
+                    </a>
+                    <ul class="sidebar-list collapse" id="collapse1">
+                      <li>
+                        <a class="list-link" href="javascript:">
+                          <div class="list-item">
+                            <span> Accordion </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="javascript:">
+                          <div class="list-item">
+                            <span> Avatar </span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <div class="col-12 col-lg-9" id="main-content">
+          <!-- hero-->
+          <div class="bg-hero-green p-6 rounded my-6">
+            <p class="fw-bold c-neutral-500">Design System</p>
+            <h2 class="titlepage fw-bold">Toggle </h2>
+          </div>
+
+          <p class="my-4">
+            Il componente toggle è un elemento dell'interfaccia utente che consente agli utenti di alternare tra due opzioni o stati diversi. Può essere utilizzato per attivare o disattivare una funzionalità, selezionare una modalità di visualizzazione o impostare una preferenza utente. È costituito da un'etichetta descrittiva e un'interruttore grafico. L'etichetta chiarisce la funzione del toggle, mentre l'interruttore consente agli utenti di attivare o disattivare l'opzione.
+          </p>
+
+          <button type="button" class="btn btn-bare my-5">
+            <svg class="icon icon-sm">
+              <use href="/imgs/icon/sprite_fill.svg#it-figma"></use>
+            </svg>
+            <span> Vai al componente Figma </span>
+            <svg class="icon icon-sm">
+              <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+            </svg>
+          </button>
+          <!-- section 1-->
+
+          <div class="bg-neutral-500 p-3">
+            <div class="bg-neutral-500 p-3">
+            <h5 class="mb-4">Variante</h5>
+
+            <div class="row mb-3">
+              <div class="col-auto">
+                <div class="form-group dropdown has-feedback filled">
+                  <label for="typeSelector" id="field1Label">Type</label>
+                  <select id="typeSelector" class="form-select">
+                    <option value="">--Seleziona Type--</option>
+                    <option value="Type1">Toggle Sinistra</option>
+                    <option value="Type2">Toggle Destra</option>
+                    
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="bg-white d-flex align-content-center justify-content-center py-8 mb-3"
+            >
+              <div id="content">
+                Seleziona tutte le opzioni per visualizzare il componente.
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="">Codice</h5>
+              <button
+                type="button"
+                id="copyButton"
+                style="display: none"
+                class="btn btn-primary"
+              >
+                <span> Copia codice </span>
+                <svg class="icon icon-sm">
+                  <use href="/imgs/icon/sprite_fill.svg#it-copy-success"></use>
+                </svg>
+              </button>
+            </div>
+            <div></div>
+            <div id="codeContent" class="bgcode text-white rounded p-4">
+              Seleziona le varianti per visualizzare il codice.
+            </div>
+          </div>
+
+          <!-- fine tab container-->
+
+          <!-- section do dont-->
+          <div class="my-5">
+            <h6 class="mb-4 fw-bold">Do and don’t</h6>
+            <p class="my-3">
+              Di seguito un elenco del corretto utilizzo dei toggle:
+            </p>
+
+            <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+              <div class="col-12 col-md-6">
+                <div class="card shadow-none h-100 bg-gray">
+                  <div class="card-body pb-0">
+                    <div class="card-bar">
+                      <div class="bar-group">
+                        <div class="badge badge-sm badge-success">
+                          <span> Do </span>
+                          <svg class="icon icon-sm icon-success ms-2">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- -->
+                    <div class="">
+                      <ul>
+                        <li>
+                          Utilizza i toggle per azioni binarie con due stati, come attivo/disattivo o visibile/nascosto.
+                        </li>
+                        <li>
+                          Utilizza etichette brevi e chiare accanto al toggle per chiarire il significato dei due stati.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card shadow-none h-100 bg-gray">
+                  <div class="card-body pb-0">
+                    <div class="card-bar">
+                      <div class="bar-group">
+                        <div class="badge badge-sm badge-danger">
+                          <span> Don't </span>
+                          <svg class="ms-2 icon icon-sm icon-danger">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <ul>
+                        <li>Non nascondere il toggle tra altri elementi; assicurati che sia facilmente individuabile.</li>
+                        <li>
+                          Non far cambiare lo stato del toggle senza fornire un chiaro feedback visivo o acustico all'utente.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- paginazione-->
+
+          <div class="d-flex justify-content-between py-3 bg-lightblu">
+            <button type="button" class="btn btn-bare btn-sm">
+              <svg class="icon">
+                <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
+              </svg>
+              <span>Accessibilità </span>
+            </button>
+            <button type="button" class="btn btn-bare btn-sm">
+              <span>Index </span>
+              <svg class="icon">
+                <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap 5.3 -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      const components = {
+        Type1: {
+          default:
+            '<div class="row">' +
+  '<div class="col-auto pt-3">' +
+    '<div class="form-group">' +
+      '<div class="form-toggle">' +
+        '<div class="toggle">' +
+          '<input type="checkbox" role="switch" id="toggle-1">' +
+          '<label for="toggle-1">' +
+            '<div>' +
+              '<div class="text-w6">' +
+                'Toggle text' +
+              '</div>' +
+              '<small>' +
+                'Helper text' +
+              '</small>' +
+            '</div>' +
+          '</label>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3">' +
+    '<div class="form-group">' +
+      '<div class="form-toggle">' +
+        '<div class="toggle">' +
+          '<input type="checkbox" role="switch" id="toggle-2" checked>' +
+          '<label for="toggle-2">' +
+            '<div>' +
+              '<div class="text-w6">' +
+                'Toggle text' +
+              '</div>' +
+              '<small>' +
+                'Helper text' +
+              '</small>' +
+            '</div>' +
+          '</label>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3">' +
+    '<div class="form-group">' +
+      '<div class="form-toggle">' +
+        '<div class="toggle">' +
+          '<input type="checkbox" role="switch" id="toggle-30" disabled>' +
+          '<label for="toggle-30">' +
+            '<div>' +
+              '<div class="text-w6">' +
+                'Toggle text' +
+              '</div>' +
+              '<small>' +
+                'Helper text' +
+              '</small>' +
+            '</div>' +
+          '</label>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>' +
+'</div>',
+        },
+        Type2: {
+          default:
+            '<div class="row">' +
+  '<div class="col-auto pt-3">' +
+    '<div class="form-group">' +
+      '<div class="form-toggle right">' +
+        '<div class="toggle">' +
+          '<input type="checkbox" role="switch" id="toggle-10">' +
+          '<label for="toggle-10">' +
+            '<div>' +
+              '<div class="text-w6">' +
+                'Toggle text' +
+              '</div>' +
+              '<small>' +
+                'Helper text' +
+              '</small>' +
+            '</div>' +
+          '</label>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3">' +
+    '<div class="form-group">' +
+      '<div class="form-toggle right">' +
+        '<div class="toggle">' +
+          '<input type="checkbox" role="switch" id="toggle-20" checked>' +
+          '<label for="toggle-20">' +
+            '<div>' +
+              '<div class="text-w6">' +
+                'Toggle text' +
+              '</div>' +
+              '<small>' +
+                'Helper text' +
+              '</small>' +
+            '</div>' +
+          '</label>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3">' +
+    '<div class="form-group">' +
+      '<div class="form-toggle right">' +
+        '<div class="toggle">' +
+          '<input type="checkbox" role="switch" id="toggle-3" disabled>' +
+          '<label for="toggle-3">' +
+            '<div>' +
+              '<div class="text-w6">' +
+                'Toggle text' +
+              '</div>' +
+              '<small>' +
+                'Helper text' +
+              '</small>' +
+            '</div>' +
+          '</label>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>' +
+'</div>',
+        },
+      };
+
+      const typeSelector = document.getElementById("typeSelector");
+      const contentDiv = document.getElementById("content");
+      const codeDiv = document.getElementById("codeContent"); // Primo div del codice
+      const codeDiv1 = document.getElementById("codeContent1"); // Secondo div del codice (se esiste)
+      const copyButton = document.getElementById("copyButton"); // Primo pulsante di copia
+      const copyButton1 = document.getElementById("copyButton1"); // Secondo pulsante di copia
+      const dynamicDiv = document.querySelector(".bg-white.d-flex"); // Il div che deve cambiare classe
+
+      function updateContent() {
+        const selectedType = typeSelector.value;
+
+        // Procedura per visualizzare il componente in base al tipo selezionato
+        if (selectedType) {
+          const component = components[selectedType]?.["default"]; // Usa "default" come variante di fallback
+
+          if (component) {
+            contentDiv.innerHTML = component;
+
+            // Rimuovi il div avatar-container e formatta il codice
+            let containerlessComponent = component
+              .replace(/<div class="avatar-container">/g, "")
+              .replace(/<\/div>$/, "")
+              .replace(/<\/div>/g, "</div>\n");
+            const formattedCode = prettifyHTML(containerlessComponent);
+            codeDiv.innerHTML = `<pre><code>${escapeHTML(
+              formattedCode
+            )}</code></pre>`;
+
+            // Mostra solo il primo pulsante di copia
+            copyButton.style.display = "flex";
+            if (copyButton1) {
+              copyButton1.style.display = "none"; // Nascondi il secondo pulsante di copia
+            }
+          } else {
+            contentDiv.innerHTML =
+              "Componente non trovato per questa selezione.";
+            codeDiv.innerHTML = "Codice non disponibile per questa selezione.";
+            copyButton.style.display = "none";
+            if (copyButton1) {
+              copyButton1.style.display = "none";
+            }
+          }
+        } else {
+          contentDiv.innerHTML =
+            "Seleziona un tipo per visualizzare il componente.";
+          codeDiv.innerHTML = "Seleziona un tipo per visualizzare il codice.";
+          copyButton.style.display = "none"; // Nasconde il primo pulsante di copia
+          if (copyButton1) {
+            copyButton1.style.display = "none"; // Nasconde il secondo pulsante di copia
+          }
+        }
+      }
+
+      // Funzione per copiare il codice dal div specifico
+      function copyCodeToClipboard(codeDiv) {
+        const code = codeDiv.innerText;
+        navigator.clipboard
+          .writeText(code)
+          .then(() => {
+            alert("Codice copiato negli appunti!");
+          })
+          .catch((err) => {
+            console.error("Errore nella copia del codice:", err);
+          });
+      }
+
+      // Funzione per cambiare la classe del div per Type2
+      function changeDivClassForType2() {
+        if (dynamicDiv) {
+          dynamicDiv.classList.remove("bg-white");
+          dynamicDiv.classList.add("bg-primary95");
+        }
+      }
+
+      // Funzione per resettare la classe del div
+      function resetDivClass() {
+        if (dynamicDiv) {
+          dynamicDiv.classList.remove("bg-primary95");
+          dynamicDiv.classList.add("bg-white");
+        }
+      }
+
+      // Event listener per il selettore di tipo
+      typeSelector.addEventListener("change", updateContent);
+
+      // Event listener per il primo pulsante di copia
+      copyButton.addEventListener("click", function () {
+        copyCodeToClipboard(codeDiv); // Copia dal primo div di codice
+      });
+
+      // Event listener per il secondo pulsante di copia (se necessario)
+      if (copyButton1) {
+        copyButton1.addEventListener("click", function () {
+          copyCodeToClipboard(codeDiv1); // Copia dal secondo div di codice
+        });
+      }
+
+      // Helper functions
+      function escapeHTML(html) {
+        return html.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      }
+
+      function prettifyHTML(html) {
+        let formatted = "";
+        const reg = /(>)(<)(\/*)/g;
+        html = html.replace(reg, "$1\n$2$3");
+        let pad = 0;
+        html.split("\n").forEach(function (line) {
+          let indent = 0;
+          if (line.match(/.+<\/\w[^>]*>$/)) {
+            indent = 0;
+          } else if (line.match(/^<\/\w/)) {
+            if (pad !== 0) {
+              pad -= 1;
+            }
+          } else if (line.match(/^<\w[^>]*[^\/]>.*$/)) {
+            indent = 1;
+          } else {
+            indent = 0;
+          }
+
+          formatted += "  ".repeat(pad) + line + "\n";
+          pad += indent;
+        });
+
+        return formatted;
+      }
+    </script>
+  </body>
+</html>

@@ -108,6 +108,7 @@
 
             <div id="codeContent" class="bgcode text-white rounded p-4">
               <!-- Il codice verrà inserito qui dallo script -->
+            
             </div>
           </div>
         
@@ -207,18 +208,147 @@
         const copyButton1 = document.getElementById("copyButton1");
 
         // Codice da visualizzare
-        const codeHTML = `
-      <div class="row">
-        <div class="col-lg-4 py-6">
-          <div class="btn-group">
-            <button type="button" class="btn btn-floating">
-              <svg class="icon">
-                <use href="/imgs/icon/sprite_fill.svg#it-help-circle"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
+        const codeHTML = `<div class="stepper-wrapper">
+							<div class="mobile-handle"></div>
+							<div class="mobile-title h6">
+								<div class="text-icon">
+									<svg class="icon icon-sm" aria-hidden="true">
+										<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+									</svg>
+									<span>
+										Titolo del flusso
+									</span>
+								</div>
+								<svg class="icon icon-sm" aria-hidden="true">
+									<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>
+								</svg>
+							</div>
+							<div class="mobile-progress">
+								<div class="progress-wrapper">
+									<div class="progress-label">
+										<span class="label-title">
+											Step 3/6
+										</span>
+										<span class="label-percent">
+											50%
+										</span>
+									</div>
+									<div class="progress" role="progressbar" aria-label="Lorem ipsum" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+										<div class="progress-bar" style="width:30%;"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="stepper">
+								<div class="step-item">
+									<div class="step">
+										<div class="step-icon">
+											<span>
+												0
+											</span>
+										</div>
+									</div>
+									<div class="step-info">
+										<div class="step-title">
+											Testo - in corso segnaposto
+										</div>
+										<div class="step-text">
+											Da completare
+										</div>
+									</div>
+								</div>
+								<div class="step-item">
+									<div class="step">
+										<div class="step-icon">
+											<span>
+												0
+											</span>
+										</div>
+									</div>
+									<div class="step-info">
+										<div class="step-title">
+											Testo - in corso segnaposto
+										</div>
+										<div class="step-text">
+											Da completare
+										</div>
+									</div>
+								</div>
+								<div class="step-item success">
+									<div class="step">
+										<div class="step-icon">
+											<svg class="icon" aria-hidden="true">
+												<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-check-circle"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="step-info">
+										<div class="step-title">
+											Testo - in corso segnaposto
+										</div>
+										<div class="step-text">
+											Completato
+										</div>
+									</div>
+								</div>
+								<div class="step-item active">
+									<div class="step">
+										<div class="step-icon">
+											<span>
+												0
+											</span>
+										</div>
+									</div>
+									<div class="step-info">
+										<div class="step-title">
+											Testo - in corso segnaposto
+										</div>
+										<div class="step-text">
+											In corso
+										</div>
+									</div>
+								</div>
+								<div class="step-item danger">
+									<div class="step">
+										<div class="step-icon">
+											<svg class="icon" aria-hidden="true">
+												<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-error-circle"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="step-info">
+										<div class="step-title">
+											Testo - in corso segnaposto
+										</div>
+										<div class="step-text">
+											In errore
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<a class="step-item mobile-item" href="javascript:">
+								<div class="step">
+									<div class="step-icon">
+										<span>
+											0
+										</span>
+									</div>
+								</div>
+								<div class="step-info">
+									<div class="step-title">
+										Testo - in corso segnaposto
+									</div>
+									<div class="step-text">
+										Lorem ipsum
+									</div>
+								</div>
+								<svg class="icon icon-sm" aria-hidden="true">
+									<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-maximize"></use>
+								</svg>
+							</a>
+
+						</div>
       `;
 
         // Funzione per inserire e visualizzare il codice
