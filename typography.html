@@ -123,13 +123,13 @@
                   <ul class="nav navbar-nav">
                     <!-- Esempio Mega menu Container -->
 
-                    <li class="nav-item active">
-                      <a href="homepage.html" class="nav-link active">
+                    <li class="nav-item">
+                      <a href="homepage.html" class="nav-link ">
                         <span>Homepage</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="design-system.html" class="nav-link">
+                      <a href="design-system.html" class="nav-link active">
                         <span>Design System</span>
                       </a>
                     </li>
@@ -300,8 +300,8 @@
         <div class="col-12 col-lg-9" id="main-content">
           <!-- hero-->
           <div class="bg-hero-green p-6 rounded my-6">
-            <p class="fw-bold c-neutral-500">Design System</p>
-            <h1>Typography</h1>
+            <p class=" h6 fw-semibold c-neutral-500"> Design System</p>
+            <h2 class="titlepage fw-bold">Typography</h2>
           </div>
 
           <p class="my-4">
@@ -621,49 +621,49 @@
           <!-- section stato -->
           <div>
             <h4 class="mb-4">Stato</h4>
-            <div class="row gy-4">
+            <div class="row gy-4" id="rowstato">
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="all" data-bs-dismiss="chip">
                   <span> Tutto </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="base" data-bs-dismiss="chip">
                   <span> Base </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="primary" data-bs-dismiss="chip">
                   <span> Primary </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="secondary" data-bs-dismiss="chip">
                   <span> Secondary </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="accent" data-bs-dismiss="chip">
                   <span> Accent </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="disabled" data-bs-dismiss="chip">
                   <span> Disabled </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="success" data-bs-dismiss="chip">
                   <span> Success </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="warning" data-bs-dismiss="chip">
                   <span> Warning </span>
                 </a>
               </div>
               <div class="col-auto">
-                <a class="chip" data-bs-dismiss="chip">
+                <a class="chip" data-id="danger" data-bs-dismiss="chip">
                   <span> Danger </span>
                 </a>
               </div>
@@ -1215,6 +1215,7 @@
               </div>
             </div>
           </div>
+          
           <!-- section scarica -->
           <div class="bg-gray my-6 p-6 rounded">
             <h4 class="fw-bold mb-5">Accedi velocemente alle librerie</h4>
@@ -2591,7 +2592,7 @@
 
           <!-- paginazione-->
 
-          <div class="d-flex justify-content-between py-3 bg-lightblu">
+          <div class="d-flex justify-content-between py-3 bg-lightblu rounded my-8 px-6">
             <button type="button" class="btn btn-bare btn-sm">
               <svg class="icon">
                 <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
@@ -2711,7 +2712,31 @@
             </div>
         </div>
     </section>-->
+    <footer>
+			<div class="footer-credits">
+				<div class="container">
 
+					<div class="navbar-brand pe-4">
+						<svg class="icon icon-lg" aria-hidden="true">
+							<use href="/imgs/icon/ministero.svg#ministero"></use>
+						</svg>	
+						<div class="body-lg text-w6 ps-3">
+							www.mit.gov.it  - Ministero delle infrastrutture e dei trasporti.
+						</div>
+					</div>
+
+					<div class="text-icon">
+						<svg class="icon icon-xs" aria-hidden="true">
+							<use href="/imgs/icon/sprite.svg#it-copyright"></use>
+						</svg>
+						<span>
+							Tutti i diritti riservati
+						</span>
+					</div>
+
+				</div>
+			</div>
+		</footer>
     <!-- Bootstrap 5.3 -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>

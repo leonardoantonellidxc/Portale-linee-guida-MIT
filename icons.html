@@ -735,11 +735,16 @@
           </div>
           <!-- section stato -->
           <div>
-            <h4 class="mb-4">Stato</h4>
+            <h4 class="my-4">Stato</h4>
             <div id="rowstato" class="row gy-4">
               <div class="col-auto">
                 <a class="chip" data-id="all" data-bs-dismiss="chip">
                   <span> Tutto </span>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a class="chip" data-id="neutral" data-bs-dismiss="chip">
+                  <span> Neutral </span>
                 </a>
               </div>
 
@@ -806,6 +811,7 @@
                   <div class="col-auto">
                     <div class="d-flex align-items-center">
                       <svg
+                        class="me-3"
                         width="32"
                         height="32"
                         viewBox="0 0 32 32"
@@ -1564,8 +1570,13 @@
                 <div
                   class="list-table table-responsive table-sm table-even my-4"
                 >
-                <object type="image/svg+xml" class="example-svg" width="32px" height="32px"></object>
-						
+                  <object
+                    type="image/svg+xml"
+                    class="example-svg"
+                    width="32px"
+                    height="32px"
+                  ></object>
+
                   <table id="tabellaicone" class="tablefixed">
                     <thead>
                       <tr class="bg-primary10">
@@ -1579,7 +1590,7 @@
                     </thead>
                     <tbody>
                       <tr class="example-list">
-                    <!-- <td class="colf-form colf-check" data-label="Icona">
+                        <!-- <td class="colf-form colf-check" data-label="Icona">
                           <svg class="icon icon-sm">
                             <use
                               href="/imgs/icon/sprite_fill.svg#it-collapse"
@@ -1711,8 +1722,8 @@
                         <td data-label="Nome">
                           <div>Arrow-down</div>
                         </td>
-                         -->    
-                        </tr> 
+                         -->
+                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -1745,7 +1756,7 @@
                     </div>
                     <!--content-->
                     <div class="my-5 d-flex justify-content-center">
-                     <img src="/imgs/icon/iconpage/do1.svg" alt="">
+                      <img src="/imgs/icon/iconpage/do1.svg" alt="" />
                     </div>
                   </div>
                 </div>
@@ -1766,7 +1777,7 @@
                       </div>
                     </div>
                     <div class="my-5 d-flex justify-content-center">
-                      <img src="/imgs/icon/iconpage/dont1.svg" alt="">
+                      <img src="/imgs/icon/iconpage/dont1.svg" alt="" />
                     </div>
                   </div>
                 </div>
@@ -1796,7 +1807,7 @@
                       </div>
 
                       <div class="my-5 d-flex justify-content-center">
-                        <img src="/imgs/icon/iconpage/do2.svg" alt="">
+                        <img src="/imgs/icon/iconpage/do2.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -1817,7 +1828,7 @@
                         </div>
                       </div>
                       <div class="my-5 d-flex justify-content-center">
-                        <img src="/imgs/icon/iconpage/dont2.svg" alt="">
+                        <img src="/imgs/icon/iconpage/dont2.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -1845,7 +1856,7 @@
                       </div>
 
                       <div class="d-flex justify-content-center my-5">
-                        <img src="/imgs/icon/iconpage/do3.svg" alt="">
+                        <img src="/imgs/icon/iconpage/do3.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -1866,7 +1877,7 @@
                         </div>
                       </div>
                       <div class="d-flex justify-content-center my-5">
-                        <img src="/imgs/icon/iconpage/dont3.svg" alt="">
+                        <img src="/imgs/icon/iconpage/dont3.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -1897,7 +1908,7 @@
                       </div>
 
                       <div class="d-flex justify-content-center my-5">
-                        <img src="/imgs/icon/iconpage/do4.svg" alt="">
+                        <img src="/imgs/icon/iconpage/do4.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -1918,7 +1929,7 @@
                         </div>
                       </div>
                       <div class="d-flex justify-content-center my-5">
-                        <img src="/imgs/icon/iconpage/dont4.svg" alt="">
+                        <img src="/imgs/icon/iconpage/dont4.svg" alt="" />
                       </div>
                     </div>
                   </div>
@@ -1927,10 +1938,9 @@
             </div>
           </div>
 
-
           <!-- paginazione-->
 
-          <div class="d-flex justify-content-between py-3 bg-lightblu">
+          <div class="d-flex justify-content-between py-3 bg-lightblu rounded my-8 px-6">
             <button type="button" class="btn btn-bare btn-sm">
               <svg class="icon">
                 <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
@@ -2073,69 +2083,65 @@
     </footer>
     <!-- Bootstrap 5.3 -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script> </script>
+    <script></script>
     <script src="js/script.js"></script>
     <script>
-      $(document).ready( ()=> {
-				///////////////////////////////
-				const iconList = $('.example-list');
-				const objSvg =  $('.example-svg');
-				///////////////////////////////
-				objSvg[0].onload = (e) => {
-										buildIconList( objSvg[0].contentDocument );
-										$(objSvg).remove();
-				};
-				setTimeout( () => {
-								$(objSvg[0]).attr( 'data', '/imgs/icon/sprite.svg');
-				}, 1000);
-				///////////////////////////////
-				buildIconList = function( svgDoc ){
-					///////////////////////////////
-					const iconSvg = $(svgDoc).find('symbol');
-					///////////////////////////////
-					for( let i=0, ti=iconSvg.length; i<ti; i++ ){
-						///////////////////////////////
-						const item = iconSvg[i];
-						const ID = $(item).attr('id');
-						///////////////////////////////
-          const dom =' <td class="colf-form colf-check" data-label="Icona">'+
-          '<div class="example-wrapper">' + 
-										'<div class="example-icon">' + 
-											 
-												$D.spriteIco(ID, 'sm') +
-												$D.spriteIco(ID, 'sm', 'fill') +
-											'</div>' +
-											 
-										 + 
-									'</div>'+'</td>'+'<td data-label="Nome">'+'<div>' + ID +'</div>'+'</td>'
+      $(document).ready(() => {
+        ///////////////////////////////
+        const iconList = $(".example-list");
+        const objSvg = $(".example-svg");
+        ///////////////////////////////
+        objSvg[0].onload = (e) => {
+          buildIconList(objSvg[0].contentDocument);
+          $(objSvg).remove();
+        };
+        setTimeout(() => {
+          $(objSvg[0]).attr("data", "/imgs/icon/sprite.svg");
+        }, 1000);
+        ///////////////////////////////
+        buildIconList = function (svgDoc) {
+          ///////////////////////////////
+          const iconSvg = $(svgDoc).find("symbol");
+          ///////////////////////////////
+          for (let i = 0, ti = iconSvg.length; i < ti; i++) {
+            ///////////////////////////////
+            const item = iconSvg[i];
+            const ID = $(item).attr("id");
+            ///////////////////////////////
+            const dom =
+              ' <td class="colf-form colf-check" data-label="Icona">' +
+              '<div class="example-wrapper">' +
+              '<div class="example-icon">' +
+              $D.spriteIco(ID, "sm") +
+              $D.spriteIco(ID, "sm", "fill") +
+              "</div>" +
+              +"</div>" +
+              "</td>" +
+              '<td data-label="Nome">' +
+              "<div>" +
+              ID +
+              "</div>" +
+              "</td>";
 
-
-                  
-
-
-
-
-
-
-
-						const dom = '<div class="example-wrapper">' + 
-										'<div class="example-icon">' + 
-											'<div class="example-set">' +
-												$D.spriteIco(ID, 'sm') +
-												$D.spriteIco(ID, 'sm', 'fill') +
-											'</div>' +
-											'<div class="example-label">' + ID + '</div>' +
-										'</div>' + 
-									'</div>';
-						///////////////////////////////
-						$(iconList).append( dom );
-
-					}
-					///////////////////////////////
-				}
-				///////////////////////////////
-			});
-			
+            const dom =
+              '<div class="example-wrapper">' +
+              '<div class="example-icon">' +
+              '<div class="example-set">' +
+              $D.spriteIco(ID, "sm") +
+              $D.spriteIco(ID, "sm", "fill") +
+              "</div>" +
+              '<div class="example-label">' +
+              ID +
+              "</div>" +
+              "</div>" +
+              "</div>";
+            ///////////////////////////////
+            $(iconList).append(dom);
+          }
+          ///////////////////////////////
+        };
+        ///////////////////////////////
+      });
     </script>
   </body>
 </html>

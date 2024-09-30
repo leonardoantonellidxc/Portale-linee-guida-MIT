@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Mostra solo la sezione selezionata
       if (selectedId === 'all') {
         // Se 'Tutto' è selezionato, mostra tutte le sezioni
-        document.querySelectorAll('#neutral, #primary, #secondary, #accent, #disabled, #success, #warning, #danger').forEach(function(section) {
+        document.querySelectorAll( '#base,#neutral, #primary, #secondary, #accent, #disabled, #success, #warning, #danger').forEach(function(section) {
           section.style.display = 'block';
         });
       } else {
