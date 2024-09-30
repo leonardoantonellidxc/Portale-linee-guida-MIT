@@ -2,7 +2,7 @@
 <html lang="it">
   <head>
     <meta charset="utf-8" />
-    <title>MIT - Portale delle Linee Guida di UX e UI - Button group </title>
+    <title>MIT - Portale delle Linee Guida di UX e UI - Floating button</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -165,16 +165,6 @@
               <div class="card-header">
                 <div class="h6">Design system</div>
               </div>
-              <!-- 
-              <a class="card-header-mobile" href="javascript:">
-               <span>
-                 Title
-               </span>
-                <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
-                  <use xlink:href="imgs/icon/sprite.svg#it-arrow-up"></use>
-                </svg>
-              </a>
-              -->
               <div class="sidebar-scroll">
                 <ul class="sidebar-list">
                   <li>
@@ -311,11 +301,16 @@
           <!-- hero-->
           <div class="bg-hero-green p-6 rounded my-6">
             <p class="fw-bold c-neutral-500">Design System</p>
-            <h2 class="titlepage fw-bold">Button group</h2>
+            <h2 class="titlepage fw-bold">Floating button</h2>
           </div>
 
           <p class="my-4">
-            La Bottom Bar è un componente che si posiziona nella parte inferiore di una pagina o interfaccia. Viene utilizzata per fornire un accesso rapido a opzioni o funzioni principali, migliorando la navigazione all'interno di un'applicazione o sito. Solitamente include una serie di pulsanti, icone o collegamenti che permettono all'utente di interagire in modo intuitivo e diretto con le sezioni più importanti dell'interfaccia.
+            Gli Avatar sono elementi dell'interfaccia utente progettati per
+            visualizzare le rappresentazioni grafiche degli utenti o dei
+            personaggi in applicazioni, piattaforme web, giochi e altri contesti
+            digitali. Questi componenti consentono agli utenti di identificare
+            visivamente se stessi o altri partecipanti e aggiungono un elemento
+            di personalizzazione e coinvolgimento all'esperienza utente.
           </p>
 
           <button type="button" class="btn btn-bare my-5">
@@ -329,39 +324,33 @@
           </button>
           <!-- section 1-->
 
+          <!-- 2 tab-->
+
+          <!-- contenuto secondo tab-->
           <div class="bg-neutral-500 p-3">
             <h5 class="mb-4">Variante</h5>
-
-            <div class="row mb-3">
-              <div class="col-auto">
-                <div class="form-group dropdown has-feedback filled">
-                  <label for="typeSelector" id="field1Label">Type</label>
-                  <select id="typeSelector" class="form-select">
-                    <option value="">--Seleziona Type--</option>
-                    <option value="Type1">Md </option>
-                    <option value="Type2">Sm</option>
-                    
-                  </select>
-                </div>
-              </div>
-            </div>
-
             <div
               class="bg-white d-flex align-content-center justify-content-center py-8 mb-3"
             >
-              <div id="content">
-                Seleziona tutte le opzioni per visualizzare il componente.
+              <div class="">
+                <div class="row">
+                  <div class="col-auto py-6">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-floating">
+                        <svg class="icon">
+                          <use
+                            href="/imgs/icon/sprite_fill.svg#it-help-circle"
+                          ></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
             <div class="d-flex justify-content-between align-items-center mb-3">
               <h5 class="">Codice</h5>
-              <button
-                type="button"
-                id="copyButton"
-                style="display: none"
-                class="btn btn-primary"
-              >
+              <button type="button" id="copyButton1" class="btn btn-primary">
                 <span> Copia codice </span>
                 <svg class="icon icon-sm">
                   <use href="/imgs/icon/sprite_fill.svg#it-copy-success"></use>
@@ -369,18 +358,32 @@
               </button>
             </div>
             <div></div>
-            <div id="codeContent" class="bgcode text-white rounded p-4">
-              Seleziona le varianti per visualizzare il codice.
+            <div id="codeContent1" class="bgcode text-white rounded p-4">
+              <div class="code-container">
+                <pre>
+                  <code>
+                    `&lt;div class="row"&gt;
+                    &lt;div class="col-auto py-6"&gt;
+                      &lt;div class="btn-group"&gt;
+                        &lt;button type="button" class="btn btn-floating"&gt;
+                          &lt;svg class="icon"&gt;
+                            &lt;use href="/imgs/icon/sprite_fill.svg#it-help-circle"&gt;&lt;/use&gt;
+                          &lt;/svg&gt;
+                        &lt;/button&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;`
+                  </code>
+                    </pre>
+              </div>
             </div>
           </div>
-
-          <!-- fine tab container-->
 
           <!-- section do dont-->
           <div class="my-5">
             <h6 class="mb-4 fw-bold">Do and don’t</h6>
             <p class="my-3">
-              Di seguito un elenco del corretto utilizzo del button group:
+              Di seguito un elenco del corretto utilizzo degli avatar
             </p>
 
             <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
@@ -403,10 +406,12 @@
                     <div class="">
                       <ul>
                         <li>
-                          Evidenzia chiaramente quale pulsante è selezionato o attivo, aiutando l'utente a orientarsi.
+                          Utilizza avatar di dimensioni e stile coerenti quando
+                          realizzi un raggruppamento.
                         </li>
                         <li>
-                          Usa sempre i pulsanti con uno stile coerente: solo icone, solo testo o icona con testo.
+                          Utilizza avatar generici quando l’utente è scollegato
+                          dal sistema o non ha impostato un’immagine di profilo.
                         </li>
                       </ul>
                     </div>
@@ -430,11 +435,15 @@
                     </div>
                     <div class="">
                       <ul>
-                        <li>Non utilizzare gruppi di bottoni con stili e dimensioni differenti.</li>
                         <li>
-                          Evita di mescolare copy di diverse lunghezze.
+                          Non fare supposizioni di genere e usa avatar
+                          segnaposto unisex.
                         </li>
-                        <li>Non utilizzare il gruppo di bottoni con l’obiettivo di switchare tra pagine o contenuti di pagina. Utilizza la tab navigation. </li>
+                        <li>
+                          Evita di usare insieme un mix di avatar di diverse
+                          dimensioni e stili che creano uno squilibrio di
+                          design.
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -442,7 +451,6 @@
               </div>
             </div>
           </div>
-
           <!-- paginazione-->
 
           <div class="d-flex justify-content-between py-3 bg-lightblu">
@@ -463,180 +471,233 @@
       </div>
     </main>
 
-    <!-- Bootstrap 5.3 -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
     <script>
       const components = {
         Type1: {
-          default:'<div class="btn-group">' +
-        '<button type="button" class="btn btn-lg btn-primary">' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-            '<span>Button text</span>' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-        '</button>' +
-        '<button type="button" class="btn btn-lg btn-primary">' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-            '<span>Button text</span>' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-        '</button>' +
-        '<button type="button" class="btn btn-lg btn-primary">' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-            '<span>Button text</span>' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-        '</button>' +
-        '<button type="button" class="btn btn-lg btn-primary">' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-            '<span>Button text</span>' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-        '</button>' +
-        '<button type="button" class="btn btn-lg btn-primary">' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-            '<span>Button text</span>' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-        '</button>' +
-        '<button type="button" class="btn btn-lg btn-primary">' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-            '<span>Button text</span>' +
-            '<svg class="icon icon-sm">' +
-                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            '</svg>' +
-        '</button>' +
-    '</div>'
-           ,
+          Size1:
+            '<div class="avatar-container">' +
+            '<div class="avatar avatar-lg"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            '<div class="avatar avatar-square avatar-lg"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            '<div class="avatar avatar-lg disabled"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            '<div class="avatar avatar-square avatar-lg disabled"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            "</div>",
+          Size2:
+            '<div class="avatar-container">' +
+            '<div class="avatar"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            '<div class="avatar avatar-square"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            '<div class="avatar avatar disabled"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            '<div class="avatar avatar-square avatar disabled"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            "</div>",
+          Size3:
+            '<div class="avatar-container">' +
+            '<div class="avatar avatar-sm"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            '<div class="avatar avatar-square avatar-sm"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            '<div class="avatar avatar-sm disabled"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            '<div class="avatar avatar-square avatar-sm disabled"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            "</div>",
+          Size4:
+            '<div class="avatar-container">' +
+            '<div class="avatar avatar-xs"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            '<div class="avatar avatar-square avatar-xs"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            '<div class="avatar avatar-xs disabled"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            '<div class="avatar avatar-square avatar-xs disabled"><img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Mario Rossi"></div>' +
+            "</div>",
         },
         Type2: {
-          default:
-           '<div class="btn-group">' +
-  '<button type="button" class="btn btn-primary">' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>Button text</span>' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-  '</button>' +
-  '<button type="button" class="btn btn-primary">' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>Button text</span>' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-  '</button>' +
-  '<button type="button" class="btn btn-primary">' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>Button text</span>' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-  '</button>' +
-  '<button type="button" class="btn btn-primary">' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>Button text</span>' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-  '</button>' +
-  '<button type="button" class="btn btn-primary">' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>Button text</span>' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-  '</button>' +
-  '<button type="button" class="btn btn-primary">' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-    '<span>Button text</span>' +
-    '<svg class="icon icon-sm">' +
-      '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-example"></use>' +
-    '</svg>' +
-  '</button>' +
-'</div>',
+          Size1:
+            '<div class="avatar-container">' +
+            '<div class="avatar avatar-lg avatar-primary"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            '<div class="avatar avatar-square avatar-lg avatar-primary"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            '<div class="avatar avatar-lg avatar-primary disabled"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            '<div class="avatar avatar-square avatar-lg avatar-primary disabled"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            "</div>",
+          Size2:
+            '<div class="avatar-container">' +
+            '<div class="avatar avatar avatar-primary"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            '<div class="avatar avatar-square avatar avatar-primary"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            '<div class="avatar avatar avatar-primary disabled"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            '<div class="avatar avatar-square avatar avatar-primary disabled"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            "</div>",
+          Size3:
+            '<div class="avatar-container">' +
+            '<div class="avatar avatar-sm avatar-primary"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            '<div class="avatar avatar-square avatar-sm avatar-primary"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            '<div class="avatar avatar-sm avatar-primary disabled"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            '<div class="avatar avatar-square avatar-sm avatar-primary disabled"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            "</div>",
+          Size4:
+            '<div class="avatar-container">' +
+            '<div class="avatar avatar-xs avatar-primary"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            '<div class="avatar avatar-square avatar-xs avatar-primary"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            '<div class="avatar avatar-xs avatar-primary disabled"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            '<div class="avatar avatar-square avatar-xs avatar-primary disabled"><svg class="icon"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg><span class="visually-hidden">Antonio Esposito</span></div>' +
+            "</div>",
         },
-     };
+        Type3: {
+          Size1:
+            '<div class="avatar-container">' +
+            '<div class="avatar avatar-primary avatar-lg"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar-square avatar-lg avatar-primary"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar-primary avatar-lg disabled"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar-square avatar-lg avatar-primary disabled"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            "</div>",
+          Size2:
+            '<div class="avatar-container">' +
+            '<div class="avatar avatar avatar-primary"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar-square avatar avatar-primary"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar avatar-primary disabled"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar-square avatar avatar-primary disabled"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            "</div>",
+          Size3:
+            '<div class="avatar-container">' +
+            '<div class="avatar avatar-sm avatar-primary"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar-square avatar-sm avatar-primary"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar-sm avatar-primary disabled"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar-square avatar-sm avatar-primary disabled"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            "</div>",
+          Size4:
+            '<div class="avatar-container">' +
+            '<div class="avatar avatar-xs avatar-primary"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar-square avatar-xs avatar-primary"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar-xs avatar-primary disabled"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar-square avatar-xs avatar-primary disabled"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            "</div>",
+        },
+        Type4: {
+          default:
+            '<div class="avatar-container">' +
+            '<div class="avatar-container">' +
+            '<div class="avatar avatar-avatar-primary"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div>' +
+            '<div class="avatar avatar-white"><div aria-hidden="true">MR</div><span class="visually-hidden">Mario Rossi</span></div></div>',
+        },
+      };
 
       const typeSelector = document.getElementById("typeSelector");
+      const sizeSelector = document.getElementById("sizeSelector");
       const contentDiv = document.getElementById("content");
       const codeDiv = document.getElementById("codeContent"); // Primo div del codice
       const codeDiv1 = document.getElementById("codeContent1"); // Secondo div del codice (se esiste)
       const copyButton = document.getElementById("copyButton"); // Primo pulsante di copia
       const copyButton1 = document.getElementById("copyButton1"); // Secondo pulsante di copia
-      const dynamicDiv = document.querySelector(".bg-white.d-flex"); // Il div che deve cambiare classe
+      const sizeSelectorContainer = document.getElementById(
+        "sizeSelectorContainer"
+      );
 
       function updateContent() {
         const selectedType = typeSelector.value;
+        const selectedSize = sizeSelector.value;
 
-        // Procedura per visualizzare il componente in base al tipo selezionato
-        if (selectedType) {
-          const component = components[selectedType]?.["default"]; // Usa "default" come variante di fallback
+        // Nascondi il container Size se Type4 è selezionato
+        if (selectedType === "Type4") {
+          sizeSelectorContainer.style.display = "none";
 
+          // Mostra il contenuto di Type4 senza fare riferimento alla Size
+          const component = components[selectedType]?.["default"];
           if (component) {
             contentDiv.innerHTML = component;
 
-            // Rimuovi il div avatar-container e formatta il codice
+            // Rimuovi ogni occorrenza di <div class="avatar-container">
             let containerlessComponent = component
               .replace(/<div class="avatar-container">/g, "")
               .replace(/<\/div>$/, "")
               .replace(/<\/div>/g, "</div>\n");
+
+            // Prettifica e visualizza il codice nel primo div
             const formattedCode = prettifyHTML(containerlessComponent);
             codeDiv.innerHTML = `<pre><code>${escapeHTML(
               formattedCode
             )}</code></pre>`;
 
             // Mostra solo il primo pulsante di copia
-            copyButton.style.display = "flex";
-            if (copyButton1) {
-              copyButton1.style.display = "none"; // Nascondi il secondo pulsante di copia
+            copyButton.style.display = "inline-block";
+            copyButton1.style.display = "none"; // Nasconde il secondo pulsante di copia
+          } else {
+            contentDiv.innerHTML =
+              "Componente non trovato per questa combinazione.";
+            codeDiv.innerHTML =
+              "Codice non disponibile per questa combinazione.";
+            copyButton.style.display = "none";
+            copyButton1.style.display = "none";
+          }
+        } else {
+          // Mostra il container Size per altri tipi
+          sizeSelectorContainer.style.display = "block";
+
+          // Procedura normale per i tipi che richiedono una Size
+          if (selectedType && selectedSize) {
+            const component = components[selectedType]?.[selectedSize];
+
+            if (component) {
+              contentDiv.innerHTML = component;
+
+              // Rimuovi il div avatar-container e formatta il codice
+              let containerlessComponent = component
+                .replace(/<div class="avatar-container">/g, "")
+                .replace(/<\/div>$/, "")
+                .replace(/<\/div>/g, "</div>\n");
+              const formattedCode = prettifyHTML(containerlessComponent);
+              codeDiv.innerHTML = `<pre><code>${escapeHTML(
+                formattedCode
+              )}</code></pre>`;
+
+              // Mostra entrambi i pulsanti di copia se necessario
+              copyButton.style.display = "flex"; //leo
+              if (copyButton1) {
+                copyButton1.style.display = "inline-block"; // Mostra il secondo pulsante di copia
+              }
+            } else {
+              contentDiv.innerHTML =
+                "Componente non trovato per questa combinazione.";
+              codeDiv.innerHTML =
+                "Codice non disponibile per questa combinazione.";
+              copyButton.style.display = "none";
+              if (copyButton1) {
+                copyButton1.style.display = "none";
+              }
+            }
+          } else if (selectedType) {
+            // Se Type è selezionato ma non Size, gestiamo un caso con "default" (senza Size)
+            const component = components[selectedType]?.["default"];
+
+            if (component) {
+              contentDiv.innerHTML = component;
+
+              // Prettifica e visualizza il codice nel primo div
+              let containerlessComponent = component
+                .replace(/<div class="avatar-container">/g, "")
+                .replace(/<\/div>$/, "")
+                .replace(/<\/div>/g, "</div>\n");
+              const formattedCode = prettifyHTML(containerlessComponent);
+              codeDiv.innerHTML = `<pre><code>${escapeHTML(
+                formattedCode
+              )}</code></pre>`;
+
+              // Mostra solo il primo pulsante di copia
+              copyButton.style.display = "inline-block";
+              if (copyButton1) {
+                copyButton1.style.display = "none"; // Nascondi il secondo pulsante
+              }
+            } else {
+              contentDiv.innerHTML =
+                "Componente non trovato per questa combinazione.";
+              codeDiv.innerHTML =
+                "Codice non disponibile per questa combinazione.";
+              copyButton.style.display = "none";
+              if (copyButton1) {
+                copyButton1.style.display = "none";
+              }
             }
           } else {
             contentDiv.innerHTML =
-              "Componente non trovato per questa selezione.";
-            codeDiv.innerHTML = "Codice non disponibile per questa selezione.";
+              "Seleziona tutte le opzioni per visualizzare il componente.";
+            codeDiv.innerHTML =
+              "Seleziona le varianti per visualizzare il codice.";
             copyButton.style.display = "none";
             if (copyButton1) {
               copyButton1.style.display = "none";
             }
-          }
-        } else {
-          contentDiv.innerHTML =
-            "Seleziona un tipo per visualizzare il componente.";
-          codeDiv.innerHTML = "Seleziona un tipo per visualizzare il codice.";
-          copyButton.style.display = "none"; // Nasconde il primo pulsante di copia
-          if (copyButton1) {
-            copyButton1.style.display = "none"; // Nasconde il secondo pulsante di copia
           }
         }
       }
@@ -654,24 +715,17 @@
           });
       }
 
-      // Funzione per cambiare la classe del div per Type2
-      function changeDivClassForType2() {
-        if (dynamicDiv) {
-          dynamicDiv.classList.remove("bg-white");
-          dynamicDiv.classList.add("bg-primary95");
-        }
-      }
-
-      // Funzione per resettare la classe del div
-      function resetDivClass() {
-        if (dynamicDiv) {
-          dynamicDiv.classList.remove("bg-primary95");
-          dynamicDiv.classList.add("bg-white");
-        }
-      }
-
       // Event listener per il selettore di tipo
-      typeSelector.addEventListener("change", updateContent);
+      typeSelector.addEventListener("change", function () {
+        sizeSelector.disabled = !this.value;
+        if (!this.value) {
+          sizeSelector.value = "";
+        }
+        updateContent();
+      });
+
+      // Event listener per il selettore di dimensione
+      sizeSelector.addEventListener("change", updateContent);
 
       // Event listener per il primo pulsante di copia
       copyButton.addEventListener("click", function () {
