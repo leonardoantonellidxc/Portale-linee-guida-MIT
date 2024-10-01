@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>MIT - Portale delle Linee Guida di UX e UI - Accordion</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- Bootstrap 5.3 -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- G36 Theme CSS -->
+    <link href="css/font.css" type="text/css" rel="stylesheet" />
+    <link href="css/form.css" type="text/css" rel="stylesheet" />
+    <link href="css/table.css" type="text/css" rel="stylesheet" />
+    <link href="css/theme.css" type="text/css" rel="stylesheet" />
+
+    <!-- Custom css-->
+    <link href="css/custom.css" type="text/css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link href="css/font.css" type="text/css" rel="stylesheet" />
+
+    <style>
+      .avatar-container {
+        display: flex;
+        gap: 10px;
+      }
+
+      .avatar img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header bg-white pt-2 px-4 pt-lg-5 px-lg-9 sticky-top">
+      <!-- Header content goes here -->
+    </header>
+
+    <main class="container-fluid">
+      <div class="row">
+        <aside class="sidebar-menu col-12 col-lg-3">
+          <!-- Sidebar content goes here -->
+        </aside>
+
+        <div class="col-12 col-lg-9" id="main-content">
+          <div class="bg-hero-green p-6 rounded my-6">
+            <p class="fw-bold c-neutral-500">Design System</p>
+            <h2 class="titlepage fw-bold">Accordion</h2>
+          </div>
+
+          <p class="my-4">
+            L’accordion è un elenco di elementi impilati verticalmente che
+            consente agli utenti di espandere o comprimere sezioni di contenuto
+            per visualizzare o nascondere informazioni aggiuntive. E’ composto
+            da una serie di pannelli impilati verticalmente, ciascuno dei quali
+            contiene un'intestazione o un titolo e un contenuto associato.
+            Quando un utente clicca sull'intestazione di un pannello, il
+            contenuto di quel pannello si espande o si contrae, a seconda dello
+            stato corrente. Ciò consente agli utenti di accedere rapidamente al
+            contenuto desiderato, senza sovraccaricare visivamente l'interfaccia
+            con troppe informazioni contemporaneamente.
+          </p>
+
+          <button type="button" class="btn btn-bare my-5">
+            <svg class="icon icon-sm">
+              <use href="/imgs/icon/sprite_fill.svg#it-figma"></use>
+            </svg>
+            <span> Vai al componente Figma </span>
+            <svg class="icon icon-sm">
+              <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+            </svg>
+          </button>
+
+          <!-- Sezione con bottone flottante e codice -->
+          <div class="bg-neutral-500 p-3">
+            <h5 class="mb-4">Variante</h5>
+            <div
+              class="bg-white d-flex align-content-center justify-content-center py-8 mb-3"
+            >
+              <div class="px-6">
+                <div class="accordion w-100" id="collapseExample">
+                  <div class="accordion-item item-ticon">
+                    <div class="accordion-header" id="heading1c">
+                      <button
+                        type="button"
+                        class="accordion-button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse1c"
+                        aria-expanded="true"
+                        aria-controls="collapse1c"
+                      >
+                        <div class="text-icon">
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-example"
+                            ></use>
+                          </svg>
+                          <span> Elemento Richiudibile #1 </span>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      id="collapse1c"
+                      class="accordion-collapse collapse show"
+                      role="region"
+                      aria-labelledby="heading1c"
+                    >
+                      <div class="accordion-body">
+                        <div>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum. Excepteur sint
+                          occaecat cupidatat non proident, sunt in culpa qui
+                          officia deserunt mollit anim id est laborum.Excepteur
+                          sint occaecat cupidatat non proident, sunt in culpa
+                          qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div class="btn-toolbar">
+                          <button type="button" class="btn btn-primary">
+                            Button text
+                          </button>
+                          <button type="button" class="btn btn-outline-primary">
+                            Button text
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item item-ticon">
+                    <div class="accordion-header" id="heading2c">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse2c"
+                        aria-expanded="false"
+                        aria-controls="collapse2c"
+                      >
+                        <div class="text-icon">
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-example"
+                            ></use>
+                          </svg>
+                          <span> Elemento Richiudibile #2 </span>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      id="collapse2c"
+                      class="accordion-collapse collapse"
+                      role="region"
+                      aria-labelledby="heading2c"
+                    >
+                      <div class="accordion-body">
+                        <div>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum. Excepteur sint
+                          occaecat cupidatat non proident, sunt in culpa qui
+                          officia deserunt mollit anim id est laborum.Excepteur
+                          sint occaecat cupidatat non proident, sunt in culpa
+                          qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div class="btn-toolbar">
+                          <button type="button" class="btn btn-primary">
+                            Button text
+                          </button>
+                          <button type="button" class="btn btn-outline-primary">
+                            Button text
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item item-ticon">
+                    <div class="accordion-header" id="heading3c">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse3c"
+                        aria-expanded="false"
+                        aria-controls="collapse3c"
+                      >
+                        <div class="text-icon">
+                          <svg class="icon icon-sm">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-example"
+                            ></use>
+                          </svg>
+                          <span> Elemento Richiudibile #3 </span>
+                        </div>
+                      </button>
+                    </div>
+                    <div
+                      id="collapse3c"
+                      class="accordion-collapse collapse"
+                      role="region"
+                      aria-labelledby="heading3c"
+                    >
+                      <div class="accordion-body">
+                        <div>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip
+                          ex ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat
+                          cupidatat non proident, sunt in culpa qui officia
+                          deserunt mollit anim id est laborum. Excepteur sint
+                          occaecat cupidatat non proident, sunt in culpa qui
+                          officia deserunt mollit anim id est laborum.Excepteur
+                          sint occaecat cupidatat non proident, sunt in culpa
+                          qui officia deserunt mollit anim id est laborum.
+                        </div>
+                        <div class="btn-toolbar">
+                          <button type="button" class="btn btn-primary">
+                            Button text
+                          </button>
+                          <button type="button" class="btn btn-outline-primary">
+                            Button text
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item"></div>
+                  <div class="accordion-header" id="heading4c">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapse4c"
+                      aria-expanded="false"
+                      aria-controls="collapse4c"
+                    >
+                      <div class="text-icon">
+                        <span> Elemento Richiudibile #3 </span>
+                      </div>
+                    </button>
+                  </div>
+                  <div
+                    id="collapse4c"
+                    class="accordion-collapse collapse"
+                    role="region"
+                    aria-labelledby="heading4c"
+                  >
+                    <div class="accordion-body">
+                      <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                      </div>
+                      <div class="btn-toolbar">
+                        <button type="button" class="btn btn-primary">
+                          Button text
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                          Button text
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sezione per visualizzare il codice -->
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="">Codice</h5>
+            <button type="button" id="copyButton1" class="btn btn-primary">
+              <span> Copia codice </span>
+              <svg class="icon icon-sm">
+                <use href="/imgs/icon/sprite_fill.svg#it-copy-success"></use>
+              </svg>
+            </button>
+          </div>
+
+          <div id="codeContent" class="bgcode text-white rounded p-4">
+            <!-- Il codice verrà inserito qui dallo script -->
+          </div>
+
+          <!-- Sezione do and don't -->
+          <div class="my-5">
+            <h6 class="mb-4 fw-bold">Do and don’t</h6>
+            <p class="my-3">
+              Di seguito un elenco del corretto utilizzo degli accordion:
+            </p>
+
+            <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+              <div class="col-12 col-md-6">
+                <div class="card shadow-none h-100 bg-gray">
+                  <div class="card-body pb-0">
+                    <div class="card-bar">
+                      <div class="bar-group">
+                        <div class="badge badge-sm badge-success">
+                          <span> Do </span>
+                          <svg class="icon icon-sm icon-success ms-2">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <ul>
+                      <li>Utilizza etichette brevi ed informative.</li>
+                      <li>
+                        Usa frecce o icone per indicare chiaramente se una
+                        sezione è aperta o chiusa.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="card shadow-none h-100 bg-gray">
+                  <div class="card-body pb-0">
+                    <div class="card-bar">
+                      <div class="bar-group">
+                        <div class="badge badge-sm badge-danger">
+                          <span> Don't </span>
+                          <svg class="ms-2 icon icon-sm icon-danger">
+                            <use
+                              href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                            ></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <ul>
+                      <li>
+                        Non indicare lo stato dell’accordion con le etichette.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-between py-3 bg-lightblu">
+            <button type="button" class="btn btn-bare btn-sm">
+              <svg class="icon">
+                <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
+              </svg>
+              <span>Accessibilità </span>
+            </button>
+            <button type="button" class="btn btn-bare btn-sm">
+              <span>Index </span>
+              <svg class="icon">
+                <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const codeContentDiv = document.getElementById("codeContent");
+        const copyButton1 = document.getElementById("copyButton1");
+
+        // Codice da visualizzare
+        const codeHTML = `<div class="accordion" id="collapseExample">
+						<div class="accordion-item item-ticon">
+							<div class="accordion-header" id="heading1c">
+								<button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse1c" aria-expanded="true" aria-controls="collapse1c">
+									<div class="text-icon">
+										<svg class="icon icon-sm">
+											<use href="/imgs/icon/sprite_fill.svg#it-example"></use>
+										</svg>
+										<span> 
+											Elemento Richiudibile #1
+										</span>
+									</div>
+								</button>
+							</div>
+							<div id="collapse1c" class="accordion-collapse collapse show" role="region" aria-labelledby="heading1c">
+								<div class="accordion-body">
+									<div>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+										et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+										ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+										esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+										sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat 
+										non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint 
+										occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</div>
+									<div class="btn-toolbar">
+										<button type="button" class="btn btn-primary">
+											Button text
+										</button>
+										<button type="button" class="btn btn-outline-primary">
+											Button text
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item item-ticon">
+							<div class="accordion-header" id="heading2c">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2c" aria-expanded="false" aria-controls="collapse2c">
+									<div class="text-icon">
+										<svg class="icon icon-sm">
+											<use href="/imgs/icon/sprite_fill.svg#it-example"></use>
+										</svg>
+										<span>
+											Elemento Richiudibile #2
+										</span>
+									</div>
+								</button>
+							</div>
+							<div id="collapse2c" class="accordion-collapse collapse" role="region" aria-labelledby="heading2c">
+								<div class="accordion-body">
+									<div>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+										et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+										ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+										esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+										sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat 
+										non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint 
+										occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</div>
+									<div class="btn-toolbar">
+										<button type="button" class="btn btn-primary">
+											Button text
+										</button>
+										<button type="button" class="btn btn-outline-primary">
+											Button text
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item item-ticon">
+							<div class="accordion-header" id="heading3c">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3c" aria-expanded="false" aria-controls="collapse3c">
+									<div class="text-icon">
+										<svg class="icon icon-sm">
+											<use href="/imgs/icon/sprite_fill.svg#it-example"></use>
+										</svg>
+										<span>
+											Elemento Richiudibile #3
+										</span>
+									</div>
+								</button>
+							</div>
+							<div id="collapse3c" class="accordion-collapse collapse" role="region" aria-labelledby="heading3c">
+								<div class="accordion-body">
+									<div>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+										et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+										ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+										esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+										sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat 
+										non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint 
+										occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</div>
+									<div class="btn-toolbar">
+										<button type="button" class="btn btn-primary">
+											Button text
+										</button>
+										<button type="button" class="btn btn-outline-primary">
+											Button text
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							
+						</div>
+							<div class="accordion-header" id="heading4c">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4c" aria-expanded="false" aria-controls="collapse4c">
+									<div class="text-icon">
+										<span>
+											Elemento Richiudibile #3
+										</span>
+									</div>
+								</button>
+							</div>
+							<div id="collapse4c" class="accordion-collapse collapse" role="region" aria-labelledby="heading4c">
+								<div class="accordion-body">
+									<div>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+										et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+										ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+										esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+										sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat 
+										non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Excepteur sint 
+										occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</div>
+									<div class="btn-toolbar">
+										<button type="button" class="btn btn-primary">
+											Button text
+										</button>
+										<button type="button" class="btn btn-outline-primary">
+											Button text
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>`;
+
+        // Funzione per inserire e visualizzare il codice
+        codeContentDiv.innerHTML = `<pre><code>${escapeHTML(
+          codeHTML
+        )}</code></pre>`;
+
+        // Funzione per scappare i caratteri speciali nel codice
+        function escapeHTML(html) {
+          return html
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;");
+        }
+
+        // Funzione per copiare il codice negli appunti
+        copyButton1.addEventListener("click", function () {
+          navigator.clipboard
+            .writeText(codeHTML)
+            .then(() => {
+              alert("Codice copiato con successo!");
+            })
+            .catch((err) => {
+              console.error("Errore durante la copia del codice:", err);
+            });
+        });
+      });
+    </script>
+  </body>
+</html>
