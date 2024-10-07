@@ -598,34 +598,102 @@
       const components = {
         Type1: {
           default:
-            '<div class="row">' +
-            '<div class="col-auto pt-3">' +
-            "<!-- File -->" +
-            '<div class="form-group form-file">' +
-            '<div class="file-label text-icon" id="uploadFile1Label">' +
+           '<div class="form-group form-file has-feedback">' +
+    '<div class="file-label text-icon" id="uploadFile2Label">' +
+        '<svg class="icon icon-sm">' +
+            '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-document-text"></use>' +
+        '</svg>' +
+        '<span>Seleziona uno o più documenti da caricare</span>' +
+    '</div>' +
+
+    '<div class="file-list complete show">' +
+        '<div class="list-title">Documenti caricati</div>' +
+
+        '<div class="file-item">' +
+            '<div class="file-desc">' +
+                '<div class="file-title">' +
+                    '<svg class="icon">' +
+                        '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
+                    '</svg>' +
+                    '<span>Nome-filemoltomoltomoltomoltomoltomoltomolto-lungo.pdf (3.5 mb)</span>' +
+                '</div>' +
+                '<div class="file-btn">' +
+                    '<button type="button" class="btn-close btn-view">' +
+                        '<svg class="icon icon-xs">' +
+                            '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-password-visible"></use>' +
+                        '</svg>' +
+                    '</button>' +
+                    '<button type="button" class="btn-close btn-delete">' +
+                        '<svg class="icon icon-xs">' +
+                            '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-delete"></use>' +
+                        '</svg>' +
+                    '</button>' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
+    '</div>' +
+
+    '<div class="file-list loading show">' +
+        '<div class="list-title">Documenti in fase di caricamento...</div>' +
+
+        '<div class="file-item">' +
+            '<div class="file-desc">' +
+                '<div class="file-title">' +
+                    '<svg class="icon">' +
+                        '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite.svg#it-document-text"></use>' +
+                    '</svg>' +
+                    '<span>Nome-file.pdf (3.5 mb)</span>' +
+                '</div>' +
+                '<div class="file-btn">' +
+                    '<button type="button" class="btn-close btn-stop">' +
+                        '<svg class="icon icon-xs">' +
+                            '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                        '</svg>' +
+                    '</button>' +
+                '</div>' +
+            '</div>' +
+            '<div class="progress-wrapper">' +
+                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">' +
+                    '<div class="progress-bar" style="width: 25%"></div>' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
+
+        '<div class="file-item">' +
+            '<div class="file-desc">' +
+                '<div class="file-title">' +
+                    '<svg class="icon">' +
+                        '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite.svg#it-document-text"></use>' +
+                    '</svg>' +
+                    '<span>Nome-file.pdf (3.5 mb)</span>' +
+                '</div>' +
+                '<div class="file-btn">' +
+                    '<button type="button" class="btn-close btn-stop">' +
+                        '<svg class="icon icon-xs">' +
+                            '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                        '</svg>' +
+                    '</button>' +
+                '</div>' +
+            '</div>' +
+            '<div class="progress-wrapper">' +
+                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">' +
+                    '<div class="progress-bar" style="width: 25%"></div>' +
+                '</div>' +
+            '</div>' +
+        '</div>' +
+    '</div>' +
+
+    '<div class="file-upload">' +
+        '<input type="file" name="uploadFile2" id="uploadFile2" aria-labelledby="uploadFile2Label">' +
+        '<label for="uploadFile2" class="btn btn-sm btn-primary">' +
             '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-document-text"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Seleziona uno o più documenti da caricare" +
-            "</span>" +
-            "</div>" +
-            '<div class="file-list complete"></div>' +
-            '<div class="file-list loading"></div>' +
-            '<div class="file-upload">' +
-            '<input type="file" name="uploadFile1" id="uploadFile1" aria-labelledby="uploadFile1Label">' +
-            '<label for="uploadFile1" class="btn btn-sm btn-primary">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-upload"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Carica file" +
-            "</span>" +
-            "</label>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>",
+                '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite.svg#it-upload"></use>' +
+            '</svg>' +
+            '<span>Carica altri documenti</span>' +
+        '</label>' +
+    '</div>' +
+'</div>'
+,
         },
         Type2: {
           default:

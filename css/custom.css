@@ -28,6 +28,7 @@ p{
 }
 .bg-gradients {
   background: var(--bs-gradient);
+  border: 1px solid #E2E8F0;
 }
 
 .sidebar {
@@ -224,4 +225,10 @@ padding-right: 0px;
 
 .borderimg{
   border-color: #E2E8F0;
+}
+.content-container{
+  width: 450px;
+  max-width: 500px;
+ 
+
 }

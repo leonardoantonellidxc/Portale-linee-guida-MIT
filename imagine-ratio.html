@@ -656,7 +656,7 @@
               </div>
 
               <div class="bg-white d-flex align-content-center justify-content-center py-8 mb-3">
-                <div id="content">
+                <div id="content" class="content-container">
                   Seleziona tutte le opzioni per visualizzare il componente.
                 </div>
               </div>
@@ -671,7 +671,7 @@
                 </button>
               </div>
              
-              <div></div>
+              
               <div id="codeContent" class="bgcode text-white rounded p-4">
                 Seleziona le varianti per visualizzare il codice.
               </div>
@@ -792,63 +792,26 @@
   <script>
     const components = {
       "Type1": {
+        "default":'<div class="img-bg" style="background-image:url(\'/imgs/TMP/image_ratio/example-01.png\');"></div>'
+      },
+      "Type2": {
         "default":
-    
+         '<div class="img-bg img-4-3" style="background-image:url(\'/imgs/TMP/image_ratio/example-01.png\');"></div>'
+
       },
       "Type3": {
-        "default":
-          '<div class="alert alert-warning alert-dismissible fade show">' +
-          '<div class="alert-body">' +
-          '<div class="alert-heading h5">' +
-          'Titolo alert warning' +
-          '</div>' +
-          '<div class="alert-text">' +
-          'Vel tempus nisl augue accumsan, scelerisque aliquet. ' +
-          'Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus.' +
-          '</div>' +
-          '<div class="btn-toolbar">' +
-          '<button type="button" class="btn btn-warning">' +
-          'Button text' +
-          '</button>' +
-          '<button type="button" class="btn btn-bare bare-warning">' +
-          'Button text' +
-          '</button>' +
-          '</div>' +
-          '</div>' +
-          '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
-          '<svg class="icon">' +
-          '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-          '</svg>' +
-          '</button>' +
-          '</div>'
-      },
-      "Type4": {
-        "default":
-          '<div class="alert alert-danger alert-dismissible fade show">' +
-          '<div class="alert-body">' +
-          '<div class="alert-heading h5">' +
-          'Titolo alert danger' +
-          '</div>' +
-          '<div class="alert-text">' +
-          'Vel tempus nisl augue accumsan, scelerisque aliquet. ' +
-          'Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus.' +
-          '</div>' +
-          '<div class="btn-toolbar">' +
-          '<button type="button" class="btn btn-danger">' +
-          'Button text' +
-          '</button>' +
-          '<button type="button" class="btn btn-bare bare-danger">' +
-          'Button text' +
-          '</button>' +
-          '</div>' +
-          '</div>' +
-          '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
-          '<svg class="icon">' +
-          '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-          '</svg>' +
-          '</button>' +
-          '</div>'
-      }
+        "default":'<div class="img-bg img-16-9" style="background-image:url(\'/imgs/TMP/image_ratio/example-01.png\');"></div>'
+
+          
+      }, "Type4": {
+        "default":'<div class="img-bg img-21-9" style="background-image:url(\'/imgs/TMP/image_ratio/example-01.png\');"></div>'
+ }, "Type5": {
+        "default":'<div class="img-bg img-32-9" style="background-image:url(\'/imgs/TMP/image_ratio/example-01.png\');"></div>'
+
+ }, "Type6": {
+        "default":'<div class="img-bg" style="--bs-image-r1:3; --bs-image-r2:4; background-image:url(\'/imgs/TMP/image_ratio/example-01.png\');"></div>'
+}
+
 
     };
 
