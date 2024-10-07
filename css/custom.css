@@ -57,10 +57,6 @@ p{
   transition: margin 0.3s ease-in-out;
 }
 
-.header-middle .search-wrapper {
-  padding-right: 0px; 
-} 
-
 .header-middle {
   border-bottom: none;
 }
@@ -208,10 +204,6 @@ table > tbody > tr > td:first-child {
 .pagination .page-link {
   font-family: "Roboto Mono", monospace;
   font-weight: 600;
-}
-
-.header-middle .search-wrapper {
-   padding-right: 0px; 
 }
 
 .bgcode{
