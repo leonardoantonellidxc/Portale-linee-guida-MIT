@@ -153,6 +153,41 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+ 
+  document.querySelectorAll('#rowstato .chip').forEach(function(chip) {
+    chip.addEventListener('click', function() {
+        var selectedId = this.getAttribute('data-id');
+        
+        // Nasconde tutte le sezioni
+        document.querySelectorAll('#neutral, #base, #primary, #secondary, #accent, #disabled, #success, #warning, #danger').forEach(function(section) {
+            section.style.display = 'none';
+        });
+
+        // Gestisci il caso in cui venga selezionata la chip "all"
+        if (selectedId === 'all') {
+            // Mostra tutte le sezioni
+            document.querySelectorAll('#base, #neutral, #primary, #secondary, #accent, #disabled, #success, #warning, #danger').forEach(function(section) {
+                section.style.display = 'block';
+                // Mostra gli <hr> all'interno di ogni sezione
+                section.querySelectorAll('hr').forEach(function(hr) {
+                    hr.style.display = 'block';  // Ripristina visibilità degli <hr>
+                });
+            });
+        } else {
+            var selectedSection = document.getElementById(selectedId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+                // Nascondi gli <hr> solo nella sezione selezionata
+                selectedSection.querySelectorAll('hr').forEach(function(hr) {
+                    hr.style.display = 'none';
+                });
+            }
+        }
+    });
+});
+
+
   
    //custom leo RIcerca delle icone all interno della tabella
 
