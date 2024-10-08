@@ -147,8 +147,8 @@
       </div>
     </header>
 
-    <main class="container-fluid">
-      <div class="row">
+   <main class="container-fluid ">
+      <div class="row px-lg-9">
         <aside class="sidebar-menu col-12 col-lg-3">
           <div class="sidebar-wrapper my-6">
             <div class="card sidebar bg-white">
@@ -330,7 +330,7 @@
                         </a>
                       </li>
                       <li>
-                        <a class="list-link active" href="badge.html">
+                        <a class="list-link" href="badge.html">
                           <div class="list-item">
                             <span> Badge </span>
                           </div>
@@ -615,7 +615,7 @@
         <div class="col-12 col-lg-9" id="main-content">
           <!-- hero-->
           <div class="bg-hero-green p-6 rounded my-6">
-            <p class=" h6 fw-semibold c-neutral-500">Design System</p>
+            <p class=" h6 fw-semibold c-neutral-500 mb-1">Design System</p>
             <h2 class="titlepage fw-bold">Border radius</h2>
           </div>
           <!-- p-->
@@ -727,7 +727,7 @@
 
           <!-- section Raapresentazione visiva-->
           <div class="my-8">
-            <h5 class="mb-4 ">Rappresentazione visiva</h5>
+            <h5 class=" fw-bold mb-4 ">Rappresentazione visiva</h5>
             <p class="my-5">
               Di seguito vengono riportati tutte le tipologie di bordi che
               possono essere utilizzati all’interno del design:
@@ -745,34 +745,34 @@
                 <p class="c-neutral-500 my-4">0px</p>
               </div>
               <div class="col-auto text-center">
-                <p class="fw-bold c-neutral-500">Radius - 0</p>
+                <p class="fw-bold c-neutral-500">Radius - 1</p>
                 <img
                   class="img-fluid"
                   src="./imgs/border-page/quadrato2.svg"
                   alt=""
                 />
 
-                <p class="c-neutral-500 my-4">0px</p>
+                <p class="c-neutral-500 my-4">4px</p>
               </div>
               <div class="col-auto text-center">
-                <p class="fw-bold c-neutral-500">Radius - 0</p>
+                <p class="fw-bold c-neutral-500">Radius - 2</p>
                 <img
                   class="img-fluid"
                   src="./imgs/border-page/quadrato3.svg"
                   alt=""
                 />
 
-                <p class="c-neutral-500 my-4">0px</p>
+                <p class="c-neutral-500 my-4">8px</p>
               </div>
               <div class="col-auto text-center">
-                <p class="fw-bold c-neutral-500">Radius - 0</p>
+                <p class="fw-bold c-neutral-500">Radius - 3</p>
                 <img
                   class="img-fluid"
                   src="./imgs/border-page/quadrato4.svg"
                   alt=""
                 />
 
-                <p class="c-neutral-500 my-4">0px</p>
+                <p class="c-neutral-500 my-4">500px</p>
               </div>
             </div>
           </div>
@@ -1057,7 +1057,7 @@
 
           <!-- section Esempio di utilizzo -->
           <div class="my-5">
-            <h4 class=" fw-bold mb-4">Esempio di utilizzo</h4>
+            <h5 class=" fw-bold mb-4">Esempio di utilizzo</h5>
 
             <div class="d-flex flex-column flex-md-row border py-8 px-lg-10 px-5 ">
               <div
@@ -1084,27 +1084,37 @@
                   <span> Lorem ipsum </span>
                 </a>
                 <p class="fw-bolder">Border radius</p>
-                <p>4 px</p></div>
+                <p>500 px</p></div>
               </div>
             </div>
           </div>
 
           <!-- paginazione-->
-
-          <div class="d-flex justify-content-between py-3 bg-lightblu rounded my-8 px-6">
-            <button type="button" class="btn btn-bare btn-sm">
-              <svg class="icon">
-                <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
-              </svg>
-              <span>Accessibilità </span>
-            </button>
-            <button type="button" class="btn btn-bare btn-sm">
-              <span>Index </span>
-              <svg class="icon">
-                <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
-              </svg>
-            </button>
-          </div>
+          <div
+          class="d-flex justify-content-between py-3 bg-lightblu my-8 rounded px-6"
+        >
+          <button
+            type="button"
+            onclick="window.location.href='index-section.html'"
+            class="btn btn-bare btn-sm"
+          >
+            <svg class="icon">
+              <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
+            </svg>
+            <span>Index section</span>
+          </button>
+          <button
+            onclick="window.location.href='color-system.html'"
+            type="button"
+            class="btn btn-bare btn-sm"
+          >
+            <span>Color system</span>
+            <svg class="icon">
+              <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+            </svg>
+          </button>
+        </div>
+       
         </div>
       </div>
     </main>
@@ -1211,27 +1221,31 @@
             </div>
         </div>
     </section>-->
-    <footer>
-      <div class="footer-credits">
-        <div class="container">
-          <div class="navbar-brand pe-4">
-            <svg class="icon icon-lg" aria-hidden="true">
-              <use href="/imgs/icon/ministero.svg#ministero"></use>
-            </svg>
-            <div class="body-lg text-w6 ps-3">
-              www.mit.gov.it - Ministero delle infrastrutture e dei trasporti.
-            </div>
-          </div>
+     	<footer>
+			<div class="footer-credits">
+				<div class="container">
 
-          <div class="text-icon">
-            <svg class="icon icon-xs" aria-hidden="true">
-              <use href="/imgs/icon/sprite.svg#it-copyright"></use>
-            </svg>
-            <span> Tutti i diritti riservati </span>
-          </div>
-        </div>
-      </div>
-    </footer>
+					<div class="navbar-brand pe-4">
+						<svg class="icon icon-lg" aria-hidden="true">
+							<use href="/imgs/icon/ministero.svg#ministero"></use>
+						</svg>	
+						<div class="body-lg text-w6 ps-3">
+							www.mit.gov.it  - Ministero delle infrastrutture e dei trasporti.
+						</div>
+					</div>
+
+					<div class="text-icon">
+						<svg class="icon icon-xs" aria-hidden="true">
+							<use href="/imgs/icon/sprite.svg#it-copyright"></use>
+						</svg>
+						<span>
+							Tutti i diritti riservati
+						</span>
+					</div>
+
+				</div>
+			</div>
+		</footer>
     <!-- Bootstrap 5.3 -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
