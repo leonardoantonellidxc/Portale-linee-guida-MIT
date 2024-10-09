@@ -228,12 +228,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //scaricare cartella react
-document.getElementById("vaiRisorsaFigma").addEventListener("click", function() {
-  window.open("https://www.example.com", "_blank"); // Sostituisci con l'URL desiderato
+document.getElementById("vaiRisorsaReact").addEventListener("click", function() {
+  document.getElementById("downloadLink").click();
 });
 
 //scaricare cartella angular
-document.getElementById("vaiRisorsaFigma").addEventListener("click", function() {
-  window.open("https://www.example.com", "_blank"); // Sostituisci con l'URL desiderato
+document.getElementById("vaiRisorsaAngular").addEventListener("click", function() {
+  document.getElementById("downloadLink").click();
 });
 
