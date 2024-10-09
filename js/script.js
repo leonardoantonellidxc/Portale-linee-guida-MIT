@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open("https://www.example.com", "_blank"); // Sostituisci con l'URL desiderato
 });
 
-//scaricare cartella react
+//scaricare cartella react 
 document.getElementById("vaiRisorsaReact").addEventListener("click", function() {
   document.getElementById("downloadLink").click();
 });

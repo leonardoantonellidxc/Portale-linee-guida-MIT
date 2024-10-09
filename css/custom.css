@@ -239,3 +239,9 @@ ul li{
 ol li {
   font-size: 18px;
 }
+#typeSelector{
+  @media screen {
+    
+  }
+  padding-top:2px
+}
