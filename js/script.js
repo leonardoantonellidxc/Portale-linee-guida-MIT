@@ -160,14 +160,14 @@ document.addEventListener('DOMContentLoaded', () => {
         var selectedId = this.getAttribute('data-id');
         
         // Nasconde tutte le sezioni
-        document.querySelectorAll('#neutral, #base, #primary, #secondary, #accent, #disabled, #success, #warning, #danger').forEach(function(section) {
+        document.querySelectorAll('#text, #background, #icon, #border, #neutral, #base, #primary, #secondary, #accent, #disabled, #success, #warning, #danger').forEach(function(section) {
             section.style.display = 'none';
         });
 
         // Gestisci il caso in cui venga selezionata la chip "all"
         if (selectedId === 'all') {
             // Mostra tutte le sezioni
-            document.querySelectorAll('#base, #neutral, #primary, #secondary, #accent, #disabled, #success, #warning, #danger').forEach(function(section) {
+            document.querySelectorAll('#text, #background, #icon, #border, #base, #neutral, #primary, #secondary, #accent, #disabled, #success, #warning, #danger').forEach(function(section) {
                 section.style.display = 'block';
                 // Mostra gli <hr> all'interno di ogni sezione
                 section.querySelectorAll('hr').forEach(function(hr) {
