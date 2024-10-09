@@ -222,4 +222,18 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+//link per figma
+  document.getElementById("vaiRisorsaFigma").addEventListener("click", function() {
+    window.open("https://www.example.com", "_blank"); // Sostituisci con l'URL desiderato
+});
+
+//scaricare cartella react
+document.getElementById("vaiRisorsaFigma").addEventListener("click", function() {
+  window.open("https://www.example.com", "_blank"); // Sostituisci con l'URL desiderato
+});
+
+//scaricare cartella angular
+document.getElementById("vaiRisorsaFigma").addEventListener("click", function() {
+  window.open("https://www.example.com", "_blank"); // Sostituisci con l'URL desiderato
+});
 
