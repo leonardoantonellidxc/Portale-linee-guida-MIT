@@ -236,6 +236,16 @@ document.getElementById("vaiRisorsaReact").addEventListener("click", function() 
 document.getElementById("vaiRisorsaAngular").addEventListener("click", function() {
   document.getElementById("downloadLink").click();
 });
+//scaricare cartella titiuliu
+document.getElementById("vaiRisorsaTitiulium").addEventListener("click", function() {
+  window.open("https://fonts.google.com/specimen/Titillium+Web", "_blank"); // Sostituisci con l'URL desiderato
+});
+
+//scaricare cartella roboto
+document.getElementById("vaiRisorsaRoboto").addEventListener("click", function() {
+  window.open("https://fonts.google.com/specimen/Roboto+Mono", "_blank"); // Sostituisci con l'URL desiderato
+});
+
 
 // Ottieni tutte le chip
 const chips = document.querySelectorAll('.chip');

@@ -695,96 +695,6 @@
 
           <!-- fine tab container-->
 
-          <!-- 2 tab-->
-          <div
-            class="tab-pane fade"
-            id="immagine"
-            role="tabpanel"
-            aria-labelledby="tab-2"
-          >
-            <div class="bg-neutral-500 p-3">
-              <div class="bg-neutral-500 p-3">
-                <h5 class="mb-4">Variante</h5>
-
-                <div class="row mb-3">
-                  <div class="col-auto">
-                    <div class="form-group dropdown has-feedback filled">
-                      <label for="typeSelector" id="field1Label">Type</label>
-                      <select id="typeSelector" class="form-select">
-                        <option value="">--Seleziona Type--</option>
-                        <option value="Type5">Default</option>
-                        <option value="Type6">Succcess</option>
-                        <option value="Type7">Danger</option>
-                        <option value="Type8">Disabled</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  class="bg-white d-flex align-content-center justify-content-center py-8 mb-3"
-                >
-                  <div id="content">
-                    Seleziona tutte le opzioni per visualizzare il componente.
-                  </div>
-                </div>
-
-                <div
-                  class="d-flex justify-content-between align-items-center mb-3"
-                >
-                  <h5 class="">Codice</h5>
-                  <button
-                    type="button"
-                    id="copyButton"
-                    style="display: none"
-                    class="btn btn-primary"
-                  >
-                    <span> Copia codice </span>
-                    <svg class="icon icon-sm">
-                      <use
-                        href="/imgs/icon/sprite_fill.svg#it-copy-success"
-                      ></use>
-                    </svg>
-                  </button>
-                </div>
-                <div></div>
-
-                <div id="codeContent" class="bgcode text-white rounded p-4">
-                  Seleziona le varianti per visualizzare il codice.
-                </div>
-              </div>
-
-              <!-- fine tab container-->
-            </div>
-
-            <!-- paginazione-->
-
-            <div
-              class="d-flex justify-content-between py-3 bg-lightblu my-8 rounded px-6"
-            >
-              <button
-                type="button"
-                onclick="window.location.href='toggle.html'"
-                class="btn btn-bare btn-sm"
-              >
-                <svg class="icon">
-                  <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
-                </svg>
-                <span>Tooltip</span>
-              </button>
-              <button
-                onclick="window.location.href='header.html'"
-                type="button"
-                class="btn btn-bare btn-sm"
-              >
-                <span>Header</span>
-                <svg class="icon">
-                  <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
-
           <!-- section do dont-->
           <div class="my-5">
             <h6 class="mb-4 fw-bold">Do and don’t</h6>
@@ -911,99 +821,112 @@
       const components = {
         Type1: {
           default:
-           '<div class="form-group form-file has-feedback">' +
-    '<div class="file-label text-icon" id="uploadFile2Label">' +
+          '<div class="form-group form-file">' +
+    '<div class="file-label text-icon" id="uploadFile1Label">' +
         '<svg class="icon icon-sm">' +
             '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-document-text"></use>' +
         '</svg>' +
-        '<span>Seleziona uno o più documenti da caricare</span>' +
+        '<span>' +
+            'Seleziona uno o più documenti da caricare' +
+        '</span>' +
     '</div>' +
-
-    '<div class="file-list complete show">' +
-        '<div class="list-title">Documenti caricati</div>' +
-
-        '<div class="file-item">' +
-            '<div class="file-desc">' +
-                '<div class="file-title">' +
-                    '<svg class="icon">' +
-                        '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
-                    '</svg>' +
-                    '<span>Nome-filemoltomoltomoltomoltomoltomoltomolto-lungo.pdf (3.5 mb)</span>' +
-                '</div>' +
-                '<div class="file-btn">' +
-                    '<button type="button" class="btn-close btn-view">' +
-                        '<svg class="icon icon-xs">' +
-                            '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-password-visible"></use>' +
-                        '</svg>' +
-                    '</button>' +
-                    '<button type="button" class="btn-close btn-delete">' +
-                        '<svg class="icon icon-xs">' +
-                            '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-delete"></use>' +
-                        '</svg>' +
-                    '</button>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>' +
-
-    '<div class="file-list loading show">' +
-        '<div class="list-title">Documenti in fase di caricamento...</div>' +
-
-        '<div class="file-item">' +
-            '<div class="file-desc">' +
-                '<div class="file-title">' +
-                    '<svg class="icon">' +
-                        '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite.svg#it-document-text"></use>' +
-                    '</svg>' +
-                    '<span>Nome-file.pdf (3.5 mb)</span>' +
-                '</div>' +
-                '<div class="file-btn">' +
-                    '<button type="button" class="btn-close btn-stop">' +
-                        '<svg class="icon icon-xs">' +
-                            '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-                        '</svg>' +
-                    '</button>' +
-                '</div>' +
-            '</div>' +
-            '<div class="progress-wrapper">' +
-                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">' +
-                    '<div class="progress-bar" style="width: 25%"></div>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-
-        '<div class="file-item">' +
-            '<div class="file-desc">' +
-                '<div class="file-title">' +
-                    '<svg class="icon">' +
-                        '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite.svg#it-document-text"></use>' +
-                    '</svg>' +
-                    '<span>Nome-file.pdf (3.5 mb)</span>' +
-                '</div>' +
-                '<div class="file-btn">' +
-                    '<button type="button" class="btn-close btn-stop">' +
-                        '<svg class="icon icon-xs">' +
-                            '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-                        '</svg>' +
-                    '</button>' +
-                '</div>' +
-            '</div>' +
-            '<div class="progress-wrapper">' +
-                '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">' +
-                    '<div class="progress-bar" style="width: 25%"></div>' +
-                '</div>' +
-            '</div>' +
-        '</div>' +
-    '</div>' +
-
+    '<div class="file-list complete"></div>' +
+    '<div class="file-list loading"></div>' +
     '<div class="file-upload">' +
-        '<input type="file" name="uploadFile2" id="uploadFile2" aria-labelledby="uploadFile2Label">' +
-        '<label for="uploadFile2" class="btn btn-sm btn-primary">' +
+        '<input type="file" name="uploadFile1" id="uploadFile1" aria-labelledby="uploadFile1Label">' +
+        '<label for="uploadFile1" class="btn btn-sm btn-primary">' +
             '<svg class="icon icon-sm">' +
                 '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite.svg#it-upload"></use>' +
             '</svg>' +
-            '<span>Carica altri documenti</span>' +
+            '<span>' +
+                'Carica file' +
+            '</span>' +
         '</label>' +
+    '</div>' +
+'</div>'+
+'<div class="form-dragdrop mt-5">' +
+    '<div class="dragdrop-icon">' +
+        '<div class="default">' +
+            '<img class="img-fluid" src="/imgs/icon/upload/drag-drop-icon.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="disabled">' +
+            '<img class="img-fluid" src="/imgs/icon/upload/drag-drop-icon-disabled.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="over">' +
+            '<img class="img-fluid" src="/imgs/icon/upload/drag-drop-icon-over.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="active">' +
+            '<img class="img-fluid" src="/imgs/icon/upload/drag-drop-icon-active.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="loading">' +
+            '<div class="loader-pecent">73%</div>' +
+            '<svg viewBox="0 0 90 90">' +
+                '<path class="loader-bg" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
+                '<path class="loader-circle" stroke-dasharray="160, 220" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
+            '</svg>' +
+        '</div>' +
+        '<div class="success">' +
+            '<img class="img-fluid" src="/imgs/icon/upload/drag-drop-icon-success.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="error">' +
+            '<img class="img-fluid" src="/imgs/icon/upload/drag-drop-icon-failed.svg" aria-hidden="true">' +
+        '</div>' +
+    '</div>' +
+    '<div class="dragdrop-text">' +
+        '<input type="file" name="uploadFile1" id="uploadFile1">' +
+        '<div class="dragdrop-title default">' +
+            '<span class="mobile-hidden">' +
+                '<strong>Trascina</strong> qui il file o ' +
+                '<label for="uploadFile1">seleziona il file</label>' +
+            '</span>' +
+            '<span class="mobile-show">' +
+                '<label for="uploadFile1">Clicca qui per caricare il file</label>' +
+            '</span>' +
+        '</div>' +
+        '<span class="dragdrop-desc uploading">' +
+            '<span class="dragdrop-file text-icon">' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/imgs/icon/sprite_fill.svg#it-document-text"></use>' +
+                '</svg>' +
+                '<span>PDF (3.7MB)</span>' +
+            '</span>' +
+            '<div class="dragdrop-title">Nome del file in upload</div>' +
+        '</span>' +
+        '<div class="dragdrop-info">' +
+            '<div class="loading">Caricamento in corso...</div>' +
+            '<div class="success">Caricamento con successo</div>' +
+            '<div class="error">Caricamento non riuscito</div>' +
+        '</div>' +
+        '<div class="dragdrop-btn loading">' +
+            '<button type="button" class="btn btn-sm btn-primary">' +
+                '<span>Interrompi</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                '</svg>' +
+            '</button>' +
+        '</div>' +
+        '<div class="dragdrop-btn success">' +
+            '<button type="button" class="btn btn-sm btn-success">' +
+                '<span>Caricamento completato</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/imgs/icon/sprite_fill.svg#it-password-visible"></use>' +
+                '</svg>' +
+            '</button>' +
+        '</div>' +
+        '<div class="dragdrop-btn error">' +
+            '<button type="button" class="btn btn-sm btn-outline-danger">' +
+                '<span>Elimina</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                '</svg>' +
+            '</button>' +
+            '<button type="button" class="btn btn-sm btn-danger">' +
+                '<span>Carica nuovamente</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/imgs/icon/sprite_fill.svg#it-refresh"></use>' +
+                '</svg>' +
+            '</button>' +
+        '</div>' +
     '</div>' +
 '</div>'
 ,
@@ -1117,7 +1040,91 @@
             "</div>" +
             "</div>" +
             "</div>" +
-            "</div>",
+            "</div>" + '<div class="form-dragdrop success">' +
+    '<div class="dragdrop-icon">' +
+        '<div class="default">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="disabled">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-disabled.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="over">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-over.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="active">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-active.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="loading">' +
+            '<div class="loader-pecent">73%</div>' +
+            '<svg viewBox="0 0 90 90">' +
+                '<path class="loader-bg" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
+                '<path class="loader-circle" stroke-dasharray="160, 220" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
+            '</svg>' +
+        '</div>' +
+        '<div class="success">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-success.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="error">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-failed.svg" aria-hidden="true">' +
+        '</div>' +
+    '</div>' +
+    '<div class="dragdrop-text">' +
+        '<input type="file" name="uploadFile1" id="uploadFile1">' +
+        '<div class="dragdrop-title default">' +
+            '<span class="mobile-hidden">' +
+                '<strong>Trascina</strong> qui il file o ' +
+                '<label for="uploadFile1">seleziona il file</label>' +
+            '</span>' +
+            '<span class="mobile-show">' +
+                '<label for="uploadFile1">Clicca qui per caricare il file</label>' +
+            '</span>' +
+        '</div>' +
+        '<span class="dragdrop-desc uploading">' +
+            '<span class="dragdrop-file text-icon">' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-document-text"></use>' +
+                '</svg>' +
+                '<span>PDF (3.7MB)</span>' +
+            '</span>' +
+            '<div class="dragdrop-title">Nome del file in upload</div>' +
+        '</span>' +
+        '<div class="dragdrop-info">' +
+            '<div class="loading">Caricamento in corso...</div>' +
+            '<div class="success">Caricamento con successo</div>' +
+            '<div class="error">Caricamento non riuscito</div>' +
+        '</div>' +
+        '<div class="dragdrop-btn loading">' +
+            '<button type="button" class="btn btn-sm btn-primary">' +
+                '<span>Interrompi</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                '</svg>' +
+            '</button>' +
+        '</div>' +
+        '<div class="dragdrop-btn success">' +
+            '<button type="button" class="btn btn-sm btn-success">' +
+                '<span>Caricamento completato</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-password-visible"></use>' +
+                '</svg>' +
+            '</button>' +
+        '</div>' +
+        '<div class="dragdrop-btn error">' +
+            '<button type="button" class="btn btn-sm btn-outline-danger">' +
+                '<span>Elimina</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                '</svg>' +
+            '</button>' +
+            '<button type="button" class="btn btn-sm btn-danger">' +
+                '<span>Carica nuovamente</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-refresh"></use>' +
+                '</svg>' +
+            '</button>' +
+        '</div>' +
+    '</div>' +
+'</div>',
         },
         Type3: {
           default:
@@ -1233,7 +1240,91 @@
             "</div>" +
             "</div>" +
             "</div>" +
-            "</div>",
+            "</div>"+ '<div class="form-dragdrop error">' +
+    '<div class="dragdrop-icon">' +
+        '<div class="default">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="disabled">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-disabled.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="over">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-over.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="active">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-active.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="loading">' +
+            '<div class="loader-pecent">73%</div>' +
+            '<svg viewBox="0 0 90 90">' +
+                '<path class="loader-bg" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
+                '<path class="loader-circle" stroke-dasharray="160, 220" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
+            '</svg>' +
+        '</div>' +
+        '<div class="success">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-success.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="error">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-failed.svg" aria-hidden="true">' +
+        '</div>' +
+    '</div>' +
+    '<div class="dragdrop-text">' +
+        '<input type="file" name="uploadFile1" id="uploadFile1">' +
+        '<div class="dragdrop-title default">' +
+            '<span class="mobile-hidden">' +
+                '<strong>Trascina</strong> qui il file o ' +
+                '<label for="uploadFile1">seleziona il file</label>' +
+            '</span>' +
+            '<span class="mobile-show">' +
+                '<label for="uploadFile1">Clicca qui per caricare il file</label>' +
+            '</span>' +
+        '</div>' +
+        '<span class="dragdrop-desc uploading">' +
+            '<span class="dragdrop-file text-icon">' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-document-text"></use>' +
+                '</svg>' +
+                '<span>PDF (3.7MB)</span>' +
+            '</span>' +
+            '<div class="dragdrop-title">Nome del file in upload</div>' +
+        '</span>' +
+        '<div class="dragdrop-info">' +
+            '<div class="loading">Caricamento in corso...</div>' +
+            '<div class="success">Caricamento con successo</div>' +
+            '<div class="error">Caricamento non riuscito</div>' +
+        '</div>' +
+        '<div class="dragdrop-btn loading">' +
+            '<button type="button" class="btn btn-sm btn-primary">' +
+                '<span>Interrompi</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                '</svg>' +
+            '</button>' +
+        '</div>' +
+        '<div class="dragdrop-btn success">' +
+            '<button type="button" class="btn btn-sm btn-success">' +
+                '<span>Caricamento completato</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-password-visible"></use>' +
+                '</svg>' +
+            '</button>' +
+        '</div>' +
+        '<div class="dragdrop-btn error">' +
+            '<button type="button" class="btn btn-sm btn-outline-danger">' +
+                '<span>Elimina</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                '</svg>' +
+            '</button>' +
+            '<button type="button" class="btn btn-sm btn-danger">' +
+                '<span>Carica nuovamente</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-refresh"></use>' +
+                '</svg>' +
+            '</button>' +
+        '</div>' +
+    '</div>' +
+'</div>',
         },
         Type4: {
           default:
@@ -1320,96 +1411,92 @@
             "</div>" +
             "</div>" +
             "</div>" +
-            "</div>",
-        },
-        Type5: {
-          default:
-            '<div class="row">' +
-            '<div class="col-auto pt-3">' +
-            "<!-- File -->" +
-            '<div class="form-group form-file has-feedback disabled">' +
-            '<div class="file-label text-icon" id="uploadFile4Label">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-document-text"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Seleziona uno o più documenti da caricare" +
-            "</span>" +
-            "</div>" +
-            '<div class="file-list complete show">' +
-            '<div class="list-title">' +
-            "Documenti caricati" +
-            "</div>" +
-            '<div class="file-item">' +
-            '<div class="file-desc">' +
-            '<div class="file-title">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Nome-file.pdf (3.5 mb)" +
-            "</span>" +
-            "</div>" +
-            '<div class="file-btn">' +
-            '<button type="button" class="btn-close btn-view disabled">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-password-visible"></use>' +
-            "</svg>" +
-            "</button>" +
-            '<button type="button" class="btn-close btn-delete disabled">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-delete"></use>' +
-            "</svg>" +
-            "</button>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="file-list loading show">' +
-            '<div class="list-title">' +
-            "Documenti in fase di caricamento..." +
-            "</div>" +
-            '<div class="file-item">' +
-            '<div class="file-desc">' +
-            '<div class="file-title">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite.svg#it-document-text"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Nome-file.pdf (3.5 mb)" +
-            "</span>" +
-            "</div>" +
-            '<div class="file-btn">' +
-            '<button type="button" class="btn-close btn-stop">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
-            "</svg>" +
-            "</button>" +
-            "</div>" +
-            "</div>" +
-            '<div class="progress-wrapper">' +
-            '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">' +
-            '<div class="progress-bar" style="width: 25%"></div>' +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="file-upload">' +
-            '<input type="file" name="uploadFile4" id="uploadFile4" aria-labelledby="uploadFile4Label" disabled>' +
-            '<label for="uploadFile4" class="btn btn-sm btn-primary disabled">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-upload"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Carica altri documenti" +
-            "</span>" +
-            "</label>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>",
-        },
-      };
+            "</div>" + '<div class="form-dragdrop disabled">' +
+    '<div class="dragdrop-icon">' +
+        '<div class="default">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="disabled">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-disabled.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="over">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-over.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="active">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-active.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="loading">' +
+            '<div class="loader-pecent">73%</div>' +
+            '<svg viewBox="0 0 90 90">' +
+                '<path class="loader-bg" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
+                '<path class="loader-circle" stroke-dasharray="160, 220" d="M45 10 a 35 35 0 0 1 0 70 a 35 35 0 0 1 0 -70"></path>' +
+            '</svg>' +
+        '</div>' +
+        '<div class="success">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-success.svg" aria-hidden="true">' +
+        '</div>' +
+        '<div class="error">' +
+            '<img class="img-fluid" src="/proto/mit/mit-v7.0.0/imgs/icon/upload/drag-drop-icon-failed.svg" aria-hidden="true">' +
+        '</div>' +
+    '</div>' +
+    '<div class="dragdrop-text">' +
+        '<input type="file" name="uploadFile1" id="uploadFile1">' +
+        '<div class="dragdrop-title default">' +
+            '<span class="mobile-hidden">' +
+                '<strong>Trascina</strong> qui il file o ' +
+                '<label for="uploadFile1">seleziona il file</label>' +
+            '</span>' +
+            '<span class="mobile-show">' +
+                '<label for="uploadFile1">Clicca qui per caricare il file</label>' +
+            '</span>' +
+        '</div>' +
+        '<span class="dragdrop-desc uploading">' +
+            '<span class="dragdrop-file text-icon">' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-document-text"></use>' +
+                '</svg>' +
+                '<span>PDF (3.7MB)</span>' +
+            '</span>' +
+            '<div class="dragdrop-title">Nome del file in upload</div>' +
+        '</span>' +
+        '<div class="dragdrop-info">' +
+            '<div class="loading">Caricamento in corso...</div>' +
+            '<div class="success">Caricamento con successo</div>' +
+            '<div class="error">Caricamento non riuscito</div>' +
+        '</div>' +
+        '<div class="dragdrop-btn loading">' +
+            '<button type="button" class="btn btn-sm btn-primary disabled" disabled="disabled">' +
+                '<span>Interrompi</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                '</svg>' +
+            '</button>' +
+        '</div>' +
+        '<div class="dragdrop-btn success">' +
+            '<button type="button" class="btn btn-sm btn-success disabled" disabled="disabled">' +
+                '<span>Caricamento completato</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-password-visible"></use>' +
+                '</svg>' +
+            '</button>' +
+        '</div>' +
+        '<div class="dragdrop-btn error">' +
+            '<button type="button" class="btn btn-sm btn-outline-danger disabled" disabled="disabled">' +
+                '<span>Elimina</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                '</svg>' +
+            '</button>' +
+            '<button type="button" class="btn btn-sm btn-danger disabled" disabled="disabled">' +
+                '<span>Carica nuovamente</span>' +
+                '<svg class="icon icon-xs">' +
+                    '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-refresh"></use>' +
+                '</svg>' +
+            '</button>' +
+        '</div>' +
+    '</div>' +
+'</div>'
+        }};
 
       const typeSelector = document.getElementById("typeSelector");
       const contentDiv = document.getElementById("content");
