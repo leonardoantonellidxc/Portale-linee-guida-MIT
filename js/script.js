@@ -237,3 +237,15 @@ document.getElementById("vaiRisorsaAngular").addEventListener("click", function(
   document.getElementById("downloadLink").click();
 });
 
+// Ottieni tutte le chip
+const chips = document.querySelectorAll('.chip');
+
+// Aggiungi l'evento click a ciascuna chip
+chips.forEach(chip => {
+  chip.addEventListener('click', function() {
+    // Rimuovi la classe active da tutte le chip
+    chips.forEach(c => c.classList.remove('active'));
+    // Aggiungi la classe active solo alla chip cliccata
+    this.classList.add('active');
+  });
+});

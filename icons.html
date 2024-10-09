@@ -26,6 +26,43 @@
   </head>
 
   <body>
+    <style>
+      .example-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .example-wrapper {
+        flex: 0 1 16.66666%;
+        padding: 8px;
+      }
+      .example-icon {
+        padding: 16px 8px;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .example-icon .example-set {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 16px;
+        border-radius: 8px;
+        border: 2px dashed var(--bs-primary);
+        margin: 0 auto;
+      }
+      .example-icon .example-set .icon {
+        margin: 0 8px;
+      }
+      .example-icon .example-label {
+        padding: 8px 0 0 0;
+      }
+      .icons-help .example-svg {
+        position: absolute;
+        left: -100000px;
+        opacity: 0;
+      }
+    </style>
     <header class="header bg-white pt-2 px-4 pt-lg-5 px-lg-9 sticky-top">
       <div class="header-middle d-flex pb-lg-5">
         <div class="nav-left">
@@ -58,7 +95,7 @@
 
         <div class="nav-right">
           <!-- Search Wrapper -->
-        <div class="search-wrapper pe-0">
+          <div class="search-wrapper pe-0">
             <!-- Desktop -->
             <div class="form-group">
               <div class="input-group">
@@ -147,7 +184,7 @@
       </div>
     </header>
 
-   <main class="container-fluid ">
+    <main class="container-fluid">
       <div class="row px-lg-9">
         <aside class="sidebar-menu col-12 col-lg-3">
           <div class="sidebar-wrapper my-6">
@@ -168,7 +205,7 @@
               <div class="sidebar-scroll">
                 <ul class="sidebar-list">
                   <li>
-                    <a class="list-link " href="design-system.html">
+                    <a class="list-link" href="design-system.html">
                       <div class="list-item">
                         <span> Welcome </span>
                       </div>
@@ -195,7 +232,7 @@
                         </svg>
                       </div>
                     </a>
-                    <ul class="sidebar-list collapse " id="collapse1">
+                    <ul class="sidebar-list collapse" id="collapse1">
                       <li>
                         <a class="list-link" href="index-components.html">
                           <div class="list-item">
@@ -210,7 +247,6 @@
                           </div>
                         </a>
                       </li>
-                    
                     </ul>
                   </li>
                   <li class="list-dropdown">
@@ -236,21 +272,21 @@
                     </a>
                     <ul class="sidebar-list collapse" id="collapse">
                       <li>
-                        <a class="list-link " href="border-radius.html">
+                        <a class="list-link" href="border-radius.html">
                           <div class="list-item">
                             <span> Border radius </span>
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a class="list-link " href="color-system.html">
+                        <a class="list-link" href="color-system.html">
                           <div class="list-item">
                             <span> Color system </span>
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a class="list-link " href="grid.html">
+                        <a class="list-link" href="grid.html">
                           <div class="list-item">
                             <span> Grid </span>
                           </div>
@@ -309,28 +345,28 @@
                     </a>
                     <ul class="sidebar-list collapse" id="collapse2">
                       <li>
-                        <a class="list-link " href="accordion.html">
+                        <a class="list-link" href="accordion.html">
                           <div class="list-item">
                             <span> Accordion </span>
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a class="list-link " href="alert.html">
+                        <a class="list-link" href="alert.html">
                           <div class="list-item">
                             <span> Alert </span>
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a class="list-link " href="avatar.html">
+                        <a class="list-link" href="avatar.html">
                           <div class="list-item">
                             <span> Avatar </span>
                           </div>
                         </a>
                       </li>
                       <li>
-                        <a class="list-link " href="badge.html">
+                        <a class="list-link" href="badge.html">
                           <div class="list-item">
                             <span> Badge </span>
                           </div>
@@ -377,13 +413,14 @@
                             <span> Checkbox </span>
                           </div>
                         </a>
-                      </li>  <li>
+                      </li>
+                      <li>
                         <a class="list-link" href="chips.html">
                           <div class="list-item">
                             <span> Chips </span>
                           </div>
                         </a>
-                      </li> 
+                      </li>
                       <li>
                         <a class="list-link" href=".html">
                           <div class="list-item">
@@ -391,7 +428,7 @@
                           </div>
                         </a>
                       </li>
-                     <li>
+                      <li>
                         <a class="list-link" href="datepicker.html">
                           <div class="list-item">
                             <span> Data picker </span>
@@ -553,7 +590,6 @@
                         </a>
                       </li>
                     </ul>
-                    
                   </li>
                   <li class="list-dropdown">
                     <a
@@ -576,36 +612,36 @@
                         </svg>
                       </div>
                     </a>
-                     <ul class="sidebar-list collapse" id="collapse4">
-                    <li>
-                      <a class="list-link" href="header.html">
-                        <div class="list-item">
-                          <span> Header</span>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="list-link" href="herobanner.html">
-                        <div class="list-item">
-                          <span> Hero banner </span>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="list-link" href="footer.html">
-                        <div class="list-item">
-                          <span> Footer </span>
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="list-link" href="sidebar.html">
-                        <div class="list-item">
-                          <span> Sidebar navigation </span>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
+                    <ul class="sidebar-list collapse" id="collapse4">
+                      <li>
+                        <a class="list-link" href="header.html">
+                          <div class="list-item">
+                            <span> Header</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="herobanner.html">
+                          <div class="list-item">
+                            <span> Hero banner </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="footer.html">
+                          <div class="list-item">
+                            <span> Footer </span>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="list-link" href="sidebar.html">
+                          <div class="list-item">
+                            <span> Sidebar navigation </span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </div>
@@ -670,11 +706,22 @@
               <p>16px</p>
             </div>
             <div class="col-auto text-center">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0.5" y="0.5" width="17" height="17" stroke="#A259FF"/>
-                <path d="M15.7128 10.9125L10.9203 15.705C9.87031 16.755 8.14532 16.755 7.08782 15.705L2.29531 10.9125C1.24531 9.8625 1.24531 8.13751 2.29531 7.08001L7.08782 2.2875C8.13782 1.2375 9.86281 1.2375 10.9203 2.2875L15.7128 7.08001C16.7628 8.13751 16.7628 9.8625 15.7128 10.9125Z" stroke="#003366" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect x="0.5" y="0.5" width="17" height="17" stroke="#A259FF" />
+                <path
+                  d="M15.7128 10.9125L10.9203 15.705C9.87031 16.755 8.14532 16.755 7.08782 15.705L2.29531 10.9125C1.24531 9.8625 1.24531 8.13751 2.29531 7.08001L7.08782 2.2875C8.13782 1.2375 9.86281 1.2375 10.9203 2.2875L15.7128 7.08001C16.7628 8.13751 16.7628 9.8625 15.7128 10.9125Z"
+                  stroke="#003366"
+                  stroke-width="1.125"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
 
               <p>18px</p>
             </div>
@@ -1872,7 +1919,7 @@
                 </button>
               </div>
               <div>
-                <div
+             <div
                   class="list-table table-responsive table-sm table-even my-4"
                 >
                   <object
@@ -1894,144 +1941,57 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr class="example-list">
-                        <!-- <td class="colf-form colf-check" data-label="Icona">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-collapse"
-                            ></use>
-                          </svg>
-                          <svg class="icon icon-sm">
-                            <use href="/imgs/icon/sprite.svg#it-collapse"></use>
-                          </svg>
-                        </td>
-
-                        <td data-label="Nome">
-                          <div>Arrow-up</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Icona">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-chevron-right"
-                            ></use>
-                          </svg>
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite.svg#it-chevron-right"
-                            ></use>
-                          </svg>
-                        </td>
-
-                        <td data-label="Nome">
-                          <div>Arrow-left</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Icona">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-chevron-right"
-                            ></use>
-                          </svg>
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite.svg#it-chevron-right"
-                            ></use>
-                          </svg>
-                        </td>
-
-                        <td data-label="Nome">
-                          <div>Arrow-right</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Icona">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-expand"
-                            ></use>
-                          </svg>
-                          <svg class="icon icon-sm">
-                            <use href="/imgs/icon/sprite.svg#it-expand"></use>
-                          </svg>
-                        </td>
-
-                        <td data-label="Nome">
-                          <div>Arrow-down</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Icona">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-maximize"
-                            ></use>
-                          </svg>
-                          <svg class="icon icon-sm">
-                            <use href="/imgs/icon/sprite.svg#it-maximize"></use>
-                          </svg>
-                        </td>
-
-                        <td data-label="Nome">
-                          <div>Maximize</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Icona">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-import"
-                            ></use>
-                          </svg>
-                          <svg class="icon icon-sm">
-                            <use href="/imgs/icon/sprite.svg#it-import"></use>
-                          </svg>
-                        </td>
-
-                        <td data-label="Nome">
-                          <div>Arrow-left</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Icona">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-chevron-right"
-                            ></use>
-                          </svg>
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite.svg#it-chevron-right"
-                            ></use>
-                          </svg>
-                        </td>
-
-                        <td data-label="Nome">
-                          <div>Arrow-right</div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="colf-form colf-check" data-label="Icona">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-expand"
-                            ></use>
-                          </svg>
-                          <svg class="icon icon-sm">
-                            <use href="/imgs/icon/sprite.svg#it-expand"></use>
-                          </svg>
-                        </td>
-
-                        <td data-label="Nome">
-                          <div>Arrow-down</div>
-                        </td>
-                         -->
-                      </tr>
+                      
                     </tbody>
                   </table>
+                  
                 </div>
+              </div>
+            </div>
+
+            <div class="pt-3 pt-lg-7">
+              
+              <div class="icons-help">
+						
+                <div class="example-list"> <div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-password-invisible"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-password-invisible"></use></svg></div><div class="example-label">it-password-invisible</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-comment"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-comment"></use></svg></div><div class="example-label">it-comment</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-ban"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-ban"></use></svg></div><div class="example-label">it-ban</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-burger"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-burger"></use></svg></div><div class="example-label">it-burger</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-auto-brightness"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-auto-brightness"></use></svg></div><div class="example-label">it-auto-brightness</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-down"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-down"></use></svg></div><div class="example-label">it-arrow-down</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-help-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-help-circle"></use></svg></div><div class="example-label">it-help-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clip"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-clip"></use></svg></div><div class="example-label">it-clip</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#checkbox"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#checkbox"></use></svg></div><div class="example-label">checkbox</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-activity"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-activity"></use></svg></div><div class="example-label">it-activity</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-battery"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-battery"></use></svg></div><div class="example-label">it-battery</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-figma"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-figma"></use></svg></div><div class="example-label">it-figma</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-discover"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-discover"></use></svg></div><div class="example-label">it-discover</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-comment-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-comment-2"></use></svg></div><div class="example-label">it-comment-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-bookmark-success"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-bookmark-success"></use></svg></div><div class="example-label">it-bookmark-success</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-calendar-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-calendar-2"></use></svg></div><div class="example-label">it-calendar-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clipboard"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-clipboard"></use></svg></div><div class="example-label">it-clipboard</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-down-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-down-circle"></use></svg></div><div class="example-label">it-arrow-down-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-backward-10-sec"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-backward-10-sec"></use></svg></div><div class="example-label">it-backward-10-sec</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#checkbox-check"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#checkbox-check"></use></svg></div><div class="example-label">checkbox-check</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-bag"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-bag"></use></svg></div><div class="example-label">it-bag</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-check"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-check"></use></svg></div><div class="example-label">it-check</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-battery-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-battery-2"></use></svg></div><div class="example-label">it-battery-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-illustrator"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-illustrator"></use></svg></div><div class="example-label">it-illustrator</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-gps"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-gps"></use></svg></div><div class="example-label">it-gps</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-password-visible"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-password-visible"></use></svg></div><div class="example-label">it-password-visible</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-shield"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-shield"></use></svg></div><div class="example-label">it-shield</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-direct-down"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-direct-down"></use></svg></div><div class="example-label">it-direct-down</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-calendar-3"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-calendar-3"></use></svg></div><div class="example-label">it-calendar-3</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clipboard-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-clipboard-2"></use></svg></div><div class="example-label">it-clipboard-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-down-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-down-square"></use></svg></div><div class="example-label">it-arrow-down-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-check-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-check-square"></use></svg></div><div class="example-label">it-check-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-backward-15-sec"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-backward-15-sec"></use></svg></div><div class="example-label">it-backward-15-sec</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-check-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use></svg></div><div class="example-label">it-check-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#checkbox-check-disabled"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#checkbox-check-disabled"></use></svg></div><div class="example-label">checkbox-check-disabled</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-card"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-card"></use></svg></div><div class="example-label">it-card</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-battery-3"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-battery-3"></use></svg></div><div class="example-label">it-battery-3</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-instagram"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-instagram"></use></svg></div><div class="example-label">it-instagram</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-gps-slash"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-gps-slash"></use></svg></div><div class="example-label">it-gps-slash</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-shield-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-shield-2"></use></svg></div><div class="example-label">it-shield-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-direct-left"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-direct-left"></use></svg></div><div class="example-label">it-direct-left</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-calendar-edit"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-calendar-edit"></use></svg></div><div class="example-label">it-calendar-edit</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clipboard-3"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-clipboard-3"></use></svg></div><div class="example-label">it-clipboard-3</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-fork"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-fork"></use></svg></div><div class="example-label">it-arrow-fork</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#checkbox-check-hover"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#checkbox-check-hover"></use></svg></div><div class="example-label">checkbox-check-hover</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-backward-5-sec"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-backward-5-sec"></use></svg></div><div class="example-label">it-backward-5-sec</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-close"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-close"></use></svg></div><div class="example-label">it-close</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-error-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use></svg></div><div class="example-label">it-error-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-data"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-data"></use></svg></div><div class="example-label">it-data</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-battery-4"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-battery-4"></use></svg></div><div class="example-label">it-battery-4</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-snapchat"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-snapchat"></use></svg></div><div class="example-label">it-snapchat</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-map"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-map"></use></svg></div><div class="example-label">it-map</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-shield-cross"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-shield-cross"></use></svg></div><div class="example-label">it-shield-cross</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-direct-up"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-direct-up"></use></svg></div><div class="example-label">it-direct-up</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-category"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-category"></use></svg></div><div class="example-label">it-category</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clipboard-remove"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-clipboard-remove"></use></svg></div><div class="example-label">it-clipboard-remove</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-fork-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-fork-square"></use></svg></div><div class="example-label">it-arrow-fork-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-help-message"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-help-message"></use></svg></div><div class="example-label">it-help-message</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-chart"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-chart"></use></svg></div><div class="example-label">it-chart</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-close-big"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-close-big"></use></svg></div><div class="example-label">it-close-big</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#checkbox-check-invalid"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#checkbox-check-invalid"></use></svg></div><div class="example-label">checkbox-check-invalid</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-health"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-health"></use></svg></div><div class="example-label">it-health</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-wifi"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-wifi"></use></svg></div><div class="example-label">it-wifi</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-whatsapp"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-whatsapp"></use></svg></div><div class="example-label">it-whatsapp</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-map-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-map-2"></use></svg></div><div class="example-label">it-map-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-inbox"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-inbox"></use></svg></div><div class="example-label">it-inbox</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clipboard-success"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-clipboard-success"></use></svg></div><div class="example-label">it-clipboard-success</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-horizontal"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-horizontal"></use></svg></div><div class="example-label">it-arrow-horizontal</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-close-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use></svg></div><div class="example-label">it-close-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-chart-line"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-chart-line"></use></svg></div><div class="example-label">it-chart-line</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-info-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use></svg></div><div class="example-label">it-info-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#checkbox-disabled"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#checkbox-disabled"></use></svg></div><div class="example-label">checkbox-disabled</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-judge"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-judge"></use></svg></div><div class="example-label">it-judge</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-document-text"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-document-text"></use></svg></div><div class="example-label">it-document-text</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-wifi-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-wifi-square"></use></svg></div><div class="example-label">it-wifi-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-youtube"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-youtube"></use></svg></div><div class="example-label">it-youtube</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-map-marker"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-map-marker"></use></svg></div><div class="example-label">it-map-marker</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-inbox-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-inbox-2"></use></svg></div><div class="example-label">it-inbox-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-close-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-close-square"></use></svg></div><div class="example-label">it-close-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clip-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-clip-2"></use></svg></div><div class="example-label">it-clip-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-verify"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-verify"></use></svg></div><div class="example-label">it-verify</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#checkbox-hover"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#checkbox-hover"></use></svg></div><div class="example-label">checkbox-hover</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-example"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-example"></use></svg></div><div class="example-label">it-example</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-chart-line-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-chart-line-2"></use></svg></div><div class="example-label">it-chart-line-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-left"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-left"></use></svg></div><div class="example-label">it-arrow-left</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-lamp-on"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-lamp-on"></use></svg></div><div class="example-label">it-lamp-on</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-windows"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-windows"></use></svg></div><div class="example-label">it-windows</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-copyright"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-copyright"></use></svg></div><div class="example-label">it-copyright</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-map-marker-cross"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-map-marker-cross"></use></svg></div><div class="example-label">it-map-marker-cross</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-inbox-3"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-inbox-3"></use></svg></div><div class="example-label">it-inbox-3</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-copy-success"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-copy-success"></use></svg></div><div class="example-label">it-copy-success</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clip-3"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-clip-3"></use></svg></div><div class="example-label">it-clip-3</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-left-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-left-circle"></use></svg></div><div class="example-label">it-arrow-left-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-forward-10-sec"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-forward-10-sec"></use></svg></div><div class="example-label">it-forward-10-sec</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-warning"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-warning"></use></svg></div><div class="example-label">it-warning</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#checkbox-invalid"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#checkbox-invalid"></use></svg></div><div class="example-label">checkbox-invalid</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-pet"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-pet"></use></svg></div><div class="example-label">it-pet</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-creative-comm"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-creative-comm"></use></svg></div><div class="example-label">it-creative-comm</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-map-marker-minus"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-map-marker-minus"></use></svg></div><div class="example-label">it-map-marker-minus</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-mail"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-mail"></use></svg></div><div class="example-label">it-mail</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-funnel"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-funnel"></use></svg></div><div class="example-label">it-funnel</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-cloud-ban"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-cloud-ban"></use></svg></div><div class="example-label">it-cloud-ban</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-left-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-left-square"></use></svg></div><div class="example-label">it-arrow-left-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-forward-15-sec"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-forward-15-sec"></use></svg></div><div class="example-label">it-forward-15-sec</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-delete"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-delete"></use></svg></div><div class="example-label">it-delete</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#checkbox-minus"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#checkbox-minus"></use></svg></div><div class="example-label">checkbox-minus</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-warning-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-warning-2"></use></svg></div><div class="example-label">it-warning-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-radar"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-radar"></use></svg></div><div class="example-label">it-radar</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-facebook-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-facebook-square"></use></svg></div><div class="example-label">it-facebook-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-map-marker-plus"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-map-marker-plus"></use></svg></div><div class="example-label">it-map-marker-plus</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-mail-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-mail-2"></use></svg></div><div class="example-label">it-mail-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-delete-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-delete-square"></use></svg></div><div class="example-label">it-delete-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-funnel-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-funnel-2"></use></svg></div><div class="example-label">it-funnel-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-cloud-plus"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-cloud-plus"></use></svg></div><div class="example-label">it-cloud-plus</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-forward-5-sec"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-forward-5-sec"></use></svg></div><div class="example-label">it-forward-5-sec</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-right"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-right"></use></svg></div><div class="example-label">it-arrow-right</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#checkbox-minus-disabled"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#checkbox-minus-disabled"></use></svg></div><div class="example-label">checkbox-minus-disabled</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-radar-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-radar-2"></use></svg></div><div class="example-label">it-radar-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-map-marker-slash"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-map-marker-slash"></use></svg></div><div class="example-label">it-map-marker-slash</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-telephone"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-telephone"></use></svg></div><div class="example-label">it-telephone</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-dislike"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-dislike"></use></svg></div><div class="example-label">it-dislike</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-funnel-3"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-funnel-3"></use></svg></div><div class="example-label">it-funnel-3</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-cloud-tick"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-cloud-tick"></use></svg></div><div class="example-label">it-cloud-tick</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-right-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-right-circle"></use></svg></div><div class="example-label">it-arrow-right-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#checkbox-minus-hover"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#checkbox-minus-hover"></use></svg></div><div class="example-label">checkbox-minus-hover</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-graph"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-graph"></use></svg></div><div class="example-label">it-graph</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-shop"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-shop"></use></svg></div><div class="example-label">it-shop</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-map-marker-success"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-map-marker-success"></use></svg></div><div class="example-label">it-map-marker-success</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-telephone-slash"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-telephone-slash"></use></svg></div><div class="example-label">it-telephone-slash</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-home"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-home"></use></svg></div><div class="example-label">it-home</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-cloud-warning"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-cloud-warning"></use></svg></div><div class="example-label">it-cloud-warning</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-right-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-right-square"></use></svg></div><div class="example-label">it-arrow-right-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-horn"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-horn"></use></svg></div><div class="example-label">it-horn</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-calendar"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-calendar"></use></svg></div><div class="example-label">it-calendar</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-shopping-cart"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-shopping-cart"></use></svg></div><div class="example-label">it-shopping-cart</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-route-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-route-square"></use></svg></div><div class="example-label">it-route-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-link"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-link"></use></svg></div><div class="example-label">it-link</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-download"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-download"></use></svg></div><div class="example-label">it-download</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-swap-horizontal"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-swap-horizontal"></use></svg></div><div class="example-label">it-arrow-swap-horizontal</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-horn-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-horn-2"></use></svg></div><div class="example-label">it-horn-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-eraser"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-eraser"></use></svg></div><div class="example-label">it-eraser</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clock"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-clock"></use></svg></div><div class="example-label">it-clock</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-signpost"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-signpost"></use></svg></div><div class="example-label">it-signpost</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-routing"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-routing"></use></svg></div><div class="example-label">it-routing</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-locked"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-locked"></use></svg></div><div class="example-label">it-locked</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-filter"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-filter"></use></svg></div><div class="example-label">it-filter</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-download-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-download-2"></use></svg></div><div class="example-label">it-download-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-horn-3"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-horn-3"></use></svg></div><div class="example-label">it-horn-3</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-swap-vertical"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-swap-vertical"></use></svg></div><div class="example-label">it-arrow-swap-vertical</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#radio"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#radio"></use></svg></div><div class="example-label">radio</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-tag"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-tag"></use></svg></div><div class="example-label">it-tag</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-routing-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-routing-2"></use></svg></div><div class="example-label">it-routing-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-flag"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-flag"></use></svg></div><div class="example-label">it-flag</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-swap-vertical-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-swap-vertical-square"></use></svg></div><div class="example-label">it-arrow-swap-vertical-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-horn-4"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-horn-4"></use></svg></div><div class="example-label">it-horn-4</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-lock-slash"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-lock-slash"></use></svg></div><div class="example-label">it-lock-slash</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-download-doc"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-download-doc"></use></svg></div><div class="example-label">it-download-doc</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#radio-check"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#radio-check"></use></svg></div><div class="example-label">radio-check</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-task"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-task"></use></svg></div><div class="example-label">it-task</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-flag-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-flag-2"></use></svg></div><div class="example-label">it-flag-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-external-link"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-external-link"></use></svg></div><div class="example-label">it-external-link</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-horn-5"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-horn-5"></use></svg></div><div class="example-label">it-horn-5</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-up"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-up"></use></svg></div><div class="example-label">it-arrow-up</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-logout"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-logout"></use></svg></div><div class="example-label">it-logout</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#radio-check-disabled"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#radio-check-disabled"></use></svg></div><div class="example-label">radio-check-disabled</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-task-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-task-square"></use></svg></div><div class="example-label">it-task-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-global-edit"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-global-edit"></use></svg></div><div class="example-label">it-global-edit</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-notification"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-notification"></use></svg></div><div class="example-label">it-notification</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-file"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-file"></use></svg></div><div class="example-label">it-file</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-up-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-up-circle"></use></svg></div><div class="example-label">it-arrow-up-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-horn-6"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-horn-6"></use></svg></div><div class="example-label">it-horn-6</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#radio-check-hover"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#radio-check-hover"></use></svg></div><div class="example-label">radio-check-hover</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-tree"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-tree"></use></svg></div><div class="example-label">it-tree</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-global-refresh"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-global-refresh"></use></svg></div><div class="example-label">it-global-refresh</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-notification-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-notification-2"></use></svg></div><div class="example-label">it-notification-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-file-pdf"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-file-pdf"></use></svg></div><div class="example-label">it-file-pdf</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-up-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-up-square"></use></svg></div><div class="example-label">it-arrow-up-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-microphone"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-microphone"></use></svg></div><div class="example-label">it-microphone</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#radio-check-invalid"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#radio-check-invalid"></use></svg></div><div class="example-label">radio-check-invalid</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-global-search"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-global-search"></use></svg></div><div class="example-label">it-global-search</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-notification-3"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-notification-3"></use></svg></div><div class="example-label">it-notification-3</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-file-upload"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-file-upload"></use></svg></div><div class="example-label">it-file-upload</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-arrow-vertical"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-arrow-vertical"></use></svg></div><div class="example-label">it-arrow-vertical</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-microphone-slash"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-microphone-slash"></use></svg></div><div class="example-label">it-microphone-slash</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#radio-disabled"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#radio-disabled"></use></svg></div><div class="example-label">radio-disabled</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-heart"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-heart"></use></svg></div><div class="example-label">it-heart</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-settings"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-settings"></use></svg></div><div class="example-label">it-settings</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-folder"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-folder"></use></svg></div><div class="example-label">it-folder</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-chevron-left"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-chevron-left"></use></svg></div><div class="example-label">it-chevron-left</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-picture-frame"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-picture-frame"></use></svg></div><div class="example-label">it-picture-frame</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#radio-hover"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#radio-hover"></use></svg></div><div class="example-label">radio-hover</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-like"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-like"></use></svg></div><div class="example-label">it-like</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-slash"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-slash"></use></svg></div><div class="example-label">it-slash</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-folder-add"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-folder-add"></use></svg></div><div class="example-label">it-folder-add</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-chevron-right"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-chevron-right"></use></svg></div><div class="example-label">it-chevron-right</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-presention"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-presention"></use></svg></div><div class="example-label">it-presention</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#radio-invalid"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#radio-invalid"></use></svg></div><div class="example-label">radio-invalid</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-maximize"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-maximize"></use></svg></div><div class="example-label">it-maximize</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-tool"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-tool"></use></svg></div><div class="example-label">it-tool</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-folder-minus"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-folder-minus"></use></svg></div><div class="example-label">it-folder-minus</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-collapse"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-collapse"></use></svg></div><div class="example-label">it-collapse</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-sound"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-sound"></use></svg></div><div class="example-label">it-sound</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-maximize-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-maximize-square"></use></svg></div><div class="example-label">it-maximize-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-unlocked"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-unlocked"></use></svg></div><div class="example-label">it-unlocked</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-folder-remove"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-folder-remove"></use></svg></div><div class="example-label">it-folder-remove</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-double-arrow-left"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-double-arrow-left"></use></svg></div><div class="example-label">it-double-arrow-left</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-streamline"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-streamline"></use></svg></div><div class="example-label">it-streamline</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-gallery"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-gallery"></use></svg></div><div class="example-label">it-gallery</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-double-arrow-right"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-double-arrow-right"></use></svg></div><div class="example-label">it-double-arrow-right</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-video"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-video"></use></svg></div><div class="example-label">it-video</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-minus-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-minus-circle"></use></svg></div><div class="example-label">it-minus-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-user"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-user"></use></svg></div><div class="example-label">it-user</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-minus-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-minus-square"></use></svg></div><div class="example-label">it-minus-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-user-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-user-2"></use></svg></div><div class="example-label">it-user-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-gallery-add"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-gallery-add"></use></svg></div><div class="example-label">it-gallery-add</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-exchange"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-exchange"></use></svg></div><div class="example-label">it-exchange</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-video-slash"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-video-slash"></use></svg></div><div class="example-label">it-video-slash</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-more-actions"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-more-actions"></use></svg></div><div class="example-label">it-more-actions</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-user-3"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-user-3"></use></svg></div><div class="example-label">it-user-3</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-gallery-edit"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-gallery-edit"></use></svg></div><div class="example-label">it-gallery-edit</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-exchange-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-exchange-square"></use></svg></div><div class="example-label">it-exchange-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-video-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-video-square"></use></svg></div><div class="example-label">it-video-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-more-actions-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-more-actions-circle"></use></svg></div><div class="example-label">it-more-actions-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-user-4"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-user-4"></use></svg></div><div class="example-label">it-user-4</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-gallery-remove"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-gallery-remove"></use></svg></div><div class="example-label">it-gallery-remove</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-expand"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-expand"></use></svg></div><div class="example-label">it-expand</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-more-actions-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-more-actions-square"></use></svg></div><div class="example-label">it-more-actions-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-user-5"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-user-5"></use></svg></div><div class="example-label">it-user-5</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-gallery-slash"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-gallery-slash"></use></svg></div><div class="example-label">it-gallery-slash</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-redo"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-redo"></use></svg></div><div class="example-label">it-redo</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-user-6"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-user-6"></use></svg></div><div class="example-label">it-user-6</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-import"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-import"></use></svg></div><div class="example-label">it-import</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-redo-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-redo-square"></use></svg></div><div class="example-label">it-redo-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-pencil"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-pencil"></use></svg></div><div class="example-label">it-pencil</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-pencil-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-pencil-square"></use></svg></div><div class="example-label">it-pencil-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-user-7"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-user-7"></use></svg></div><div class="example-label">it-user-7</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-note"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-note"></use></svg></div><div class="example-label">it-note</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-refresh"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-refresh"></use></svg></div><div class="example-label">it-refresh</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-pin"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-pin"></use></svg></div><div class="example-label">it-pin</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-user-8"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-user-8"></use></svg></div><div class="example-label">it-user-8</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-note-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-note-2"></use></svg></div><div class="example-label">it-note-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-refresh-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-refresh-square"></use></svg></div><div class="example-label">it-refresh-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-plus"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-plus"></use></svg></div><div class="example-label">it-plus</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-user-add"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-user-add"></use></svg></div><div class="example-label">it-user-add</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-note-upload"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-note-upload"></use></svg></div><div class="example-label">it-note-upload</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-repeat"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-repeat"></use></svg></div><div class="example-label">it-repeat</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-user-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-user-circle"></use></svg></div><div class="example-label">it-user-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-received"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-received"></use></svg></div><div class="example-label">it-received</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-repeat-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-repeat-circle"></use></svg></div><div class="example-label">it-repeat-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-plus-circle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-plus-circle"></use></svg></div><div class="example-label">it-plus-circle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-plus-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-plus-square"></use></svg></div><div class="example-label">it-plus-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-user-edit"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-user-edit"></use></svg></div><div class="example-label">it-user-edit</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-receive-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-receive-square"></use></svg></div><div class="example-label">it-receive-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-restore"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-restore"></use></svg></div><div class="example-label">it-restore</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-rotate-left"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-rotate-left"></use></svg></div><div class="example-label">it-rotate-left</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-user-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-user-square"></use></svg></div><div class="example-label">it-user-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-receive-square-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-receive-square-2"></use></svg></div><div class="example-label">it-receive-square-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-restore-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-restore-square"></use></svg></div><div class="example-label">it-restore-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-rotate-right"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-rotate-right"></use></svg></div><div class="example-label">it-rotate-right</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-scan"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-scan"></use></svg></div><div class="example-label">it-scan</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-shuffle"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-shuffle"></use></svg></div><div class="example-label">it-shuffle</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-scanner"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-scanner"></use></svg></div><div class="example-label">it-scanner</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-undo"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-undo"></use></svg></div><div class="example-label">it-undo</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-search"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-search"></use></svg></div><div class="example-label">it-search</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-star-outline"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-star-outline"></use></svg></div><div class="example-label">it-star-outline</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-send"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-send"></use></svg></div><div class="example-label">it-send</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-undo-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-undo-square"></use></svg></div><div class="example-label">it-undo-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-star-slash"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-star-slash"></use></svg></div><div class="example-label">it-star-slash</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-send-square"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-send-square"></use></svg></div><div class="example-label">it-send-square</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-send-square-2"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-send-square-2"></use></svg></div><div class="example-label">it-send-square-2</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-upload"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-upload"></use></svg></div><div class="example-label">it-upload</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-upload-1"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-upload-1"></use></svg></div><div class="example-label">it-upload-1</div></div></div><div class="example-wrapper"><div class="example-icon"><div class="example-set"><svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-upload-doc"></use></svg><svg class="icon icon-sm"><use href="/imgs/icon/sprite_fill.svg#it-upload-doc"></use></svg></div><div class="example-label">it-upload-doc</div></div></div></div>
+              </div> 
+
+              <div class="icons-help">
+                <object
+                  type="image/svg+xml"
+                  class="example-svg"
+                  width="32px"
+                  height="32px"
+                ></object>
+                <div class="example-list"></div>
+              </div>
+            </div>
+
+            <div class="pt-3 pt-lg-7">
+              <div class="h5 fw-bold ">Esempi icone rounded</div>
+              <div class="img-help pt-4">
+                <img src="/extra/examples/icone-rounded.svg" />
+              </div>
+            </div>
+
+            <div class="pt-3 pt-lg-7">
+              <div class="h5 fw-bold ">Esempi bandiere</div>
+              <div class="img-help pt-4">
+                <img src="/extra/examples/bandiere.svg" />
+              </div>
+            </div>
+
+            <div class="pt-3 pt-lg-7">
+              <div class="h5 fw-bold ">Esempi pagamenti</div>
+              <div class="img-help pt-4">
+                <img src="/extra/examples/pagamenti.svg" />
+              </div>
+            </div>
+
+            <div class="pt-3 pt-lg-7">
+              <div class="h5 fw-bold ">Esempi upload</div>
+              <div class="img-help pt-4">
+                <img src="/extra/examples/upload.svg" />
               </div>
             </div>
           </div>
@@ -2246,29 +2206,29 @@
           <!-- paginazione-->
 
           <div
-        class="d-flex justify-content-between py-3 bg-lightblu my-8 rounded px-6"
-      >
-        <button
-          type="button"
-          onclick="window.location.href='grid.html'"
-          class="btn btn-bare btn-sm"
-        >
-          <svg class="icon">
-            <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
-          </svg>
-          <span>Grid</span>
-        </button>
-        <button
-          onclick="window.location.href='typography.html'"
-          type="button"
-          class="btn btn-bare btn-sm"
-        >
-          <span>Typography</span>
-          <svg class="icon">
-            <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
-          </svg>
-        </button>
-      </div>
+            class="d-flex justify-content-between py-3 bg-lightblu my-8 rounded px-6"
+          >
+            <button
+              type="button"
+              onclick="window.location.href='grid.html'"
+              class="btn btn-bare btn-sm"
+            >
+              <svg class="icon">
+                <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
+              </svg>
+              <span>Grid</span>
+            </button>
+            <button
+              onclick="window.location.href='typography.html'"
+              type="button"
+              class="btn btn-bare btn-sm"
+            >
+              <span>Typography</span>
+              <svg class="icon">
+                <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </main>
@@ -2375,36 +2335,34 @@
             </div>
         </div>
     </section>-->
-     	<footer>
-			<div class="footer-credits">
-				<div class="container">
+    <footer>
+      <div class="footer-credits">
+        <div class="container">
+          <div class="navbar-brand pe-4">
+            <svg class="icon icon-lg" aria-hidden="true">
+              <use href="/imgs/icon/ministero.svg#ministero"></use>
+            </svg>
+            <div class="body-lg text-w6 ps-3">
+              www.mit.gov.it - Ministero delle infrastrutture e dei trasporti.
+            </div>
+          </div>
 
-					<div class="navbar-brand pe-4">
-						<svg class="icon icon-lg" aria-hidden="true">
-							<use href="/imgs/icon/ministero.svg#ministero"></use>
-						</svg>	
-						<div class="body-lg text-w6 ps-3">
-							www.mit.gov.it  - Ministero delle infrastrutture e dei trasporti.
-						</div>
-					</div>
-
-					<div class="text-icon">
-						<svg class="icon icon-xs" aria-hidden="true">
-							<use href="/imgs/icon/sprite.svg#it-copyright"></use>
-						</svg>
-						<span>
-							Tutti i diritti riservati
-						</span>
-					</div>
-
-				</div>
-			</div>
-		</footer>
+          <div class="text-icon">
+            <svg class="icon icon-xs" aria-hidden="true">
+              <use href="/imgs/icon/sprite.svg#it-copyright"></use>
+            </svg>
+            <span> Tutti i diritti riservati </span>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Bootstrap 5.3 -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="js/script.js"></script>
+
     <script>
+      /////////////////////////////////////////////////////////////////////////////////////////////
       $(document).ready(() => {
         ///////////////////////////////
         const iconList = $(".example-list");
@@ -2428,21 +2386,6 @@
             const ID = $(item).attr("id");
             ///////////////////////////////
             const dom =
-              ' <td class="colf-form colf-check" data-label="Icona">' +
-              '<div class="example-wrapper">' +
-              '<div class="example-icon">' +
-              $D.spriteIco(ID, "sm") +
-              $D.spriteIco(ID, "sm", "fill") +
-              "</div>" +
-              +"</div>" +
-              "</td>" +
-              '<td data-label="Nome">' +
-              "<div>" +
-              ID +
-              "</div>" +
-              "</td>";
-
-            const dom =
               '<div class="example-wrapper">' +
               '<div class="example-icon">' +
               '<div class="example-set">' +
@@ -2461,6 +2404,7 @@
         };
         ///////////////////////////////
       });
+      /////////////////////////////////////////////////////////////////////////////////////////////
     </script>
   </body>
 </html>
