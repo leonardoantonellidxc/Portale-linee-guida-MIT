@@ -239,9 +239,13 @@ ul li{
 ol li {
   font-size: 18px;
 }
-#typeSelector{
-  @media screen {
-    
+
+
+@media only screen and (max-width: 480px) {
+  #typeSelector {
+    padding-top: 2px;
   }
-  padding-top:2px
+#sizeSelector{
+  padding-top: 2px;
+}
 }
