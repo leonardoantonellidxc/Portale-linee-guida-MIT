@@ -107,19 +107,18 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-.sticky-top-sidebar {
-
+.sticky-top{
+  z-index: 1030;
 }
 
 @media (min-width: 992px) {
   .sticky-top-sidebar {
     position: -webkit-sticky;
     position: sticky;
-    top: 5rem;
-    display: block !important;
-    height: 100vh;
-    padding:8px;
+    top: 221px;
+    max-height: calc(100vh - 6rem); /* Limita l'altezza massima alla finestra */
     overflow-y: auto;
+    padding:16px;
   }
 }
 
