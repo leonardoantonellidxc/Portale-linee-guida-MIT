@@ -95,9 +95,6 @@ p {
 @media (min-width: 992px) {
   .sidebar {
     display: block;
-    overflow-y: auto;
-    border-right: 1px solid #dee2e6;
-    border-bottom: none;
   }
 
   #sidebarToggle {
@@ -110,11 +107,20 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-.sidebar-sticky {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  /* Assicurati che l'elemento rimanga sopra gli altri contenuti */
+.sticky-top-sidebar {
+
+}
+
+@media (min-width: 992px) {
+  .sticky-top-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5rem;
+    display: block !important;
+    height: calc(100vh);
+    padding:8px;
+    overflow-y: auto;
+  }
 }
 
 .gradient {
@@ -265,18 +271,5 @@ ol li {
 
   #sizeSelector {
     padding-top: 2px;
-  }
-}
-
-.sticky-top-sidebar {
-
-}
-
-@media (min-width: 992px) {
-  .sticky-top-sidebar {
-    top: 32px;
-    height: calc(100vh);
-    overflow: auto;
-    padding:8px;
   }
 }
