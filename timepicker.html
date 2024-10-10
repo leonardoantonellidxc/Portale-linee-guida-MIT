@@ -789,83 +789,97 @@
         Type1: {
           default:
             '<div class="row">' +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="group-inline">' +
-            '<div class="form-group timepicker has-feedback">' +
-            '<label id="field1Label">Label field</label>' +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clock"></use></svg>' +
-            "</div>" +
-            '<select class="form-select roboto" name="field1" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field1Label">' +
-            '<option value="1">00 AM</option>' +
-            '<option value="2">10 AM</option>' +
-            '<option value="3">12 AM</option>' +
-            '<option value="4" selected>14 PM</option>' +
-            '<option value="5">16 AM</option>' +
-            "</select>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="group-inline">' +
-            '<div class="form-group timepicker has-feedback disabled">' +
-            '<label id="field2Label">Label field</label>' +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clock"></use></svg>' +
-            "</div>" +
-            '<select class="form-select roboto" name="field2" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field2Label" disabled>' +
-            '<option value="1">00 AM</option>' +
-            '<option value="2">10 AM</option>' +
-            '<option value="3">12 AM</option>' +
-            '<option value="4" selected>14 PM</option>' +
-            '<option value="5">16 AM</option>' +
-            "</select>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="group-inline">' +
-            '<div class="form-group timepicker has-feedback readonly">' +
-            '<label id="field3Label">Label field</label>' +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clock"></use></svg>' +
-            "</div>" +
-            '<select class="form-select roboto" name="field3" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field3Label" readonly>' +
-            '<option value="1">00 AM</option>' +
-            '<option value="2">10 AM</option>' +
-            '<option value="3">12 AM</option>' +
-            '<option value="4" selected>14 PM</option>' +
-            '<option value="5">16 AM</option>' +
-            "</select>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="group-inline">' +
-            '<div class="form-group timepicker has-feedback readonly">' +
-            '<label id="field4Label">Label field</label>' +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm"><use href="/imgs/icon/sprite.svg#it-clock"></use></svg>' +
-            "</div>" +
-            '<select class="form-select roboto" name="field4" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field4Label" readonly>' +
-            '<option value="1">00 AM</option>' +
-            '<option value="2">10 AM</option>' +
-            '<option value="3">12 AM</option>' +
-            '<option value="4" selected>14 PM</option>' +
-            '<option value="5">16 AM</option>' +
-            "</select>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>",
+  '<div class="col-auto pt-3 pt-lg-5">' +
+    '<div class="group-inline">' +
+      '<div class="form-group dropdown timepicker dropdown-number has-feedback filled">' +
+        '<label id="field1Label">' +
+          'Label field' +
+        '</label>' +
+        '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field1Label" ' +
+                'data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+          '<div class="input-group-text">' +
+            '<svg class="icon icon-sm">' +
+              '<use href="/imgs/icon/sprite.svg#it-clock"></use>' +
+            '</svg>' +
+          '</div>' +
+          '<div class="form-select">' +
+            '<div class="select-value">14 PM</div>' +
+            '<div class="select-placeholder"></div>' +
+          '</div>' +
+        '</button>' +
+        '<div class="dropdown-menu">' +
+          '<ul class="scrollable">' +
+            '<li><a class="dropdown-item" href="#"><span>00 AM</span></a></li>' +
+            '<li><a class="dropdown-item" href="#"><span>10 AM</span></a></li>' +
+            '<li><a class="dropdown-item" href="#"><span>12 AM</span></a></li>' +
+            '<li><a class="dropdown-item active" href="#"><span>14 PM</span></a></li>' +
+            '<li><a class="dropdown-item" href="#"><span>16 PM</span></a></li>' +
+          '</ul>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+    '<div class="group-inline">' +
+      '<div class="form-group dropdown timepicker dropdown-number has-feedback filled disabled">' +
+        '<label id="field2Label">' +
+          'Label field disabled' +
+        '</label>' +
+        '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field2Label" disabled ' +
+                'data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+          '<div class="input-group-text">' +
+            '<svg class="icon icon-sm">' +
+              '<use href="/imgs/icon/sprite.svg#it-clock"></use>' +
+            '</svg>' +
+          '</div>' +
+          '<div class="form-select">' +
+            '<div class="select-value">12 AM</div>' +
+            '<div class="select-placeholder"></div>' +
+          '</div>' +
+        '</button>' +
+        '<div class="dropdown-menu">' +
+          '<ul class="scrollable">' +
+            '<li><a class="dropdown-item active" href="#"><span>00 AM</span></a></li>' +
+            '<li><a class="dropdown-item active" href="#"><span>10 AM</span></a></li>' +
+            '<li><a class="dropdown-item active" href="#"><span>12 AM</span></a></li>' +
+            '<li><a class="dropdown-item active" href="#"><span>14 PM</span></a></li>' +
+            '<li><a class="dropdown-item active" href="#"><span>16 PM</span></a></li>' +
+          '</ul>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>' +
+  '<div class="col-auto pt-3 pt-lg-5">' +
+    '<div class="group-inline">' +
+      '<div class="form-group dropdown timepicker dropdown-number has-feedback filled readonly">' +
+        '<label id="field3Label">' +
+          'Label field readonly' +
+        '</label>' +
+        '<button class="btn dropdown-toggle input-group" type="button" role="combobox" aria-labelledby="field3Label" ' +
+                'data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false" aria-haspopup="listbox" demon-bt="dropdown">' +
+          '<div class="input-group-text">' +
+            '<svg class="icon icon-sm">' +
+              '<use href="/imgs/icon/sprite.svg#it-clock"></use>' +
+            '</svg>' +
+          '</div>' +
+          '<div class="form-select">' +
+            '<div class="select-value">14 PM</div>' +
+            '<div class="select-placeholder"></div>' +
+          '</div>' +
+        '</button>' +
+        '<div class="dropdown-menu">' +
+          '<ul class="scrollable">' +
+            '<li><a class="dropdown-item active" href="#"><span>00 AM</span></a></li>' +
+            '<li><a class="dropdown-item active" href="#"><span>10 AM</span></a></li>' +
+            '<li><a class="dropdown-item active" href="#"><span>12 AM</span></a></li>' +
+            '<li><a class="dropdown-item active" href="#"><span>14 PM</span></a></li>' +
+            '<li><a class="dropdown-item active" href="#"><span>16 PM</span></a></li>' +
+          '</ul>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>' +
+'</div>',
         },
         Type2: {
           default:

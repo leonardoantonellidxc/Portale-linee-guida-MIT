@@ -610,41 +610,6 @@
         
         <!-- section 1-->
 
-        <!-- section tab -->
-
-        <!-- tab menu-->
-        <div class="bg-primary10 py-3 mb-8">
-          <ul class="nav nav-tabs light px-3" role="tablist">
-            <li class="nav-item">
-              <button class="nav-link active fw-bold" aria-current="page" data-bs-toggle="tab"
-                data-bs-target="#contrasto" type="button" role="tab" aria-controls="contrasto" aria-selected="true"
-                id="tab-1">
-                <span>Alert</span>
-              </button>
-            </li>
-            <!--<li class="nav-item">
-                <button
-                  class="nav-link fw-bold"
-                  data-bs-toggle="tab"
-                  data-bs-target="#immagine"
-                  type="button"
-                  role="tab"
-                  aria-controls="immagine"
-                  aria-selected="false"
-                  id="tab-2"
-                >
-                  <span> Componente gruppo 2</span>
-                </button>
-              </li>-->
-          </ul>
-        </div>
-
-        <!-- tab content-->
-        <div class="tab-content">
-          <!-- 1 tab-->
-          <div class="tab-pane fade show active bg-light-subtle p-2 rounded-0" id="contrasto" role="tablist"
-            aria-labelledby="tab-1">
-            <!-- contenuto primo tab -->
             <div class="bg-neutral-500 p-3">
                 <h5 class=" fw-bold titlepage mb-4">Variante</h5>
 
@@ -685,10 +650,10 @@
                 Seleziona le varianti per visualizzare il codice.
               </div>
             </div>
-          </div>
+  
 
           <!-- fine tab container-->
-        </div>
+       
 
         <!-- section do dont-->
         <div class="my-8">
@@ -996,195 +961,155 @@
       },
       "Type3": {
         "default":
-          '<div class="row">' +
-  '<div class="col-auto pt-3 pt-lg-5">' +
-  '<div class="form-group form-ranges from-to has-feedback is-invalid">' +
-  '<label class="label-info" id="field20Label">' +
-  '<span>Label field</span>' +
-  '<svg class="icon">' +
-  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-  '</svg>' +
-  '</label>' +
-  '<div class="input-range">' +
-  '<div class="range-progress">' +
-  '<div class="range-limit text-icon">' +
-  '<svg class="icon icon-xs">' +
-  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-  '</svg>' +
-  '<span>0%</span>' +
+         '<div class="row">' +
+  '<div class="col-auto  pt-3 pt-lg-5">' +
+    '<div class="form-group form-ranges from-to has-feedback is-invalid">' +
+      '<label class="label-info" id="field20Label">' +
+        '<span>' +
+          'Label field' +
+        '</span>' +
+        '<svg class="icon">' +
+          '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+        '</svg>' +
+      '</label>' +
+      '<div class="input-range">' +
+        '<div class="range-progress">' +
+          '<div class="range-limit text-icon">' +
+            '<svg class="icon icon-xs">' +
+              '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite.svg#it-example"></use>' +
+            '</svg>' +
+            '<span>' +
+              '0%' +
+            '</span>' +
+          '</div>' +
+          '<div class="progress-wrapper">' +
+            '<a class="btn-pin from" style="left:20%;">' +
+              '<div class="pin-tooltip">' +
+                '20' +
+              '</div>' +
+              '<div class="pin"></div>' +
+            '</a>' +
+            '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="20" aria-valuemax="100">' +
+              '<div class="progress-bar" style="width:40%; margin-left:20%;"></div>' +
+            '</div>' +
+            '<a class="btn-pin to" style="left:60%;">' +
+              '<div class="pin-tooltip">' +
+                '60' +
+              '</div>' +
+              '<div class="pin"></div>' +
+            '</a>' +
+          '</div>' +
+          '<div class="range-limit text-icon">' +
+            '<span>' +
+              '100%' +
+            '</span>' +
+            '<svg class="icon icon-xs">' +
+              '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite.svg#it-example"></use>' +
+            '</svg>' +
+          '</div>' +
+        '</div>' +
+        '<div class="range-group">' +
+          '<div class="range-field">' +
+            '<input type="text" class="form-control" name="field20-from" value="20" aria-label="Valore minimo" disabled>' +
+            '<div class="field-helper">' +
+              '<div class="helper-text">' +
+                '<span>' +
+                  'Minimo' +
+                '</span>' +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="range-field">' +
+            '<input type="text" class="form-control" name="field20-to" value="60" aria-label="Valore massimo" disabled>' +
+            '<div class="field-helper">' +
+              '<div class="helper-text">' +
+                '<span>' +
+                  'Massimo' +
+                '</span>' +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
   '</div>' +
-  '<div class="progress-wrapper">' +
-  '<a class="btn-pin from" style="left:20%;">' +
-  '<div class="pin-tooltip">20</div>' +
-  '<div class="pin"></div>' +
-  '</a>' +
-  '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="20" aria-valuemax="100">' +
-  '<div class="progress-bar" style="width:40%; margin-left:20%;"></div>' +
-  '</div>' +
-  '<a class="btn-pin to" style="left:60%;">  <div class="pin-tooltip">60</div><div class="pin"></div></a>' +
-  '</div>' +
-  '<div class="range-limit text-icon">' +
-  '<span>100%</span>' +
-  '<svg class="icon icon-xs">' +
-  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-  '</svg>' +
-  '</div>' +
-  '</div>' +
-  '<div class="range-group">' +
-  '<div class="range-field">' +
-  '<input type="text" class="form-control" name="field20-from" value="20" aria-label="Valore minimo" disabled>' +
-  '<div class="field-helper">' +
-  '<div class="helper-text">' +
-  '<span>Minimo</span>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '<div class="range-field">' +
-  '<input type="text" class="form-control" name="field20-to" value="60" aria-label="Valore massimo" disabled>' +
-  '<div class="field-helper">' +
-  '<div class="helper-text">' +
-  '<span>Massimo</span>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '<div class="col-auto pt-3 pt-lg-5">' +
-  '<div class="form-group form-ranges has-feedback disabled">' +
-  '<label class="label-info" id="field1Label">' +
-  '<span>Label field</span>' +
-  '<svg class="icon">' +
-  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-  '</svg>' +
-  '</label>' +
-  '<div class="input-range">' +
-  '<div class="range-progress">' +
-  '<div class="range-limit text-icon">' +
-  '<svg class="icon icon-xs">' +
-  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-  '</svg>' +
-  '<span>0%</span>' +
-  '</div>' +
-  '<div class="progress-wrapper">' +
-  '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">' +
-  '<div class="progress-bar" style="width:60%;"></div>' +
-  '</div>'   
- +
-  '<a class="btn-pin to" style="left:60%;">  <div class="pin-tooltip">60</div><div class="pin"></div></a>' +
-  '</div>' +
-  '<div class="range-limit text-icon">' +
-  '<span>100%</span>' +
-  '<svg class="icon icon-xs">' +
-  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-  '</svg>' +
-  '</div>' +
-  '</div>' +
-  '<div class="range-group">' +
-  '<div class="range-field">' +
-  '<input type="text" class="form-control" name="field1-from" value="60" aria-label="Valore minimo" disabled>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '</div>',
+'</div>',
       },
       "Type4": {
         "default":
          '<div class="row">' +
   '<div class="col-auto pt-3 pt-lg-5">' +
-  '<div class="form-group form-ranges from-to has-feedback is-valid">' +
-  '<label class="label-info" id="field30Label">' +
-  '<span>Label field</span>' +
-  '<svg class="icon">' +
-  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-  '</svg>' +
-  '</label>' +
-  '<div class="input-range">' +
-  '<div class="range-progress">' +
-  '<div class="range-limit text-icon">' +
-  '<svg class="icon icon-xs">' +
-  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-  '</svg>' +
-  '<span>0%</span>' +
+    '<div class="form-group form-ranges from-to has-feedback is-valid">' +
+      '<label class="label-info" id="field30Label">' +
+        '<span>' +
+          'Label field' +
+        '</span>' +
+        '<svg class="icon">' +
+          '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+        '</svg>' +
+      '</label>' +
+      '<div class="input-range">' +
+        '<div class="range-progress">' +
+          '<div class="range-limit text-icon">' +
+            '<svg class="icon icon-xs">' +
+              '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite.svg#it-example"></use>' +
+            '</svg>' +
+            '<span>' +
+              '0%' +
+            '</span>' +
+          '</div>' +
+          '<div class="progress-wrapper">' +
+            '<a class="btn-pin from" style="left:20%;">' +
+              '<div class="pin-tooltip">' +
+                '20' +
+              '</div>' +
+              '<div class="pin"></div>' +
+            '</a>' +
+            '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="20" aria-valuemax="100">' +
+              '<div class="progress-bar" style="width:40%; margin-left:20%;"></div>' +
+            '</div>' +
+            '<a class="btn-pin to" style="left:60%;">' +
+              '<div class="pin-tooltip">' +
+                '60' +
+              '</div>' +
+              '<div class="pin"></div>' +
+            '</a>' +
+          '</div>' +
+          '<div class="range-limit text-icon">' +
+            '<span>' +
+              '100%' +
+            '</span>' +
+            '<svg class="icon icon-xs">' +
+              '<use href="/proto/mit/mit-v7.0.0/imgs/icon/sprite.svg#it-example"></use>' +
+            '</svg>' +
+          '</div>' +
+        '</div>' +
+        '<div class="range-group">' +
+          '<div class="range-field">' +
+            '<input type="text" class="form-control" name="field30-from" value="20" aria-label="Valore minimo" disabled>' +
+            '<div class="field-helper">' +
+              '<div class="helper-text">' +
+                '<span>' +
+                  'Minimo' +
+                '</span>' +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="range-field">' +
+            '<input type="text" class="form-control" name="field30-to" value="60" aria-label="Valore massimo" disabled>' +
+            '<div class="field-helper">' +
+              '<div class="helper-text">' +
+                '<span>' +
+                  'Massimo' +
+                '</span>' +
+              '</div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+    '</div>' +
   '</div>' +
-  '<div class="progress-wrapper">' +
-  '<a class="btn-pin from" style="left:20%;">' +
-  '<div class="pin-tooltip">20</div>' +
-  '<div class="pin"></div>' +
-  '</a>' +
-  '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="20" aria-valuemax="100">' +
-  '<div class="progress-bar" style="width:40%; margin-left:20%;"></div>' +
-  '</div>' +
-  '<a class="btn-pin to" style="left:60%;">  <div class="pin-tooltip">60</div><div class="pin"></div></a>' +
-  '</div>' +
-  '<div class="range-limit text-icon">' +
-  '<span>100%</span>' +
-  '<svg class="icon icon-xs">' +
-  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-  '</svg>' +
-  '</div>' +
-  '</div>' +
-  '<div class="range-group">' +
-  '<div class="range-field">' +
-  '<input type="text" class="form-control" name="field30-from" value="20" aria-label="Valore minimo" disabled>' +
-  '<div class="field-helper">' +
-  '<div class="helper-text">' +
-  '<span>Minimo</span>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '<div class="range-field">' +
-  '<input type="text" class="form-control" name="field30-to" value="60" aria-label="Valore massimo" disabled>' +
-  '<div class="field-helper">' +
-  '<div class="helper-text">' +
-  '<span>Massimo</span>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '<div class="col-auto pt-3 pt-lg-5">' +
-  '<div class="form-group form-ranges has-feedback disabled">' +
-  '<label class="label-info" id="field1Label">' +
-  '<span>Label field</span>' +
-  '<svg class="icon">' +
-  '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-  '</svg>' +
-  '</label>' +
-  '<div class="input-range">' +
-  '<div class="range-progress">' +
-  '<div class="range-limit text-icon">' +
-  '<svg class="icon icon-xs">' +
-  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-  '</svg>' +
-  '<span>0%</span>' +
-  '</div>' +
-  '<div class="progress-wrapper">' +
-  '<div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">' +
-  '<div class="progress-bar" style="width:60%;"></div>' +
-  '</div>'   
- +
-  '<a class="btn-pin to" style="left:60%;">  <div class="pin-tooltip">60</div><div class="pin"></div></a>' +
-  '</div>' +
-  '<div class="range-limit text-icon">' +
-  '<span>100%</span>' +
-  '<svg class="icon icon-xs">' +
-  '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-  '</svg>' +
-  '</div>' +
-  '</div>' +
-  '<div class="range-group">' +
-  '<div class="range-field">' +
-  '<input type="text" class="form-control" name="field1-from" value="60" aria-label="Valore minimo" disabled>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '</div>' +
-  '</div>',
+'</div>',
       }
 
     };
