@@ -249,6 +249,8 @@ ol li {
   padding-top: 2px;
 }
 }
-.sticky-top-margin{
-  top:32px
+.sticky-top-sidebar{
+  top: 32px;
+  height: calc(100vh - 6rem);
+  overflow: auto;
 }
