@@ -272,3 +272,18 @@ ol li {
     padding-top: 2px;
   }
 }
+
+/* GESTIONE POPOVER */
+
+.bs-popover-auto {
+  font-size:16px;
+  background-color: #fff;
+  border-radius: 5px;
+  border:none;
+}
+
+.bs-popover-auto .popover-header {
+  background-color: #fff;
+  font-size:18px;
+  border-bottom:none;
+}

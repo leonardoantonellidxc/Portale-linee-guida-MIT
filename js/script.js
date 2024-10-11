@@ -31,14 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Chiudi la sidebar quando si fa clic all'esterno di essa
-    document.addEventListener('click', function(event) {
+/*     document.addEventListener('click', function(event) {
         var isClickInsideSidebar = sidebar.contains(event.target);
         var isClickOnToggleButton = sidebarToggle.contains(event.target);
 
         if (!isClickInsideSidebar && !isClickOnToggleButton && sidebar.classList.contains('show') && window.innerWidth < 992) {
             toggleSidebar();
         }
-    });
+    }); */
 
     // Evidenzia la voce di menu attiva nella sidebar
     var sidebarLinks = document.querySelectorAll('#sidebar .nav-link');
