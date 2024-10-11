@@ -259,3 +259,49 @@ chips.forEach(chip => {
     this.classList.add('active');
   });
 });
+
+ // script.js
+ document.addEventListener('DOMContentLoaded', () => {
+  const typeSelector = document.getElementById('typeSelector');
+
+  // Aggiungi un listener per l'evento di cambiamento
+  typeSelector.addEventListener('change', function() {
+      const selectedValue = this.value;
+      
+      // Nascondi tutti i modali
+      hideAllModals();
+
+      // Mostra il modal corretto in base alla selezione
+      if (selectedValue) {
+          const modal = document.getElementById(`modal${selectedValue}`);
+          modal.style.display = "block"; // Mostra il modal selezionato
+      }
+  });
+
+  // Nascondi i modali quando si fa clic sulla "x"
+  const closeButtons = document.querySelectorAll('.close');
+  closeButtons.forEach(button => {
+      button.addEventListener('click', function() {
+          const modalId = this.getAttribute('data-modal');
+          document.getElementById(modalId).style.display = "none";
+      });
+  });
+
+  // Nascondi i modali se si fa clic al di fuori di essi
+  window.addEventListener('click', function(event) {
+      const modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => {
+          if (event.target === modal) {
+              modal.style.display = "none";
+          }
+      });
+  });
+});
+
+// Funzione per nascondere tutti i modali
+function hideAllModals() {
+  const modals = document.querySelectorAll('.modal');
+  modals.forEach(modal => {
+      modal.style.display = "none";
+  });
+}
