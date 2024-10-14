@@ -2,7 +2,7 @@
 <html lang="it">
   <head>
     <meta charset="utf-8" />
-    <title>MIT - Portale delle Linee Guida di UX e UI - Tooltip   </title>
+    <title>MIT - Portale delle Linee Guida di UX e UI - Stepper</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -107,7 +107,7 @@
                   <ul class="nav navbar-nav">
                     <!-- Esempio Mega menu Container -->
 
-                    <li class="nav-item">
+                    <li class="nav-item active">
                       <a href="homepage.html" class="nav-link">
                         <span>Homepage</span>
                       </a>
@@ -131,7 +131,7 @@
       </div>
     </header>
 
-   <main class="container-fluid ">
+    <main class="container-fluid">
       <div class="row px-lg-9">
         <aside class="sidebar-menu col-12 col-lg-3">
           <div class="sidebar-wrapper sticky-top-sidebar my-6">
@@ -140,15 +140,15 @@
                 <div class="h6">Design system</div>
               </div>
               <!-- 
-          <a class="card-header-mobile" href="javascript:">
-           <span>
-             Title
-           </span>
-            <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
-              <use xlink:href="imgs/icon/sprite.svg#it-arrow-up"></use>
-            </svg>
-          </a>
-          -->
+              <a class="card-header-mobile" href="javascript:">
+               <span>
+                 Title
+               </span>
+                <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
+                  <use xlink:href="imgs/icon/sprite.svg#it-arrow-up"></use>
+                </svg>
+              </a>
+              -->
               <div class="sidebar-scroll">
                 <ul class="sidebar-list">
                   <li>
@@ -271,14 +271,14 @@
                   </li>
                   <li class="list-dropdown">
                     <a
-                      class="list-link active collapsed"
+                      class="list-link collapsed active"
                       href="#collapse2"
                       role="button"
                       data-bs-toggle="collapse"
                       aria-expanded="false"
                       aria-controls="collapse2"
                     >
-                      <div class="list-item">
+                      <div class="list-item ">
                         <span> Components </span>
                         <svg
                           class="icon icon-sm dropdown-icon"
@@ -299,7 +299,7 @@
                         </a>
                       </li>
                       <li>
-                        <a class="list-link" href="alert.html">
+                        <a class="list-link active" href="alert.html">
                           <div class="list-item">
                             <span> Alert </span>
                           </div>
@@ -360,14 +360,13 @@
                             <span> Checkbox </span>
                           </div>
                         </a>
-                      </li>
-                      <li>
+                      </li>  <li>
                         <a class="list-link" href="chips.html">
                           <div class="list-item">
                             <span> Chips </span>
                           </div>
                         </a>
-                      </li>
+                      </li> 
                      <li>
                         <a class="list-link" href="cookie.html">
                           <div class="list-item">
@@ -375,7 +374,7 @@
                           </div>
                         </a>
                       </li>
-                      <li>
+                     <li>
                         <a class="list-link" href="datepicker.html">
                           <div class="list-item">
                             <span> Data picker </span>
@@ -453,7 +452,7 @@
                         </a>
                       </li>
                       <li>
-                        <a class="list-link " href="scrollbar.html">
+                        <a class="list-link" href="scrollbar.html">
                           <div class="list-item">
                             <span> Scrollbar </span>
                           </div>
@@ -474,7 +473,7 @@
                         </a>
                       </li>
                       <li>
-                        <a class="list-link " href="stepper.html">
+                        <a class="list-link" href="stepper.html">
                           <div class="list-item">
                             <span> Stepper </span>
                           </div>
@@ -495,7 +494,7 @@
                         </a>
                       </li>
                       <li>
-                        <a class="list-link " href="tab.html">
+                        <a class="list-link" href="tab.html">
                           <div class="list-item">
                             <span> Tab menù </span>
                           </div>
@@ -524,13 +523,6 @@
                       </li>
                       <li>
                         <a class="list-link" href="tooltip.html">
-                          <div class="list-item">
-                            <span> Tooltip </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link active" href="tooltip.html">
                           <div class="list-item">
                             <span> Tooltip </span>
                           </div>
@@ -606,159 +598,162 @@
           <!-- hero-->
           <div class="bg-hero-green p-6 rounded my-6">
             <p class="fw-bold c-neutral-500">Design System</p>
-            <h2 class="titlepage fw-bold">Tooltip</h2>
+            <h2 class="titlepage fw-bold">Stepper</h2>
           </div>
 
-             <p class="mt-4 mb-8">
-              Il Tooltip fornisce informazioni aggiuntive quando un utente passa il mouse o tocca un elemento. Appare come un piccolo riquadro informativo, migliorando l'usabilità e fornendo chiarimenti su funzionalità, pulsanti o termini. È utile per mantenere l'interfaccia pulita, mostrando informazioni solo quando necessario, senza sovraccaricare l'utente di dettagli.
+          <p class="mt-4 mb-8">
+            Lo Stepper è un componente dell'interfaccia utente utilizzato per guidare gli utenti attraverso una serie di passaggi sequenziali, consentendo loro di avanzare o tornare indietro nel processo. Questo componente fornisce una struttura chiara e progressiva per la compilazione di form, la navigazione in percorsi di completamento o qualsiasi altro processo che richieda un progresso graduale.
           </p>
 
-         
           <!-- section 1-->
 
           <div class="bg-neutral-500 p-3">
-              <h5 class=" fw-bold titlepage mb-4">Variante</h5>
+            <div class="bg-neutral-500 p-3">
+                <h5 class=" fw-bold titlepage mb-4">Variante</h5>
 
-            <div class="row mb-3">
-              <div class="col-auto">
-                <div class="form-group dropdown has-feedback filled">
-                  <label for="typeSelector" id="field1Label">Type</label>
-                  <select id="typeSelector" class="form-select">
-                    <option value="">--Seleziona Type--</option>
-                    <option value="Type1">Tooltip </option>
-                    <option value="Type2">Tooltip con HTML</option>
-                    
-                  </select>
+              <div class="row mb-3">
+                <div class="col-auto">
+                  <div class="form-group dropdown has-feedback filled">
+                    <label for="typeSelector" id="field1Label">State</label>
+
+                    <select id="typeSelector" class="form-select">
+                      <option value="">--Seleziona State--</option>
+                      <option value="Type1">Default</option>
+                      <option value="Type2">Succcess</option>
+                      <option value="Type3">Danger</option>
+                      <option value="Type4">Disabled</option>
+                    </select>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div
-              class="bg-white py-8 mb-3"
-            >
-              <div id="content">
-                Seleziona tutte le opzioni per visualizzare il componente.
-              </div>
-            </div>
-
-            <div class="d-flex justify-content-between align-items-center mb-3">
-              <h5 class="my-6 fw-bold titlepage">Codice</h5>
-              <button
-                type="button"
-                id="copyButton"
-                style="display: none"
-                class="btn btn-primary"
+              <div
+                class="bg-white d-flex align-items-center justify-content-center py-8 mb-3"
               >
-                <span> Copia codice </span>
-                <svg class="icon icon-sm">
-                  <use href="/imgs/icon/sprite_fill.svg#it-copy-success"></use>
-                </svg>
-              </button>
-            </div>
-            <div></div>
-            <div id="codeContent" class="bgcode text-white rounded p-4">
-              Seleziona le varianti per visualizzare il codice.
-            </div>
-          </div>
-
-          <!-- fine tab container-->
-
-          <!-- section do dont-->
-         <div class="my-8">
-            <h5 class="mb-4 fw-bold">Do and don’t</h5>
-            <p class="my-3">
-              Di seguito un elenco del corretto utilizzo dei tooltip:
-            </p>
-
-            <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
-              <div class="col-12 col-md-6">
-                <div class="card shadow-none h-100 bg-gray">
-                  <div class="card-body pb-0">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-success">
-                          <span> Do </span>
-                          <svg class="icon icon-sm icon-success ms-2">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-check-circle"
-                            ></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- -->
-                    <div class="">
-                      <ul>
-                        <li>
-                          Assicurati che appaiano al passaggio del mouse o al focus su un elemento, migliorando l'accessibilità.
-                        </li>
-                        <li>
-                          Il testo del tooltip dovrebbe essere conciso e diretto, evitando informazioni superflue.
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                <div id="content">
+                  Seleziona tutte le opzioni per visualizzare il componente.
                 </div>
               </div>
-              <div class="col-12 col-md-6">
-                <div class="card shadow-none h-100 bg-gray">
-                  <div class="card-body pb-0">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-danger">
-                          <span> Don't </span>
-                          <svg class="ms-2 icon icon-sm icon-danger">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-error-circle"
-                            ></use>
-                          </svg>
-                        </div>
+
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
+                <h5 class="my-6 fw-bold titlepage">Codice</h5>
+                <button
+                  type="button"
+                  id="copyButton"
+                  style="display: none"
+                  class="btn btn-primary"
+                >
+                  <span> Copia codice </span>
+                  <svg class="icon icon-sm">
+                    <use
+                      href="/imgs/icon/sprite_fill.svg#it-copy-success"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
+              <div></div>
+              <div id="codeContent" class="bgcode text-white rounded p-4">
+                Seleziona le varianti per visualizzare il codice.
+              </div>
+            </div>
+
+            <!-- fine tab container-->
+          </div>
+           <!-- Sezione do and don't -->
+        <div class="my-8">
+          <h5 class="mb-4 fw-bold">Do and don’t</h5>
+          <p class="my-3">
+            Di seguito un elenco del corretto utilizzo dello stepper:
+          </p>
+
+          <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+            <div class="col-12 col-md-6">
+              <div class="card shadow-none h-100 bg-gray">
+                <div class="card-body pb-0">
+                  <div class="card-bar">
+                    <div class="bar-group">
+                      <div class="badge badge-sm badge-success">
+                        <span> Do </span>
+                        <svg class="icon icon-sm icon-success ms-2">
+                          <use
+                            href="/imgs/icon/sprite_fill.svg#it-check-circle"
+                          ></use>
+                        </svg>
                       </div>
                     </div>
-                    <div class="">
-                      <ul>
-                        <li>Non posizionare i tooltip in aree che interferiscano con altri elementi interattivi o che siano fuori dalla visualizzazione dell'utente.</li>
-                        <li>
-                          Non fare in modo che i tooltip rimangano visibili indefinitamente; devono scomparire quando non sono più necessari.
-                        </li>
-                       
-                      </ul>
-                    </div>
                   </div>
+                  <ul>
+                    <li>
+                      Mostra chiaramente il progresso del processo all’utente, evidenziando quale passo è attivo, quali sono disattivi o completati.
+                    </li>
+                    <li>
+                      Permetti agli utenti di tornare a passaggi precedenti senza perdere informazioni inserite.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
+
+            <div class="col-12 col-md-6">
+              <div class="card shadow-none h-100 bg-gray">
+                <div class="card-body pb-0">
+                  <div class="card-bar">
+                    <div class="bar-group">
+                      <div class="badge badge-sm badge-danger">
+                        <span> Don't </span>
+                        <svg class="ms-2 icon icon-sm icon-danger">
+                          <use
+                            href="/imgs/icon/sprite_fill.svg#it-error-circle"
+                          ></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <ul>
+                    <li>
+                      Non omettere indicazioni o istruzioni chiare che possano guidare l'utente in ogni fase del processo.
+                    </li>
+                    <li>
+                      Evita di usare il stepper per flussi di lavoro troppo complicati che richiedono molte informazioni in ogni passaggio.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <!-- paginazione-->
-
-          <div
-          class="d-flex justify-content-between py-3 bg-lightblu my-8 rounded px-6"
-        >
-          <button
-            type="button"
-            onclick="window.location.href='toggle.html'"
-            class="btn btn-bare btn-sm"
-          >
-            <svg class="icon">
-              <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
-            </svg>
-            <span>Toggle</span>
-          </button>
-          <button
-            onclick="window.location.href='uploader.html'"
-            type="button"
-            class="btn btn-bare btn-sm"
-          >
-            <span>Uploader</span>
-            <svg class="icon">
-              <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
-            </svg>
-          </button>
         </div>
+       
+          <!-- paginazione-->
+          <div
+            class="d-flex justify-content-between py-3 bg-lightblu my-8 rounded px-6"
+          >
+            <button
+              type="button"
+              onclick="window.location.href='accordion.html'"
+              class="btn btn-bare btn-sm"
+            >
+              <svg class="icon">
+                <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
+              </svg>
+              <span>Accordion</span>
+            </button>
+            <button
+              onclick="window.location.href='avatar.html'"
+              type="button"
+              class="btn btn-bare btn-sm"
+            >
+              <span>Avatar </span>
+              <svg class="icon">
+                <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </main>
+
     <footer>
       <div class="footer-credits">
         <div class="container">
@@ -770,7 +765,7 @@
               www.mit.gov.it - Ministero delle infrastrutture e dei trasporti.
             </div>
           </div>
-  
+
           <div class="text-icon">
             <svg class="icon icon-xs" aria-hidden="true">
               <use href="/imgs/icon/sprite.svg#it-copyright"></use>
@@ -786,63 +781,120 @@
     <script>
       const components = {
         Type1: {
-          default:'<div class="row">' +
- '<div class="col-lg-3 pt-3">' +
-  '<button type="button" class="btn btn-primary" ' +
-    'data-bs-toggle="popover" ' +
-    'data-bs-placement="right" ' +
-    'title="Titolo del Popover" ' +
-    'data-bs-content=" <div>tooltip </div>">' +
-    'Popover a destra' +
-  '</button>' +
-'</div>' +
-  '<div class="col-lg-3 pt-3">' +
-    '<button data-toggle="tooltip" type="button" class="btn btn-primary" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="top">' +
-      'Tooltip a sopra' +
-    '</button>' +
-  '</div>' +
-  '<div class="col-lg-3 pt-3">' +
-    '<button type="button" class="btn btn-primary" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="bottom">' +
-      'Tooltip a sotto' +
-    '</button>' +
-  '</div>' +
-  '<div class="col-lg-3 pt-3">' +
-    '<button type="button" class="btn btn-primary" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="left">' +
-      'Tooltip a sinistra' +
-    '</button>' +
-  '</div>' +
-'</div>'
-
-           ,
+          default:
+            '<div class="row align-items-center justify-content-center">' +
+            '<div class="col-auto pt-4">' +
+            //leo inizio
+            '<div class="alert alert-info alert-dismissible fade show">' +
+            '<div class="alert-body">' +
+            '<div class="alert-heading h5">' +
+            "Titolo alert info" +
+            "</div>" +
+            '<div class="alert-text">' +
+            "Vel tempus nisl augue accumsan, scelerisque aliquet. " +
+            "Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus." +
+            "</div>" +
+            '<div class="btn-toolbar">' +
+            '<button type="button" class="btn btn-primary">' +
+            "Button text" +
+            "</button>" +
+            '<button type="button" class="btn btn-bare">' +
+            "Button text" +
+            "</button>" +
+            "</div>" +
+            "</div>" +
+            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
+            '<svg class="icon">' +
+            '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+            "</svg>" +
+            "</button>" +
+            "</div>" +
+            //leo fine
+            "</div>" +
+            "</div>",
         },
         Type2: {
           default:
-           '<div class="row">' +
-  '<div class="col-lg-3 pt-3">' +
-    '<button data-toggle="tooltip"  type="button" class="btn btn-primary" title="<div class=\'h6\'>Title tooltip</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true">' +
-      'Tooltip a destra' +
-    '</button>' +
-  '</div>' +
-  '<div class="col-lg-3 pt-3">' +
-    '<button type="button" class="btn btn-primary" title="<div class=\'h6\'>Title tooltip</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true">' +
-      'Tooltip a sopra' +
-    '</button>' +
-  '</div>' +
-  '<div class="col-lg-3 pt-3">' +
-    '<button type="button" class="btn btn-primary" title="<div class=\'h6\'>Title tooltip</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true">' +
-      'Tooltip a sotto' +
-    '</button>' +
-  '</div>' +
-  '<div class="col-lg-3 pt-3">' +
-    '<button type="button" class="btn btn-primary" title="<div class=\'h6\'>Title tooltip</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="left" data-bs-html="true">' +
-      'Tooltip a sinistra' +
-    '</button>' +
-  '</div>' +
-'</div>' + '<div class="h3 pt-8">' +
-                  'Tooltip con HTML' +
-                  '</div>',
+            '<div class="alert alert-success alert-dismissible fade show">' +
+            '<div class="alert-body">' +
+            '<div class="alert-heading h5">' +
+            "Titolo alert success" +
+            "</div>" +
+            '<div class="alert-text">' +
+            "Vel tempus nisl augue accumsan, scelerisque aliquet. " +
+            "Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus." +
+            "</div>" +
+            '<div class="btn-toolbar">' +
+            '<button type="button" class="btn btn-success">' +
+            "Button text" +
+            "</button>" +
+            '<button type="button" class="btn btn-bare bare-success">' +
+            "Button text" +
+            "</button>" +
+            "</div>" +
+            "</div>" +
+            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
+            '<svg class="icon">' +
+            '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+            "</svg>" +
+            "</button>" +
+            "</div>",
         },
-     };
+        Type3: {
+          default:
+            '<div class="alert alert-warning alert-dismissible fade show">' +
+            '<div class="alert-body">' +
+            '<div class="alert-heading h5">' +
+            "Titolo alert warning" +
+            "</div>" +
+            '<div class="alert-text">' +
+            "Vel tempus nisl augue accumsan, scelerisque aliquet. " +
+            "Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus." +
+            "</div>" +
+            '<div class="btn-toolbar">' +
+            '<button type="button" class="btn btn-warning">' +
+            "Button text" +
+            "</button>" +
+            '<button type="button" class="btn btn-bare bare-warning">' +
+            "Button text" +
+            "</button>" +
+            "</div>" +
+            "</div>" +
+            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
+            '<svg class="icon">' +
+            '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+            "</svg>" +
+            "</button>" +
+            "</div>",
+        },
+        Type4: {
+          default:
+            '<div class="alert alert-danger alert-dismissible fade show">' +
+            '<div class="alert-body">' +
+            '<div class="alert-heading h5">' +
+            "Titolo alert danger" +
+            "</div>" +
+            '<div class="alert-text">' +
+            "Vel tempus nisl augue accumsan, scelerisque aliquet. " +
+            "Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus." +
+            "</div>" +
+            '<div class="btn-toolbar">' +
+            '<button type="button" class="btn btn-danger">' +
+            "Button text" +
+            "</button>" +
+            '<button type="button" class="btn btn-bare bare-danger">' +
+            "Button text" +
+            "</button>" +
+            "</div>" +
+            "</div>" +
+            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
+            '<svg class="icon">' +
+            '<use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+            "</svg>" +
+            "</button>" +
+            "</div>",
+        },
+      };
 
       const typeSelector = document.getElementById("typeSelector");
       const contentDiv = document.getElementById("content");
@@ -864,9 +916,8 @@
 
             // Rimuovi il div avatar-container e formatta il codice
             let containerlessComponent = component
-              .replace(/<div class="avatar-container">/g, "")
-              .replace(/<\/div>$/, "")
-              .replace(/<\/div>/g, "</div>\n");
+              .replace(/<div class="avatar-container">[\s\S]*?<\/div>/g, "")
+              .replace(/<\/div>\n/g, "</div>");
             const formattedCode = prettifyHTML(containerlessComponent);
             codeDiv.innerHTML = `<pre><code>${escapeHTML(
               formattedCode
@@ -972,14 +1023,5 @@
         return formatted;
       }
     </script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>  
-   $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
-    
-    </script>
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>

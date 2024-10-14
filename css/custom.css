@@ -287,3 +287,12 @@ ol li {
   font-size:18px;
   border-bottom:none;
 }
+
+.avatar-container {
+  display: flex;
+  gap: 10px;
+}
+
+.avatar img {
+  max-width: 100%;
+}
