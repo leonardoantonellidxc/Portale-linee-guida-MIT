@@ -625,9 +625,9 @@
               </div>
               <div class="col-auto" id="sizeSelectorContainer">
                 <div class="form-group dropdown has-feedback filled">
-                  <label for="sizeSelector" id="field1Label">Size</label>
+                  <label for="sizeSelector" id="field1Label">State</label>
                   <select id="sizeSelector" class="form-select">
-                    <option value="">--Seleziona Size--</option>
+                    <option value="">--Seleziona State--</option>
                     <option value="Size1">Default</option>
                     <option value="Size2">Disabled</option>
                     <option value="Size3">Readonly</option>
@@ -800,720 +800,696 @@
       const components = {
         Type1: {
           Size1:
-            '<div class="row justify-content-center">' +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback">' +
-            '<label id="field1Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<div class="input-group-text divider"></div>' +
-            '<input type="text" class="form-control" name="field1" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field1Label">' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-visible"></use>' +
-            "</svg>" +
-            "</a>" +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback">' +
-            '<label id="field2Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<input type="text" class="form-control" name="field2" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field2Label">' +
-            "</div>" +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback">' +
-            '<label id="field3Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<input type="text" class="form-control" name="field3" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field3Label">' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-visible"></use>' +
-            "</svg>" +
-            "</a>" +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback">' +
-            '<label id="field4Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<input type="text" class="form-control" name="field4" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field4Label">' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback">' +
-            '<label id="field5Label">' +
-            "Label field" +
-            "</label>" +
-            '<input type="text" class="form-control" name="field5" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field5Label">' +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>",
+           '<div class="row justify-content-center">' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback">' +
+                       '<label id="field1Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<div class="input-group-text">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-example"></use>' +
+                               '</svg>' +
+                           '</div>' +
+                           '<div class="input-group-text divider"></div>' +
+                           '<input type="text" class="form-control" name="field1" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field1Label">' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback">' +
+                       '<label id="field2Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<div class="input-group-text">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-example"></use>' +
+                               '</svg>' +
+                           '</div>' +
+                           '<input type="text" class="form-control" name="field2" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field2Label">' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback">' +
+                       '<label id="field3Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<input type="text" class="form-control" name="field3" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field3Label">' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback">' +
+                       '<label id="field4Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<input type="text" class="form-control" name="field4" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field4Label">' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback">' +
+                       '<label id="field5Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<input type="text" class="form-control" name="field5" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field5Label">' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+           '</div>',
           Size2:
             '<div class="row justify-content-center">' +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback disabled">' +
-            '<label id="field1Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<div class="input-group-text divider"></div>' +
-            '<input type="text" class="form-control" name="field1" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field1Label" disabled>' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-visible"></use>' +
-            "</svg>" +
-            "</a>" +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback disabled">' +
-            '<label id="field2Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<input type="text" class="form-control" name="field2" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field2Label" disabled>' +
-            "</div>" +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback disabled">' +
-            '<label id="field3Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<input type="text" class="form-control" name="field3" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field3Label" disabled>' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-visible"></use>' +
-            "</svg>" +
-            "</a>" +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback disabled">' +
-            '<label id="field4Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<input type="text" class="form-control" name="field4" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field4Label" disabled>' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback disabled">' +
-            '<label id="field5Label">' +
-            "Label field" +
-            "</label>" +
-            '<input type="text" class="form-control" name="field5" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field5Label" disabled>' +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>",
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback disabled">' +
+                       '<label id="field1Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<div class="input-group-text">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-example"></use>' +
+                               '</svg>' +
+                           '</div>' +
+                           '<div class="input-group-text divider"></div>' +
+                           '<input type="text" class="form-control" name="field1" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field1Label" disabled>' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback disabled">' +
+                       '<label id="field2Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<div class="input-group-text">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-example"></use>' +
+                               '</svg>' +
+                           '</div>' +
+                           '<input type="text" class="form-control" name="field2" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field2Label" disabled>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback disabled">' +
+                       '<label id="field3Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<input type="text" class="form-control" name="field3" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field3Label" disabled>' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback disabled">' +
+                       '<label id="field4Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<input type="text" class="form-control" name="field4" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field4Label" disabled>' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback disabled">' +
+                       '<label id="field5Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<input type="text" class="form-control" name="field5" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field5Label" disabled>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+           '</div>',
 
           Size3:
-            '<div class="row justify-content-center">' +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group readonly has-feedback">' +
-            '<label id="field1Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<div class="input-group-text divider"></div>' +
-            '<input type="text" class="form-control" name="field1" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field1Label" readonly>' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-visible"></use>' +
-            "</svg>" +
-            "</a>" +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group readonly has-feedback">' +
-            '<label id="field2Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<input type="text" class="form-control" name="field2" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field2Label" readonly>' +
-            "</div>" +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group readonly has-feedback">' +
-            '<label id="field3Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<input type="text" class="form-control" name="field3" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field3Label" readonly>' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-visible"></use>' +
-            "</svg>" +
-            "</a>" +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group readonly has-feedback">' +
-            '<label id="field4Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<input type="text" class="form-control" name="field4" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field4Label" readonly>' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group readonly has-feedback">' +
-            '<label id="field5Label">' +
-            "Label field" +
-            "</label>" +
-            '<input type="text" class="form-control" name="field5" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field5Label" readonly>' +
-            '<div class="field-helper">' +
-            '<div class="helper-text">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Testo informativo" +
-            "</span>" +
-            "</div>" +
-            '<div class="helper-counter">' +
-            "0/20" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>",
+            '<div class="row  justify-content-center">' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group readonly has-feedback">' +
+                       '<label id="field1Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<div class="input-group-text">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-example"></use>' +
+                               '</svg>' +
+                           '</div>' +
+                           '<div class="input-group-text divider"></div>' +
+                           '<input type="text" class="form-control" name="field1" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field1Label" readonly>' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group readonly has-feedback">' +
+                       '<label id="field2Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<div class="input-group-text">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-example"></use>' +
+                               '</svg>' +
+                           '</div>' +
+                           '<input type="text" class="form-control" name="field2" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field2Label" readonly>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group readonly has-feedback">' +
+                       '<label id="field3Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<input type="text" class="form-control" name="field3" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field3Label" readonly>' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group readonly has-feedback">' +
+                       '<label id="field4Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<input type="text" class="form-control" name="field4" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field4Label" readonly>' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group readonly has-feedback">' +
+                       '<label id="field5Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<input type="text" class="form-control" name="field5" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field5Label" readonly>' +
+                       '<div class="field-helper">' +
+                           '<div class="helper-text">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Testo informativo' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+           '</div>',
           Size4:
             '<div class="row justify-content-center">' +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback is-invalid">' +
-            '<label id="field1Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<div class="input-group-text divider"></div>' +
-            '<input type="text" class="form-control" name="field1" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field1Label">' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-visible"></use>' +
-            "</svg>" +
-            "</a>" +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="invalid-feedback">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Message explaining the error" +
-            "</span>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback is-invalid">' +
-            '<label id="field2Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<input type="text" class="form-control" name="field2" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field2Label">' +
-            "</div>" +
-            '<div class="invalid-feedback">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Message explaining the error" +
-            "</span>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback is-invalid">' +
-            '<label id="field3Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<input type="text" class="form-control" name="field3" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field3Label">' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-visible"></use>' +
-            "</svg>" +
-            "</a>" +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="invalid-feedback">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Message explaining the error" +
-            "</span>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback is-invalid">' +
-            '<label id="field4Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<input type="text" class="form-control" name="field4" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field4Label">' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="invalid-feedback">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Message explaining the error" +
-            "</span>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback is-invalid">' +
-            '<label id="field5Label">' +
-            "Label field" +
-            "</label>" +
-            '<input type="text" class="form-control" name="field5" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field5Label">' +
-            '<div class="invalid-feedback">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Message explaining the error" +
-            "</span>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>",
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback is-invalid">' +
+                       '<label id="field1Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<div class="input-group-text">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-example"></use>' +
+                               '</svg>' +
+                           '</div>' +
+                           '<div class="input-group-text divider"></div>' +
+                           '<input type="text" class="form-control" name="field1" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field1Label">' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="invalid-feedback">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Message explaining the error' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback is-invalid">' +
+                       '<label id="field2Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<div class="input-group-text">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-example"></use>' +
+                               '</svg>' +
+                           '</div>' +
+                           '<input type="text" class="form-control" name="field2" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field2Label">' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="invalid-feedback">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Message explaining the error' +
+                               '</span>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback is-invalid">' +
+                       '<label id="field3Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<input type="text" class="form-control" name="field3" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field3Label">' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="invalid-feedback">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Message explaining the error' +
+                               '</span>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback is-invalid">' +
+                       '<label id="field4Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<input type="text" class="form-control" name="field4" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field4Label">' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="invalid-feedback">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Message explaining the error' +
+                               '</span>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback is-invalid">' +
+                       '<label id="field5Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<input type="text" class="form-control" name="field5" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field5Label">' +
+                       '<div class="field-helper">' +
+                           '<div class="invalid-feedback">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Message explaining the error' +
+                               '</span>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+           '</div>',
           Size5:
-            '<div class="row justify-content-center">' +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback is-valid">' +
-            '<label id="field1Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<div class="input-group-text divider"></div>' +
-            '<input type="text" class="form-control" name="field1" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field1Label">' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-visible"></use>' +
-            "</svg>" +
-            "</a>" +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="valid-feedback">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Message explaining the success" +
-            "</span>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback is-valid">' +
-            '<label id="field2Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-example"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<input type="text" class="form-control" name="field2" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field2Label">' +
-            "</div>" +
-            '<div class="valid-feedback">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Message explaining the success" +
-            "</span>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback is-valid">' +
-            '<label id="field3Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<input type="text" class="form-control" name="field3" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field3Label">' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-visible"></use>' +
-            "</svg>" +
-            "</a>" +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="valid-feedback">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Message explaining the success" +
-            "</span>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback is-valid">' +
-            '<label id="field4Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<input type="text" class="form-control" name="field4" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field4Label">' +
-            '<a class="input-group-text" href="javascript:">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite.svg#it-password-invisible"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</div>" +
-            '<div class="valid-feedback">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Message explaining the success" +
-            "</span>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-auto pt-3 pt-lg-5">' +
-            '<div class="form-group has-feedback is-valid">' +
-            '<label id="field5Label">' +
-            "Label field" +
-            "</label>" +
-            '<input type="text" class="form-control" name="field5" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field5Label">' +
-            '<div class="valid-feedback">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Message explaining the success" +
-            "</span>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>",
+           '<div class="row justify-content-center">' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback is-valid">' +
+                       '<label id="field1Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<div class="input-group-text">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-example"></use>' +
+                               '</svg>' +
+                           '</div>' +
+                           '<div class="input-group-text divider"></div>' +
+                           '<input type="text" class="form-control" name="field1" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field1Label">' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="valid-feedback">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Message explaining the success' +
+                               '</span>' +
+                           '</div>' +
+                           '<div class="helper-counter">' +
+                               '0/20' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback is-valid">' +
+                       '<label id="field2Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<div class="input-group-text">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-example"></use>' +
+                               '</svg>' +
+                           '</div>' +
+                           '<input type="text" class="form-control" name="field2" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field2Label">' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="valid-feedback">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Message explaining the success' +
+                               '</span>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback is-valid">' +
+                       '<label id="field3Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<input type="text" class="form-control" name="field3" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field3Label">' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="valid-feedback">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Message explaining the success' +
+                               '</span>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback is-valid">' +
+                       '<label id="field4Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<div class="input-group">' +
+                           '<input type="text" class="form-control" name="field4" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field4Label">' +
+                           '<a class="input-group-text" href="javascript:">' +
+                               '<svg class="icon icon-sm">' +
+                                   '<use href="./imgs/icon/sprite.svg#it-password-invisible"></use>' +
+                               '</svg>' +
+                           '</a>' +
+                       '</div>' +
+                       '<div class="field-helper">' +
+                           '<div class="valid-feedback">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Message explaining the success' +
+                               '</span>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-md-6 col-lg-3 pt-3 pt-lg-5">' +
+                   '<div class="form-group has-feedback is-valid">' +
+                       '<label id="field5Label">' +
+                           'Label field' +
+                       '</label>' +
+                       '<input type="text" class="form-control" name="field5" placeholder="Placeholder field" value="Lorem ipsum" aria-labelledby="field5Label">' +
+                       '<div class="field-helper">' +
+                           '<div class="valid-feedback">' +
+                               '<svg class="icon">' +
+                                   '<use href="./imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
+                               '</svg>' +
+                               '<span>' +
+                                   'Message explaining the success' +
+                               '</span>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+           '</div>',
         },
         Type2: {
           Size1:
-            '<div class="row">' +
+            '<div class="row justify-content-center ">' +
             '<div class="col-auto pt-3 pt-lg-5">' +
             '<div class="form-group has-feedback">' +
             '<label id="field10Label">' +

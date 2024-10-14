@@ -788,363 +788,405 @@
       const components = {
         Type1: {
           default:
-            '<div class="row">' +
-            '<div class="col-lg-4 pt-3 pt-lg-5">' +
-            '<div class="group-inline">' +
-            '<div class="form-group datepicker dropdown has-feedback field-14">' +
-            '<label id="field1Label">Label field</label>' +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-calendar"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<div class="input-group-text divider"></div>' +
-            '<input type="text" class="form-control" name="field1" aria-labelledby="field1Label" placeholder="gg/mm/aaaa" value="">' +
-            '<button class="input-group-text dropdown-toggle" type="button" aria-expanded="false">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-expand"></use>' +
-            "</svg>" +
-            "</button>" +
-            '<div class="dropdown-menu">' +
-            '<div class="date-header">' +
-            '<div class="form-group">' +
-            '<select class="form-select" name="month">' +
-            '<option value="01">Gennaio</option>' +
-            '<option value="02">Febbraio</option>' +
-            '<option value="03">Marzo</option>' +
-            '<option value="04">Aprile</option>' +
-            '<option value="05">Maggio</option>' +
-            '<option value="option value="06">Giugno</option>' +
-            '<option value="07">Luglio</option>' +
-            '<option value="08">Agosto</option>' +
-            '<option value="09">Settembre</option>' +
-            '<option value="10">Ottobre</option>' +
-            '<option value="11">Novembre</option>' +
-            '<option value="12">Dicembre</option>' +
-            "</select>" +
-            "</div>" +
-            '<div class="form-group">' +
-            '<select class="form-select" name="year">' +
-            '<option value="2024">2024</option>' +
-            '<option value="2023">2023</option>' +
-            '<option value="02">2022</option>' +
-            '<option value="2021">2021</option>' +
-            '<option value="2020">2020</option>' +
-            "</select>" +
-            "</div>" +
-            "</div>" +
-            '<div class="date-body">' +
-            '<div class="month-head">' +
-            '<div class="day">Lun</div>' +
-            '<div class="day">Mar</div>' +
-            '<div class="day">Mer</div>' +
-            '<div class="day">Gio</div>' +
-            '<div class="day">Ven</div>' +
-            '<div class="day">Sab</div>' +
-            '<div class="day">Dom</div>' +
-            "</div>" +
-            '<div class="month-days">' +
-            '<div class="day empty">31</div>' +
-            '<div class="day">01</div>' +
-            '<div class="day">02</div>' +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-lg-4 pt-3 pt-lg-5">' +
-            '<div class="group-inline">' +
-            '<div class="form-group datepicker dropdown has-feedback field-14 disabled">' +
-            '<label id="field1Label">Label field</label>' +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-calendar"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<div class="input-group-text divider"></div>' +
-            '<input type="text" class="form-control" name="field1" aria-labelledby="field1Label" placeholder="gg/mm/aaaa" value="28/07/2024" disabled>' +
-            '<button class="input-group-text dropdown-toggle" type="button" aria-expanded="false">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-expand"></use>' +
-            "</svg>" +
-            "</button>" +
-            '<div class="dropdown-menu">' +
-            '<div class="date-header">' +
-            '<div class="form-group">' +
-            '<select class="form-select" name="month">' +
-            '<option value="01">Gennaio</option>' +
-            '<option value="02">Febbraio</option>' +
-            '<option value="03">Marzo</option>' +
-            '<option value="04">Aprile</option>' +
-            '<option value="05">Maggio</option>' +
-            '<option value="06">Giugno</option>' +
-            '<option value="07" selected>Luglio</option>' +
-            '<option value="08">Agosto</option>' +
-            '<option value="09">Settembre</option>' +
-            '<option value="10">Ottobre</option>' +
-            '<option value="11">Novembre</option>' +
-            '<option value="12">Dicembre</option>' +
-            "</select>" +
-            "</div>" +
-            '<div class="form-group">' +
-            '<select class="form-select" name="year">' +
-            '<option value="2024" selected>2024</option>' +
-            '<option value="2023">2023</option>' +
-            '<option value="2022">2022</option>' +
-            '<option value="2021">2021</option>' +
-            '<option value="2020">2020</option>' +
-            "</select>" +
-            "</div>" +
-            "</div>" +
-            '<div class="date-body">' +
-            '<div class="month-head">' +
-            '<div class="day">Lun</div>' +
-            '<div class="day">Mar</div>' +
-            '<div class="day">Mer</div>' +
-            '<div class="day">Gio</div>' +
-            '<div class="day">Ven</div>' +
-            '<div class="day">Sab</div>' +
-            '<div class="day">Dom</div>' +
-            "</div>" +
-            '<div class="month-days">' +
-            '<div class="day empty">31</div>' +
-            '<div class="day">01</div>' +
-            '<div class="day active">02</div>' +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="col-lg-4 pt-3 pt-lg-5">' +
-            '<div class="group-inline">' +
-            '<div class="form-group datepicker dropdown has-feedback field-14 readonly">' +
-            '<label id="field1Label">Label field</label>' +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-calendar"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<div class="input-group-text divider"></div>' +
-            '<input type="text" class="form-control" name="field1" aria-labelledby="field1Label" placeholder="gg/mm/aaaa" value="28/07/2024" readonly>' +
-            '<button class="input-group-text dropdown-toggle" type="button" aria-expanded="false">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-expand"></use>' +
-            "</svg>" +
-            "</button>" +
-            '<div class="dropdown-menu">' +
-            '<div class="date-header">' +
-            '<div class="form-group">' +
-            '<select class="form-select" name="month">' +
-            '<option value="01">Gennaio</option>' +
-            '<option value="02">Febbraio</option>' +
-            '<option value="03">Marzo</option>' +
-            '<option value="04">Aprile</option>' +
-            '<option value="05">Maggio</option>' +
-            '<option value="06">Giugno</option>' +
-            '<option value="07" selected>Luglio</option>' +
-            '<option value="08">Agosto</option>' +
-            '<option value="09">Settembre</option>' +
-            '<option value="10">Ottobre</option>' +
-            '<option value="11">Novembre</option>' +
-            '<option value="12">Dicembre</option>' +
-            "</select>" +
-            "</div>" +
-            '<div class="form-group">' +
-            '<select class="form-select" name="year">' +
-            '<option value="2024" selected>2024</option>' +
-            '<option value="2023">2023</option>' +
-            '<option value="2022">2022</option>' +
-            '<option value="2021">2021</option>' +
-            '<option value="2020">2020</option>' +
-            "</select>" +
-            "</div>" +
-            "</div>" +
-            '<div class="date-body">' +
-            '<div class="month-head">' +
-            '<div class="day">Lun</div>' +
-            '<div class="day">Mar</div>' +
-            '<div class="day">Mer</div>' +
-            '<div class="day">Gio</div>' +
-            '<div class="day">Ven</div>' +
-            '<div class="day">Sab</div>' +
-            '<div class="day">Dom</div>' +
-            "</div>" +
-            '<div class="month-days">' +
-            '<div class="day empty">31</div>' +
-            '<div class="day">01</div>' +
-            '<div class="day active">02</div>' +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>",
+          '<div class="row">' +
+               '<div class="col-lg-4 pt-3 pt-lg-5">' +
+                   '<div class="group-inline">' +
+                       '<div class="form-group datepicker dropdown has-feedback field-14">' +
+                           '<label id="field1Label">Label field</label>' +
+                           '<div class="input-group">' +
+                               '<div class="input-group-text">' +
+                                   '<svg class="icon icon-sm">' +
+                                       '<use href="./imgs/icon/sprite_fill.svg#it-calendar"></use>' +
+                                   '</svg>' +
+                               '</div>' +
+                               '<div class="input-group-text divider"></div>' +
+                               '<input type="text" class="form-control" name="field1" aria-labelledby="field1Label" placeholder="gg/mm/aaaa" value="">' +
+                               '<button class="input-group-text dropdown-toggle" type="button" aria-expanded="false">' +
+                                   '<svg class="icon icon-xs">' +
+                                       '<use href="./imgs/icon/sprite.svg#it-expand"></use>' +
+                                   '</svg>' +
+                               '</button>' +
+                               '<div class="dropdown-menu">' +
+                                   '<div class="mobile-header">' +
+                                       '<div class="h6">Titolo h1 della modale</div>' +
+                                       '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi">' +
+                                           '<svg class="icon">' +
+                                               '<use href="./imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                                           '</svg>' +
+                                       '</button>' +
+                                   '</div>' +
+                                   '<div class="date-header">' +
+                                       '<div class="form-group">' +
+                                           '<select class="form-select" name="month">' +
+                                               '<option value="01">Gennaio</option>' +
+                                               '<option value="02">Febbraio</option>' +
+                                               '<option value="03">Marzo</option>' +
+                                               '<option value="04">Aprile</option>' +
+                                               '<option value="05">Maggio</option>' +
+                                               '<option value="06">Giugno</option>' +
+                                               '<option value="07" selected>Luglio</option>' +
+                                               '<option value="08">Agosto</option>' +
+                                               '<option value="09">Settembre</option>' +
+                                               '<option value="10">Ottobre</option>' +
+                                               '<option value="11">Novembre</option>' +
+                                               '<option value="12">Dicembre</option>' +
+                                           '</select>' +
+                                       '</div>' +
+                                       '<div class="form-group">' +
+                                           '<select class="form-select" name="year">' +
+                                               '<option value="2024" selected>2024</option>' +
+                                               '<option value="2023">2023</option>' +
+                                               '<option value="2022">2022</option>' +
+                                               '<option value="2021">2021</option>' +
+                                               '<option value="2020">2020</option>' +
+                                           '</select>' +
+                                       '</div>' +
+                                   '</div>' +
+                                   '<div class="date-body">' +
+                                       '<div class="month-head">' +
+                                           '<div class="day">Lun</div>' +
+                                           '<div class="day">Mar</div>' +
+                                           '<div class="day">Mer</div>' +
+                                           '<div class="day">Gio</div>' +
+                                           '<div class="day">Ven</div>' +
+                                           '<div class="day">Sab</div>' +
+                                           '<div class="day">Dom</div>' +
+                                       '</div>' +
+                                       '<div class="month-days">' +
+                                           '<div class="day empty">31</div>' +
+                                           '<div class="day">01</div>' +
+                                           '<div class="day active">02</div>' +
+                                       '</div>' +
+                                   '</div>' +
+                               '</div>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-lg-4 pt-3 pt-lg-5">' +
+                   '<div class="group-inline">' +
+                       '<div class="form-group datepicker dropdown has-feedback field-14 disabled">' +
+                           '<label id="field1Label">Label field</label>' +
+                           '<div class="input-group">' +
+                               '<div class="input-group-text">' +
+                                   '<svg class="icon icon-sm">' +
+                                       '<use href="./imgs/icon/sprite_fill.svg#it-calendar"></use>' +
+                                   '</svg>' +
+                               '</div>' +
+                               '<div class="input-group-text divider"></div>' +
+                               '<input type="text" class="form-control" name="field1" aria-labelledby="field1Label" placeholder="gg/mm/aaaa" value="28/07/2024" disabled>' +
+                               '<button class="input-group-text dropdown-toggle" type="button" aria-expanded="false">' +
+                                   '<svg class="icon icon-xs">' +
+                                       '<use href="./imgs/icon/sprite.svg#it-expand"></use>' +
+                                   '</svg>' +
+                               '</button>' +
+                               '<div class="dropdown-menu">' +
+                                   '<div class="mobile-header">' +
+                                       '<div class="h6">Titolo h1 della modale</div>' +
+                                       '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi">' +
+                                           '<svg class="icon">' +
+                                               '<use href="./imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                                           '</svg>' +
+                                       '</button>' +
+                                   '</div>' +
+                                   '<div class="date-header">' +
+                                       '<div class="form-group">' +
+                                           '<select class="form-select" name="month">' +
+                                               '<option value="01">Gennaio</option>' +
+                                               '<option value="02">Febbraio</option>' +
+                                               '<option value="03">Marzo</option>' +
+                                               '<option value="04">Aprile</option>' +
+                                               '<option value="05">Maggio</option>' +
+                                               '<option value="06">Giugno</option>' +
+                                               '<option value="07" selected>Luglio</option>' +
+                                               '<option value="08">Agosto</option>' +
+                                               '<option value="09">Settembre</option>' +
+                                               '<option value="10">Ottobre</option>' +
+                                               '<option value="11">Novembre</option>' +
+                                               '<option value="12">Dicembre</option>' +
+                                           '</select>' +
+                                       '</div>' +
+                                       '<div class="form-group">' +
+                                           '<select class="form-select" name="year">' +
+                                               '<option value="2024" selected>2024</option>' +
+                                               '<option value="2023">2023</option>' +
+                                               '<option value="2022">2022</option>' +
+                                               '<option value="2021">2021</option>' +
+                                               '<option value="2020">2020</option>' +
+                                           '</select>' +
+                                       '</div>' +
+                                   '</div>' +
+                                   '<div class="date-body">' +
+                                       '<div class="month-head">' +
+                                           '<div class="day">Lun</div>' +
+                                           '<div class="day">Mar</div>' +
+                                           '<div class="day">Mer</div>' +
+                                           '<div class="day">Gio</div>' +
+                                           '<div class="day">Ven</div>' +
+                                           '<div class="day">Sab</div>' +
+                                           '<div class="day">Dom</div>' +
+                                       '</div>' +
+                                       '<div class="month-days">' +
+                                           '<div class="day empty">31</div>' +
+                                           '<div class="day">01</div>' +
+                                           '<div class="day active">02</div>' +
+                                       '</div>' +
+                                   '</div>' +
+                               '</div>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+               '<div class="col-lg-4 pt-3 pt-lg-5">' +
+                   '<div class="group-inline">' +
+                       '<div class="form-group datepicker dropdown has-feedback field-14 readonly">' +
+                           '<label id="field1Label">Label field</label>' +
+                           '<div class="input-group">' +
+                               '<div class="input-group-text">' +
+                                   '<svg class="icon icon-sm">' +
+                                       '<use href="./imgs/icon/sprite_fill.svg#it-calendar"></use>' +
+                                   '</svg>' +
+                               '</div>' +
+                               '<div class="input-group-text divider"></div>' +
+                               '<input type="text" class="form-control" name="field1" aria-labelledby="field1Label" placeholder="gg/mm/aaaa" value="28/07/2024" readonly>' +
+                               '<button class="input-group-text dropdown-toggle" type="button" aria-expanded="false">' +
+                                   '<svg class="icon icon-xs">' +
+                                       '<use href="./imgs/icon/sprite.svg#it-expand"></use>' +
+                                   '</svg>' +
+                               '</button>' +
+                               '<div class="dropdown-menu">' +
+                                   '<div class="mobile-header">' +
+                                       '<div class="h6">Titolo h1 della modale</div>' +
+                                       '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi">' +
+                                           '<svg class="icon">' +
+                                               '<use href="./imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                                           '</svg>' +
+                                       '</button>' +
+                                   '</div>' +
+                                   '<div class="date-header">' +
+                                       '<div class="form-group">' +
+                                           '<select class="form-select" name="month">' +
+                                               '<option value="01">Gennaio</option>' +
+                                               '<option value="02">Febbraio</option>' +
+                                               '<option value="03">Marzo</option>' +
+                                               '<option value="04">Aprile</option>' +
+                                               '<option value="05">Maggio</option>' +
+                                               '<option value="06">Giugno</option>' +
+                                               '<option value="07" selected>Luglio</option>' +
+                                               '<option value="08">Agosto</option>' +
+                                               '<option value="09">Settembre</option>' +
+                                               '<option value="10">Ottobre</option>' +
+                                               '<option value="11">Novembre</option>' +
+                                               '<option value="12">Dicembre</option>' +
+                                           '</select>' +
+                                       '</div>' +
+                                       '<div class="form-group">' +
+                                           '<select class="form-select" name="year">' +
+                                               '<option value="2024" selected>2024</option>' +
+                                               '<option value="2023">2023</option>' +
+                                               '<option value="2022">2022</option>' +
+                                               '<option value="2021">2021</option>' +
+                                               '<option value="2020">2020</option>' +
+                                           '</select>' +
+                                       '</div>' +
+                                   '</div>' +
+                                   '<div class="date-body">' +
+                                       '<div class="month-head">' +
+                                           '<div class="day">Lun</div>' +
+                                           '<div class="day">Mar</div>' +
+                                           '<div class="day">Mer</div>' +
+                                           '<div class="day">Gio</div>' +
+                                           '<div class="day">Ven</div>' +
+                                           '<div class="day">Sab</div>' +
+                                           '<div class="day">Dom</div>' +
+                                       '</div>' +
+                                       '<div class="month-days">' +
+                                           '<div class="day empty">31</div>' +
+                                           '<div class="day">01</div>' +
+                                           '<div class="day active">02</div>' +
+                                       '</div>' +
+                                   '</div>' +
+                               '</div>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+               '</div>' +
+           '</div>'
+,
         },
         Type2: {
           default:
-            '<div class="pt-3 pt-lg-5">' +
             '<div class="group-inline">' +
-            '<div class="form-group datepicker dropdown has-feedback field-14 is-valid">' +
-            '<label id="field1Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-calendar"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<div class="input-group-text divider"></div>' +
-            '<input type="text" class="form-control" name="field1" aria-labelledby="field1Label" placeholder="gg/mm/aaaa" value="28/07/2024">' +
-            '<button class="input-group-text dropdown-toggle" type="button" aria-expanded="false">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-expand"></use>' +
-            "</svg>" +
-            "</button>" +
-            '<div class="dropdown-menu">' +
-            '<div class="date-header">' +
-            '<div class="form-group">' +
-            '<select class="form-select" name="month">' +
-            '<option value="01">Gennaio</option>' +
-            '<option value="02">Febbraio</option>' +
-            '<option value="03">Marzo</option>' +
-            '<option value="04">Aprile</option>' +
-            '<option value="05">Maggio</option>' +
-            '<option value="06">Giugno</option>' +
-            '<option value="07" selected>Luglio</option>' +
-            '<option value="08">Agosto</option>' +
-            '<option value="09">Settembre</option>' +
-            '<option value="10">Ottobre</option>' +
-            '<option value="11">Novembre</option>' +
-            '<option value="12">Dicembre</option>' +
-            "</select>" +
-            "</div>" +
-            '<div class="form-group">' +
-            '<select class="form-select" name="year">' +
-            '<option value="2024" selected>2024</option>' +
-            '<option value="2023">2023</option>' +
-            '<option value="2022">2022</option>' +
-            '<option value="2021">2021</option>' +
-            '<option value="2020">2020</option>' +
-            "</select>" +
-            "</div>" +
-            "</div>" +
-            '<div class="date-body">' +
-            '<div class="month-head">' +
-            '<div class="day">Lun</div>' +
-            '<div class="day">Mar</div>' +
-            '<div class="day">Mer</div>' +
-            '<div class="day">Gio</div>' +
-            '<div class="day">Ven</div>' +
-            '<div class="day">Sab</div>' +
-            '<div class="day">Dom</div>' +
-            "</div>" +
-            '<div class="month-days">' +
-            '<div class="day empty">31</div>' +
-            '<div class="day">01</div>' +
-            '<div class="day active">02</div>' +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="valid-feedback">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Message explaining the success" +
-            "</span>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>",
+               '<div class="form-group datepicker dropdown has-feedback field-14 is-valid">' +
+                   '<label id="field1Label">' +
+                       'Label field' +
+                   '</label>' +
+                   '<div class="input-group">' +
+                       '<div class="input-group-text">' +
+                           '<svg class="icon icon-sm">' +
+                               '<use href="./imgs/icon/sprite_fill.svg#it-calendar"></use>' +
+                           '</svg>' +
+                       '</div>' +
+                       '<div class="input-group-text divider"></div>' +
+                       '<input type="text" class="form-control" name="field1" aria-labelledby="field1Label" placeholder="gg/mm/aaaa" value="28/07/2024">' +
+                       '<button class="input-group-text dropdown-toggle" type="button" aria-expanded="false">' +
+                           '<svg class="icon icon-xs">' +
+                               '<use href="./imgs/icon/sprite.svg#it-expand"></use>' +
+                           '</svg>' +
+                       '</button>' +
+                       '<div class="dropdown-menu">' +
+                           '<div class="mobile-header">' +
+                               '<div class="h6">' +
+                                   'Titolo h1 della modale' +
+                               '</div>' +
+                               '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi">' +
+                                   '<svg class="icon">' +
+                                       '<use href="./imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                                   '</svg>' +
+                               '</button>' +
+                           '</div>' +
+                           '<div class="date-header">' +
+                               '<div class="form-group">' +
+                                   '<select class="form-select" name="month">' +
+                                       '<option value="01">Gennaio</option>' +
+                                       '<option value="02">Febbraio</option>' +
+                                       '<option value="03">Marzo</option>' +
+                                       '<option value="04">Aprile</option>' +
+                                       '<option value="05">Maggio</option>' +
+                                       '<option value="06">Giugno</option>' +
+                                       '<option value="07" selected>Luglio</option>' +
+                                       '<option value="08">Agosto</option>' +
+                                       '<option value="09">Settembre</option>' +
+                                       '<option value="10">Ottobre</option>' +
+                                       '<option value="11">Novembre</option>' +
+                                       '<option value="12">Dicembre</option>' +
+                                   '</select>' +
+                               '</div>' +
+                               '<div class="form-group">' +
+                                   '<select class="form-select" name="year">' +
+                                       '<option value="2024" selected>2024</option>' +
+                                       '<option value="2023">2023</option>' +
+                                       '<option value="2022">2022</option>' +
+                                       '<option value="2021">2021</option>' +
+                                       '<option value="2020">2020</option>' +
+                                   '</select>' +
+                               '</div>' +
+                           '</div>' +
+                           '<div class="date-body">' +
+                               '<div class="month-head">' +
+                                   '<div class="day">Lun</div>' +
+                                   '<div class="day">Mar</div>' +
+                                   '<div class="day">Mer</div>' +
+                                   '<div class="day">Gio</div>' +
+                                   '<div class="day">Ven</div>' +
+                                   '<div class="day">Sab</div>' +
+                                   '<div class="day">Dom</div>' +
+                               '</div>' +
+                               '<div class="month-days">' +
+                                   '<div class="day empty">31</div>' +
+                                   '<div class="day">01</div>' +
+                                   '<div class="day active">02</div>' +
+                               '</div>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+                   '<div class="valid-feedback">' +
+                       '<svg class="icon">' +
+                           '<use href="./imgs/icon/sprite_fill.svg#it-check-circle"></use>' +
+                       '</svg>' +
+                       '<span>' +
+                           'Message explaining the success' +
+                       '</span>' +
+                   '</div>' +
+               '</div>' +
+           '</div>',
         },
         Type3: {
           default:
-            '<div class="pt-3 pt-lg-5">' +
             '<div class="group-inline">' +
-            '<div class="form-group datepicker dropdown has-feedback field-14 is-invalid">' +
-            '<label id="field1Label">' +
-            "Label field" +
-            "</label>" +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-sm">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-calendar"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<div class="input-group-text divider"></div>' +
-            '<input type="text" class="form-control" name="field1" aria-labelledby="field1Label" placeholder="gg/mm/aaaa" value="28/07/2024">' +
-            '<button class="input-group-text dropdown-toggle" type="button" aria-expanded="false">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-expand"></use>' +
-            "</svg>" +
-            "</button>" +
-            '<div class="dropdown-menu">' +
-            '<div class="date-header">' +
-            '<div class="form-group">' +
-            '<select class="form-select" name="month">' +
-            '<option value="01">Gennaio</option>' +
-            '<option value="02">Febbraio</option>' +
-            '<option value="03">Marzo</option>' +
-            '<option value="04">Aprile</option>' +
-            '<option value="05">Maggio</option>' +
-            '<option value="06">Giugno</option>' +
-            '<option value="07" selected>Luglio</option>' +
-            '<option value="08">Agosto</option>' +
-            '<option value="09">Settembre</option>' +
-            '<option value="10">Ottobre</option>' +
-            '<option value="11">Novembre</option>' +
-            '<option value="12">Dicembre</option>' +
-            "</select>" +
-            "</div>" +
-            '<div class="form-group">' +
-            '<select class="form-select" name="year">' +
-            '<option value="2024" selected>2024</option>' +
-            '<option value="2023">2023</option>' +
-            '<option value="2022">2022</option>' +
-            '<option value="2021">2021</option>' +
-            '<option value="2020">2020</option>' +
-            "</select>" +
-            "</div>" +
-            "</div>" +
-            '<div class="date-body">' +
-            '<div class="month-head">' +
-            '<div class="day">Lun</div>' +
-            '<div class="day">Mar</div>' +
-            '<div class="day">Mer</div>' +
-            '<div class="day">Gio</div>' +
-            '<div class="day">Ven</div>' +
-            '<div class="day">Sab</div>' +
-            '<div class="day">Dom</div>' +
-            "</div>" +
-            '<div class="month-days">' +
-            '<div class="day empty">31</div>' +
-            '<div class="day">01</div>' +
-            '<div class="day active">02</div>' +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<div class="invalid-feedback">' +
-            '<svg class="icon">' +
-            '<use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Message explaining the error" +
-            "</span>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            "</div>",
+               '<div class="form-group datepicker dropdown has-feedback field-14 is-invalid">' +
+                   '<label id="field1Label">' +
+                       'Label field' +
+                   '</label>' +
+                   '<div class="input-group">' +
+                       '<div class="input-group-text">' +
+                           '<svg class="icon icon-sm">' +
+                               '<use href="./imgs/icon/sprite_fill.svg#it-calendar"></use>' +
+                           '</svg>' +
+                       '</div>' +
+                       '<div class="input-group-text divider"></div>' +
+                       '<input type="text" class="form-control" name="field1" aria-labelledby="field1Label" placeholder="gg/mm/aaaa" value="28/07/2024">' +
+                       '<button class="input-group-text dropdown-toggle" type="button" aria-expanded="false">' +
+                           '<svg class="icon icon-xs">' +
+                               '<use href="./imgs/icon/sprite.svg#it-expand"></use>' +
+                           '</svg>' +
+                       '</button>' +
+                       '<div class="dropdown-menu">' +
+                           '<div class="mobile-header">' +
+                               '<div class="h6">' +
+                                   'Titolo h1 della modale' +
+                               '</div>' +
+                               '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi">' +
+                                   '<svg class="icon">' +
+                                       '<use href="./imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
+                                   '</svg>' +
+                               '</button>' +
+                           '</div>' +
+                           '<div class="date-header">' +
+                               '<div class="form-group">' +
+                                   '<select class="form-select" name="month">' +
+                                       '<option value="01">Gennaio</option>' +
+                                       '<option value="02">Febbraio</option>' +
+                                       '<option value="03">Marzo</option>' +
+                                       '<option value="04">Aprile</option>' +
+                                       '<option value="05">Maggio</option>' +
+                                       '<option value="06">Giugno</option>' +
+                                       '<option value="07" selected>Luglio</option>' +
+                                       '<option value="08">Agosto</option>' +
+                                       '<option value="09">Settembre</option>' +
+                                       '<option value="10">Ottobre</option>' +
+                                       '<option value="11">Novembre</option>' +
+                                       '<option value="12">Dicembre</option>' +
+                                   '</select>' +
+                               '</div>' +
+                               '<div class="form-group">' +
+                                   '<select class="form-select" name="year">' +
+                                       '<option value="2024" selected>2024</option>' +
+                                       '<option value="2023">2023</option>' +
+                                       '<option value="2022">2022</option>' +
+                                       '<option value="2021">2021</option>' +
+                                       '<option value="2020">2020</option>' +
+                                   '</select>' +
+                               '</div>' +
+                           '</div>' +
+                           '<div class="date-body">' +
+                               '<div class="month-head">' +
+                                   '<div class="day">Lun</div>' +
+                                   '<div class="day">Mar</div>' +
+                                   '<div class="day">Mer</div>' +
+                                   '<div class="day">Gio</div>' +
+                                   '<div class="day">Ven</div>' +
+                                   '<div class="day">Sab</div>' +
+                                   '<div class="day">Dom</div>' +
+                               '</div>' +
+                               '<div class="month-days">' +
+                                   '<div class="day empty">31</div>' +
+                                   '<div class="day">01</div>' +
+                                   '<div class="day active">02</div>' +
+                               '</div>' +
+                           '</div>' +
+                       '</div>' +
+                   '</div>' +
+                   '<div class="invalid-feedback">' +
+                       '<svg class="icon">' +
+                           '<use href="./imgs/icon/sprite_fill.svg#it-error-circle"></use>' +
+                       '</svg>' +
+                       '<span>' +
+                           'Message explaining the error' +
+                       '</span>' +
+                   '</div>' +
+               '</div>' +
+           '</div>',
         },
       };
 
