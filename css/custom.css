@@ -60,6 +60,12 @@ p {
   transition: margin 0.3s ease-in-out;
 }
 
+@media (max-width: 991px) {
+  .header {
+    background-color: #fff;
+  }
+}
+
 .header-middle {
   border-bottom: none;
 }
