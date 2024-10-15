@@ -1,146 +1,128 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="utf-8" />
-    <title>MIT - Portale delle Linee Guida di UX e UI - Accordion</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="shortcut icon" href="./favicon.ico" />
 
-    <!-- Bootstrap 5.3 -->
-    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<head>
+  <meta charset="utf-8" />
+  <title>MIT - Portale delle Linee Guida di UX e UI - Accordion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="./favicon.ico" />
 
-    <!-- G36 Theme CSS -->
-    <link href="css/font.css" type="text/css" rel="stylesheet" />
-    <link href="css/form.css" type="text/css" rel="stylesheet" />
-    <link href="css/table.css" type="text/css" rel="stylesheet" />
-    <link href="css/theme.css" type="text/css" rel="stylesheet" />
+  <!-- Bootstrap 5.3 -->
+  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 
-    <!-- Custom css-->
-    <link href="css/custom.css" type="text/css" rel="stylesheet" />
+  <!-- G36 Theme CSS -->
+  <link href="css/font.css" type="text/css" rel="stylesheet" />
+  <link href="css/form.css" type="text/css" rel="stylesheet" />
+  <link href="css/table.css" type="text/css" rel="stylesheet" />
+  <link href="css/theme.css" type="text/css" rel="stylesheet" />
 
-    <!-- Fonts -->
-    <link href="css/font.css" type="text/css" rel="stylesheet" />
+  <!-- Custom css-->
+  <link href="css/custom.css" type="text/css" rel="stylesheet" />
 
-    <style>
-      .avatar-container {
-        display: flex;
-        gap: 10px;
-      }
+  <!-- Fonts -->
+  <link href="css/font.css" type="text/css" rel="stylesheet" />
 
-      .avatar img {
-        max-width: 100%;
-      }
-    </style>
-  </head>
+  <style>
+    .avatar-container {
+      display: flex;
+      gap: 10px;
+    }
 
-  <body>
-    <header class="header px-4 px-lg-9 sticky-top">
-      <div class="header-middle d-flex pt-lg-5  pb-lg-5">
-        <div class="nav-left">
-          <!-- Brand -->
-          <a class="navbar-brand" title="LOGO" href="#">
-            <span class="brand-logo"
-              ><svg
-                width="48"
-                height="48"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="24" cy="24" r="24" fill="#0066CC" />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M11.5 18.75L24 10L36.5 18.75H11.5ZM12.75 32.5V31.25H35.25V32.5H12.75ZM12.75 33.75V35H35.25V33.75H12.75ZM24 11.5L32.5 17.5H15.5L24 11.5ZM16.5 30V20H15.25V30H16.5ZM21.5 20V30H20.25V20H21.5ZM27.75 30V20H26.5V30H27.75ZM32.75 20V30H31.5V20H32.75Z"
-                  fill="white"
-                />
-              </svg>
-            </span>
+    .avatar img {
+      max-width: 100%;
+    }
+  </style>
+</head>
 
-            <div class="brand-text">
-              MIT - Web <br />
-              Identity Portal
-            </div>
-          </a>
-        </div>
+<body>
+  <header class="header px-4 px-lg-9 sticky-top">
+    <div class="header-middle d-flex pt-lg-5  pb-lg-5">
+      <div class="nav-left">
+        <!-- Brand -->
+        <a class="navbar-brand" title="LOGO" href="#">
+          <span class="brand-logo"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="24" fill="#0066CC" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.5 18.75L24 10L36.5 18.75H11.5ZM12.75 32.5V31.25H35.25V32.5H12.75ZM12.75 33.75V35H35.25V33.75H12.75ZM24 11.5L32.5 17.5H15.5L24 11.5ZM16.5 30V20H15.25V30H16.5ZM21.5 20V30H20.25V20H21.5ZM27.75 30V20H26.5V30H27.75ZM32.75 20V30H31.5V20H32.75Z"
+                fill="white" />
+            </svg>
+          </span>
 
-        <div class="nav-right">
-          <!-- Search Wrapper -->
-          
-
-         
-
-          <!-- Login -->
-          <div class="login-wrapper">
-            <button type="button" class="btn btn-sm btn btn-primary">
-              <svg class="icon icon-sm" aria-hidden="true">
-                <use href="/imgs/icon/sprite.svg#it-user"></use>
-              </svg>
-              <span class="mobile-hidden-lg"> Accedi al portale </span>
-            </button>
+          <div class="brand-text">
+            MIT - Web <br />
+            Identity Portal
           </div>
-
-          <div class="navbar navbar-expand-lg ps-3 ps-lg-0">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </div>
+        </a>
       </div>
 
-      <div class="header-bottom">
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-          <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <div class="nav-left">
-                <nav class="nav-menu pt-3 pt-lg-0" aria-label="Lorem ipsum">
-                  <ul class="nav navbar-nav">
-                    <!-- Esempio Mega menu Container -->
+      <div class="nav-right">
+        <!-- Search Wrapper -->
 
-                    <li class="nav-item">
-                      <a href="homepage.html" class="nav-link">
-                        <span>Homepage</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="design-system.html" class="nav-link active">
-                        <span>Design System</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="accessibilità.html" class="nav-link">
-                        <span>Accessibilità</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
+
+
+
+        <!-- Login -->
+        <div class="login-wrapper">
+          <button type="button" class="btn btn-sm btn btn-primary">
+            <svg class="icon icon-sm" aria-hidden="true">
+              <use href="/imgs/icon/sprite.svg#it-user"></use>
+            </svg>
+            <span class="mobile-hidden-lg"> Accedi al portale </span>
+          </button>
+        </div>
+
+        <div class="navbar navbar-expand-lg ps-3 ps-lg-0">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="nav-left">
+              <nav class="nav-menu pt-3 pt-lg-0" aria-label="Lorem ipsum">
+                <ul class="nav navbar-nav">
+                  <!-- Esempio Mega menu Container -->
+
+                  <li class="nav-item">
+                    <a href="homepage.html" class="nav-link">
+                      <span>Homepage</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="design-system.html" class="nav-link active">
+                      <span>Design System</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="accessibilità.html" class="nav-link">
+                      <span>Accessibilità</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
-        </nav>
-      </div>
-    </header>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-    <main class="container-fluid">
-      <div class="row px-lg-9">
-        <aside class="sidebar-menu col-12 col-lg-3">
-          <div class="sidebar-wrapper sticky-top-sidebar my-6">
-            <div class="card sidebar bg-white">
-              <div class="card-header">
-                <div class="h6">Design system</div>
-              </div>
-              <!-- 
+  <main class="container-fluid">
+    <div class="row px-lg-9">
+      <aside class="sidebar-menu col-12 col-lg-3">
+        <div class="sidebar-wrapper sticky-top-sidebar my-6">
+          <div class="card sidebar bg-white">
+            <div class="card-header">
+              <div class="h6">Design system</div>
+            </div>
+            <!-- 
               <a class="card-header-mobile" href="javascript:">
                <span>
                  Title
@@ -150,675 +132,463 @@
                 </svg>
               </a>
               -->
-              <div class="sidebar-scroll">
-                <ul class="sidebar-list">
-                  <li>
-                    <a class="list-link" href="design-system.html">
-                      <div class="list-item">
-                        <span> Welcome </span>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="list-dropdown">
-                    <a
-                      class="list-link collapsed"
-                      href="#collapse1"
-                      role="button"
-                      data-bs-toggle="collapse"
-                      aria-expanded="false"
-                      aria-controls="collapse1"
-                    >
-                      <div class="list-item">
-                        <span> Index </span>
-                        <svg
-                          class="icon icon-sm dropdown-icon"
-                          aria-hidden="true"
-                        >
-                          <use
-                            xlink:href="/imgs/icon/sprite.svg#it-expand"
-                          ></use>
-                        </svg>
-                      </div>
-                    </a>
-                    <ul class="sidebar-list collapse" id="collapse1">
-                      <li>
-                        <a class="list-link" href="index-components.html">
-                          <div class="list-item">
-                            <span> Index components </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="index-section.html">
-                          <div class="list-item">
-                            <span> Index section </span>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="list-dropdown">
-                    <a
-                      class="list-link collapsed"
-                      href="#collapse"
-                      role="button"
-                      data-bs-toggle="collapse"
-                      aria-expanded="false"
-                      aria-controls="collapse"
-                    >
-                      <div class="list-item">
-                        <span> Foundation </span>
-                        <svg
-                          class="icon icon-sm dropdown-icon"
-                          aria-hidden="true"
-                        >
-                          <use
-                            xlink:href="/imgs/icon/sprite.svg#it-expand"
-                          ></use>
-                        </svg>
-                      </div>
-                    </a>
-                    <ul class="sidebar-list collapse" id="collapse">
-                      <li>
-                        <a class="list-link" href="border-radius.html">
-                          <div class="list-item">
-                            <span> Border radius </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="color-system.html">
-                          <div class="list-item">
-                            <span> Color system </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="grid.html">
-                          <div class="list-item">
-                            <span> Grid </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="icons.html">
-                          <div class="list-item">
-                            <span> Icons </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="typography.html">
-                          <div class="list-item">
-                            <span> Typography </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="shadows.html">
-                          <div class="list-item">
-                            <span> Shadows </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="spacing.html">
-                          <div class="list-item">
-                            <span> Spacing </span>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="list-dropdown">
-                    <a
-                      class="list-link active collapsed"
-                      href="#collapse2"
-                      role="button"
-                      data-bs-toggle="collapse"
-                      aria-expanded="false"
-                      aria-controls="collapse2"
-                    >
-                      <div class="list-item">
-                        <span> Components </span>
-                        <svg
-                          class="icon icon-sm dropdown-icon"
-                          aria-hidden="true"
-                        >
-                          <use
-                            xlink:href="/imgs/icon/sprite.svg#it-expand"
-                          ></use>
-                        </svg>
-                      </div>
-                    </a>
-                    <ul class="sidebar-list collapse" id="collapse2">
-                      <li>
-                        <a class="list-link active" href="accordion.html">
-                          <div class="list-item">
-                            <span> Accordion </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="alert.html">
-                          <div class="list-item">
-                            <span> Alert </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="avatar.html">
-                          <div class="list-item">
-                            <span> Avatar </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="badge.html">
-                          <div class="list-item">
-                            <span> Badge </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="bottombar.html">
-                          <div class="list-item">
-                            <span> Bottom Bar </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="breadcrumb.html">
-                          <div class="list-item">
-                            <span> Breadcrumbs </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="button.html">
-                          <div class="list-item">
-                            <span> Button </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="buttongroup.html">
-                          <div class="list-item">
-                            <span> Button Group </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="card.html">
-                          <div class="list-item">
-                            <span> Card </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="checkbox.html">
-                          <div class="list-item">
-                            <span> Checkbox </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="chips.html">
-                          <div class="list-item">
-                            <span> Chips </span>
-                          </div>
-                        </a>
-                      </li>
-                     <li>
-                        <a class="list-link" href="cookie.html">
-                          <div class="list-item">
-                            <span> Coockie banner </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="datepicker.html">
-                          <div class="list-item">
-                            <span> Data picker </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="dropdown.html">
-                          <div class="list-item">
-                            <span> Dropdown </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="floatingbottom.html">
-                          <div class="list-item">
-                            <span> Floating button </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="imagine-ratio.html">
-                          <div class="list-item">
-                            <span> Imagine ratio </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="input.html">
-                          <div class="list-item">
-                            <span> Input & Text area </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="inputsearch.html">
-                          <div class="list-item">
-                            <span> Input search </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="loader.html">
-                          <div class="list-item">
-                            <span> Loader </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="modali.html">
-                          <div class="list-item">
-                            <span> Modali </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="pagination.html">
-                          <div class="list-item">
-                            <span> Pagination </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="popover.html">
-                          <div class="list-item">
-                            <span> Popover </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="radiobutton.html">
-                          <div class="list-item">
-                            <span> Radio button </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="scrollbar.html">
-                          <div class="list-item">
-                            <span> Scrollbar </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="select.html">
-                          <div class="list-item">
-                            <span> Select </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="slider.html">
-                          <div class="list-item">
-                            <span> Slider </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="stepper.html">
-                          <div class="list-item">
-                            <span> Stepper </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="switcher.html">
-                          <div class="list-item">
-                            <span> Switcher </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="table.html">
-                          <div class="list-item">
-                            <span> Tables </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="tab.html">
-                          <div class="list-item">
-                            <span> Tab menù </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="timepicker.html">
-                          <div class="list-item">
-                            <span> Time picker </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="timeline.html">
-                          <div class="list-item">
-                            <span> Time line </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="toggle.html">
-                          <div class="list-item">
-                            <span> Toggle </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="tooltip.html">
-                          <div class="list-item">
-                            <span> Tooltip </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="uploader.html">
-                          <div class="list-item">
-                            <span> Uploader </span>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="list-dropdown">
-                    <a
-                      class="list-link collapsed"
-                      href="#collapse4"
-                      role="button"
-                      data-bs-toggle="collapse"
-                      aria-expanded="false"
-                      aria-controls="collapse4"
-                    >
-                      <div class="list-item">
-                        <span> Section </span>
-                        <svg
-                          class="icon icon-sm dropdown-icon"
-                          aria-hidden="true"
-                        >
-                          <use
-                            xlink:href="/imgs/icon/sprite.svg#it-expand"
-                          ></use>
-                        </svg>
-                      </div>
-                    </a>
-                    <ul class="sidebar-list collapse" id="collapse4">
-                      <li>
-                        <a class="list-link" href="header.html">
-                          <div class="list-item">
-                            <span> Header</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="herobanner.html">
-                          <div class="list-item">
-                            <span> Hero banner </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="footer.html">
-                          <div class="list-item">
-                            <span> Footer </span>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a class="list-link" href="sidebar.html">
-                          <div class="list-item">
-                            <span> Sidebar navigation </span>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+            <div class="sidebar-scroll">
+              <ul class="sidebar-list">
+                <li>
+                  <a class="list-link" href="design-system.html">
+                    <div class="list-item">
+                      <span> Welcome </span>
+                    </div>
+                  </a>
+                </li>
+                <li class="list-dropdown">
+                  <a class="list-link collapsed" href="#collapse1" role="button" data-bs-toggle="collapse"
+                    aria-expanded="false" aria-controls="collapse1">
+                    <div class="list-item">
+                      <span> Index </span>
+                      <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
+                        <use xlink:href="/imgs/icon/sprite.svg#it-expand"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <ul class="sidebar-list collapse" id="collapse1">
+                    <li>
+                      <a class="list-link" href="index-components.html">
+                        <div class="list-item">
+                          <span> Index components </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="index-section.html">
+                        <div class="list-item">
+                          <span> Index section </span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-dropdown">
+                  <a class="list-link collapsed" href="#collapse" role="button" data-bs-toggle="collapse"
+                    aria-expanded="false" aria-controls="collapse">
+                    <div class="list-item">
+                      <span> Foundation </span>
+                      <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
+                        <use xlink:href="/imgs/icon/sprite.svg#it-expand"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <ul class="sidebar-list collapse" id="collapse">
+                    <li>
+                      <a class="list-link" href="border-radius.html">
+                        <div class="list-item">
+                          <span> Border radius </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="color-system.html">
+                        <div class="list-item">
+                          <span> Color system </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="grid.html">
+                        <div class="list-item">
+                          <span> Grid </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="icons.html">
+                        <div class="list-item">
+                          <span> Icons </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="typography.html">
+                        <div class="list-item">
+                          <span> Typography </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="shadows.html">
+                        <div class="list-item">
+                          <span> Shadows </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="spacing.html">
+                        <div class="list-item">
+                          <span> Spacing </span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-dropdown">
+                  <a class="list-link active collapsed" href="#collapse2" role="button" data-bs-toggle="collapse"
+                    aria-expanded="false" aria-controls="collapse2">
+                    <div class="list-item">
+                      <span> Components </span>
+                      <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
+                        <use xlink:href="/imgs/icon/sprite.svg#it-expand"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <ul class="sidebar-list collapse" id="collapse2">
+                    <li>
+                      <a class="list-link active" href="accordion.html">
+                        <div class="list-item">
+                          <span> Accordion </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="alert.html">
+                        <div class="list-item">
+                          <span> Alert </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="avatar.html">
+                        <div class="list-item">
+                          <span> Avatar </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="badge.html">
+                        <div class="list-item">
+                          <span> Badge </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="bottombar.html">
+                        <div class="list-item">
+                          <span> Bottom Bar </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="breadcrumb.html">
+                        <div class="list-item">
+                          <span> Breadcrumbs </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="button.html">
+                        <div class="list-item">
+                          <span> Button </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="buttongroup.html">
+                        <div class="list-item">
+                          <span> Button Group </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="card.html">
+                        <div class="list-item">
+                          <span> Card </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="checkbox.html">
+                        <div class="list-item">
+                          <span> Checkbox </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="chips.html">
+                        <div class="list-item">
+                          <span> Chips </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="cookie.html">
+                        <div class="list-item">
+                          <span> Coockie banner </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="datepicker.html">
+                        <div class="list-item">
+                          <span> Data picker </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="dropdown.html">
+                        <div class="list-item">
+                          <span> Dropdown </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="floatingbottom.html">
+                        <div class="list-item">
+                          <span> Floating button </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="imagine-ratio.html">
+                        <div class="list-item">
+                          <span> Imagine ratio </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="input.html">
+                        <div class="list-item">
+                          <span> Input & Text area </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="inputsearch.html">
+                        <div class="list-item">
+                          <span> Input search </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="loader.html">
+                        <div class="list-item">
+                          <span> Loader </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="modali.html">
+                        <div class="list-item">
+                          <span> Modali </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="pagination.html">
+                        <div class="list-item">
+                          <span> Pagination </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="popover.html">
+                        <div class="list-item">
+                          <span> Popover </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="radiobutton.html">
+                        <div class="list-item">
+                          <span> Radio button </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="scrollbar.html">
+                        <div class="list-item">
+                          <span> Scrollbar </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="select.html">
+                        <div class="list-item">
+                          <span> Select </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="slider.html">
+                        <div class="list-item">
+                          <span> Slider </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="stepper.html">
+                        <div class="list-item">
+                          <span> Stepper </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="switcher.html">
+                        <div class="list-item">
+                          <span> Switcher </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="table.html">
+                        <div class="list-item">
+                          <span> Tables </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="tab.html">
+                        <div class="list-item">
+                          <span> Tab menù </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="timepicker.html">
+                        <div class="list-item">
+                          <span> Time picker </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="timeline.html">
+                        <div class="list-item">
+                          <span> Time line </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="toggle.html">
+                        <div class="list-item">
+                          <span> Toggle </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="tooltip.html">
+                        <div class="list-item">
+                          <span> Tooltip </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="uploader.html">
+                        <div class="list-item">
+                          <span> Uploader </span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-dropdown">
+                  <a class="list-link collapsed" href="#collapse4" role="button" data-bs-toggle="collapse"
+                    aria-expanded="false" aria-controls="collapse4">
+                    <div class="list-item">
+                      <span> Section </span>
+                      <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
+                        <use xlink:href="/imgs/icon/sprite.svg#it-expand"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <ul class="sidebar-list collapse" id="collapse4">
+                    <li>
+                      <a class="list-link" href="header.html">
+                        <div class="list-item">
+                          <span> Header</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="herobanner.html">
+                        <div class="list-item">
+                          <span> Hero banner </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="footer.html">
+                        <div class="list-item">
+                          <span> Footer </span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="list-link" href="sidebar.html">
+                        <div class="list-item">
+                          <span> Sidebar navigation </span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
-        </aside>
+        </div>
+      </aside>
 
-        <div class="col-12 col-lg-9" id="main-content">
-          <div class="bg-hero-green p-6 rounded my-6">
-            <p class="fw-bold c-neutral-500">Design System</p>
-            <h2 class="titlepage fw-bold">Accordion</h2>
-          </div>
+      <div class="col-12 col-lg-9" id="main-content">
+        <div class="bg-hero-green p-6 rounded my-6">
+          <p class="fw-bold c-neutral-500">Design System</p>
+          <h2 class="titlepage fw-bold">Accordion</h2>
+        </div>
 
-             <p class="mt-4 mb-8">
-            L’accordion è un elenco di elementi impilati verticalmente che
-            consente agli utenti di espandere o comprimere sezioni di contenuto
-            per visualizzare o nascondere informazioni aggiuntive. E’ composto
-            da una serie di pannelli impilati verticalmente, ciascuno dei quali
-            contiene un'intestazione o un titolo e un contenuto associato.
-            Quando un utente clicca sull'intestazione di un pannello, il
-            contenuto di quel pannello si espande o si contrae, a seconda dello
-            stato corrente. Ciò consente agli utenti di accedere rapidamente al
-            contenuto desiderato, senza sovraccaricare visivamente l'interfaccia
-            con troppe informazioni contemporaneamente.
-          </p>
+        <p class="mt-4 mb-8">
+          L’accordion è un elenco di elementi impilati verticalmente che
+          consente agli utenti di espandere o comprimere sezioni di contenuto
+          per visualizzare o nascondere informazioni aggiuntive. E’ composto
+          da una serie di pannelli impilati verticalmente, ciascuno dei quali
+          contiene un'intestazione o un titolo e un contenuto associato.
+          Quando un utente clicca sull'intestazione di un pannello, il
+          contenuto di quel pannello si espande o si contrae, a seconda dello
+          stato corrente. Ciò consente agli utenti di accedere rapidamente al
+          contenuto desiderato, senza sovraccaricare visivamente l'interfaccia
+          con troppe informazioni contemporaneamente.
+        </p>
 
-          <!-- Sezione con bottone flottante e codice -->
-          <div class="bg-neutral-500 p-3">
-              <h5 class=" fw-bold titlepage mb-4">Variante</h5>
-            <div
-              class="bg-white d-flex align-items-center justify-content-center py-8 mb-3"
-            >
-              <div class="px-6 w-100">
-                <div class="accordion w-100" id="collapseExample">
-                  <div class="accordion-item item-ticon">
-                    <div class="accordion-header" id="heading1c">
-                      <button
-                        type="button"
-                        class="accordion-button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse1c"
-                        aria-expanded="true"
-                        aria-controls="collapse1c"
-                      >
-                        <div class="text-icon">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-example"
-                            ></use>
-                          </svg>
-                          <span> Elemento Richiudibile #1 </span>
-                        </div>
-                      </button>
-                    </div>
-                    <div
-                      id="collapse1c"
-                      class="accordion-collapse collapse show"
-                      role="region"
-                      aria-labelledby="heading1c"
-                    >
-                      <div class="accordion-body">
-                        <div>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum. Excepteur sint
-                          occaecat cupidatat non proident, sunt in culpa qui
-                          officia deserunt mollit anim id est laborum.Excepteur
-                          sint occaecat cupidatat non proident, sunt in culpa
-                          qui officia deserunt mollit anim id est laborum.
-                        </div>
-                        <div class="btn-toolbar">
-                          <button type="button" class="btn btn-primary">
-                            Button text
-                          </button>
-                          <button type="button" class="btn btn-outline-primary">
-                            Button text
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item item-ticon">
-                    <div class="accordion-header" id="heading2c">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse2c"
-                        aria-expanded="false"
-                        aria-controls="collapse2c"
-                      >
-                        <div class="text-icon">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-example"
-                            ></use>
-                          </svg>
-                          <span> Elemento Richiudibile #2 </span>
-                        </div>
-                      </button>
-                    </div>
-                    <div
-                      id="collapse2c"
-                      class="accordion-collapse collapse"
-                      role="region"
-                      aria-labelledby="heading2c"
-                    >
-                      <div class="accordion-body">
-                        <div>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum. Excepteur sint
-                          occaecat cupidatat non proident, sunt in culpa qui
-                          officia deserunt mollit anim id est laborum.Excepteur
-                          sint occaecat cupidatat non proident, sunt in culpa
-                          qui officia deserunt mollit anim id est laborum.
-                        </div>
-                        <div class="btn-toolbar">
-                          <button type="button" class="btn btn-primary">
-                            Button text
-                          </button>
-                          <button type="button" class="btn btn-outline-primary">
-                            Button text
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item item-ticon">
-                    <div class="accordion-header" id="heading3c">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse3c"
-                        aria-expanded="false"
-                        aria-controls="collapse3c"
-                      >
-                        <div class="text-icon">
-                          <svg class="icon icon-sm">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-example"
-                            ></use>
-                          </svg>
-                          <span> Elemento Richiudibile #3 </span>
-                        </div>
-                      </button>
-                    </div>
-                    <div
-                      id="collapse3c"
-                      class="accordion-collapse collapse"
-                      role="region"
-                      aria-labelledby="heading3c"
-                    >
-                      <div class="accordion-body">
-                        <div>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum. Excepteur sint
-                          occaecat cupidatat non proident, sunt in culpa qui
-                          officia deserunt mollit anim id est laborum.Excepteur
-                          sint occaecat cupidatat non proident, sunt in culpa
-                          qui officia deserunt mollit anim id est laborum.
-                        </div>
-                        <div class="btn-toolbar">
-                          <button type="button" class="btn btn-primary">
-                            Button text
-                          </button>
-                          <button type="button" class="btn btn-outline-primary">
-                            Button text
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item"></div>
-                  <div class="accordion-header" id="heading4c">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapse4c"
-                      aria-expanded="false"
-                      aria-controls="collapse4c"
-                    >
+        <!-- Sezione con bottone flottante e codice -->
+        <div class="bg-neutral-500 p-3">
+          <h5 class=" fw-bold titlepage mb-4">Variante</h5>
+          <div class="bg-white d-flex align-items-center justify-content-center py-8 mb-3">
+            <div class="px-6 w-100">
+              <div class="accordion w-100" id="collapseExample">
+                <div class="accordion-item item-ticon">
+                  <div class="accordion-header" id="heading1c">
+                    <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse1c" aria-expanded="true" aria-controls="collapse1c">
                       <div class="text-icon">
-                        <span> Elemento Richiudibile #3 </span>
+                        <svg class="icon icon-sm">
+                          <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
+                        </svg>
+                        <span> Elemento Richiudibile #1 </span>
                       </div>
                     </button>
                   </div>
-                  <div
-                    id="collapse4c"
-                    class="accordion-collapse collapse"
-                    role="region"
-                    aria-labelledby="heading4c"
-                  >
+                  <div id="collapse1c" class="accordion-collapse collapse show" role="region"
+                    aria-labelledby="heading1c">
                     <div class="accordion-body">
                       <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
                         reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
                       </div>
                       <div class="btn-toolbar">
                         <button type="button" class="btn btn-primary">
@@ -831,9 +601,126 @@
                     </div>
                   </div>
                 </div>
+                <div class="accordion-item item-ticon">
+                  <div class="accordion-header" id="heading2c">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse2c" aria-expanded="false" aria-controls="collapse2c">
+                      <div class="text-icon">
+                        <svg class="icon icon-sm">
+                          <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
+                        </svg>
+                        <span> Elemento Richiudibile #2 </span>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapse2c" class="accordion-collapse collapse" role="region" aria-labelledby="heading2c">
+                    <div class="accordion-body">
+                      <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                      </div>
+                      <div class="btn-toolbar">
+                        <button type="button" class="btn btn-primary">
+                          Button text
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                          Button text
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item item-ticon">
+                  <div class="accordion-header" id="heading3c">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse3c" aria-expanded="false" aria-controls="collapse3c">
+                      <div class="text-icon">
+                        <svg class="icon icon-sm">
+                          <use href="/imgs/icon/sprite_fill.svg#it-example"></use>
+                        </svg>
+                        <span> Elemento Richiudibile #3 </span>
+                      </div>
+                    </button>
+                  </div>
+                  <div id="collapse3c" class="accordion-collapse collapse" role="region" aria-labelledby="heading3c">
+                    <div class="accordion-body">
+                      <div>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa
+                        qui officia deserunt mollit anim id est laborum.
+                      </div>
+                      <div class="btn-toolbar">
+                        <button type="button" class="btn btn-primary">
+                          Button text
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                          Button text
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item"></div>
+                <div class="accordion-header" id="heading4c">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse4c" aria-expanded="false" aria-controls="collapse4c">
+                    <div class="text-icon">
+                      <span> Elemento Richiudibile #3 </span>
+                    </div>
+                  </button>
+                </div>
+                <div id="collapse4c" class="accordion-collapse collapse" role="region" aria-labelledby="heading4c">
+                  <div class="accordion-body">
+                    <div>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore
+                      magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu
+                      fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                      non proident, sunt in culpa qui officia deserunt mollit
+                      anim id est laborum. Excepteur sint occaecat cupidatat
+                      non proident, sunt in culpa qui officia deserunt mollit
+                      anim id est laborum.Excepteur sint occaecat cupidatat
+                      non proident, sunt in culpa qui officia deserunt mollit
+                      anim id est laborum.
+                    </div>
+                    <div class="btn-toolbar">
+                      <button type="button" class="btn btn-primary">
+                        Button text
+                      </button>
+                      <button type="button" class="btn btn-outline-primary">
+                        Button text
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-         
+          </div>
+
 
           <!-- Sezione per visualizzare il codice -->
           <div class="d-flex justify-content-between align-items-center mb-3">
@@ -851,126 +738,148 @@
           </div>
         </div>
 
-          <!-- Sezione do and don't -->
-         <div class="my-8">
-            <h5 class="mb-4 fw-bold">Do and don’t</h5>
-            <p class="my-3">
-              Di seguito un elenco del corretto utilizzo degli accordion:
-            </p>
+        <!-- Sezione do and don't -->
+        <div class="my-8">
+          <h5 class="mb-4 fw-bold">Do and don’t</h5>
+          <p class="my-3">
+            Di seguito un elenco del corretto utilizzo degli accordion:
+          </p>
 
-            <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
-              <div class="col-12 col-md-6">
-                <div class="card shadow-none h-100 bg-gray">
-                  <div class="card-body pb-0">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-success">
-                          <span> Do </span>
-                          <svg class="icon icon-sm icon-success ms-2">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-check-circle"
-                            ></use>
-                          </svg>
-                        </div>
+          <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
+            <div class="col-12 col-md-6">
+              <div class="card shadow-none h-100 bg-gray">
+                <div class="card-body pb-0">
+                  <div class="card-bar">
+                    <div class="bar-group">
+                      <div class="badge badge-sm badge-success">
+                        <span> Do </span>
+                        <svg class="icon icon-sm icon-success ms-2">
+                          <use href="/imgs/icon/sprite_fill.svg#it-check-circle"></use>
+                        </svg>
                       </div>
                     </div>
-                    <ul>
-                      <li>Utilizza etichette brevi ed informative.</li>
-                      <li>
-                        Usa frecce o icone per indicare chiaramente se una
-                        sezione è aperta o chiusa.
-                      </li>
-                    </ul>
                   </div>
+                  <ul>
+                    <li>Utilizza etichette brevi ed informative.</li>
+                    <li>
+                      Usa frecce o icone per indicare chiaramente se una
+                      sezione è aperta o chiusa.
+                    </li>
+                  </ul>
                 </div>
               </div>
+            </div>
 
-              <div class="col-12 col-md-6">
-                <div class="card shadow-none h-100 bg-gray">
-                  <div class="card-body pb-0">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-danger">
-                          <span> Don't </span>
-                          <svg class="ms-2 icon icon-sm icon-danger">
-                            <use
-                              href="/imgs/icon/sprite_fill.svg#it-error-circle"
-                            ></use>
-                          </svg>
-                        </div>
+            <div class="col-12 col-md-6">
+              <div class="card shadow-none h-100 bg-gray">
+                <div class="card-body pb-0">
+                  <div class="card-bar">
+                    <div class="bar-group">
+                      <div class="badge badge-sm badge-danger">
+                        <span> Don't </span>
+                        <svg class="ms-2 icon icon-sm icon-danger">
+                          <use href="/imgs/icon/sprite_fill.svg#it-error-circle"></use>
+                        </svg>
                       </div>
                     </div>
-                    <ul>
-                      <li>
-                        Non indicare lo stato dell’accordion con le etichette.
-                      </li>
-                    </ul>
                   </div>
+                  <ul>
+                    <li>
+                      Non indicare lo stato dell’accordion con le etichette.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div
-            class="d-flex justify-content-between py-3 bg-lightblu my-8 rounded px-6"
-          >
-            <button
-              type="button"
-              onclick="window.location.href='spacing.html'"
-              class="btn btn-bare btn-sm"
-            >
-              <svg class="icon">
-                <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
-              </svg>
-              <span>Spacing </span>
-            </button>
-            <button
-              onclick="window.location.href='alert.html'"
-              type="button"
-              class="btn btn-bare btn-sm"
-            >
-              <span>Alert </span>
-              <svg class="icon">
-                <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
-              </svg>
-            </button>
-          </div>
+        <div class="d-flex justify-content-between py-3 bg-lightblu my-8 rounded px-6">
+          <button type="button" onclick="window.location.href='spacing.html'" class="btn btn-bare btn-sm">
+            <svg class="icon">
+              <use href="/imgs/icon/sprite.svg#it-chevron-left"></use>
+            </svg>
+            <span>Spacing </span>
+          </button>
+          <button onclick="window.location.href='alert.html'" type="button" class="btn btn-bare btn-sm">
+            <span>Alert </span>
+            <svg class="icon">
+              <use href="/imgs/icon/sprite.svg#it-chevron-right"></use>
+            </svg>
+          </button>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="footer-credits">
-        <div class="container">
-          <div class="navbar-brand pe-4">
-            <svg class="icon icon-lg" aria-hidden="true">
-              <use href="/imgs/icon/ministero.svg#ministero"></use>
-            </svg>
-            <div class="body-lg text-w6 ps-3">
-              www.mit.gov.it - Ministero delle infrastrutture e dei trasporti.
-            </div>
-          </div>
-
-          <div class="text-icon">
-            <svg class="icon icon-xs" aria-hidden="true">
-              <use href="/imgs/icon/sprite.svg#it-copyright"></use>
-            </svg>
-            <span> Tutti i diritti riservati </span>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-credits">
+      <div class="container">
+        <div class="navbar-brand pe-4">
+          <svg class="icon icon-lg" aria-hidden="true">
+            <use href="/imgs/icon/ministero.svg#ministero"></use>
+          </svg>
+          <div class="body-lg text-w6 ps-3">
+            www.mit.gov.it - Ministero delle infrastrutture e dei trasporti.
           </div>
         </div>
+
+        <div class="text-icon">
+          <svg class="icon icon-xs" aria-hidden="true">
+            <use href="/imgs/icon/sprite.svg#it-copyright"></use>
+          </svg>
+          <span> Tutti i diritti riservati </span>
+        </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+  <!-- Pulsante per offcanvas in versione mobile fisso in fondo alla pagina -->
+  <div class="header-offcanvas bg-primary10 d-lg-none position-fixed bottom-0">
+    <div class="d-flex justify-content-between">
+      <div class="sidebarInfos">
+        <div id="sidebarTitle" class="h6">Titolo Sidebar</div>
+        <div id="sidebarActiveItem" class="mobile-selected">Titolo Menu Voce Attiva</div>
+      </div>
+      <button class="btn btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas"
+        aria-controls="sidebarOffcanvas">
+        <svg class="icon icon-sm" aria-hidden="true">
+          <use href="/imgs/icon/sprite_fill.svg#it-maximize"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const codeContentDiv = document.getElementById("codeContent");
-        const copyButton1 = document.getElementById("copyButton1");
+  <!-- Contenuto offcanvas che incorpora la sidebar solo versione mobile -->
+  <div class="offcanvas offcanvas-bottom h-75 bg-transparent" tabindex="-1" id="sidebarOffcanvas"
+    aria-labelledby="sidebarOffcanvasLabel">
+    <div class="offcanvas-header header-offcanvas bg-primary10">
+      <div class="h6 offcanvas-title" id="sidebarOffcanvasLabel">Titolo Sidebar</div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <svg class="icon icon-sm" aria-hidden="true">
+          <use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="offcanvas-body card">
+      <!-- Copia qui il contenuto della sidebar -->
+      <div class="sidebar-scroll">
+        <!-- Il contenuto del menu va qui -->
+      </div>
+    </div>
+  </div>
 
-        // Codice da visualizzare
-        const codeHTML = 
-`<div class="accordion" id="collapseExample">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/menu-side-offcanvas.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const codeContentDiv = document.getElementById("codeContent");
+      const copyButton1 = document.getElementById("copyButton1");
+
+      // Codice da visualizzare
+      const codeHTML =
+        `<div class="accordion" id="collapseExample">
   <div class="accordion-item item-ticon">
     <div class="accordion-header" id="heading1c">
       <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapse1c" aria-expanded="true" aria-controls="collapse1c">
@@ -1112,33 +1021,35 @@
   </div>
 </div>`;
 
-        // Funzione per inserire e visualizzare il codice
-        codeContentDiv.innerHTML = `<pre><code>${escapeHTML(
-          codeHTML
-        )}</code></pre>`;
+      // Funzione per inserire e visualizzare il codice
+      codeContentDiv.innerHTML = `<pre><code>${escapeHTML(
+        codeHTML
+      )}</code></pre>`;
 
-        // Funzione per scappare i caratteri speciali nel codice
-        function escapeHTML(html) {
-          return html
-            .replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;")
-            .replace(/"/g, "&quot;")
-            .replace(/'/g, "&#039;");
-        }
+      // Funzione per scappare i caratteri speciali nel codice
+      function escapeHTML(html) {
+        return html
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
 
-        // Funzione per copiare il codice negli appunti
-        copyButton1.addEventListener("click", function () {
-          navigator.clipboard
-            .writeText(codeHTML)
-            .then(() => {
-              alert("Codice copiato con successo!");
-            })
-            .catch((err) => {
-              console.error("Errore durante la copia del codice:", err);
-            });
-        });
+      // Funzione per copiare il codice negli appunti
+      copyButton1.addEventListener("click", function () {
+        navigator.clipboard
+          .writeText(codeHTML)
+          .then(() => {
+            alert("Codice copiato con successo!");
+          })
+          .catch((err) => {
+            console.error("Errore durante la copia del codice:", err);
+          });
       });
-    </script>
-  </body>
+    });
+  </script>
+
+</body>
+
 </html>

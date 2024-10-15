@@ -113,7 +113,7 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-.sticky-top{
+.sticky-top {
   z-index: 1030;
 }
 
@@ -122,9 +122,10 @@ p {
     position: -webkit-sticky;
     position: sticky;
     top: 221px;
-    max-height: calc(100vh - 6rem); /* Limita l'altezza massima alla finestra */
+    max-height: calc(100vh - 6rem);
+    /* Limita l'altezza massima alla finestra */
     overflow-y: auto;
-    padding:16px;
+    padding: 16px;
   }
 }
 
@@ -282,16 +283,16 @@ ol li {
 /* GESTIONE POPOVER */
 
 .bs-popover-auto {
-  font-size:16px;
+  font-size: 16px;
   background-color: #fff;
   border-radius: 5px;
-  border:none;
+  border: none;
 }
 
 .bs-popover-auto .popover-header {
   background-color: #fff;
-  font-size:18px;
-  border-bottom:none;
+  font-size: 18px;
+  border-bottom: none;
 }
 
 .avatar-container {
@@ -302,3 +303,86 @@ ol li {
 .avatar img {
   max-width: 100%;
 }
+
+/* OFFCANVAS SIDEBAR MENU */
+
+.header-offcanvas {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar-wrapper {
+    display: none;
+  }
+}
+
+.offcanvas-body {
+  border-radius: 0;
+  color: #071122;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.offcanvas-body ul.sidebar-list {
+  color: #0066CC;
+  background-color: transparent;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.offcanvas-body > ul.sidebar-list > li > a, .offcanvas-body > ul.sidebar-list > li > ul.sidebar-list li {
+  border-left: 1px solid #CBD5E1;
+}
+
+.offcanvas-body ul.sidebar-list li {
+  font-size: 18px;
+}
+
+.offcanvas-body ul.sidebar-list li .list-link {
+  display: block;
+  padding: 4px 0 4px 12px;
+}
+
+.offcanvas-body ul.sidebar-list .list-link.active {
+  color: #003366;
+  border-left: 3px solid #0066CC;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.offcanvas-body ul.sidebar-list .list-link.active .list-item{
+  background-color:#F2F7FC;
+  color: #0066CC;
+}
+
+.offcanvas-body ul.sidebar-list li .list-link .list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 8px 12px;
+  border-radius: 4px 0 0 4px;
+  color: #004D99;
+  transition: all .3s;
+}
+
+.offcanvas-body ul.sidebar-list .list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 8px 12px;
+  border-radius: 4px 0 0 4px;
+  color: #004D99;
+  transition: all .3s;
+}
+
+.offcanvas-body ul.sidebar-list .list-dropdown .sidebar-list {
+  padding: 16px 0 16px 24px;
+}
+
+
+
