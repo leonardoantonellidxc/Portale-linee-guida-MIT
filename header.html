@@ -22,7 +22,7 @@
   <!-- Fonts -->
   <link href="css/font.css" type="text/css" rel="stylesheet" />
 
-  
+
 </head>
 
 <body>
@@ -31,21 +31,12 @@
       <div class="nav-left">
         <!-- Brand -->
         <a class="navbar-brand" title="LOGO" href="#">
-          <span class="brand-logo"
-            ><svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          <span class="brand-logo"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <circle cx="24" cy="24" r="24" fill="#0066CC" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+              <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M11.5 18.75L24 10L36.5 18.75H11.5ZM12.75 32.5V31.25H35.25V32.5H12.75ZM12.75 33.75V35H35.25V33.75H12.75ZM24 11.5L32.5 17.5H15.5L24 11.5ZM16.5 30V20H15.25V30H16.5ZM21.5 20V30H20.25V20H21.5ZM27.75 30V20H26.5V30H27.75ZM32.75 20V30H31.5V20H32.75Z"
-                fill="white"
-              />
+                fill="white" />
             </svg>
           </span>
 
@@ -58,9 +49,9 @@
 
       <div class="nav-right">
         <!-- Search Wrapper -->
-      
 
-       
+
+
 
         <!-- Login -->
         <div class="login-wrapper">
@@ -73,15 +64,8 @@
         </div>
 
         <div class="navbar navbar-expand-lg ps-3 ps-lg-0">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
@@ -167,7 +151,7 @@
                       </a>
                     </li>
                     <li>
-                       <a class="list-link" href="index-section.html">
+                      <a class="list-link" href="index-section.html">
                         <div class="list-item">
                           <span> Index section </span>
                         </div>
@@ -466,19 +450,20 @@
                         </div>
                       </a>
                     </li>
-                       <li>
+                    <li>
                       <a class="list-link" href="toggle.html">
                         <div class="list-item">
                           <span> Toggle </span>
                         </div>
                       </a>
-                    </li>  <li>
-                        <a class="list-link" href="tooltip.html">
-                          <div class="list-item">
-                            <span> Tooltip </span>
-                          </div>
-                        </a>
-                      </li>
+                    </li>
+                    <li>
+                      <a class="list-link" href="tooltip.html">
+                        <div class="list-item">
+                          <span> Tooltip </span>
+                        </div>
+                      </a>
+                    </li>
                     <li>
                       <a class="list-link" href="uploader.html">
                         <div class="list-item">
@@ -542,7 +527,7 @@
           <h2 class="titlepage fw-bold">Header</h2>
         </div>
 
-           <p class="mt-4 mb-8">
+        <p class="mt-4 mb-8">
           L'header è una componente fondamentale dell'interfaccia utente che si trova nella parte superiore del portale.
           è necessario utilzzarla all’inizio di ogni pagina del portale del SIAN in quanto fornisce un'area visibile e
           coerente per la navigazione principale e altre funzionalità chiave, come la ricerca, l'accesso al profilo
@@ -550,11 +535,11 @@
           l'esperienza di navigazione degli utenti.
         </p>
 
-       
+
 
         <!-- Sezione con bottone flottante e codice -->
         <div class="bg-neutral-500 p-3">
-            <h5 class=" fw-bold titlepage mb-4">Variante</h5>
+          <h5 class=" fw-bold titlepage mb-4">Variante</h5>
           <div class="bg-white align-items-center justify-content-center py-8 mb-3">
             <div id="custom-section" class=" ">
 
@@ -708,7 +693,7 @@
                         </ul>
                       </div>
 
-                     
+
 
                       <!-- Login -->
                       <div class="login-wrapper">
@@ -1536,8 +1521,66 @@
     </div>
   </main>
 
+  <footer>
+    <div class="footer-credits">
+      <div class="container">
+        <div class="navbar-brand pe-4">
+          <svg class="icon icon-lg" aria-hidden="true">
+            <use href="/imgs/icon/ministero.svg#ministero"></use>
+          </svg>
+          <div class="body-lg text-w6 ps-3">
+            www.mit.gov.it - Ministero delle infrastrutture e dei trasporti.
+          </div>
+        </div>
+
+        <div class="text-icon">
+          <svg class="icon icon-xs" aria-hidden="true">
+            <use href="/imgs/icon/sprite.svg#it-copyright"></use>
+          </svg>
+          <span> Tutti i diritti riservati </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Pulsante per offcanvas in versione mobile fisso in fondo alla pagina -->
+  <div class="header-offcanvas bg-primary10 d-lg-none position-fixed bottom-0">
+    <div class="d-flex justify-content-between">
+      <div class="sidebarInfos">
+        <div id="sidebarTitle" class="h6">Titolo Sidebar</div>
+        <div id="sidebarActiveItem" class="mobile-selected">Titolo Menu Voce Attiva</div>
+      </div>
+      <button class="btn btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas"
+        aria-controls="sidebarOffcanvas">
+        <svg class="icon icon-sm" aria-hidden="true">
+          <use href="/imgs/icon/sprite_fill.svg#it-maximize"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Contenuto offcanvas che incorpora la sidebar solo versione mobile -->
+  <div class="offcanvas offcanvas-bottom h-75 bg-transparent" tabindex="-1" id="sidebarOffcanvas"
+    aria-labelledby="sidebarOffcanvasLabel">
+    <div class="offcanvas-header header-offcanvas bg-primary10">
+      <div class="h6 offcanvas-title" id="sidebarOffcanvasLabel">Titolo Sidebar</div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <svg class="icon icon-sm" aria-hidden="true">
+          <use href="/imgs/icon/sprite_fill.svg#it-close-circle"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="offcanvas-body card">
+      <!-- Copia qui il contenuto della sidebar -->
+      <div class="sidebar-scroll">
+        <!-- Il contenuto del menu va qui -->
+      </div>
+    </div>
+  </div>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/menu-side-offcanvas.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -2419,8 +2462,7 @@
     </div>
   </div>
 
-</header>
-      `;
+</header>`;
 
       // Funzione per inserire e visualizzare il codice
       codeContentDiv.innerHTML = `<pre><code>${escapeHTML(
