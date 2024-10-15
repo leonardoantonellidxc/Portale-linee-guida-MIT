@@ -622,9 +622,9 @@
                   <label for="typeSelector" id="field1Label">Type</label>
                   <select id="typeSelector" class="form-select">
                     <option value="">--Seleziona Type--</option>
-                    <option value="Type1">Type1</option>
-                    <option value="Type2">Type2</option>
-                    <option value="Type3">Type3</option>
+                    <option value="Type1">Label</option>
+                    <option value="Type2">Label + search</option>
+                    <option value="Type3">Checkbox + search</option>
                   </select>
                 </div>
               </div>
@@ -794,67 +794,64 @@
           default:
             '<div class="row align-items-center justify-content-center">' +
             '<div class="col-auto pt-4">' +
-            //leo inizio
-            `<div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Dropdown button   
+            '<div class="dropdown">' +
+                '<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">' +
+                    'Dropdown button' +
+                '</button>' +
+                '<div class="dropdown-menu">' +
+                    '<div class="dropdown-title">' +
+                        'Title' +
+                    '</div>' +
+                    '<ul>' +
+                        '<li>' +
+                            '<a class="dropdown-item active" href="#">' +
+                                '<div class="text-icon">' +
+                                    '<svg class="icon icon-xs">' +
+                                        '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                    '</svg>' +
+                                    '<span>' +
+                                        'Action' +
+                                    '</span>' +
+                                '</div>' +
+                                '<svg class="icon icon-xs">' +
+                                    '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                '</svg>' +
+                            '</a>' +
+                        '</li>' +
+                        '<li>' +
+                            '<a class="dropdown-item disabled" href="#">' +
+                                '<div class="text-icon">' +
+                                    '<svg class="icon icon-xs">' +
+                                        '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                    '</svg>' +
+                                    '<span>' +
+                                        'Another action' +
+                                    '</span>' +
+                                '</div>' +
+                                '<svg class="icon icon-xs">' +
+                                    '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                '</svg>' +
+                            '</a>' +
+                        '</li>' +
+                        '<li>' +
+                            '<a class="dropdown-item" href="#">' +
+                                '<div class="text-icon">' +
+                                    '<svg class="icon icon-xs">' +
+                                        '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                    '</svg>' +
+                                    '<span>' +
+                                        'Something else here' +
+                                    '</span>' +
+                                '</div>' +
+                                '<svg class="icon icon-xs">' +
+                                    '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                '</svg>' +
+                            '</a>' +
+                        '</li>' +
+                    '</ul>' +
+                '</div>' +
+            '</div>'+
 
-  </button>
-  <div class="dropdown-menu">   
-
-    <div class="dropdown-title">
-      Title
-    </div>
-    <ul>
-      <li>
-        <a class="dropdown-item active" href="#">
-          <div class="text-icon">
-            <svg class="icon icon-xs">
-              <use href="/imgs/icon/sprite.svg#it-example"></use>
-            </svg>
-            <span>
-              Action
-            </span>
-          </div>
-          <svg class="icon icon-xs">
-            <use href="/imgs/icon/sprite.svg#it-example"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item disabled" href="#">
-          <div class="text-icon">
-            <svg class="icon icon-xs">
-              <use href="/imgs/icon/sprite.svg#it-example"></use>
-            </svg>
-            <span>
-              Another action
-            </span>
-          </div>
-          <svg class="icon icon-xs">
-            <use href="/imgs/icon/sprite.svg#it-example"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a class="dropdown-item" href="#">
-          <div class="text-icon">
-            <svg class="icon icon-xs">
-              <use href="/imgs/icon/sprite.svg#it-example"></use>
-            </svg>
-            <span>
-              Something else here
-            </span>
-          </div>
-          <svg class="icon icon-xs">
-            <use href="/imgs/icon/sprite.svg#it-example"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>` +
-            //leo fine
             "</div>" +
             "</div>",
         },
@@ -862,128 +859,129 @@
           default:
             '<div class="row align-items-center justify-content-center">' +
             '<div class="col-auto pt-4">' +
-            '<div class="dropdown">' +
-            '<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">' +
-            "Dropdown button" +
-            "</button>" +
-            '<div class="dropdown-menu">' +
-            '<div class="dropdown-title">' +
-            "Title" +
-            "</div>" +
-            '<div class="search-wrapper">' +
-            '<div class="form-group">' +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-xxs">' +
-            '<use href="/imgs/icon/sprite.svg#it-search"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<input type="text" class="form-control" name="field1" placeholder="Cerca" value="" aria-label="Lorem ipsum dolor sit">' +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<ul class="scrollable">' +
-            "<li>" +
-            '<a class="dropdown-item" href="#">' +
-            '<div class="text-icon">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Action" +
-            "</span>" +
-            "</div>" +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</li>" +
-            "<li>" +
-            '<a class="dropdown-item" href="#">' +
-            '<div class="text-icon">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Another action" +
-            "</span>" +
-            "</div>" +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</li>" +
-            "<li>" +
-            '<a class="dropdown-item" href="#">' +
-            '<div class="text-icon">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Something else here" +
-            "</span>" +
-            "</div>" +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</li>" +
-            "<li>" +
-            '<div class="h-line"></div>' +
-            "</li>" +
-            "<li>" +
-            '<a class="dropdown-item" href="#">' +
-            '<div class="text-icon">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Action" +
-            "</span>" +
-            "</div>" +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</li>" +
-            "<li>" +
-            '<a class="dropdown-item" href="#">' +
-            '<div class="text-icon">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Another action" +
-            "</span>" +
-            "</div>" +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</li>" +
-            "<li>" +
-            '<a class="dropdown-item" href="#">' +
-            '<div class="text-icon">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Something else here" +
-            "</span>" +
-            "</div>" +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</li>" +
-            "</ul>" +
-            '<div class="dropdown-link">' +
-            '<a type="button" class="btn btn-bare btn-sm" href="javascript:">' +
-            "Mostra tutti i risultati" +
-            "</a>" +
-            "</div>" +
-            "</div>" +
-            "</div>" +
+             '<div class="dropdown">' +
+                '<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">' +
+                    'Dropdown button' +
+                '</button>' +
+                '<div class="dropdown-menu">' +
+                    '<div class="dropdown-title">' +
+                        'Title' +
+                    '</div>' +
+                    '<div class="search-wrapper">' +
+                        '<div class="form-group">' +
+                            '<div class="input-group">' +
+                                '<div class="input-group-text">' +
+                                    '<svg class="icon icon-xxs">' +
+                                        '<use href="./imgs/icon/sprite.svg#it-search"></use>' +
+                                    '</svg>' +
+                                '</div>' +
+                                '<input type="text" class="form-control" name="field1" placeholder="Cerca" value="" aria-label="Lorem ipsum dolor sit">' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>' +
+                    '<ul class="scrollable">' +
+                        '<li>' +
+                            '<a class="dropdown-item" href="#">' +
+                                '<div class="text-icon">' +
+                                    '<svg class="icon icon-xs">' +
+                                        '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                    '</svg>' +
+                                    '<span>' +
+                                        'Action' +
+                                    '</span>' +
+                                '</div>' +
+                                '<svg class="icon icon-xs">' +
+                                    '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                '</svg>' +
+                            '</a>' +
+                        '</li>' +
+                        '<li>' +
+                            '<a class="dropdown-item" href="#">' +
+                                '<div class="text-icon">' +
+                                    '<svg class="icon icon-xs">' +
+                                        '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                    '</svg>' +
+                                    '<span>' +
+                                        'Another action' +
+                                    '</span>' +
+                                '</div>' +
+                                '<svg class="icon icon-xs">' +
+                                    '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                '</svg>' +
+                            '</a>' +
+                        '</li>' +
+                        '<li>' +
+                            '<a class="dropdown-item" href="#">' +
+                                '<div class="text-icon">' +
+                                    '<svg class="icon icon-xs">' +
+                                        '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                    '</svg>' +
+                                    '<span>' +
+                                        'Something else here' +
+                                    '</span>' +
+                                '</div>' +
+                                '<svg class="icon icon-xs">' +
+                                    '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                '</svg>' +
+                            '</a>' +
+                        '</li>' +
+                        '<li>' +
+                            '<div class="h-line"></div>' +
+                        '</li>' +
+                        '<li>' +
+                            '<a class="dropdown-item" href="#">' +
+                                '<div class="text-icon">' +
+                                    '<svg class="icon icon-xs">' +
+                                        '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                    '</svg>' +
+                                    '<span>' +
+                                        'Action' +
+                                    '</span>' +
+                                '</div>' +
+                                '<svg class="icon icon-xs">' +
+                                    '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                '</svg>' +
+                            '</a>' +
+                        '</li>' +
+                        '<li>' +
+                            '<a class="dropdown-item" href="#">' +
+                                '<div class="text-icon">' +
+                                    '<svg class="icon icon-xs">' +
+                                        '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                    '</svg>' +
+                                    '<span>' +
+                                        'Another action' +
+                                    '</span>' +
+                                '</div>' +
+                                '<svg class="icon icon-xs">' +
+                                    '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                '</svg>' +
+                            '</a>' +
+                        '</li>' +
+                        '<li>' +
+                            '<a class="dropdown-item" href="#">' +
+                                '<div class="text-icon">' +
+                                    '<svg class="icon icon-xs">' +
+                                        '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                    '</svg>' +
+                                    '<span>' +
+                                        'Something else here' +
+                                    '</span>' +
+                                '</div>' +
+                                '<svg class="icon icon-xs">' +
+                                    '<use href="./imgs/icon/sprite.svg#it-example"></use>' +
+                                '</svg>' +
+                            '</a>' +
+                        '</li>' +
+                    '</ul>' +
+                    '<div class="dropdown-link">' +
+                        '<a type="button" class="btn btn-bare btn-sm" href="javascript:">' +
+                            'Mostra tutti i risultati' +
+                        '</a>' +
+                    '</div>' +
+                '</div>' +
+            '</div>'
+ +
             "</div>" +
             "</div>",
         },
@@ -992,125 +990,112 @@
             '<div class="row align-items-center justify-content-center">' +
             '<div class="col-auto pt-4">' +
             '<div class="dropdown">' +
-            '<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">' +
-            "Dropdown button" +
-            "</button>" +
-            '<div class="dropdown-menu">' +
-            '<div class="dropdown-title">' +
-            "Title" +
-            "</div>" +
-            '<div class="search-wrapper">' +
-            '<div class="form-group">' +
-            '<div class="input-group">' +
-            '<div class="input-group-text">' +
-            '<svg class="icon icon-xxs">' +
-            '<use href="/imgs/icon/sprite.svg#it-search"></use>' +
-            "</svg>" +
-            "</div>" +
-            '<input type="text" class="form-control" name="field1" placeholder="Cerca" value="" aria-label="Lorem ipsum dolor sit">' +
-            "</div>" +
-            "</div>" +
-            "</div>" +
-            '<ul class="scrollable">' +
-            "<li>" +
-            '<a class="dropdown-item" href="#">' +
-            '<div class="text-icon">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Action" +
-            "</span>" +
-            "</div>" +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</li>" +
-            "<li>" +
-            '<a class="dropdown-item" href="#">' +
-            '<div class="text-icon">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Another action" +
-            "</span>" +
-            "</div>" +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</li>" +
-            "<li>" +
-            '<a class="dropdown-item" href="#">' +
-            '<div class="text-icon">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Something else here" +
-            "</span>" +
-            "</div>" +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</li>" +
-            "<li>" +
-            '<div class="h-line"></div>' +
-            "</li>" +
-            "<li>" +
-            '<a class="dropdown-item" href="#">' +
-            '<div class="text-icon">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Action" +
-            "</span>" +
-            "</div>" +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</li>" +
-            "<li>" +
-            '<a class="dropdown-item" href="#">' +
-            '<div class="text-icon">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Another action" +
-            "</span>" +
-            "</div>" +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</li>" +
-            "<li>" +
-            '<a class="dropdown-item" href="#">' +
-            '<div class="text-icon">' +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "<span>" +
-            "Something else here" +
-            "</span>" +
-            "</div>" +
-            '<svg class="icon icon-xs">' +
-            '<use href="/imgs/icon/sprite.svg#it-example"></use>' +
-            "</svg>" +
-            "</a>" +
-            "</li>" +
-            "</ul>" +
-            '<div class="dropdown-link">' +
-            '<a type="button" class="btn btn-bare btn-sm" href="javascript:">' +
-            "Mostra tutti i risultati" +
-            "</a>" +
-            "</div>" +
+                '<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">' +
+                    'Dropdown button' +
+                '</button>' +
+                '<div class="dropdown-menu">' +
+                    '<div class="dropdown-title">' +
+                        'Title' +
+                    '</div>' +
+                    '<div class="search-wrapper">' +
+                        '<div class="form-group field-sm">' +
+                            '<div class="input-group">' +
+                                '<div class="input-group-text">' +
+                                    '<svg class="icon icon-xxs">' +
+                                        '<use href="./imgs/icon/sprite.svg#it-search"></use>' +
+                                    '</svg>' +
+                                '</div>' +
+                                '<input type="text" class="form-control" name="field1" placeholder="Cerca" value="" aria-label="Lorem ipsum dolor sit">' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>' +
+                    '<ul class="scrollable">' +
+                        '<li class="dropdown-control">' +
+                            '<div class="form-group">' +
+                                '<div class="form-checkbox">' +
+                                    '<div class="checkbox">' +
+                                        '<input type="checkbox" name="options" id="option-1" value="">' +
+                                        '<label for="option-1">' +
+                                            '<div>' +
+                                                '<div class="text-w6">' +
+                                                    'Label checkbox' +
+                                                '</div>' +
+                                            '</div>' +
+                                        '</label>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                        '</li>' +
+                        '<li class="dropdown-control">' +
+                            '<div class="form-group">' +
+                                '<div class="form-checkbox">' +
+                                    '<div class="checkbox">' +
+                                        '<input type="checkbox" name="options" id="option-2" value="">' +
+                                        '<label for="option-2">' +
+                                            '<div>' +
+                                                '<div class="text-w6">' +
+                                                    'Label checkbox' +
+                                                '</div>' +
+                                            '</div>' +
+                                        '</label>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                        '</li>' +
+                        '<li class="dropdown-control">' +
+                            '<div class="form-group">' +
+                                '<div class="form-checkbox">' +
+                                    '<div class="checkbox">' +
+                                        '<input type="checkbox" name="options" id="option-3" value="">' +
+                                        '<label for="option-3">' +
+                                            '<div>' +
+                                                '<div class="text-w6">' +
+                                                    'Label checkbox' +
+                                                '</div>' +
+                                            '</div>' +
+                                        '</label>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                        '</li>' +
+                        '<li>' +
+                            '<div class="h-line"></div>' +
+                        '</li>' +
+                        '<li class="dropdown-control">' +
+                            '<div class="form-group">' +
+                                '<div class="form-checkbox">' +
+                                    '<div class="checkbox">' +
+                                        '<input type="checkbox" name="options" id="option-4" value="">' +
+                                        '<label for="option-4">' +
+                                            '<div>' +
+                                                '<div class="text-w6">' +
+                                                    'Label checkbox' +
+                                                '</div>' +
+                                            '</div>' +
+                                        '</label>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                        '</li>' +
+                        '<li class="dropdown-control">' +
+                            '<div class="form-group">' +
+                                '<div class="form-checkbox">' +
+                                    '<div class="checkbox">' +
+                                        '<input type="checkbox" name="options" id="option-5" value="">' +
+                                        '<label for="option-5">' +
+                                            '<div>' +
+                                                '<div class="text-w6">' +
+                                                    'Label checkbox' +
+                                                '</div>' +
+                                            '</div>' +
+                                        '</label>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                        '</li>' +
+                    '</ul>' +
+                '</div>' +
+            '</div>' +
             "</div>" +
             "</div>",
         },
