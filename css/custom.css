@@ -402,3 +402,8 @@ ol li {
   padding:12px !important;
 }
 
+/* Checkbox gestione padding right nelle tabelle */
+table .toggle > label, .radio > label, .checkbox > label {
+  padding-right: 0;
+}
+

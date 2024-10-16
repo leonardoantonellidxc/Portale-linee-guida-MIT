@@ -251,7 +251,7 @@
 
 /* Form Select */
 .form-select{	
-				--bs-form-select-bg-img:url('./imgs/icon/form/select-arrow.svg');
+				--bs-form-select-bg-img:url('../imgs/icon/form/select-arrow.svg');
 				font-size:18px;	padding:var(--bs-field-py) calc(var(--bs-field-pe) + 30px) var(--bs-field-py) var(--bs-field-ps);	
 				background-size:36px 20px, 24px 24px; background-position:right 32px center, right 12px center; background-image:var(--bs-field-bg-icon), var(--bs-form-select-bg-img);
 				text-align:left;
@@ -287,7 +287,7 @@
 
 
 /* Input Select - Dropdown */
-.form-group.dropdown .input-group.show .form-select{	--bs-form-select-bg-img:url('./imgs/icon/form/select-arrow-open.svg');		}
+.form-group.dropdown .input-group.show .form-select{	--bs-form-select-bg-img:url('../imgs/icon/form/select-arrow-open.svg');		}
 .form-group.dropdown .btn.dropdown-toggle{				display:flex; padding:0; border:none; align-items:unset; height:auto; width:100%;		}
 .form-group.dropdown .dropdown-menu{					width:100%;	}
 
@@ -408,7 +408,7 @@
 .form-group.disabled .form-select{ 					font-weight:400;	}
 .form-group.disabled .form-control::placeholder{	color:var(--bs-gray-600);	}
 
-.form-group.disabled .form-select{		--bs-form-select-bg-img:url('./imgs/icon/form/select-arrow-disabled.svg');		}
+.form-group.disabled .form-select{		--bs-form-select-bg-img:url('../imgs/icon/form/select-arrow-disabled.svg');		}
 
 .form-group.dropdown.disabled .input-group{	pointer-events:none;  cursor:default;		}
 
@@ -423,7 +423,7 @@
 .form-group.readonly .form-select{ 					font-weight:400;			}
 .form-group.readonly .form-control::placeholder{	color:var(--bs-gray-600);	}
 
-.form-group.readonly .form-select{		--bs-form-select-bg-img:url('./imgs/icon/form/select-arrow-disabled.svg');	}
+.form-group.readonly .form-select{		--bs-form-select-bg-img:url('../imgs/icon/form/select-arrow-disabled.svg');	}
 
 .form-group.dropdown.readonly .input-group{	pointer-events:none;  cursor:default;		}
 
@@ -437,12 +437,12 @@
 
 /* Form field - Feedback is invalid */
 .form-group.is-invalid{						--bs-field-border:var(--bs-danger60);	--bs-field-icon-fill:var(--bs-danger60);	}
-.form-group.is-invalid .form-select{		padding-right:64px;	--bs-form-select-bg-img:url('./imgs/icon/form/select-arrow-danger.svg');	}
+.form-group.is-invalid .form-select{		padding-right:64px;	--bs-form-select-bg-img:url('../imgs/icon/form/select-arrow-danger.svg');	}
 .form-group.is-invalid .invalid-feedback{	display:flex;		}
 
 /* Form field - Feedback is valid */
 .form-group.is-valid{						--bs-field-border:var(--bs-success60);	--bs-field-icon-fill:var(--bs-success60);	}
-.form-group.is-valid .form-select{			padding-right:64px;	--bs-form-select-bg-img:url('./imgs/icon/form/select-arrow-success.svg');	}
+.form-group.is-valid .form-select{			padding-right:64px;	--bs-form-select-bg-img:url('../imgs/icon/form/select-arrow-success.svg');	}
 .form-group.is-valid .valid-feedback{		display:flex;		}
 
 /* Form field - Hover */
@@ -450,7 +450,7 @@
 .form-group.hover .form-control::placeholder{	color:var(--bs-primary80);	}
 /*
 .form-group.hover > .form-select,
-.form-group.hover > .input-group > .form-select{	--bs-form-select-bg-img:url('./imgs/icon/form/select-arrow-hover.svg');		}
+.form-group.hover > .input-group > .form-select{	--bs-form-select-bg-img:url('../imgs/icon/form/select-arrow-hover.svg');		}
 */
 
 /* Form - Dropdown */
@@ -554,27 +554,27 @@
 .form-checkbox.right .checkbox label::after{		 	content:''; 	margin-left:8px;	}
 
 .radio 	  > label::after,
-.radio 	  > label::before{							background-image:url("./imgs/icon/sprite.svg#radio-bg");  	       	} 
+.radio 	  > label::before{							background-image:url("../imgs/icon/sprite.svg#radio-bg");  	       	} 
 .radio 	  > label:hover::after,
-.radio 	  > label:hover::before{					background-image:url("./imgs/icon/sprite.svg#radio-hover-bg");  	} 
+.radio 	  > label:hover::before{					background-image:url("../imgs/icon/sprite.svg#radio-hover-bg");  	} 
 .radio 	  > input:checked + label::after,
-.radio 	  > input:checked + label::before{			background-image:url("./imgs/icon/sprite.svg#radio-check-bg");     } 
+.radio 	  > input:checked + label::before{			background-image:url("../imgs/icon/sprite.svg#radio-check-bg");     } 
 .radio 	  > input:checked:hover + label::after,
-.radio 	  > input:checked:hover + label::before{	background-image:url("./imgs/icon/sprite.svg#radio-check-hover-bg");     } 
+.radio 	  > input:checked:hover + label::before{	background-image:url("../imgs/icon/sprite.svg#radio-check-hover-bg");     } 
 
 .checkbox > label::after,
-.checkbox > label::before{							background-image:url("./imgs/icon/sprite.svg#checkbox-bg");		}
+.checkbox > label::before{							background-image:url("../imgs/icon/sprite.svg#checkbox-bg");		}
 .checkbox > label:hover::after,
-.checkbox > label:hover::before{					background-image:url("./imgs/icon/sprite.svg#checkbox-hover-bg");	}
+.checkbox > label:hover::before{					background-image:url("../imgs/icon/sprite.svg#checkbox-hover-bg");	}
 .checkbox > input:checked + label::after,
-.checkbox > input:checked + label::before{			background-image:url("./imgs/icon/sprite.svg#checkbox-check-bg");  } 
+.checkbox > input:checked + label::before{			background-image:url("../imgs/icon/sprite.svg#checkbox-check-bg");  } 
 .checkbox > input:hover:checked + label::after,
-.checkbox > input:hover:checked + label::before{	background-image:url("./imgs/icon/sprite.svg#checkbox-check-hover-bg");  } 
+.checkbox > input:hover:checked + label::before{	background-image:url("../imgs/icon/sprite.svg#checkbox-check-hover-bg");  } 
 
 .checkbox > input[indeterminate] + label::after,
-.checkbox > input[indeterminate] + label::before{			background-image:url("./imgs/icon/sprite.svg#checkbox-minus-bg");			}
+.checkbox > input[indeterminate] + label::before{			background-image:url("../imgs/icon/sprite.svg#checkbox-minus-bg");			}
 .checkbox > input[indeterminate] + label:hover::after,
-.checkbox > input[indeterminate] + label:hover::before{		background-image:url("./imgs/icon/sprite.svg#checkbox-minus-hover-bg");	}
+.checkbox > input[indeterminate] + label:hover::before{		background-image:url("../imgs/icon/sprite.svg#checkbox-minus-hover-bg");	}
 
 
 .radio 	  >	input + label,
@@ -598,25 +598,25 @@
 .checkbox > input[disabled] + label::after,
 .checkbox > input[disabled] + label::before,
 .checkbox > input[readonly] + label::after,
-.checkbox > input[readonly] + label::before{			background-image:url("./imgs/icon/sprite.svg#checkbox-disabled-bg") !important;			} 
+.checkbox > input[readonly] + label::before{			background-image:url("../imgs/icon/sprite.svg#checkbox-disabled-bg") !important;			} 
 
 .checkbox > input[disabled]:checked + label::after,
 .checkbox > input[disabled]:checked + label::before,
 .checkbox > input[readonly]:checked + label::after,
-.checkbox > input[readonly]:checked + label::before{	background-image:url("./imgs/icon/sprite.svg#checkbox-check-disabled-bg") !important;	} 
+.checkbox > input[readonly]:checked + label::before{	background-image:url("../imgs/icon/sprite.svg#checkbox-check-disabled-bg") !important;	} 
 
 .radio 	  > input[disabled] + label::after,
 .radio 	  > input[disabled] + label::before,
 .radio 	  > input[readonly] + label::after,
-.radio 	  > input[readonly] + label::before{			background-image:url("./imgs/icon/sprite.svg#radio-disabled-bg") !important;		} 
+.radio 	  > input[readonly] + label::before{			background-image:url("../imgs/icon/sprite.svg#radio-disabled-bg") !important;		} 
 
 .radio 	  > input[disabled]:checked + label::after,
 .radio 	  > input[disabled]:checked + label::before,
 .radio 	  > input[readonly]:checked + label::after,
-.radio 	  > input[readonly]:checked + label::before{	background-image:url("./imgs/icon/sprite.svg#radio-check-disabled-bg") !important;	} 
+.radio 	  > input[readonly]:checked + label::before{	background-image:url("../imgs/icon/sprite.svg#radio-check-disabled-bg") !important;	} 
 
 .checkbox > input[disabled][indeterminate] + label::after,
-.checkbox > input[readonly][indeterminate] + label::before{		background-image:url("./imgs/icon/sprite.svg#checkbox-minus-disabled-bg") !important;	}
+.checkbox > input[readonly][indeterminate] + label::before{		background-image:url("../imgs/icon/sprite.svg#checkbox-minus-disabled-bg") !important;	}
 
 
 /* Switcher */
