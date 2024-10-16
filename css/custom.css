@@ -392,7 +392,7 @@ ol li {
   border-top-color: #003366 !important;
 }
 
-.tooltip.bs-tooltip-auto[data-popper-placement="bpttom"] .tooltip-arrow::before {
+.tooltip.bs-tooltip-auto[data-popper-placement="bottom"] .tooltip-arrow::before {
   border-bottom-color: #003366 !important;
 }
 
