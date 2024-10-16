@@ -375,5 +375,30 @@ ol li {
   padding: 16px 0 16px 24px;
 }
 
+/* TOOLTIP */
+.tooltip.bs-tooltip-auto {
+  opacity: 1 !important;
+}
 
+.tooltip.bs-tooltip-auto[data-popper-placement="right"] .tooltip-arrow::before {
+  border-right-color: #003366 !important;
+}
+
+.tooltip.bs-tooltip-auto[data-popper-placement="left"] .tooltip-arrow::before {
+  border-left-color: #003366 !important;
+}
+
+.tooltip.bs-tooltip-auto[data-popper-placement="top"] .tooltip-arrow::before {
+  border-top-color: #003366 !important;
+}
+
+.tooltip.bs-tooltip-auto[data-popper-placement="bpttom"] .tooltip-arrow::before {
+  border-bottom-color: #003366 !important;
+}
+
+.tooltip.bs-tooltip-auto .tooltip-inner {
+  background-color: #003366;
+  opacity: 1 !important;
+  padding:12px !important;
+}
 

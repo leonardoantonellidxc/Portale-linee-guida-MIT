@@ -551,15 +551,14 @@
                 <label for="typeSelector" id="field1Label">Type</label>
                 <select id="typeSelector" class="form-select">
                   <option value="">--Seleziona Type--</option>
-                  <option value="Type1">Tooltip </option>
+                  <option value="Type1">Tooltip</option>
                   <option value="Type2">Tooltip con HTML</option>
-
                 </select>
               </div>
             </div>
           </div>
 
-          <div class="bg-white py-8 mb-3">
+          <div class="bg-white d-flex align-items-center justify-content-center py-8 mb-3">
             <div id="content">
               Seleziona tutte le opzioni per visualizzare il componente.
             </div>
@@ -697,11 +696,11 @@
         <div id="sidebarActiveItem" class="mobile-selected">Titolo Menu Voce Attiva</div>
       </div>
       <button class="btn btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas"
-      aria-controls="sidebarOffcanvas">
-      <svg class="icon icon-sm" aria-hidden="true">
-        <use href="/imgs/icon/sprite_fill.svg#it-maximize"></use>
-      </svg>
-    </button>
+        aria-controls="sidebarOffcanvas">
+        <svg class="icon icon-sm" aria-hidden="true">
+          <use href="/imgs/icon/sprite_fill.svg#it-maximize"></use>
+        </svg>
+      </button>
     </div>
   </div>
 
@@ -724,67 +723,66 @@
     </div>
   </div>
 
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/menu-side-offcanvas.js"></script>
-  
+
+
   <script>
     const components = {
       Type1: {
-        default: '<div class="row">' +
-          '<div class="col-lg-3 pt-3">' +
-          '<button type="button" class="btn btn-primary" ' +
-          'data-bs-toggle="popover" ' +
-          'data-bs-placement="right" ' +
-          'title="Titolo del Popover" ' +
-          'data-bs-content=" <div>tooltip </div>">' +
-          'Popover a destra' +
-          '</button>' +
-          '</div>' +
-          '<div class="col-lg-3 pt-3">' +
-          '<button data-toggle="tooltip" type="button" class="btn btn-primary" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="top">' +
-          'Tooltip a sopra' +
-          '</button>' +
-          '</div>' +
-          '<div class="col-lg-3 pt-3">' +
-          '<button type="button" class="btn btn-primary" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="bottom">' +
-          'Tooltip a sotto' +
-          '</button>' +
-          '</div>' +
-          '<div class="col-lg-3 pt-3">' +
-          '<button type="button" class="btn btn-primary" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="left">' +
-          'Tooltip a sinistra' +
-          '</button>' +
-          '</div>' +
-          '</div>'
-
-        ,
+        default:
+          '<div class="row justify-content-center">' +
+          '  <div class="col-auto pt-3">' +
+          '    <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right" ' +
+          '    data-bs-original-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">' +
+          '      Tooltip a destra' +
+          '    </button>' +
+          '  </div>' +
+          '  <div class="col-auto pt-3">' +
+          '    <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" ' +
+          '    data-bs-original-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">' +
+          '      Tooltip sopra' +
+          '    </button>' +
+          '  </div>' +
+          '  <div class="col-auto pt-3">' +
+          '    <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" ' +
+          '    data-bs-original-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">' +
+          '      Tooltip sotto' +
+          '    </button>' +
+          '  </div>' +
+          '  <div class="col-auto pt-3">' +
+          '    <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" ' +
+          '    data-bs-original-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">' +
+          '      Tooltip a sinistra' +
+          '    </button>' +
+          '  </div>' +
+          '</div>',
       },
       Type2: {
         default:
-          '<div class="row">' +
-          '<div class="col-lg-3 pt-3">' +
+          '<div class="row justify-content-center">' +
+          '<div class="col-auto pt-3">' +
           '<button data-toggle="tooltip"  type="button" class="btn btn-primary" title="<div class=\'h6\'>Title tooltip</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="right" data-bs-html="true">' +
           'Tooltip a destra' +
           '</button>' +
           '</div>' +
-          '<div class="col-lg-3 pt-3">' +
+          '<div class="col-auto pt-3">' +
           '<button type="button" class="btn btn-primary" title="<div class=\'h6\'>Title tooltip</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true">' +
-          'Tooltip a sopra' +
+          'Tooltip sopra' +
           '</button>' +
           '</div>' +
-          '<div class="col-lg-3 pt-3">' +
+          '<div class="col-auto pt-3">' +
           '<button type="button" class="btn btn-primary" title="<div class=\'h6\'>Title tooltip</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true">' +
-          'Tooltip a sotto' +
+          'Tooltip sotto' +
           '</button>' +
           '</div>' +
-          '<div class="col-lg-3 pt-3">' +
+          '<div class="col-auto pt-3">' +
           '<button type="button" class="btn btn-primary" title="<div class=\'h6\'>Title tooltip</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit." data-bs-toggle="tooltip" data-bs-placement="left" data-bs-html="true">' +
           'Tooltip a sinistra' +
           '</button>' +
           '</div>' +
-          '</div>' + '<div class="h3 pt-8">' +
-          'Tooltip con HTML' +
           '</div>',
       },
     };
@@ -806,6 +804,9 @@
 
         if (component) {
           contentDiv.innerHTML = component;
+
+          const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+          const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
           // Rimuovi il div avatar-container e formatta il codice
           let containerlessComponent = component
