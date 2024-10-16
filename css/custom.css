@@ -33,14 +33,6 @@ p {
   border: 1px solid #E2E8F0;
 }
 
-.sidebar {
-  display: none;
-  width: 100%;
-  padding: 1rem;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #dee2e6;
-}
-
 .navbar-brand {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -405,5 +397,42 @@ ol li {
 /* Checkbox gestione padding right nelle tabelle */
 table .toggle > label, .radio > label, .checkbox > label {
   padding-right: 0;
+}
+
+/* ICONS */
+.example-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.example-wrapper {
+  flex: 0 1 16.66666%;
+  padding: 8px;
+}
+.example-icon {
+  padding: 16px 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.example-icon .example-set {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 16px;
+  border-radius: 8px;
+  border: 2px dashed var(--bs-primary);
+  margin: 0 auto;
+}
+.example-icon .example-set .icon {
+  margin: 0 8px;
+}
+.example-icon .example-label {
+  padding: 8px 0 0 0;
+}
+.icons-help .example-svg {
+  position: absolute;
+  left: -100000px;
+  opacity: 0;
 }
 

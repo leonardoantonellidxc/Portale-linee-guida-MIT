@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>MIT - Portale delle Linee Guida di UX e UI - Popover</title>
+  <title>MIT - Portale delle Linee Guida di UX e UI - Floating button</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <link rel="shortcut icon" href="./favicon.ico" />
 
@@ -21,7 +21,17 @@
 
   <!-- Fonts -->
   <link href="css/font.css" type="text/css" rel="stylesheet" />
-  
+
+  <style>
+    .avatar-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .avatar img {
+      max-width: 100%;
+    }
+  </style>
 </head>
 
 <body>
@@ -30,21 +40,12 @@
       <div class="nav-left">
         <!-- Brand -->
         <a class="navbar-brand" title="LOGO" href="#">
-          <span class="brand-logo"
-            ><svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          <span class="brand-logo"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
               <circle cx="24" cy="24" r="24" fill="#0066CC" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+              <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M11.5 18.75L24 10L36.5 18.75H11.5ZM12.75 32.5V31.25H35.25V32.5H12.75ZM12.75 33.75V35H35.25V33.75H12.75ZM24 11.5L32.5 17.5H15.5L24 11.5ZM16.5 30V20H15.25V30H16.5ZM21.5 20V30H20.25V20H21.5ZM27.75 30V20H26.5V30H27.75ZM32.75 20V30H31.5V20H32.75Z"
-                fill="white"
-              />
+                fill="white" />
             </svg>
           </span>
 
@@ -57,9 +58,9 @@
 
       <div class="nav-right">
         <!-- Search Wrapper -->
-      
 
-       
+
+
 
         <!-- Login -->
         <div class="login-wrapper">
@@ -72,15 +73,8 @@
         </div>
 
         <div class="navbar navbar-expand-lg ps-3 ps-lg-0">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
@@ -96,7 +90,7 @@
                 <ul class="nav navbar-nav">
                   <!-- Esempio Mega menu Container -->
 
-                  <li class="nav-item active">
+                  <li class="nav-item">
                     <a href="index.html" class="nav-link">
                       <span>Homepage</span>
                     </a>
@@ -120,8 +114,7 @@
     </div>
   </header>
 
-
-  <main class="container-fluid">
+  <main class="container-fluid ">
     <div class="row px-lg-9">
       <aside class="sidebar-menu col-12 col-lg-3">
         <div class="sidebar-wrapper sticky-top-sidebar my-6">
@@ -130,15 +123,15 @@
               <div class="h6">Design system</div>
             </div>
             <!-- 
-          <a class="card-header-mobile" href="javascript:">
-           <span>
-             Title
-           </span>
-            <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
-              <use xlink:href="imgs/icon/sprite.svg#it-arrow-up"></use>
-            </svg>
-          </a>
-          -->
+            <a class="card-header-mobile" href="javascript:">
+             <span>
+               Title
+             </span>
+              <svg class="icon icon-sm dropdown-icon" aria-hidden="true">
+                <use xlink:href="imgs/icon/sprite.svg#it-arrow-up"></use>
+              </svg>
+            </a>
+            -->
             <div class="sidebar-scroll">
               <ul class="sidebar-list">
                 <li>
@@ -326,7 +319,7 @@
                       </a>
                     </li>
                     <li>
-                      <a class="list-link" href=".html">
+                      <a class="list-link" href="cookie.html">
                         <div class="list-item">
                           <span> Coockie banner </span>
                         </div>
@@ -347,7 +340,7 @@
                       </a>
                     </li>
                     <li>
-                      <a class="list-link" href="floatingbutton.html">
+                      <a class="list-link active" href="floatingbutton.html">
                         <div class="list-item">
                           <span> Floating button </span>
                         </div>
@@ -396,7 +389,7 @@
                       </a>
                     </li>
                     <li>
-                      <a class="list-link  active" href="popover.html">
+                      <a class="list-link" href="popover.html">
                         <div class="list-item">
                           <span> Popover </span>
                         </div>
@@ -541,63 +534,59 @@
           </div>
         </div>
       </aside>
+
       <div class="col-12 col-lg-9" id="main-content">
-        <!-- hero-->
-        <div class="bg-hero-green p-6 rounded my-6 ">
-          <p class=" h6 fw-semibold c-neutral-500">Design System</p>
-          <h2 class="titlepage fw-bold">Popover</h2>
+        <div class="bg-hero-green p-6 rounded my-6">
+          <p class="fw-bold c-neutral-500">Design System</p>
+          <h2 class="titlepage fw-bold">Floating button</h2>
         </div>
 
         <p class="mt-4 mb-8">
-          Un popover è un componente dell'interfaccia utente che consiste in una piccola finestra o casella di dialogo
-          che appare vicino a un elemento attivatore, come un pulsante o un link, quando l'utente ci passa sopra con il
-          mouse o ci fa clic. Questo elemento fornisce informazioni aggiuntive o opzioni contestuali senza richiedere
-          una navigazione lontano dall'area di interesse dell'utente, migliorando così l'esperienza utente complessiva.
-          I popover sono comunemente utilizzati per offrire suggerimenti, fornire dettagli aggiuntivi o consentire
-          all'utente di eseguire azioni aggiuntive in modo rapido e intuitivo.
+          Il componente floating button migliora la navigazione utente offrendo un accesso rapido ad azioni chiave e al
+          contempo riducendo i tempi di interazione. Garantisce la visibilità costante di un’azione senza interrompere
+          il flusso dei contenuti, mantenendo il design pulito e funzionale.
         </p>
 
-        <!-- variante codice -->
+        <!-- Sezione con bottone flottante e codice -->
         <div class="bg-neutral-500 p-3">
           <h5 class=" fw-bold titlepage mb-4">Variante</h5>
-
           <div class="bg-white d-flex align-items-center justify-content-center py-8 mb-3">
-            <div id="content" class="d-inline-block">
-              <button type="button" class="btn btn-primary me-4 mb-4" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="right" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
-                Popover a destra
-              </button>
-              <button type="button" class="btn btn-primary me-4 mb-4" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
-                Popover sopra
-              </button>
-              <button type="button" class="btn btn-primary me-4 mb-4" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
-                Popover sotto
-              </button>
-              <button type="button" class="btn btn-primary me-4 mb-4" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="left" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
-                Popover a sinistra
-              </button>
+            <div class="">
+              <div class="row">
+                <div class="col-auto py-6">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-floating">
+                      <svg class="icon">
+                        <use href="imgs/icon/sprite_fill.svg#it-help-circle"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
+          <!-- Sezione per visualizzare il codice -->
           <div class="d-flex justify-content-between align-items-center mb-3">
             <h5 class="my-6 fw-bold titlepage">Codice</h5>
-            <button type="button" id="copyButton" style="display: none" class="btn btn-primary">
+            <button type="button" id="copyButton1" class="btn btn-primary">
               <span> Copia codice </span>
               <svg class="icon icon-sm">
                 <use href="imgs/icon/sprite_fill.svg#it-copy-success"></use>
               </svg>
             </button>
           </div>
-          <div></div>
+
           <div id="codeContent" class="bgcode text-white rounded p-4">
-            
+            <!-- Il codice verrà inserito qui dallo script -->
           </div>
         </div>
 
-        <!-- section do dont-->
+        <!-- Sezione do and don't -->
         <div class="my-8">
           <h5 class="mb-4 fw-bold">Do and don’t</h5>
           <p class="my-3">
-            Di seguito un elenco del corretto utilizzo dei popover:
+            Di seguito un elenco del corretto utilizzo dei floating button:
           </p>
 
           <div class="d-flex flex-column flex-md-row row mb-8 gy-4">
@@ -614,19 +603,21 @@
                       </div>
                     </div>
                   </div>
-                  <!-- -->
-                  <div class="">
-                    <ul>
-                      <li>Usa i popover per mostrare dettagli aggiuntivi o spiegazioni senza occupare spazio sulla
-                        pagina.</li>
-                      <li>Mantieni il contenuto del popover breve e rilevante per catturare l'attenzione dell'utente.
-                      </li>
-                      <li>Rendi i popover facilmente attivabili con un clic o un hover su un elemento. </li>
-                    </ul>
-                  </div>
+                  <ul>
+                    <li>
+                      Colloca il floating button in un'area facilmente
+                      accessibile dello schermo, per garantire un accesso
+                      rapido.
+                    </li>
+                    <li>
+                      Scegli icone chiare e familiari che rappresentino in
+                      modo intuitivo la funzione del pulsante.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
+
             <div class="col-12 col-md-6">
               <div class="card shadow-none h-100 bg-gray">
                 <div class="card-body pb-0">
@@ -640,35 +631,28 @@
                       </div>
                     </div>
                   </div>
-                  <div class="">
-                    <ul>
-                      <li>
-                        Non creare popover troppo ampi o ingombranti che ostacolano la visibilità del contenuto
-                        sottostante.
-                      </li>
-                      <li>
-                        Non utilizzare mai un popover senza il bottone, se hai necessità di rimuovere l’azione, utilizza
-                        un tooltip.
-                      </li>
-                    </ul>
-                  </div>
+                  <ul>
+                    <li>
+                      Evita di posizionare il pulsante in aree dove può
+                      coprire informazioni o interazioni importanti,
+                      ostacolando l'esperienza utente.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
         <!-- paginazione-->
-
         <div class="d-flex justify-content-between py-3 bg-lightblu my-8 rounded px-6">
-          <button type="button" onclick="window.location.href='pagination.html'" class="btn btn-bare btn-sm">
+          <button type="button" onclick="window.location.href='dropdown.html'" class="btn btn-bare btn-sm">
             <svg class="icon">
               <use href="imgs/icon/sprite.svg#it-chevron-left"></use>
             </svg>
-            <span>Pagination</span>
+            <span>Dropdown</span>
           </button>
-          <button onclick="window.location.href='radiobutton.html'" type="button" class="btn btn-bare btn-sm">
-            <span>Radio button</span>
+          <button onclick="window.location.href='image-ratio.html'" type="button" class="btn btn-bare btn-sm">
+            <span>image ratio </span>
             <svg class="icon">
               <use href="imgs/icon/sprite.svg#it-chevron-right"></use>
             </svg>
@@ -680,6 +664,7 @@
   <footer>
     <div class="footer-credits">
       <div class="container">
+
         <div class="navbar-brand pe-4">
           <svg class="icon icon-lg" aria-hidden="true">
             <use href="imgs/icon/ministero.svg#ministero"></use>
@@ -693,11 +678,15 @@
           <svg class="icon icon-xs" aria-hidden="true">
             <use href="imgs/icon/sprite.svg#it-copyright"></use>
           </svg>
-          <span> Tutti i diritti riservati </span>
+          <span>
+            Tutti i diritti riservati
+          </span>
         </div>
+
       </div>
     </div>
-</footer>
+  </footer>
+
   <!-- Pulsante per offcanvas in versione mobile fisso in fondo alla pagina -->
   <div class="header-offcanvas bg-primary10 d-lg-none position-fixed bottom-0">
     <div class="d-flex justify-content-between">
@@ -733,66 +722,59 @@
     </div>
   </div>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/menu-side-offcanvas.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const codeContentDiv = document.getElementById("codeContent");
-    const copyButton1 = document.getElementById("copyButton1");
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/menu-side-offcanvas.js"></script>
 
-    // Codice da visualizzare
-    const codeHTML = `
-  <button type="button" class="btn btn-primary" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="right" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
-    Popover a destra
-  </button>
-  <button type="button" class="btn btn-primary" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
-    Popover sopra
-  </button>
-  <button type="button" class="btn btn-primary" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
-    Popover sotto
-  </button>
-  <button type="button" class="btn btn-primary" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="left" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
-    Popover a sinistra
-  </button>
-  `;
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const codeContentDiv = document.getElementById("codeContent");
+      const copyButton1 = document.getElementById("copyButton1");
 
-    // Funzione per inserire e visualizzare il codice
-    codeContentDiv.innerHTML = `<pre><code>${escapeHTML(
-      codeHTML
-    )}</code></pre>`;
+      // Codice da visualizzare
+      const codeHTML = `
+      <div class="row">
+        <div class="col-lg-4 py-6">
+          <div class="btn-group">
+            <button type="button" class="btn btn-floating">
+              <svg class="icon">
+                <use href="imgs/icon/sprite_fill.svg#it-help-circle"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      `;
 
-    // Funzione per scappare i caratteri speciali nel codice
-    function escapeHTML(html) {
-      return html
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
-    }
+      // Funzione per inserire e visualizzare il codice
+      codeContentDiv.innerHTML = `<pre><code>${escapeHTML(
+        codeHTML
+      )}</code></pre>`;
 
-    // Funzione per copiare il codice negli appunti
-    copyButton1.addEventListener("click", function () {
-      navigator.clipboard
-        .writeText(codeHTML)
-        .then(() => {
-          alert("Codice copiato con successo!");
-        })
-        .catch((err) => {
-          console.error("Errore durante la copia del codice:", err);
-        });
+      // Funzione per scappare i caratteri speciali nel codice
+      function escapeHTML(html) {
+        return html
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      // Funzione per copiare il codice negli appunti
+      copyButton1.addEventListener("click", function () {
+        navigator.clipboard
+          .writeText(codeHTML)
+          .then(() => {
+            alert("Codice copiato con successo!");
+          })
+          .catch((err) => {
+            console.error("Errore durante la copia del codice:", err);
+          });
+      });
     });
-  });
-</script>
-
-<script>
-  /* inizializza popover */
-  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-</script>
-
+  </script>
 </body>
 
 </html>
