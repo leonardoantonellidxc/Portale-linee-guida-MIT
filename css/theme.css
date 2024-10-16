@@ -679,16 +679,16 @@ footer .navbar-brand{	display:flex; flex-direction:row; align-items:center; whit
 .badge.badge-warning.bg-white{										--bs-badge-color:var(--bs-warning70);	}
 
 
-/* Breadcrumb */
-.breadcrumb-container{			padding-bottom:32px;	}
+/* Breadcrumbs */
+.breadcrumbs-container{			padding-bottom:32px;	}
 
-.breadcrumb-item{				display:flex;	align-items:center;	font-weight:600;			}
-.breadcrumb-item .link{			--bs-link-color:var(--bs-primary95); padding:4px; border-radius:4px; transition:background-color .3s, color .3s;		}
-.breadcrumb-item .link:hover{	--bs-link-color:var(--bs-primary80);  background-color:var(--bs-primary20);		}
-.breadcrumb-item .link .icon + span{	margin-left:8px;	}
+.breadcrumbs-item{				display:flex;	align-items:center;	font-weight:600;			}
+.breadcrumbs-item .link{			--bs-link-color:var(--bs-primary95); padding:4px; border-radius:4px; transition:background-color .3s, color .3s;		}
+.breadcrumbs-item .link:hover{	--bs-link-color:var(--bs-primary80);  background-color:var(--bs-primary20);		}
+.breadcrumbs-item .link .icon + span{	margin-left:8px;	}
 
-.breadcrumb-item + .breadcrumb-item::before{ 	width:24px; height:24px; background-size:24px 24px; background-position:center; background-repeat:no-repeat;
-												background-image:url('/imgs/icon/breadcrumb/separator.svg');				
+.breadcrumbs-item + .breadcrumbs-item::before{ 	width:24px; height:24px; background-size:24px 24px; background-position:center; background-repeat:no-repeat;
+												background-image:url('/imgs/icon/breadcrumbs/separator.svg');				
 }
 
 
@@ -1389,8 +1389,8 @@ a.chip.disabled{				cursor:default;		}
 
 	.title-bar-mobile{		display:block;	}
 
-	/* Breadcrumb */
-	.breadcrumb{		--bs-breadcrumb-font-size:16px;			}
+	/* Breadcrumbs */
+	.breadcrumbs{		--bs-breadcrumbs-font-size:16px;			}
 
 
 	/* Page Hero */
@@ -1412,8 +1412,8 @@ a.chip.disabled{				cursor:default;		}
 	.page-hero.hero-l1 .hero-chip{		padding-top:4px;	text-align:left;	}
 
 
-	/* Breadcrumb */
-	.breadcrumb-container{			padding-bottom:16px;	}
+	/* Breadcrumbs */
+	.breadcrumbs-container{			padding-bottom:16px;	}
 
 
 	/* Cotainer Frame */

@@ -317,7 +317,7 @@
                       </a>
                     </li>
                     <li>
-                      <a class="list-link" href="breadcrumb.html">
+                      <a class="list-link" href="breadcrumbs.html">
                         <div class="list-item">
                           <span> Breadcrumbs </span>
                         </div>
@@ -380,16 +380,16 @@
                       </a>
                     </li>
                     <li>
-                      <a class="list-link" href="floatingbottom.html">
+                      <a class="list-link" href="floatingbutton.html">
                         <div class="list-item">
                           <span> Floating button </span>
                         </div>
                       </a>
                     </li>
                     <li>
-                      <a class="list-link" href="imagine-ratio.html">
+                      <a class="list-link" href="image-ratio.html">
                         <div class="list-item">
-                          <span> Imagine ratio </span>
+                          <span> image ratio </span>
                         </div>
                       </a>
                     </li>
@@ -480,7 +480,7 @@
                     <li>
                       <a class="list-link" href="table.html">
                         <div class="list-item">
-                          <span> Tables </span>
+                          <span> Table </span>
                         </div>
                       </a>
                     </li>
@@ -758,6 +758,42 @@
       </div>
     </div>
   </footer>
+
+   <!-- Pulsante per offcanvas in versione mobile fisso in fondo alla pagina -->
+   <div class="header-offcanvas bg-primary10 d-lg-none position-fixed bottom-0">
+    <div class="d-flex justify-content-between">
+      <div class="sidebarInfos">
+        <div id="sidebarTitle" class="h6">Titolo Sidebar</div>
+        <div id="sidebarActiveItem" class="mobile-selected">Titolo Menu Voce Attiva</div>
+      </div>
+      <button class="btn btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas"
+        aria-controls="sidebarOffcanvas">
+        <svg class="icon icon-sm" aria-hidden="true">
+          <use href="imgs/icon/sprite_fill.svg#it-maximize"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Contenuto offcanvas che incorpora la sidebar solo versione mobile -->
+  <div class="offcanvas offcanvas-bottom h-75 bg-transparent" tabindex="-1" id="sidebarOffcanvas"
+    aria-labelledby="sidebarOffcanvasLabel">
+    <div class="offcanvas-header header-offcanvas bg-primary10">
+      <div class="h6 offcanvas-title" id="sidebarOffcanvasLabel">Titolo Sidebar</div>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+        <svg class="icon icon-sm" aria-hidden="true">
+          <use href="imgs/icon/sprite_fill.svg#it-close-circle"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="offcanvas-body card">
+      <!-- Copia qui il contenuto della sidebar -->
+      <div class="sidebar-scroll">
+        <!-- Il contenuto del menu va qui -->
+      </div>
+    </div>
+  </div>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/menu-side-offcanvas.js"></script><script>

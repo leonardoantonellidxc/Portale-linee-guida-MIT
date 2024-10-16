@@ -269,7 +269,7 @@
                       </a>
                     </li>
                     <li>
-                      <a class="list-link" href="breadcrumb.html">
+                      <a class="list-link" href="breadcrumbs.html">
                         <div class="list-item">
                           <span> Breadcrumbs </span>
                         </div>
@@ -325,16 +325,16 @@
                       </a>
                     </li>
                     <li>
-                      <a class="list-link" href="floatingbottom.html">
+                      <a class="list-link" href="floatingbutton.html">
                         <div class="list-item">
                           <span> Floating button </span>
                         </div>
                       </a>
                     </li>
                     <li>
-                      <a class="list-link" href="imagine-ratio.html">
+                      <a class="list-link" href="image-ratio.html">
                         <div class="list-item">
-                          <span> Imagine ratio </span>
+                          <span> image ratio </span>
                         </div>
                       </a>
                     </li>
@@ -425,7 +425,7 @@
                     <li>
                       <a class="list-link" href="table.html">
                         <div class="list-item">
-                          <span> Tables </span>
+                          <span> Table </span>
                         </div>
                       </a>
                     </li>
@@ -540,174 +540,203 @@
         <!-- Sezione con bottone flottante e codice -->
         <div class="bg-neutral-500 p-3">
           <h5 class=" fw-bold titlepage mb-4">Variante</h5>
-          <div class="bg-white align-items-center justify-content-center py-8 mb-3">
-            <div id="custom-section" class=" ">
 
-              <!-- INIZIO CONTENUTO VARIANTE  -->
+          <!-- tab menu-->
 
-              <header class="navbar navbar-dark ">
+          <div class="py-5">
+            <ul class="nav nav-tabs light" id="tabHeader" role="tablist">
+              <!-- Tab Dark -->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab"
+                  data-bs-target="#headerDark" type="button" role="tab" aria-controls="headerDark" aria-selected="true">
+                  <span>Dark</span>
+                </a>
+              </li>
 
-                <!-- Salta ai contenuti della pagina -->
-                <a class="visually-hidden-focusable skip-to-content" href="#PageV">Salta direttamente al contenuto</a>
+              <!-- Tab Light -->
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#headerLight" type="button" role="tab"
+                  aria-controls="headerLight" aria-selected="false">
+                  <span>Light</span>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-                <!-- Top -->
-                <div class="header-top">
-                  <div class="container">
-                    <!-- -->
-                    <div class="nav-left">
+          <div class="tab-content">
+            <!-- TAB PANNELLO 1 -->
+            <div class="tab-pane fade show active bg-light-subtle p-2 rounded-0" id="headerDark" role="tablist"
+              aria-labelledby="headerDark">
+              <div class="bg-white align-items-center justify-content-center py-8 mb-3">
+                <div id="custom-section">
 
-                      <nav class="nav-menu" aria-label="Lorem ipsum">
-                        <ul class="nav navbar-nav">
-                          <li class="nav-item">
-                            <a class="nav-link" href="">
-                              Item
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="">
-                              Item
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="">
-                              Item
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="">
-                              Item
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="">
-                              Item
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link disabled" href="">
-                              Item
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
+                  <!-- INIZIO CONTENUTO VARIANTE  -->
 
-                    </div>
-                  </div>
-                </div>
+                  <header class="navbar navbar-dark ">
 
-                <!-- Middle -->
-                <div class="header-middle">
-                  <div class="container">
+                    <!-- Salta ai contenuti della pagina -->
+                    <a class="visually-hidden-focusable skip-to-content" href="#PageV">Salta direttamente al
+                      contenuto</a>
 
-                    <!-- -->
-                    <div class="nav-left">
+                    <!-- Top -->
+                    <div class="header-top">
+                      <div class="container">
+                        <!-- -->
+                        <div class="nav-left">
 
-                      <!-- Hamburger -->
-                      <a class="mobile-handle" href="javascript:">
-                        <div class="hamburger">
-                          <svg class="icon" aria-hidden="true">
-                            <use href="imgs/icon/sprite.svg#it-burger"></use>
-                          </svg>
+                          <nav class="nav-menu" aria-label="Lorem ipsum">
+                            <ul class="nav navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link" href="">
+                                  Item
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="">
+                                  Item
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="">
+                                  Item
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="">
+                                  Item
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="">
+                                  Item
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled" href="">
+                                  Item
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+
                         </div>
-                        <div class="menu-close">
-                          <svg class="icon" aria-hidden="true">
-                            <use href="imgs/icon/sprite.svg#it-close-big"></use>
-                          </svg>
-                        </div>
-                      </a>
-
-                      <!-- Brand -->
-                      <a class="navbar-brand" title="LOGO" href="#">
-                        <img class="brand-logo" src="imgs/header/logo.svg">
-                        <div class="brand-text">
-                          Nome del portale <br>
-                          verticale
-                        </div>
-                      </a>
-
+                      </div>
                     </div>
 
-                    <div class="nav-right">
+                    <!-- Middle -->
+                    <div class="header-middle">
+                      <div class="container">
 
-                      <!-- Search Wrapper -->
-                      <div class="search-wrapper">
+                        <!-- -->
+                        <div class="nav-left">
 
-                        <!-- Desktop -->
-                        <div class="form-group group-search">
-                          <div class="input-group">
-                            <div class="input-group-text">
+                          <!-- Hamburger -->
+                          <a class="mobile-handle" href="javascript:">
+                            <div class="hamburger">
+                              <svg class="icon" aria-hidden="true">
+                                <use href="imgs/icon/sprite.svg#it-burger"></use>
+                              </svg>
+                            </div>
+                            <div class="menu-close">
+                              <svg class="icon" aria-hidden="true">
+                                <use href="imgs/icon/sprite.svg#it-close-big"></use>
+                              </svg>
+                            </div>
+                          </a>
+
+                          <!-- Brand -->
+                          <a class="navbar-brand" title="LOGO" href="#">
+                            <img class="brand-logo" src="imgs/header/logo.svg">
+                            <div class="brand-text">
+                              Nome del portale <br>
+                              verticale
+                            </div>
+                          </a>
+
+                        </div>
+
+                        <div class="nav-right">
+
+                          <!-- Search Wrapper -->
+                          <div class="search-wrapper">
+
+                            <!-- Desktop -->
+                            <div class="form-group group-search">
+                              <div class="input-group">
+                                <div class="input-group-text">
+                                  <svg class="icon icon-xs">
+                                    <use href="imgs/icon/sprite.svg#it-search"></use>
+                                  </svg>
+                                </div>
+                                <input type="text" class="form-control" name="main-search" placeholder="Search" value=""
+                                  aria-label="Lorem ipsum dolor sit">
+                              </div>
+                            </div>
+
+                            <!-- Mobile -->
+                            <button type="button" class="btn btn-white">
                               <svg class="icon icon-xs">
                                 <use href="imgs/icon/sprite.svg#it-search"></use>
                               </svg>
-                            </div>
-                            <input type="text" class="form-control" name="main-search" placeholder="Search" value=""
-                              aria-label="Lorem ipsum dolor sit">
+                            </button>
+
                           </div>
-                        </div>
 
-                        <!-- Mobile -->
-                        <button type="button" class="btn btn-white">
-                          <svg class="icon icon-xs">
-                            <use href="imgs/icon/sprite.svg#it-search"></use>
-                          </svg>
-                        </button>
-
-                      </div>
-
-                      <!-- Lang Wrapper -->
-                      <div class="lang-wrapper dropdown">
-                        <a class="lang-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <img src="imgs/icon/flag/it.svg" aria-hidden="true">
-                          <span>
-                            ITA
-                          </span>
-                          <svg class="icon icon-xs dropdown-icon" aria-hidden="true">
-                            <use href="imgs/icon/sprite.svg#it-expand"></use>
-                          </svg>
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item" href="#">
+                          <!-- Lang Wrapper -->
+                          <div class="lang-wrapper dropdown">
+                            <a class="lang-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
                               <img src="imgs/icon/flag/it.svg" aria-hidden="true">
                               <span>
                                 ITA
                               </span>
+                              <svg class="icon icon-xs dropdown-icon" aria-hidden="true">
+                                <use href="imgs/icon/sprite.svg#it-expand"></use>
+                              </svg>
                             </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <img src="imgs/icon/flag/fr.svg" aria-hidden="true">
-                              <span>
-                                FRA
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <img src="imgs/icon/flag/it.svg" aria-hidden="true">
+                                  <span>
+                                    ITA
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <img src="imgs/icon/flag/fr.svg" aria-hidden="true">
+                                  <span>
+                                    FRA
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <img src="imgs/icon/flag/es.svg" aria-hidden="true">
+                                  <span>
+                                    ESP
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+
+
+
+                          <!-- Login -->
+                          <div class="login-wrapper">
+                            <button type="button" class="btn btn-white">
+                              <svg class="icon icon-sm" aria-hidden="true">
+                                <use href="imgs/icon/sprite.svg#it-user"></use>
+                              </svg>
+                              <span class="mobile-hidden-lg">
+                                Accedi al portale
                               </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <img src="imgs/icon/flag/es.svg" aria-hidden="true">
-                              <span>
-                                ESP
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
+                            </button>
+                          </div>
 
-
-
-                      <!-- Login -->
-                      <div class="login-wrapper">
-                        <button type="button" class="btn btn-white">
-                          <svg class="icon icon-sm" aria-hidden="true">
-                            <use href="imgs/icon/sprite.svg#it-user"></use>
-                          </svg>
-                          <span class="mobile-hidden-lg">
-                            Accedi al portale
-                          </span>
-                        </button>
-                      </div>
-
-                      <!-- Logged In 
+                          <!-- Logged In 
                       <div class="profile-wrapper dropdown">
                         <a class="btn btn-white" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                           <div class="avatar avatar-sm avatar-primary">
@@ -727,714 +756,1627 @@
                         </ul>
                       </div>-->
 
-                      <!-- Altro -->
-                      <button type="button" class="btn btn-outline-white">
-                        <svg class="icon icon-sm" aria-hidden="true">
-                          <use href="imgs/icon/sprite.svg#it-more-actions"></use>
-                        </svg>
-                      </button>
+                          <!-- Altro -->
+                          <button type="button" class="btn btn-outline-white">
+                            <svg class="icon icon-sm" aria-hidden="true">
+                              <use href="imgs/icon/sprite.svg#it-more-actions"></use>
+                            </svg>
+                          </button>
 
+                        </div>
+
+                      </div>
                     </div>
 
-                  </div>
-                </div>
+                    <!-- Bottom -->
+                    <div class="header-bottom">
+                      <div class="container">
+                        <!-- -->
+                        <div class="nav-left">
+                          <nav class="nav-menu" aria-label="Lorem ipsum">
+                            <ul class="nav navbar-nav">
 
-                <!-- Bottom -->
-                <div class="header-bottom">
-                  <div class="container">
-                    <!-- -->
-                    <div class="nav-left">
-                      <nav class="nav-menu" aria-label="Lorem ipsum">
-                        <ul class="nav navbar-nav">
+                              <li class="nav-item">
+                                <a href="javascript:" class="nav-link">
+                                  <span class="text-icon"><svg class="icon icon-xs">
+                                      <use href="imgs/icon/sprite.svg#it-example"></use>
+                                    </svg><span>Home</span></span>
+                                </a>
+                              </li>
+                              <li class="dropdown nav-item">
+                                <a href="javascript:" class="nav-link" data-toggle="dropdown" role="button"
+                                  aria-expanded="false">
+                                  <span class="text-icon"><svg class="icon icon-xs">
+                                      <use href="imgs/icon/sprite.svg#it-example"></use>
+                                    </svg><span>Componenti A-B</span></span><svg class="icon icon-xs dropdown-icon">
+                                    <use href="imgs/icon/sprite.svg#it-expand"></use>
+                                  </svg>
+                                </a>
+                                <div class="dd-menu">
+                                  <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Accordion
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Alert
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Avatar
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Badge
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Breadcrumbs
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Button
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Button group
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Bottom bar
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="dropdown nav-item">
+                                <a href="javascript:" class="nav-link" data-toggle="dropdown" role="button"
+                                  aria-expanded="false">
+                                  <span class="text-icon"><svg class="icon icon-xs">
+                                      <use href="imgs/icon/sprite.svg#it-example"></use>
+                                    </svg><span>Componenti C-M</span></span><svg class="icon icon-xs dropdown-icon">
+                                    <use href="imgs/icon/sprite.svg#it-expand"></use>
+                                  </svg>
+                                </a>
+                                <div class="dd-menu">
+                                  <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Card
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Chips
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Dropdown
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Floating button
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Hero banner
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Icone
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Image ratio
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Loader
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Modali
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="dropdown nav-item active">
+                                <a href="javascript:" class="nav-link active" data-toggle="dropdown" role="button"
+                                  aria-expanded="false">
+                                  <span class="text-icon"><svg class="icon icon-xs">
+                                      <use href="imgs/icon/sprite.svg#it-example"></use>
+                                    </svg><span>Componenti P-Z</span></span><svg class="icon icon-xs dropdown-icon">
+                                    <use href="imgs/icon/sprite.svg#it-expand"></use>
+                                  </svg>
+                                </a>
+                                <div class="dd-menu">
+                                  <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Pagination
+                                      </a>
+                                    </li>
+                                    <li class="nav-item active">
+                                      <a href="javascript:" class="nav-link active">
+                                        Popover
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Scrollbar
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Sidebar navigation
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Stepper
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Tab
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Table
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Timeline
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Tooltip
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="dropdown nav-item">
+                                <a href="javascript:" class="nav-link" data-toggle="dropdown" role="button"
+                                  aria-expanded="false">
+                                  <span class="text-icon"><span>Form</span></span><svg
+                                    class="icon icon-xs dropdown-icon">
+                                    <use href="imgs/icon/sprite.svg#it-expand"></use>
+                                  </svg>
+                                </a>
+                                <div class="dd-menu">
+                                  <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Checkbox
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Date picker
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Input
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Input search
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Radio button
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Select
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Slider
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Switcher
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Time picker
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Toggle
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Uploader
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="dropdown nav-item mega-menu">
+                                <a href="javascript:" class="nav-link">
+                                  <span class="text-icon"><svg class="icon icon-xs">
+                                      <use href="imgs/icon/sprite.svg#it-example"></use>
+                                    </svg><span>Mega menù</span></span>
+                                  <svg class="icon icon-xs dropdown-icon">
+                                    <use href="imgs/icon/sprite.svg#it-expand"></use>
+                                  </svg></a>
+                                <div class="dd-menu">
+                                  <div class="mega-area">
+                                    <div class="container">
 
-                          <li class="nav-item">
-                            <a href="javascript:" class="nav-link">
-                              <span class="text-icon"><svg class="icon icon-xs">
-                                  <use href="imgs/icon/sprite.svg#it-example"></use>
-                                </svg><span>Home</span></span>
-                            </a>
-                          </li>
-                          <li class="dropdown nav-item">
-                            <a href="javascript:" class="nav-link" data-toggle="dropdown" role="button"
-                              aria-expanded="false">
-                              <span class="text-icon"><svg class="icon icon-xs">
-                                  <use href="imgs/icon/sprite.svg#it-example"></use>
-                                </svg><span>Componenti A-B</span></span><svg class="icon icon-xs dropdown-icon">
-                                <use href="imgs/icon/sprite.svg#it-expand"></use>
-                              </svg>
-                            </a>
-                            <div class="dd-menu">
-                              <ul class="nav navbar-nav">
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Accordion
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Alert
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Avatar
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Badge
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Breadcrumb
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Button
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Button group
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Bottom bar
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="dropdown nav-item">
-                            <a href="javascript:" class="nav-link" data-toggle="dropdown" role="button"
-                              aria-expanded="false">
-                              <span class="text-icon"><svg class="icon icon-xs">
-                                  <use href="imgs/icon/sprite.svg#it-example"></use>
-                                </svg><span>Componenti C-M</span></span><svg class="icon icon-xs dropdown-icon">
-                                <use href="imgs/icon/sprite.svg#it-expand"></use>
-                              </svg>
-                            </a>
-                            <div class="dd-menu">
-                              <ul class="nav navbar-nav">
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Card
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Chips
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Dropdown
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Floating button
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Hero banner
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Icone
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Image ratio
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Loader
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Modali
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="dropdown nav-item active">
-                            <a href="javascript:" class="nav-link active" data-toggle="dropdown" role="button"
-                              aria-expanded="false">
-                              <span class="text-icon"><svg class="icon icon-xs">
-                                  <use href="imgs/icon/sprite.svg#it-example"></use>
-                                </svg><span>Componenti P-Z</span></span><svg class="icon icon-xs dropdown-icon">
-                                <use href="imgs/icon/sprite.svg#it-expand"></use>
-                              </svg>
-                            </a>
-                            <div class="dd-menu">
-                              <ul class="nav navbar-nav">
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Pagination
-                                  </a>
-                                </li>
-                                <li class="nav-item active">
-                                  <a href="javascript:" class="nav-link active">
-                                    Popover
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Scrollbar
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Sidebar navigation
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Stepper
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Tab
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Table
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Timeline
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Tooltip
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="dropdown nav-item">
-                            <a href="javascript:" class="nav-link" data-toggle="dropdown" role="button"
-                              aria-expanded="false">
-                              <span class="text-icon"><span>Form</span></span><svg class="icon icon-xs dropdown-icon">
-                                <use href="imgs/icon/sprite.svg#it-expand"></use>
-                              </svg>
-                            </a>
-                            <div class="dd-menu">
-                              <ul class="nav navbar-nav">
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Checkbox
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Date picker
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Input
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Input search
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Radio button
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Select
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Slider
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Switcher
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Time picker
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Toggle
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a href="javascript:" class="nav-link">
-                                    Uploader
-                                  </a>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li class="dropdown nav-item mega-menu">
-                            <a href="javascript:" class="nav-link">
-                              <span class="text-icon"><svg class="icon icon-xs">
-                                  <use href="imgs/icon/sprite.svg#it-example"></use>
-                                </svg><span>Mega menù</span></span>
-                              <svg class="icon icon-xs dropdown-icon">
-                                <use href="imgs/icon/sprite.svg#it-expand"></use>
-                              </svg></a>
-                            <div class="dd-menu">
-                              <div class="mega-area">
-                                <div class="container">
+                                      <div class="card no-shadow">
+                                        <div class="card-body">
 
-                                  <div class="card no-shadow">
-                                    <div class="card-body">
+                                          <div class="row">
+                                            <div class="col-lg-6 mega-col">
 
+                                              <div class="card-title h5">
+                                                Servizio/Voce di menù
+                                              </div>
+                                              <div class="card-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut
+                                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco
+                                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                in
+                                                reprehenderit...
+                                              </div>
+                                              <div class="btn-toolbar">
+                                                <div class="btn-group-left">
+                                                  <button type="button" class="btn btn-primary">
+                                                    <span>
+                                                      Label text
+                                                    </span>
+                                                    <svg class="icon">
+                                                      <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                                      </use>
+                                                    </svg>
+                                                  </button>
+                                                </div>
+                                              </div>
+
+                                            </div>
+                                            <div class="col-lg-6 mega-col">
+
+                                              <div class="card-title h5">
+                                                Servizio/Voce di menù
+                                              </div>
+                                              <div class="card-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut
+                                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco
+                                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                in
+                                                reprehenderit...
+                                              </div>
+                                              <div class="btn-toolbar">
+                                                <div class="btn-group-left">
+                                                  <button type="button" class="btn btn-primary">
+                                                    <span>
+                                                      Label text
+                                                    </span>
+                                                    <svg class="icon">
+                                                      <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                                      </use>
+                                                    </svg>
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                          </div>
+
+                                        </div>
+                                      </div>
+
+                                      <div class="h6 pt-5">
+                                        Servizi più usati
+                                      </div>
                                       <div class="row">
-                                        <div class="col-lg-6 mega-col">
 
-                                          <div class="card-title h5">
-                                            Servizio/Voce di menù
-                                          </div>
-                                          <div class="card-text">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut
-                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                            exercitation ullamco
-                                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                            reprehenderit...
-                                          </div>
-                                          <div class="btn-toolbar">
-                                            <div class="btn-group-left">
-                                              <button type="button" class="btn btn-primary">
-                                                <span>
-                                                  Label text
-                                                </span>
-                                                <svg class="icon">
-                                                  <use href="imgs/icon/sprite.svg#it-chevron-right">
-                                                  </use>
-                                                </svg>
-                                              </button>
+
+
+                                        <div class="col-lg-4">
+
+                                          <div class="mega-item">
+                                            <div class="title-bar">
+                                              <div>
+                                                <div class="h6">
+                                                  Servizio/Voce di menù
+                                                </div>
+                                                <div class="item-text">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                                  consectetur.
+                                                </div>
+                                              </div>
+                                              <div class="badge badge-primary">
+                                                Label
+                                              </div>
+                                            </div>
+                                            <div class="btn-toolbar">
+                                              <div class="btn-group-left">
+                                                <button type="button" class="btn btn-bare bare-white">
+                                                  <span>
+                                                    Label text
+                                                  </span>
+                                                  <svg class="icon">
+                                                    <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                                    </use>
+                                                  </svg>
+                                                </button>
+                                              </div>
                                             </div>
                                           </div>
 
                                         </div>
-                                        <div class="col-lg-6 mega-col">
+                                        <div class="col-lg-4">
 
-                                          <div class="card-title h5">
-                                            Servizio/Voce di menù
-                                          </div>
-                                          <div class="card-text">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut
-                                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                            exercitation ullamco
-                                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                            reprehenderit...
-                                          </div>
-                                          <div class="btn-toolbar">
-                                            <div class="btn-group-left">
-                                              <button type="button" class="btn btn-primary">
-                                                <span>
-                                                  Label text
-                                                </span>
-                                                <svg class="icon">
-                                                  <use href="imgs/icon/sprite.svg#it-chevron-right">
-                                                  </use>
-                                                </svg>
-                                              </button>
+                                          <div class="mega-item">
+                                            <div class="title-bar">
+                                              <div>
+                                                <div class="h6">
+                                                  Servizio/Voce di menù
+                                                </div>
+                                                <div class="item-text">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                                  consectetur.
+                                                </div>
+                                              </div>
+                                              <div class="badge badge-primary">
+                                                Label
+                                              </div>
+                                            </div>
+                                            <div class="btn-toolbar">
+                                              <div class="btn-group-left">
+                                                <button type="button" class="btn btn-bare bare-white">
+                                                  <span>
+                                                    Label text
+                                                  </span>
+                                                  <svg class="icon">
+                                                    <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                                    </use>
+                                                  </svg>
+                                                </button>
+                                              </div>
                                             </div>
                                           </div>
+
                                         </div>
+                                        <div class="col-lg-4">
 
-                                      </div>
-
-                                    </div>
-                                  </div>
-
-                                  <div class="h6 pt-5">
-                                    Servizi più usati
-                                  </div>
-                                  <div class="row">
-
-
-
-                                    <div class="col-lg-4">
-
-                                      <div class="mega-item">
-                                        <div class="title-bar">
-                                          <div>
-                                            <div class="h6">
-                                              Servizio/Voce di menù
+                                          <div class="mega-item disabled">
+                                            <div class="title-bar">
+                                              <div>
+                                                <div class="h6">
+                                                  Servizio/Voce di menù
+                                                </div>
+                                                <div class="item-text">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                                  consectetur.
+                                                </div>
+                                              </div>
+                                              <div class="badge badge-primary">
+                                                Label
+                                              </div>
                                             </div>
-                                            <div class="item-text">
-                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
-                                              consectetur.
+                                            <div class="btn-toolbar">
+                                              <div class="btn-group-left">
+                                                <button type="button" class="btn btn-bare bare-white disabled"
+                                                  disabled="disabled">
+                                                  <span>
+                                                    Label text
+                                                  </span>
+                                                  <svg class="icon">
+                                                    <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                                    </use>
+                                                  </svg>
+                                                </button>
+                                              </div>
                                             </div>
                                           </div>
-                                          <div class="badge badge-primary">
-                                            Label
-                                          </div>
+
                                         </div>
-                                        <div class="btn-toolbar">
-                                          <div class="btn-group-left">
-                                            <button type="button" class="btn btn-bare bare-white">
-                                              <span>
-                                                Label text
-                                              </span>
-                                              <svg class="icon">
-                                                <use href="imgs/icon/sprite.svg#it-chevron-right">
-                                                </use>
-                                              </svg>
-                                            </button>
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                    <div class="col-lg-4">
-
-                                      <div class="mega-item">
-                                        <div class="title-bar">
-                                          <div>
-                                            <div class="h6">
-                                              Servizio/Voce di menù
+                                        <div class="col-lg-4">
+                                          <a class="mega-item" href="#">
+                                            <div class="title-bar">
+                                              <div>
+                                                <div class="h6">
+                                                  Servizio/Voce di menù
+                                                </div>
+                                                <div class="item-text">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                                  consectetur.
+                                                </div>
+                                              </div>
+                                              <div class="badge badge-primary">
+                                                Label
+                                              </div>
                                             </div>
-                                            <div class="item-text">
-                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
-                                              consectetur.
-                                            </div>
-                                          </div>
-                                          <div class="badge badge-primary">
-                                            Label
-                                          </div>
-                                        </div>
-                                        <div class="btn-toolbar">
-                                          <div class="btn-group-left">
-                                            <button type="button" class="btn btn-bare bare-white">
-                                              <span>
-                                                Label text
-                                              </span>
-                                              <svg class="icon">
-                                                <use href="imgs/icon/sprite.svg#it-chevron-right">
-                                                </use>
-                                              </svg>
-                                            </button>
-                                          </div>
-                                        </div>
-                                      </div>
+                                          </a>
 
-                                    </div>
-                                    <div class="col-lg-4">
-
-                                      <div class="mega-item disabled">
-                                        <div class="title-bar">
-                                          <div>
-                                            <div class="h6">
-                                              Servizio/Voce di menù
-                                            </div>
-                                            <div class="item-text">
-                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
-                                              consectetur.
-                                            </div>
-                                          </div>
-                                          <div class="badge badge-primary">
-                                            Label
-                                          </div>
                                         </div>
-                                        <div class="btn-toolbar">
-                                          <div class="btn-group-left">
-                                            <button type="button" class="btn btn-bare bare-white disabled"
-                                              disabled="disabled">
-                                              <span>
-                                                Label text
-                                              </span>
-                                              <svg class="icon">
-                                                <use href="imgs/icon/sprite.svg#it-chevron-right">
-                                                </use>
-                                              </svg>
-                                            </button>
-                                          </div>
+                                        <div class="col-lg-4">
+                                          <a class="mega-item" href="#">
+                                            <div class="title-bar">
+                                              <div>
+                                                <div class="h6">
+                                                  Servizio/Voce di menù
+                                                </div>
+                                                <div class="item-text">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                                  consectetur.
+                                                </div>
+                                              </div>
+                                              <div class="badge badge-primary">
+                                                Label
+                                              </div>
+                                            </div>
+                                          </a>
+
+                                        </div>
+                                        <div class="col-lg-4">
+                                          <a class="mega-item disabled" href="#">
+                                            <div class="title-bar">
+                                              <div>
+                                                <div class="h6">
+                                                  Servizio/Voce di menù
+                                                </div>
+                                                <div class="item-text">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                                  consectetur.
+                                                </div>
+                                              </div>
+                                              <div class="badge badge-primary">
+                                                Label
+                                              </div>
+                                            </div>
+                                          </a>
+
                                         </div>
                                       </div>
-
-                                    </div>
-                                    <div class="col-lg-4">
-                                      <a class="mega-item" href="#">
-                                        <div class="title-bar">
-                                          <div>
-                                            <div class="h6">
-                                              Servizio/Voce di menù
-                                            </div>
-                                            <div class="item-text">
-                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
-                                              consectetur.
-                                            </div>
-                                          </div>
-                                          <div class="badge badge-primary">
-                                            Label
-                                          </div>
-                                        </div>
-                                      </a>
-
-                                    </div>
-                                    <div class="col-lg-4">
-                                      <a class="mega-item" href="#">
-                                        <div class="title-bar">
-                                          <div>
-                                            <div class="h6">
-                                              Servizio/Voce di menù
-                                            </div>
-                                            <div class="item-text">
-                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
-                                              consectetur.
-                                            </div>
-                                          </div>
-                                          <div class="badge badge-primary">
-                                            Label
-                                          </div>
-                                        </div>
-                                      </a>
-
-                                    </div>
-                                    <div class="col-lg-4">
-                                      <a class="mega-item disabled" href="#">
-                                        <div class="title-bar">
-                                          <div>
-                                            <div class="h6">
-                                              Servizio/Voce di menù
-                                            </div>
-                                            <div class="item-text">
-                                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
-                                              consectetur.
-                                            </div>
-                                          </div>
-                                          <div class="badge badge-primary">
-                                            Label
-                                          </div>
-                                        </div>
-                                      </a>
-
                                     </div>
                                   </div>
                                 </div>
+                              </li>
+                              <li class="disabled nav-item">
+                                <a href="javascript:" class="nav-link disabled">
+                                  <span class="text-icon"><svg class="icon icon-xs">
+                                      <use href="imgs/icon/sprite.svg#it-example"></use>
+                                    </svg><span>Disable</span></span>
+                                </a>
+                              </li>
+
+                            </ul>
+                          </nav>
+                        </div>
+
+                        <!-- -->
+                        <div class="nav-right">
+                          <nav class="nav-menu" aria-label="Lorem ipsum">
+                            <ul class="nav navbar-nav">
+
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Navigation Mobile menu -->
+                    <div class="nav-mobile">
+                      <div class="mobile-wrapper">
+                        <div class="mobile-header h5">
+                          Menù
+                        </div>
+                        <nav class="mobile-inner" aria-label="Navigazione principale mobile">
+
+                          <ul class="nav navbar-nav nav-top">
+
+                          </ul>
+
+                          <ul class="nav navbar-nav nav-bottom">
+
+                          </ul>
+
+                        </nav>
+                        <div class="mobile-footer">
+
+                          <button type="button" class="btn btn-outline-white">
+                            <span>
+                              Torna al portale
+                            </span>
+                            <svg class="icon icon-xs" aria-hidden="true">
+                              <use href="imgs/icon/sprite.svg#it-external-link"></use>
+                            </svg>
+                          </button>
+
+                          <!-- Lang Wrapper -->
+                          <div class="lang-wrapper dropup">
+                            <a class="lang-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <img src="imgs/icon/flag/it.svg" aria-hidden="true">
+                              <span>
+                                ITA
+                              </span>
+                              <svg class="icon icon-xs dropdown-icon" aria-hidden="true">
+                                <use href="imgs/icon/sprite.svg#it-expand"></use>
+                              </svg>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item active" href="#">
+                                  <img src="imgs/icon/flag/it.svg" aria-hidden="true">
+                                  <span>
+                                    ITA
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <img src="imgs/icon/flag/fr.svg" aria-hidden="true">
+                                  <span>
+                                    FRA
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <img src="imgs/icon/flag/es.svg" aria-hidden="true">
+                                  <span>
+                                    ESP
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Search Mobile -->
+                    <div class="search-mobile">
+                      <div class="mobile-wrapper">
+                        <div class="mobile-header">
+
+                          <div class="form-group group-search">
+                            <div class="input-group">
+                              <div class="input-group-text">
+                                <svg class="icon icon-xs">
+                                  <use href="imgs/icon/sprite.svg#it-search"></use>
+                                </svg>
+                              </div>
+                              <input type="text" class="form-control" name="main-search-mobile" placeholder="Search"
+                                value="" aria-label="Lorem ipsum dolor sit">
+                              <div class="input-group-text active-option">
+                                <svg class="icon icon-xs icon-loading">
+                                  <use href="imgs/icon/sprite.svg#it-streamline"></use>
+                                </svg>
+                              </div>
+                              <div class="input-group-text">
+                                <svg class="icon icon-xs">
+                                  <use href="imgs/icon/sprite_fill.svg#it-close-circle"></use>
+                                </svg>
+                              </div>
+                              <div class="input-group-text active-closer"></div>
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="mobile-inner">
+
+                          <div class="dropdown-menu show">
+                            <ul class="scrollable">
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <span>
+                                    Label text
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <span>
+                                    Label text
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <span>
+                                    Label text
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <span>
+                                    Label text
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <span>
+                                    Label text
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
+
+                            <div class="dropdown-link">
+                              <a type="button" class="btn btn-bare" href="javascript:">
+                                Mostra tutti i risultati
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </header>
+
+                  <!-- FINE CONTENUTO VARIANTE -->
+                </div>
+              </div>
+
+              <!-- Sezione per visualizzare il codice -->
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="my-6 fw-bold titlepage">Codice</h5>
+                <button type="button" id="copyButton1" class="btn btn-primary">
+                  <span> Copia codice </span>
+                  <svg class="icon icon-sm">
+                    <use href="imgs/icon/sprite_fill.svg#it-copy-success"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div id="codeContent" class="bgcode text-white rounded p-4">
+                <!-- Il codice verrà inserito qui dallo script -->
+              </div>
+            </div>
+
+            <!-- TAB PANNELLO 2 -->
+            <div class="tab-pane fade bg-light-subtle p-2 rounded-0" id="headerLight" role="tablist"
+              aria-labelledby="headerLight">
+              <div class="bg-white align-items-center justify-content-center py-8 mb-3">
+                <div id="custom-section">
+
+                  <!-- INIZIO CONTENUTO VARIANTE  -->
+
+                  <header class="navbar">
+
+                    <!-- Salta ai contenuti della pagina -->
+                    <a class="visually-hidden-focusable skip-to-content" href="#PageV">Salta direttamente al
+                      contenuto</a>
+
+                    <!-- Top -->
+                    <div class="header-top">
+                      <div class="container">
+                        <!-- -->
+                        <div class="nav-left">
+
+                          <nav class="nav-menu" aria-label="Lorem ipsum">
+                            <ul class="nav navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link" href="">
+                                  Item
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="">
+                                  Item
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="">
+                                  Item
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="">
+                                  Item
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="">
+                                  Item
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled" href="">
+                                  Item
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Middle -->
+                    <div class="header-middle">
+                      <div class="container">
+
+                        <!-- -->
+                        <div class="nav-left">
+
+                          <!-- Hamburger -->
+                          <a class="mobile-handle" href="javascript:">
+                            <div class="hamburger">
+                              <svg class="icon" aria-hidden="true">
+                                <use href="imgs/icon/sprite.svg#it-burger"></use>
+                              </svg>
+                            </div>
+                            <div class="menu-close">
+                              <svg class="icon" aria-hidden="true">
+                                <use href="imgs/icon/sprite.svg#it-close-big"></use>
+                              </svg>
+                            </div>
+                          </a>
+
+                          <!-- Brand -->
+                          <a class="navbar-brand" title="LOGO" href="#">
+                            <img class="brand-logo" src="imgs/header/logo.svg">
+                            <div class="brand-text">
+                              Nome del portale <br>
+                              verticale
+                            </div>
+                          </a>
+
+                        </div>
+
+                        <div class="nav-right">
+
+                          <!-- Search Wrapper -->
+                          <div class="search-wrapper">
+
+                            <!-- Desktop -->
+                            <div class="form-group group-search">
+                              <div class="input-group">
+                                <div class="input-group-text">
+                                  <svg class="icon icon-xs">
+                                    <use href="imgs/icon/sprite.svg#it-search"></use>
+                                  </svg>
+                                </div>
+                                <input type="text" class="form-control" name="main-search" placeholder="Search" value=""
+                                  aria-label="Lorem ipsum dolor sit">
                               </div>
                             </div>
-                          </li>
-                          <li class="disabled nav-item">
-                            <a href="javascript:" class="nav-link disabled">
-                              <span class="text-icon"><svg class="icon icon-xs">
-                                  <use href="imgs/icon/sprite.svg#it-example"></use>
-                                </svg><span>Disable</span></span>
+
+                            <!-- Mobile -->
+                            <button type="button" class="btn btn-white">
+                              <svg class="icon icon-xs">
+                                <use href="imgs/icon/sprite.svg#it-search"></use>
+                              </svg>
+                            </button>
+
+                          </div>
+
+                          <!-- Lang Wrapper -->
+                          <div class="lang-wrapper dropdown">
+                            <a class="lang-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              <img src="imgs/icon/flag/it.svg" aria-hidden="true">
+                              <span>
+                                ITA
+                              </span>
+                              <svg class="icon icon-xs dropdown-icon" aria-hidden="true">
+                                <use href="imgs/icon/sprite.svg#it-expand"></use>
+                              </svg>
                             </a>
-                          </li>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <img src="imgs/icon/flag/it.svg" aria-hidden="true">
+                                  <span>
+                                    ITA
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <img src="imgs/icon/flag/fr.svg" aria-hidden="true">
+                                  <span>
+                                    FRA
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <img src="imgs/icon/flag/es.svg" aria-hidden="true">
+                                  <span>
+                                    ESP
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
 
-                        </ul>
-                      </nav>
-                    </div>
 
-                    <!-- -->
-                    <div class="nav-right">
-                      <nav class="nav-menu" aria-label="Lorem ipsum">
-                        <ul class="nav navbar-nav">
 
-                        </ul>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
+                          <!-- Login -->
+                          <div class="login-wrapper">
+                            <button type="button" class="btn btn-white">
+                              <svg class="icon icon-sm" aria-hidden="true">
+                                <use href="imgs/icon/sprite.svg#it-user"></use>
+                              </svg>
+                              <span class="mobile-hidden-lg">
+                                Accedi al portale
+                              </span>
+                            </button>
+                          </div>
 
-                <!-- Navigation Mobile menu -->
-                <div class="nav-mobile">
-                  <div class="mobile-wrapper">
-                    <div class="mobile-header h5">
-                      Menù
-                    </div>
-                    <nav class="mobile-inner" aria-label="Navigazione principale mobile">
-
-                      <ul class="nav navbar-nav nav-top">
-
-                      </ul>
-
-                      <ul class="nav navbar-nav nav-bottom">
-
-                      </ul>
-
-                    </nav>
-                    <div class="mobile-footer">
-
-                      <button type="button" class="btn btn-outline-white">
-                        <span>
-                          Torna al portale
-                        </span>
-                        <svg class="icon icon-xs" aria-hidden="true">
-                          <use href="imgs/icon/sprite.svg#it-external-link"></use>
-                        </svg>
-                      </button>
-
-                      <!-- Lang Wrapper -->
-                      <div class="lang-wrapper dropup">
-                        <a class="lang-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          <img src="imgs/icon/flag/it.svg" aria-hidden="true">
-                          <span>
-                            ITA
+                          <!-- Logged In 
+                      <div class="profile-wrapper dropdown">
+                        <a class="btn btn-white" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                          <div class="avatar avatar-sm avatar-primary">
+                            <svg class="icon">
+                              <use href="imgs/icon/sprite_fill.svg#it-user"></use>
+                            </svg>
+                          </div>
+                          <span class="mobile-hidden-lg">
+                            Carla Rossi
                           </span>
                           <svg class="icon icon-xs dropdown-icon" aria-hidden="true">
                             <use href="imgs/icon/sprite.svg#it-expand"></use>
                           </svg>
                         </a>
                         <ul class="dropdown-menu">
-                          <li>
-                            <a class="dropdown-item active" href="#">
+
+                        </ul>
+                      </div>-->
+
+                          <!-- Altro -->
+                          <button type="button" class="btn btn-outline-white">
+                            <svg class="icon icon-sm" aria-hidden="true">
+                              <use href="imgs/icon/sprite.svg#it-more-actions"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!-- Bottom -->
+                    <div class="header-bottom">
+                      <div class="container">
+                        <!-- -->
+                        <div class="nav-left">
+                          <nav class="nav-menu" aria-label="Lorem ipsum">
+                            <ul class="nav navbar-nav">
+
+                              <li class="nav-item">
+                                <a href="javascript:" class="nav-link">
+                                  <span class="text-icon"><svg class="icon icon-xs">
+                                      <use href="imgs/icon/sprite.svg#it-example"></use>
+                                    </svg><span>Home</span></span>
+                                </a>
+                              </li>
+                              <li class="dropdown nav-item">
+                                <a href="javascript:" class="nav-link" data-toggle="dropdown" role="button"
+                                  aria-expanded="false">
+                                  <span class="text-icon"><svg class="icon icon-xs">
+                                      <use href="imgs/icon/sprite.svg#it-example"></use>
+                                    </svg><span>Componenti A-B</span></span><svg class="icon icon-xs dropdown-icon">
+                                    <use href="imgs/icon/sprite.svg#it-expand"></use>
+                                  </svg>
+                                </a>
+                                <div class="dd-menu">
+                                  <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Accordion
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Alert
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Avatar
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Badge
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Breadcrumbs
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Button
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Button group
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Bottom bar
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="dropdown nav-item">
+                                <a href="javascript:" class="nav-link" data-toggle="dropdown" role="button"
+                                  aria-expanded="false">
+                                  <span class="text-icon"><svg class="icon icon-xs">
+                                      <use href="imgs/icon/sprite.svg#it-example"></use>
+                                    </svg><span>Componenti C-M</span></span><svg class="icon icon-xs dropdown-icon">
+                                    <use href="imgs/icon/sprite.svg#it-expand"></use>
+                                  </svg>
+                                </a>
+                                <div class="dd-menu">
+                                  <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Card
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Chips
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Dropdown
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Floating button
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Hero banner
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Icone
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Image ratio
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Loader
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Modali
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="dropdown nav-item active">
+                                <a href="javascript:" class="nav-link active" data-toggle="dropdown" role="button"
+                                  aria-expanded="false">
+                                  <span class="text-icon"><svg class="icon icon-xs">
+                                      <use href="imgs/icon/sprite.svg#it-example"></use>
+                                    </svg><span>Componenti P-Z</span></span><svg class="icon icon-xs dropdown-icon">
+                                    <use href="imgs/icon/sprite.svg#it-expand"></use>
+                                  </svg>
+                                </a>
+                                <div class="dd-menu">
+                                  <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Pagination
+                                      </a>
+                                    </li>
+                                    <li class="nav-item active">
+                                      <a href="javascript:" class="nav-link active">
+                                        Popover
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Scrollbar
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Sidebar navigation
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Stepper
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Tab
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Table
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Timeline
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Tooltip
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="dropdown nav-item">
+                                <a href="javascript:" class="nav-link" data-toggle="dropdown" role="button"
+                                  aria-expanded="false">
+                                  <span class="text-icon"><span>Form</span></span><svg
+                                    class="icon icon-xs dropdown-icon">
+                                    <use href="imgs/icon/sprite.svg#it-expand"></use>
+                                  </svg>
+                                </a>
+                                <div class="dd-menu">
+                                  <ul class="nav navbar-nav">
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Checkbox
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Date picker
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Input
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Input search
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Radio button
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Select
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Slider
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Switcher
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Time picker
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Toggle
+                                      </a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a href="javascript:" class="nav-link">
+                                        Uploader
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="dropdown nav-item mega-menu">
+                                <a href="javascript:" class="nav-link">
+                                  <span class="text-icon"><svg class="icon icon-xs">
+                                      <use href="imgs/icon/sprite.svg#it-example"></use>
+                                    </svg><span>Mega menù</span></span>
+                                  <svg class="icon icon-xs dropdown-icon">
+                                    <use href="imgs/icon/sprite.svg#it-expand"></use>
+                                  </svg></a>
+                                <div class="dd-menu">
+                                  <div class="mega-area">
+                                    <div class="container">
+
+                                      <div class="card no-shadow">
+                                        <div class="card-body">
+
+                                          <div class="row">
+                                            <div class="col-lg-6 mega-col">
+
+                                              <div class="card-title h5">
+                                                Servizio/Voce di menù
+                                              </div>
+                                              <div class="card-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut
+                                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco
+                                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                in
+                                                reprehenderit...
+                                              </div>
+                                              <div class="btn-toolbar">
+                                                <div class="btn-group-left">
+                                                  <button type="button" class="btn btn-primary">
+                                                    <span>
+                                                      Label text
+                                                    </span>
+                                                    <svg class="icon">
+                                                      <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                                      </use>
+                                                    </svg>
+                                                  </button>
+                                                </div>
+                                              </div>
+
+                                            </div>
+                                            <div class="col-lg-6 mega-col">
+
+                                              <div class="card-title h5">
+                                                Servizio/Voce di menù
+                                              </div>
+                                              <div class="card-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                tempor incididunt ut
+                                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                                exercitation ullamco
+                                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                                in
+                                                reprehenderit...
+                                              </div>
+                                              <div class="btn-toolbar">
+                                                <div class="btn-group-left">
+                                                  <button type="button" class="btn btn-primary">
+                                                    <span>
+                                                      Label text
+                                                    </span>
+                                                    <svg class="icon">
+                                                      <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                                      </use>
+                                                    </svg>
+                                                  </button>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                          </div>
+
+                                        </div>
+                                      </div>
+
+                                      <div class="h6 pt-5">
+                                        Servizi più usati
+                                      </div>
+                                      <div class="row">
+
+
+
+                                        <div class="col-lg-4">
+
+                                          <div class="mega-item">
+                                            <div class="title-bar">
+                                              <div>
+                                                <div class="h6">
+                                                  Servizio/Voce di menù
+                                                </div>
+                                                <div class="item-text">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                                  consectetur.
+                                                </div>
+                                              </div>
+                                              <div class="badge badge-primary">
+                                                Label
+                                              </div>
+                                            </div>
+                                            <div class="btn-toolbar">
+                                              <div class="btn-group-left">
+                                                <button type="button" class="btn btn-bare bare-white">
+                                                  <span>
+                                                    Label text
+                                                  </span>
+                                                  <svg class="icon">
+                                                    <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                                    </use>
+                                                  </svg>
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                        <div class="col-lg-4">
+
+                                          <div class="mega-item">
+                                            <div class="title-bar">
+                                              <div>
+                                                <div class="h6">
+                                                  Servizio/Voce di menù
+                                                </div>
+                                                <div class="item-text">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                                  consectetur.
+                                                </div>
+                                              </div>
+                                              <div class="badge badge-primary">
+                                                Label
+                                              </div>
+                                            </div>
+                                            <div class="btn-toolbar">
+                                              <div class="btn-group-left">
+                                                <button type="button" class="btn btn-bare bare-white">
+                                                  <span>
+                                                    Label text
+                                                  </span>
+                                                  <svg class="icon">
+                                                    <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                                    </use>
+                                                  </svg>
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                        <div class="col-lg-4">
+
+                                          <div class="mega-item disabled">
+                                            <div class="title-bar">
+                                              <div>
+                                                <div class="h6">
+                                                  Servizio/Voce di menù
+                                                </div>
+                                                <div class="item-text">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                                  consectetur.
+                                                </div>
+                                              </div>
+                                              <div class="badge badge-primary">
+                                                Label
+                                              </div>
+                                            </div>
+                                            <div class="btn-toolbar">
+                                              <div class="btn-group-left">
+                                                <button type="button" class="btn btn-bare bare-white disabled"
+                                                  disabled="disabled">
+                                                  <span>
+                                                    Label text
+                                                  </span>
+                                                  <svg class="icon">
+                                                    <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                                    </use>
+                                                  </svg>
+                                                </button>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                        </div>
+                                        <div class="col-lg-4">
+                                          <a class="mega-item" href="#">
+                                            <div class="title-bar">
+                                              <div>
+                                                <div class="h6">
+                                                  Servizio/Voce di menù
+                                                </div>
+                                                <div class="item-text">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                                  consectetur.
+                                                </div>
+                                              </div>
+                                              <div class="badge badge-primary">
+                                                Label
+                                              </div>
+                                            </div>
+                                          </a>
+
+                                        </div>
+                                        <div class="col-lg-4">
+                                          <a class="mega-item" href="#">
+                                            <div class="title-bar">
+                                              <div>
+                                                <div class="h6">
+                                                  Servizio/Voce di menù
+                                                </div>
+                                                <div class="item-text">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                                  consectetur.
+                                                </div>
+                                              </div>
+                                              <div class="badge badge-primary">
+                                                Label
+                                              </div>
+                                            </div>
+                                          </a>
+
+                                        </div>
+                                        <div class="col-lg-4">
+                                          <a class="mega-item disabled" href="#">
+                                            <div class="title-bar">
+                                              <div>
+                                                <div class="h6">
+                                                  Servizio/Voce di menù
+                                                </div>
+                                                <div class="item-text">
+                                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                                  consectetur.
+                                                </div>
+                                              </div>
+                                              <div class="badge badge-primary">
+                                                Label
+                                              </div>
+                                            </div>
+                                          </a>
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+                              <li class="disabled nav-item">
+                                <a href="javascript:" class="nav-link disabled">
+                                  <span class="text-icon"><svg class="icon icon-xs">
+                                      <use href="imgs/icon/sprite.svg#it-example"></use>
+                                    </svg><span>Disable</span></span>
+                                </a>
+                              </li>
+
+                            </ul>
+                          </nav>
+                        </div>
+
+                        <!-- -->
+                        <div class="nav-right">
+                          <nav class="nav-menu" aria-label="Lorem ipsum">
+                            <ul class="nav navbar-nav">
+
+                            </ul>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Navigation Mobile menu -->
+                    <div class="nav-mobile">
+                      <div class="mobile-wrapper">
+                        <div class="mobile-header h5">
+                          Menù
+                        </div>
+                        <nav class="mobile-inner" aria-label="Navigazione principale mobile">
+
+                          <ul class="nav navbar-nav nav-top">
+
+                          </ul>
+
+                          <ul class="nav navbar-nav nav-bottom">
+
+                          </ul>
+
+                        </nav>
+                        <div class="mobile-footer">
+
+                          <button type="button" class="btn btn-outline-white">
+                            <span>
+                              Torna al portale
+                            </span>
+                            <svg class="icon icon-xs" aria-hidden="true">
+                              <use href="imgs/icon/sprite.svg#it-external-link"></use>
+                            </svg>
+                          </button>
+
+                          <!-- Lang Wrapper -->
+                          <div class="lang-wrapper dropup">
+                            <a class="lang-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
                               <img src="imgs/icon/flag/it.svg" aria-hidden="true">
                               <span>
                                 ITA
                               </span>
+                              <svg class="icon icon-xs dropdown-icon" aria-hidden="true">
+                                <use href="imgs/icon/sprite.svg#it-expand"></use>
+                              </svg>
                             </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <img src="imgs/icon/flag/fr.svg" aria-hidden="true">
-                              <span>
-                                FRA
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <img src="imgs/icon/flag/es.svg" aria-hidden="true">
-                              <span>
-                                ESP
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Search Mobile -->
-                <div class="search-mobile">
-                  <div class="mobile-wrapper">
-                    <div class="mobile-header">
-
-                      <div class="form-group group-search">
-                        <div class="input-group">
-                          <div class="input-group-text">
-                            <svg class="icon icon-xs">
-                              <use href="imgs/icon/sprite.svg#it-search"></use>
-                            </svg>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item active" href="#">
+                                  <img src="imgs/icon/flag/it.svg" aria-hidden="true">
+                                  <span>
+                                    ITA
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <img src="imgs/icon/flag/fr.svg" aria-hidden="true">
+                                  <span>
+                                    FRA
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <img src="imgs/icon/flag/es.svg" aria-hidden="true">
+                                  <span>
+                                    ESP
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
                           </div>
-                          <input type="text" class="form-control" name="main-search-mobile" placeholder="Search"
-                            value="" aria-label="Lorem ipsum dolor sit">
-                          <div class="input-group-text active-option">
-                            <svg class="icon icon-xs icon-loading">
-                              <use href="imgs/icon/sprite.svg#it-streamline"></use>
-                            </svg>
-                          </div>
-                          <div class="input-group-text">
-                            <svg class="icon icon-xs">
-                              <use href="imgs/icon/sprite_fill.svg#it-close-circle"></use>
-                            </svg>
-                          </div>
-                          <div class="input-group-text active-closer"></div>
+
                         </div>
                       </div>
-
                     </div>
-                    <div class="mobile-inner">
 
-                      <div class="dropdown-menu show">
-                        <ul class="scrollable">
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <span>
-                                Label text
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <span>
-                                Label text
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <span>
-                                Label text
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <span>
-                                Label text
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#">
-                              <span>
-                                Label text
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
+                    <!-- Search Mobile -->
+                    <div class="search-mobile">
+                      <div class="mobile-wrapper">
+                        <div class="mobile-header">
 
-                        <div class="dropdown-link">
-                          <a type="button" class="btn btn-bare" href="javascript:">
-                            Mostra tutti i risultati
-                          </a>
+                          <div class="form-group group-search">
+                            <div class="input-group">
+                              <div class="input-group-text">
+                                <svg class="icon icon-xs">
+                                  <use href="imgs/icon/sprite.svg#it-search"></use>
+                                </svg>
+                              </div>
+                              <input type="text" class="form-control" name="main-search-mobile" placeholder="Search"
+                                value="" aria-label="Lorem ipsum dolor sit">
+                              <div class="input-group-text active-option">
+                                <svg class="icon icon-xs icon-loading">
+                                  <use href="imgs/icon/sprite.svg#it-streamline"></use>
+                                </svg>
+                              </div>
+                              <div class="input-group-text">
+                                <svg class="icon icon-xs">
+                                  <use href="imgs/icon/sprite_fill.svg#it-close-circle"></use>
+                                </svg>
+                              </div>
+                              <div class="input-group-text active-closer"></div>
+                            </div>
+                          </div>
+
                         </div>
-                      </div>
+                        <div class="mobile-inner">
 
+                          <div class="dropdown-menu show">
+                            <ul class="scrollable">
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <span>
+                                    Label text
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <span>
+                                    Label text
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <span>
+                                    Label text
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <span>
+                                    Label text
+                                  </span>
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#">
+                                  <span>
+                                    Label text
+                                  </span>
+                                </a>
+                              </li>
+                            </ul>
+
+                            <div class="dropdown-link">
+                              <a type="button" class="btn btn-bare" href="javascript:">
+                                Mostra tutti i risultati
+                              </a>
+                            </div>
+                          </div>
+
+                        </div>
+
+
+                      </div>
                     </div>
 
+                  </header>
 
-                  </div>
+                  <!-- FINE CONTENUTO VARIANTE -->
                 </div>
+              </div>
 
-              </header>
+              <!-- Sezione per visualizzare il codice -->
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="my-6 fw-bold titlepage">Codice</h5>
+                <button type="button" id="copyButton2" class="btn btn-primary">
+                  <span> Copia codice </span>
+                  <svg class="icon icon-sm">
+                    <use href="imgs/icon/sprite_fill.svg#it-copy-success"></use>
+                  </svg>
+                </button>
+              </div>
 
-              <!-- FINE CONTENUTO VARIANTE -->
+              <div id="codeContent2" class="bgcode text-white rounded p-4">
+                <!-- Il codice verrà inserito qui dallo script -->
+              </div>
             </div>
-          </div>
-
-          <!-- Sezione per visualizzare il codice -->
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <h5 class="my-6 fw-bold titlepage">Codice</h5>
-            <button type="button" id="copyButton1" class="btn btn-primary">
-              <span> Copia codice </span>
-              <svg class="icon icon-sm">
-                <use href="imgs/icon/sprite_fill.svg#it-copy-success"></use>
-              </svg>
-            </button>
-          </div>
-
-          <div id="codeContent" class="bgcode text-white rounded p-4">
-            <!-- Il codice verrà inserito qui dallo script -->
           </div>
         </div>
 
@@ -1503,30 +2445,20 @@
           </div>
         </div>
 
-        <div
-        class="d-flex justify-content-between py-3 bg-lightblu my-8 rounded px-6"
-      >
-        <button
-          type="button"
-          onclick="window.location.href='uploader.html'"
-          class="btn btn-bare btn-sm"
-        >
-          <svg class="icon">
-            <use href="imgs/icon/sprite.svg#it-chevron-left"></use>
-          </svg>
-          <span>Uploader</span>
-        </button>
-        <button
-          onclick="window.location.href='herobanner.html'"
-          type="button"
-          class="btn btn-bare btn-sm"
-        >
-          <span> Hero banner</span>
-          <svg class="icon">
-            <use href="imgs/icon/sprite.svg#it-chevron-right"></use>
-          </svg>
-        </button>
-      </div>
+        <div class="d-flex justify-content-between py-3 bg-lightblu my-8 rounded px-6">
+          <button type="button" onclick="window.location.href='uploader.html'" class="btn btn-bare btn-sm">
+            <svg class="icon">
+              <use href="imgs/icon/sprite.svg#it-chevron-left"></use>
+            </svg>
+            <span>Uploader</span>
+          </button>
+          <button onclick="window.location.href='herobanner.html'" type="button" class="btn btn-bare btn-sm">
+            <span> Hero banner</span>
+            <svg class="icon">
+              <use href="imgs/icon/sprite.svg#it-chevron-right"></use>
+            </svg>
+          </button>
+        </div>
 
 
       </div>
@@ -1597,7 +2529,9 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const codeContentDiv = document.getElementById("codeContent");
+      const codeContentDiv2 = document.getElementById("codeContent2");
       const copyButton1 = document.getElementById("copyButton1");
+      const copyButton2 = document.getElementById("copyButton2");
 
       // Codice da visualizzare
       const codeHTML = `
@@ -1843,7 +2777,884 @@
                   </li>
                   <li class="nav-item">
                     <a href="javascript:" class="nav-link">
-                      Breadcrumb
+                      Breadcrumbs
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Button
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Button group
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Bottom bar
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown nav-item">
+              <a href="javascript:" class="nav-link" data-toggle="dropdown" role="button"
+                aria-expanded="false">
+                <span class="text-icon"><svg class="icon icon-xs">
+                    <use href="imgs/icon/sprite.svg#it-example"></use>
+                  </svg><span>Componenti C-M</span></span><svg class="icon icon-xs dropdown-icon">
+                  <use href="imgs/icon/sprite.svg#it-expand"></use>
+                </svg>
+              </a>
+              <div class="dd-menu">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Card
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Chips
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Dropdown
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Floating button
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Hero banner
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Icone
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Image ratio
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Loader
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Modali
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown nav-item active">
+              <a href="javascript:" class="nav-link active" data-toggle="dropdown" role="button"
+                aria-expanded="false">
+                <span class="text-icon"><svg class="icon icon-xs">
+                    <use href="imgs/icon/sprite.svg#it-example"></use>
+                  </svg><span>Componenti P-Z</span></span><svg class="icon icon-xs dropdown-icon">
+                  <use href="imgs/icon/sprite.svg#it-expand"></use>
+                </svg>
+              </a>
+              <div class="dd-menu">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Pagination
+                    </a>
+                  </li>
+                  <li class="nav-item active">
+                    <a href="javascript:" class="nav-link active">
+                      Popover
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Scrollbar
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Sidebar navigation
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Stepper
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Tab
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Table
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Timeline
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Tooltip
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown nav-item">
+              <a href="javascript:" class="nav-link" data-toggle="dropdown" role="button"
+                aria-expanded="false">
+                <span class="text-icon"><span>Form</span></span><svg class="icon icon-xs dropdown-icon">
+                  <use href="imgs/icon/sprite.svg#it-expand"></use>
+                </svg>
+              </a>
+              <div class="dd-menu">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Checkbox
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Date picker
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Input
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Input search
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Radio button
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Select
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Slider
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Switcher
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Time picker
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Toggle
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Uploader
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dropdown nav-item mega-menu">
+              <a href="javascript:" class="nav-link">
+                <span class="text-icon"><svg class="icon icon-xs">
+                    <use href="imgs/icon/sprite.svg#it-example"></use>
+                  </svg><span>Mega menù</span></span>
+                <svg class="icon icon-xs dropdown-icon">
+                  <use href="imgs/icon/sprite.svg#it-expand"></use>
+                </svg></a>
+              <div class="dd-menu">
+                <div class="mega-area">
+                  <div class="container">
+
+                    <div class="card no-shadow">
+                      <div class="card-body">
+
+                        <div class="row">
+                          <div class="col-lg-6 mega-col">
+
+                            <div class="card-title h5">
+                              Servizio/Voce di menù
+                            </div>
+                            <div class="card-text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                              tempor incididunt ut
+                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                              exercitation ullamco
+                              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                              reprehenderit...
+                            </div>
+                            <div class="btn-toolbar">
+                              <div class="btn-group-left">
+                                <button type="button" class="btn btn-primary">
+                                  <span>
+                                    Label text
+                                  </span>
+                                  <svg class="icon">
+                                    <use
+                                      href="imgs/icon/sprite.svg#it-chevron-right">
+                                    </use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="col-lg-6 mega-col">
+
+                            <div class="card-title h5">
+                              Servizio/Voce di menù
+                            </div>
+                            <div class="card-text">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                              tempor incididunt ut
+                              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                              exercitation ullamco
+                              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                              reprehenderit...
+                            </div>
+                            <div class="btn-toolbar">
+                              <div class="btn-group-left">
+                                <button type="button" class="btn btn-primary">
+                                  <span>
+                                    Label text
+                                  </span>
+                                  <svg class="icon">
+                                    <use
+                                      href="imgs/icon/sprite.svg#it-chevron-right">
+                                    </use>
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="h6 pt-5">
+                      Servizi più usati
+                    </div>
+                    <div class="row">
+
+
+
+                      <div class="col-lg-4">
+
+                        <div class="mega-item">
+                          <div class="title-bar">
+                            <div>
+                              <div class="h6">
+                                Servizio/Voce di menù
+                              </div>
+                              <div class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                consectetur.
+                              </div>
+                            </div>
+                            <div class="badge badge-primary">
+                              Label
+                            </div>
+                          </div>
+                          <div class="btn-toolbar">
+                            <div class="btn-group-left">
+                              <button type="button" class="btn btn-bare bare-white">
+                                <span>
+                                  Label text
+                                </span>
+                                <svg class="icon">
+                                  <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                  </use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-lg-4">
+
+                        <div class="mega-item">
+                          <div class="title-bar">
+                            <div>
+                              <div class="h6">
+                                Servizio/Voce di menù
+                              </div>
+                              <div class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                consectetur.
+                              </div>
+                            </div>
+                            <div class="badge badge-primary">
+                              Label
+                            </div>
+                          </div>
+                          <div class="btn-toolbar">
+                            <div class="btn-group-left">
+                              <button type="button" class="btn btn-bare bare-white">
+                                <span>
+                                  Label text
+                                </span>
+                                <svg class="icon">
+                                  <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                  </use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-lg-4">
+
+                        <div class="mega-item disabled">
+                          <div class="title-bar">
+                            <div>
+                              <div class="h6">
+                                Servizio/Voce di menù
+                              </div>
+                              <div class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                consectetur.
+                              </div>
+                            </div>
+                            <div class="badge badge-primary">
+                              Label
+                            </div>
+                          </div>
+                          <div class="btn-toolbar">
+                            <div class="btn-group-left">
+                              <button type="button" class="btn btn-bare bare-white disabled"
+                                disabled="disabled">
+                                <span>
+                                  Label text
+                                </span>
+                                <svg class="icon">
+                                  <use href="imgs/icon/sprite.svg#it-chevron-right">
+                                  </use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-lg-4">
+                        <a class="mega-item" href="#">
+                          <div class="title-bar">
+                            <div>
+                              <div class="h6">
+                                Servizio/Voce di menù
+                              </div>
+                              <div class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                consectetur.
+                              </div>
+                            </div>
+                            <div class="badge badge-primary">
+                              Label
+                            </div>
+                          </div>
+                        </a>
+
+                      </div>
+                      <div class="col-lg-4">
+                        <a class="mega-item" href="#">
+                          <div class="title-bar">
+                            <div>
+                              <div class="h6">
+                                Servizio/Voce di menù
+                              </div>
+                              <div class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                consectetur.
+                              </div>
+                            </div>
+                            <div class="badge badge-primary">
+                              Label
+                            </div>
+                          </div>
+                        </a>
+
+                      </div>
+                      <div class="col-lg-4">
+                        <a class="mega-item disabled" href="#">
+                          <div class="title-bar">
+                            <div>
+                              <div class="h6">
+                                Servizio/Voce di menù
+                              </div>
+                              <div class="item-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elit
+                                consectetur.
+                              </div>
+                            </div>
+                            <div class="badge badge-primary">
+                              Label
+                            </div>
+                          </div>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="disabled nav-item">
+              <a href="javascript:" class="nav-link disabled">
+                <span class="text-icon"><svg class="icon icon-xs">
+                    <use href="imgs/icon/sprite.svg#it-example"></use>
+                  </svg><span>Disable</span></span>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </div>
+
+      <!-- -->
+      <div class="nav-right">
+        <nav class="nav-menu" aria-label="Lorem ipsum">
+          <ul class="nav navbar-nav">
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Mobile menu -->
+  <div class="nav-mobile">
+    <div class="mobile-wrapper">
+      <div class="mobile-header h5">
+        Menù
+      </div>
+      <nav class="mobile-inner" aria-label="Navigazione principale mobile">
+
+        <ul class="nav navbar-nav nav-top">
+
+        </ul>
+
+        <ul class="nav navbar-nav nav-bottom">
+
+        </ul>
+
+      </nav>
+      <div class="mobile-footer">
+
+        <button type="button" class="btn btn-outline-white">
+          <span>
+            Torna al portale
+          </span>
+          <svg class="icon icon-xs" aria-hidden="true">
+            <use href="imgs/icon/sprite.svg#it-external-link"></use>
+          </svg>
+        </button>
+
+        <!-- Lang Wrapper -->
+        <div class="lang-wrapper dropup">
+          <a class="lang-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="imgs/icon/flag/it.svg" aria-hidden="true">
+            <span>
+              ITA
+            </span>
+            <svg class="icon icon-xs dropdown-icon" aria-hidden="true">
+              <use href="imgs/icon/sprite.svg#it-expand"></use>
+            </svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item active" href="#">
+                <img src="imgs/icon/flag/it.svg" aria-hidden="true">
+                <span>
+                  ITA
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <img src="imgs/icon/flag/fr.svg" aria-hidden="true">
+                <span>
+                  FRA
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <img src="imgs/icon/flag/es.svg" aria-hidden="true">
+                <span>
+                  ESP
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Mobile -->
+  <div class="search-mobile">
+    <div class="mobile-wrapper">
+      <div class="mobile-header">
+
+        <div class="form-group group-search">
+          <div class="input-group">
+            <div class="input-group-text">
+              <svg class="icon icon-xs">
+                <use href="imgs/icon/sprite.svg#it-search"></use>
+              </svg>
+            </div>
+            <input type="text" class="form-control" name="main-search-mobile" placeholder="Search"
+              value="" aria-label="Lorem ipsum dolor sit">
+            <div class="input-group-text active-option">
+              <svg class="icon icon-xs icon-loading">
+                <use href="imgs/icon/sprite.svg#it-streamline"></use>
+              </svg>
+            </div>
+            <div class="input-group-text">
+              <svg class="icon icon-xs">
+                <use href="imgs/icon/sprite_fill.svg#it-close-circle"></use>
+              </svg>
+            </div>
+            <div class="input-group-text active-closer"></div>
+          </div>
+        </div>
+
+      </div>
+      <div class="mobile-inner">
+
+        <div class="dropdown-menu show">
+          <ul class="scrollable">
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>
+                  Label text
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>
+                  Label text
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>
+                  Label text
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>
+                  Label text
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <span>
+                  Label text
+                </span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="dropdown-link">
+            <a type="button" class="btn btn-bare" href="javascript:">
+              Mostra tutti i risultati
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+</header>`;
+
+      // Codice da visualizzare
+      const codeHTML2 = `
+<header class="navbar">
+
+  <!-- Salta ai contenuti della pagina -->
+  <a class="visually-hidden-focusable skip-to-content" href="#PageV">Salta direttamente al contenuto</a>
+
+  <!-- Top -->
+  <div class="header-top">
+    <div class="container">
+      <!-- -->
+      <div class="nav-left">
+
+        <nav class="nav-menu" aria-label="Lorem ipsum">
+          <ul class="nav navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                Item
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                Item
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                Item
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                Item
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                Item
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="">
+                Item
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle -->
+  <div class="header-middle">
+    <div class="container">
+
+      <!-- -->
+      <div class="nav-left">
+
+        <!-- Hamburger -->
+        <a class="mobile-handle" href="javascript:">
+          <div class="hamburger">
+            <svg class="icon" aria-hidden="true">
+              <use href="imgs/icon/sprite.svg#it-burger"></use>
+            </svg>
+          </div>
+          <div class="menu-close">
+            <svg class="icon" aria-hidden="true">
+              <use href="imgs/icon/sprite.svg#it-close-big"></use>
+            </svg>
+          </div>
+        </a>
+
+        <!-- Brand -->
+        <a class="navbar-brand" title="LOGO" href="#">
+          <img class="brand-logo" src="imgs/header/logo.svg">
+          <div class="brand-text">
+            Nome del portale <br>
+            verticale
+          </div>
+        </a>
+
+      </div>
+
+      <div class="nav-right">
+
+        <!-- Search Wrapper -->
+        <div class="search-wrapper">
+
+          <!-- Desktop -->
+          <div class="form-group group-search">
+            <div class="input-group">
+              <div class="input-group-text">
+                <svg class="icon icon-xs">
+                  <use href="imgs/icon/sprite.svg#it-search"></use>
+                </svg>
+              </div>
+              <input type="text" class="form-control" name="main-search" placeholder="Search" value=""
+                aria-label="Lorem ipsum dolor sit">
+            </div>
+          </div>
+
+          <!-- Mobile -->
+          <button type="button" class="btn btn-white">
+            <svg class="icon icon-xs">
+              <use href="imgs/icon/sprite.svg#it-search"></use>
+            </svg>
+          </button>
+
+        </div>
+
+        <!-- Lang Wrapper -->
+        <div class="lang-wrapper dropdown">
+          <a class="lang-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="imgs/icon/flag/it.svg" aria-hidden="true">
+            <span>
+              ITA
+            </span>
+            <svg class="icon icon-xs dropdown-icon" aria-hidden="true">
+              <use href="imgs/icon/sprite.svg#it-expand"></use>
+            </svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#">
+                <img src="imgs/icon/flag/it.svg" aria-hidden="true">
+                <span>
+                  ITA
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <img src="imgs/icon/flag/fr.svg" aria-hidden="true">
+                <span>
+                  FRA
+                </span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <img src="imgs/icon/flag/es.svg" aria-hidden="true">
+                <span>
+                  ESP
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+       
+
+        <!-- Login -->
+        <div class="login-wrapper">
+          <button type="button" class="btn btn-white">
+            <svg class="icon icon-sm" aria-hidden="true">
+              <use href="imgs/icon/sprite.svg#it-user"></use>
+            </svg>
+            <span class="mobile-hidden-lg">
+              Accedi al portale
+            </span>
+          </button>
+        </div>
+
+        <!-- Logged In 
+        <div class="profile-wrapper dropdown">
+          <a class="btn btn-white" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="avatar avatar-sm avatar-primary">
+              <svg class="icon">
+                <use href="imgs/icon/sprite_fill.svg#it-user"></use>
+              </svg>
+            </div>
+            <span class="mobile-hidden-lg">
+              Carla Rossi
+            </span>
+            <svg class="icon icon-xs dropdown-icon" aria-hidden="true">
+              <use href="imgs/icon/sprite.svg#it-expand"></use>
+            </svg>
+          </a>
+          <ul class="dropdown-menu">
+
+          </ul>
+        </div>-->
+
+        <!-- Altro -->
+        <button type="button" class="btn btn-outline-white">
+          <svg class="icon icon-sm" aria-hidden="true">
+            <use href="imgs/icon/sprite.svg#it-more-actions"></use>
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="header-bottom">
+    <div class="container">
+      <!-- -->
+      <div class="nav-left">
+        <nav class="nav-menu" aria-label="Lorem ipsum">
+          <ul class="nav navbar-nav">
+
+            <li class="nav-item">
+              <a href="javascript:" class="nav-link">
+                <span class="text-icon"><svg class="icon icon-xs">
+                    <use href="imgs/icon/sprite.svg#it-example"></use>
+                  </svg><span>Home</span></span>
+              </a>
+            </li>
+            <li class="dropdown nav-item">
+              <a href="javascript:" class="nav-link" data-toggle="dropdown" role="button"
+                aria-expanded="false">
+                <span class="text-icon"><svg class="icon icon-xs">
+                    <use href="imgs/icon/sprite.svg#it-example"></use>
+                  </svg><span>Componenti A-B</span></span><svg class="icon icon-xs dropdown-icon">
+                  <use href="imgs/icon/sprite.svg#it-expand"></use>
+                </svg>
+              </a>
+              <div class="dd-menu">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Accordion
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Alert
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Avatar
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Badge
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:" class="nav-link">
+                      Breadcrumbs
                     </a>
                   </li>
                   <li class="nav-item">
@@ -2481,6 +4292,11 @@
         codeHTML
       )}</code></pre>`;
 
+      // Funzione per inserire e visualizzare il codice
+      codeContentDiv2.innerHTML = `<pre><code>${escapeHTML(
+        codeHTML2
+      )}</code></pre>`;
+
       // Funzione per scappare i caratteri speciali nel codice
       function escapeHTML(html) {
         return html
@@ -2495,6 +4311,18 @@
       copyButton1.addEventListener("click", function () {
         navigator.clipboard
           .writeText(codeHTML)
+          .then(() => {
+            alert("Codice copiato con successo!");
+          })
+          .catch((err) => {
+            console.error("Errore durante la copia del codice:", err);
+          });
+      });
+
+      // Funzione per copiare il codice negli appunti
+      copyButton2.addEventListener("click", function () {
+        navigator.clipboard
+          .writeText(codeHTML2)
           .then(() => {
             alert("Codice copiato con successo!");
           })
