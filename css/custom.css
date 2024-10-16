@@ -215,15 +215,6 @@ table>tbody>tr>td:first-child {
  * Table. 
 */
 
-.list-table {
-
-  --bs-table-head-color: var(--bs-gray-700);
-}
-
-.list-table thead th {
-  background-color: var(--bs-gray-100);
-
-}
 
 .pagination .page-link {
   font-family: "Roboto Mono", monospace;
