@@ -71,7 +71,7 @@
 
         <!-- Login 
         <div class="login-wrapper">
-          <button type="button" class="btn btn-sm btn btn-primary">
+          <button class="btn btn-sm btn btn-primary">
             <svg class="icon icon-sm" aria-hidden="true">
               <use href="imgs/icon/sprite.svg#it-user"></use>
             </svg>
@@ -571,16 +571,16 @@
 
           <div class="bg-white d-flex align-items-center justify-content-center py-8 mb-3">
             <div id="content" class="d-inline-block">
-              <button type="button" class="btn btn-primary me-4 mb-4" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="right" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
+              <button class="btn btn-primary me-4 mb-4" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="right" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
                 Popover a destra
               </button>
-              <button type="button" class="btn btn-primary me-4 mb-4" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
+              <button class="btn btn-primary me-4 mb-4" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
                 Popover sopra
               </button>
-              <button type="button" class="btn btn-primary me-4 mb-4" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
+              <button class="btn btn-primary me-4 mb-4" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
                 Popover sotto
               </button>
-              <button type="button" class="btn btn-primary me-4 mb-4" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="left" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
+              <button class="btn btn-primary me-4 mb-4" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="left" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
                 Popover a sinistra
               </button>
             </div>
@@ -588,7 +588,7 @@
 
           <div class="d-flex justify-content-between align-items-center mb-3">
             <h5 class="my-6 fw-bold titlepage">Codice</h5>
-            <button type="button" id="copyButton" style="display: none" class="btn btn-primary">
+            <button id="copyButton" style="display: none" class="btn btn-primary">
               <span> Copia codice </span>
               <svg class="icon icon-sm">
                 <use href="imgs/icon/sprite_fill.svg#it-copy-success"></use>
@@ -669,13 +669,13 @@
         <!-- paginazione-->
 
         <div class="d-flex justify-content-between py-3 bg-lightblu my-8 rounded px-6">
-          <button type="button" onclick="window.location.href='pagination.html'" class="btn btn-bare btn-sm">
+          <a href="pagination.html'" class="btn btn-bare btn-sm">
             <svg class="icon">
               <use href="imgs/icon/sprite.svg#it-chevron-left"></use>
             </svg>
             <span>Pagination</span>
           </button>
-          <button onclick="window.location.href='radiobutton.html'" type="button" class="btn btn-bare btn-sm">
+          <a href="radiobutton.html'" class="btn btn-bare btn-sm">
             <span>Radio button</span>
             <svg class="icon">
               <use href="imgs/icon/sprite.svg#it-chevron-right"></use>
@@ -713,7 +713,7 @@
         <div id="sidebarTitle" class="h6">Titolo Sidebar</div>
         <div id="sidebarActiveItem" class="mobile-selected">Titolo Menu Voce Attiva</div>
       </div>
-      <button class="btn btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas"
+      <button class="btn btn-sm" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas"
         aria-controls="sidebarOffcanvas">
         <svg class="icon icon-sm" aria-hidden="true">
           <use href="imgs/icon/sprite_fill.svg#it-maximize"></use>
@@ -727,7 +727,7 @@
     aria-labelledby="sidebarOffcanvasLabel">
     <div class="offcanvas-header header-offcanvas bg-primary10">
       <div class="h6 offcanvas-title" id="sidebarOffcanvasLabel">Titolo Sidebar</div>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+      <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
         <svg class="icon icon-sm" aria-hidden="true">
           <use href="imgs/icon/sprite_fill.svg#it-close-circle"></use>
         </svg>
@@ -752,16 +752,16 @@
 
     // Codice da visualizzare
     const codeHTML = `
-  <button type="button" class="btn btn-primary" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="right" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
+  <button class="btn btn-primary" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="right" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
     Popover a destra
   </button>
-  <button type="button" class="btn btn-primary" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
+  <button class="btn btn-primary" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="top" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
     Popover sopra
   </button>
-  <button type="button" class="btn btn-primary" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
+  <button class="btn btn-primary" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary btn-sm'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="bottom" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
     Popover sotto
   </button>
-  <button type="button" class="btn btn-primary" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="left" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
+  <button class="btn btn-primary" data-bs-content="<div class='pb-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div><a class='btn btn-primary'>Button text</a>" data-bs-toggle="popover" data-bs-html="true" data-bs-placement="left" data-bs-container="body" data-bs-trigger="focus" data-bs-original-title="Title popover">
     Popover a sinistra
   </button>
   `;

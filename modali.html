@@ -71,7 +71,7 @@
 
         <!-- Login 
         <div class="login-wrapper">
-          <button type="button" class="btn btn-sm btn btn-primary">
+          <button class="btn btn-sm btn btn-primary">
             <svg class="icon icon-sm" aria-hidden="true">
               <use href="imgs/icon/sprite.svg#it-user"></use>
             </svg>
@@ -638,7 +638,7 @@
 
           <div class="d-flex justify-content-between align-items-center mb-3">
             <h5 class="">Codice</h5>
-            <button type="button" id="copyButton" style="display: none" class="btn btn-primary">
+            <button id="copyButton" style="display: none" class="btn btn-primary">
               <span> Copia codice </span>
               <svg class="icon icon-sm">
                 <use href="imgs/icon/sprite_fill.svg#it-copy-success"></use>
@@ -789,7 +789,7 @@
         <div id="sidebarTitle" class="h6">Titolo Sidebar</div>
         <div id="sidebarActiveItem" class="mobile-selected">Titolo Menu Voce Attiva</div>
       </div>
-      <button class="btn btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas"
+      <button class="btn btn-sm" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas"
       aria-controls="sidebarOffcanvas">
       <svg class="icon icon-sm" aria-hidden="true">
         <use href="imgs/icon/sprite_fill.svg#it-maximize"></use>
@@ -803,7 +803,7 @@
     aria-labelledby="sidebarOffcanvasLabel">
     <div class="offcanvas-header header-offcanvas bg-primary10">
       <div class="h6 offcanvas-title" id="sidebarOffcanvasLabel">Titolo Sidebar</div>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+      <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
         <svg class="icon icon-sm" aria-hidden="true">
           <use href="imgs/icon/sprite_fill.svg#it-close-circle"></use>
         </svg>
@@ -825,7 +825,7 @@
     const components = {
       Sm: {
         default:
-         '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-sm">Apri la modale sm</button>' +
+         '<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-sm">Apri la modale sm</button>' +
 '<div class="modal modal-sm" tabindex="-1" role="dialog" id="modal-sm" aria-labelledby="modal1Title" aria-describedby="modal-smDescription" aria-modal="true">' +
 '<div class="modal-dialog" role="document">' +
 '<div class="modal-content">' +
@@ -836,7 +836,7 @@
 '<span class="h4">Intestazione modale</span>' +
 '</div>' +
 '</h2>' +
-'<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">' +
+'<button class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">' +
 '<svg class="icon"><use href="imgs/icon/sprite_fill.svg#it-close-circle"></use></svg>' +
 '</button>' +
 '</div>' +
@@ -906,7 +906,7 @@
 '<div class="alert-heading h5">Titolo alert info</div>' +
 '<div class="alert-text">Vel tempus nisl augue accumsan, scelerisque aliquet. Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus.</div>' +
 '</div>' +
-'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
+'<button class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
 '<svg class="icon"><use href="imgs/icon/sprite_fill.svg#it-close-circle"></use></svg>' +
 '</button>' +
 '</div>' +
@@ -965,15 +965,15 @@
 '</div>' +
 '<div class="modal-footer">' +
 '<div class="btn-group-left d-none">' +
-'<button type="button" class="btn btn-bare" data-bs-dismiss="modal">' +
+'<button class="btn btn-bare" data-bs-dismiss="modal">' +
 '<svg class="icon icon-xs"><use href="imgs/icon/sprite_fill.svg#it-info-circle"></use></svg>' +
 '<span>Hai bisogno di aiuto?</span>' +
 '</button>' +
 '</div>' +
 '<div class="btn-group-right">' +
-'<button type="button" class="btn btn-danger d-none" data-bs-dismiss="modal">Azione 3</button>' +
-'<button type="button" class="btn btn-warning d-none" data-bs-dismiss="modal">Azione 2</button>' +
-'<button type="button" class="btn btn-primary" disabled="">Azione 1</button>' +
+'<button class="btn btn-danger d-none" data-bs-dismiss="modal">Azione 3</button>' +
+'<button class="btn btn-warning d-none" data-bs-dismiss="modal">Azione 2</button>' +
+'<button class="btn btn-primary" disabled="">Azione 1</button>' +
 '</div>' +
 '</div>' +
 '</div>' +
@@ -983,7 +983,7 @@
       },
       Md: {
         default:
-          '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-md">Apri la modale md</button>' +
+          '<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-md">Apri la modale md</button>' +
 '<div class="modal modal-md" tabindex="-1" role="dialog" id="modal-md" aria-labelledby="modal-mdTitle" aria-describedby="modal-mdDescription" aria-modal="true">' +
 '<div class="modal-dialog" role="document">' +
 '<div class="modal-content">' +
@@ -994,7 +994,7 @@
 '<span class="h2">Intestazione modale</span>' +
 '</div>' +
 '</h2>' +
-'<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">' +
+'<button class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">' +
 '<svg class="icon"><use href="imgs/icon/sprite_fill.svg#it-close-circle"></use></svg>' +
 '</button>' +
 '</div>' +
@@ -1056,7 +1056,7 @@
 '<div class="alert-heading h5">Titolo alert info</div>' +
 '<div class="alert-text">Vel tempus nisl augue accumsan, scelerisque aliquet. Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus.</div>' +
 '</div>' +
-'<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
+'<button class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
 '<svg class="icon"><use href="imgs/icon/sprite_fill.svg#it-close-circle"></use></svg>' +
 '</button>' +
 '</div>' +
@@ -1115,15 +1115,15 @@
 '</div>' +
 '<div class="modal-footer">' +
 '<div class="btn-group-left">' +
-'<button type="button" class="btn btn-bare" data-bs-dismiss="modal">' +
+'<button class="btn btn-bare" data-bs-dismiss="modal">' +
 '<svg class="icon icon-xs"><use href="imgs/icon/sprite_fill.svg#it-info-circle"></use></svg>' +
 '<span>Hai bisogno di aiuto?</span>' +
 '</button>' +
 '</div>' +
 '<div class="btn-group-right">' +
-'<button type="button" class="btn btn-danger d-none" data-bs-dismiss="modal">Azione 3</button>' +
-'<button type="button" class="btn btn-warning" data-bs-dismiss="modal">Azione 2</button>' +
-'<button type="button" class="btn btn-primary" disabled="">Azione 1</button>' +
+'<button class="btn btn-danger d-none" data-bs-dismiss="modal">Azione 3</button>' +
+'<button class="btn btn-warning" data-bs-dismiss="modal">Azione 2</button>' +
+'<button class="btn btn-primary" disabled="">Azione 1</button>' +
 '</div>' +
 '</div>' +
 '</div>' +
@@ -1132,7 +1132,7 @@
       },
       Lg: {
         default:
-          '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-lg">' +
+          '<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-lg">' +
     'Apri la modale lg' +
 '</button>' +
 
@@ -1149,7 +1149,7 @@
                         '<span class="h2">Intestazione modale</span>' +
                     '</div>' +
                 '</h2>' +
-                '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">' +
+                '<button class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">' +
                     '<svg class="icon">' +
                         '<use href="imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
                     '</svg>' +
@@ -1238,7 +1238,7 @@
                                 '<div class="alert-heading h5">Titolo alert info</div>' +
                                 '<div class="alert-text">Vel tempus nisl augue accumsan, scelerisque aliquet. Nibh arcu risus massa ut elementum viverra iaculis. Eu lectus.</div>' +
                             '</div>' +
-                            '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
+                            '<button class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi">' +
                                 '<svg class="icon">' +
                                     '<use href="imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
                                 '</svg>' +
@@ -1305,7 +1305,7 @@
 
             '<div class="modal-footer">' +
                 '<div class="btn-group-left">' +
-                    '<button type="button" class="btn btn-bare" data-bs-dismiss="modal">' +
+                    '<button class="btn btn-bare" data-bs-dismiss="modal">' +
                         '<svg class="icon icon-xs">' +
                             '<use href="imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
                         '</svg>' +
@@ -1313,9 +1313,9 @@
                     '</button>' +
                 '</div>' +
                 '<div class="btn-group-right">' +
-                    '<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Azione 3</button>' +
-                    '<button type="button" class="btn btn-warning" data-bs-dismiss="modal">Azione 2</button>' +
-                    '<button type="button" class="btn btn-primary" disabled="">Azione 1</button>' +
+                    '<button class="btn btn-danger" data-bs-dismiss="modal">Azione 3</button>' +
+                    '<button class="btn btn-warning" data-bs-dismiss="modal">Azione 2</button>' +
+                    '<button class="btn btn-primary" disabled="">Azione 1</button>' +
                 '</div>' +
             '</div>' +
         '</div>' +
@@ -1324,7 +1324,7 @@
       },
       Uploader: {
         default:
-          '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-uploader">' +
+          '<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-uploader">' +
     'Apri la modale uploader' +
 '</button>' +
 '<div class="modal" tabindex="-1" role="dialog" id="modal-uploader" aria-labelledby="modal-uploaderTitle" ' +
@@ -1342,7 +1342,7 @@
                         '</span>' +
                     '</div>' +
                 '</h2>' +
-                '<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">' +
+                '<button class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">' +
                     '<svg class="icon">' +
                         '<use href="imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
                     '</svg>' +
@@ -1387,12 +1387,12 @@
                                             '</span>' +
                                         '</div>' +
                                         '<div class="file-btn">' +
-                                            '<button type="button" class="btn-close btn-view">' +
+                                            '<button class="btn-close btn-view">' +
                                                 '<svg class="icon icon-xs">' +
                                                     '<use href="imgs/icon/sprite_fill.svg#it-password-visible"></use>' +
                                                 '</svg>' +
                                             '</button>' +
-                                            '<button type="button" class="btn-close btn-delete">' +
+                                            '<button class="btn-close btn-delete">' +
                                                 '<svg class="icon icon-xs">' +
                                                     '<use href="imgs/icon/sprite_fill.svg#it-delete"></use>' +
                                                 '</svg>' +
@@ -1416,7 +1416,7 @@
                                             '</span>' +
                                         '</div>' +
                                         '<div class="file-btn">' +
-                                            '<button type="button" class="btn-close btn-stop">' +
+                                            '<button class="btn-close btn-stop">' +
                                                 '<svg class="icon icon-xs">' +
                                                     '<use href="imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
                                                 '</svg>' +
@@ -1441,7 +1441,7 @@
                                             '</span>' +
                                         '</div>' +
                                         '<div class="file-btn">' +
-                                            '<button type="button" class="btn-close btn-stop">' +
+                                            '<button class="btn-close btn-stop">' +
                                                 '<svg class="icon icon-xs">' +
                                                     '<use href="imgs/icon/sprite_fill.svg#it-close-circle"></use>' +
                                                 '</svg>' +
@@ -1474,7 +1474,7 @@
             '</div>' +
             '<div class="modal-footer">' +
                 '<div class="btn-group-left">' +
-                    '<button type="button" class="btn btn-bare" data-bs-dismiss="modal">' +
+                    '<button class="btn btn-bare" data-bs-dismiss="modal">' +
                         '<svg class="icon icon-xs">' +
                             '<use href="imgs/icon/sprite_fill.svg#it-info-circle"></use>' +
                         '</svg>' +
@@ -1484,7 +1484,7 @@
                     '</button>' +
                 '</div>' +
                 '<div class="btn-group-right">' +
-                    '<button type="button" class="btn btn-primary" disabled="">' +
+                    '<button class="btn btn-primary" disabled="">' +
                         'Azione 1' +
                     '</button>' +
                 '</div>' +
