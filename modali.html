@@ -25,11 +25,19 @@
 </head>
 
 <body>
+
+  <div class="skiplinks">
+    <a class="visually-hidden-focusable" href="#navbarNav">Vai al menu di navigazione principale</a>
+    <a class="visually-hidden-focusable" href="#asideNav">Vai al menu di navigazione secondario</a>
+    <a class="visually-hidden-focusable" href="#main-content">Vai al contenuto principale</a>
+    <a class="visually-hidden-focusable" href="#footer">Vai al piè di pagina</a>
+  </div>
+
   <header class="header px-4 px-lg-9 sticky-top">
     <div class="header-middle d-flex pt-lg-5  pb-lg-5">
       <div class="nav-left">
         <!-- Brand -->
-        <a class="navbar-brand" title="LOGO" href="#">
+        <a class="navbar-brand" title="LOGO" href="index.html">
           <span class="brand-logo"
             ><svg
               width="48"
@@ -123,7 +131,7 @@
 
   <main class="container-fluid">
     <div class="row px-lg-9">
-      <aside class="sidebar-menu col-12 col-lg-3">
+      <aside id="asideNav" class="sidebar-menu col-12 col-lg-3">
         <div class="sidebar-wrapper sticky-top-sidebar my-6">
           <div class="card sidebar bg-white">
             <div class="card-header">
@@ -752,7 +760,7 @@
     </div>
   </main>
 
-  <footer>
+  <footer id="footer">
     <div class="footer-credits">
       <div class="container">
         <div class="navbar-brand pe-4">
