@@ -188,40 +188,31 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-  
-   //custom leo RIcerca delle icone all interno della tabella
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const input = document.querySelector('input[name="field1"]');
-    const button = document.getElementById('searchButton');
-    const tableRows = document.querySelectorAll('#tabellaicone tbody tr');
+// Funzione per la ricerca nella tabella
+document.getElementById('searchInput').addEventListener('input', function () {
+  // Ottieni il valore dell'input
+  let filter = this.value.toLowerCase();
 
-    // Funzione per cercare nella tabella
-    function searchTable() {
-      const filter = input.value.toLowerCase(); // Testo inserito nell'input
-      tableRows.forEach((row) => {
-        const cell = row.querySelector('td[data-label="Nome"] div'); // Seleziona la cella della colonna "Nome"
-        const text = cell ? cell.textContent.toLowerCase() : '';
+  // Ottieni tutte le righe della tabella
+  let rows = document.querySelectorAll('#tabellaicone tbody tr');
 
-        if (text.includes(filter)) {
-          row.style.display = ''; // Mostra la riga se il testo corrisponde
-        } else {
-          row.style.display = 'none'; // Nasconde la riga se non corrisponde
-        }
-      });
+  // Itera su ciascuna riga
+  rows.forEach(function (row) {
+    // Ottieni il testo della seconda colonna (il nome dell'icona)
+    let nameCell = row.cells[1].textContent.toLowerCase();
+
+    // Controlla se il testo della cella corrisponde al filtro
+    if (nameCell.includes(filter)) {
+      // Se c'è una corrispondenza, mostra la riga
+      row.style.display = '';
+    } else {
+      // Altrimenti nascondi la riga
+      row.style.display = 'none';
     }
-
-    // Attiva la ricerca quando si clicca sul pulsante
-    
-    button.addEventListener('click', searchTable);
-
-    // Aggiunge la funzionalità di ricerca anche al campo di input (es. pressione del tasto "Invio")
-    input.addEventListener('keyup', function (event) {
-      if (event.key === 'Enter') {
-        searchTable();
-      }
-    });
   });
+});
+
 //link per figma
   document.getElementById("vaiRisorsaFigma").addEventListener("click", function() {
     window.open("https://www.figma.com/design/c3t5UYnXbg9CdV1QPXiPHL/Design-System-MIT---V1.2?node-id=1-5&t=x2cnsgmJHa2cXzy0-1", "_blank"); // Sostituisci con l'URL desiderato
