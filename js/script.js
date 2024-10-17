@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  //custom leo ricerca degli stati 
+  //custom ricerca degli stati 
 
   document.querySelectorAll('#rowstato .chip').forEach(function(chip) {
     chip.addEventListener('click', function() {
@@ -213,46 +213,6 @@ document.getElementById('searchInput').addEventListener('input', function () {
   });
 });
 
-//link per figma
-  document.getElementById("vaiRisorsaFigma").addEventListener("click", function() {
-    window.open("https://www.figma.com/design/c3t5UYnXbg9CdV1QPXiPHL/Design-System-MIT---V1.2?node-id=1-5&t=x2cnsgmJHa2cXzy0-1", "_blank"); // Sostituisci con l'URL desiderato
-});
-//link per wcag
-document.getElementById("vaiAlleWcag").addEventListener("click", function() {
-  window.open("https://www.w3.org/WAI/WCAG22/quickref/", "_blank"); // Sostituisci con l'URL desiderato
-});
-
-//link per siteimprove
-document.getElementById("vaiAlleSiteimprove").addEventListener("click", function() {
-  window.open("https://chromewebstore.google.com/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc?pli=1", "_blank"); // Sostituisci con l'URL desiderato
-});
-
-//link per stark
-document.getElementById("vaiAStark").addEventListener("click", function() {
-  window.open("https://www.figma.com/community/plugin/732603254453395948/stark-contrast-accessibility-checker", "_blank"); // Sostituisci con l'URL desiderato
-});
-//scaricare cartella react 
-document.getElementById("vaiRisorsaReact").addEventListener("click", function() {
-  document.getElementById("downloadLink").click();
-});
-
-//scaricare cartella angular
-document.getElementById("vaiRisorsaAngular").addEventListener("click", function() {
-  document.getElementById("downloadLink").click();
-});
-//scaricare cartella html
-document.getElementById("vaiRisorsaHtml").addEventListener("click", function() {
-  document.getElementById("downloadLink").click();
-});
-//scaricare cartella titiuliu
-document.getElementById("vaiRisorsaTitiulium").addEventListener("click", function() {
-  window.open("https://fonts.google.com/specimen/Titillium+Web", "_blank"); // Sostituisci con l'URL desiderato
-});
-
-//scaricare cartella roboto
-document.getElementById("vaiRisorsaRoboto").addEventListener("click", function() {
-  window.open("https://fonts.google.com/specimen/Roboto+Mono", "_blank"); // Sostituisci con l'URL desiderato
-});
 
 
 // Ottieni tutte le chip
