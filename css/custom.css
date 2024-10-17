@@ -436,3 +436,7 @@ table .toggle > label, .radio > label, .checkbox > label {
   opacity: 0;
 }
 
+#tabellaicone .icon {
+  --bs-icon-fill: #003366;
+  fill: #003366;
+}
