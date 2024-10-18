@@ -462,18 +462,18 @@
           <ul class="nav nav-tabs light" id="myTab1" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#contrasto"
-                type="button" role="tab" aria-controls="contrasto" aria-selected="true">
+                role="tab" aria-controls="contrasto" aria-selected="true">
                 <span> Contrasto </span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#immagine" type="button" role="tab"
+              <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#immagini" role="tab"
                 aria-controls="immagini" aria-selected="false">
                 <span> Immagini </span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tastiera" type="button" role="tab"
+              <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tastiera" role="tab"
                 aria-controls="tastiera" aria-selected="false">
                 <span> Tastiera </span>
               </a>
@@ -484,7 +484,7 @@
         <!-- tab content-->
         <div class="tab-content">
           <!-- 1 tab-->
-          <div class="tab-pane fade show active" id="contrasto" role="tablist" aria-labelledby="tab-1">
+          <div class="tab-pane fade show active" id="contrasto" role="tablist" aria-labelledby="contrasto">
             <div>
               <h5 class="mb-4 fw-bold">Contrasto colore</h5>
               <p>
@@ -820,7 +820,7 @@
           </div>
 
           <!-- 2 tab-->
-          <div class="tab-pane fade" id="immagine" role="tabpanel" aria-labelledby="tab-2">
+          <div class="tab-pane fade" id="immagini" role="tabpanel" aria-labelledby="immagini">
             <div class="mb-4">
               <h5 class="mb-2 fw-bold">Immagini</h5>
               <p class="mb-4">
@@ -932,7 +932,7 @@
             </div>
 
             <div>
-              <h6 class="fw-bold">Scrivere un < alt> efficace</h6>
+              <h6 class="fw-bold">Scrivere un <code>&lt;alt&gt;</code> efficace</h6>
 
               <ul>
                 <li>
@@ -963,7 +963,7 @@
             </div>
           </div>
           <!-- 3 tab-->
-          <div class="tab-pane fade" id="tastiera" role="tabpanel" aria-labelledby="tab-3">
+          <div class="tab-pane fade" id="tastiera" role="tabpanel" aria-labelledby="tastiera">
             <div>
               <h5 class="fw-bold mb-2">Navigazione tramite tastiera</h5>
 
@@ -1032,11 +1032,11 @@
                     </p>
                     <h6 class="mb-5 text-grigio">Stato default</h6>
 
-                    <div class="accordion mb-5" id="collapseExample">
+                    <div class="accordion mb-5" id="collapseExample1">
                       <div class="accordion-item">
                         <div class="accordion-header" id="heading1c">
                           <button disabled type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#collapse1c" aria-expanded="true" aria-controls="collapse1c">
+                            data-bs-target="#collapse3c" aria-expanded="true" aria-controls="collapse3c">
                             <div class="text-icon">
                               <svg class="icon icon-sm">
                                 <use href="imgs/icon/sprite_fill.svg#it-example"></use>
@@ -1045,7 +1045,7 @@
                             </div>
                           </button>
                         </div>
-                        <div id="collapse1c" class="accordion-collapse collapse" role="region"
+                        <div id="collapse3c" class="accordion-collapse collapse" role="region"
                           aria-labelledby="heading1c">
                           <div class="accordion-body"></div>
                         </div>
@@ -1053,11 +1053,11 @@
                     </div>
 
                     <h6 class="mb-5 text-grigio">Stato di focus</h6>
-                    <div class="accordion force-focus mb-5" id="collapseExample">
+                    <div class="accordion force-focus mb-5" id="collapseExample2">
                       <div class="accordion-item">
-                        <div class="accordion-header" id="heading1c">
+                        <div class="accordion-header" id="heading2c">
                           <button disabled type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#collapse1c" aria-expanded="true" aria-controls="collapse1c">
+                            data-bs-target="#collapse2c" aria-expanded="true" aria-controls="collapse2c">
                             <div class="text-icon">
                               <svg class="icon icon-sm">
                                 <use href="imgs/icon/sprite_fill.svg#it-example"></use>
@@ -1066,8 +1066,8 @@
                             </div>
                           </button>
                         </div>
-                        <div id="collapse1c" class="accordion-collapse collapse" role="region"
-                          aria-labelledby="heading1c">
+                        <div id="collapse2c" class="accordion-collapse collapse" role="region"
+                          aria-labelledby="heading2c">
                           <div class="accordion-body"></div>
                         </div>
                       </div>
@@ -1133,42 +1133,35 @@
                 <div class="col-auto">
                   <div class="badge badge-primary">
                     <span>
-                      < header>
+                      <code>&lt;header&gt;</code>
                     </span>
                   </div>
                 </div>
                 <div class="col-auto">
                   <div class="badge badge-primary">
                     <span>
-                      < header>
+                      <code>&lt;footer&gt;</code>
                     </span>
                   </div>
                 </div>
                 <div class="col-auto">
                   <div class="badge badge-primary">
                     <span>
-                      < footer>
+                      <code>&lt;nav&gt;</code>
                     </span>
                   </div>
                 </div>
                 <div class="col-auto">
                   <div class="badge badge-primary">
                     <span>
-                      < nav>
+                      <code>&lt;img&gt;</code>
                     </span>
                   </div>
                 </div>
                 <div class="col-auto">
                   <div class="badge badge-primary">
                     <span>
-                      < img>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="badge badge-primary">
-                    <span>
-                      < section>
+                      <code>&lt;section&gt;</code>
                     </span>
                   </div>
                 </div>
@@ -1276,7 +1269,7 @@
                       Chrome installando questa estensione
                     </div>
                     <a href="https://chromewebstore.google.com/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc?pli=1"
-                      type="button" class="btn btn-bare btn-sm position-relative">
+                      class="btn btn-bare btn-sm position-relative">
                       <span> Vai alla risorsa </span>
                       <svg class="icon icon-sm">
                         <use href="imgs/icon/sprite.svg#it-external-link"></use>
