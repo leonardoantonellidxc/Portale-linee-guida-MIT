@@ -533,6 +533,7 @@
           </div>
         </div>
       </aside>
+
       <div class="col-12 col-lg-9" id="main-content">
         <!-- hero-->
         <div class="bg-hero-green p-6 rounded my-6 ">
@@ -546,54 +547,296 @@
           semplifica la navigazione rendendo più facile trovare le informazioni desiderate.
         </p>
 
+        <!-- TAB VARIANTI -->
+        <div class="py-5">
+          <ul class="nav nav-tabs light" id="tabHeader" role="tablist">
+            <!-- Tab Destkop -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab"
+                data-bs-target="#paginationDesktop" role="tab" aria-controls="paginationDesktop" aria-selected="true">
+                <span>Desktop</span>
+              </a>
+            </li>
+
+            <!-- Tab Mobile -->
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#paginationMobile" role="tab"
+                aria-controls="paginationMobile" aria-selected="false">
+                <span>Mobile</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tab-content">
+
+          <!-- TAB PANNELLO Desktop -->
+          <div class="tab-pane fade show active bg-light-subtle p-2 rounded-0" id="paginationDesktop" role="tablist"
+            aria-labelledby="paginationDesktop">
+            <!-- variante codice -->
+            <div class="bg-neutral-500 p-3 d-none d-xl-block">
+              <h5 class=" fw-bold titlepage mb-4">Variante</h5>
+
+              <div class="row mb-3">
+                <div class="col-auto">
+                  <div class="form-group dropdown has-feedback filled">
+                    <label for="typeSelector" id="field1Label">Type</label>
+                    <select id="typeSelector" class="form-select">
+                      <option value="">--Seleziona Type--</option>
+                      <option value="Type1">Type 1</option>
+                      <option value="Type2">Type 2</option>
+                      <option value="Type3">Type 3</option>
+                      <option value="Type4">Type 4</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white d-flex align-items-center justify-content-center py-8 mb-3">
+                <div id="content">
+                  Seleziona tutte le opzioni per visualizzare il componente.
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="my-6 fw-bold titlepage">Codice</h5>
+                <button id="copyButton" style="display: none" class="btn btn-primary">
+                  <span> Copia codice </span>
+                  <svg class="icon icon-sm">
+                    <use href="imgs/icon/sprite_fill.svg#it-copy-success"></use>
+                  </svg>
+                </button>
+              </div>
+              <div></div>
+              <div id="codeContent" class="bgcode text-white rounded p-4">
+                Seleziona le varianti per visualizzare il codice.
+              </div>
+            </div>
+            <div class="bg-neutral-500 p-3 d-block d-xl-none">
+              Seleziona il Tab Mobile per visualizzare il comportamento responsive mobile.
+            </div>
+          </div>
+
+          <!-- TAB PANNELLO Mobile -->
+          <div class="tab-pane fade bg-light-subtle p-2 rounded-0" id="paginationMobile" role="tablist"
+            aria-labelledby="paginationMobile">
+            <!-- variante codice -->
+            <div class="bg-neutral-500 p-3">
+              <h5 class=" fw-bold titlepage mb-4">Variante</h5>
+
+              <div class="bg-white d-flex align-items-center justify-content-center py-8 mb-3">
+                <div>
+                  <nav class="pagination-wrapper" aria-label="Page navigation example">
+
+                    <ul class="pagination">
+                      <li class="page-item item-icon disabled">
+                        <a class="page-link" href="#" aria-label="Precedente">
+                          <svg class="icon icon-xs" aria-hidden="true">
+                            <use href="./imgs/icon/sprite.svg#it-chevron-left"></use>
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="page-item item-number active" aria-current="page">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item item-number">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item item-number">
+                        <a class="page-link" href="#">...</a>
+                      </li>
+                      <li class="page-item item-number">
+                        <a class="page-link" href="#">10</a>
+                      </li>
+                      <li class="page-item item-icon">
+                        <a class="page-link" href="#" aria-label="Successiva">
+                          <svg class="icon icon-xs" aria-hidden="true">
+                            <use href="./imgs/icon/sprite.svg#it-chevron-right"></use>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+
+                    <div class="pagination-skip">
+                      <div class="skip-label" id="fieldSkip2Label">
+                        Vai a pag.
+                      </div>
+                      <div class="form-group dropdown dropdown-number has-feedback">
+                        <button class="btn dropdown-toggle input-group" type="button" role="combobox"
+                          aria-labelledby="fieldSkip2Label" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                          aria-expanded="false" aria-haspopup="listbox">
+                          <div class="form-select">
+                            <div class="select-value"></div>
+                            <div class="select-placeholder"></div>
+                          </div>
+                        </button>
+                        <div class="dropdown-menu">
+                          <ul class="scrollable">
+                            <li>
+                              <a class="dropdown-item active" href="#">
+                                <span>
+                                  1
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span>
+                                  2
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span>
+                                  3
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span>
+                                  4
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span>
+                                  5
+                                </span>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span>
+                                  6
+                                </span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
 
 
+                  </nav>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="my-6 fw-bold titlepage">Codice</h5>
+                <button id="copyButton" style="display: none" class="btn btn-primary">
+                  <span> Copia codice </span>
+                  <svg class="icon icon-sm">
+                    <use href="imgs/icon/sprite_fill.svg#it-copy-success"></use>
+                  </svg>
+                </button>
+              </div>
+              <div></div>
+              <div class="bgcode text-white rounded p-4">
+                <pre><code>
+&lt;nav class=&quot;pagination-wrapper&quot; aria-label=&quot;Page navigation example&quot;&gt;
+
+    &lt;ul class=&quot;pagination&quot;&gt;
+        &lt;li class=&quot;page-item item-icon disabled&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Precedente&quot;&gt;
+                &lt;svg class=&quot;icon icon-xs&quot; aria-hidden=&quot;true&quot;&gt;
+                    &lt;use href=&quot;./imgs/icon/sprite.svg#it-chevron-left&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item item-number active&quot; aria-current=&quot;page&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item item-number&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item item-number&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;...&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item item-number&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;10&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item item-icon&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Successiva&quot;&gt;
+                &lt;svg class=&quot;icon icon-xs&quot; aria-hidden=&quot;true&quot;&gt;
+                    &lt;use href=&quot;./imgs/icon/sprite.svg#it-chevron-right&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class=&quot;pagination-skip&quot;&gt;
+        &lt;div class=&quot;skip-label&quot; id=&quot;fieldSkip2Label&quot;&gt;
+            Vai a pag.
+        &lt;/div&gt;
+        &lt;div class=&quot;form-group dropdown dropdown-number has-feedback&quot;&gt;
+            &lt;button class=&quot;btn dropdown-toggle input-group&quot; type=&quot;button&quot; role=&quot;combobox&quot; aria-labelledby=&quot;fieldSkip2Label&quot;
+                    data-bs-toggle=&quot;dropdown&quot; data-bs-auto-close=&quot;outside&quot; aria-expanded=&quot;false&quot; aria-haspopup=&quot;listbox&quot;&gt;
+                &lt;div class=&quot;form-select&quot;&gt;
+                    &lt;div class=&quot;select-value&quot;&gt;&lt;/div&gt;
+                    &lt;div class=&quot;select-placeholder&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/button&gt;
+            &lt;div class=&quot;dropdown-menu&quot;&gt;
+                &lt;ul class=&quot;scrollable&quot;&gt;
+                    &lt;li&gt;
+                        &lt;a class=&quot;dropdown-item active&quot; href=&quot;#&quot;&gt;
+                            &lt;span&gt;
+                                1
+                            &lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                            &lt;span&gt;
+                                2
+                            &lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                            &lt;span&gt;
+                                3
+                            &lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                            &lt;span&gt;
+                                4
+                            &lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                            &lt;span&gt;
+                                5
+                            &lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+                            &lt;span&gt;
+                                6
+                            &lt;/span&gt;
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 
 
-
-
-        <!-- variante codice -->
-        <div class="bg-neutral-500 p-3">
-          <h5 class=" fw-bold titlepage mb-4">Variante</h5>
-
-          <div class="row mb-3">
-            <div class="col-auto">
-              <div class="form-group dropdown has-feedback filled">
-                <label for="typeSelector" id="field1Label">Type</label>
-                <select id="typeSelector" class="form-select">
-                  <option value="">--Seleziona Type--</option>
-                  <option value="Type1">Type 1</option>
-                  <option value="Type2">Type 2</option>
-                  <option value="Type3">Type 3</option>
-                  <option value="Type4">Type 4</option>
-
-
-
-                </select>
+&lt;/nav&gt;
+                  </code></pre>
               </div>
             </div>
           </div>
 
-          <div class="bg-white d-flex align-items-center justify-content-center py-8 mb-3">
-            <div id="content">
-              Seleziona tutte le opzioni per visualizzare il componente.
-            </div>
-          </div>
-
-          <div class="d-flex justify-content-between align-items-center mb-3">
-            <h5 class="my-6 fw-bold titlepage">Codice</h5>
-            <button id="copyButton" style="display: none" class="btn btn-primary">
-              <span> Copia codice </span>
-              <svg class="icon icon-sm">
-                <use href="imgs/icon/sprite_fill.svg#it-copy-success"></use>
-              </svg>
-            </button>
-          </div>
-          <div></div>
-          <div id="codeContent" class="bgcode text-white rounded p-4">
-            Seleziona le varianti per visualizzare il codice.
-          </div>
         </div>
+
 
         <!-- section do dont-->
         <div class="my-8">
@@ -741,119 +984,107 @@
     const components = {
       "Type1": {
         "default":
-
-          '<nav class="pagination-wrapper" aria-label="Page navigation example">' +
-          '<ul class="pagination">' +
-          '<li class="page-item item-icon disabled">' +
-          '<a class="page-link" href="#" aria-label="Prima pagina">' +
-          '<svg class="icon icon-xs" aria-hidden="true">' +
-          '<use href="imgs/icon/sprite.svg#it-double-arrow-left"></use>' +
-          '</svg>' +
-          '</a>' +
-          '</li>' +
-          '<li class="page-item item-icon disabled">' +
-          '<a class="page-link" href="#" aria-label="Precedente">' +
-          '<svg class="icon icon-xs" aria-hidden="true">' +
-          '<use href="imgs/icon/sprite.svg#it-chevron-left"></use>' +
-          '</svg>' +
-          '</a>' +
-          '</li>' +
-          '<li class="page-item item-number active" aria-current="page">' +
-          '<a class="page-link" href="#">1</a>' +
-          '</li>' +
-          '<li class="page-item item-number">' +
-          '<a class="page-link" href="#">2</a>' +
-          '</li>' +
-          '<li class="page-item item-number">' +
-          '<a class="page-link" href="#">3</a>' +
-          '</li>' +
-          '<li class="page-item item-number">' +
-          '<a class="page-link" href="#">4</a>' +
-          '</li>' +
-          '<li class="page-item item-number">' +
-          '<a class="page-link" href="#">5</a>' +
-          '</li>' +
-          '<li class="page-item item-number">' +
-          '<a class="page-link" href="#">...</a>' +
-          '</li>' +
-          '<li class="page-item item-number">' +
-          '<a class="page-link" href="#">100</a>' +
-          '</li>' +
-          '<li class="page-item item-icon">' +
-          '<a class="page-link" href="#" aria-label="Successiva">' +
-          '<svg class="icon icon-xs" aria-hidden="true">' +
-          '<use href="imgs/icon/sprite.svg#it-chevron-right"></use>' +
-          '</svg>' +
-          '</a>' +
-          '</li>' +
-          '<li class="page-item item-icon">' +
-          '<a class="page-link" href="#" aria-label="Ultima">' +
-          '<svg class="icon icon-xs" aria-hidden="true">' +
-          '<use href="imgs/icon/sprite.svg#it-double-arrow-right"></use>' +
-          '</svg>' +
-          '</a>' +
-          '</li>' +
-          '</ul>' +
-          '</nav>'
+          `<nav class="pagination-wrapper" aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item item-icon disabled">
+                <a class="page-link" href="#" aria-label="Prima pagina">
+                  <svg class="icon icon-xs" aria-hidden="true">
+                    <use href="./imgs/icon/sprite.svg#it-double-arrow-left"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-item item-icon disabled">
+                <a class="page-link" href="#" aria-label="Precedente">
+                  <svg class="icon icon-xs" aria-hidden="true">
+                    <use href="./imgs/icon/sprite.svg#it-chevron-left"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-item item-number active" aria-current="page">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item item-number">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item item-number">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item item-number">
+                <a class="page-link" href="#">4</a>
+              </li>
+              <li class="page-item item-number">
+                <a class="page-link" href="#">5</a>
+              </li>
+              <li class="page-item item-number">
+                <a class="page-link" href="#">...</a>
+              </li>
+              <li class="page-item item-number">
+                <a class="page-link" href="#">100</a>
+              </li>
+              <li class="page-item item-icon">
+                <a class="page-link" href="#" aria-label="Successiva">
+                  <svg class="icon icon-xs" aria-hidden="true">
+                    <use href="./imgs/icon/sprite.svg#it-chevron-right"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-item item-icon">
+                <a class="page-link" href="#" aria-label="Ultima">
+                  <svg class="icon icon-xs" aria-hidden="true">
+                    <use href="./imgs/icon/sprite.svg#it-double-arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>`
       },
       "Type2": {
         "default":
-
-          `<nav class="pagination-wrapper" aria-label="Page navigation example">
-
-  <ul class="pagination">
-    <li class="page-item item-icon disabled">
-      <a class="page-link" href="#" aria-label="Precedente">
-        <svg class="icon icon-xs" aria-hidden="true">
-          <use href="imgs/icon/sprite.svg#it-chevron-left"></use>
-        </svg>
-      </a>
-    </li>
-    <li class="page-item item-text disabled">
-      <a class="page-link" href="#" aria-label="Precedente">
-        <span>
-          Precedente
-        </span>
-      </a>
-    </li>
-    <li class="page-item item-number active" aria-current="page">
-      <a class="page-link" href="#">1</a>
-    </li>
-    <li class="page-item item-number">
-      <a class="page-link" href="#">2</a>
-    </li>
-    <li class="page-item item-number">
-      <a class="page-link" href="#">3</a>
-    </li>
-    <li class="page-item item-number">
-      <a class="page-link" href="#">4</a>
-    </li>
-    <li class="page-item item-number">
-      <a class="page-link" href="#">5</a>
-    </li>
-    <li class="page-item item-number">
-      <a class="page-link" href="#">...</a>
-    </li>
-    <li class="page-item item-number">
-      <a class="page-link" href="#">100</a>
-    </li>
-    <li class="page-item item-text">
-      <a class="page-link" href="#">
-        <span>
-          Successiva
-        </span>
-      </a>
-    </li>
-    <li class="page-item item-icon">
-      <a class="page-link" href="#" aria-label="Successiva">
-        <svg class="icon icon-xs" aria-hidden="true">
-          <use href="imgs/icon/sprite.svg#it-chevron-right"></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
-
-</nav>`,
+        `<nav class="pagination-wrapper" aria-label="Page navigation example">
+          <ul class="pagination">
+              <li class="page-item item-icon disabled">
+                <a class="page-link" href="#" aria-label="Precedente">
+                  <svg class="icon icon-xs" aria-hidden="true">
+                    <use href="./imgs/icon/sprite.svg#it-chevron-left"></use>
+                  </svg>
+                  <span>
+                    Precedente
+                  </span>
+                </a>
+              </li>
+              <li class="page-item item-number active" aria-current="page">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item item-number">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item item-number">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item item-number">
+                <a class="page-link" href="#">4</a>
+              </li>
+              <li class="page-item item-number">
+                <a class="page-link" href="#">5</a>
+              </li>
+              <li class="page-item item-number">
+                <a class="page-link" href="#">...</a>
+              </li>
+              <li class="page-item item-number">
+                <a class="page-link" href="#">100</a>
+              </li>
+              <li class="page-item item-icon">
+                <a class="page-link" href="#" aria-label="Successiva">
+                  <span>
+                    Successiva
+                  </span>
+                  <svg class="icon icon-xs" aria-hidden="true">
+                    <use href="./imgs/icon/sprite.svg#it-chevron-right"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>`
       },
       "Type3": {
         "default":
