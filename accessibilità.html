@@ -1,60 +1,77 @@
 <!DOCTYPE html>
 <html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <title>MIT - Portale delle Linee Guida di UX e UI - Accessibilità</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="./favicon.ico" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>MIT - Portale delle Linee Guida di UX e UI - Accessibilità</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <link rel="shortcut icon" href="./favicon.ico" />
+    <!-- Bootstrap 5.3 -->
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
 
-  <!-- Bootstrap 5.3 -->
-  <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <!-- G36 Theme CSS -->
+    <link href="css/font.css" type="text/css" rel="stylesheet" />
+    <link href="css/form.css" type="text/css" rel="stylesheet" />
+    <link href="css/table.css" type="text/css" rel="stylesheet" />
+    <link href="css/theme.css" type="text/css" rel="stylesheet" />
 
-  <!-- G36 Theme CSS -->
-  <link href="css/font.css" type="text/css" rel="stylesheet" />
-  <link href="css/form.css" type="text/css" rel="stylesheet" />
-  <link href="css/table.css" type="text/css" rel="stylesheet" />
-  <link href="css/theme.css" type="text/css" rel="stylesheet" />
+    <!-- Custom css-->
+    <link href="css/custom.css" type="text/css" rel="stylesheet" />
 
-  <!-- Custom css-->
-  <link href="css/custom.css" type="text/css" rel="stylesheet" />
+    <!-- Fonts -->
+    <link href="css/font.css" type="text/css" rel="stylesheet" />
+  </head>
 
-  <!-- Fonts -->
-  <link href="css/font.css" type="text/css" rel="stylesheet" />
-</head>
+  <body>
+    <div class="skiplinks">
+      <a class="visually-hidden-focusable" href="#navbarNav"
+        >Vai al menu di navigazione principale</a
+      >
+      <a class="visually-hidden-focusable" href="#main-content"
+        >Vai al contenuto principale</a
+      >
+      <a class="visually-hidden-focusable" href="#footer"
+        >Vai al piè di pagina</a
+      >
+    </div>
 
-<body>
-  <div class="skiplinks">
-    <a class="visually-hidden-focusable" href="#navbarNav">Vai al menu di navigazione principale</a>
-    <a class="visually-hidden-focusable" href="#main-content">Vai al contenuto principale</a>
-    <a class="visually-hidden-focusable" href="#footer">Vai al piè di pagina</a>
-  </div>
+    <header class="header px-4 px-lg-9 sticky-top">
+      <div class="header-middle d-flex pt-lg-5 pb-lg-5">
+        <div class="nav-left">
+          <!-- Brand -->
+          <a class="navbar-brand" title="LOGO" href="index.html">
+            <span class="brand-logo"
+              ><svg
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="24" cy="24" r="24" fill="#0066CC" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.5 18.75L24 10L36.5 18.75H11.5ZM12.75 32.5V31.25H35.25V32.5H12.75ZM12.75 33.75V35H35.25V33.75H12.75ZM24 11.5L32.5 17.5H15.5L24 11.5ZM16.5 30V20H15.25V30H16.5ZM21.5 20V30H20.25V20H21.5ZM27.75 30V20H26.5V30H27.75ZM32.75 20V30H31.5V20H32.75Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
 
-  <header class="header px-4 px-lg-9 sticky-top">
-    <div class="header-middle d-flex pt-lg-5 pb-lg-5">
-      <div class="nav-left">
-        <!-- Brand -->
-        <a class="navbar-brand" title="LOGO" href="index.html">
-          <span class="brand-logo"><svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <circle cx="24" cy="24" r="24" fill="#0066CC" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M11.5 18.75L24 10L36.5 18.75H11.5ZM12.75 32.5V31.25H35.25V32.5H12.75ZM12.75 33.75V35H35.25V33.75H12.75ZM24 11.5L32.5 17.5H15.5L24 11.5ZM16.5 30V20H15.25V30H16.5ZM21.5 20V30H20.25V20H21.5ZM27.75 30V20H26.5V30H27.75ZM32.75 20V30H31.5V20H32.75Z"
-                fill="white" />
-            </svg>
-          </span>
+            <div class="brand-text">
+              MIT - Web <br />
+              Identity Portal
+            </div>
+          </a>
+        </div>
 
-          <div class="brand-text">
-            MIT - Web <br />
-            Identity Portal
-          </div>
-        </a>
-      </div>
+        <div class="nav-right">
+          <!-- Search Wrapper -->
 
-      <div class="nav-right">
-        <!-- Search Wrapper -->
-
-        <!-- Login 
+          <!-- Login 
           <div class="login-wrapper">
             <button class="btn btn-sm btn btn-primary">
               <svg class="icon icon-sm" aria-hidden="true">
@@ -64,563 +81,639 @@
             </button>
           </div>-->
 
-        <div class="navbar navbar-expand-lg ps-3 ps-lg-0">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="header-bottom">
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <div class="container-fluid">
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="nav-left">
-              <nav class="nav-menu pt-3 pt-lg-0" aria-label="">
-                <ul class="nav navbar-nav">
-                  <!-- Esempio Mega menu Container -->
-
-                  <li class="nav-item active">
-                    <a href="index.html" class="nav-link">
-                      <span>Homepage</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="design-system.html" class="nav-link">
-                      <span>Design System</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="accessibilità.html" class="nav-link active">
-                      <span>Accessibilità</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <main id="main-content" class="container-fluid">
-    <div class="px-lg-8">
-      <!-- hero-->
-      <div class="my-6 pt-6 ps-6 pe-0 pt-lg-8 ps-lg-8 bg-gradients rounded">
-        <div class="d-flex justify-content-between">
-          <div>
-            <h1 class="visually-hidden">MIT Portale delle linee guida UX</h1>
-            <h2 class="fw-bolder titlepage mb-6">Accessibilità</h2>
-
-            <p class="mb-7 titlepage">
-              Qui puoi trovare le nostre linee guida per una progettazione
-              accessibile che migliori l'usabilità, promuova l'inclusione e
-              potenzi l'esperienza utente
-            </p>
-          </div>
-        </div>
-        <div class="pe-0">
-          <img class="w-100" src="imgs/hero/hero_accesibilità.svg" alt="" />
-        </div>
-      </div>
-      <!-- section 1 introduzione -->
-      <div class="pe-0">
-        <h5 class="mb-4fw-bold">Introduzione</h5>
-        <p class="mb-4">
-          Un design accessibile non solo agevola gli utenti con disabilità, ma
-          migliora l'esperienza utente per tutti. Per questo motivo, il Design
-          system sviluppato per il Ministero dei Trasporti e delle
-          Infrastrutture si impegna a seguire e rispettare le migliori
-          pratiche di accessibilità, garantendo a tutti gli utenti
-          un'esperienza di alta qualità senza discriminazioni.
-        </p>
-        <p class="mb-4">
-          L'accessibilità web si basa sulle linee guida pubblicate dal World
-          Wide Web Consortium (W3C) per i contenuti accessibili, conosciute
-          come “Linee guida per l'accessibilità dei contenuti web” o WCAG.
-        </p>
-        <div class="alert alert-info alert-dismissible fade show">
-          <div class="alert-body">
-            <div class="alert-heading h5">WCAG Reference</div>
-            <div class="alert-text">
-              Clicca sul pulsante per leggere le reference proposta dal WCAG
-            </div>
-            <div class="btn-toolbar">
-              <a href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank" class="btn btn-bare btn-sm">
-                <span>WCAG Quick Reference</span>
-                <span class="visually-hidden"> Il link si apre in una nuova finestra </span>
-                <svg class="icon">
-                  <use href="imgs/icon/sprite.svg#it-external-link"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Chiude la div.alert -->
-      </div>
-
-      <!-- section 2-->
-      <div class="px-5 py-6 mb-6 bg-gray rounded">
-        <h3 class="fw-bold mb-4 h5">Principi che guidano l’accessibilità web</h3>
-        <p>
-          Per garantire l'accessibilità web per tutti, il World Wide Web
-          Consortium (W3C) ha stabilito quattro principi fondamentali che
-          devono essere seguiti nella progettazione e nello sviluppo di
-          applicazioni web.
-        </p>
-
-        <p>
-          Il team che ha creato il Design system per il Ministero dei
-          Trasporti e delle Infrastrutture ha adottato e applicato fin
-          dall'inizio questi principi in tutte le componenti realizzate.
-        </p>
-        <div>
-          <div class="row gy-5">
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="card-title">
-                    <div class="text-icon h5">
-                      <img class="me-3" src="imgs/card/occhio_icon.svg" alt="" />
-
-                      <span> Percettibile </span>
-                    </div>
-                  </div>
-
-                  <div class="pt-2 body-lg">
-                    Le informazioni e i componenti dell'interfaccia utente
-                    devono essere presentati agli utenti in modi in cui essi
-                    possano percepirli
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="card-title">
-                    <div class="text-icon h5">
-                      <img class="me-3" src="imgs/card/utilizzabile_icon.svg" alt="" />
-
-                      <span> Utilizzabile </span>
-                    </div>
-                  </div>
-
-                  <div class="pt-2 body-lg">
-                    Prevede che un utente possa utilizzare tutti i componenti
-                    e la navigazione dell’interfaccia utente a prescindere
-                    dalle sue condizioni
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="card-title">
-                    <div class="text-icon h5">
-                      <img class="me-3" src="imgs/card/comprensibile_icon.svg" alt="" />
-
-                      <span> Comprensibile </span>
-                    </div>
-                  </div>
-
-                  <div class="pt-2 body-lg">
-                    Le informazioni e le operazioni dell'interfaccia utente
-                    devono essere comprensibili e chiare in ogni loro momento
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="card h-100">
-                <div class="card-body">
-                  <div class="card-title">
-                    <div class="text-icon h5">
-                      <img class="me-3" src="imgs/card/robusto_icon.svg" alt="" />
-
-                      <span> Robusto </span>
-                    </div>
-                  </div>
-
-                  <div class="pt-2 body-lg">
-                    Per essere interpretato in maniera affidabile da una
-                    grande varietà di programmi utente, comprese le tecnologie
-                    assistive
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="navbar navbar-expand-lg ps-3 ps-lg-0">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
         </div>
       </div>
 
-      <!-- section 3-->
-      <div>
-        <h4 class="mb-4 fw-bold h5">Tipologie di utenti</h4>
-        <p class="mb-6">
-          Di seguito è riportato un elenco delle diverse tipologie di utenti
-          che potrebbero utilizzare la nostra pagina, insieme a consigli su
-          come offrire loro la migliore esperienza possibile. Questi
-          accorgimenti non solo migliorano l'accessibilità per gli utenti
-          specifici, ma arricchiscono l'esperienza complessiva per tutti.
-        </p>
-        <div class="list-table table-responsive table-sm table-even">
-          <table>
-            <thead>
-              <tr class="bg-primary10">
-                <th>
-                  <div class="fw-bold">Utente</div>
-                </th>
-                <th>
-                  <div class="fw-bold">Come sperimentano l’interfaccia</div>
-                </th>
+      <div class="header-bottom">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="nav-left">
+                <nav class="nav-menu pt-3 pt-lg-0" aria-label="">
+                  <ul class="nav navbar-nav">
+                    <!-- Esempio Mega menu Container -->
 
-                <th>
-                  <div class="fw-bold">Come progettare al meglio</div>
-                </th>
-                <th>
-                  <div class="fw-bold">Come si applica a tutti</div>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td data-label="Utente">
-                  <div class="fw-bold">Utente con ipovisione</div>
-                </td>
-                <td data-label="Come sperimentano l’interfaccia">
-                  <div>
-                    Utilizzano lettori di schermo, ingranditori di schermo,
-                    modalità ad alto contrasto e/o display monocromatici
-                  </div>
-                </td>
-                <td data-label="Come progettare al meglio">
-                  <div>
-                    Massimizzare la leggibilità e la chiarezza visiva del
-                    contenuto. Considerare come cambia la relativa vicinanza
-                    delle informazioni quando una pagina viene ingrandita.
-                    Seguire le linee guida per una corretta navigazione da
-                    tastiera per assicurarsi che lo screen reader legga la
-                    pagina all'utente in ordine logico.
-                  </div>
-                </td>
-                <td data-label="Come si applica a tutti">
-                  <div>
-                    La visione peggiora gradualmente a partire dall'età di 40
-                    anni e un buon contrasto aiuta questo gruppo demografico
-                    molto grande a utilizzare l’interfaccia.
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="bg-gray">
-                <td data-label="Selezione">
-                  <div class="fw-bold">Utente non vedente</div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Fanno affidamento su screen reader per sperimentare le
-                    interfacce
-                  </div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Quando possibile, prova tutti i progetti attraverso uno
-                    screen reader
-                  </div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Le interfacce audio-only guadagnano popolarità attraverso
-                    dispositivi come gli assistenti AI
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td data-label="Selezione">
-                  <div class="fw-bold">Utente sordo</div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Fanno affidamento su sottotitoli e altre rappresentazioni
-                    alternative all'audio
-                  </div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Evitare di trasmettere informazioni solo con il suono
-                    Trascrivere tramite sottotitoli tutti i video e le
-                    animazioni che hanno un audio significativo.
-                  </div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Tutti gli utenti possono beneficiare dei sottotitoli:
-                    immagina usare il dispositivo in un ambiente rumoroso o in
-                    un ambiente tranquillo quando non sarebbe appropriato
-                    accendere l’audio
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="bg-gray">
-                <td data-label="Selezione">
-                  <div class="fw-bold">Utente con disabilità fisiche</div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Fanno affidamento a tastiere, palline, riconoscimento
-                    vocale e altre tecnologie assistive per interagire con
-                    un'interfaccia
-                  </div>
-                </td>
-                <td data-label="Title">
-                  <div>Progettare per l'interazione da tastiera</div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Molti utenti preferiscono navigare le interfacce con una
-                    tastiera e senza mouse per maggior efficienza
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td data-label="Selezione">
-                  <div class="fw-bold">Utente con disabilità cognitive</div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Possono verificarsi convulsioni se esposto a contenuti
-                    lampeggianti a causa dell'epilessia Possono avere una
-                    memoria di lavoro limitata e aver bisogno di informazioni
-                    per rimanere visibili durante il completamento di
-                    un'attività
-                  </div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Evitare un linguaggio complesso Evitare la riproduzione
-                    automatica di animazioni e video e animazioni lampeggianti
-                    Progetta nel modo più lineare possibile concentrandosi
-                    sull'euristica del design che ha a che fare con il carico
-                    cognitivo e la memoria
-                  </div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Mettere un basso carico cognitivo sugli utenti riduce gli
-                    errori e migliora l'efficacia, indipendentemente dalle
-                    loro capacità e dall’età
-                  </div>
-                </td>
-              </tr>
-
-              <tr class="bg-gray">
-                <td data-label="Selezione">
-                  <div class="fw-bold">Utente con ipovisione</div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Utilizzano lettori di schermo, ingranditori di schermo,
-                    modalità ad alto contrasto e/o display monocromatici
-                  </div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    Massimizzare la leggibilità e la chiarezza visiva del
-                    contenuto. Considerare come cambia la relativa vicinanza
-                    delle informazioni quando una pagina viene ingrandita.
-                    Seguire le linee guida per una corretta navigazione da
-                    tastiera per assicurarsi che lo screen reader legga la
-                    pagina all'utente in ordine logico.
-                  </div>
-                </td>
-                <td data-label="Title">
-                  <div>
-                    La visione peggiora gradualmente a partire dall'età di 40
-                    anni e un buon contrasto aiuta questo gruppo demografico
-                    molto grande a utilizzare l’interfaccia.
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- tab menu-->
-
-        <div class="py-5 mt-6">
-          <ul class="nav nav-tabs light" id="myTab1" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tab" data-bs-target="#contrasto"
-                role="tab" aria-controls="contrasto" aria-selected="true">
-                <span> Contrasto </span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#immagini" role="tab"
-                aria-controls="immagini" aria-selected="false">
-                <span> Immagini </span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-bs-toggle="tab" data-bs-target="#tastiera" role="tab"
-                aria-controls="tastiera" aria-selected="false">
-                <span> Tastiera </span>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- tab content-->
-        <div class="tab-content">
-          <!-- 1 tab-->
-          <div class="tab-pane fade show active" id="contrasto" role="tabpanel" tabindex="0"
-            aria-labelledby="contrasto">
+                    <li class="nav-item active">
+                      <a href="index.html" class="nav-link">
+                        <span>Homepage</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="design-system.html" class="nav-link">
+                        <span>Design System</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="accessibilità.html" class="nav-link active">
+                        <span>Accessibilità</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="container-fluid">
+      <div class="px-lg-8">
+        <!-- hero-->
+        <div class="my-6 pt-6 ps-6 pe-0 pt-lg-8 ps-lg-8 bg-gradients rounded">
+          <div class="d-flex justify-content-between">
             <div>
-              <h5 class="mb-4 fw-bold">Contrasto colore</h5>
-              <p>
-                In conformità con le linee guida WCAG definite dal W3C ti
-                consigliamo di garantire i contrasti elencati di seguito al
-                fine di consentire a tutti gli utenti, indipendentemente dalle
-                loro condizioni, di fruire agevolmente dei contenuti.
+              <h1 class="visually-hidden">MIT Portale delle linee guida UX</h1>
+              <h2 class="fw-bolder titlepage mb-6">Accessibilità</h2>
+
+              <p class="mb-7 titlepage">
+                Qui puoi trovare le nostre linee guida per una progettazione
+                accessibile che migliori l'usabilità, promuova l'inclusione e
+                potenzi l'esperienza utente
               </p>
             </div>
-            <div class="list-table table-responsive table-sm table-even">
-              <table>
-                <thead>
-                  <tr>
-                    <th>
-                      <div class="fw-bold">Tipologia di elemento</div>
-                    </th>
-                    <th>
-                      <div class="fw-bold">Rapporto di contrasto</div>
-                    </th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <td class="colf-form colf-check" data-label="Tipologia di elemento
-                      ">
-                      <div class="fw-bold">
-                        <div class="fw-bold">Testo standard</div>
-
-
-                        (<18px) </div>
-                    </td>
-                    <td data-label="Come sperimentano l’interfaccia">
-                      <div>4.5:1 (livello AA - W3C)</div>
-                    </td>
-                  </tr>
-
-                  <tr class="bg-gray">
-                    <td data-label="Utente">
-                      <div>
-                        <strong>Testo grande Testo grande</strong>
-
-                        (18px in sù)
-                      </div>
-                    </td>
-                    <td data-label="Come sperimentano l’interfaccia">
-                      <div>3:1</div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td data-label="Utente">
-                      <div>
-                        <strong>Componenti dell’interfaccia utente</strong>
-                        <br />
-
-                        (immagini, componenti, sezioni, ecc)
-                      </div>
-                    </td>
-                    <td data-label="Come sperimentano l’interfaccia">
-                      <div>4.5:1 (livello AA - W3C)</div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          </div>
+          <div class="pe-0">
+            <img class="w-100" src="imgs/hero/hero_accesibilità.svg" alt="" />
+          </div>
+        </div>
+        <!-- section 1 introduzione -->
+        <div class="pe-0">
+          <h5 class="mb-4fw-bold">Introduzione</h5>
+          <p class="mb-4">
+            Un design accessibile non solo agevola gli utenti con disabilità, ma
+            migliora l'esperienza utente per tutti. Per questo motivo, il Design
+            system sviluppato per il Ministero dei Trasporti e delle
+            Infrastrutture si impegna a seguire e rispettare le migliori
+            pratiche di accessibilità, garantendo a tutti gli utenti
+            un'esperienza di alta qualità senza discriminazioni.
+          </p>
+          <p class="mb-4">
+            L'accessibilità web si basa sulle linee guida pubblicate dal World
+            Wide Web Consortium (W3C) per i contenuti accessibili, conosciute
+            come “Linee guida per l'accessibilità dei contenuti web” o WCAG.
+          </p>
+          <div class="alert alert-info alert-dismissible fade show">
+            <div class="alert-body">
+              <div class="alert-heading h5">WCAG Reference</div>
+              <div class="alert-text">
+                Clicca sul pulsante per leggere le reference proposta dal WCAG
+              </div>
+              <div class="btn-toolbar">
+                <a
+                  href="https://www.w3.org/WAI/WCAG22/quickref/"
+                  target="_blank"
+                  class="btn btn-bare btn-sm"
+                >
+                  <span>WCAG Quick Reference</span>
+                  <span class="visually-hidden">
+                    Il link si apre in una nuova finestra
+                  </span>
+                  <svg class="icon">
+                    <use href="imgs/icon/sprite.svg#it-external-link"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <p class="my-6">
-              Questi livelli di contrasto non vengono richiesti per:
-              <strong>
-                elementi inattivi, testi decorativi, illustrazioni ed immagine
-                decorative e per i logotipi</strong>.
-            </p>
-            <p class="fw-bold">
-              Esempio valori di contrasto: icona su sfondo
-            </p>
+          </div>
 
-            <div class="row mb-8 gy-5">
+          <!-- Chiude la div.alert -->
+        </div>
+
+        <!-- section 2-->
+        <div class="px-5 py-6 mb-6 bg-gray rounded">
+          <h3 class="fw-bold mb-4 h5">
+            Principi che guidano l’accessibilità web
+          </h3>
+          <p>
+            Per garantire l'accessibilità web per tutti, il World Wide Web
+            Consortium (W3C) ha stabilito quattro principi fondamentali che
+            devono essere seguiti nella progettazione e nello sviluppo di
+            applicazioni web.
+          </p>
+
+          <p>
+            Il team che ha creato il Design system per il Ministero dei
+            Trasporti e delle Infrastrutture ha adottato e applicato fin
+            dall'inizio questi principi in tutte le componenti realizzate.
+          </p>
+          <div>
+            <div class="row gy-5">
               <div class="col-12 col-md-6 col-lg-3">
-                <div class="card shadow-none h-100 bg-gray">
+                <div class="card h-100">
                   <div class="card-body">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-success">
-                          <span> Do </span>
-                          <svg class="icon icon-sm icon-success ms-2">
-                            <use href="imgs/icon/sprite_fill.svg#it-check-circle"></use>
-                          </svg>
-                        </div>
+                    <div class="card-title">
+                      <div class="text-icon h5">
+                        <img
+                          class="me-3"
+                          src="imgs/card/occhio_icon.svg"
+                          alt=""
+                        />
+
+                        <span> Percettibile </span>
                       </div>
                     </div>
 
-                    <img class="w-100" src="imgs/accessibilità_page/do1.svg" alt="" />
-
-                    <div class="mt-4">
-                      <div class="body-lg">
-                        <strong>Contrasto </strong>: 9.12:1 - Livello AAA
-                      </div>
+                    <div class="pt-2 body-lg">
+                      Le informazioni e i componenti dell'interfaccia utente
+                      devono essere presentati agli utenti in modi in cui essi
+                      possano percepirli
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-3">
-                <div class="card shadow-none h-100 bg-gray">
+                <div class="card h-100">
                   <div class="card-body">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-success">
-                          <span> Do </span>
-                          <svg class="icon icon-sm icon-success ms-2">
-                            <use href="imgs/icon/sprite_fill.svg#it-check-circle"></use>
-                          </svg>
-                        </div>
+                    <div class="card-title">
+                      <div class="text-icon h5">
+                        <img
+                          class="me-3"
+                          src="imgs/card/utilizzabile_icon.svg"
+                          alt=""
+                        />
+
+                        <span> Utilizzabile </span>
                       </div>
                     </div>
 
-                    <img class="w-100" src="imgs/accessibilità_page/do2.svg" alt="" />
-
-                    <div class="mt-4">
-                      <div class="body-lg">
-                        <strong>Contrasto </strong>: 9.12:1 - Livello AAA
-                      </div>
+                    <div class="pt-2 body-lg">
+                      Prevede che un utente possa utilizzare tutti i componenti
+                      e la navigazione dell’interfaccia utente a prescindere
+                      dalle sue condizioni
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-12 col-md-6 col-lg-3">
-                <div class="card shadow-none bg-gray h-100">
+                <div class="card h-100">
                   <div class="card-body">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-danger">
-                          <span> Don't </span>
-                          <svg class="ms-2 icon icon-sm icon-danger">
-                            <use href="imgs/icon/sprite_fill.svg#it-error-circle"></use>
-                          </svg>
+                    <div class="card-title">
+                      <div class="text-icon h5">
+                        <img
+                          class="me-3"
+                          src="imgs/card/comprensibile_icon.svg"
+                          alt=""
+                        />
+
+                        <span> Comprensibile </span>
+                      </div>
+                    </div>
+
+                    <div class="pt-2 body-lg">
+                      Le informazioni e le operazioni dell'interfaccia utente
+                      devono essere comprensibili e chiare in ogni loro momento
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <div class="text-icon h5">
+                        <img
+                          class="me-3"
+                          src="imgs/card/robusto_icon.svg"
+                          alt=""
+                        />
+
+                        <span> Robusto </span>
+                      </div>
+                    </div>
+
+                    <div class="pt-2 body-lg">
+                      Per essere interpretato in maniera affidabile da una
+                      grande varietà di programmi utente, comprese le tecnologie
+                      assistive
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- section 3-->
+        <div>
+          <h4 class="mb-4 fw-bold h5">Tipologie di utenti</h4>
+          <p class="mb-6">
+            Di seguito è riportato un elenco delle diverse tipologie di utenti
+            che potrebbero utilizzare la nostra pagina, insieme a consigli su
+            come offrire loro la migliore esperienza possibile. Questi
+            accorgimenti non solo migliorano l'accessibilità per gli utenti
+            specifici, ma arricchiscono l'esperienza complessiva per tutti.
+          </p>
+          <div class="list-table table-responsive table-sm table-even">
+            <table>
+              <thead>
+                <tr class="bg-primary10">
+                  <th>
+                    <div class="fw-bold">Utente</div>
+                  </th>
+                  <th>
+                    <div class="fw-bold">Come sperimentano l’interfaccia</div>
+                  </th>
+
+                  <th>
+                    <div class="fw-bold">Come progettare al meglio</div>
+                  </th>
+                  <th>
+                    <div class="fw-bold">Come si applica a tutti</div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Utente">
+                    <div class="fw-bold">Utente con ipovisione</div>
+                  </td>
+                  <td data-label="Come sperimentano l’interfaccia">
+                    <div>
+                      Utilizzano lettori di schermo, ingranditori di schermo,
+                      modalità ad alto contrasto e/o display monocromatici
+                    </div>
+                  </td>
+                  <td data-label="Come progettare al meglio">
+                    <div>
+                      Massimizzare la leggibilità e la chiarezza visiva del
+                      contenuto. Considerare come cambia la relativa vicinanza
+                      delle informazioni quando una pagina viene ingrandita.
+                      Seguire le linee guida per una corretta navigazione da
+                      tastiera per assicurarsi che lo screen reader legga la
+                      pagina all'utente in ordine logico.
+                    </div>
+                  </td>
+                  <td data-label="Come si applica a tutti">
+                    <div>
+                      La visione peggiora gradualmente a partire dall'età di 40
+                      anni e un buon contrasto aiuta questo gruppo demografico
+                      molto grande a utilizzare l’interfaccia.
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray">
+                  <td data-label="Selezione">
+                    <div class="fw-bold">Utente non vedente</div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Fanno affidamento su screen reader per sperimentare le
+                      interfacce
+                    </div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Quando possibile, prova tutti i progetti attraverso uno
+                      screen reader
+                    </div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Le interfacce audio-only guadagnano popolarità attraverso
+                      dispositivi come gli assistenti AI
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="Selezione">
+                    <div class="fw-bold">Utente sordo</div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Fanno affidamento su sottotitoli e altre rappresentazioni
+                      alternative all'audio
+                    </div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Evitare di trasmettere informazioni solo con il suono
+                      Trascrivere tramite sottotitoli tutti i video e le
+                      animazioni che hanno un audio significativo.
+                    </div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Tutti gli utenti possono beneficiare dei sottotitoli:
+                      immagina usare il dispositivo in un ambiente rumoroso o in
+                      un ambiente tranquillo quando non sarebbe appropriato
+                      accendere l’audio
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray">
+                  <td data-label="Selezione">
+                    <div class="fw-bold">Utente con disabilità fisiche</div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Fanno affidamento a tastiere, palline, riconoscimento
+                      vocale e altre tecnologie assistive per interagire con
+                      un'interfaccia
+                    </div>
+                  </td>
+                  <td data-label="Title">
+                    <div>Progettare per l'interazione da tastiera</div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Molti utenti preferiscono navigare le interfacce con una
+                      tastiera e senza mouse per maggior efficienza
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td data-label="Selezione">
+                    <div class="fw-bold">Utente con disabilità cognitive</div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Possono verificarsi convulsioni se esposto a contenuti
+                      lampeggianti a causa dell'epilessia Possono avere una
+                      memoria di lavoro limitata e aver bisogno di informazioni
+                      per rimanere visibili durante il completamento di
+                      un'attività
+                    </div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Evitare un linguaggio complesso Evitare la riproduzione
+                      automatica di animazioni e video e animazioni lampeggianti
+                      Progetta nel modo più lineare possibile concentrandosi
+                      sull'euristica del design che ha a che fare con il carico
+                      cognitivo e la memoria
+                    </div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Mettere un basso carico cognitivo sugli utenti riduce gli
+                      errori e migliora l'efficacia, indipendentemente dalle
+                      loro capacità e dall’età
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="bg-gray">
+                  <td data-label="Selezione">
+                    <div class="fw-bold">Utente con ipovisione</div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Utilizzano lettori di schermo, ingranditori di schermo,
+                      modalità ad alto contrasto e/o display monocromatici
+                    </div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      Massimizzare la leggibilità e la chiarezza visiva del
+                      contenuto. Considerare come cambia la relativa vicinanza
+                      delle informazioni quando una pagina viene ingrandita.
+                      Seguire le linee guida per una corretta navigazione da
+                      tastiera per assicurarsi che lo screen reader legga la
+                      pagina all'utente in ordine logico.
+                    </div>
+                  </td>
+                  <td data-label="Title">
+                    <div>
+                      La visione peggiora gradualmente a partire dall'età di 40
+                      anni e un buon contrasto aiuta questo gruppo demografico
+                      molto grande a utilizzare l’interfaccia.
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- tab menu-->
+
+          <div class="py-5 mt-6">
+            <ul class="nav nav-tabs light" id="myTab1" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  data-bs-toggle="tab"
+                  data-bs-target="#contrasto"
+                  role="tab"
+                  aria-controls="contrasto"
+                  aria-selected="true"
+                >
+                  <span> Contrasto </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="tab"
+                  data-bs-target="#immagini"
+                  role="tab"
+                  aria-controls="immagini"
+                  aria-selected="false"
+                >
+                  <span> Immagini </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="tab"
+                  data-bs-target="#tastiera"
+                  role="tab"
+                  aria-controls="tastiera"
+                  aria-selected="false"
+                >
+                  <span> Tastiera </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- tab content-->
+          <div class="tab-content">
+            <!-- 1 tab-->
+            <div
+              class="tab-pane fade show active"
+              id="contrasto"
+              role="tabpanel"
+              tabindex="0"
+              aria-labelledby="contrasto"
+            >
+              <div>
+                <h5 class="mb-4 fw-bold">Contrasto colore</h5>
+                <p>
+                  In conformità con le linee guida WCAG definite dal W3C ti
+                  consigliamo di garantire i contrasti elencati di seguito al
+                  fine di consentire a tutti gli utenti, indipendentemente dalle
+                  loro condizioni, di fruire agevolmente dei contenuti.
+                </p>
+              </div>
+              <div class="list-table table-responsive table-sm table-even">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>
+                        <div class="fw-bold">Tipologia di elemento</div>
+                      </th>
+                      <th>
+                        <div class="fw-bold">Rapporto di contrasto</div>
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td
+                        class="colf-form colf-check"
+                        data-label="Tipologia di elemento
+                      "
+                      >
+                        <div class="fw-bold">
+                          <div class="fw-bold">Testo standard</div>
+
+                          (<18px)
+                        </div>
+                      </td>
+                      <td data-label="Come sperimentano l’interfaccia">
+                        <div>4.5:1 (livello AA - W3C)</div>
+                      </td>
+                    </tr>
+
+                    <tr class="bg-gray">
+                      <td data-label="Utente">
+                        <div>
+                          <strong>Testo grande Testo grande</strong>
+
+                          (18px in sù)
+                        </div>
+                      </td>
+                      <td data-label="Come sperimentano l’interfaccia">
+                        <div>3:1</div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td data-label="Utente">
+                        <div>
+                          <strong>Componenti dell’interfaccia utente</strong>
+                          <br />
+
+                          (immagini, componenti, sezioni, ecc)
+                        </div>
+                      </td>
+                      <td data-label="Come sperimentano l’interfaccia">
+                        <div>4.5:1 (livello AA - W3C)</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="my-6">
+                Questi livelli di contrasto non vengono richiesti per:
+                <strong>
+                  elementi inattivi, testi decorativi, illustrazioni ed immagine
+                  decorative e per i logotipi</strong
+                >.
+              </p>
+              <p class="fw-bold">
+                Esempio valori di contrasto: icona su sfondo
+              </p>
+
+              <div class="row mb-8 gy-5">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card shadow-none h-100 bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="imgs/accessibilità_page/do1.svg"
+                        alt=""
+                      />
+
+                      <div class="mt-4">
+                        <div class="body-lg">
+                          <strong>Contrasto </strong>: 9.12:1 - Livello AAA
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card shadow-none h-100 bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="imgs/accessibilità_page/do2.svg"
+                        alt=""
+                      />
+
+                      <div class="mt-4">
+                        <div class="body-lg">
+                          <strong>Contrasto </strong>: 9.12:1 - Livello AAA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card shadow-none bg-gray h-100">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
 
                       <img
                         class="w-100"
@@ -651,160 +744,208 @@
                         </div>
                       </div>
 
-                    <img class="w-100" src="imgs/accessibilità_page/dont2.svg" alt="" />
-                    <div class="mt-4">
-                      <div class="body-lg">
-                        <strong> Contrasto </strong>2.88:1
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <p class="fw-bold">
-              Esempio valori di contrasto: testo su sfondo
-            </p>
-
-            <div class="row mb-8 gy-5">
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="card shadow-none bg-gray h-100">
-                  <div class="card-body">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-success">
-                          <span> Do </span>
-                          <svg class="icon icon-sm icon-success ms-2">
-                            <use href="imgs/icon/sprite_fill.svg#it-check-circle"></use>
-                          </svg>
+                      <img
+                        class="w-100"
+                        src="imgs/accessibilità_page/dont2.svg"
+                        alt=""
+                      />
+                      <div class="mt-4">
+                        <div class="body-lg">
+                          <strong> Contrasto </strong>2.88:1
                         </div>
                       </div>
                     </div>
-
-                    <img class="w-100" src="imgs/accessibilità_page/do3.svg" alt="" />
-
-                    <div class="mt-4">
-                      <div class="body-lg">
-                        <strong>Contrasto </strong>: 9.12:1 - Livello AAA
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="card shadow-none bg-gray h-100">
-                  <div class="card-body">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-success">
-                          <span> Do </span>
-                          <svg class="icon icon-sm icon-success ms-2">
-                            <use href="imgs/icon/sprite_fill.svg#it-check-circle"></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
 
-                    <img class="w-100" src="imgs/accessibilità_page/do4.svg" alt="" />
-
-                    <div class="mt-4">
-                      <div class="body-lg">
-                        <strong>Contrasto </strong>: 9.12:1 - Livello AAA
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="card shadow-none h-100 bg-gray">
-                  <div class="card-body">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-danger">
-                          <span> Don't </span>
-                          <svg class="ms-2 icon icon-sm icon-danger">
-                            <use href="imgs/icon/sprite_fill.svg#it-error-circle"></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-
-                    <img class="w-100" src="imgs/accessibilità_page/dont3.svg" alt="" />
-                    <div class="mt-4">
-                      <div class="body-lg">
-                        <strong> Contrasto </strong>: 1.77:1
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="card shadow-none h-100 bg-gray">
-                  <div class="card-body">
-                    <div class="card-bar">
-                      <div class="bar-group">
-                        <div class="badge badge-sm badge-danger">
-                          <span> Don't </span>
-                          <svg class="ms-2 icon icon-sm icon-danger">
-                            <use href="imgs/icon/sprite_fill.svg#it-error-circle"></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-
-                    <img class="w-100" src="imgs/accessibilità_page/dont4.svg" alt="" />
-                    <div class="mt-4">
-                      <div class="body-lg">
-                        <strong> Contrasto </strong>2.88:1
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h5 class="my-4 fw-bold">Uso del colore e daltonismo</h5>
-
-              <p class="mb-4">
-                Quando si progetta, è importante non fare affidamento
-                esclusivamente sul colore per trasmettere significato, poiché
-                circa l'8% della popolazione maschile e lo 0,4% della
-                popolazione femminile soffre di disturbi visivi legati alla
-                percezione del colore. Per garantire che i contenuti siano
-                comprensibili a tutti è consigliato utilizzare un
-                <strong> simulatore per daltonismo </strong>che permetta di
-                verificare la visibilità dei contenuti e assicurarsi così che
-                essi siano chiari anche senza il supporto del colore.
+              <p class="fw-bold">
+                Esempio valori di contrasto: testo su sfondo
               </p>
-              <p class="mb-4">
-                Se stai lavorando con Figma, ti consigliamo di utilizzare il
-                plugin
-                <a class="link-underline-primary"
-                  href="https://www.figma.com/community/plugin/732603254453395948/stark-contrast-accessibility-checker ">Stark</a>.
-              </p>
-              <div class="row mx-1 my-3 align-items-top justify-content-center bggrigio p-8 gx-9 gy-4">
-                <div class="col-4 col-md-2 col-lg-2 col-xl-1 d-flex flex-column justify-content-center h-100">
-                  <img src="imgs/accessibilità_page/col1.svg" alt="" />
-                  <p class="fw-bold my-4">Visione normale</p>
+
+              <div class="row mb-8 gy-5">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card shadow-none bg-gray h-100">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="imgs/accessibilità_page/do3.svg"
+                        alt=""
+                      />
+
+                      <div class="mt-4">
+                        <div class="body-lg">
+                          <strong>Contrasto </strong>: 9.12:1 - Livello AAA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-4 col-md-2 col-lg-2 col-xl-1 d-flex flex-column justify-content-center h-100">
-                  <img src="imgs/accessibilità_page/col2.svg" class="w-100" alt="" />
-                  <p class="fw-bold my-4">Protanopia (Cecità al rosso)</p>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card shadow-none bg-gray h-100">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-success">
+                            <span> Do </span>
+                            <svg class="icon icon-sm icon-success ms-2">
+                              <use
+                                href="imgs/icon/sprite_fill.svg#it-check-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="imgs/accessibilità_page/do4.svg"
+                        alt=""
+                      />
+
+                      <div class="mt-4">
+                        <div class="body-lg">
+                          <strong>Contrasto </strong>: 9.12:1 - Livello AAA
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-4 col-md-2 col-lg-2 col-xl-1 d-flex flex-column ustify-content-center h-100">
-                  <img src="imgs/accessibilità_page/col3.svg" alt="" />
-                  <p class="fw-bold my-4">Deuteranopia (Cecità al verde)</p>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card shadow-none h-100 bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="imgs/accessibilità_page/dont3.svg"
+                        alt=""
+                      />
+                      <div class="mt-4">
+                        <div class="body-lg">
+                          <strong> Contrasto </strong>: 1.77:1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-4 col-md-2 col-lg-2 col-xl-1 d-flex flex-column ustify-content-center h-100">
-                  <img src="imgs/accessibilità_page/col4.svg" alt="" />
-                  <p class="fw-bold my-4">Tritanopia (Cecità al giallo)</p>
-                </div>
-                <div class="col-4 col-md-2 col-lg-2 col-xl-1 d-flex flex-column ustify-content-center h-100">
-                  <img src="imgs/accessibilità_page/col5.svg" alt="" />
-                  <p class="fw-bold my-4">Monocromia</p>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card shadow-none h-100 bg-gray">
+                    <div class="card-body">
+                      <div class="card-bar">
+                        <div class="bar-group">
+                          <div class="badge badge-sm badge-danger">
+                            <span> Don't </span>
+                            <svg class="ms-2 icon icon-sm icon-danger">
+                              <use
+                                href="imgs/icon/sprite_fill.svg#it-error-circle"
+                              ></use>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+
+                      <img
+                        class="w-100"
+                        src="imgs/accessibilità_page/dont4.svg"
+                        alt=""
+                      />
+                      <div class="mt-4">
+                        <div class="body-lg">
+                          <strong> Contrasto </strong>2.88:1
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!-- v1 
+              <div>
+                <h5 class="my-4 fw-bold">Uso del colore e daltonismo</h5>
+
+                <p class="mb-4">
+                  Quando si progetta, è importante non fare affidamento
+                  esclusivamente sul colore per trasmettere significato, poiché
+                  circa l'8% della popolazione maschile e lo 0,4% della
+                  popolazione femminile soffre di disturbi visivi legati alla
+                  percezione del colore. Per garantire che i contenuti siano
+                  comprensibili a tutti è consigliato utilizzare un
+                  <strong> simulatore per daltonismo </strong>che permetta di
+                  verificare la visibilità dei contenuti e assicurarsi così che
+                  essi siano chiari anche senza il supporto del colore.
+                </p>
+                <p class="mb-4">
+                  Se stai lavorando con Figma, ti consigliamo di utilizzare il
+                  plugin
+                  <a
+                    class=""
+                    href="https://www.figma.com/community/plugin/732603254453395948/stark-contrast-accessibility-checker "
+                  >
+                    <u>Stark </u></a
+                  >.
+                </p>
+                <div
+                  class="row mx-1 my-3 align-items-top justify-content-center bggrigio p-8 gx-9 gy-4"
+                >
+                  <div
+                    class="col-4 col-md-2 col-lg-2 col-xl-1 d-flex flex-column justify-content-center h-100"
+                  >
+                    <img src="imgs/accessibilità_page/col1.svg" alt="" />
+                    <p class="fw-bold my-4">Visione normale</p>
+                  </div>
+                  <div
+                    class="col-4 col-md-2 col-lg-2 col-xl-1 d-flex flex-column justify-content-center h-100"
+                  >
+                    <img
+                      src="imgs/accessibilità_page/col2.svg"
+                      class="w-100"
+                      alt=""
+                    />
+                    <p class="fw-bold my-4">Protanopia (Cecità al rosso)</p>
+                  </div>
+                  <div
+                    class="col-4 col-md-2 col-lg-2 col-xl-1 d-flex flex-column ustify-content-center h-100"
+                  >
+                    <img src="imgs/accessibilità_page/col3.svg" alt="" />
+                    <p class="fw-bold my-4">Deuteranopia (Cecità al verde)</p>
+                  </div>
+                  <div
+                    class="col-4 col-md-2 col-lg-2 col-xl-1 d-flex flex-column ustify-content-center h-100"
+                  >
+                    <img src="imgs/accessibilità_page/col4.svg" alt="" />
+                    <p class="fw-bold my-4">Tritanopia (Cecità al giallo)</p>
+                  </div>
+                  <div
+                    class="col-4 col-md-2 col-lg-2 col-xl-1 d-flex flex-column ustify-content-center h-100"
+                  >
+                    <img src="imgs/accessibilità_page/col5.svg" alt="" />
+                    <p class="fw-bold my-4">Monocromia</p>
+                  </div>
+                </div>
+                <!-- v1 
                 <p class="mb-4">
                   Quando si progetta, è importante non fare affidamento
                   esclusivamente sul colore per trasmettere significato, poiché
@@ -879,498 +1020,597 @@
                     alt=""
                   />
                 </div>-->
-            </div>
-          </div>
-
-          <!-- 2 tab-->
-          <div class="tab-pane fade" id="immagini" role="tabpanel" tabindex="0" aria-labelledby="immagini">
-            <div class="mb-4">
-              <h5 class="mb-2 fw-bold">Immagini</h5>
-              <p class="mb-4">
-                Esistono due tipologie di immagini che è possibile utilizzare
-                all’interno dei tuoi progetti: informative e decorative.
-              </p>
-            </div>
-
-            <div class="bg-gray p-4 rounded my-4">
-              <p class="fw-bold">Immagini informative</p>
-              <p>
-                Sono tutte le immagini che trasmettono informazioni importanti
-                e comunicano visivamente concetti e informazioni. <br />
-                Pertanto:
-              </p>
-              <ul>
-                <li>
-                  Il testo alternativo deve veicolare le stesse informazioni
-                  contenute nell'immagine;
-                </li>
-                <li>
-                  Assicurati che il testo alternativo sia breve e appropriato
-                  al contesto;
-                </li>
-                <li>
-                  Se le stesse informazioni sono già presenti come testo sullo
-                  schermo, l'immagine può essere considerata decorativa.
-                </li>
-              </ul>
-
-              <div class="row gy-4">
-                <img class="immaginitab col-auto" src="imgs/accessibilità_page/immagini1.svg" alt="" />
-                <img class="immaginitab col-auto" src="imgs/accessibilità_page/immagini2.svg" alt="" />
               </div>
             </div>
 
-            <div class="bg-gray p-4 rounded">
-              <p class="fw-bold">Immagini informative</p>
-              <p>
-                Si tratta di immagini che non trasmettono informazioni. Sono
-                ad esempio i bordi, gli stati vuoti, le immagini di ambiente e
-                di sfondo. Queste ultime:
-              </p>
-              <ul>
-                <li>dovrebbero essere ignorate dallo screen reader;</li>
-                <li>
-                  possono essere definite come immagine di sfondo nel foglio
-                  di stile;
-                </li>
-                <li>
-                  dovrebbero utilizzare l'attributo
-                  <strong>“Role="presentation" </strong> .
-                </li>
-              </ul>
-
-              <div class="row">
-                <img class="immaginitab col-auto" src="imgs/accessibilità_page/immagini3.svg" alt="" />
-                <img class="immaginitab col-auto gy-4" src="imgs/accessibilità_page/immagini4.svg" alt="" />
+            <!-- 2 tab-->
+            <div
+              class="tab-pane fade"
+              id="immagini"
+              role="tabpanel"
+              tabindex="0"
+              aria-labelledby="immagini"
+            >
+              <div class="mb-4">
+                <h5 class="mb-2 fw-bold">Immagini</h5>
+                <p class="mb-4">
+                  Esistono due tipologie di immagini che è possibile utilizzare
+                  all’interno dei tuoi progetti: informative e decorative.
+                </p>
               </div>
-            </div>
 
-            <div>
-              <h5 class="fw-bold mt-5 mb-2">
-                Come rendere accessibile un’immagine
-              </h5>
-              <p>
-                La migliore modalità per fornire una descrizione testuale alle
-                immagini è certamente quella di utilizzare l'attributo
-                <code>&lt;alt&gt;</code>
-                (una stringa testuale che serve a descrivere un’immagine a
-                fonti “alternative” e ad assicurare la massima accessibilità
-                delle risorse) sull'elemento
-                <code>&lt;img&gt;</code> (l’immagine). A questo punto, il
-                testo risulterà fruibile tramite le Assistive
-                Technologies (AT): screen readers e voice assistants (come per
-                esempio Siri o Assistente Google). <br />
-              </p>
-              <p>
-                Risulta dunque molto importante conoscere lo scopo ed il senso
-                dell'immagine, per fornire la miglior descrizione testuale
-                possibile
-              </p>
-              <ul>
-                <li>
-                  <strong>Immagini cliccabili. </strong> Se l'immagine risulta
-                  essere un pulsante verso altre pagine, l’alt text dovrebbe
-                  descrivere la destinazione del link piuttosto che l’immagine
-                  stessa.
-                </li>
-                <li>
-                  <strong>Immagini informative. </strong>
-                  Per immagini complesse che contengono molte informazioni,
-                  come le infografiche, può essere utile fornire un’alt text
-                  che riassuma i punti chiave e se possibile fornire un testo
-                  equivalente dettagliato altrove nella pagina o tramite un
-                  link a una descrizione completa. Icone. Per le icone l’alt
-                  text dovrebbe comunicare la funzione dell’icona, non la sua
-                  descrizione visiva. 
-                </li>
-                <li>
-                  <strong>Immagini decorative. </strong> Per immagini che sono
-                  utilizzate per scopo di interazione o design, che producono
-                  atmosfera e mirano a creare una particolare emozione
-                  nell'utente, la descrizione dovrebbe puntare a produrre lo
-                  stesso tipo di emozione, per permettere agli utenti con
-                  disabilità di provare le stesse sensazioni.
-                </li>
-              </ul>
-            </div>
+              <div class="bg-gray p-4 rounded my-4">
+                <p class="fw-bold">Immagini informative</p>
+                <p>
+                  Sono tutte le immagini che trasmettono informazioni importanti
+                  e comunicano visivamente concetti e informazioni. <br />
+                  Pertanto:
+                </p>
+                <ul>
+                  <li>
+                    Il testo alternativo deve veicolare le stesse informazioni
+                    contenute nell'immagine;
+                  </li>
+                  <li>
+                    Assicurati che il testo alternativo sia breve e appropriato
+                    al contesto;
+                  </li>
+                  <li>
+                    Se le stesse informazioni sono già presenti come testo sullo
+                    schermo, l'immagine può essere considerata decorativa.
+                  </li>
+                </ul>
 
-            <div>
-              <h6 class="fw-bold">
-                Scrivere un <code>&lt;alt&gt;</code> efficace
-              </h6>
+                <div class="row gy-4">
+                  <img
+                    class="immaginitab col-auto"
+                    src="imgs/accessibilità_page/immagini1.svg"
+                    alt=""
+                  />
+                  <img
+                    class="immaginitab col-auto"
+                    src="imgs/accessibilità_page/immagini2.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-              <ul>
-                <li>
-                  <strong> Brevità.</strong> Un testo alternativo lungo può
-                  infastidire gli utenti di screen reader, quindi è meglio
-                  usare il minor numero di parole possibile per descrivere
-                  l’immagine. Idealmente, l’alt text dovrebbe essere breve
-                  (circa 125 caratteri) per assicurare che i lettori di
-                  schermo lo leggano per intero senza tagli.
-                </li>
-                <li>
-                  <strong> Precisione.</strong> Il testo deve fornire una
-                  descrizione chiara e concisa di ciò che è raffigurato. Ad
-                  esempio, invece di “pesci”, un alt text ottimizzato potrebbe
-                  essere “pesci rossi che nuotano in un acquario”.
-                </li>
-                <li>
-                  <strong> Chiarezza. </strong> È importante includere parole
-                  chiave pertinenti, inserite in modo naturale e solo se
-                  rilevanti per l’immagine.
-                </li>
-                <li>
-                  <strong> Evitare la ridondanza.</strong> Gli screen reader
-                  comprendono che la risorsa è una immagine: non c’è quindi
-                  bisogno di scrivere “immagine di” o “foto di” nell’alt text.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- 3 tab-->
-          <div class="tab-pane fade" id="tastiera" role="tabpanel" tabindex="0" aria-labelledby="tastiera">
-            <div>
-              <h5 class="fw-bold mb-2">Navigazione tramite tastiera</h5>
+              <div class="bg-gray p-4 rounded">
+                <p class="fw-bold">Immagini informative</p>
+                <p>
+                  Si tratta di immagini che non trasmettono informazioni. Sono
+                  ad esempio i bordi, gli stati vuoti, le immagini di ambiente e
+                  di sfondo. Queste ultime:
+                </p>
+                <ul>
+                  <li>dovrebbero essere ignorate dallo screen reader;</li>
+                  <li>
+                    possono essere definite come immagine di sfondo nel foglio
+                    di stile;
+                  </li>
+                  <li>
+                    dovrebbero utilizzare l'attributo
+                    <strong>“Role="presentation" </strong> .
+                  </li>
+                </ul>
 
-              <p>
-                Le interazioni da tastiera più comuni avvengono nel seguente
-                ordine:
-              </p>
-              <ol>
-                <li>
-                  uso del tasto tabulazione per selezionare i diversi elementi
-                  interattivi in una pagina
-                </li>
-                <li>
-                  uso del
-                  <strong> tasto invio o della barra spaziatrice </strong>per
-                  attivare un elemento a fuoco.
-                </li>
-              </ol>
-              <p>
-                Per questo motivo, quando si progetta per la navigazione da
-                tastiera, è bene tenere in mente le seguenti raccomandazioni:
-              </p>
-              <ul>
-                <li>
-                  tutti gli elementi attivi che possono essere
-                  <strong> attivati ​​con il mouse</strong> devono essere
-                  utilizzabili tramite tastiera o avere un equivalente da
-                  tastiera;
-                </li>
-                <li>
-                  la pagina deve essere struttura secondo una
-                  <strong>gerarchia </strong> ben definita;
-                </li>
-                <li>
-                  anche i <strong> componenti dinamici</strong> devono essere
-                  attivati ​​dalla tastiera;
-                </li>
-                <li>
-                  gli elementi che mostrano il contenuto al passaggio del
-                  mouse devono essere aggiunti all'ordine di tabulazione ed
-                  essere utilizzabili con la tastiera;
-                </li>
-                <li>
-                  è necessario annotare l'ordine di tabulazione e numerare i
-                  punti di tabulazione.
-                </li>
-              </ul>
+                <div class="row">
+                  <img
+                    class="immaginitab col-auto"
+                    src="imgs/accessibilità_page/immagini3.svg"
+                    alt=""
+                  />
+                  <img
+                    class="immaginitab col-auto gy-4"
+                    src="imgs/accessibilità_page/immagini4.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
 
-              <h5 class="fw-bold mt-5">Indicatori di messa a fuoco</h5>
-
-              <p>
-                Il tasto tabulazione consente di navigare tra tutti gli
-                elementi interattivi di una pagina nell'ordine in cui appaiono
-                nel documento HTML. Nel caso del MIT quando un elemento verrà
-                selezionato si attiverà uno
-                <strong> stroke di 4px di colore Blu/300</strong>
-                attorno allo stesso. Solamente dopo che un elemento è
-                focalizzato potrà poi essere ulteriormente attivato tramite la
-                tastiera.
-              </p>
               <div>
-                <div class="card shadow-none rounded bg-gray">
-                  <div class="card-body">
-                    <p class="my-5 text-grigio fw-semibold">
-                      Accordion/Desktop
-                    </p>
-                    <h6 class="mb-5 text-grigio">Stato default</h6>
+                <h5 class="fw-bold mt-5 mb-2">
+                  Come rendere accessibile un’immagine
+                </h5>
+                <p>
+                  La migliore modalità per fornire una descrizione testuale alle
+                  immagini è certamente quella di utilizzare l'attributo
+                  <code>&lt;alt&gt;</code>
+                  (una stringa testuale che serve a descrivere un’immagine a
+                  fonti “alternative” e ad assicurare la massima accessibilità
+                  delle risorse) sull'elemento
+                  <code>&lt;img&gt;</code> (l’immagine). A questo punto, il
+                  testo risulterà fruibile tramite le Assistive
+                  Technologies (AT): screen readers e voice assistants (come per
+                  esempio Siri o Assistente Google). <br />
+                </p>
+                <p>
+                  Risulta dunque molto importante conoscere lo scopo ed il senso
+                  dell'immagine, per fornire la miglior descrizione testuale
+                  possibile
+                </p>
+                <ul>
+                  <li>
+                    <strong>Immagini cliccabili. </strong> Se l'immagine risulta
+                    essere un pulsante verso altre pagine, l’alt text dovrebbe
+                    descrivere la destinazione del link piuttosto che l’immagine
+                    stessa.
+                  </li>
+                  <li>
+                    <strong>Immagini informative. </strong>
+                    Per immagini complesse che contengono molte informazioni,
+                    come le infografiche, può essere utile fornire un’alt text
+                    che riassuma i punti chiave e se possibile fornire un testo
+                    equivalente dettagliato altrove nella pagina o tramite un
+                    link a una descrizione completa. Icone. Per le icone l’alt
+                    text dovrebbe comunicare la funzione dell’icona, non la sua
+                    descrizione visiva. 
+                  </li>
+                  <li>
+                    <strong>Immagini decorative. </strong> Per immagini che sono
+                    utilizzate per scopo di interazione o design, che producono
+                    atmosfera e mirano a creare una particolare emozione
+                    nell'utente, la descrizione dovrebbe puntare a produrre lo
+                    stesso tipo di emozione, per permettere agli utenti con
+                    disabilità di provare le stesse sensazioni.
+                  </li>
+                </ul>
+              </div>
 
-                    <div class="accordion mb-5" id="collapseExample1">
-                      <div class="accordion-item">
-                        <div class="accordion-header" id="heading1c">
-                          <button disabled type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#collapse3c" aria-expanded="true" aria-controls="collapse3c">
-                            <div class="text-icon">
-                              <svg class="icon icon-sm">
-                                <use href="imgs/icon/sprite_fill.svg#it-example"></use>
-                              </svg>
-                              <span> Elemento Richiudibile #1 </span>
-                            </div>
-                          </button>
+              <div>
+                <h6 class="fw-bold">
+                  Scrivere un <code>&lt;alt&gt;</code> efficace
+                </h6>
+
+                <ul>
+                  <li>
+                    <strong> Brevità.</strong> Un testo alternativo lungo può
+                    infastidire gli utenti di screen reader, quindi è meglio
+                    usare il minor numero di parole possibile per descrivere
+                    l’immagine. Idealmente, l’alt text dovrebbe essere breve
+                    (circa 125 caratteri) per assicurare che i lettori di
+                    schermo lo leggano per intero senza tagli.
+                  </li>
+                  <li>
+                    <strong> Precisione.</strong> Il testo deve fornire una
+                    descrizione chiara e concisa di ciò che è raffigurato. Ad
+                    esempio, invece di “pesci”, un alt text ottimizzato potrebbe
+                    essere “pesci rossi che nuotano in un acquario”.
+                  </li>
+                  <li>
+                    <strong> Chiarezza. </strong> È importante includere parole
+                    chiave pertinenti, inserite in modo naturale e solo se
+                    rilevanti per l’immagine.
+                  </li>
+                  <li>
+                    <strong> Evitare la ridondanza.</strong> Gli screen reader
+                    comprendono che la risorsa è una immagine: non c’è quindi
+                    bisogno di scrivere “immagine di” o “foto di” nell’alt text.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 3 tab-->
+            <div
+              class="tab-pane fade"
+              id="tastiera"
+              role="tabpanel"
+              tabindex="0"
+              aria-labelledby="tastiera"
+            >
+              <div>
+                <h5 class="fw-bold mb-2">Navigazione tramite tastiera</h5>
+
+                <p>
+                  Le interazioni da tastiera più comuni avvengono nel seguente
+                  ordine:
+                </p>
+                <ol>
+                  <li>
+                    uso del tasto tabulazione per selezionare i diversi elementi
+                    interattivi in una pagina
+                  </li>
+                  <li>
+                    uso del
+                    <strong> tasto invio o della barra spaziatrice </strong>per
+                    attivare un elemento a fuoco.
+                  </li>
+                </ol>
+                <p>
+                  Per questo motivo, quando si progetta per la navigazione da
+                  tastiera, è bene tenere in mente le seguenti raccomandazioni:
+                </p>
+                <ul>
+                  <li>
+                    tutti gli elementi attivi che possono essere
+                    <strong> attivati ​​con il mouse</strong> devono essere
+                    utilizzabili tramite tastiera o avere un equivalente da
+                    tastiera;
+                  </li>
+                  <li>
+                    la pagina deve essere struttura secondo una
+                    <strong>gerarchia </strong> ben definita;
+                  </li>
+                  <li>
+                    anche i <strong> componenti dinamici</strong> devono essere
+                    attivati ​​dalla tastiera;
+                  </li>
+                  <li>
+                    gli elementi che mostrano il contenuto al passaggio del
+                    mouse devono essere aggiunti all'ordine di tabulazione ed
+                    essere utilizzabili con la tastiera;
+                  </li>
+                  <li>
+                    è necessario annotare l'ordine di tabulazione e numerare i
+                    punti di tabulazione.
+                  </li>
+                </ul>
+
+                <h5 class="fw-bold mt-5">Indicatori di messa a fuoco</h5>
+
+                <p>
+                  Il tasto tabulazione consente di navigare tra tutti gli
+                  elementi interattivi di una pagina nell'ordine in cui appaiono
+                  nel documento HTML. Nel caso del MIT quando un elemento verrà
+                  selezionato si attiverà uno
+                  <strong> stroke di 4px di colore Blu/300</strong>
+                  attorno allo stesso. Solamente dopo che un elemento è
+                  focalizzato potrà poi essere ulteriormente attivato tramite la
+                  tastiera.
+                </p>
+                <div>
+                  <div class="card shadow-none rounded bg-gray">
+                    <div class="card-body">
+                      <p class="my-5 text-grigio fw-semibold">
+                        Accordion/Desktop
+                      </p>
+                      <h6 class="mb-5 text-grigio">Stato default</h6>
+
+                      <div class="accordion mb-5" id="collapseExample1">
+                        <div class="accordion-item">
+                          <div class="accordion-header" id="heading1c">
+                            <button
+                              disabled
+                              type="button"
+                              class="accordion-button collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse3c"
+                              aria-expanded="true"
+                              aria-controls="collapse3c"
+                            >
+                              <div class="text-icon">
+                                <svg class="icon icon-sm">
+                                  <use
+                                    href="imgs/icon/sprite_fill.svg#it-example"
+                                  ></use>
+                                </svg>
+                                <span> Elemento Richiudibile #1 </span>
+                              </div>
+                            </button>
+                          </div>
+                          <div
+                            id="collapse3c"
+                            class="accordion-collapse collapse"
+                            role="region"
+                            aria-labelledby="heading1c"
+                          >
+                            <div class="accordion-body"></div>
+                          </div>
                         </div>
-                        <div id="collapse3c" class="accordion-collapse collapse" role="region"
-                          aria-labelledby="heading1c">
-                          <div class="accordion-body"></div>
+                      </div>
+
+                      <h6 class="mb-5 text-grigio">Stato di focus</h6>
+                      <div
+                        class="accordion force-focus mb-5"
+                        id="collapseExample2"
+                      >
+                        <div class="accordion-item">
+                          <div class="accordion-header" id="heading2c">
+                            <button
+                              disabled
+                              type="button"
+                              class="accordion-button collapsed"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapse2c"
+                              aria-expanded="true"
+                              aria-controls="collapse2c"
+                            >
+                              <div class="text-icon">
+                                <svg class="icon icon-sm">
+                                  <use
+                                    href="imgs/icon/sprite_fill.svg#it-example"
+                                  ></use>
+                                </svg>
+                                <span> Elemento Richiudibile #1 </span>
+                              </div>
+                            </button>
+                          </div>
+                          <div
+                            id="collapse2c"
+                            class="accordion-collapse collapse"
+                            role="region"
+                            aria-labelledby="heading2c"
+                          >
+                            <div class="accordion-body"></div>
+                          </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
 
-                    <h6 class="mb-5 text-grigio">Stato di focus</h6>
-                    <div class="accordion force-focus mb-5" id="collapseExample2">
-                      <div class="accordion-item">
-                        <div class="accordion-header" id="heading2c">
-                          <button disabled type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
-                            data-bs-target="#collapse2c" aria-expanded="true" aria-controls="collapse2c">
-                            <div class="text-icon">
-                              <svg class="icon icon-sm">
-                                <use href="imgs/icon/sprite_fill.svg#it-example"></use>
-                              </svg>
-                              <span> Elemento Richiudibile #1 </span>
-                            </div>
-                          </button>
-                        </div>
-                        <div id="collapse2c" class="accordion-collapse collapse" role="region"
-                          aria-labelledby="heading2c">
-                          <div class="accordion-body"></div>
+                <h5 class="fw-bold mt-5">Ordine di navigazione</h5>
+
+                <p>
+                  Per garantire la corretta lettura dei contenuti l’ordine in
+                  cui gli elementi interattivi ricevono l'attenzione dovrebbe
+                  essere <strong> logico e prevedibile</strong>. Ti
+                  raccomandiamo quindi di:
+                </p>
+                <ul>
+                  <li>
+                    creare la <strong>gerarchia </strong> del flusso di schede
+                    utilizzando il codice sorgente per organizzare la
+                    navigazione da tastiera;
+                  </li>
+                  <li>
+                    rafforzare l'HTML semantico per trasmettere intento e
+                    significato invece di definire esclusivamente l'aspetto di
+                    un elemento;
+                  </li>
+                  <li>
+                    migliorare l’HTML con le etichette ARIA (Accessible Rich
+                    Internet Application) quando necessario.
+                  </li>
+                </ul>
+                <p>Menù nella sua versione classica</p>
+                <img
+                  class="w-100"
+                  src="imgs/accessibilità_page/tastiera1.svg"
+                  alt=""
+                />
+                <p class="my-4">
+                  Processo che segue lo screen reader nella lettura
+                  dell’elemento
+                </p>
+                <img
+                  class="w-100"
+                  src="imgs/accessibilità_page/tastiera2.svg"
+                  alt=""
+                />
+
+                <p class="fw-bold mt-5">
+                  Punti di riferimento nella navigazione
+                </p>
+
+                <p>
+                  Al fine di favorire una corretta lettura della pagina per
+                  tutti quegli utenti che utilizzano la navigazione da tastiera
+                  assicurati di comunicare le diverse aree dello schermo e cosa
+                  fanno con i punti di riferimento utilizzando le etichette
+                  HTML5, così che gli utenti di screen reader possano saltare
+                  rapidamente in qualsiasi area vogliano.
+                </p>
+                <h5 class="fw-bold mt-5">HTML semantico</h5>
+
+                <p>
+                  L’HTML semantico, conosciuto anche con il nome di markup
+                  semantico, prevede l'uso di tag HTML che trasmettono il
+                  significato del loro stesso contenuto, come titoli,
+                  navigazione, sezioni di pagina, elenchi e paragrafi.
+                </p>
+                <p>Per esempio, possiamo trovare i seguenti tag:</p>
+                <div class="row mb-3">
+                  <div class="col-auto">
+                    <div class="badge badge-primary">
+                      <span>
+                        <code>&lt;header&gt;</code>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="badge badge-primary">
+                      <span>
+                        <code>&lt;footer&gt;</code>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="badge badge-primary">
+                      <span>
+                        <code>&lt;nav&gt;</code>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="badge badge-primary">
+                      <span>
+                        <code>&lt;img&gt;</code>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <div class="badge badge-primary">
+                      <span>
+                        <code>&lt;section&gt;</code>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <p>
+                  Per favorire una corretta interpretazione degli header, è
+                  necessario seguire queste indicazioni sia in fase di design
+                  che di sviluppo:
+                </p>
+                <ul>
+                  <li>
+                    organizzare le intestazioni della pagina in base al loro
+                    livello (H1, H2, H3, ecc.);
+                  </li>
+                  <li>
+                    l'intestazione più importante della pagina è di livello H1;
+                  </li>
+                  <li>
+                    in una pagina è consentita una sola intestazione di livello
+                    H1;
+                  </li>
+                  <li>
+                    i titoli devono essere posizionati all'inizio di nuove
+                    sezioni di contenuto, non a scopo decorativo.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- sezione card-->
+          <div class="bg-gray my-6 p-6 rounded">
+            <h4 class="fw-bold mb-5 titlepage">
+              Accedi velocemente alle librerie
+            </h4>
+            <div>
+              <div class="row gy-5">
+                <div class="col-12 col-lg-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="card-title">
+                        <div id="Linee-guida-WCAG" class="text-icon h5">
+                          <img
+                            class="me-3"
+                            src="imgs/card/w3c_icon.svg"
+                            alt=""
+                          />
+
+                          <span>
+                            Linee guida WCAG 2.1 - Web Content Accessibility
+                            Guidelines
+                          </span>
                         </div>
                       </div>
+
+                      <div class="pt-2 body-lg">
+                        Consulta le linee guida per rendere i contenuti Web più
+                        accessibili alle persone con disabilità
+                      </div>
+                      <a
+                        aria-labelledby="Linee-guida-WCAG"
+                        target="_blank"
+                        href="https://www.w3.org/WAI/WCAG22/quickref/"
+                        class="btn btn-bare btn-sm"
+                      >
+                        <span>Vai alla risorsa </span>
+                        <svg class="icon icon-sm">
+                          <use
+                            href="imgs/icon/sprite.svg#it-external-link"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="card-title">
+                        <div id="Stark" class="text-icon h5">
+                          <img
+                            class="me-3"
+                            src="imgs/hero/figma_icon.svg"
+                            alt=""
+                          />
+
+                          <span
+                            >Stark - Contrast & Accessibility Chaecker
+                          </span>
+                        </div>
+                      </div>
+
+                      <div class="pt-2 body-lg">
+                        Controlla i contrasti e l’accessibilità direttamente su
+                        Figma con questo Plug-in
+                      </div>
+                      <a
+                        aria-labelledby="Stark"
+                        target="_blank"
+                        href="https://www.figma.com/community/plugin/732603254453395948/stark-contrast-accessibility-checker"
+                        class="btn btn-bare btn-sm"
+                      >
+                        <span> Vai alla risorsa</span>
+                        <svg class="icon icon-sm">
+                          <use
+                            href="imgs/icon/sprite.svg#it-external-link"
+                          ></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <div class="card-title">
+                        <div
+                          id="Siteimprove-Accessibility-Checker "
+                          class="text-icon h5"
+                        >
+                          <img
+                            class="me-3"
+                            src="imgs/card/chrome_icon.svg"
+                            alt=""
+                          />
+
+                          <span> Siteimprove Accessibility Checker V.127 </span>
+                        </div>
+                      </div>
+
+                      <div class="pt-2 body-lg">
+                        Controlla l’accessibilità web direttamente in Google
+                        Chrome installando questa estensione
+                      </div>
+                      <a
+                        aria-labelledby="Siteimprove-Accessibility-Checker "
+                        target="_blank"
+                        href="https://chromewebstore.google.com/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc?pli=1"
+                        class="btn btn-bare btn-sm position-relative"
+                      >
+                        <span> Vai alla risorsa </span>
+                        <svg class="icon icon-sm">
+                          <use
+                            href="imgs/icon/sprite.svg#it-external-link"
+                          ></use>
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <h5 class="fw-bold mt-5">Ordine di navigazione</h5>
-
-              <p>
-                Per garantire la corretta lettura dei contenuti l’ordine in
-                cui gli elementi interattivi ricevono l'attenzione dovrebbe
-                essere <strong> logico e prevedibile</strong>. Ti
-                raccomandiamo quindi di:
-              </p>
-              <ul>
-                <li>
-                  creare la <strong>gerarchia </strong> del flusso di schede
-                  utilizzando il codice sorgente per organizzare la
-                  navigazione da tastiera;
-                </li>
-                <li>
-                  rafforzare l'HTML semantico per trasmettere intento e
-                  significato invece di definire esclusivamente l'aspetto di
-                  un elemento;
-                </li>
-                <li>
-                  migliorare l’HTML con le etichette ARIA (Accessible Rich
-                  Internet Application) quando necessario.
-                </li>
-              </ul>
-              <p>Menù nella sua versione classica</p>
-              <img class="w-100" src="imgs/accessibilità_page/tastiera1.svg" alt="" />
-              <p class="my-4">
-                Processo che segue lo screen reader nella lettura
-                dell’elemento
-              </p>
-              <img class="w-100" src="imgs/accessibilità_page/tastiera2.svg" alt="" />
-
-              <p class="fw-bold mt-5">
-                Punti di riferimento nella navigazione
-              </p>
-
-              <p>
-                Al fine di favorire una corretta lettura della pagina per
-                tutti quegli utenti che utilizzano la navigazione da tastiera
-                assicurati di comunicare le diverse aree dello schermo e cosa
-                fanno con i punti di riferimento utilizzando le etichette
-                HTML5, così che gli utenti di screen reader possano saltare
-                rapidamente in qualsiasi area vogliano.
-              </p>
-              <h5 class="fw-bold mt-5">HTML semantico</h5>
-
-              <p>
-                L’HTML semantico, conosciuto anche con il nome di markup
-                semantico, prevede l'uso di tag HTML che trasmettono il
-                significato del loro stesso contenuto, come titoli,
-                navigazione, sezioni di pagina, elenchi e paragrafi.
-              </p>
-              <p>Per esempio, possiamo trovare i seguenti tag:</p>
-              <div class="row mb-3">
-                <div class="col-auto">
-                  <div class="badge badge-primary">
-                    <span>
-                      <code>&lt;header&gt;</code>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="badge badge-primary">
-                    <span>
-                      <code>&lt;footer&gt;</code>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="badge badge-primary">
-                    <span>
-                      <code>&lt;nav&gt;</code>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="badge badge-primary">
-                    <span>
-                      <code>&lt;img&gt;</code>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-auto">
-                  <div class="badge badge-primary">
-                    <span>
-                      <code>&lt;section&gt;</code>
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <p>
-                Per favorire una corretta interpretazione degli header, è
-                necessario seguire queste indicazioni sia in fase di design
-                che di sviluppo:
-              </p>
-              <ul>
-                <li>
-                  organizzare le intestazioni della pagina in base al loro
-                  livello (H1, H2, H3, ecc.);
-                </li>
-                <li>
-                  l'intestazione più importante della pagina è di livello H1;
-                </li>
-                <li>
-                  in una pagina è consentita una sola intestazione di livello
-                  H1;
-                </li>
-                <li>
-                  i titoli devono essere posizionati all'inizio di nuove
-                  sezioni di contenuto, non a scopo decorativo.
-                </li>
-              </ul>
             </div>
           </div>
         </div>
+        <!-- paginazione-->
 
-        <!-- sezione card-->
-        <div class="bg-gray my-6 p-6 rounded">
-          <h4 class="fw-bold mb-5 titlepage">
-            Accedi velocemente alle librerie
-          </h4>
-          <div>
-            <div class="row gy-5">
-              <div class="col-12 col-lg-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <div class="card-title">
-                      <div id="Linee-guida-WCAG" class="text-icon h5">
-                        <img class="me-3" src="imgs/card/w3c_icon.svg" alt="" />
-
-                        <span>
-                          Linee guida WCAG 2.1 - Web Content Accessibility
-                          Guidelines
-                        </span>
-                      </div>
-                    </div>
-
-                    <div class="pt-2 body-lg">
-                      Consulta le linee guida per rendere i contenuti Web più
-                      accessibili alle persone con disabilità
-                    </div>
-                    <a aria-labelledby="Linee-guida-WCAG" target="_blank" href="https://www.w3.org/WAI/WCAG22/quickref/"
-                      class="btn btn-bare btn-sm">
-                      <span>Vai alla risorsa </span>
-                      <svg class="icon icon-sm">
-                        <use href="imgs/icon/sprite.svg#it-external-link"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <div class="card-title">
-                      <div id="Stark" class="text-icon h5">
-                        <img class="me-3" src="imgs/hero/figma_icon.svg" alt="" />
-
-                        <span>Stark - Contrast & Accessibility Chaecker
-                        </span>
-                      </div>
-                    </div>
-
-                    <div class="pt-2 body-lg">
-                      Controlla i contrasti e l’accessibilità direttamente su
-                      Figma con questo Plug-in
-                    </div>
-                    <a aria-labelledby="Stark" target="_blank"
-                      href="https://www.figma.com/community/plugin/732603254453395948/stark-contrast-accessibility-checker"
-                      class="btn btn-bare btn-sm">
-                      <span> Vai alla risorsa</span>
-                      <svg class="icon icon-sm">
-                        <use href="imgs/icon/sprite.svg#it-external-link"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-4">
-                <div class="card h-100">
-                  <div class="card-body">
-                    <div class="card-title">
-                      <div id="Siteimprove-Accessibility-Checker " class="text-icon h5">
-                        <img class="me-3" src="imgs/card/chrome_icon.svg" alt="" />
-
-                        <span> Siteimprove Accessibility Checker V.127 </span>
-                      </div>
-                    </div>
-
-                    <div class="pt-2 body-lg">
-                      Controlla l’accessibilità web direttamente in Google
-                      Chrome installando questa estensione
-                    </div>
-                    <a aria-labelledby="Siteimprove-Accessibility-Checker " target="_blank"
-                      href="https://chromewebstore.google.com/detail/siteimprove-accessibility/efcfolpjihicnikpmhnmphjhhpiclljc?pli=1"
-                      class="btn btn-bare btn-sm position-relative">
-                      <span> Vai alla risorsa </span>
-                      <svg class="icon icon-sm">
-                        <use href="imgs/icon/sprite.svg#it-external-link"></use>
-                      </svg>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div
+          class="d-flex justify-content-between py-3 bg-lightblu my-6 px-6 rounded"
+        >
+          <a href="design-system.html" class="btn btn-bare btn-sm">
+            <svg class="icon">
+              <use href="imgs/icon/sprite.svg#it-chevron-left"></use>
+            </svg>
+            <span>Design System</span>
+          </a>
+          <a href="index.html" class="btn btn-bare btn-sm">
+            <span>Homepage </span>
+            <svg class="icon">
+              <use href="imgs/icon/sprite.svg#it-chevron-right"></use>
+            </svg>
+          </a>
         </div>
       </div>
-      <!-- paginazione-->
+    </main>
+    <!-- section 4 navbar menu-->
 
-      <div class="d-flex justify-content-between py-3 bg-lightblu my-6 px-6 rounded">
-        <a href="design-system.html" class="btn btn-bare btn-sm">
-          <svg class="icon">
-            <use href="imgs/icon/sprite.svg#it-chevron-left"></use>
-          </svg>
-          <span>Design System</span>
-        </a>
-        <a href="index.html" class="btn btn-bare btn-sm">
-          <span>Homepage </span>
-          <svg class="icon">
-            <use href="imgs/icon/sprite.svg#it-chevron-right"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </main>
-  <!-- section 4 navbar menu-->
-
-  <!-- Cookie Banner 
+    <!-- Cookie Banner 
     <section class="cookie-banner" aria-label="Gestione dei cookies">
         <div class="cookie-content">
             <div class="cookie-header">
@@ -1473,30 +1713,29 @@
             </div>
         </div>
     </section>-->
-  <footer id="footer">
-    <div class="footer-credits">
-      <div class="container">
-        <div class="navbar-brand pe-4">
-          <svg class="icon icon-lg" aria-hidden="true">
-            <use href="imgs/icon/ministero.svg#ministero"></use>
-          </svg>
-          <div class="body-lg text-w6 ps-3">
-            www.mit.gov.it - Ministero delle infrastrutture e dei trasporti.
+    <footer id="footer">
+      <div class="footer-credits">
+        <div class="container">
+          <div class="navbar-brand pe-4">
+            <svg class="icon icon-lg" aria-hidden="true">
+              <use href="imgs/icon/ministero.svg#ministero"></use>
+            </svg>
+            <div class="body-lg text-w6 ps-3">
+              www.mit.gov.it - Ministero delle infrastrutture e dei trasporti.
+            </div>
+          </div>
+
+          <div class="text-icon">
+            <svg class="icon icon-xs" aria-hidden="true">
+              <use href="imgs/icon/sprite.svg#it-copyright"></use>
+            </svg>
+            <span> Tutti i diritti riservati </span>
           </div>
         </div>
-
-        <div class="text-icon">
-          <svg class="icon icon-xs" aria-hidden="true">
-            <use href="imgs/icon/sprite.svg#it-copyright"></use>
-          </svg>
-          <span> Tutti i diritti riservati </span>
-        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
